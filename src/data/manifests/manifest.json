@@ -39,6 +39,14 @@
       "questionsPath": "src/data/questions/how-canadians-govern-themselves.json",
       "questionCount": 12,
       "reviewStatus": "verified"
+    },
+    {
+      "id": "federal-elections",
+      "en": {"title": "Federal Elections", "contentPath": "src/data/content/federal-elections.en.json"},
+      "fr": {"title": "Les élections fédérales", "contentPath": "src/data/content/federal-elections.fr.json"},
+      "questionsPath": "src/data/questions/federal-elections.json",
+      "questionCount": 10,
+      "reviewStatus": "verified"
     }
   ]
 }

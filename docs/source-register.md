@@ -37,14 +37,25 @@ This register tracks the official source documents used as the factual authority
 | `canadas-history` | Canada's History / L'histoire du Canada | 14 | verified | 2026-08-17 |
 | `modern-canada` | Modern Canada / Le Canada moderne | 15 | verified | 2026-08-17 |
 | `how-canadians-govern-themselves` | How Canadians Govern Themselves / Les Canadiens et leur système de gouvernement | 12 | verified | 2026-08-17 |
+| `federal-elections` | Federal Elections / Les élections fédérales | 10 | verified | 2026-08-17 |
 
 Question counts are intentionally not fixed per chapter — see `docs/content-governance.md`, "Question count policy" (critical section). Each chapter's count reflects only the number of distinct, independently verifiable facts that chapter's official content supports.
 
+## Time-sensitive facts excluded from `federal-elections`
+
+Per `docs/content-governance.md`, "Time-sensitive facts," the following facts appear in the live guide page but were deliberately **excluded** from the verified question bank because they are numeric/compositional facts that change over time and the guide's own page has not been kept current:
+
+- **"Canada is divided into 308 electoral districts."** Canada has had 338 federal electoral districts since the 2015 general election (following the 2012 redistribution). The guide's page (fetched 2026-08-17) still says 308, which is outdated. Testing this number would teach users an incorrect current fact.
+- **"There are three major political parties currently represented in the House of Commons: the Conservative Party, the Liberal Party, and the New Democratic Party."** Party standings in the House of Commons change with every election and are not a stable, guide-independent fact suitable for a citizenship-prep question bank.
+
+If a future task requires these topics, they should reference a live, dynamically updated data source rather than a hardcoded guide excerpt, or be re-verified against the current guide edition and current Parliament composition before being marked `verified`.
+
 Notes:
-- Chapter content and question citations for all five chapters were sourced from the official `canada.ca` online HTML guides (English and French), not the attached PDF, because the attached PDF's body-text layer extracted as garbled/unreadable characters. Diagram labels and the Oath of Citizenship extracted correctly from the PDF and were cross-checked where relevant.
+- Chapter content and question citations for all six chapters were sourced from the official `canada.ca` online HTML guides (English and French), not the attached PDF, because the attached PDF's body-text layer extracted as garbled/unreadable characters. Diagram labels and the Oath of Citizenship extracted correctly from the PDF and were cross-checked where relevant.
 - Printed/PDF page numbers are not recorded for these chapters' citations because they could not be reliably verified against the unreadable PDF text layer.
 - Edition identifier `Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8` was confirmed against the attached PDF's colophon text (page 2), which extracted correctly.
 - `who-we-are` source pages: English — https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/who-are-canadians.html ; French — https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/qui-sont-canadiens.html
 - `canadas-history` source pages: English — https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/canadas-history.html ; French — https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/histoire-canada.html
 - `modern-canada` source pages: English — https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/modern-canada.html ; French — https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/canada-moderne.html
 - `how-canadians-govern-themselves` source pages: English — https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/how-canadians-govern-themselves.html ; French — https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/canadiens-systeme-gouvernement.html
+- `federal-elections` source pages: English — https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/federal-elections.html ; French — https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/elections-federales.html

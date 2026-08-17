@@ -1,0 +1,60 @@
+{
+  "chapterId": "federal-elections",
+  "title": "Federal Elections",
+  "source": {
+    "guide": "Discover Canada",
+    "language": "en",
+    "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+    "sourceUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/federal-elections.html",
+    "verifiedAt": "2026-08-17"
+  },
+  "sections": [
+    {
+      "id": "intro",
+      "heading": null,
+      "paragraphs": [
+        "Canadians vote in elections for the people they want to represent them in the House of Commons. Members of the House of Commons are also known as members of Parliament or MPs.",
+        "Under legislation passed by Parliament, federal elections must be held on the third Monday in October every four years following the most recent general election. The Prime Minister may ask the Governor General to call an earlier election.",
+        "Canada is divided into electoral districts, also known as ridings or constituencies. Each electoral district elects one MP who sits in the House of Commons. Canadian citizens who are 18 years old or older may run in a federal election as candidates. The candidate who receives the most votes becomes the MP for that electoral district."
+      ],
+      "bullets": []
+    },
+    {
+      "id": "voting",
+      "heading": "Voting",
+      "paragraphs": [
+        "One of the privileges of Canadian citizenship is the right to vote. You are eligible to vote in a federal election or referendum if you are a Canadian citizen, at least 18 years old on voting day, and on the voters’ list.",
+        "The voters’ lists used during federal elections are produced from the National Register of Electors by a neutral agency of Parliament called Elections Canada. Once an election is called, Elections Canada mails a voter information card to each elector in the Register. Even without a card, you can still be added to the voters’ list at any time, including on election day."
+      ],
+      "bullets": []
+    },
+    {
+      "id": "secret-ballot",
+      "heading": "Secret Ballot",
+      "paragraphs": [
+        "Canadian law secures the right to a secret ballot. No one can watch you vote, and no one has the right to insist you reveal how you voted. Immediately after polling stations close, election officers count the ballots and results are announced publicly."
+      ],
+      "bullets": []
+    },
+    {
+      "id": "after-an-election",
+      "heading": "After an Election",
+      "paragraphs": [
+        "Ordinarily, after an election, the leader of the political party with the most seats in the House of Commons is invited by the Governor General to form the government and becomes the Prime Minister. If the governing party holds at least half of the seats, this is a majority government; if it holds less than half, it is a minority government.",
+        "The Prime Minister and governing party run the government as long as they hold the confidence of the majority of MPs. A major vote such as the budget is a matter of confidence; if a majority of MPs vote against it, the government is defeated, usually leading to a new election.",
+        "The Prime Minister chooses the ministers of the Crown, mostly from the House of Commons; together they form the Cabinet, which prepares the budget and proposes most new laws. The largest party not in power forms the Official Opposition. The role of opposition parties is to peacefully oppose or try to improve government proposals."
+      ],
+      "bullets": []
+    },
+    {
+      "id": "other-levels-of-government",
+      "heading": "Other Levels of Government in Canada",
+      "paragraphs": [
+        "Local or municipal government plays an important role in citizens’ lives. Municipal councils, usually led by a mayor or reeve, pass by-laws affecting only the local community. Municipalities are normally responsible for urban planning, streets and roads, sanitation, snow removal, firefighting, ambulance and emergency services, recreation facilities, public transit, and some local health and social services.",
+        "Provincial, territorial and municipal elections are held by secret ballot, but their rules differ from federal election rules.",
+        "First Nations have band chiefs and councillors who have major responsibilities on First Nations reserves, including housing, schools and other services."
+      ],
+      "bullets": []
+    }
+  ]
+}

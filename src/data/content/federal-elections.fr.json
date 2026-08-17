@@ -1,0 +1,60 @@
+{
+  "chapterId": "federal-elections",
+  "title": "Les élections fédérales",
+  "source": {
+    "guide": "Découvrir le Canada",
+    "language": "fr",
+    "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+    "sourceUrl": "https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/elections-federales.html",
+    "verifiedAt": "2026-08-17"
+  },
+  "sections": [
+    {
+      "id": "intro",
+      "heading": null,
+      "paragraphs": [
+        "Les Canadiens votent aux élections pour les personnes qu'ils veulent comme représentants à la Chambre des communes. Les membres de la Chambre des communes sont aussi appelés membres du Parlement ou députés.",
+        "D'après une loi adoptée par le Parlement, des élections fédérales doivent avoir lieu le troisième lundi d'octobre tous les quatre ans après les dernières élections générales. Le premier ministre peut demander au gouverneur général de déclencher une élection plus tôt.",
+        "Le Canada est divisé en circonscriptions. Les citoyens de chaque circonscription élisent un député qui siège à la Chambre des communes. Les citoyens canadiens âgés de 18 ans ou plus peuvent se présenter à une élection fédérale comme candidats. Le candidat qui obtient le plus grand nombre de votes devient le député de cette circonscription."
+      ],
+      "bullets": []
+    },
+    {
+      "id": "voting",
+      "heading": "Voter",
+      "paragraphs": [
+        "Un des privilèges de la citoyenneté canadienne est le droit de vote. Pour voter lors d'une élection fédérale ou d'un référendum, il faut être citoyen canadien, âgé d'au moins 18 ans le jour du vote, et inscrit sur la liste électorale.",
+        "Les listes électorales sont produites à partir du Registre national des électeurs par un organisme neutre du Parlement appelé Élections Canada. Quand une élection est déclenchée, Élections Canada envoie par la poste une carte d'information de l'électeur à chaque personne inscrite au Registre. Vous pouvez faire ajouter votre nom à la liste électorale en tout temps, même le jour de l'élection."
+      ],
+      "bullets": []
+    },
+    {
+      "id": "secret-ballot",
+      "heading": "Vote secret",
+      "paragraphs": [
+        "La loi canadienne prévoit le droit à un vote secret. Personne ne peut vous regarder voter, et personne n'a le droit d'insister pour savoir pour qui vous avez voté. Immédiatement après la fermeture des bureaux de vote, les résultats sont annoncés publiquement."
+      ],
+      "bullets": []
+    },
+    {
+      "id": "after-an-election",
+      "heading": "Après une élection",
+      "paragraphs": [
+        "Habituellement, après une élection, le chef du parti politique qui a le plus grand nombre de sièges à la Chambre des communes est invité par le gouverneur général à former le gouvernement et devient le premier ministre. Si le parti au pouvoir détient au moins la moitié des sièges, c'est un gouvernement majoritaire; sinon, c'est un gouvernement minoritaire.",
+        "Le premier ministre et le parti au pouvoir dirigent le gouvernement aussi longtemps qu'ils ont la confiance de la majorité des députés. Un vote important comme le budget est une question de confiance; si la majorité des députés vote contre, le gouvernement est défait, ce qui entraîne habituellement une nouvelle élection.",
+        "Le premier ministre choisit les ministres de la Couronne, la plupart parmi les députés de la Chambre des communes; ensemble, ils forment le Cabinet, qui prépare le budget et propose la plupart des nouvelles lois. Le plus grand parti qui n'est pas au pouvoir forme l'opposition officielle. Le rôle des partis d'opposition est de s'opposer pacifiquement aux propositions du gouvernement ou d'essayer de les améliorer."
+      ],
+      "bullets": []
+    },
+    {
+      "id": "other-levels-of-government",
+      "heading": "Les autres ordres de gouvernement au Canada",
+      "paragraphs": [
+        "L'administration municipale ou locale joue un rôle important dans la vie des citoyens. Les conseils municipaux, dirigés habituellement par un maire ou un préfet, adoptent des règlements touchant seulement la communauté locale. Les municipalités sont normalement responsables de la planification urbaine, des rues et des routes, de l'assainissement, du déneigement, de la lutte contre les incendies, des services ambulanciers et d'urgence, des installations récréatives, du transport en commun et de certains services sociaux et de santé locaux.",
+        "Les élections provinciales, territoriales et municipales se tiennent par vote secret, mais ne suivent pas les mêmes règles que les élections fédérales.",
+        "Les Premières Nations ont des chefs de bande et des conseillers, qui ont de grandes responsabilités dans les réserves des Premières Nations, notamment au sujet du logement, des écoles et d'autres services."
+      ],
+      "bullets": []
+    }
+  ]
+}
