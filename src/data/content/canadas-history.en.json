@@ -1,0 +1,78 @@
+{
+  "chapterId": "canadas-history",
+  "title": "Canada's History",
+  "source": {
+    "guide": "Discover Canada",
+    "language": "en",
+    "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+    "sourceUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/canadas-history.html",
+    "verifiedAt": "2026-08-17"
+  },
+  "sections": [
+    {
+      "id": "aboriginal-and-first-europeans",
+      "heading": "Aboriginal Peoples and the First Europeans",
+      "paragraphs": [
+        "When Europeans explored Canada they found all regions occupied by native peoples they called Indians, because the first explorers thought they had reached the East Indies. Aboriginal and European peoples formed strong economic, religious and military bonds in the first 200 years of coexistence, which laid the foundations of Canada.",
+        "The Vikings from Iceland reached Labrador and Newfoundland about 1,000 years ago; their settlement remains, l'Anse aux Meadows, are a World Heritage site. European exploration began in earnest in 1497 with John Cabot's expedition.",
+        "Between 1534 and 1542, Jacques Cartier made three voyages across the Atlantic, claiming the land for France. Cartier heard two captured guides speak the Iroquoian word kanata, meaning “village.” By the 1550s, the name Canada began appearing on maps."
+      ],
+      "bullets": []
+    },
+    {
+      "id": "new-france",
+      "heading": "New France",
+      "paragraphs": [
+        "In 1604, French explorers Pierre de Monts and Samuel de Champlain established the first European settlement north of Florida. In 1608, Champlain built a fortress at what is now Québec City.",
+        "The French and Aboriginal people collaborated in the fur trade. Leaders such as Jean Talon, Bishop Laval, and Count Frontenac built a French empire reaching from Hudson Bay to the Gulf of Mexico.",
+        "In the 1700s, France and Great Britain battled for control of North America. In 1759, the British defeated the French at the Battle of the Plains of Abraham in Québec City, ending France's empire in America. Following the war, Britain renamed the colony the “Province of Quebec.”",
+        "To better govern the French Roman Catholic majority, the British Parliament passed the Quebec Act of 1774. It allowed religious freedom for Catholics and restored French civil law while maintaining British criminal law."
+      ],
+      "bullets": []
+    },
+    {
+      "id": "british-north-america",
+      "heading": "British North America",
+      "paragraphs": [
+        "In 1776, the 13 British colonies to the south of Quebec declared independence, forming the United States. More than 40,000 people loyal to the Crown, called “Loyalists,” fled to settle in Nova Scotia and Quebec.",
+        "Democratic institutions developed gradually: the first representative assembly was elected in Halifax, Nova Scotia, in 1758. The Constitutional Act of 1791 divided Quebec into Upper Canada (later Ontario) and Lower Canada (later Quebec), and both gained elected legislative assemblies.",
+        "In 1793, Upper Canada became the first province in the British Empire to move toward abolishing slavery. In 1833, Britain abolished slavery throughout the Empire.",
+        "During the War of 1812, the United States invaded Canada but failed to conquer it, helping ensure Canada would remain independent of the United States.",
+        "Armed rebellions in 1837–38 in Upper and Lower Canada were defeated, but led to Lord Durham's recommendation for “responsible government,” meaning the government needed the support of the majority of elected representatives. Nova Scotia became the first British North American colony to attain full responsible government, in 1847–48."
+      ],
+      "bullets": []
+    },
+    {
+      "id": "confederation",
+      "heading": "Confederation",
+      "paragraphs": [
+        "From 1864 to 1867, representatives of Nova Scotia, New Brunswick and the Province of Canada worked together to establish a new country. These men are known as the Fathers of Confederation.",
+        "The British Parliament passed the British North America Act in 1867. The Dominion of Canada was officially born on July 1, 1867, uniting Ontario, Quebec, Nova Scotia and New Brunswick.",
+        "In 1867, Sir John Alexander Macdonald, a Father of Confederation, became Canada's first Prime Minister. Sir George-Étienne Cartier was the key architect of Confederation from Quebec.",
+        "The Dominion expanded over time: Manitoba and the Northwest Territories (1870), British Columbia (1871), Prince Edward Island (1873), Yukon Territory (1898), Alberta and Saskatchewan (1905), Newfoundland and Labrador (1949), and Nunavut (1999)."
+      ],
+      "bullets": []
+    },
+    {
+      "id": "challenge-in-the-west",
+      "heading": "Challenge in the West",
+      "paragraphs": [
+        "When Canada took over the northwest region from the Hudson's Bay Company in 1869, the Métis of the Red River were not consulted. Louis Riel led an armed uprising, leading to the creation of Manitoba as a new province in 1870.",
+        "A second Riel-led uprising in 1885 in present-day Saskatchewan led to Riel's trial and execution for high treason, a decision strongly opposed in Quebec. Riel is seen by many as a defender of Métis rights and the father of Manitoba.",
+        "British Columbia joined Canada in 1871 after Ottawa promised a railway to the West Coast. The Canadian Pacific Railway's last spike was driven on November 7, 1885, completed with the labour of European and Chinese workers; the Chinese workers were later subject to discrimination including a Head Tax, for which the Government of Canada apologized in 2006."
+      ],
+      "bullets": []
+    },
+    {
+      "id": "world-wars-and-democracy",
+      "heading": "The World Wars and the Expansion of Democracy",
+      "paragraphs": [
+        "More than 600,000 Canadians served in the First World War. The Canadian Corps captured Vimy Ridge in April 1917, securing a reputation for valour; April 9 is celebrated as Vimy Day. The war ended with the Armistice on November 11, 1918, now marked annually as Remembrance Day.",
+        "In 1916, Manitoba became the first province to grant women the right to vote. In 1917, the federal government gave some women the right to vote in federal elections, and by 1918 most Canadian female citizens aged 21 and over could vote federally. In 1921, Agnes Macphail became the first woman elected to Parliament.",
+        "More than one million Canadians and Newfoundlanders served in the Second World War. On D-Day, June 6, 1944, 15,000 Canadian troops stormed and captured Juno Beach as part of the Allied invasion of Normandy.",
+        "During the Second World War, the federal government forcibly relocated Canadians of Japanese origin from British Columbia and sold their property without compensation; the Government of Canada apologized for this in 1988."
+      ],
+      "bullets": []
+    }
+  ]
+}

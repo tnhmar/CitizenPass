@@ -11,6 +11,16 @@ This document defines how study content and practice questions are sourced, cite
 
 See `docs/source-register.md` for exact URLs and edition metadata.
 
+## Question count policy
+
+**Question count per chapter is not fixed.** The number of verified questions a chapter receives is determined entirely by how many distinct, independently testable facts that chapter's official content actually supports — not by a target number like "8 per chapter."
+
+- A short chapter with few distinct facts will have fewer questions.
+- A long, fact-dense chapter (e.g., one spanning centuries of history with many names, dates, and events) will have more questions, because it supports more non-overlapping learning objectives.
+- Do not pad a chapter with near-duplicate or trivial questions just to hit a round number.
+- Do not omit a well-supported, distinct fact just to keep chapters "even." If a chapter genuinely supports 20 verified questions and another only supports 5, that asymmetry is correct and expected.
+- Each question must still map to exactly one `learningObjectiveId` and pass every step in the "Question production workflow" below. Volume is a byproduct of verified coverage, never a target.
+
 ## Question production workflow
 
 1. Identify a single learning objective from the official guide.

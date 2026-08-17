@@ -2,30 +2,26 @@
   "chapters": [
     {
       "id": "rights-responsibilities",
-      "en": {
-        "title": "Rights and Responsibilities of Citizenship",
-        "contentPath": "src/data/content/rights-responsibilities.en.json"
-      },
-      "fr": {
-        "title": "Les droits et responsabilités liés à la citoyenneté",
-        "contentPath": "src/data/content/rights-responsibilities.fr.json"
-      },
+      "en": {"title": "Rights and Responsibilities of Citizenship", "contentPath": "src/data/content/rights-responsibilities.en.json"},
+      "fr": {"title": "Les droits et responsabilités liés à la citoyenneté", "contentPath": "src/data/content/rights-responsibilities.fr.json"},
       "questionsPath": "src/data/questions/rights-responsibilities.json",
       "questionCount": 8,
       "reviewStatus": "verified"
     },
     {
       "id": "who-we-are",
-      "en": {
-        "title": "Who We Are",
-        "contentPath": "src/data/content/who-we-are.en.json"
-      },
-      "fr": {
-        "title": "Qui sommes-nous, les Canadiens?",
-        "contentPath": "src/data/content/who-we-are.fr.json"
-      },
+      "en": {"title": "Who We Are", "contentPath": "src/data/content/who-we-are.en.json"},
+      "fr": {"title": "Qui sommes-nous, les Canadiens?", "contentPath": "src/data/content/who-we-are.fr.json"},
       "questionsPath": "src/data/questions/who-we-are.json",
       "questionCount": 8,
+      "reviewStatus": "verified"
+    },
+    {
+      "id": "canadas-history",
+      "en": {"title": "Canada's History", "contentPath": "src/data/content/canadas-history.en.json"},
+      "fr": {"title": "L'histoire du Canada", "contentPath": "src/data/content/canadas-history.fr.json"},
+      "questionsPath": "src/data/questions/canadas-history.json",
+      "questionCount": 14,
       "reviewStatus": "verified"
     }
   ]

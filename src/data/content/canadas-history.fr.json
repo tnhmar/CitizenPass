@@ -1,0 +1,78 @@
+{
+  "chapterId": "canadas-history",
+  "title": "L'histoire du Canada",
+  "source": {
+    "guide": "Découvrir le Canada",
+    "language": "fr",
+    "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+    "sourceUrl": "https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/histoire-canada.html",
+    "verifiedAt": "2026-08-17"
+  },
+  "sections": [
+    {
+      "id": "aboriginal-and-first-europeans",
+      "heading": "Les peuples autochtones et les premiers européens",
+      "paragraphs": [
+        "Lorsque les Européens arrivent au Canada, ils constatent que toutes les régions sont habitées par des peuples autochtones, qu'ils appellent « Indiens ». Autochtones et Européens forment des liens économiques, religieux et militaires solides durant les 200 premières années de coexistence, jetant les bases du Canada.",
+        "Les Vikings d'Islande atteignent le Labrador et Terre-Neuve il y a 1 000 ans; les vestiges de leur établissement, l'Anse aux Meadows, sont un site du patrimoine mondial. L'exploration européenne commence véritablement en 1497 avec l'expédition de Jean Cabot.",
+        "De 1534 à 1542, Jacques Cartier traverse trois fois l'Atlantique, revendiquant des terres pour la France. Cartier entend deux guides capturés prononcer le mot iroquois kanata, qui signifie « village ». Dès les années 1550, le nom Canada apparaît sur les cartes."
+      ],
+      "bullets": []
+    },
+    {
+      "id": "new-france",
+      "heading": "La Nouvelle-France",
+      "paragraphs": [
+        "En 1604, les explorateurs français Pierre de Monts et Samuel de Champlain fondent le premier établissement européen au nord de la Floride. En 1608, Champlain bâtit une forteresse sur l'emplacement actuel de la ville de Québec.",
+        "Les Français et les Autochtones collaborent au commerce des fourrures. Des dirigeants comme Jean Talon, Monseigneur de Laval et le comte de Frontenac bâtissent un empire français s'étendant de la baie d'Hudson au golfe du Mexique.",
+        "Au dix-huitième siècle, la France et la Grande-Bretagne se font la guerre pour l'Amérique du Nord. En 1759, les Britanniques gagnent la bataille des plaines d'Abraham à Québec, marquant la fin de l'Empire français en Amérique. Après la guerre, la Grande-Bretagne renomme la colonie « Province de Québec ».",
+        "Afin de mieux administrer la majorité catholique francophone, le Parlement britannique adopte l'Acte de Québec en 1774. Il accorde la liberté religieuse aux catholiques et rétablit les règles juridiques françaises pour les affaires civiles, tout en maintenant le droit criminel britannique."
+      ],
+      "bullets": []
+    },
+    {
+      "id": "british-north-america",
+      "heading": "L'Amérique du Nord britannique",
+      "paragraphs": [
+        "En 1776, les treize colonies britanniques au sud du Québec proclament leur indépendance et forment les États-Unis. Plus de 40 000 loyalistes fuient s'établir en Nouvelle-Écosse et au Québec.",
+        "Les institutions démocratiques se développent progressivement : la première assemblée est élue à Halifax en 1758. L'Acte constitutionnel de 1791 divise le Québec en Haut-Canada (Ontario) et Bas-Canada (Québec), qui obtiennent tous deux des assemblées législatives élues.",
+        "En 1793, le Haut-Canada devient la première province de l'Empire à amorcer l'abolition de l'esclavage. En 1833, la Grande-Bretagne abolit l'esclavage dans tout l'Empire.",
+        "Pendant la guerre de 1812, les États-Unis envahissent le Canada mais échouent à le conquérir, contribuant à garantir l'indépendance du Canada face aux États-Unis.",
+        "Les rébellions de 1837-1838 dans le Haut et le Bas-Canada sont défaites, mais mènent à la recommandation de lord Durham d'instaurer un « gouvernement responsable ». La Nouvelle-Écosse devient la première colonie à obtenir un gouvernement pleinement responsable, en 1847-1848."
+      ],
+      "bullets": []
+    },
+    {
+      "id": "confederation",
+      "heading": "La Confédération",
+      "paragraphs": [
+        "De 1864 à 1867, des représentants de la Nouvelle-Écosse, du Nouveau-Brunswick et de la Province du Canada travaillent ensemble pour créer un nouveau pays. Ces hommes sont les Pères de la Confédération.",
+        "Le Parlement britannique adopte l'Acte de l'Amérique du Nord britannique en 1867. Le Dominion du Canada naît officiellement le 1er juillet 1867, unissant l'Ontario, le Québec, la Nouvelle-Écosse et le Nouveau-Brunswick.",
+        "En 1867, sir John Alexander Macdonald devient le premier premier ministre du Canada. Sir George-Étienne Cartier est le principal architecte de la Confédération issu du Québec.",
+        "Le Dominion s'élargit ensuite : le Manitoba et les Territoires du Nord-Ouest (1870), la Colombie-Britannique (1871), l'Île-du-Prince-Édouard (1873), le Yukon (1898), l'Alberta et la Saskatchewan (1905), Terre-Neuve-et-Labrador (1949) et le Nunavut (1999)."
+      ],
+      "bullets": []
+    },
+    {
+      "id": "challenge-in-the-west",
+      "heading": "Contestation dans l'Ouest",
+      "paragraphs": [
+        "Quand le Canada prend possession du Nord-Ouest en 1869, les Métis de la rivière Rouge ne sont pas consultés. Louis Riel mène une révolte armée, menant à la création du Manitoba comme nouvelle province en 1870.",
+        "Une deuxième révolte menée par Riel en 1885 en Saskatchewan actuelle mène à son procès et à son exécution pour haute trahison, jugement fortement contesté au Québec. Riel est vu par beaucoup comme un défenseur des droits des Métis et le père du Manitoba.",
+        "La Colombie-Britannique se joint au Canada en 1871 après la promesse d'un chemin de fer vers la côte Ouest. Le dernier crampon du Chemin de fer Canadien Pacifique est posé le 7 novembre 1885, construit avec le travail d'ouvriers européens et chinois; les travailleurs chinois subissent plus tard une taxe d'entrée discriminatoire, pour laquelle le gouvernement du Canada s'est excusé en 2006."
+      ],
+      "bullets": []
+    },
+    {
+      "id": "world-wars-and-democracy",
+      "heading": "Les guerres mondiales et l'expansion de la démocratie",
+      "paragraphs": [
+        "Plus de 600 000 Canadiens participent à la Première Guerre mondiale. Le Corps canadien s'empare de la crête de Vimy en avril 1917, consolidant sa réputation de bravoure; le 9 avril est le Jour de la bataille de Vimy. La guerre prend fin à l'Armistice du 11 novembre 1918, aujourd'hui jour du Souvenir.",
+        "En 1916, le Manitoba devient la première province à accorder le droit de vote aux femmes. En 1917, le gouvernement fédéral accorde le droit de vote à certaines femmes aux élections fédérales, et dès 1918, la plupart des Canadiennes de 21 ans et plus peuvent voter aux élections fédérales. En 1921, Agnes Macphail devient la première femme élue au Parlement.",
+        "Plus d'un million de Canadiens et de Terre-Neuviens participent à la Seconde Guerre mondiale. Le jour J, le 6 juin 1944, 15 000 soldats canadiens s'emparent de la plage Juno lors de l'invasion alliée de la Normandie.",
+        "Pendant la Seconde Guerre mondiale, le gouvernement fédéral déplace de force des Canadiens d'origine japonaise de la Colombie-Britannique et vend leurs biens sans compensation; le gouvernement du Canada a présenté ses excuses pour cela en 1988."
+      ],
+      "bullets": []
+    }
+  ]
+}

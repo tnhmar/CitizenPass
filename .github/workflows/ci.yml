@@ -37,9 +37,9 @@ jobs:
         run: npm test -- --ci --watchAll=false
 
   build-android:
-    name: Build Android APK (EAS)
+    name: Build Android APK (local, manual trigger only)
     needs: test
-    if: github.event_name != 'pull_request'
+    if: github.event_name == 'workflow_dispatch'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -53,69 +53,25 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Setup EAS
-        uses: expo/expo-github-action@v8
+      - name: Setup JDK 17
+        uses: actions/setup-java@v4
         with:
-          eas-version: latest
-          token: ${{ secrets.EXPO_TOKEN }}
+          distribution: temurin
+          java-version: "17"
 
-      - name: Build Android APK
-        run: eas build --platform android --profile preview --non-interactive --wait --json > android-build.json
+      - name: Generate native Android project (expo prebuild)
+        run: npx expo prebuild --platform android --no-install
 
-      - name: Extract Android artifact URL
-        id: android-artifact
-        run: |
-          URL=$(node -e "console.log(JSON.parse(require('fs').readFileSync('android-build.json','utf8'))[0].artifacts.buildUrl)")
-          echo "url=$URL" >> "$GITHUB_OUTPUT"
+      - name: Make gradlew executable
+        run: chmod +x android/gradlew
 
-      - name: Download APK
-        run: curl -L "${{ steps.android-artifact.outputs.url }}" -o citizenpass.apk
+      - name: Build debug APK locally with Gradle
+        working-directory: android
+        run: ./gradlew assembleDebug --no-daemon
 
       - name: Upload APK artifact
         uses: actions/upload-artifact@v4
         with:
-          name: citizenpass-android-apk
-          path: citizenpass.apk
-          retention-days: 14
-
-  build-ios:
-    name: Build iOS IPA (EAS, ad-hoc)
-    needs: test
-    if: github.event_name != 'pull_request'
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Setup Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: 18
-
-      - name: Install dependencies
-        run: npm install
-
-      - name: Setup EAS
-        uses: expo/expo-github-action@v8
-        with:
-          eas-version: latest
-          token: ${{ secrets.EXPO_TOKEN }}
-
-      - name: Build iOS IPA
-        run: eas build --platform ios --profile preview --non-interactive --wait --json > ios-build.json
-
-      - name: Extract iOS artifact URL
-        id: ios-artifact
-        run: |
-          URL=$(node -e "console.log(JSON.parse(require('fs').readFileSync('ios-build.json','utf8'))[0].artifacts.buildUrl)")
-          echo "url=$URL" >> "$GITHUB_OUTPUT"
-
-      - name: Download IPA
-        run: curl -L "${{ steps.ios-artifact.outputs.url }}" -o citizenpass.ipa
-
-      - name: Upload IPA artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: citizenpass-ios-ipa
-          path: citizenpass.ipa
+          name: citizenpass-android-debug-apk
+          path: android/app/build/outputs/apk/debug/app-debug.apk
           retention-days: 14

@@ -2,44 +2,35 @@
 
 ## Overview
 
-The GitHub Actions workflow at `.github/workflows/ci.yml` runs on every push and pull request to `main`, and can also be triggered manually (`workflow_dispatch`).
+The GitHub Actions workflow at `.github/workflows/ci.yml` has two jobs:
 
-## Jobs
+1. **test** — runs automatically on every push to `main` and on every pull request. Installs dependencies, then runs `npm run typecheck`, `npm run lint`, and `npm test`.
+2. **build-android** — runs **only** when the workflow is triggered manually (`workflow_dispatch`, via the "Run workflow" button in the GitHub Actions tab). It is never triggered automatically by a commit or pull request.
 
-1. **test** — installs dependencies, runs `npm run typecheck`, `npm run lint`, and `npm test`. Runs on every push and pull request.
-2. **build-android** — builds an installable `.apk` via EAS Build (`preview` profile, `buildType: apk`), downloads it, and uploads it as a GitHub Actions artifact. Runs only on pushes to `main` (not on pull requests), after `test` succeeds.
-3. **build-ios** — builds an ad-hoc `.ipa` via EAS Build (`preview` profile, `distribution: internal`), downloads it, and uploads it as a GitHub Actions artifact. Runs only on pushes to `main`, after `test` succeeds.
+There is currently no iOS build job and no dependency on EAS Build, EAS cloud services, or an `EXPO_TOKEN` secret. Android builds are produced entirely locally on the GitHub-hosted runner using `expo prebuild` + Gradle — no Expo account, no cloud build queue, no token required.
 
-Both build jobs use EAS's cloud build infrastructure, so no local Android SDK or macOS/Xcode runner is required in GitHub Actions.
+## Why local-only Android, no EAS
 
-## One-time setup required (cannot be automated by CI)
+- `npx expo prebuild --platform android` generates the native `android/` project directly in the workflow, from your Expo config (`app.json`).
+- `./gradlew assembleDebug` then builds a debug APK using the Android SDK already preinstalled on GitHub's `ubuntu-latest` runners, with JDK 17 set up via `actions/setup-java`.
+- The resulting `app-debug.apk` is uploaded as a workflow artifact you can download and sideload onto a real Android device (enable "Install unknown apps" for the source you use to transfer it).
+- A debug APK is unsigned with a release key, so it is suitable for testing/sideloading but not for Google Play submission. Release signing (a real keystore) is a separate, deliberate step to add later if/when you need a Play Store build — it is intentionally not automated here.
 
-### 1. Expo access token
+## Why iOS is excluded for now
 
-1. Create an Expo account and an EAS project for this repository (`eas init` once, locally).
-2. Generate an access token at https://expo.dev/accounts/[account]/settings/access-tokens.
-3. Add it to the repository as a GitHub Actions secret named `EXPO_TOKEN` (**Settings → Secrets and variables → Actions**).
+Apple does not allow real-device installs without either (a) EAS's cloud build + ad-hoc signing (which needs `EXPO_TOKEN` plus Apple Developer credentials configured with EAS), or (b) a macOS runner with Xcode and your own signing certificates. Since the goal right now is to avoid any cloud token requirement, the iOS build job has been removed. It can be reintroduced later as a separate, explicitly manual job once you're ready to set up Apple signing.
 
-### 2. Android signing
+## Triggering an Android build
 
-EAS automatically generates and manages an Android keystore for the `preview` profile the first time you run a build (locally: `eas build --platform android --profile preview`). No manual keystore upload is required for ad-hoc/internal distribution APKs.
+1. Go to the repository's **Actions** tab.
+2. Select the **CI** workflow.
+3. Click **Run workflow** (this is the `workflow_dispatch` trigger).
+4. Once it completes, download the `citizenpass-android-debug-apk` artifact from the run's summary page.
 
-### 3. iOS signing and device registration (required for real-device install)
-
-Apple requires ad-hoc builds to be signed with a distribution certificate and a provisioning profile that explicitly lists the UDIDs of test devices. This must be configured once, from a machine with access to your Apple Developer Program account:
-
-1. Run `eas credentials` locally and let EAS manage your Apple distribution certificate and ad-hoc provisioning profile (stored securely on Expo's servers, not in this repository).
-2. Register each real iOS test device's UDID with EAS: `eas device:create`.
-3. Re-run credential setup any time a new device needs to be added, since Apple ad-hoc profiles only work on registered UDIDs.
-
-Once credentials are configured on EAS, CI only needs `EXPO_TOKEN` — it does not need your Apple ID, certificates, or private keys, and none of those are ever stored in this repository or in GitHub Actions secrets.
-
-## Installing the build artifacts
-
-- **Android**: download the `citizenpass-android-apk` workflow artifact, transfer the `.apk` to an Android device, and install it (enable "Install unknown apps" for the source used).
-- **iOS**: download the `citizenpass-ios-ipa` workflow artifact. Installing an ad-hoc `.ipa` on a real iPhone requires a device management tool (for example, installing via Apple Configurator, or hosting the `.ipa` through a service compatible with ad-hoc distribution). The device's UDID must already be registered in the ad-hoc provisioning profile (see setup step 3), or the install will fail with a provisioning error — this is an Apple platform restriction, not a CitizenPass limitation.
+Regular commits and pull requests will only run the **test** job — they will not build an APK.
 
 ## Notes
 
-- No secrets, certificates, or provisioning profiles are stored in this repository.
-- `build-android` and `build-ios` are skipped for pull requests to avoid consuming EAS build credits on every PR; they run on pushes to `main` and on manual `workflow_dispatch`.
+- No secrets, tokens, certificates, or provisioning profiles are required or stored for this pipeline.
+- If native Android configuration ever needs to persist across prebuilds (custom Gradle changes, native modules, etc.), consider committing the generated `android/` folder instead of regenerating it on every manual build — that is a deliberate future decision, not the current setup.
+- `eas.json` remains in the repository for optional, manual, non-CI EAS builds later (e.g., if you personally want a cloud-built iOS ad-hoc IPA); it is not used by this workflow.
