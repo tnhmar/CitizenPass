@@ -23,6 +23,14 @@
       "questionsPath": "src/data/questions/canadas-history.json",
       "questionCount": 14,
       "reviewStatus": "verified"
+    },
+    {
+      "id": "modern-canada",
+      "en": {"title": "Modern Canada", "contentPath": "src/data/content/modern-canada.en.json"},
+      "fr": {"title": "Le Canada moderne", "contentPath": "src/data/content/modern-canada.fr.json"},
+      "questionsPath": "src/data/questions/modern-canada.json",
+      "questionCount": 15,
+      "reviewStatus": "verified"
     }
   ]
 }

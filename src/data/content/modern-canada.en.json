@@ -1,0 +1,58 @@
+{
+  "chapterId": "modern-canada",
+  "title": "Modern Canada",
+  "source": {
+    "guide": "Discover Canada",
+    "language": "en",
+    "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+    "sourceUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/modern-canada.html",
+    "verifiedAt": "2026-08-17"
+  },
+  "sections": [
+    {
+      "id": "trade-and-economic-growth",
+      "heading": "Trade and Economic Growth",
+      "paragraphs": [
+        "Postwar Canada enjoyed record prosperity and material progress. The discovery of oil in Alberta in 1947 began Canada's modern energy industry. In 1951, for the first time, a majority of Canadians were able to afford adequate food, shelter and clothing.",
+        "As prosperity grew, so did the ability to support social assistance programs. Unemployment insurance (now called \"employment insurance\") was introduced by the federal government in 1940. Old Age Security was devised as early as 1927, and the Canada and Quebec Pension Plans in 1965."
+      ],
+      "bullets": []
+    },
+    {
+      "id": "international-engagement",
+      "heading": "International Engagement",
+      "paragraphs": [
+        "The Cold War began when several liberated countries of eastern Europe became part of a Communist bloc controlled by the Soviet Union. Canada joined with other democratic countries of the West to form the North Atlantic Treaty Organization (NATO), a military alliance, and with the United States in the North American Aerospace Defence Command (NORAD).",
+        "Canada joined international organizations such as the United Nations (UN). It participated in the UN operation defending South Korea in the Korean War (1950–53), with 500 dead and 1,000 wounded. Canada has taken part in numerous UN peacekeeping missions in places as varied as Egypt, Cyprus and Haiti, as well as other international security operations such as those in the former Yugoslavia and Afghanistan."
+      ],
+      "bullets": []
+    },
+    {
+      "id": "canada-and-quebec",
+      "heading": "Canada and Quebec",
+      "paragraphs": [
+        "Quebec experienced an era of rapid change in the 1960s known as the Quiet Revolution. In 1963 Parliament established the Royal Commission on Bilingualism and Biculturalism, which led to the Official Languages Act (1969), guaranteeing French and English services in the federal government across Canada.",
+        "The movement for Quebec sovereignty gained strength but was defeated in a referendum in the province in 1980. After much negotiation, in 1982 the Constitution was amended without the agreement of Quebec. Though sovereignty was again defeated in a second referendum in 1995, the autonomy of Quebec within Canada remains a lively topic."
+      ],
+      "bullets": []
+    },
+    {
+      "id": "a-changing-society",
+      "heading": "A Changing Society",
+      "paragraphs": [
+        "Most Canadians of Asian descent had in the past been denied the vote in federal and provincial elections. In 1948 the last of these, the Japanese-Canadians, gained the right to vote. Aboriginal people were granted the vote in 1960. Today every citizen over the age of 18 may vote.",
+        "Canada welcomed thousands of refugees from Communist oppression, including about 37,000 who escaped Soviet tyranny in Hungary in 1956. With the Communist victory in the Vietnam War in 1975, many Vietnamese fled, including over 50,000 who sought refuge in Canada."
+      ],
+      "bullets": []
+    },
+    {
+      "id": "arts-culture-and-inventions",
+      "heading": "Arts, Culture, and Great Canadian Discoveries",
+      "paragraphs": [
+        "Canadian artists and scientists have achieved international renown. Basketball was invented by Canadian James Naismith in 1891. In 1980, Terry Fox began his cross-country \"Marathon of Hope\" to raise money for cancer research after losing his right leg to cancer.",
+        "Notable Canadian discoveries and inventions include: Alexander Graham Bell's idea for the telephone; Joseph-Armand Bombardier's invention of the snowmobile; Sir Sandford Fleming's invention of the world system of standard time zones; Mathew Evans and Henry Woodward's early electric light bulb; Reginald Fessenden's contribution to the invention of radio; Dr. Wilder Penfield's pioneering brain surgery; Dr. John A. Hopps' invention of the first cardiac pacemaker; the Canadarm robotic arm; and Research In Motion's BlackBerry."
+      ],
+      "bullets": []
+    }
+  ]
+}

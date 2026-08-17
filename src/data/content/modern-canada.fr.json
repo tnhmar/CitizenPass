@@ -1,0 +1,58 @@
+{
+  "chapterId": "modern-canada",
+  "title": "Le Canada moderne",
+  "source": {
+    "guide": "Découvrir le Canada",
+    "language": "fr",
+    "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+    "sourceUrl": "https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/canada-moderne.html",
+    "verifiedAt": "2026-08-17"
+  },
+  "sections": [
+    {
+      "id": "trade-and-economic-growth",
+      "heading": "Commerce et croissance économique",
+      "paragraphs": [
+        "Le Canada d'après-guerre connaît une prospérité record et d'importants progrès. La découverte de gisements de pétrole en Alberta en 1947 lance l'industrie énergétique moderne du Canada. En 1951, pour la première fois, une majorité de Canadiens peuvent se nourrir, se loger et se vêtir de manière adéquate.",
+        "Plus la prospérité du Canada grandit, plus croît sa capacité de soutenir ses programmes d'aide sociale. Le gouvernement fédéral crée, en 1940, l'assurance-chômage (maintenant appelée « assurance-emploi »); le Programme de la sécurité de la vieillesse remonte à 1927; le Régime de pensions du Canada et le Régime des rentes du Québec existent depuis 1965."
+      ],
+      "bullets": []
+    },
+    {
+      "id": "international-engagement",
+      "heading": "Engagement international",
+      "paragraphs": [
+        "La Guerre froide débute quand plusieurs pays libérés d'Europe de l'Est deviennent membres d'un bloc communiste contrôlé par l'Union soviétique. Le Canada s'unit à d'autres pays démocratiques de l'Occident pour former l'Organisation du traité de l'Atlantique Nord (OTAN), une alliance militaire, et aux États-Unis pour créer le Commandement de la défense aérospatiale de l'Amérique du Nord (NORAD).",
+        "Le Canada devient membre d'organisations internationales telles que l'Organisation des Nations Unies (ONU). Il participe à l'opération de l'ONU en vue de défendre la Corée du Sud dans la guerre de Corée (1950-1953), avec un bilan de 500 morts et de 1 000 blessés. Il prend aussi part à de nombreuses missions de maintien de la paix de l'ONU dans des pays aussi divers que l'Égypte, Chypre et Haïti."
+      ],
+      "bullets": []
+    },
+    {
+      "id": "canada-and-quebec",
+      "heading": "Le Canada et le Québec",
+      "paragraphs": [
+        "Les années 1960 sont au Québec une époque de changements rapides appelée la « Révolution tranquille ». En 1963, le Parlement établit la Commission royale d'enquête sur le bilinguisme et le biculturalisme, qui aboutit à l'adoption de la Loi sur les langues officielles (1969), garantissant des services offerts en français et en anglais par le gouvernement fédéral partout au Canada.",
+        "Le mouvement pour la souveraineté du Québec prend de l'ampleur, mais il est défait lors d'un référendum organisé dans la province en 1980. Après beaucoup de négociations, en 1982, la Constitution est modifiée sans l'accord du Québec. Même si le mouvement pour la souveraineté est défait une fois de plus lors d'un second référendum en 1995, l'autonomie du Québec dans le Canada suscite encore des débats à l'heure actuelle."
+      ],
+      "bullets": []
+    },
+    {
+      "id": "a-changing-society",
+      "heading": "Une société en évolution",
+      "paragraphs": [
+        "La plupart des Canadiens d'origine asiatique s'étaient vu refuser dans le passé le droit de voter aux élections fédérales et provinciales, mais les derniers d'entre eux à ne pas posséder ce droit, les Canadiens d'origine japonaise, finissent par l'obtenir en 1948. Les Autochtones, quant à eux, acquièrent le droit de vote en 1960. Aujourd'hui, tous les citoyens âgés d'au moins 18 ans peuvent voter.",
+        "Le Canada accueille des milliers de réfugiés fuyant l'oppression communiste, dont environ 37 000 ayant échappé à la tyrannie soviétique en Hongrie en 1956. Avec la victoire communiste de 1975 à la fin de la guerre du Vietnam, beaucoup de Vietnamiens fuient et plus de 50 000 d'entre eux cherchent asile au Canada."
+      ],
+      "bullets": []
+    },
+    {
+      "id": "arts-culture-and-inventions",
+      "heading": "Les arts, la culture et les grandes découvertes canadiennes",
+      "paragraphs": [
+        "Les artistes et scientifiques canadiens ont acquis une renommée internationale. C'est le Canadien James Naismith qui invente le basket-ball en 1891. En 1980, Terry Fox commence son « marathon de l'espoir » à travers le pays afin d'amasser des fonds pour la recherche sur le cancer, après avoir perdu sa jambe droite à la suite d'un cancer.",
+        "Parmi les grandes découvertes et inventions canadiennes : l'idée du téléphone d'Alexander Graham Bell; l'invention de la motoneige par Joseph-Armand Bombardier; l'invention du système mondial des fuseaux horaires par sir Sandford Fleming; la première ampoule électrique de Mathew Evans et Henry Woodward; la contribution de Reginald Fessenden à l'invention de la radio; la chirurgie cérébrale pionnière du Dr Wilder Penfield; l'invention du premier stimulateur cardiaque par le Dr John A. Hopps; le bras robotique Canadarm; et le BlackBerry de Research In Motion."
+      ],
+      "bullets": []
+    }
+  ]
+}
