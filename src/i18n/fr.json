@@ -5,10 +5,21 @@
   },
   "home": {
     "continueStudying": "Continuer l'étude",
+    "continueStudyingDescription": "Parcourez les chapitres du guide d'étude officiel",
     "practice": "Pratique",
+    "practiceDescription": "Questions aléatoires avec rétroaction et sources instantanées",
     "simulatedExam": "Examen simulé",
+    "simulatedExamDescription": "20 questions, 45 minutes, réussite à 15/20",
     "progress": "Progrès",
-    "settings": "Paramètres"
+    "progressDescription": "Consultez vos statistiques et vos chapitres à revoir",
+    "settings": "Paramètres",
+    "settingsDescription": "Langue, thème et données",
+    "yourProgress": "Votre progrès",
+    "practiceAccuracy": "Précision en pratique",
+    "practiceAttempts": "Questions répondues",
+    "chaptersStarted": "Chapitres commencés",
+    "bookmarks": "Questions enregistrées",
+    "noAttemptsYet": "Aucune tentative de pratique pour l'instant"
   },
   "study": {
     "title": "Étude",
