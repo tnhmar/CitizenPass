@@ -39,18 +39,21 @@ This register tracks the official source documents used as the factual authority
 | `how-canadians-govern-themselves` | How Canadians Govern Themselves / Les Canadiens et leur système de gouvernement | 12 | verified | 2026-08-17 |
 | `federal-elections` | Federal Elections / Les élections fédérales | 10 | verified | 2026-08-17 |
 | `justice-system` | The Justice System / Le système de justice | 6 | verified | 2026-08-17 |
+| `canadian-symbols` | Canadian Symbols / Les symboles canadiens | 16 | verified | 2026-08-17 |
 
-Question counts are intentionally not fixed per chapter — see `docs/content-governance.md`, "Question count policy" (critical section). `justice-system` is a short chapter with fewer distinct testable facts, so it correctly received fewer verified questions than the longer chapters.
+Question counts are intentionally not fixed per chapter — see `docs/content-governance.md`, "Question count policy" (critical section). `canadian-symbols` is a very fact-dense chapter, so it earned the largest verified question set to date.
+
+## Time-sensitive facts excluded from `canadian-symbols`
+
+Per `docs/content-governance.md`, "Time-sensitive facts," the live guide page for this chapter contains an internally inconsistent, outdated reference to the reigning monarch: it states "Queen Elizabeth II... celebrates her Diamond Jubilee... in 2012," but the same page's Royal Anthem lyrics have already been updated to "God Save the King." Queen Elizabeth II died in 2022 and King Charles III is now the Sovereign. **No question about the identity of the current monarch was created from this chapter.** All questions instead test stable historical facts that do not depend on who currently holds the Crown.
 
 ## Time-sensitive facts excluded from `federal-elections`
 
-Per `docs/content-governance.md`, "Time-sensitive facts," the following facts appear in the live guide page but were deliberately **excluded** from the verified question bank because they are numeric/compositional facts that change over time and the guide's own page has not been kept current:
-
-- **"Canada is divided into 308 electoral districts."** Canada has had 338 federal electoral districts since the 2015 general election (following the 2012 redistribution). The guide's page (fetched 2026-08-17) still says 308, which is outdated.
-- **"There are three major political parties currently represented in the House of Commons."** Party standings change with every election.
+- **"Canada is divided into 308 electoral districts."** Canada has had 338 since 2015; the guide page is outdated.
+- **"Three major political parties currently represented in the House of Commons."** Party standings change with every election.
 
 Notes:
-- Chapter content and question citations for all seven chapters were sourced from the official `canada.ca` online HTML guides (English and French), not the attached PDF, because the attached PDF's body-text layer extracted as garbled/unreadable characters. Diagram labels and the Oath of Citizenship extracted correctly from the PDF and were cross-checked where relevant.
+- Chapter content and question citations for all eight chapters were sourced from the official `canada.ca` online HTML guides (English and French), not the attached PDF, because the attached PDF's body-text layer extracted as garbled/unreadable characters.
 - Printed/PDF page numbers are not recorded for these chapters' citations because they could not be reliably verified against the unreadable PDF text layer.
 - Edition identifier `Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8` was confirmed against the attached PDF's colophon text (page 2), which extracted correctly.
 - `who-we-are` source pages: English — https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/who-are-canadians.html ; French — https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/qui-sont-canadiens.html
@@ -59,3 +62,4 @@ Notes:
 - `how-canadians-govern-themselves` source pages: English — https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/how-canadians-govern-themselves.html ; French — https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/canadiens-systeme-gouvernement.html
 - `federal-elections` source pages: English — https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/federal-elections.html ; French — https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/elections-federales.html
 - `justice-system` source pages: English — https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/justice-system.html ; French — https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/systeme-justice.html
+- `canadian-symbols` source pages: English — https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/canadian-symbols.html ; French — https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/symboles-canadiens.html

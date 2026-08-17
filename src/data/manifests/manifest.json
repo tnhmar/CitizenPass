@@ -55,6 +55,14 @@
       "questionsPath": "src/data/questions/justice-system.json",
       "questionCount": 6,
       "reviewStatus": "verified"
+    },
+    {
+      "id": "canadian-symbols",
+      "en": {"title": "Canadian Symbols", "contentPath": "src/data/content/canadian-symbols.en.json"},
+      "fr": {"title": "Les symboles canadiens", "contentPath": "src/data/content/canadian-symbols.fr.json"},
+      "questionsPath": "src/data/questions/canadian-symbols.json",
+      "questionCount": 16,
+      "reviewStatus": "verified"
     }
   ]
 }

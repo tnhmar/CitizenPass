@@ -1,0 +1,107 @@
+{
+  "chapterId": "canadian-symbols",
+  "title": "Canadian Symbols",
+  "source": {
+    "guide": "Discover Canada",
+    "language": "en",
+    "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+    "sourceUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/canadian-symbols.html",
+    "verifiedAt": "2026-08-17"
+  },
+  "sections": [
+    {
+      "id": "intro",
+      "heading": null,
+      "paragraphs": [
+        "Canada has many important symbols — objects, events, and people that have special meaning. Together they help explain what it means to be Canadian and express our national identity."
+      ],
+      "bullets": []
+    },
+    {
+      "id": "the-crown",
+      "heading": "The Canadian Crown",
+      "paragraphs": [
+        "The Crown has been a symbol of the state in Canada for 400 years. Canada has been a constitutional monarchy in its own right since Confederation in 1867. The Crown is a symbol of government, including Parliament, the legislatures, the courts, police services and the Canadian Forces."
+      ],
+      "bullets": []
+    },
+    {
+      "id": "flags-and-symbols",
+      "heading": "Flags, the Maple Leaf, and the Fleur-de-lys",
+      "paragraphs": [
+        "A new Canadian flag was raised for the first time in 1965. The red-white-red pattern comes from the flag of the Royal Military College, Kingston, founded in 1876. The Canadian Red Ensign served as the Canadian flag for about 100 years before that.",
+        "The maple leaf is Canada’s best-known symbol. Maple leaves were adopted as a symbol by French-Canadians in the 1700s and have appeared on Canadian uniforms and insignia since the 1850s.",
+        "The fleur-de-lys is said to have been adopted by the French king in the year 496 and became the symbol of French royalty for more than a thousand years, including the colony of New France. In 1948, Quebec adopted its own flag, based on the Cross and the fleur-de-lys."
+      ],
+      "bullets": []
+    },
+    {
+      "id": "coat-of-arms-and-parliament",
+      "heading": "Coat of Arms and Parliament Buildings",
+      "paragraphs": [
+        "As an expression of national pride after the First World War, Canada adopted an official coat of arms and a national motto, A Mari Usque Ad Mare, which in Latin means “from sea to sea.”",
+        "The Parliament Buildings were completed in the 1860s. The Centre Block was destroyed by an accidental fire in 1916 and rebuilt in 1922. The Library is the only part of the original building remaining. The Peace Tower was completed in 1927 in memory of the First World War."
+      ],
+      "bullets": []
+    },
+    {
+      "id": "popular-sports",
+      "heading": "Popular Sports",
+      "paragraphs": [
+        "Hockey is Canada’s most popular spectator sport and is considered to be the national winter sport. The National Hockey League plays for the championship Stanley Cup, donated by Lord Stanley, the Governor General, in 1892.",
+        "Canadian football is the second most popular sport. Curling, an ice game introduced by Scottish pioneers, is popular. Lacrosse, an ancient sport first played by Aboriginals, is the official summer sport."
+      ],
+      "bullets": []
+    },
+    {
+      "id": "the-beaver",
+      "heading": "The Beaver",
+      "paragraphs": [
+        "The beaver was adopted centuries ago as a symbol of the Hudson’s Bay Company. It became an emblem of the St. Jean Baptiste Society, a French-Canadian patriotic association, in 1834. It can be seen on the five-cent coin and on the coats of arms of Saskatchewan and Alberta."
+      ],
+      "bullets": []
+    },
+    {
+      "id": "official-languages",
+      "heading": "Canada's Official Languages",
+      "paragraphs": [
+        "English and French are the two official languages and are important symbols of identity. You must have adequate knowledge of English or French to become a Canadian citizen; adult applicants 55 years of age and over are exempted from this requirement.",
+        "Parliament passed the Official Languages Act in 1969. It has three main objectives: establish equality between French and English in Parliament, the Government of Canada and institutions subject to the Act; maintain and develop official language minority communities in Canada; and promote equality of French and English in Canadian society."
+      ],
+      "bullets": []
+    },
+    {
+      "id": "national-anthem",
+      "heading": "National Anthem",
+      "paragraphs": [
+        "O Canada was proclaimed as the National Anthem in 1980. It was first sung in Québec City in 1880. French and English Canadians sing different words to the National Anthem."
+      ],
+      "bullets": []
+    },
+    {
+      "id": "order-of-canada-and-honours",
+      "heading": "The Order of Canada and Other Honours",
+      "paragraphs": [
+        "Canada started its own honours system with the Order of Canada in 1967, the centennial of Confederation.",
+        "The Victoria Cross (V.C.) is the highest honour available to Canadians, awarded for the most conspicuous bravery or extreme devotion to duty in the presence of the enemy. It has been awarded to 96 Canadians since 1854. Lieutenant Alexander Roberts Dunn, born in present-day Toronto, was the first Canadian to be awarded the Victoria Cross, for his service in the Charge of the Light Brigade at Balaclava (1854) in the Crimean War."
+      ],
+      "bullets": []
+    },
+    {
+      "id": "national-holidays",
+      "heading": "National Public Holidays and Other Important Dates",
+      "paragraphs": [],
+      "bullets": [
+        "New Year's Day — January 1",
+        "Good Friday — Friday immediately preceding Easter Sunday",
+        "Victoria Day — Monday preceding May 25",
+        "Canada Day — July 1",
+        "Labour Day — First Monday of September",
+        "Thanksgiving Day — Second Monday of October",
+        "Remembrance Day — November 11",
+        "Christmas Day — December 25",
+        "Boxing Day — December 26"
+      ]
+    }
+  ]
+}
