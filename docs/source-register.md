@@ -33,8 +33,10 @@ This register tracks the official source documents used as the factual authority
 | Chapter ID | Guide chapter | Questions | Review status | Verified |
 |---|---|---|---|---|
 | `rights-responsibilities` | Rights and Responsibilities of Citizenship / Les droits et responsabilités liés à la citoyenneté | 8 | verified | 2026-08-17 |
+| `who-we-are` | Who We Are / Qui sommes-nous, les Canadiens? | 8 | verified | 2026-08-17 |
 
 Notes:
-- Chapter content and question citations for `rights-responsibilities` were sourced from the official `canada.ca` online HTML guides (English and French), not the attached PDF, because the attached PDF's body-text layer extracted as garbled/unreadable characters (likely a font-encoding issue in that scan). Diagram labels and the Oath of Citizenship extracted correctly from the PDF and were cross-checked where relevant.
-- Printed/PDF page numbers are not recorded for this chapter's citations because they could not be reliably verified against the unreadable PDF text layer. If a clean-text PDF becomes available, backfill `printedPage`/`pdfPage` fields and update `verifiedAt`.
+- Chapter content and question citations for `rights-responsibilities` and `who-we-are` were sourced from the official `canada.ca` online HTML guides (English and French), not the attached PDF, because the attached PDF's body-text layer extracted as garbled/unreadable characters (likely a font-encoding issue in that scan). Diagram labels and the Oath of Citizenship extracted correctly from the PDF and were cross-checked where relevant.
+- Printed/PDF page numbers are not recorded for these chapters' citations because they could not be reliably verified against the unreadable PDF text layer. If a clean-text PDF becomes available, backfill `printedPage`/`pdfPage` fields and update `verifiedAt`.
 - Edition identifier `Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8` was confirmed against the attached PDF's colophon text (page 2), which extracted correctly.
+- `who-we-are` source pages: English — https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/who-are-canadians.html ; French — https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/qui-sont-canadiens.html

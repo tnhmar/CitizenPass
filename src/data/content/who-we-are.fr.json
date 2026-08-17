@@ -1,0 +1,55 @@
+{
+  "chapterId": "who-we-are",
+  "title": "Qui sommes-nous, les Canadiens?",
+  "source": {
+    "guide": "Découvrir le Canada",
+    "language": "fr",
+    "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+    "sourceUrl": "https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/qui-sont-canadiens.html",
+    "verifiedAt": "2026-08-17"
+  },
+  "sections": [
+    {
+      "id": "intro",
+      "heading": null,
+      "paragraphs": [
+        "Le Canada est reconnu partout dans le monde comme un pays fort et libre. Les Canadiens sont fiers de leur identité propre. Nous avons hérité de la plus ancienne tradition constitutionnelle continue du monde. Nous sommes la seule monarchie constitutionnelle d’Amérique du Nord. Nos institutions préservent un engagement envers les valeurs de la paix, de l’ordre et de bon gouvernement, énoncées en 1867 dans le premier document constitutionnel du Canada, l’Acte de l’Amérique du Nord britannique.",
+        "Pour comprendre ce que signifie être Canadien, il faut connaître nos trois peuples fondateurs : les Autochtones, les Français et les Britanniques."
+      ],
+      "bullets": []
+    },
+    {
+      "id": "aboriginal-peoples",
+      "heading": "Les peuples autochtones",
+      "paragraphs": [
+        "On croit que les ancêtres des peuples autochtones sont venus d’Asie il y a plusieurs milliers d’années. Ils étaient établis ici bien avant l’arrivée des premiers explorateurs européens en Amérique du Nord.",
+        "Les droits autochtones et les droits découlant de traités sont énoncés dans la Constitution canadienne. Les droits territoriaux ont été garantis pour la première fois par la Proclamation royale de 1763, du roi George III.",
+        "Des années 1800 jusqu’aux années 1980, le gouvernement fédéral a placé de nombreux enfants autochtones dans des pensionnats. En 2008, Ottawa a présenté des excuses officielles à tous les anciens élèves des pensionnats indiens.",
+        "Aujourd’hui, le terme peuples autochtones désigne trois groupes distincts : Indien/Premières Nations, Inuit et Métis.",
+        "Environ 65 pour 100 des peuples autochtones sont des Premières Nations, 30 pour 100 des Métis et 4 pour 100, des Inuits."
+      ],
+      "bullets": []
+    },
+    {
+      "id": "english-and-french",
+      "heading": "Les français et les anglais",
+      "paragraphs": [
+        "Le français et l’anglais définissent la réalité quotidienne de la plupart des gens et sont les deux langues officielles du Canada. Le gouvernement fédéral est tenu par la loi de fournir des services en français et en anglais partout au Canada.",
+        "Le Canada compte aujourd’hui 18 millions d’anglophones — personnes dont la langue maternelle est l’anglais — et 7 millions de francophones — personnes dont la langue maternelle est le français. Le Nouveau-Brunswick est la seule province officiellement bilingue.",
+        "Les Acadiens sont les descendants de colons français établis dès 1604 dans ce qu’on appelle aujourd’hui les Maritimes. De 1755 à 1763, plus des deux tiers des Acadiens ont été déportés hors de leur patrie, un événement appelé le « Grand Dérangement ».",
+        "En 2006, la Chambre des communes a reconnu que les Québécois forment une nation au sein d’un Canada uni."
+      ],
+      "bullets": []
+    },
+    {
+      "id": "diversity",
+      "heading": "La diversité au Canada",
+      "paragraphs": [
+        "Le Canada est souvent appelé une terre d’immigration du fait qu’au cours des deux siècles derniers, des millions de nouveaux arrivants ont contribué à construire et à défendre notre mode de vie.",
+        "La grande majorité des Canadiens se disent chrétiens. Le groupe religieux qui compte le plus de fidèles est celui des catholiques, suivi des Églises issues de la réforme protestante.",
+        "La diversité du Canada s’étend aux Canadiens gais et lesbiennes, qui bénéficient de l’entière protection de la loi et de l’égalité de traitement aux termes de celle-ci, y compris de l’accès au mariage civil."
+      ],
+      "bullets": []
+    }
+  ]
+}

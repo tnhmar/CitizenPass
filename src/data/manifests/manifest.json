@@ -13,6 +13,20 @@
       "questionsPath": "src/data/questions/rights-responsibilities.json",
       "questionCount": 8,
       "reviewStatus": "verified"
+    },
+    {
+      "id": "who-we-are",
+      "en": {
+        "title": "Who We Are",
+        "contentPath": "src/data/content/who-we-are.en.json"
+      },
+      "fr": {
+        "title": "Qui sommes-nous, les Canadiens?",
+        "contentPath": "src/data/content/who-we-are.fr.json"
+      },
+      "questionsPath": "src/data/questions/who-we-are.json",
+      "questionCount": 8,
+      "reviewStatus": "verified"
     }
   ]
 }

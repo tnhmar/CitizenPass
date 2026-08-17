@@ -1,0 +1,55 @@
+{
+  "chapterId": "who-we-are",
+  "title": "Who We Are",
+  "source": {
+    "guide": "Discover Canada",
+    "language": "en",
+    "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+    "sourceUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/who-are-canadians.html",
+    "verifiedAt": "2026-08-17"
+  },
+  "sections": [
+    {
+      "id": "intro",
+      "heading": null,
+      "paragraphs": [
+        "Canada is known around the world as a strong and free country. Canadians are proud of their unique identity. We have inherited the oldest continuous constitutional tradition in the world. We are the only constitutional monarchy in North America. Our institutions uphold a commitment to Peace, Order, and Good Government, a key phrase in Canada’s original constitutional document in 1867, the British North America Act.",
+        "To understand what it means to be Canadian, it is important to know about our three founding peoples—Aboriginal, French and British."
+      ],
+      "bullets": []
+    },
+    {
+      "id": "aboriginal-peoples",
+      "heading": "Aboriginal Peoples",
+      "paragraphs": [
+        "The ancestors of Aboriginal peoples are believed to have migrated from Asia many thousands of years ago. They were well established here long before explorers from Europe first came to North America.",
+        "Aboriginal and treaty rights are in the Canadian Constitution. Territorial rights were first guaranteed through the Royal Proclamation of 1763 by King George III.",
+        "From the 1800s until the 1980s, the federal government placed many Aboriginal children in residential schools. In 2008, Ottawa formally apologized to the former students.",
+        "Today, the term Aboriginal peoples refers to three distinct groups: Indian/First Nations, Inuit, and Métis.",
+        "About 65% of the Aboriginal people are First Nations, while 30% are Métis and 4% Inuit."
+      ],
+      "bullets": []
+    },
+    {
+      "id": "english-and-french",
+      "heading": "English and French",
+      "paragraphs": [
+        "English and French define the reality of day-to-day life for most people and are the country’s official languages. The federal government is required by law to provide services throughout Canada in English and French.",
+        "Today, there are 18 million Anglophones—people who speak English as a first language—and 7 million Francophones—people who speak French as their first language. New Brunswick is the only officially bilingual province.",
+        "The Acadians are the descendants of French colonists who began settling in what are now the Maritime provinces in 1604. Between 1755 and 1763, more than two-thirds of the Acadians were deported from their homeland in what is known as the “Great Upheaval.”",
+        "The House of Commons recognized in 2006 that the Quebecois form a nation within a united Canada."
+      ],
+      "bullets": []
+    },
+    {
+      "id": "diversity",
+      "heading": "Diversity in Canada",
+      "paragraphs": [
+        "Canada is often referred to as a land of immigrants because, over the past 200 years, millions of newcomers have helped to build and defend our way of life.",
+        "The great majority of Canadians identify as Christians. The largest religious affiliation is Catholic, followed by various Protestant churches.",
+        "Canada’s diversity includes gay and lesbian Canadians, who enjoy the full protection of and equal treatment under the law, including access to civil marriage."
+      ],
+      "bullets": []
+    }
+  ]
+}
