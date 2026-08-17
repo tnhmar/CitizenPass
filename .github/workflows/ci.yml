@@ -67,6 +67,17 @@ jobs:
       - name: Generate native Android project (expo prebuild)
         run: npx expo prebuild --platform android --no-install
 
+      - name: DEBUG - inspect expo module versions and generated gradle files
+        run: |
+          echo "===== npm ls expo/expo-modules-core/expo-modules-autolinking ====="
+          npm ls expo expo-modules-core expo-modules-autolinking --all || true
+          echo "===== android/settings.gradle ====="
+          cat android/settings.gradle
+          echo "===== android/gradle/wrapper/gradle-wrapper.properties ====="
+          cat android/gradle/wrapper/gradle-wrapper.properties
+          echo "===== android/build.gradle ====="
+          cat android/build.gradle
+
       - name: Make gradlew executable
         run: chmod +x android/gradlew
 
