@@ -54,7 +54,9 @@ jobs:
         run: npm install
 
       - name: Align Expo SDK patch versions (fixes expo-module-gradle-plugin bug)
-        run: npx expo install --fix --non-interactive
+        run: npx expo install --fix
+        env:
+          CI: 1
 
       - name: Setup JDK 17
         uses: actions/setup-java@v4
