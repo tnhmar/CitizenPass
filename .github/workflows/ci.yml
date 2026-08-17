@@ -77,6 +77,16 @@ jobs:
           cat android/gradle/wrapper/gradle-wrapper.properties
           echo "===== android/build.gradle ====="
           cat android/build.gradle
+          echo "===== node_modules/expo/scripts/autolinking.gradle ====="
+          cat node_modules/expo/scripts/autolinking.gradle
+          echo "===== node_modules/expo-modules-autolinking top-level listing ====="
+          ls -la node_modules/expo-modules-autolinking
+          echo "===== node_modules/expo-modules-autolinking/scripts listing ====="
+          ls -la node_modules/expo-modules-autolinking/scripts || true
+          echo "===== find any expo-gradle-plugin dirs under expo-modules-autolinking ====="
+          find node_modules/expo-modules-autolinking -iname "*gradle-plugin*" || true
+          echo "===== find build.gradle.kts or settings.gradle.kts under expo-modules-autolinking ====="
+          find node_modules/expo-modules-autolinking -iname "*.gradle*" || true
 
       - name: Make gradlew executable
         run: chmod +x android/gradlew
