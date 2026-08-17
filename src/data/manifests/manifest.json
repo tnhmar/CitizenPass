@@ -47,6 +47,14 @@
       "questionsPath": "src/data/questions/federal-elections.json",
       "questionCount": 10,
       "reviewStatus": "verified"
+    },
+    {
+      "id": "justice-system",
+      "en": {"title": "The Justice System", "contentPath": "src/data/content/justice-system.en.json"},
+      "fr": {"title": "Le système de justice", "contentPath": "src/data/content/justice-system.fr.json"},
+      "questionsPath": "src/data/questions/justice-system.json",
+      "questionCount": 6,
+      "reviewStatus": "verified"
     }
   ]
 }

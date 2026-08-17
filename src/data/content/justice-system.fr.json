@@ -1,0 +1,49 @@
+{
+  "chapterId": "justice-system",
+  "title": "Le système de justice",
+  "source": {
+    "guide": "Découvrir le Canada",
+    "language": "fr",
+    "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+    "sourceUrl": "https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/systeme-justice.html",
+    "verifiedAt": "2026-08-17"
+  },
+  "sections": [
+    {
+      "id": "intro",
+      "heading": null,
+      "paragraphs": [
+        "Le système de justice du Canada garantit à chacun l'application régulière de la loi. Notre système judiciaire est fondé sur la présomption d'innocence dans les affaires criminelles, ce qui veut dire que chacun est innocent jusqu'à preuve du contraire.",
+        "Le système juridique du Canada se fonde sur un héritage qui comprend la primauté du droit, la liberté prévue par la loi, les principes démocratiques et l'application régulière de la loi. L'application régulière de la loi est le principe selon lequel le gouvernement doit respecter toutes les garanties juridiques auxquelles a droit une personne en vertu de la loi.",
+        "Le Canada est régi par un système organisé de lois. Ces lois sont des règles écrites ayant pour but de guider les individus dans notre société. Elles sont rédigées par des représentants élus. Les tribunaux règlent les conflits et la police fait respecter les lois. Au Canada, la loi s'applique à tous, y compris aux juges, aux politiciens et à la police."
+      ],
+      "bullets": []
+    },
+    {
+      "id": "courts",
+      "heading": "Les tribunaux",
+      "paragraphs": [
+        "La Cour suprême du Canada est le plus haut tribunal de notre pays. La Cour fédérale du Canada s'occupe des questions concernant le gouvernement fédéral. Dans la plupart des provinces, il y a une cour d'appel et une cour de première instance, qu'on appelle parfois Cour du Banc de la Reine ou Cour suprême. Il y a aussi des tribunaux provinciaux pour des infractions de moindre importance, comme les tribunaux de la famille, les cours des infractions routières, et les tribunaux des petites créances pour les affaires civiles concernant de petites sommes d'argent."
+      ],
+      "bullets": []
+    },
+    {
+      "id": "police",
+      "heading": "La police",
+      "paragraphs": [
+        "Le rôle de la police est de veiller à la sécurité des gens et à l'application de la loi. Vous pouvez demander l'aide de la police dans toutes sortes de situations — s'il y a eu un accident, si quelqu'un vous a volé quelque chose, si vous êtes victime d'une agression, si vous êtes témoin d'un crime ou si quelqu'un que vous connaissez a disparu.",
+        "Il y a différents genres de police au Canada. Il y a des services de police provinciaux en Ontario et au Québec et des services de police municipaux dans toutes les provinces. La Gendarmerie royale du Canada (GRC) applique les lois fédérales dans l'ensemble du Canada et sert de police provinciale dans toutes les provinces et tous les territoires, sauf l'Ontario et le Québec, ainsi que dans certaines municipalités.",
+        "Vous pouvez aussi poser des questions aux agents de police au sujet de leurs services ou de leur conduite si vous avez l'impression que vous devez le faire. Presque tous les services de police au Canada ont un processus grâce auquel vous pouvez faire part de vos préoccupations et demander que des mesures soient prises."
+      ],
+      "bullets": []
+    },
+    {
+      "id": "getting-legal-help",
+      "heading": "Obtenir une aide juridique",
+      "paragraphs": [
+        "Des avocats peuvent vous aider à résoudre des problèmes juridiques et vous représenter en cour. Si vous ne pouvez pas payer les services d'un avocat, la plupart des communautés offrent des services d'aide juridique gratuitement ou à un faible coût."
+      ],
+      "bullets": []
+    }
+  ]
+}
