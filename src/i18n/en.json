@@ -1,0 +1,33 @@
+{
+  "common": {
+    "appName": "CitizenPass",
+    "disclaimer": "CitizenPass is an independent educational tool and is not affiliated with, endorsed by, or sponsored by the Government of Canada."
+  },
+  "home": {
+    "continueStudying": "Continue Studying",
+    "practice": "Practice",
+    "simulatedExam": "Simulated Exam",
+    "progress": "Progress",
+    "settings": "Settings"
+  },
+  "study": {
+    "title": "Study",
+    "chapters": "Chapters"
+  },
+  "practice": {
+    "title": "Practice"
+  },
+  "exam": {
+    "title": "Simulated Exam",
+    "results": "Results"
+  },
+  "progress": {
+    "title": "Progress"
+  },
+  "settings": {
+    "title": "Settings",
+    "language": "Language",
+    "theme": "Theme",
+    "resetData": "Reset local data"
+  }
+}
