@@ -67,37 +67,16 @@ jobs:
       - name: Generate native Android project (expo prebuild)
         run: npx expo prebuild --platform android --no-install
 
-      - name: DEBUG - inspect expo module versions and generated gradle files
-        run: |
-          echo "===== npm ls expo/expo-modules-core/expo-modules-autolinking ====="
-          npm ls expo expo-modules-core expo-modules-autolinking --all || true
-          echo "===== android/settings.gradle ====="
-          cat android/settings.gradle
-          echo "===== android/gradle/wrapper/gradle-wrapper.properties ====="
-          cat android/gradle/wrapper/gradle-wrapper.properties
-          echo "===== android/build.gradle ====="
-          cat android/build.gradle
-          echo "===== node_modules/expo/scripts/autolinking.gradle ====="
-          cat node_modules/expo/scripts/autolinking.gradle
-          echo "===== node_modules/expo-modules-autolinking top-level listing ====="
-          ls -la node_modules/expo-modules-autolinking
-          echo "===== node_modules/expo-modules-autolinking/scripts listing ====="
-          ls -la node_modules/expo-modules-autolinking/scripts || true
-          echo "===== find any expo-gradle-plugin dirs under expo-modules-autolinking ====="
-          find node_modules/expo-modules-autolinking -iname "*gradle-plugin*" || true
-          echo "===== find build.gradle.kts or settings.gradle.kts under expo-modules-autolinking ====="
-          find node_modules/expo-modules-autolinking -iname "*.gradle*" || true
-
       - name: Make gradlew executable
         run: chmod +x android/gradlew
 
-      - name: Build debug APK locally with Gradle
+      - name: Build standalone release APK (bundles JS, no Metro required)
         working-directory: android
-        run: ./gradlew assembleDebug --no-daemon
+        run: ./gradlew assembleRelease --no-daemon
 
       - name: Upload APK artifact
         uses: actions/upload-artifact@v4
         with:
-          name: citizenpass-android-debug-apk
-          path: android/app/build/outputs/apk/debug/app-debug.apk
+          name: citizenpass-android-release-apk
+          path: android/app/build/outputs/apk/release/app-release.apk
           retention-days: 14
