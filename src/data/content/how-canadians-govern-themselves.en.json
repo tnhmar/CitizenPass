@@ -1,0 +1,70 @@
+{
+  "chapterId": "how-canadians-govern-themselves",
+  "title": "How Canadians Govern Themselves",
+  "source": {
+    "guide": "Discover Canada",
+    "language": "en",
+    "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+    "sourceUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/how-canadians-govern-themselves.html",
+    "verifiedAt": "2026-08-17"
+  },
+  "sections": [
+    {
+      "id": "intro",
+      "heading": null,
+      "paragraphs": [
+        "There are three key facts about Canada's system of government: our country is a federal state, a parliamentary democracy and a constitutional monarchy."
+      ],
+      "bullets": []
+    },
+    {
+      "id": "the-federal-state",
+      "heading": "The Federal State",
+      "paragraphs": [
+        "There are federal, provincial, territorial and municipal governments in Canada. The responsibilities of the federal and provincial governments were defined in 1867 in the British North America Act, now known as the Constitution Act, 1867.",
+        "In our federal state, the federal government takes responsibility for matters of national and international concern, such as defence, foreign policy, trade between provinces and with other countries, currency, navigation, criminal law and citizenship. The provinces are responsible for municipal governments, education, health, natural resources, property and civil rights, and highways. The federal government and the provinces share responsibility for agriculture and immigration.",
+        "Each province has its own elected legislative assembly, like the House of Commons in Ottawa. The three northern territories, which have small populations, do not have the status of a province, but their governments and legislatures perform many of the same functions."
+      ],
+      "bullets": []
+    },
+    {
+      "id": "parliamentary-democracy",
+      "heading": "Parliamentary Democracy",
+      "paragraphs": [
+        "In Canada's parliamentary democracy, the people elect members to the House of Commons in Ottawa and to the provincial and territorial legislatures. These representatives are responsible for passing laws, approving and monitoring spending, and keeping the government accountable. Cabinet ministers are accountable to the elected representatives, meaning they must retain the \"confidence of the House\" and must resign if they are defeated in a vote of no confidence.",
+        "Parliament has three parts: the Sovereign (Queen or King), the Senate and the House of Commons. Provincial legislatures consist of the Lieutenant Governor and the elected assembly. In the federal government, the Prime Minister selects the Cabinet ministers and is responsible for the operations and policy of the government. The House of Commons is the chamber of elected representatives, whom Canadians choose in federal elections, normally held every four years. Senators are appointed by the Governor General on the advice of the Prime Minister and serve until age 75. The House of Commons and Senate consider and revise legislation. No bill may become law in Canada until it has passed both Houses and has received Royal Assent, granted by the Governor General on behalf of the Sovereign."
+      ],
+      "bullets": []
+    },
+    {
+      "id": "how-a-bill-becomes-law",
+      "heading": "How a Bill Becomes Law — The Legislative Process",
+      "paragraphs": [
+        "Living in a democracy, Canadian citizens have the right and the responsibility to participate in making decisions that affect them. It is important for Canadians aged 18 or more to participate in their democracy by voting in federal, provincial or territorial, and municipal elections."
+      ],
+      "bullets": [
+        "Step 1: First Reading — The bill is considered read for the first time and is printed.",
+        "Step 2: Second Reading — Members debate the bill’s principle.",
+        "Step 3: Committee Stage — Committee members study the bill clause by clause.",
+        "Step 4: Report Stage — Members can make other amendments.",
+        "Step 5: Third Reading — Members debate and vote on the bill.",
+        "Step 6: Senate — The bill follows a similar process in the Senate.",
+        "Step 7: Royal Assent — The bill receives Royal Assent after being passed by both Houses."
+      ]
+    },
+    {
+      "id": "constitutional-monarchy",
+      "heading": "Constitutional Monarchy",
+      "paragraphs": [
+        "As a constitutional monarchy, Canada's Head of State is a hereditary Sovereign (Queen or King), who reigns in accordance with the Constitution: the rule of law. The Sovereign is part of Parliament and plays an important, non-partisan role as the focus of citizenship and allegiance, most visibly during royal visits to Canada.",
+        "As Head of the Commonwealth, the Sovereign links Canada to 53 other nations that work together to advance social, economic and cultural progress. Other constitutional monarchies around the world include Denmark, Norway, Sweden, Australia, New Zealand, the Netherlands, Spain, Thailand, Japan, Jordan and Morocco.",
+        "There is a clear distinction in Canada between the Head of State — the Sovereign — and the Head of Government — the Prime Minister, who actually runs the country.",
+        "The Sovereign is represented in Canada by the Governor General, who is appointed by the Sovereign on the advice of the Prime Minister, usually for five years. In each of the ten provinces, the Sovereign is represented by the Lieutenant Governor, who is appointed by the Governor General on the advice of the Prime Minister, also usually for five years.",
+        "The interaction of the three branches of government — executive, legislative and judicial — which work together, sometimes with creative tension, helps protect the rights and freedoms of Canadians.",
+        "Each provincial and territorial government has an elected legislative assembly that passes provincial and territorial laws. Members of this assembly are called Members of the Legislative Assembly, Members of the National Assembly, Members of the Provincial Parliament, or Members of the House of Assembly, depending on the province or territory, or simply members.",
+        "In each province, the Premier has a role similar to that of the Prime Minister in the federal government, just as the Lieutenant Governor's role is similar to that of the Governor General. In the three territories, the Commissioner represents the federal government and plays a ceremonial role."
+      ],
+      "bullets": []
+    }
+  ]
+}

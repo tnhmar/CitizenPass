@@ -31,6 +31,14 @@
       "questionsPath": "src/data/questions/modern-canada.json",
       "questionCount": 15,
       "reviewStatus": "verified"
+    },
+    {
+      "id": "how-canadians-govern-themselves",
+      "en": {"title": "How Canadians Govern Themselves", "contentPath": "src/data/content/how-canadians-govern-themselves.en.json"},
+      "fr": {"title": "Les Canadiens et leur système de gouvernement", "contentPath": "src/data/content/how-canadians-govern-themselves.fr.json"},
+      "questionsPath": "src/data/questions/how-canadians-govern-themselves.json",
+      "questionCount": 12,
+      "reviewStatus": "verified"
     }
   ]
 }
