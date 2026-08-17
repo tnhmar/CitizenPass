@@ -63,6 +63,14 @@
       "questionsPath": "src/data/questions/canadian-symbols.json",
       "questionCount": 16,
       "reviewStatus": "verified"
+    },
+    {
+      "id": "canadas-regions",
+      "en": {"title": "Canada's Regions", "contentPath": "src/data/content/canadas-regions.en.json"},
+      "fr": {"title": "Les régions du Canada", "contentPath": "src/data/content/canadas-regions.fr.json"},
+      "questionsPath": "src/data/questions/canadas-regions.json",
+      "questionCount": 18,
+      "reviewStatus": "verified"
     }
   ]
 }

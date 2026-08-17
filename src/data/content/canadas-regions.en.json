@@ -1,0 +1,74 @@
+{
+  "chapterId": "canadas-regions",
+  "title": "Canada's Regions",
+  "source": {
+    "guide": "Discover Canada",
+    "language": "en",
+    "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+    "sourceUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/canadas-regions.html",
+    "verifiedAt": "2026-08-17"
+  },
+  "sections": [
+    {
+      "id": "intro",
+      "heading": null,
+      "paragraphs": [
+        "Canada is the second largest country on earth—10 million square kilometres. Three oceans line Canada’s frontiers: the Pacific Ocean in the west, the Atlantic Ocean in the east, and the Arctic Ocean to the north. Along the southern edge of Canada lies the Canada-United States boundary.",
+        "Canada includes many different geographical areas and five distinct regions: the Atlantic Provinces, Central Canada, the Prairie Provinces, the West Coast, and the Northern Territories.",
+        "Ottawa, located on the Ottawa River, was chosen as the capital in 1857 by Queen Victoria. Canada has ten provinces and three territories. Each province and territory has its own capital city."
+      ],
+      "bullets": []
+    },
+    {
+      "id": "atlantic-provinces",
+      "heading": "The Atlantic Provinces",
+      "paragraphs": [
+        "Newfoundland and Labrador is the most easterly point in North America and has its own time zone. It is the oldest colony of the British Empire and has long been known for its fisheries and coastal fishing villages.",
+        "Prince Edward Island (P.E.I.) is the smallest province, known for its beaches, red soil and agriculture, especially potatoes. P.E.I. is the birthplace of Confederation, connected to mainland Canada by the Confederation Bridge, one of the longest continuous multispan bridges in the world.",
+        "Nova Scotia is the most populous Atlantic province, known for the world’s highest tides in the Bay of Fundy. The capital, Halifax, is Canada’s largest east coast port and home to Canada’s largest naval base.",
+        "New Brunswick was founded by the United Empire Loyalists and has the second largest river system on North America’s Atlantic coastline, the St. John River system. New Brunswick is the only officially bilingual province."
+      ],
+      "bullets": []
+    },
+    {
+      "id": "central-canada",
+      "heading": "Central Canada",
+      "paragraphs": [
+        "Ontario and Quebec make up Central Canada, the industrial and manufacturing heartland, located near the Great Lakes and the St. Lawrence River. Together, Ontario and Quebec produce more than three-quarters of all Canadian manufactured goods.",
+        "Quebec's huge supply of fresh water has made it Canada's largest producer of hydro-electricity, and it is Canada's main producer of pulp and paper. Montreal is Canada's second largest city.",
+        "Toronto is the largest city in Canada and the country's main financial centre. There are five Great Lakes between Ontario and the United States: Lake Ontario, Lake Erie, Lake Huron, Lake Michigan (in the U.S.A.) and Lake Superior, the largest freshwater lake in the world."
+      ],
+      "bullets": []
+    },
+    {
+      "id": "prairie-provinces",
+      "heading": "The Prairie Provinces",
+      "paragraphs": [
+        "Manitoba, Saskatchewan and Alberta are the Prairie Provinces, rich in energy resources and some of the most fertile farmland in the world.",
+        "Manitoba's most populous city is Winnipeg, whose Exchange District includes the most famous street intersection in Canada, Portage and Main.",
+        "Saskatchewan, once known as the “breadbasket of the world,” has 40% of the arable land in Canada. Regina, the capital, is home to the training academy of the Royal Canadian Mounted Police.",
+        "Alberta is the most populous Prairie province. Lake Louise, in the Rocky Mountains, was named after Princess Louise Caroline Alberta, fourth daughter of Queen Victoria. Alberta has five national parks, including Banff National Park, established in 1885. Alberta is the largest producer of oil and gas in Canada."
+      ],
+      "bullets": []
+    },
+    {
+      "id": "west-coast",
+      "heading": "The West Coast",
+      "paragraphs": [
+        "British Columbia is known for its majestic mountains and as Canada's Pacific gateway. The Port of Vancouver is Canada's largest and busiest port. British Columbia has the most extensive provincial park system in Canada, with approximately 600 provincial parks."
+      ],
+      "bullets": []
+    },
+    {
+      "id": "northern-territories",
+      "heading": "The Northern Territories",
+      "paragraphs": [
+        "The Northwest Territories, Nunavut and Yukon contain one-third of Canada's land mass. The North is often referred to as the “Land of the Midnight Sun” because at the height of summer, daylight can last up to 24 hours; in winter, darkness sets in for three months.",
+        "Thousands of miners came to the Yukon during the Gold Rush of the 1890s. Yukon holds the record for the coldest temperature ever recorded in Canada (-63°C). Mount Logan, in the Yukon, is the highest mountain in Canada.",
+        "The Northwest Territories were originally formed in 1870 from Rupert's Land and the North-Western Territory. The capital, Yellowknife, is called the “diamond capital of North America.”",
+        "Nunavut, meaning “our land” in Inuktitut, was established in 1999 from the eastern part of the Northwest Territories. The capital is Iqaluit."
+      ],
+      "bullets": []
+    }
+  ]
+}

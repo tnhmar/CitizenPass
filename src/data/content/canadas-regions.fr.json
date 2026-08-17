@@ -1,0 +1,74 @@
+{
+  "chapterId": "canadas-regions",
+  "title": "Les régions du Canada",
+  "source": {
+    "guide": "Découvrir le Canada",
+    "language": "fr",
+    "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+    "sourceUrl": "https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/regions-canada.html",
+    "verifiedAt": "2026-08-17"
+  },
+  "sections": [
+    {
+      "id": "intro",
+      "heading": null,
+      "paragraphs": [
+        "Le Canada est le deuxième pays du monde en étendue et son territoire couvre près de 10 millions de kilomètres carrés. Trois océans bordent les frontières du Canada : l'océan Pacifique à l'ouest, l'océan Atlantique à l'est et l'océan Arctique au nord. À l'extrémité sud du territoire s'étend la frontière entre le Canada et les États-Unis.",
+        "Le Canada compte de nombreux secteurs géographiques différents et cinq régions distinctes : les provinces de l'Atlantique, le centre du Canada, les provinces des Prairies, la côte Ouest et les territoires du Nord.",
+        "Située sur la rivière des Outaouais, la ville d'Ottawa a été choisie comme capitale du Canada en 1857 par la reine Victoria. Le Canada compte dix provinces et trois territoires, chacun ayant sa capitale."
+      ],
+      "bullets": []
+    },
+    {
+      "id": "atlantic-provinces",
+      "heading": "Les provinces de l'Atlantique",
+      "paragraphs": [
+        "Terre-Neuve-et-Labrador, à l'extrême est de l'Amérique du Nord, occupe son propre fuseau horaire. Terre-Neuve est la plus ancienne colonie de l'Empire britannique et est depuis longtemps reconnue pour ses lieux de pêche et ses villages côtiers de pêcheurs.",
+        "L'Île-du-Prince-Édouard (Î.-P.-É.), la plus petite des provinces, est reconnue pour ses plages, sa terre rouge et son agriculture, particulièrement sa production de pommes de terre. Berceau de la Confédération, l'Î.-P.-É. est reliée à la terre ferme par le pont de la Confédération, l'un des ponts continus à travées multiples les plus longs du monde.",
+        "Parmi les provinces de l'Atlantique, c'est la Nouvelle-Écosse qui a la plus grande population; elle est connue pour sa baie de Fundy, où les marées atteignent des hauteurs inégalées dans le monde. Sa capitale, Halifax, est le plus grand port de la côte Est du Canada et abrite la plus importante base navale du Canada.",
+        "Fondée par les loyalistes de l'Empire-Uni, la province du Nouveau-Brunswick possède le deuxième réseau hydrographique en importance du littoral atlantique de l'Amérique du Nord, soit le réseau de la rivière Saint-Jean. Le Nouveau-Brunswick est la seule province officiellement bilingue."
+      ],
+      "bullets": []
+    },
+    {
+      "id": "central-canada",
+      "heading": "Le Centre du Canada",
+      "paragraphs": [
+        "L'Ontario et le Québec forment la région du Centre du Canada, le centre industriel et manufacturier du pays, située près des Grands Lacs et du fleuve Saint-Laurent. Ensemble, l'Ontario et le Québec produisent plus des trois quarts de tous les biens fabriqués au pays.",
+        "Les immenses réserves d'eau douce du Québec en ont fait le plus grand producteur d'hydroélectricité du pays, et le Québec est le principal producteur de pâtes et papiers du Canada. Montréal est la deuxième ville en importance au Canada.",
+        "Toronto est la plus importante ville du Canada et le principal centre financier du pays. Les cinq Grands Lacs se situent entre l'Ontario et les États-Unis : le lac Ontario, le lac Érié, le lac Huron, le lac Michigan (aux États-Unis) et le lac Supérieur, le plus grand lac d'eau douce au monde."
+      ],
+      "bullets": []
+    },
+    {
+      "id": "prairie-provinces",
+      "heading": "Les provinces des Prairies",
+      "paragraphs": [
+        "Le Manitoba, la Saskatchewan et l'Alberta, qu'on appelle les provinces des Prairies, possèdent d'immenses ressources énergétiques et leurs terres agricoles sont parmi les plus fertiles du monde.",
+        "Winnipeg est la ville la plus peuplée du Manitoba. C'est dans le quartier Exchange District de Winnipeg qu'on trouve l'intersection la plus célèbre du Canada : l'angle de l'avenue Portage et de la rue Main.",
+        "La Saskatchewan, autrefois surnommée « le grenier du monde », possède 40 pour 100 des terres arables du Canada. C'est à Regina, la capitale, que se trouve l'école de la Gendarmerie royale du Canada.",
+        "L'Alberta est la province la plus peuplée des Prairies. Le lac Louise, situé dans les montagnes Rocheuses, a été nommé en l'honneur de la princesse Louise Caroline Alberta, quatrième fille de la reine Victoria. L'Alberta compte cinq parcs nationaux, dont le parc national Banff, fondé en 1885. L'Alberta est la première productrice de pétrole et de gaz du Canada."
+      ],
+      "bullets": []
+    },
+    {
+      "id": "west-coast",
+      "heading": "La côte Ouest",
+      "paragraphs": [
+        "La Colombie-Britannique est connue pour ses montagnes majestueuses et à titre de porte d'entrée du Canada dans le Pacifique. Le port de Vancouver est le plus grand et le plus fréquenté du Canada. La Colombie-Britannique possède environ 600 parcs provinciaux, formant le plus vaste réseau de parcs provinciaux au Canada."
+      ],
+      "bullets": []
+    },
+    {
+      "id": "northern-territories",
+      "heading": "Les territoires du Nord",
+      "paragraphs": [
+        "Les Territoires du Nord-Ouest, le Nunavut et le Yukon occupent le tiers de la masse terrestre du Canada. Le Nord est souvent appelé « la terre du soleil de minuit » : au milieu de l'été, le soleil peut briller jusqu'à 24 heures consécutives, tandis qu'en hiver, l'obscurité règne pendant trois mois.",
+        "Les milliers de mineurs qui se sont rendus au Yukon lors de la ruée vers l'or des années 1890 sont célébrés dans la poésie de Robert W. Service. Le Yukon détient le record de la température la plus froide jamais enregistrée au Canada (-63 °C). Le mont Logan, situé au Yukon, est la plus haute montagne du Canada.",
+        "En 1870, les Territoires du Nord-Ouest ont été formés à partir de la Terre de Rupert et du Territoire du Nord-Ouest. La capitale, Yellowknife, est surnommée « capitale nord-américaine du diamant ».",
+        "Le Nunavut, mot signifiant « notre terre » en inuktitut, a été créé en 1999 à partir de la section est des Territoires du Nord-Ouest. La capitale est Iqaluit."
+      ],
+      "bullets": []
+    }
+  ]
+}

@@ -40,12 +40,17 @@ This register tracks the official source documents used as the factual authority
 | `federal-elections` | Federal Elections / Les élections fédérales | 10 | verified | 2026-08-17 |
 | `justice-system` | The Justice System / Le système de justice | 6 | verified | 2026-08-17 |
 | `canadian-symbols` | Canadian Symbols / Les symboles canadiens | 16 | verified | 2026-08-17 |
+| `canadas-regions` | Canada's Regions / Les régions du Canada | 18 | verified | 2026-08-17 |
 
-Question counts are intentionally not fixed per chapter — see `docs/content-governance.md`, "Question count policy" (critical section). `canadian-symbols` is a very fact-dense chapter, so it earned the largest verified question set to date.
+Question counts are intentionally not fixed per chapter — see `docs/content-governance.md`, "Question count policy" (critical section). `canadas-regions` is the richest chapter to date, earning the largest verified question set so far.
+
+## Time-sensitive facts excluded from `canadas-regions`
+
+Per `docs/content-governance.md`, "Time-sensitive facts," the live guide page states Canada's population as "about 34 million" and gives similarly dated provincial population figures. Canada's actual population now exceeds 41 million. **No question in this chapter's release tests any population statistic.** All 18 questions instead test stable geographic, historical, and structural facts.
 
 ## Time-sensitive facts excluded from `canadian-symbols`
 
-Per `docs/content-governance.md`, "Time-sensitive facts," the live guide page for this chapter contains an internally inconsistent, outdated reference to the reigning monarch: it states "Queen Elizabeth II... celebrates her Diamond Jubilee... in 2012," but the same page's Royal Anthem lyrics have already been updated to "God Save the King." Queen Elizabeth II died in 2022 and King Charles III is now the Sovereign. **No question about the identity of the current monarch was created from this chapter.** All questions instead test stable historical facts that do not depend on who currently holds the Crown.
+The live guide page contains an internally inconsistent, outdated reference to the reigning monarch. No question about the identity of the current monarch was created.
 
 ## Time-sensitive facts excluded from `federal-elections`
 
@@ -53,7 +58,7 @@ Per `docs/content-governance.md`, "Time-sensitive facts," the live guide page fo
 - **"Three major political parties currently represented in the House of Commons."** Party standings change with every election.
 
 Notes:
-- Chapter content and question citations for all eight chapters were sourced from the official `canada.ca` online HTML guides (English and French), not the attached PDF, because the attached PDF's body-text layer extracted as garbled/unreadable characters.
+- Chapter content and question citations for all nine chapters were sourced from the official `canada.ca` online HTML guides (English and French), not the attached PDF, because the attached PDF's body-text layer extracted as garbled/unreadable characters.
 - Printed/PDF page numbers are not recorded for these chapters' citations because they could not be reliably verified against the unreadable PDF text layer.
 - Edition identifier `Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8` was confirmed against the attached PDF's colophon text (page 2), which extracted correctly.
 - `who-we-are` source pages: English — https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/who-are-canadians.html ; French — https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/qui-sont-canadiens.html
@@ -63,3 +68,4 @@ Notes:
 - `federal-elections` source pages: English — https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/federal-elections.html ; French — https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/elections-federales.html
 - `justice-system` source pages: English — https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/justice-system.html ; French — https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/systeme-justice.html
 - `canadian-symbols` source pages: English — https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/canadian-symbols.html ; French — https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/symboles-canadiens.html
+- `canadas-regions` source pages: English — https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/canadas-regions.html ; French — https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/regions-canada.html
