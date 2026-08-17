@@ -1,14 +1,12 @@
 import { ScrollView, StyleSheet, View } from "react-native";
 import { useLocalSearchParams } from "expo-router";
 import { Text, Button, Divider, useTheme } from "react-native-paper";
-import { useTranslation } from "react-i18next";
 import { useSettingsStore } from "../../src/store/useSettingsStore";
 import { useProgressStore } from "../../src/store/useProgressStore";
 import { getChapterContent } from "../../src/data/contentLoader";
 
 export default function ChapterDetailScreen() {
   const { chapterId } = useLocalSearchParams<{ chapterId: string }>();
-  const { t } = useTranslation();
   const theme = useTheme();
   const language = useSettingsStore((state) => state.language);
   const chapterProgress = useProgressStore((state) => state.chapterProgress);

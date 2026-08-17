@@ -29,12 +29,15 @@ export default function ExamIndexScreen() {
   const submitExam = useExamStore((state) => state.submitExam);
 
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [now, setNow] = useState(Date.now());
+  const [, setNow] = useState(Date.now());
 
   // Tick every second while the exam is in progress, purely to force a
   // re-render for the countdown display; the actual remaining time is
   // always recomputed from timestamps, never from a naive decrementing
-  // counter, so it stays correct across backgrounding.
+  // counter, so it stays correct across backgrounding. The tick value
+  // itself is intentionally unused (see useMemo below): each tick causes
+  // examState to be recomputed with a new object reference, which is
+  // what actually triggers getRemainingMs to re-run.
   useEffect(() => {
     if (status !== "in-progress") return;
     const interval = setInterval(() => setNow(Date.now()), 1000);
@@ -59,7 +62,7 @@ export default function ExamIndexScreen() {
     pausedMs: state.pausedMs,
     pausedAt: state.pausedAt,
   }));
-  const remainingMs = useMemo(() => getRemainingMs(examState), [examState, now]);
+  const remainingMs = useMemo(() => getRemainingMs(examState), [examState]);
 
   const finishExam = () => {
     const result = submitExam();
