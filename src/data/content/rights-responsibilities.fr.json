@@ -1,0 +1,82 @@
+{
+  "chapterId": "rights-responsibilities",
+  "title": "Les droits et responsabilités liés à la citoyenneté",
+  "source": {
+    "guide": "Découvrir le Canada",
+    "language": "fr",
+    "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+    "sourceUrl": "https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/droits-responsabilites-citoyennete.html",
+    "verifiedAt": "2026-08-17"
+  },
+  "sections": [
+    {
+      "id": "intro",
+      "heading": null,
+      "paragraphs": [
+        "Tous les citoyens canadiens ont des droits et des responsabilités, qui nous viennent de notre passé, qui sont garantis par le droit canadien et qui reflètent nos traditions, notre identité et nos valeurs communes.",
+        "Les règles juridiques du Canada proviennent entre autres des lois adoptées par le Parlement du Canada et les assemblées législatives provinciales, de la common law, du code civil de la France et de la tradition constitutionnelle héritée de la Grande-Bretagne.",
+        "Ensemble, ces règles préservent pour les Canadiens une tradition de liberté ordonnée vieille de 800 ans, qui remonte à 1215, année de la signature de la Magna Carta (aussi appelée Grande Charte des libertés) en Angleterre, et qui comprend:"
+      ],
+      "bullets": [
+        "la liberté de conscience et de religion",
+        "la liberté de pensée, de croyance, d’opinion et d’expression, y compris la liberté de la presse",
+        "la liberté de réunion pacifique",
+        "la liberté d’association"
+      ]
+    },
+    {
+      "id": "habeas-corpus",
+      "heading": null,
+      "paragraphs": [
+        "L’habeas corpus, ou droit de contester une détention illégale par l’État, est emprunté à la common law britannique."
+      ],
+      "bullets": []
+    },
+    {
+      "id": "charter",
+      "heading": "La Charte canadienne des droits et libertés",
+      "paragraphs": [
+        "La Constitution du Canada a été modifiée en 1982 afin d’inclure la Charte canadienne des droits et libertés, dont le libellé commence ainsi : « Attendu que le Canada est fondé sur des principes qui reconnaissent la suprématie de Dieu et la primauté du droit ».",
+        "La Charte résume les libertés fondamentales tout en y ajoutant d’autres droits. Les plus importants sont :"
+      ],
+      "bullets": [
+        "La liberté de circulation et d’établissement — Les Canadiens peuvent vivre et travailler n’importe où au Canada, entrer au Canada et en sortir librement, et demander un passeport canadien.",
+        "Les droits des peuples autochtones — Les droits garantis dans la Charte ne portent atteinte en aucun cas aux droits et libertés des peuples autochtones.",
+        "Les droits relatifs aux langues officielles et les droits à l’instruction dans la langue de la minorité — Le français et l’anglais ont un statut égal au Parlement et dans l’ensemble du gouvernement.",
+        "Le multiculturalisme — Il s’agit d’une caractéristique fondamentale de l’identité et du patrimoine canadiens."
+      ]
+    },
+    {
+      "id": "equality",
+      "heading": "Égalité entre les femmes et les hommes",
+      "paragraphs": [
+        "Au Canada, les hommes et les femmes sont égaux devant la loi. L’ouverture et la générosité du Canada excluent les pratiques culturelles barbares qui tolèrent la violence conjugale, les « meurtres d’honneur », la mutilation sexuelle des femmes, les mariages forcés, la polygamie ou d’autres actes de violence fondée sur le sexe."
+      ],
+      "bullets": []
+    },
+    {
+      "id": "responsibilities",
+      "heading": "Responsabilités liées à la citoyenneté",
+      "paragraphs": [
+        "Au Canada, les droits s’accompagnent de responsabilités, notamment les suivantes :"
+      ],
+      "bullets": [
+        "Respecter les lois — L’un des principes fondateurs du Canada est la primauté du droit. Aucune personne ni aucun groupe n’est au-dessus des lois.",
+        "Répondre à ses propres besoins et à ceux de sa famille — Il est important pour les Canadiens d’avoir un emploi et de prendre soin de leur famille.",
+        "Faire partie d’un jury — Lorsqu’on vous le demande, la loi vous oblige à le faire.",
+        "Voter aux élections — Voter est non seulement un droit, mais aussi une responsabilité.",
+        "Offrir de l’aide aux membres de la communauté — Des millions de bénévoles donnent de leur temps aux autres sans être payés.",
+        "Protéger notre patrimoine et notre environnement — Tous les citoyens ont la responsabilité d’éviter le gaspillage et la pollution."
+      ]
+    },
+    {
+      "id": "defending-canada",
+      "heading": "Défendre le Canada",
+      "paragraphs": [
+        "Le Canada n’impose pas le service militaire obligatoire. Toutefois, travailler dans les Forces canadiennes (la Marine, l’Armée de terre et la Force aérienne) est une noble façon d’apporter sa contribution au Canada. Les jeunes peuvent acquérir une discipline, le sens des responsabilités et des compétences en s’engageant dans les Cadets.",
+        "Vous pouvez aussi faire partie de la Garde côtière ou des services d’urgence de votre communauté, comme le service de police ou les pompiers."
+      ],
+      "bullets": []
+    }
+  ]
+}

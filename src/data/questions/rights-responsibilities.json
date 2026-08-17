@@ -1,0 +1,338 @@
+[
+  {
+    "id": "q-rr-001",
+    "chapterId": "rights-responsibilities",
+    "type": "multiple-choice",
+    "tags": ["law", "sources-of-law"],
+    "learningObjectiveId": "rr-sources-of-law",
+    "difficulty": 1,
+    "en": {
+      "question": "According to Discover Canada, which of the following is one of the sources of Canadian law?",
+      "options": ["English common law", "Roman law", "Sharia law", "German civil code"],
+      "correctIndex": 0,
+      "explanation": "Canadian law comes from laws passed by Parliament and provincial legislatures, English common law, the civil code of France, and the unwritten constitution inherited from Great Britain.",
+      "source": {
+        "guide": "Discover Canada",
+        "language": "en",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/rights-resonsibilities-citizenship.html",
+        "chapter": "Rights and Responsibilities of Citizenship",
+        "section": "Rights and Responsibilities of Citizenship (introduction)",
+        "excerpt": "Canadian law has several sources, including laws passed by Parliament and the provincial legislatures, English common law, the civil code of France and the unwritten constitution that we have inherited from Great Britain.",
+        "verifiedAt": "2026-08-17",
+        "reviewStatus": "verified"
+      }
+    },
+    "fr": {
+      "question": "Selon Découvrir le Canada, laquelle des sources suivantes fait partie des sources du droit canadien ?",
+      "options": ["La common law britannique", "Le droit romain", "La charia", "Le code civil allemand"],
+      "correctIndex": 0,
+      "explanation": "Le droit canadien provient des lois adoptées par le Parlement et les législatures provinciales, de la common law, du code civil de la France et de la tradition constitutionnelle britannique.",
+      "source": {
+        "guide": "Découvrir le Canada",
+        "language": "fr",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/droits-responsabilites-citoyennete.html",
+        "chapter": "Les droits et responsabilités liés à la citoyenneté",
+        "section": "Les droits et responsabilités liés à la citoyenneté (introduction)",
+        "excerpt": "Les règles juridiques du Canada proviennent entre autres des lois adoptées par le Parlement du Canada et les assemblées législatives provinciales, de la common law, du code civil de la France et de la tradition constitutionnelle héritée de la Grande-Bretagne.",
+        "verifiedAt": "2026-08-17",
+        "reviewStatus": "verified"
+      }
+    }
+  },
+  {
+    "id": "q-rr-002",
+    "chapterId": "rights-responsibilities",
+    "type": "multiple-choice",
+    "tags": ["history", "magna-carta"],
+    "learningObjectiveId": "rr-magna-carta-year",
+    "difficulty": 2,
+    "en": {
+      "question": "In what year was the Magna Carta signed in England, marking the start of an 800-year tradition of ordered liberty for Canadians?",
+      "options": ["1215", "1815", "1915", "1082"],
+      "correctIndex": 0,
+      "explanation": "Discover Canada states this tradition dates back to the signing of Magna Carta in 1215 in England.",
+      "source": {
+        "guide": "Discover Canada",
+        "language": "en",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/rights-resonsibilities-citizenship.html",
+        "chapter": "Rights and Responsibilities of Citizenship",
+        "section": "Rights and Responsibilities of Citizenship (introduction)",
+        "excerpt": "Together, these secure for Canadians an 800-year old tradition of ordered liberty, which dates back to the signing of Magna Carta in 1215 in England.",
+        "verifiedAt": "2026-08-17",
+        "reviewStatus": "verified"
+      }
+    },
+    "fr": {
+      "question": "En quelle année la Magna Carta a-t-elle été signée en Angleterre, marquant le début d’une tradition de liberté ordonnée vieille de 800 ans pour les Canadiens ?",
+      "options": ["1215", "1815", "1915", "1082"],
+      "correctIndex": 0,
+      "explanation": "Découvrir le Canada indique que cette tradition remonte à 1215, année de la signature de la Magna Carta en Angleterre.",
+      "source": {
+        "guide": "Découvrir le Canada",
+        "language": "fr",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/droits-responsabilites-citoyennete.html",
+        "chapter": "Les droits et responsabilités liés à la citoyenneté",
+        "section": "Les droits et responsabilités liés à la citoyenneté (introduction)",
+        "excerpt": "Ensemble, ces règles préservent pour les Canadiens une tradition de liberté ordonnée vieille de 800 ans, qui remonte à 1215, année de la signature de la Magna Carta en Angleterre.",
+        "verifiedAt": "2026-08-17",
+        "reviewStatus": "verified"
+      }
+    }
+  },
+  {
+    "id": "q-rr-003",
+    "chapterId": "rights-responsibilities",
+    "type": "multiple-choice",
+    "tags": ["charter", "constitution"],
+    "learningObjectiveId": "rr-charter-year",
+    "difficulty": 2,
+    "en": {
+      "question": "In what year was the Constitution of Canada amended to entrench the Canadian Charter of Rights and Freedoms?",
+      "options": ["1982", "1867", "1931", "1215"],
+      "correctIndex": 0,
+      "explanation": "The guide states the Constitution was amended in 1982 to entrench the Canadian Charter of Rights and Freedoms.",
+      "source": {
+        "guide": "Discover Canada",
+        "language": "en",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/rights-resonsibilities-citizenship.html",
+        "chapter": "Rights and Responsibilities of Citizenship",
+        "section": "The Canadian Charter of Rights and Freedoms",
+        "excerpt": "The Constitution of Canada was amended in 1982 to entrench the Canadian Charter of Rights and Freedoms.",
+        "verifiedAt": "2026-08-17",
+        "reviewStatus": "verified"
+      }
+    },
+    "fr": {
+      "question": "En quelle année la Constitution du Canada a-t-elle été modifiée pour inclure la Charte canadienne des droits et libertés ?",
+      "options": ["1982", "1867", "1931", "1215"],
+      "correctIndex": 0,
+      "explanation": "Le guide précise que la Constitution a été modifiée en 1982 afin d’inclure la Charte canadienne des droits et libertés.",
+      "source": {
+        "guide": "Découvrir le Canada",
+        "language": "fr",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/droits-responsabilites-citoyennete.html",
+        "chapter": "Les droits et responsabilités liés à la citoyenneté",
+        "section": "La Charte canadienne des droits et libertés",
+        "excerpt": "La Constitution du Canada a été modifiée en 1982 afin d’inclure la Charte canadienne des droits et libertés.",
+        "verifiedAt": "2026-08-17",
+        "reviewStatus": "verified"
+      }
+    }
+  },
+  {
+    "id": "q-rr-004",
+    "chapterId": "rights-responsibilities",
+    "type": "true-false",
+    "tags": ["charter", "mobility-rights"],
+    "learningObjectiveId": "rr-mobility-rights",
+    "difficulty": 1,
+    "en": {
+      "question": "True or False: Under Mobility Rights, Canadians can live and work anywhere they choose in Canada.",
+      "options": ["True", "False"],
+      "correctIndex": 0,
+      "explanation": "Mobility Rights state Canadians can live and work anywhere they choose in Canada, enter and leave the country freely, and apply for a passport.",
+      "source": {
+        "guide": "Discover Canada",
+        "language": "en",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/rights-resonsibilities-citizenship.html",
+        "chapter": "Rights and Responsibilities of Citizenship",
+        "section": "The Canadian Charter of Rights and Freedoms",
+        "excerpt": "Mobility Rights — Canadians can live and work anywhere they choose in Canada, enter and leave the country freely, and apply for a passport.",
+        "verifiedAt": "2026-08-17",
+        "reviewStatus": "verified"
+      }
+    },
+    "fr": {
+      "question": "Vrai ou faux : grâce à la liberté de circulation et d’établissement, les Canadiens peuvent vivre et travailler n’importe où au Canada.",
+      "options": ["Vrai", "Faux"],
+      "correctIndex": 0,
+      "explanation": "La liberté de circulation et d’établissement permet aux Canadiens de vivre et travailler n’importe où au Canada, entrer au Canada et en sortir librement, et demander un passeport canadien.",
+      "source": {
+        "guide": "Découvrir le Canada",
+        "language": "fr",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/droits-responsabilites-citoyennete.html",
+        "chapter": "Les droits et responsabilités liés à la citoyenneté",
+        "section": "La Charte canadienne des droits et libertés",
+        "excerpt": "La liberté de circulation et d’établissement — Les Canadiens peuvent vivre et travailler n’importe où au Canada, entrer au Canada et en sortir librement, et demander un passeport canadien.",
+        "verifiedAt": "2026-08-17",
+        "reviewStatus": "verified"
+      }
+    }
+  },
+  {
+    "id": "q-rr-005",
+    "chapterId": "rights-responsibilities",
+    "type": "multiple-choice",
+    "tags": ["law", "habeas-corpus"],
+    "learningObjectiveId": "rr-habeas-corpus",
+    "difficulty": 2,
+    "en": {
+      "question": "What does habeas corpus protect, according to Discover Canada?",
+      "options": ["The right to challenge unlawful detention by the state", "The right to vote in federal elections", "The right to a free press", "The right to bear arms"],
+      "correctIndex": 0,
+      "explanation": "Discover Canada defines habeas corpus as the right to challenge unlawful detention by the state, which comes from English common law.",
+      "source": {
+        "guide": "Discover Canada",
+        "language": "en",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/rights-resonsibilities-citizenship.html",
+        "chapter": "Rights and Responsibilities of Citizenship",
+        "section": "Rights and Responsibilities of Citizenship (introduction)",
+        "excerpt": "Habeas corpus, the right to challenge unlawful detention by the state, comes from English common law.",
+        "verifiedAt": "2026-08-17",
+        "reviewStatus": "verified"
+      }
+    },
+    "fr": {
+      "question": "Que protège l’habeas corpus, selon Découvrir le Canada ?",
+      "options": ["Le droit de contester une détention illégale par l’État", "Le droit de voter aux élections fédérales", "Le droit à une presse libre", "Le droit de porter des armes"],
+      "correctIndex": 0,
+      "explanation": "Découvrir le Canada décrit l’habeas corpus comme le droit de contester une détention illégale par l’État, emprunté à la common law britannique.",
+      "source": {
+        "guide": "Découvrir le Canada",
+        "language": "fr",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/droits-responsabilites-citoyennete.html",
+        "chapter": "Les droits et responsabilités liés à la citoyenneté",
+        "section": "Les droits et responsabilités liés à la citoyenneté (introduction)",
+        "excerpt": "L’habeas corpus, ou droit de contester une détention illégale par l’État, est emprunté à la common law britannique.",
+        "verifiedAt": "2026-08-17",
+        "reviewStatus": "verified"
+      }
+    }
+  },
+  {
+    "id": "q-rr-006",
+    "chapterId": "rights-responsibilities",
+    "type": "true-false",
+    "tags": ["responsibilities", "jury"],
+    "learningObjectiveId": "rr-jury-duty",
+    "difficulty": 1,
+    "en": {
+      "question": "True or False: In Canada, serving on a jury is optional when a citizen is called to do so.",
+      "options": ["True", "False"],
+      "correctIndex": 1,
+      "explanation": "The guide states that when called to do so, you are legally required to serve on a jury.",
+      "source": {
+        "guide": "Discover Canada",
+        "language": "en",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/rights-resonsibilities-citizenship.html",
+        "chapter": "Rights and Responsibilities of Citizenship",
+        "section": "Citizenship Responsibilities",
+        "excerpt": "Serving on a jury — When called to do so, you are legally required to serve.",
+        "verifiedAt": "2026-08-17",
+        "reviewStatus": "verified"
+      }
+    },
+    "fr": {
+      "question": "Vrai ou faux : au Canada, faire partie d’un jury est facultatif lorsqu’un citoyen est convoqué.",
+      "options": ["Vrai", "Faux"],
+      "correctIndex": 1,
+      "explanation": "Le guide précise que lorsqu’on vous le demande, la loi vous oblige à faire partie d’un jury.",
+      "source": {
+        "guide": "Découvrir le Canada",
+        "language": "fr",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/droits-responsabilites-citoyennete.html",
+        "chapter": "Les droits et responsabilités liés à la citoyenneté",
+        "section": "Responsabilités liées à la citoyenneté",
+        "excerpt": "Faire partie d’un jury — Lorsqu’on vous le demande, la loi vous oblige à le faire.",
+        "verifiedAt": "2026-08-17",
+        "reviewStatus": "verified"
+      }
+    }
+  },
+  {
+    "id": "q-rr-007",
+    "chapterId": "rights-responsibilities",
+    "type": "multiple-choice",
+    "tags": ["responsibilities", "voting"],
+    "learningObjectiveId": "rr-voting",
+    "difficulty": 1,
+    "en": {
+      "question": "According to Discover Canada, how is voting described for Canadian citizens?",
+      "options": ["Both a right and a responsibility", "A right only, with no responsibility attached", "Optional and not encouraged", "Mandatory, with legal penalties for not voting"],
+      "correctIndex": 0,
+      "explanation": "The guide states the right to vote comes with a responsibility to vote in federal, provincial or territorial and local elections.",
+      "source": {
+        "guide": "Discover Canada",
+        "language": "en",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/rights-resonsibilities-citizenship.html",
+        "chapter": "Rights and Responsibilities of Citizenship",
+        "section": "Citizenship Responsibilities",
+        "excerpt": "Voting in elections — The right to vote comes with a responsibility to vote in federal, provincial or territorial and local elections.",
+        "verifiedAt": "2026-08-17",
+        "reviewStatus": "verified"
+      }
+    },
+    "fr": {
+      "question": "Selon Découvrir le Canada, comment le vote est-il décrit pour les citoyens canadiens ?",
+      "options": ["À la fois un droit et une responsabilité", "Un droit seulement, sans responsabilité associée", "Facultatif et non encouragé", "Obligatoire, avec des sanctions légales en cas d’abstention"],
+      "correctIndex": 0,
+      "explanation": "Le guide indique que voter est non seulement un droit, mais aussi une responsabilité.",
+      "source": {
+        "guide": "Découvrir le Canada",
+        "language": "fr",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/droits-responsabilites-citoyennete.html",
+        "chapter": "Les droits et responsabilités liés à la citoyenneté",
+        "section": "Responsabilités liées à la citoyenneté",
+        "excerpt": "Voter aux élections — Voter est non seulement un droit, mais aussi une responsabilité que vous exercez en votant aux élections fédérales, provinciales ou territoriales, et locales.",
+        "verifiedAt": "2026-08-17",
+        "reviewStatus": "verified"
+      }
+    }
+  },
+  {
+    "id": "q-rr-008",
+    "chapterId": "rights-responsibilities",
+    "type": "true-false",
+    "tags": ["defending-canada", "military"],
+    "learningObjectiveId": "rr-military-service",
+    "difficulty": 1,
+    "en": {
+      "question": "True or False: Canada has compulsory (mandatory) military service.",
+      "options": ["True", "False"],
+      "correctIndex": 1,
+      "explanation": "Discover Canada states there is no compulsory military service in Canada.",
+      "source": {
+        "guide": "Discover Canada",
+        "language": "en",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/rights-resonsibilities-citizenship.html",
+        "chapter": "Rights and Responsibilities of Citizenship",
+        "section": "Defending Canada",
+        "excerpt": "There is no compulsory military service in Canada.",
+        "verifiedAt": "2026-08-17",
+        "reviewStatus": "verified"
+      }
+    },
+    "fr": {
+      "question": "Vrai ou faux : le Canada impose un service militaire obligatoire.",
+      "options": ["Vrai", "Faux"],
+      "correctIndex": 1,
+      "explanation": "Découvrir le Canada précise que le Canada n’impose pas le service militaire obligatoire.",
+      "source": {
+        "guide": "Découvrir le Canada",
+        "language": "fr",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/droits-responsabilites-citoyennete.html",
+        "chapter": "Les droits et responsabilités liés à la citoyenneté",
+        "section": "Défendre le Canada",
+        "excerpt": "Le Canada n’impose pas le service militaire obligatoire.",
+        "verifiedAt": "2026-08-17",
+        "reviewStatus": "verified"
+      }
+    }
+  }
+]

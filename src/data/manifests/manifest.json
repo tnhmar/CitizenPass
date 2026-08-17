@@ -1,0 +1,18 @@
+{
+  "chapters": [
+    {
+      "id": "rights-responsibilities",
+      "en": {
+        "title": "Rights and Responsibilities of Citizenship",
+        "contentPath": "src/data/content/rights-responsibilities.en.json"
+      },
+      "fr": {
+        "title": "Les droits et responsabilités liés à la citoyenneté",
+        "contentPath": "src/data/content/rights-responsibilities.fr.json"
+      },
+      "questionsPath": "src/data/questions/rights-responsibilities.json",
+      "questionCount": 8,
+      "reviewStatus": "verified"
+    }
+  ]
+}

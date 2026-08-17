@@ -1,0 +1,82 @@
+{
+  "chapterId": "rights-responsibilities",
+  "title": "Rights and Responsibilities of Citizenship",
+  "source": {
+    "guide": "Discover Canada",
+    "language": "en",
+    "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+    "sourceUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/rights-resonsibilities-citizenship.html",
+    "verifiedAt": "2026-08-17"
+  },
+  "sections": [
+    {
+      "id": "intro",
+      "heading": null,
+      "paragraphs": [
+        "Canadian citizens have rights and responsibilities. These come to us from our history, are secured by Canadian law, and reflect our shared traditions, identity, and values.",
+        "Canadian law has several sources, including laws passed by Parliament and the provincial legislatures, English common law, the civil code of France and the unwritten constitution that we have inherited from Great Britain.",
+        "Together, these secure for Canadians an 800-year old tradition of ordered liberty, which dates back to the signing of Magna Carta in 1215 in England (also known as the Great Charter of Freedoms), including:"
+      ],
+      "bullets": [
+        "Freedom of conscience and religion",
+        "Freedom of thought, belief, opinion and expression, including freedom of speech and of the press",
+        "Freedom of peaceful assembly",
+        "Freedom of association"
+      ]
+    },
+    {
+      "id": "habeas-corpus",
+      "heading": null,
+      "paragraphs": [
+        "Habeas corpus, the right to challenge unlawful detention by the state, comes from English common law."
+      ],
+      "bullets": []
+    },
+    {
+      "id": "charter",
+      "heading": "The Canadian Charter of Rights and Freedoms",
+      "paragraphs": [
+        "The Constitution of Canada was amended in 1982 to entrench the Canadian Charter of Rights and Freedoms, which begins with the words, \u201cWhereas Canada is founded upon principles that recognize the supremacy of God and the rule of law.\u201d This phrase underlines the importance of religious traditions to Canadian society and the dignity and worth of the human person.",
+        "The Charter attempts to summarize fundamental freedoms while also setting out additional rights. The most important of these include:"
+      ],
+      "bullets": [
+        "Mobility Rights \u2014 Canadians can live and work anywhere they choose in Canada, enter and leave the country freely, and apply for a passport.",
+        "Aboriginal Peoples\u2019 Rights \u2014 The rights guaranteed in the Charter will not adversely affect any treaty or other rights or freedoms of Aboriginal peoples.",
+        "Official Language Rights and Minority Language Educational Rights \u2014 French and English have equal status in Parliament and throughout the government.",
+        "Multiculturalism \u2014 A fundamental characteristic of the Canadian heritage and identity."
+      ]
+    },
+    {
+      "id": "equality",
+      "heading": "The Equality of Women and Men",
+      "paragraphs": [
+        "In Canada, men and women are equal under the law. Canada\u2019s openness and generosity do not extend to barbaric cultural practices that tolerate spousal abuse, \u201chonour killings,\u201d female genital mutilation, forced marriage or other gender-based violence. Those guilty of these crimes are severely punished under Canada\u2019s criminal laws."
+      ],
+      "bullets": []
+    },
+    {
+      "id": "responsibilities",
+      "heading": "Citizenship Responsibilities",
+      "paragraphs": [
+        "In Canada, rights come with responsibilities. These include:"
+      ],
+      "bullets": [
+        "Obeying the law \u2014 One of Canada\u2019s founding principles is the rule of law. No person or group is above the law.",
+        "Taking responsibility for oneself and one\u2019s family \u2014 Getting a job, taking care of one\u2019s family and working hard are important Canadian values.",
+        "Serving on a jury \u2014 When called to do so, you are legally required to serve.",
+        "Voting in elections \u2014 The right to vote comes with a responsibility to vote in federal, provincial or territorial and local elections.",
+        "Helping others in the community \u2014 Millions of volunteers freely donate their time to help others without pay.",
+        "Protecting and enjoying our heritage and environment \u2014 Every citizen has a role to play in avoiding waste and pollution."
+      ]
+    },
+    {
+      "id": "defending-canada",
+      "heading": "Defending Canada",
+      "paragraphs": [
+        "There is no compulsory military service in Canada. However, serving in the regular Canadian Forces (navy, army and air force) is a noble way to contribute to Canada and an excellent career choice. You can serve in your local part-time navy, militia and air reserves. Young people can learn discipline, responsibility, and skills by getting involved in the cadets.",
+        "You may also serve in the Coast Guard or emergency services in your community such as a police force or fire department."
+      ],
+      "bullets": []
+    }
+  ]
+}
