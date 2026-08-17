@@ -43,7 +43,8 @@
     "eslint-config-expo": "^7.1.2"
   },
   "jest": {
-    "preset": "jest-expo"
+    "preset": "jest-expo",
+    "setupFiles": ["<rootDir>/jest.setup.js"]
   },
   "engines": {
     "node": ">=18"
