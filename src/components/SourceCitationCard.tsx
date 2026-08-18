@@ -1,5 +1,6 @@
-import { StyleSheet } from "react-native";
+import { StyleSheet, View } from "react-native";
 import { Card, Text, useTheme } from "react-native-paper";
+import { MaterialCommunityIcons } from "@expo/vector-icons";
 import type { SourceCitation } from "../types";
 
 type SourceCitationCardProps = {
@@ -17,9 +18,12 @@ export function SourceCitationCard({ source }: SourceCitationCardProps) {
   return (
     <Card mode="outlined" style={styles.card}>
       <Card.Content>
-        <Text variant="labelLarge" style={{ color: theme.colors.primary }}>
-          {source.guide} — {source.chapter}
-        </Text>
+        <View style={styles.headerRow}>
+          <MaterialCommunityIcons name="book-open-page-variant-outline" size={16} color={theme.colors.primary} />
+          <Text variant="labelLarge" style={{ color: theme.colors.primary }}>
+            {source.guide} — {source.chapter}
+          </Text>
+        </View>
         <Text variant="bodySmall" style={styles.section}>
           {source.section}
         </Text>
@@ -37,6 +41,11 @@ export function SourceCitationCard({ source }: SourceCitationCardProps) {
 const styles = StyleSheet.create({
   card: {
     marginTop: 12,
+  },
+  headerRow: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 6,
   },
   section: {
     marginTop: 2,
