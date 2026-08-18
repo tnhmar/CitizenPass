@@ -54,7 +54,15 @@ export function shuffle<T>(items: T[]): T[] {
   return result;
 }
 
-export function drawRandomQuestions(count: number, excludeIds: string[] = []): Question[] {
-  const pool = VERIFIED_QUESTIONS.filter((question) => !excludeIds.includes(question.id));
+/**
+ * Draws up to `count` random questions, excluding any ids in `excludeIds`.
+ * When `chapterId` is provided, the draw pool is restricted to that
+ * chapter's verified questions only, enabling per-chapter practice.
+ */
+export function drawRandomQuestions(count: number, excludeIds: string[] = [], chapterId?: string): Question[] {
+  const basePool = chapterId
+    ? VERIFIED_QUESTIONS.filter((question) => question.chapterId === chapterId)
+    : VERIFIED_QUESTIONS;
+  const pool = basePool.filter((question) => !excludeIds.includes(question.id));
   return shuffle(pool).slice(0, count);
 }

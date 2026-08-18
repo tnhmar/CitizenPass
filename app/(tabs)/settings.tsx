@@ -1,20 +1,10 @@
-import { View, StyleSheet, ScrollView, Alert } from "react-native";
-import { Text, Button, Divider, RadioButton, useTheme } from "react-native-paper";
+import { StyleSheet, ScrollView, Alert } from "react-native";
+import { Text, Button, Divider, SegmentedButtons, Card, useTheme } from "react-native-paper";
+import { MaterialCommunityIcons } from "@expo/vector-icons";
 import { useTranslation } from "react-i18next";
 import { useSettingsStore } from "../../src/store/useSettingsStore";
 import { useProgressStore } from "../../src/store/useProgressStore";
 import type { AppLanguage, AppTheme } from "../../src/types";
-
-const LANGUAGE_OPTIONS: { value: AppLanguage; labelKey: string; nativeLabel: string }[] = [
-  { value: "en", labelKey: "settings.language", nativeLabel: "English" },
-  { value: "fr", labelKey: "settings.language", nativeLabel: "Fran\u00e7ais" },
-];
-
-const THEME_OPTIONS: { value: AppTheme; label: string }[] = [
-  { value: "light", label: "Light" },
-  { value: "dark", label: "Dark" },
-  { value: "system", label: "System" },
-];
 
 export default function SettingsScreen() {
   const { t } = useTranslation();
@@ -27,84 +17,84 @@ export default function SettingsScreen() {
   const resetProgress = useProgressStore((state) => state.resetProgress);
 
   const handleResetData = () => {
-    Alert.alert(
-      t("settings.resetData"),
-      "This will erase all locally stored settings, bookmarks, and progress on this device. This cannot be undone.",
-      [
-        { text: "Cancel", style: "cancel" },
-        {
-          text: t("settings.resetData"),
-          style: "destructive",
-          onPress: async () => {
-            await Promise.all([resetSettings(), resetProgress()]);
-          },
+    Alert.alert(t("settings.resetData"), t("settings.resetConfirmBody"), [
+      { text: t("settings.resetConfirmCancel"), style: "cancel" },
+      {
+        text: t("settings.resetData"),
+        style: "destructive",
+        onPress: async () => {
+          await Promise.all([resetSettings(), resetProgress()]);
         },
-      ]
-    );
+      },
+    ]);
   };
 
   return (
     <ScrollView style={{ backgroundColor: theme.colors.background }} contentContainerStyle={styles.container}>
-      <Text variant="headlineMedium">{t("settings.title")}</Text>
+      <Text variant="headlineSmall" style={styles.header}>
+        ⚙️ {t("settings.title")}
+      </Text>
 
       <Text variant="titleMedium" style={styles.sectionTitle}>
-        {t("settings.language")}
+        🌐 {t("settings.language")}
       </Text>
-      <RadioButton.Group onValueChange={(value) => setLanguage(value as AppLanguage)} value={language}>
-        {LANGUAGE_OPTIONS.map((option) => (
-          <View key={option.value} style={styles.optionRow}>
-            <RadioButton value={option.value} />
-            <Text onPress={() => setLanguage(option.value)}>{option.nativeLabel}</Text>
-          </View>
-        ))}
-      </RadioButton.Group>
+      <SegmentedButtons
+        value={language}
+        onValueChange={(value) => setLanguage(value as AppLanguage)}
+        buttons={[
+          { value: "en", label: "English", icon: "alpha-e-circle-outline" },
+          { value: "fr", label: "Français", icon: "alpha-f-circle-outline" },
+        ]}
+      />
 
       <Divider style={styles.divider} />
 
       <Text variant="titleMedium" style={styles.sectionTitle}>
-        {t("settings.theme")}
+        🎨 {t("settings.theme")}
       </Text>
-      <RadioButton.Group onValueChange={(value) => setTheme(value as AppTheme)} value={themePref}>
-        {THEME_OPTIONS.map((option) => (
-          <View key={option.value} style={styles.optionRow}>
-            <RadioButton value={option.value} />
-            <Text onPress={() => setTheme(option.value)}>{option.label}</Text>
-          </View>
-        ))}
-      </RadioButton.Group>
+      <SegmentedButtons
+        value={themePref}
+        onValueChange={(value) => setTheme(value as AppTheme)}
+        buttons={[
+          { value: "light", label: "Light", icon: "white-balance-sunny" },
+          { value: "dark", label: "Dark", icon: "weather-night" },
+          { value: "system", label: "Auto", icon: "cellphone" },
+        ]}
+      />
 
       <Divider style={styles.divider} />
 
-      <Button mode="outlined" onPress={handleResetData} textColor={theme.colors.error}>
+      <Text variant="titleMedium" style={styles.sectionTitle}>
+        🗑️ {t("settings.dataSection")}
+      </Text>
+      <Button
+        mode="outlined"
+        icon="delete-outline"
+        onPress={handleResetData}
+        textColor={theme.colors.error}
+        style={styles.resetButton}
+      >
         {t("settings.resetData")}
       </Button>
 
-      <Text variant="bodySmall" style={styles.disclaimer}>
-        {t("common.disclaimer")}
-      </Text>
+      <Card mode="outlined" style={[styles.disclaimerCard, { backgroundColor: theme.colors.surfaceVariant }]}>
+        <Card.Content style={styles.disclaimerContent}>
+          <MaterialCommunityIcons name="information-outline" size={18} color={theme.colors.onSurfaceVariant} />
+          <Text variant="bodySmall" style={{ color: theme.colors.onSurfaceVariant, flex: 1 }}>
+            {t("common.disclaimer")}
+          </Text>
+        </Card.Content>
+      </Card>
     </ScrollView>
   );
 }
 
 const styles = StyleSheet.create({
-  container: {
-    padding: 16,
-    gap: 8,
-  },
-  sectionTitle: {
-    marginTop: 16,
-    marginBottom: 4,
-  },
-  optionRow: {
-    flexDirection: "row",
-    alignItems: "center",
-    gap: 4,
-  },
-  divider: {
-    marginVertical: 16,
-  },
-  disclaimer: {
-    marginTop: 24,
-    opacity: 0.7,
-  },
+  container: { padding: 16, paddingBottom: 32 },
+  header: { marginBottom: 16 },
+  sectionTitle: { marginTop: 8, marginBottom: 10 },
+  divider: { marginVertical: 20 },
+  resetButton: { marginTop: 4 },
+  disclaimerCard: { marginTop: 24 },
+  disclaimerContent: { flexDirection: "row", gap: 8, alignItems: "flex-start" },
 });

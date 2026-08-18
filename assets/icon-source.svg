@@ -1,0 +1,39 @@
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+  <!-- CitizenPass app icon concept: a rounded passport-stamp badge in
+       Canadian red/white, featuring a maple leaf with a checkmark to
+       represent "study" + "pass". Export this at 1024x1024 for the iOS
+       icon and Android adaptive icon foreground. -->
+  <defs>
+    <clipPath id="roundedSquare">
+      <rect x="0" y="0" width="1024" height="1024" rx="224" ry="224" />
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#roundedSquare)">
+    <rect x="0" y="0" width="1024" height="1024" fill="#13284B" />
+    <circle cx="512" cy="440" r="330" fill="#D80621" />
+    <circle cx="512" cy="440" r="330" fill="none" stroke="#FFFFFF" stroke-width="18" />
+
+    <!-- Simplified maple leaf silhouette -->
+    <path
+      d="M512 230
+         L544 330 L640 300 L610 380 L700 400 L620 460
+         L660 540 L570 520 L560 620 L512 560
+         L464 620 L454 520 L364 540 L404 460
+         L324 400 L414 380 L384 300 L480 330 Z"
+      fill="#FFFFFF"
+    />
+
+    <!-- Checkmark badge -->
+    <circle cx="512" cy="830" r="120" fill="#FFFFFF" />
+    <circle cx="512" cy="830" r="120" fill="none" stroke="#13284B" stroke-width="10" />
+    <path
+      d="M460 830 L500 872 L572 786"
+      fill="none"
+      stroke="#1E8E5A"
+      stroke-width="34"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+  </g>
+</svg>

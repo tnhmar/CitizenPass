@@ -1,5 +1,6 @@
 import { create } from "zustand";
 import { drawRandomQuestions } from "../data/questionLoader";
+import { randomOptionOrder } from "../utils/questionDisplay";
 import type { Question } from "../types";
 
 export const EXAM_QUESTION_COUNT = 20;
@@ -17,6 +18,12 @@ export type ExamResult = {
 type ExamState = {
   questions: Question[];
   answers: Record<string, number>;
+  /** Per-question shuffled option index order, generated once at startExam
+   *  so the correct answer is not always the first authored option, and
+   *  so the order stays stable across Previous/Next navigation. Answers
+   *  are still stored using the original (canonical) option index — see
+   *  app/exam/index.tsx for the shuffled-position <-> canonical mapping. */
+  optionOrder: Record<string, number[]>;
   status: ExamStatus;
   startTimeMs: number | null;
   pausedMs: number;
@@ -34,6 +41,7 @@ type ExamState = {
 export const useExamStore = create<ExamState>((set, get) => ({
   questions: [],
   answers: {},
+  optionOrder: {},
   status: "idle",
   startTimeMs: null,
   pausedMs: 0,
@@ -41,9 +49,15 @@ export const useExamStore = create<ExamState>((set, get) => ({
   result: null,
 
   startExam: () => {
+    const questions = drawRandomQuestions(EXAM_QUESTION_COUNT);
+    const optionOrder: Record<string, number[]> = {};
+    for (const question of questions) {
+      optionOrder[question.id] = randomOptionOrder(question.en.options.length);
+    }
     set({
-      questions: drawRandomQuestions(EXAM_QUESTION_COUNT),
+      questions,
       answers: {},
+      optionOrder,
       status: "in-progress",
       startTimeMs: Date.now(),
       pausedMs: 0,
@@ -72,11 +86,10 @@ export const useExamStore = create<ExamState>((set, get) => ({
     const { questions, answers } = get();
     let correct = 0;
     for (const question of questions) {
-      // Scoring uses the English localization's correctIndex, which is
-      // identical to the French one by construction — see
-      // docs/content-governance.md, question production workflow, step 9
-      // ("Confirm the English and French versions test the same
-      // learning objective"), so this is language-independent.
+      // Scoring compares against the canonical (unshuffled) correctIndex.
+      // answers[] always stores the canonical option index regardless of
+      // the shuffled display order (see app/exam/index.tsx), so this
+      // comparison is correct independent of how options were displayed.
       if (answers[question.id] === question.en.correctIndex) {
         correct += 1;
       }
@@ -92,6 +105,7 @@ export const useExamStore = create<ExamState>((set, get) => ({
     set({
       questions: [],
       answers: {},
+      optionOrder: {},
       status: "idle",
       startTimeMs: null,
       pausedMs: 0,

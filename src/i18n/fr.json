@@ -4,6 +4,11 @@
     "disclaimer": "CitizenPass est un outil éducatif indépendant qui n'est pas affilié, approuvé ou parrainé par le gouvernement du Canada."
   },
   "home": {
+    "title": "Accueil",
+    "getStarted": "Commencer",
+    "greetingMorning": "Bonjour",
+    "greetingAfternoon": "Bon après-midi",
+    "greetingEvening": "Bonsoir",
     "continueStudying": "Continuer l'étude",
     "continueStudyingDescription": "Parcourez les chapitres du guide d'étude officiel",
     "practice": "Pratique",
@@ -16,29 +21,85 @@
     "settingsDescription": "Langue, thème et données",
     "yourProgress": "Votre progrès",
     "practiceAccuracy": "Précision en pratique",
-    "practiceAttempts": "Questions répondues",
-    "chaptersStarted": "Chapitres commencés",
-    "bookmarks": "Questions enregistrées",
+    "practiceAttempts": "Répondues",
+    "chaptersStarted": "Chapitres",
+    "bookmarks": "Enregistrées",
     "noAttemptsYet": "Aucune tentative de pratique pour l'instant"
   },
   "study": {
     "title": "Étude",
-    "chapters": "Chapitres"
+    "chapters": "questions",
+    "markAsRead": "Marquer comme lu",
+    "chapterCompleted": "Chapitre terminé",
+    "notFound": "Chapitre introuvable.",
+    "practiceThisChapter": "Pratiquer ce chapitre"
   },
   "practice": {
-    "title": "Pratique"
+    "title": "Pratique",
+    "correct": "Correct !",
+    "incorrect": "Incorrect",
+    "nextQuestion": "Question suivante",
+    "toggleBookmark": "Basculer le signet",
+    "viewBookmarks": "Voir les questions enregistrées",
+    "allChapters": "Tous les chapitres",
+    "sessionComplete": "Session terminée !",
+    "sessionSummary": "Vous avez obtenu {{correct}} sur {{total}} bonnes réponses ({{percent}} %).",
+    "practiceAgain": "Pratiquer à nouveau",
+    "practiceAllChapters": "Pratiquer tous les chapitres"
   },
   "exam": {
     "title": "Examen simulé",
-    "results": "Résultats"
+    "results": "Résultats",
+    "questionsLabel": "questions, présentées une à la fois",
+    "durationLabel": "Minuteur de 45 minutes",
+    "passLabel": "Réussite à 15/20 (75 %)",
+    "noFeedbackLabel": "Aucune rétroaction avant la soumission",
+    "startExam": "Commencer l'examen",
+    "questionOf": "Question {{current}} sur {{total}}",
+    "previous": "Précédent",
+    "next": "Suivant",
+    "submitExam": "Soumettre l'examen",
+    "submitConfirmTitle": "Soumettre l'examen ?",
+    "submitConfirmBody": "Vous ne pourrez plus modifier vos réponses après la soumission.",
+    "cancelLabel": "Annuler",
+    "submitLabel": "Soumettre",
+    "answeredLabel": "répondues",
+    "noResults": "Aucun résultat d'examen à afficher pour l'instant.",
+    "goToExam": "Aller à l'examen simulé",
+    "correct": "Correct",
+    "incorrect": "Incorrect",
+    "notAnswered": "Sans réponse",
+    "yourAnswer": "Votre réponse",
+    "correctAnswer": "Réponse correcte",
+    "passed": "RÉUSSI",
+    "notPassed": "NON RÉUSSI",
+    "done": "Terminé"
   },
   "progress": {
-    "title": "Progrès"
+    "title": "Progrès",
+    "accuracyLabel": "Précision",
+    "attemptsLabel": "Répondues",
+    "chaptersLabel": "Chapitres",
+    "bookmarksLabel": "Enregistrées",
+    "chapterProgressTitle": "Progrès par chapitre",
+    "examHistory": "Historique des examens",
+    "noExamHistory": "Aucun examen simulé effectué pour l'instant.",
+    "examPassed": "Réussi",
+    "examFailed": "Non réussi"
   },
   "settings": {
     "title": "Paramètres",
     "language": "Langue",
     "theme": "Thème",
-    "resetData": "Réinitialiser les données locales"
+    "resetData": "Réinitialiser les données locales",
+    "resetConfirmBody": "Cela effacera tous les paramètres, signets et progrès stockés localement sur cet appareil. Cette action est irréversible.",
+    "resetConfirmCancel": "Annuler",
+    "dataSection": "Données"
+  },
+  "bookmarks": {
+    "title": "Questions enregistrées",
+    "back": "Retour",
+    "remove": "Retirer le signet",
+    "empty": "Vous n'avez enregistré aucune question. Ajoutez des signets en Pratique ou à l'Examen simulé pour les revoir ici."
   }
 }

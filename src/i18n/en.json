@@ -4,6 +4,11 @@
     "disclaimer": "CitizenPass is an independent educational tool and is not affiliated with, endorsed by, or sponsored by the Government of Canada."
   },
   "home": {
+    "title": "Home",
+    "getStarted": "Get Started",
+    "greetingMorning": "Good morning",
+    "greetingAfternoon": "Good afternoon",
+    "greetingEvening": "Good evening",
     "continueStudying": "Continue Studying",
     "continueStudyingDescription": "Browse chapters from the official study guide",
     "practice": "Practice",
@@ -16,29 +21,85 @@
     "settingsDescription": "Language, theme, and data",
     "yourProgress": "Your Progress",
     "practiceAccuracy": "Practice accuracy",
-    "practiceAttempts": "Questions answered",
-    "chaptersStarted": "Chapters started",
-    "bookmarks": "Bookmarked questions",
+    "practiceAttempts": "Answered",
+    "chaptersStarted": "Chapters",
+    "bookmarks": "Saved",
     "noAttemptsYet": "No practice attempts yet"
   },
   "study": {
     "title": "Study",
-    "chapters": "Chapters"
+    "chapters": "questions",
+    "markAsRead": "Mark chapter as read",
+    "chapterCompleted": "Chapter completed",
+    "notFound": "Chapter not found.",
+    "practiceThisChapter": "Practice this chapter"
   },
   "practice": {
-    "title": "Practice"
+    "title": "Practice",
+    "correct": "Correct!",
+    "incorrect": "Incorrect",
+    "nextQuestion": "Next question",
+    "toggleBookmark": "Toggle bookmark",
+    "viewBookmarks": "View saved questions",
+    "allChapters": "All chapters",
+    "sessionComplete": "Session complete!",
+    "sessionSummary": "You got {{correct}} of {{total}} correct ({{percent}}%).",
+    "practiceAgain": "Practice again",
+    "practiceAllChapters": "Practice all chapters"
   },
   "exam": {
     "title": "Simulated Exam",
-    "results": "Results"
+    "results": "Results",
+    "questionsLabel": "questions, presented one at a time",
+    "durationLabel": "45-minute timer",
+    "passLabel": "Pass at 15/20 (75%)",
+    "noFeedbackLabel": "No feedback until you submit",
+    "startExam": "Start Exam",
+    "questionOf": "Question {{current}} of {{total}}",
+    "previous": "Previous",
+    "next": "Next",
+    "submitExam": "Submit Exam",
+    "submitConfirmTitle": "Submit exam?",
+    "submitConfirmBody": "You will not be able to change your answers after submitting.",
+    "cancelLabel": "Cancel",
+    "submitLabel": "Submit",
+    "answeredLabel": "answered",
+    "noResults": "No exam results to show yet.",
+    "goToExam": "Go to Simulated Exam",
+    "correct": "Correct",
+    "incorrect": "Incorrect",
+    "notAnswered": "Not answered",
+    "yourAnswer": "Your answer",
+    "correctAnswer": "Correct answer",
+    "passed": "PASSED",
+    "notPassed": "NOT PASSED",
+    "done": "Done"
   },
   "progress": {
-    "title": "Progress"
+    "title": "Progress",
+    "accuracyLabel": "Accuracy",
+    "attemptsLabel": "Answered",
+    "chaptersLabel": "Chapters",
+    "bookmarksLabel": "Saved",
+    "chapterProgressTitle": "Chapter Progress",
+    "examHistory": "Exam History",
+    "noExamHistory": "No simulated exams taken yet.",
+    "examPassed": "Passed",
+    "examFailed": "Not passed"
   },
   "settings": {
     "title": "Settings",
     "language": "Language",
     "theme": "Theme",
-    "resetData": "Reset local data"
+    "resetData": "Reset local data",
+    "resetConfirmBody": "This will erase all locally stored settings, bookmarks, and progress on this device. This cannot be undone.",
+    "resetConfirmCancel": "Cancel",
+    "dataSection": "Data"
+  },
+  "bookmarks": {
+    "title": "Saved Questions",
+    "back": "Back",
+    "remove": "Remove bookmark",
+    "empty": "You haven't saved any questions yet. Bookmark questions in Practice or the Simulated Exam to review them here."
   }
 }
