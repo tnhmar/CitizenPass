@@ -69,10 +69,24 @@ describe("question bank governance", () => {
   });
 
   it("does not contain exact duplicate question text in either language", () => {
-    const englishQuestions = questions.map((question) => normalizeQuestionText(question.en.question));
-    const frenchQuestions = questions.map((question) => normalizeQuestionText(question.fr.question));
+    const findDuplicateEntries = (language: "en" | "fr") => {
+      const firstIndexByText = new Map<string, number>();
+      const duplicates: string[] = [];
+      questions.forEach((question, index) => {
+        const text = normalizeQuestionText(question[language].question);
+        const firstIndex = firstIndexByText.get(text);
+        if (firstIndex !== undefined) {
+          duplicates.push(
+            `${language}: "${text}" appears in both ${questions[firstIndex].id} and ${question.id}`
+          );
+        } else {
+          firstIndexByText.set(text, index);
+        }
+      });
+      return duplicates;
+    };
 
-    expect(new Set(englishQuestions).size).toBe(englishQuestions.length);
-    expect(new Set(frenchQuestions).size).toBe(frenchQuestions.length);
+    expect(findDuplicateEntries("en")).toEqual([]);
+    expect(findDuplicateEntries("fr")).toEqual([]);
   });
 });
