@@ -29,7 +29,8 @@
     "zustand": "^4.5.0",
     "@react-native-async-storage/async-storage": "1.23.1",
     "i18next": "^23.11.0",
-    "react-i18next": "^14.1.0"
+    "react-i18next": "^14.1.0",
+    "@expo/vector-icons": "^14.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.24.0",
