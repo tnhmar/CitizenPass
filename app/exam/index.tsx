@@ -25,6 +25,7 @@ export default function ExamIndexScreen() {
   const status = useExamStore((state) => state.status);
   const questions = useExamStore((state) => state.questions);
   const answers = useExamStore((state) => state.answers);
+  const optionOrder = useExamStore((state) => state.optionOrder);
   const startExam = useExamStore((state) => state.startExam);
   const selectAnswer = useExamStore((state) => state.selectAnswer);
   const pauseExam = useExamStore((state) => state.pause);
@@ -133,7 +134,16 @@ export default function ExamIndexScreen() {
     );
   }
 
-  const selectedIndex = answers[current.id];
+  // `order[displayPosition]` gives the canonical option index shown at
+  // that position, so the correct answer is not always option A.
+  // Answers are stored/scored using the canonical index (see
+  // useExamStore.submitExam), so we map canonical <-> display position
+  // here purely for rendering and selection.
+  const order = optionOrder[current.id] ?? current.en.options.map((_, i) => i);
+  const displayedOptions = order.map((canonicalIndex) => localized.options[canonicalIndex]);
+  const selectedCanonicalIndex = answers[current.id];
+  const selectedDisplayPosition =
+    selectedCanonicalIndex !== undefined ? order.indexOf(selectedCanonicalIndex) : undefined;
   const answeredCount = Object.keys(answers).length;
   const isLowTime = remainingMs < 5 * 60 * 1000;
 
@@ -159,22 +169,23 @@ export default function ExamIndexScreen() {
       </View>
 
       <View style={styles.progressDots}>
-        {questions.map((q, index) => (
-          <View
-            key={q.id}
-            style={[
-              styles.dot,
-              {
-                backgroundColor:
-                  index === currentIndex
-                    ? theme.colors.primary
-                    : answers[q.id] !== undefined
-                      ? theme.colors.secondary
-                      : theme.colors.surfaceVariant,
-              },
-            ]}
-          />
-        ))}
+        {questions.map((q, index) => {
+          const isCurrent = index === currentIndex;
+          const isAnswered = answers[q.id] !== undefined;
+          return (
+            <View
+              key={q.id}
+              style={[
+                styles.dot,
+                isCurrent
+                  ? { backgroundColor: theme.colors.primary, borderColor: theme.colors.primary }
+                  : isAnswered
+                    ? { backgroundColor: theme.colors.secondary, borderColor: theme.colors.secondary }
+                    : { backgroundColor: "transparent", borderColor: theme.colors.outline },
+              ]}
+            />
+          );
+        })}
       </View>
 
       <Card mode="elevated" style={styles.questionCard}>
@@ -183,15 +194,15 @@ export default function ExamIndexScreen() {
         </Card.Content>
       </Card>
 
-      {localized.options.map((option, index) => (
+      {displayedOptions.map((option, displayPosition) => (
         <Button
-          key={index}
-          mode={selectedIndex === index ? "contained" : "outlined"}
-          onPress={() => selectAnswer(current.id, index)}
+          key={displayPosition}
+          mode={selectedDisplayPosition === displayPosition ? "contained" : "outlined"}
+          onPress={() => selectAnswer(current.id, order[displayPosition])}
           style={styles.optionButton}
           contentStyle={styles.optionButtonContent}
         >
-          {OPTION_LETTERS[index]}. {option}
+          {OPTION_LETTERS[displayPosition]}. {option}
         </Button>
       ))}
 
@@ -252,7 +263,7 @@ const styles = StyleSheet.create({
     paddingVertical: 6,
   },
   progressDots: { flexDirection: "row", gap: 4, marginBottom: 16, flexWrap: "wrap" },
-  dot: { width: 8, height: 8, borderRadius: 4 },
+  dot: { width: 8, height: 8, borderRadius: 4, borderWidth: 1 },
   questionCard: { marginBottom: 16 },
   optionButton: { marginBottom: 10 },
   optionButtonContent: { justifyContent: "flex-start" },
