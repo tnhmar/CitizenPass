@@ -7,9 +7,9 @@ import {
 } from "../../src/data/questionLoader";
 
 describe("questionLoader", () => {
-  it("loads 154 verified questions across all 9 chapters", () => {
+  it("loads 174 verified questions across all 9 chapters", () => {
     const all = getAllVerifiedQuestions();
-    expect(all.length).toBe(154);
+    expect(all.length).toBe(174);
     for (const question of all) {
       expect(question.en.source.reviewStatus).toBe("verified");
       expect(question.fr.source.reviewStatus).toBe("verified");
@@ -34,6 +34,11 @@ describe("questionLoader", () => {
   it("expanded who-we-are chapter with variant questions", () => {
     const chapterQuestions = getVerifiedQuestionsByChapter("who-we-are");
     expect(chapterQuestions.length).toBe(24);
+  });
+
+  it("expanded federal-elections chapter with variant questions", () => {
+    const chapterQuestions = getVerifiedQuestionsByChapter("federal-elections");
+    expect(chapterQuestions.length).toBe(30);
   });
 
   it("every variantOf reference points to a learning objective that exists in the same chapter", () => {
