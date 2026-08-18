@@ -93,6 +93,7 @@ export default function ProgressScreen() {
               label={t("progress.bookmarksLabel")}
               value={String(bookmarkedQuestionIds.length)}
               color="#C77F1A"
+              onPress={() => router.push("/bookmarks")}
             />
           </View>
 

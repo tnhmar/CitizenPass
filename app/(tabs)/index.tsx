@@ -7,11 +7,13 @@ import { StatPill } from "../../src/components/StatPill";
 import { useProgressStore } from "../../src/store/useProgressStore";
 import { getChapterList } from "../../src/data/contentLoader";
 
-function getGreeting(): { text: string; emoji: string } {
+type GreetingKey = "home.greetingMorning" | "home.greetingAfternoon" | "home.greetingEvening";
+
+function getGreeting(): { key: GreetingKey; emoji: string } {
   const hour = new Date().getHours();
-  if (hour < 12) return { text: "Good morning", emoji: "☀️" };
-  if (hour < 18) return { text: "Good afternoon", emoji: "🌤️" };
-  return { text: "Good evening", emoji: "🌙" };
+  if (hour < 12) return { key: "home.greetingMorning", emoji: "☀️" };
+  if (hour < 18) return { key: "home.greetingAfternoon", emoji: "🌤️" };
+  return { key: "home.greetingEvening", emoji: "🌙" };
 }
 
 export default function HomeScreen() {
@@ -37,7 +39,7 @@ export default function HomeScreen() {
         🍁 {t("common.appName")}
       </Text>
       <Text variant="titleMedium" style={styles.greeting}>
-        {greeting.emoji} {greeting.text}
+        {greeting.emoji} {t(greeting.key)}
       </Text>
 
       <Card mode="elevated" style={[styles.heroCard, { backgroundColor: theme.colors.primaryContainer }]}>
@@ -63,7 +65,12 @@ export default function HomeScreen() {
               label={t("home.chaptersStarted")}
               value={`${chaptersStartedCount}/${totalChapters}`}
             />
-            <StatPill icon="bookmark" label={t("home.bookmarks")} value={String(bookmarkedQuestionIds.length)} />
+            <StatPill
+              icon="bookmark"
+              label={t("home.bookmarks")}
+              value={String(bookmarkedQuestionIds.length)}
+              onPress={() => router.push("/bookmarks")}
+            />
           </View>
         </Card.Content>
       </Card>
