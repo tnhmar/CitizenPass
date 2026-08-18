@@ -7,9 +7,9 @@ import {
 } from "../../src/data/questionLoader";
 
 describe("questionLoader", () => {
-  it("loads 125 verified questions across all 9 chapters", () => {
+  it("loads 138 verified questions across all 9 chapters", () => {
     const all = getAllVerifiedQuestions();
-    expect(all.length).toBe(125);
+    expect(all.length).toBe(138);
     for (const question of all) {
       expect(question.en.source.reviewStatus).toBe("verified");
       expect(question.fr.source.reviewStatus).toBe("verified");
@@ -20,7 +20,7 @@ describe("questionLoader", () => {
 
   it("filters questions by chapter", () => {
     const chapterQuestions = getVerifiedQuestionsByChapter("justice-system");
-    expect(chapterQuestions.length).toBe(6);
+    expect(chapterQuestions.length).toBe(19);
     for (const question of chapterQuestions) {
       expect(question.chapterId).toBe("justice-system");
     }
