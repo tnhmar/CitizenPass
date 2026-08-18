@@ -6,6 +6,9 @@
   "home": {
     "title": "Accueil",
     "getStarted": "Commencer",
+    "greetingMorning": "Bonjour",
+    "greetingAfternoon": "Bon après-midi",
+    "greetingEvening": "Bonsoir",
     "continueStudying": "Continuer l'étude",
     "continueStudyingDescription": "Parcourez les chapitres du guide d'étude officiel",
     "practice": "Pratique",
@@ -28,13 +31,21 @@
     "chapters": "questions",
     "markAsRead": "Marquer comme lu",
     "chapterCompleted": "Chapitre terminé",
-    "notFound": "Chapitre introuvable."
+    "notFound": "Chapitre introuvable.",
+    "practiceThisChapter": "Pratiquer ce chapitre"
   },
   "practice": {
     "title": "Pratique",
     "correct": "Correct !",
     "incorrect": "Incorrect",
-    "nextQuestion": "Question suivante"
+    "nextQuestion": "Question suivante",
+    "toggleBookmark": "Basculer le signet",
+    "viewBookmarks": "Voir les questions enregistrées",
+    "allChapters": "Tous les chapitres",
+    "sessionComplete": "Session terminée !",
+    "sessionSummary": "Vous avez obtenu {{correct}} sur {{total}} bonnes réponses ({{percent}} %).",
+    "practiceAgain": "Pratiquer à nouveau",
+    "practiceAllChapters": "Pratiquer tous les chapitres"
   },
   "exam": {
     "title": "Examen simulé",
@@ -84,5 +95,11 @@
     "resetConfirmBody": "Cela effacera tous les paramètres, signets et progrès stockés localement sur cet appareil. Cette action est irréversible.",
     "resetConfirmCancel": "Annuler",
     "dataSection": "Données"
+  },
+  "bookmarks": {
+    "title": "Questions enregistrées",
+    "back": "Retour",
+    "remove": "Retirer le signet",
+    "empty": "Vous n'avez enregistré aucune question. Ajoutez des signets en Pratique ou à l'Examen simulé pour les revoir ici."
   }
 }

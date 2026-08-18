@@ -6,6 +6,9 @@
   "home": {
     "title": "Home",
     "getStarted": "Get Started",
+    "greetingMorning": "Good morning",
+    "greetingAfternoon": "Good afternoon",
+    "greetingEvening": "Good evening",
     "continueStudying": "Continue Studying",
     "continueStudyingDescription": "Browse chapters from the official study guide",
     "practice": "Practice",
@@ -28,13 +31,21 @@
     "chapters": "questions",
     "markAsRead": "Mark chapter as read",
     "chapterCompleted": "Chapter completed",
-    "notFound": "Chapter not found."
+    "notFound": "Chapter not found.",
+    "practiceThisChapter": "Practice this chapter"
   },
   "practice": {
     "title": "Practice",
     "correct": "Correct!",
     "incorrect": "Incorrect",
-    "nextQuestion": "Next question"
+    "nextQuestion": "Next question",
+    "toggleBookmark": "Toggle bookmark",
+    "viewBookmarks": "View saved questions",
+    "allChapters": "All chapters",
+    "sessionComplete": "Session complete!",
+    "sessionSummary": "You got {{correct}} of {{total}} correct ({{percent}}%).",
+    "practiceAgain": "Practice again",
+    "practiceAllChapters": "Practice all chapters"
   },
   "exam": {
     "title": "Simulated Exam",
@@ -84,5 +95,11 @@
     "resetConfirmBody": "This will erase all locally stored settings, bookmarks, and progress on this device. This cannot be undone.",
     "resetConfirmCancel": "Cancel",
     "dataSection": "Data"
+  },
+  "bookmarks": {
+    "title": "Saved Questions",
+    "back": "Back",
+    "remove": "Remove bookmark",
+    "empty": "You haven't saved any questions yet. Bookmark questions in Practice or the Simulated Exam to review them here."
   }
 }
