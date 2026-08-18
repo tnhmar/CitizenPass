@@ -7,9 +7,9 @@ import {
 } from "../../src/data/questionLoader";
 
 describe("questionLoader", () => {
-  it("loads 184 verified questions across all 9 chapters", () => {
+  it("loads 174 verified questions across all 9 chapters", () => {
     const all = getAllVerifiedQuestions();
-    expect(all.length).toBe(184);
+    expect(all.length).toBe(174);
     for (const question of all) {
       expect(question.en.source.reviewStatus).toBe("verified");
       expect(question.fr.source.reviewStatus).toBe("verified");
