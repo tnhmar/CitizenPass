@@ -7,9 +7,9 @@ import {
 } from "../../src/data/questionLoader";
 
 describe("questionLoader", () => {
-  it("loads 107 verified questions across all 9 chapters", () => {
+  it("loads 125 verified questions across all 9 chapters", () => {
     const all = getAllVerifiedQuestions();
-    expect(all.length).toBe(107);
+    expect(all.length).toBe(125);
     for (const question of all) {
       expect(question.en.source.reviewStatus).toBe("verified");
       expect(question.fr.source.reviewStatus).toBe("verified");
@@ -23,6 +23,26 @@ describe("questionLoader", () => {
     expect(chapterQuestions.length).toBe(6);
     for (const question of chapterQuestions) {
       expect(question.chapterId).toBe("justice-system");
+    }
+  });
+
+  it("expanded rights-responsibilities chapter with variant questions", () => {
+    const chapterQuestions = getVerifiedQuestionsByChapter("rights-responsibilities");
+    expect(chapterQuestions.length).toBe(26);
+  });
+
+  it("every variantOf reference points to a learning objective that exists in the same chapter", () => {
+    const all = getAllVerifiedQuestions();
+    const objectiveIdsByChapter = new Map<string, Set<string>>();
+    for (const question of all) {
+      const set = objectiveIdsByChapter.get(question.chapterId) ?? new Set<string>();
+      set.add(question.learningObjectiveId);
+      objectiveIdsByChapter.set(question.chapterId, set);
+    }
+    for (const question of all) {
+      if (!question.variantOf) continue;
+      const chapterObjectiveIds = objectiveIdsByChapter.get(question.chapterId);
+      expect(chapterObjectiveIds?.has(question.variantOf)).toBe(true);
     }
   });
 
@@ -46,6 +66,13 @@ describe("questionLoader", () => {
     const second = drawRandomQuestions(5, excludeIds);
     for (const question of second) {
       expect(excludeIds).not.toContain(question.id);
+    }
+  });
+
+  it("draws only from the specified chapter when chapterId is provided", () => {
+    const drawn = drawRandomQuestions(5, [], "rights-responsibilities");
+    for (const question of drawn) {
+      expect(question.chapterId).toBe("rights-responsibilities");
     }
   });
 
