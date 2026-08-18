@@ -7,11 +7,18 @@ describe("NavCard", () => {
     const onPress = jest.fn();
     const { getByText, getByLabelText } = render(
       <PaperProvider>
-        <NavCard title="Practice" description="Random questions" onPress={onPress} />
+        <NavCard
+          title="Practice"
+          description="Random questions"
+          icon="pencil"
+          emoji="\u270f\ufe0f"
+          color="#B10E1E"
+          onPress={onPress}
+        />
       </PaperProvider>
     );
 
-    expect(getByText("Practice")).toBeTruthy();
+    expect(getByText("Practice", { exact: false })).toBeTruthy();
     expect(getByText("Random questions")).toBeTruthy();
 
     fireEvent.press(getByLabelText("Practice"));
