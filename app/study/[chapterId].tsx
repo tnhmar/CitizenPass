@@ -1,5 +1,5 @@
 import { ScrollView, StyleSheet, View } from "react-native";
-import { useLocalSearchParams } from "expo-router";
+import { useLocalSearchParams, useRouter } from "expo-router";
 import { Text, Button, Divider, useTheme } from "react-native-paper";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 import { useTranslation } from "react-i18next";
@@ -10,6 +10,7 @@ import { getChapterVisual } from "../../src/constants/chapterIcons";
 
 export default function ChapterDetailScreen() {
   const { chapterId } = useLocalSearchParams<{ chapterId: string }>();
+  const router = useRouter();
   const { t } = useTranslation();
   const theme = useTheme();
   const language = useSettingsStore((state) => state.language);
@@ -79,7 +80,16 @@ export default function ChapterDetailScreen() {
       </View>
 
       <Button
-        mode={isComplete ? "outlined" : "contained"}
+        mode="contained"
+        icon="pencil"
+        onPress={() => router.push({ pathname: "/practice", params: { chapterId: content.chapterId } })}
+        style={styles.practiceButton}
+      >
+        {t("study.practiceThisChapter")}
+      </Button>
+
+      <Button
+        mode={isComplete ? "outlined" : "text"}
         icon={isComplete ? "check-circle" : "check"}
         onPress={() => setChapterCompletion(chapterId as string, 100)}
         disabled={isComplete}
@@ -104,5 +114,6 @@ const styles = StyleSheet.create({
   bulletText: { flex: 1, lineHeight: 22 },
   divider: { marginVertical: 16 },
   sourceRow: { flexDirection: "row", alignItems: "flex-start", gap: 6, marginBottom: 16 },
+  practiceButton: { marginBottom: 12 },
   completeButton: { marginBottom: 32 },
 });
