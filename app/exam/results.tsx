@@ -1,6 +1,8 @@
 import { useRouter } from "expo-router";
 import { FlatList, StyleSheet, View } from "react-native";
-import { Text, Card, Button, useTheme } from "react-native-paper";
+import { Text, Card, Button, Chip, useTheme } from "react-native-paper";
+import { MaterialCommunityIcons } from "@expo/vector-icons";
+import { useTranslation } from "react-i18next";
 import { useSettingsStore } from "../../src/store/useSettingsStore";
 import { useExamStore } from "../../src/store/useExamStore";
 import { SourceCitationCard } from "../../src/components/SourceCitationCard";
@@ -8,6 +10,7 @@ import type { Question } from "../../src/types";
 
 export default function ExamResultsScreen() {
   const router = useRouter();
+  const { t } = useTranslation();
   const theme = useTheme();
   const language = useSettingsStore((state) => state.language);
   const status = useExamStore((state) => state.status);
@@ -19,9 +22,9 @@ export default function ExamResultsScreen() {
   if (status !== "submitted" || !result) {
     return (
       <View style={[styles.centered, { backgroundColor: theme.colors.background }]}>
-        <Text variant="titleMedium">No exam results to show yet.</Text>
-        <Button mode="contained" onPress={() => router.replace("/exam")} style={styles.backButton}>
-          Go to Simulated Exam
+        <Text variant="titleMedium">{t("exam.noResults")}</Text>
+        <Button mode="contained" icon="timer-outline" onPress={() => router.replace("/exam")} style={styles.backButton}>
+          {t("exam.goToExam")}
         </Button>
       </View>
     );
@@ -32,6 +35,8 @@ export default function ExamResultsScreen() {
     router.replace("/");
   };
 
+  const scorePercent = Math.round((result.correct / result.total) * 100);
+
   const renderItem = ({ item, index }: { item: Question; index: number }) => {
     const localized = item[language];
     const selectedIndex = answers[item.id];
@@ -41,20 +46,28 @@ export default function ExamResultsScreen() {
     return (
       <Card mode="outlined" style={styles.reviewCard}>
         <Card.Content>
-          <Text variant="titleSmall">
-            Question {index + 1} — {wasCorrect ? "Correct" : wasAnswered ? "Incorrect" : "Not answered"}
-          </Text>
+          <View style={styles.reviewHeaderRow}>
+            <MaterialCommunityIcons
+              name={wasCorrect ? "check-circle" : wasAnswered ? "close-circle" : "minus-circle-outline"}
+              size={18}
+              color={wasCorrect ? theme.colors.primary : wasAnswered ? theme.colors.error : theme.colors.onSurfaceVariant}
+            />
+            <Text variant="titleSmall">
+              {t("exam.questionOf", { current: index + 1, total: questions.length })} —{" "}
+              {wasCorrect ? t("exam.correct") : wasAnswered ? t("exam.incorrect") : t("exam.notAnswered")}
+            </Text>
+          </View>
           <Text variant="bodyMedium" style={styles.reviewQuestion}>
             {localized.question}
           </Text>
           <Text variant="bodySmall" style={{ color: theme.colors.onSurfaceVariant }}>
-            Your answer: {wasAnswered ? localized.options[selectedIndex] : "—"}
+            {t("exam.yourAnswer")}: {wasAnswered ? localized.options[selectedIndex] : "—"}
           </Text>
           <Text variant="bodySmall" style={{ color: theme.colors.primary }}>
-            Correct answer: {localized.options[localized.correctIndex]}
+            {t("exam.correctAnswer")}: {localized.options[localized.correctIndex]}
           </Text>
           <Text variant="bodyMedium" style={styles.reviewExplanation}>
-            {localized.explanation}
+            💡 {localized.explanation}
           </Text>
           <SourceCitationCard source={localized.source} />
         </Card.Content>
@@ -70,23 +83,28 @@ export default function ExamResultsScreen() {
       keyExtractor={(item) => item.id}
       renderItem={renderItem}
       ListHeaderComponent={
-        <Card mode="elevated" style={[styles.scoreCard, { backgroundColor: result.passed ? undefined : undefined }]}>
-          <Card.Content>
+        <Card
+          mode="elevated"
+          style={[styles.scoreCard, { backgroundColor: result.passed ? theme.colors.primaryContainer : theme.colors.errorContainer }]}
+        >
+          <Card.Content style={styles.scoreContent}>
+            <Text variant="displaySmall">{result.passed ? "🎉" : "📚"}</Text>
             <Text variant="headlineMedium">
-              {result.correct} / {result.total}
+              {result.correct} / {result.total} ({scorePercent}%)
             </Text>
-            <Text
-              variant="titleLarge"
-              style={{ color: result.passed ? theme.colors.primary : theme.colors.error }}
+            <Chip
+              icon={result.passed ? "trophy" : "refresh"}
+              style={{ backgroundColor: "transparent" }}
+              textStyle={{ color: result.passed ? theme.colors.primary : theme.colors.error, fontWeight: "700" }}
             >
-              {result.passed ? "PASSED" : "NOT PASSED"}
-            </Text>
+              {result.passed ? t("exam.passed") : t("exam.notPassed")}
+            </Chip>
           </Card.Content>
         </Card>
       }
       ListFooterComponent={
-        <Button mode="contained" onPress={handleDone} style={styles.doneButton}>
-          Done
+        <Button mode="contained" icon="home" onPress={handleDone} style={styles.doneButton}>
+          {t("exam.done")}
         </Button>
       }
     />
@@ -94,34 +112,14 @@ export default function ExamResultsScreen() {
 }
 
 const styles = StyleSheet.create({
-  listContent: {
-    padding: 16,
-  },
-  centered: {
-    flex: 1,
-    alignItems: "center",
-    justifyContent: "center",
-    padding: 16,
-    gap: 16,
-  },
-  backButton: {
-    marginTop: 8,
-  },
-  scoreCard: {
-    marginBottom: 16,
-  },
-  reviewCard: {
-    marginBottom: 12,
-  },
-  reviewQuestion: {
-    marginTop: 8,
-    marginBottom: 8,
-  },
-  reviewExplanation: {
-    marginTop: 8,
-  },
-  doneButton: {
-    marginTop: 8,
-    marginBottom: 32,
-  },
+  listContent: { padding: 16, paddingBottom: 32 },
+  centered: { flex: 1, alignItems: "center", justifyContent: "center", padding: 16, gap: 16 },
+  backButton: { marginTop: 8 },
+  scoreCard: { marginBottom: 16 },
+  scoreContent: { alignItems: "center", gap: 8 },
+  reviewCard: { marginBottom: 12 },
+  reviewHeaderRow: { flexDirection: "row", alignItems: "center", gap: 6 },
+  reviewQuestion: { marginTop: 8, marginBottom: 8 },
+  reviewExplanation: { marginTop: 8 },
+  doneButton: { marginTop: 8, marginBottom: 32 },
 });
