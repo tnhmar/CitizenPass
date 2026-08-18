@@ -7,9 +7,9 @@ import {
 } from "../../src/data/questionLoader";
 
 describe("questionLoader", () => {
-  it("loads 138 verified questions across all 9 chapters", () => {
+  it("loads 154 verified questions across all 9 chapters", () => {
     const all = getAllVerifiedQuestions();
-    expect(all.length).toBe(138);
+    expect(all.length).toBe(154);
     for (const question of all) {
       expect(question.en.source.reviewStatus).toBe("verified");
       expect(question.fr.source.reviewStatus).toBe("verified");
@@ -29,6 +29,11 @@ describe("questionLoader", () => {
   it("expanded rights-responsibilities chapter with variant questions", () => {
     const chapterQuestions = getVerifiedQuestionsByChapter("rights-responsibilities");
     expect(chapterQuestions.length).toBe(26);
+  });
+
+  it("expanded who-we-are chapter with variant questions", () => {
+    const chapterQuestions = getVerifiedQuestionsByChapter("who-we-are");
+    expect(chapterQuestions.length).toBe(24);
   });
 
   it("every variantOf reference points to a learning objective that exists in the same chapter", () => {
