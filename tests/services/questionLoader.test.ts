@@ -7,14 +7,15 @@ import {
 } from "../../src/data/questionLoader";
 
 describe("questionLoader", () => {
-  it("loads 174 verified questions across all 9 chapters", () => {
+  it("loads 182 verified questions across all 9 chapters", () => {
     const all = getAllVerifiedQuestions();
-    expect(all.length).toBe(174);
+    expect(all.length).toBe(182);
     for (const question of all) {
       expect(question.en.source.reviewStatus).toBe("verified");
       expect(question.fr.source.reviewStatus).toBe("verified");
-      expect(question.en.options.length).toBe(4);
-      expect(question.fr.options.length).toBe(4);
+      const expectedOptionCount = question.type === "true-false" ? 2 : 4;
+      expect(question.en.options.length).toBe(expectedOptionCount);
+      expect(question.fr.options.length).toBe(expectedOptionCount);
     }
   });
 
@@ -28,7 +29,7 @@ describe("questionLoader", () => {
 
   it("expanded rights-responsibilities chapter with variant questions", () => {
     const chapterQuestions = getVerifiedQuestionsByChapter("rights-responsibilities");
-    expect(chapterQuestions.length).toBe(26);
+    expect(chapterQuestions.length).toBe(34);
   });
 
   it("expanded who-we-are chapter with variant questions", () => {
