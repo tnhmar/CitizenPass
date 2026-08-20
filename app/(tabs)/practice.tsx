@@ -10,6 +10,7 @@ import { drawRandomQuestions } from "../../src/data/questionLoader";
 import { getChapterList, getChapterTitle } from "../../src/data/contentLoader";
 import { randomOptionOrder, applyOptionOrder } from "../../src/utils/questionDisplay";
 import { SourceCitationCard } from "../../src/components/SourceCitationCard";
+import { OptionButton } from "../../src/components/OptionButton";
 import type { Question } from "../../src/types";
 
 const OPTION_LETTERS = ["A", "B", "C", "D"];
@@ -202,34 +203,36 @@ export default function PracticeScreen() {
         const isCorrectOption = index === localized.correctIndex;
         const isSelected = index === selectedIndex;
         let mode: "contained" | "outlined" = "outlined";
-        let buttonColor: string | undefined;
-        let icon: string | undefined;
+        let containedColor: string | undefined;
+        let contentColor: string | undefined;
+        let icon: "check-circle" | "close-circle" | undefined;
 
         if (hasAnswered) {
           if (isCorrectOption) {
             mode = "contained";
-            buttonColor = theme.colors.primary;
+            containedColor = theme.colors.primary;
+            contentColor = theme.colors.onPrimary;
             icon = "check-circle";
           } else if (isSelected) {
             mode = "contained";
-            buttonColor = theme.colors.error;
+            containedColor = theme.colors.error;
+            contentColor = theme.colors.onError;
             icon = "close-circle";
           }
         }
 
         return (
-          <Button
+          <OptionButton
             key={index}
+            label={`${OPTION_LETTERS[index]}. ${option}`}
             mode={mode}
-            buttonColor={buttonColor}
+            containedColor={containedColor}
+            contentColor={contentColor}
             icon={icon}
             onPress={() => handleSelect(index)}
             disabled={hasAnswered}
             style={styles.optionButton}
-            contentStyle={styles.optionButtonContent}
-          >
-            {OPTION_LETTERS[index]}. {option}
-          </Button>
+          />
         );
       })}
 
@@ -287,7 +290,6 @@ const styles = StyleSheet.create({
   questionCard: { marginBottom: 16 },
   questionIcon: { marginBottom: 8 },
   optionButton: { marginBottom: 10 },
-  optionButtonContent: { justifyContent: "flex-start" },
   feedbackBanner: {
     flexDirection: "row",
     alignItems: "center",

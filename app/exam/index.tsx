@@ -6,6 +6,7 @@ import { MaterialCommunityIcons } from "@expo/vector-icons";
 import { useTranslation } from "react-i18next";
 import { useSettingsStore } from "../../src/store/useSettingsStore";
 import { useProgressStore } from "../../src/store/useProgressStore";
+import { OptionButton } from "../../src/components/OptionButton";
 import {
   useExamStore,
   getRemainingMs,
@@ -195,15 +196,13 @@ export default function ExamIndexScreen() {
       </Card>
 
       {displayedOptions.map((option, displayPosition) => (
-        <Button
+        <OptionButton
           key={displayPosition}
+          label={`${OPTION_LETTERS[displayPosition]}. ${option}`}
           mode={selectedDisplayPosition === displayPosition ? "contained" : "outlined"}
           onPress={() => selectAnswer(current.id, order[displayPosition])}
           style={styles.optionButton}
-          contentStyle={styles.optionButtonContent}
-        >
-          {OPTION_LETTERS[displayPosition]}. {option}
-        </Button>
+        />
       ))}
 
       <View style={styles.navRow}>
@@ -266,7 +265,6 @@ const styles = StyleSheet.create({
   dot: { width: 8, height: 8, borderRadius: 4, borderWidth: 1 },
   questionCard: { marginBottom: 16 },
   optionButton: { marginBottom: 10 },
-  optionButtonContent: { justifyContent: "flex-start" },
   navRow: { flexDirection: "row", justifyContent: "space-between", marginTop: 16 },
   answeredCount: { textAlign: "center", marginTop: 16, marginBottom: 32 },
 });
