@@ -7,9 +7,9 @@ import {
 } from "../../src/data/questionLoader";
 
 describe("questionLoader", () => {
-  it("loads 182 verified questions across all 9 chapters", () => {
+  it("loads 411 verified questions across all 9 chapters", () => {
     const all = getAllVerifiedQuestions();
-    expect(all.length).toBe(182);
+    expect(all.length).toBe(411);
     for (const question of all) {
       expect(question.en.source.reviewStatus).toBe("verified");
       expect(question.fr.source.reviewStatus).toBe("verified");
@@ -21,7 +21,7 @@ describe("questionLoader", () => {
 
   it("filters questions by chapter", () => {
     const chapterQuestions = getVerifiedQuestionsByChapter("justice-system");
-    expect(chapterQuestions.length).toBe(19);
+    expect(chapterQuestions.length).toBe(25);
     for (const question of chapterQuestions) {
       expect(question.chapterId).toBe("justice-system");
     }
@@ -34,12 +34,37 @@ describe("questionLoader", () => {
 
   it("expanded who-we-are chapter with variant questions", () => {
     const chapterQuestions = getVerifiedQuestionsByChapter("who-we-are");
-    expect(chapterQuestions.length).toBe(24);
+    expect(chapterQuestions.length).toBe(32);
   });
 
   it("expanded federal-elections chapter with variant questions", () => {
     const chapterQuestions = getVerifiedQuestionsByChapter("federal-elections");
-    expect(chapterQuestions.length).toBe(30);
+    expect(chapterQuestions.length).toBe(40);
+  });
+
+  it("expanded canadas-history chapter with variant questions", () => {
+    const chapterQuestions = getVerifiedQuestionsByChapter("canadas-history");
+    expect(chapterQuestions.length).toBe(55);
+  });
+
+  it("expanded modern-canada chapter with variant questions", () => {
+    const chapterQuestions = getVerifiedQuestionsByChapter("modern-canada");
+    expect(chapterQuestions.length).toBe(59);
+  });
+
+  it("expanded how-canadians-govern-themselves chapter with variant questions", () => {
+    const chapterQuestions = getVerifiedQuestionsByChapter("how-canadians-govern-themselves");
+    expect(chapterQuestions.length).toBe(47);
+  });
+
+  it("expanded canadian-symbols chapter with variant questions", () => {
+    const chapterQuestions = getVerifiedQuestionsByChapter("canadian-symbols");
+    expect(chapterQuestions.length).toBe(57);
+  });
+
+  it("expanded canadas-regions chapter with variant questions", () => {
+    const chapterQuestions = getVerifiedQuestionsByChapter("canadas-regions");
+    expect(chapterQuestions.length).toBe(62);
   });
 
   it("every variantOf reference points to a learning objective that exists in the same chapter", () => {
