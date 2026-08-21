@@ -27,3 +27,14 @@ export function applyOptionOrder(localized: LocalizedQuestion, order: number[]):
   const correctIndex = order.indexOf(localized.correctIndex);
   return { ...localized, options, correctIndex };
 }
+
+/**
+ * Same reordering as applyOptionOrder, for the Arabic translation's plain
+ * options list (no correctIndex to recompute — the Arabic face is never
+ * selectable). Must be applied with the exact same `order` array used for
+ * the en/fr options currently on screen, or the translation will point at
+ * the wrong letter.
+ */
+export function applyOptionOrderToArabic(options: string[], order: number[]): string[] {
+  return order.map((i) => options[i]);
+}

@@ -45,7 +45,11 @@
     "sessionComplete": "Session terminée !",
     "sessionSummary": "Vous avez obtenu {{correct}} sur {{total}} bonnes réponses ({{percent}} %).",
     "practiceAgain": "Pratiquer à nouveau",
-    "practiceAllChapters": "Pratiquer tous les chapitres"
+    "practiceAllChapters": "Pratiquer tous les chapitres",
+    "previous": "Précédent",
+    "arabicHelpButton": "Aide arabe",
+    "backToQuestionButton": "Retour à la question",
+    "arabicReadOnly": "Traduction en lecture seule pour vous aider à comprendre. Répondez de l'autre côté."
   },
   "exam": {
     "title": "Examen simulé",
@@ -94,7 +98,9 @@
     "resetData": "Réinitialiser les données locales",
     "resetConfirmBody": "Cela effacera tous les paramètres, signets et progrès stockés localement sur cet appareil. Cette action est irréversible.",
     "resetConfirmCancel": "Annuler",
-    "dataSection": "Données"
+    "dataSection": "Données",
+    "arabicHelp": "Aide à la traduction en arabe",
+    "arabicHelpDescription": "Afficher un bouton sur les questions de pratique pour voir une traduction en arabe. Lecture seule, pour la compréhension seulement — vous répondez toujours en anglais ou en français. Non disponible pendant l'examen simulé."
   },
   "bookmarks": {
     "title": "Questions enregistrées",

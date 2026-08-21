@@ -6,6 +6,7 @@ import { useTranslation } from "react-i18next";
 import { useSettingsStore } from "../../src/store/useSettingsStore";
 import { useExamStore } from "../../src/store/useExamStore";
 import { SourceCitationCard } from "../../src/components/SourceCitationCard";
+import { ArabicFlipCard } from "../../src/components/ArabicFlipCard";
 import type { Question } from "../../src/types";
 
 export default function ExamResultsScreen() {
@@ -13,6 +14,7 @@ export default function ExamResultsScreen() {
   const { t } = useTranslation();
   const theme = useTheme();
   const language = useSettingsStore((state) => state.language);
+  const arabicHelpEnabled = useSettingsStore((state) => state.arabicHelpEnabled);
   const status = useExamStore((state) => state.status);
   const questions = useExamStore((state) => state.questions);
   const answers = useExamStore((state) => state.answers);
@@ -44,34 +46,41 @@ export default function ExamResultsScreen() {
     const wasCorrect = selectedIndex === localized.correctIndex;
 
     return (
-      <Card mode="outlined" style={styles.reviewCard}>
-        <Card.Content>
-          <View style={styles.reviewHeaderRow}>
-            <MaterialCommunityIcons
-              name={wasCorrect ? "check-circle" : wasAnswered ? "close-circle" : "minus-circle-outline"}
-              size={18}
-              color={wasCorrect ? theme.colors.primary : wasAnswered ? theme.colors.error : theme.colors.onSurfaceVariant}
-            />
-            <Text variant="titleSmall">
-              {t("exam.questionOf", { current: index + 1, total: questions.length })} —{" "}
-              {wasCorrect ? t("exam.correct") : wasAnswered ? t("exam.incorrect") : t("exam.notAnswered")}
-            </Text>
-          </View>
-          <Text variant="bodyMedium" style={styles.reviewQuestion}>
-            {localized.question}
-          </Text>
-          <Text variant="bodySmall" style={{ color: theme.colors.onSurfaceVariant }}>
-            {t("exam.yourAnswer")}: {wasAnswered ? localized.options[selectedIndex] : "—"}
-          </Text>
-          <Text variant="bodySmall" style={{ color: theme.colors.primary }}>
-            {t("exam.correctAnswer")}: {localized.options[localized.correctIndex]}
-          </Text>
-          <Text variant="bodyMedium" style={styles.reviewExplanation}>
-            💡 {localized.explanation}
-          </Text>
-          <SourceCitationCard source={localized.source} />
-        </Card.Content>
-      </Card>
+      <ArabicFlipCard
+        enabled={arabicHelpEnabled}
+        arabic={item.ar}
+        showExplanation
+        front={
+          <Card mode="outlined" style={styles.reviewCard}>
+            <Card.Content>
+              <View style={styles.reviewHeaderRow}>
+                <MaterialCommunityIcons
+                  name={wasCorrect ? "check-circle" : wasAnswered ? "close-circle" : "minus-circle-outline"}
+                  size={18}
+                  color={wasCorrect ? theme.colors.primary : wasAnswered ? theme.colors.error : theme.colors.onSurfaceVariant}
+                />
+                <Text variant="titleSmall">
+                  {t("exam.questionOf", { current: index + 1, total: questions.length })} —{" "}
+                  {wasCorrect ? t("exam.correct") : wasAnswered ? t("exam.incorrect") : t("exam.notAnswered")}
+                </Text>
+              </View>
+              <Text variant="bodyMedium" style={styles.reviewQuestion}>
+                {localized.question}
+              </Text>
+              <Text variant="bodySmall" style={{ color: theme.colors.onSurfaceVariant }}>
+                {t("exam.yourAnswer")}: {wasAnswered ? localized.options[selectedIndex] : "—"}
+              </Text>
+              <Text variant="bodySmall" style={{ color: theme.colors.primary }}>
+                {t("exam.correctAnswer")}: {localized.options[localized.correctIndex]}
+              </Text>
+              <Text variant="bodyMedium" style={styles.reviewExplanation}>
+                💡 {localized.explanation}
+              </Text>
+              <SourceCitationCard source={localized.source} />
+            </Card.Content>
+          </Card>
+        }
+      />
     );
   };
 
