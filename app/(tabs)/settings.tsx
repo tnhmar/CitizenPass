@@ -1,5 +1,5 @@
 import { StyleSheet, ScrollView, Alert } from "react-native";
-import { Text, Button, Divider, SegmentedButtons, Card, useTheme } from "react-native-paper";
+import { Text, Button, Divider, SegmentedButtons, Switch, Card, useTheme } from "react-native-paper";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 import { useTranslation } from "react-i18next";
 import { useSettingsStore } from "../../src/store/useSettingsStore";
@@ -13,6 +13,8 @@ export default function SettingsScreen() {
   const setLanguage = useSettingsStore((state) => state.setLanguage);
   const themePref = useSettingsStore((state) => state.theme);
   const setTheme = useSettingsStore((state) => state.setTheme);
+  const arabicHelpEnabled = useSettingsStore((state) => state.arabicHelpEnabled);
+  const setArabicHelpEnabled = useSettingsStore((state) => state.setArabicHelpEnabled);
   const resetSettings = useSettingsStore((state) => state.resetSettings);
   const resetProgress = useProgressStore((state) => state.resetProgress);
 
@@ -65,6 +67,20 @@ export default function SettingsScreen() {
       <Divider style={styles.divider} />
 
       <Text variant="titleMedium" style={styles.sectionTitle}>
+        🗣️ {t("settings.arabicHelp")}
+      </Text>
+      <Card mode="outlined">
+        <Card.Content style={styles.arabicToggleRow}>
+          <Text variant="bodyMedium" style={styles.arabicToggleText}>
+            {t("settings.arabicHelpDescription")}
+          </Text>
+          <Switch value={arabicHelpEnabled} onValueChange={setArabicHelpEnabled} />
+        </Card.Content>
+      </Card>
+
+      <Divider style={styles.divider} />
+
+      <Text variant="titleMedium" style={styles.sectionTitle}>
         🗑️ {t("settings.dataSection")}
       </Text>
       <Button
@@ -95,6 +111,8 @@ const styles = StyleSheet.create({
   sectionTitle: { marginTop: 8, marginBottom: 10 },
   divider: { marginVertical: 20 },
   resetButton: { marginTop: 4 },
+  arabicToggleRow: { flexDirection: "row", alignItems: "center", gap: 12 },
+  arabicToggleText: { flex: 1 },
   disclaimerCard: { marginTop: 24 },
   disclaimerContent: { flexDirection: "row", gap: 8, alignItems: "flex-start" },
 });

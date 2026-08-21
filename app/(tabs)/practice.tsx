@@ -8,12 +8,19 @@ import { useSettingsStore } from "../../src/store/useSettingsStore";
 import { useProgressStore } from "../../src/store/useProgressStore";
 import { drawRandomQuestions } from "../../src/data/questionLoader";
 import { getChapterList, getChapterTitle } from "../../src/data/contentLoader";
-import { randomOptionOrder, applyOptionOrder } from "../../src/utils/questionDisplay";
+import { randomOptionOrder, applyOptionOrder, applyOptionOrderToArabic } from "../../src/utils/questionDisplay";
 import { SourceCitationCard } from "../../src/components/SourceCitationCard";
 import { OptionButton } from "../../src/components/OptionButton";
+import { ArabicFlipCard } from "../../src/components/ArabicFlipCard";
 import type { Question } from "../../src/types";
 
 const OPTION_LETTERS = ["A", "B", "C", "D"];
+
+type PracticeHistoryEntry = {
+  question: Question;
+  optionOrder: number[];
+  selectedIndex: number | null;
+};
 
 export default function PracticeScreen() {
   const { chapterId: initialChapterId } = useLocalSearchParams<{ chapterId?: string }>();
@@ -21,6 +28,7 @@ export default function PracticeScreen() {
   const { t } = useTranslation();
   const theme = useTheme();
   const language = useSettingsStore((state) => state.language);
+  const arabicHelpEnabled = useSettingsStore((state) => state.arabicHelpEnabled);
   const bookmarkedQuestionIds = useProgressStore((state) => state.bookmarkedQuestionIds);
   const toggleBookmark = useProgressStore((state) => state.toggleBookmark);
   const recordPracticeAnswer = useProgressStore((state) => state.recordPracticeAnswer);
@@ -29,30 +37,40 @@ export default function PracticeScreen() {
   const [chapterFilter, setChapterFilter] = useState<string | null>(initialChapterId ?? null);
   const [menuVisible, setMenuVisible] = useState(false);
 
-  const [current, setCurrent] = useState<Question | null>(null);
-  const [optionOrder, setOptionOrder] = useState<number[]>([]);
-  const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
-  const [seenIds, setSeenIds] = useState<string[]>([]);
+  // A history stack (not just a single "current question") so Previous can
+  // step back to an earlier question with its answer state intact, and
+  // Next can step forward through already-seen history before drawing a
+  // brand-new question once the frontier is reached.
+  const [history, setHistory] = useState<PracticeHistoryEntry[]>([]);
+  const [historyIndex, setHistoryIndex] = useState(-1);
   const [sessionCorrect, setSessionCorrect] = useState(0);
   const [sessionAnswered, setSessionAnswered] = useState(0);
   const [sessionComplete, setSessionComplete] = useState(false);
 
+  const current = historyIndex >= 0 ? (history[historyIndex]?.question ?? null) : null;
+  const optionOrder = historyIndex >= 0 ? (history[historyIndex]?.optionOrder ?? []) : [];
+  const selectedIndex = historyIndex >= 0 ? (history[historyIndex]?.selectedIndex ?? null) : null;
+  const isAtFrontier = historyIndex === history.length - 1;
+
   const drawNext = (excludeIds: string[], chapter: string | null) => {
     const [next] = drawRandomQuestions(1, excludeIds, chapter ?? undefined);
     if (!next) {
-      setCurrent(null);
       setSessionComplete(true);
       return;
     }
-    setSeenIds((prev) => [...prev, next.id]);
-    setCurrent(next);
-    setOptionOrder(randomOptionOrder(next.en.options.length));
-    setSelectedIndex(null);
+    const entry: PracticeHistoryEntry = {
+      question: next,
+      optionOrder: randomOptionOrder(next.en.options.length),
+      selectedIndex: null,
+    };
+    setHistory((prev) => [...prev, entry]);
+    setHistoryIndex((i) => i + 1);
   };
 
   const startSession = (chapter: string | null) => {
     setChapterFilter(chapter);
-    setSeenIds([]);
+    setHistory([]);
+    setHistoryIndex(-1);
     setSessionCorrect(0);
     setSessionAnswered(0);
     setSessionComplete(false);
@@ -74,12 +92,25 @@ export default function PracticeScreen() {
   const hasAnswered = selectedIndex !== null;
 
   const handleSelect = (index: number) => {
-    if (hasAnswered || !current || !localized) return;
-    setSelectedIndex(index);
+    if (hasAnswered || !current || !localized || historyIndex < 0) return;
+    setHistory((prev) => prev.map((entry, i) => (i === historyIndex ? { ...entry, selectedIndex: index } : entry)));
     const correct = index === localized.correctIndex;
     setSessionAnswered((n) => n + 1);
     if (correct) setSessionCorrect((n) => n + 1);
     void recordPracticeAnswer(current.id, correct);
+  };
+
+  const handlePrevious = () => {
+    setHistoryIndex((i) => Math.max(0, i - 1));
+  };
+
+  const handleNext = () => {
+    if (!isAtFrontier) {
+      setHistoryIndex((i) => i + 1);
+      return;
+    }
+    const seenIds = history.map((entry) => entry.question.id);
+    drawNext(seenIds, chapterFilter);
   };
 
   const handlePickChapter = (chapterId: string | null) => {
@@ -187,54 +218,68 @@ export default function PracticeScreen() {
 
       {chapterPicker}
 
-      <Card mode="elevated" style={styles.questionCard}>
-        <Card.Content>
-          <MaterialCommunityIcons
-            name="help-circle-outline"
-            size={20}
-            color={theme.colors.primary}
-            style={styles.questionIcon}
-          />
-          <Text variant="titleMedium">{localized.question}</Text>
-        </Card.Content>
-      </Card>
-
-      {localized.options.map((option, index) => {
-        const isCorrectOption = index === localized.correctIndex;
-        const isSelected = index === selectedIndex;
-        let mode: "contained" | "outlined" = "outlined";
-        let containedColor: string | undefined;
-        let contentColor: string | undefined;
-        let icon: "check-circle" | "close-circle" | undefined;
-
-        if (hasAnswered) {
-          if (isCorrectOption) {
-            mode = "contained";
-            containedColor = theme.colors.primary;
-            contentColor = theme.colors.onPrimary;
-            icon = "check-circle";
-          } else if (isSelected) {
-            mode = "contained";
-            containedColor = theme.colors.error;
-            contentColor = theme.colors.onError;
-            icon = "close-circle";
-          }
+      <ArabicFlipCard
+        enabled={arabicHelpEnabled}
+        arabic={
+          current.ar
+            ? { ...current.ar, options: applyOptionOrderToArabic(current.ar.options, optionOrder) }
+            : undefined
         }
+        showExplanation={hasAnswered}
+        style={styles.flipRegion}
+        front={
+          <>
+            <Card mode="elevated" style={styles.questionCard}>
+              <Card.Content>
+                <MaterialCommunityIcons
+                  name="help-circle-outline"
+                  size={20}
+                  color={theme.colors.primary}
+                  style={styles.questionIcon}
+                />
+                <Text variant="titleMedium">{localized.question}</Text>
+              </Card.Content>
+            </Card>
 
-        return (
-          <OptionButton
-            key={index}
-            label={`${OPTION_LETTERS[index]}. ${option}`}
-            mode={mode}
-            containedColor={containedColor}
-            contentColor={contentColor}
-            icon={icon}
-            onPress={() => handleSelect(index)}
-            disabled={hasAnswered}
-            style={styles.optionButton}
-          />
-        );
-      })}
+            {localized.options.map((option, index) => {
+              const isCorrectOption = index === localized.correctIndex;
+              const isSelected = index === selectedIndex;
+              let mode: "contained" | "outlined" = "outlined";
+              let containedColor: string | undefined;
+              let contentColor: string | undefined;
+              let icon: "check-circle" | "close-circle" | undefined;
+
+              if (hasAnswered) {
+                if (isCorrectOption) {
+                  mode = "contained";
+                  containedColor = theme.colors.primary;
+                  contentColor = theme.colors.onPrimary;
+                  icon = "check-circle";
+                } else if (isSelected) {
+                  mode = "contained";
+                  containedColor = theme.colors.error;
+                  contentColor = theme.colors.onError;
+                  icon = "close-circle";
+                }
+              }
+
+              return (
+                <OptionButton
+                  key={index}
+                  label={`${OPTION_LETTERS[index]}. ${option}`}
+                  mode={mode}
+                  containedColor={containedColor}
+                  contentColor={contentColor}
+                  icon={icon}
+                  onPress={() => handleSelect(index)}
+                  disabled={hasAnswered}
+                  style={styles.optionButton}
+                />
+              );
+            })}
+          </>
+        }
+      />
 
       {hasAnswered ? (
         <>
@@ -257,16 +302,23 @@ export default function PracticeScreen() {
             💡 {localized.explanation}
           </Text>
           <SourceCitationCard source={localized.source} />
-          <Button
-            mode="contained"
-            icon="arrow-right-circle"
-            onPress={() => drawNext(seenIds, chapterFilter)}
-            style={styles.nextButton}
-          >
-            {t("practice.nextQuestion")}
-          </Button>
         </>
       ) : null}
+
+      <View style={styles.navRow}>
+        <Button icon="chevron-left" disabled={historyIndex <= 0} onPress={handlePrevious}>
+          {t("practice.previous")}
+        </Button>
+        <Button
+          icon="chevron-right"
+          mode={hasAnswered ? "contained" : "outlined"}
+          contentStyle={{ flexDirection: "row-reverse" }}
+          disabled={isAtFrontier && !hasAnswered}
+          onPress={handleNext}
+        >
+          {t("practice.nextQuestion")}
+        </Button>
+      </View>
     </ScrollView>
   );
 }
@@ -288,6 +340,7 @@ const styles = StyleSheet.create({
   chapterPickerButton: { marginVertical: 12, alignSelf: "flex-start" },
   chapterPickerContent: { flexDirection: "row-reverse" },
   questionCard: { marginBottom: 16 },
+  flipRegion: { marginBottom: 4 },
   questionIcon: { marginBottom: 8 },
   optionButton: { marginBottom: 10 },
   feedbackBanner: {
@@ -299,7 +352,7 @@ const styles = StyleSheet.create({
     marginTop: 16,
   },
   explanation: { marginTop: 12, marginBottom: 4 },
-  nextButton: { marginTop: 16, marginBottom: 32 },
+  navRow: { flexDirection: "row", justifyContent: "space-between", marginTop: 16, marginBottom: 32 },
   completeCard: { marginTop: 8, marginBottom: 20 },
   completeContent: { alignItems: "center", gap: 8 },
   restartButton: { marginBottom: 8 },
