@@ -45,7 +45,11 @@
     "sessionComplete": "Session complete!",
     "sessionSummary": "You got {{correct}} of {{total}} correct ({{percent}}%).",
     "practiceAgain": "Practice again",
-    "practiceAllChapters": "Practice all chapters"
+    "practiceAllChapters": "Practice all chapters",
+    "previous": "Previous",
+    "arabicHelpButton": "Arabic help",
+    "backToQuestionButton": "Back to question",
+    "arabicReadOnly": "Read-only translation to help you understand. Answer on the other side."
   },
   "exam": {
     "title": "Simulated Exam",
@@ -94,7 +98,9 @@
     "resetData": "Reset local data",
     "resetConfirmBody": "This will erase all locally stored settings, bookmarks, and progress on this device. This cannot be undone.",
     "resetConfirmCancel": "Cancel",
-    "dataSection": "Data"
+    "dataSection": "Data",
+    "arabicHelp": "Arabic translation help",
+    "arabicHelpDescription": "Show a button on practice questions to see an Arabic translation. Read-only, for understanding only — you still answer in English or French. Not available during the simulated exam."
   },
   "bookmarks": {
     "title": "Saved Questions",
