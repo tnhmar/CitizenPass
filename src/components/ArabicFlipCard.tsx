@@ -41,17 +41,19 @@ type ArabicFlipCardProps = {
  * as `undefined` (auto) rather than 0, so the container doesn't visibly
  * collapse-then-pop on first mount before onLayout fires.
  *
- * The option row uses NESTED inline <Text> instead of a flexDirection-based
- * row. This matters: flexDirection "row"/"row-reverse" on a <View> gets
- * silently auto-mirrored by React Native when I18nManager.isRTL is true,
- * which would flip the letter to the wrong side regardless of what we pick.
- * Nested inline Text runs are NOT subject to that View-level mirroring —
- * the parent Text carries writingDirection: "rtl", and the letter is a
- * separate inner Text run marked writingDirection: "ltr". In an RTL
- * paragraph, the first logical run renders at the visual right, so the
- * letter (declared first in JSX) reliably lands at the right edge with the
- * Arabic answer continuing to its left — independent of the app's global
- * RTL/LTR setting.
+ * The option row is deliberately built with a flex row (View), NOT a
+ * single run of bidi text. Android has a documented bug where
+ * writingDirection on nested <Text> spans inside an RTL paragraph is not
+ * respected, so the option letter gets silently reordered by the Unicode
+ * bidi algorithm regardless of the style we set
+ * (facebook/react-native#17361). A flex layout sidesteps that entirely:
+ * children are positioned by explicit geometry, not text-direction
+ * inference. `direction: "ltr"` on the row additionally guards against
+ * React Native's automatic flexDirection mirroring when
+ * I18nManager.isRTL is true elsewhere in the app, so this row's physical
+ * layout — Arabic answer text, then the letter pinned to the row's right
+ * edge via justifyContent: "flex-end" — stays stable no matter the app's
+ * global RTL/LTR setting.
  */
 export function ArabicFlipCard({ enabled, arabic, showExplanation, front, style }: ArabicFlipCardProps) {
   const { t } = useTranslation();
@@ -110,10 +112,10 @@ export function ArabicFlipCard({ enabled, arabic, showExplanation, front, style 
             <Text style={styles.rtlText}>{arabic.question}</Text>
 
             {arabic.options.map((option, index) => (
-              <Text key={OPTION_LETTERS[index]} style={[styles.rtlText, styles.optionSpacing]}>
-                <Text style={styles.optionLetter}>{OPTION_LETTERS[index]}- </Text>
-                {option}
-              </Text>
+              <View key={OPTION_LETTERS[index]} style={styles.arabicOptionRow}>
+                <Text style={styles.optionAnswerText}>{option}</Text>
+                <Text style={styles.optionLetter}> -{OPTION_LETTERS[index]}</Text>
+              </View>
             ))}
 
             {showExplanation ? (
@@ -139,8 +141,25 @@ const styles = StyleSheet.create({
   backFace: { position: "absolute", top: 0, left: 0, right: 0 },
   arabicCard: { borderWidth: 1, borderRadius: 14, padding: 16, gap: 10 },
   rtlText: { writingDirection: "rtl", textAlign: "right" },
-  optionSpacing: { marginBottom: 6 },
-  optionLetter: { writingDirection: "ltr", fontWeight: "600" },
+  arabicOptionRow: {
+    flexDirection: "row",
+    justifyContent: "flex-end",
+    alignItems: "center",
+    // @ts-expect-error RN's ViewStyle type doesn't list `direction` on older
+    // type defs even though it's a supported native style prop; it forces
+    // this row's layout direction explicitly instead of inheriting
+    // I18nManager's global RTL/LTR mirroring.
+    direction: "ltr",
+    marginBottom: 6,
+  },
+  optionAnswerText: {
+    writingDirection: "rtl",
+    textAlign: "right",
+  },
+  optionLetter: {
+    writingDirection: "ltr",
+    fontWeight: "600",
+  },
   explanationSpacing: { marginTop: 6 },
   noteSpacing: { marginTop: 10, fontStyle: "italic" },
 });
