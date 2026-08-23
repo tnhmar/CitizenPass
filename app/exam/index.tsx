@@ -16,6 +16,12 @@ import {
 
 const OPTION_LETTERS = ["A", "B", "C", "D"];
 
+// Intentionally no ArabicFlipCard here. The simulated exam is meant to
+// replicate the real test: no translation help, no flipping, no
+// arabicHelpEnabled check at all — even if a user has the setting on
+// elsewhere, this screen never reads it. Arabic help lives in Practice
+// (app/(tabs)/practice.tsx) and in the post-exam review (app/exam/results.tsx).
+
 export default function ExamIndexScreen() {
   const router = useRouter();
   const { t } = useTranslation();

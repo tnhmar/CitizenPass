@@ -5,14 +5,18 @@ import { MaterialCommunityIcons } from "@expo/vector-icons";
 import { useTranslation } from "react-i18next";
 import { useSettingsStore } from "../../src/store/useSettingsStore";
 import { useExamStore } from "../../src/store/useExamStore";
+import { useSemanticColors } from "../../src/theme/useSemanticColors";
 import { SourceCitationCard } from "../../src/components/SourceCitationCard";
+import { ArabicFlipCard } from "../../src/components/ArabicFlipCard";
 import type { Question } from "../../src/types";
 
 export default function ExamResultsScreen() {
   const router = useRouter();
   const { t } = useTranslation();
   const theme = useTheme();
+  const { success, successContainer } = useSemanticColors();
   const language = useSettingsStore((state) => state.language);
+  const arabicHelpEnabled = useSettingsStore((state) => state.arabicHelpEnabled);
   const status = useExamStore((state) => state.status);
   const questions = useExamStore((state) => state.questions);
   const answers = useExamStore((state) => state.answers);
@@ -44,34 +48,41 @@ export default function ExamResultsScreen() {
     const wasCorrect = selectedIndex === localized.correctIndex;
 
     return (
-      <Card mode="outlined" style={styles.reviewCard}>
-        <Card.Content>
-          <View style={styles.reviewHeaderRow}>
-            <MaterialCommunityIcons
-              name={wasCorrect ? "check-circle" : wasAnswered ? "close-circle" : "minus-circle-outline"}
-              size={18}
-              color={wasCorrect ? theme.colors.primary : wasAnswered ? theme.colors.error : theme.colors.onSurfaceVariant}
-            />
-            <Text variant="titleSmall">
-              {t("exam.questionOf", { current: index + 1, total: questions.length })} —{" "}
-              {wasCorrect ? t("exam.correct") : wasAnswered ? t("exam.incorrect") : t("exam.notAnswered")}
-            </Text>
-          </View>
-          <Text variant="bodyMedium" style={styles.reviewQuestion}>
-            {localized.question}
-          </Text>
-          <Text variant="bodySmall" style={{ color: theme.colors.onSurfaceVariant }}>
-            {t("exam.yourAnswer")}: {wasAnswered ? localized.options[selectedIndex] : "—"}
-          </Text>
-          <Text variant="bodySmall" style={{ color: theme.colors.primary }}>
-            {t("exam.correctAnswer")}: {localized.options[localized.correctIndex]}
-          </Text>
-          <Text variant="bodyMedium" style={styles.reviewExplanation}>
-            💡 {localized.explanation}
-          </Text>
-          <SourceCitationCard source={localized.source} />
-        </Card.Content>
-      </Card>
+      <ArabicFlipCard
+        enabled={arabicHelpEnabled}
+        arabic={item.ar}
+        showExplanation
+        front={
+          <Card mode="outlined" style={styles.reviewCard}>
+            <Card.Content>
+              <View style={styles.reviewHeaderRow}>
+                <MaterialCommunityIcons
+                  name={wasCorrect ? "check-circle" : wasAnswered ? "close-circle" : "minus-circle-outline"}
+                  size={18}
+                  color={wasCorrect ? success : wasAnswered ? theme.colors.error : theme.colors.onSurfaceVariant}
+                />
+                <Text variant="titleSmall">
+                  {t("exam.questionOf", { current: index + 1, total: questions.length })} —{" "}
+                  {wasCorrect ? t("exam.correct") : wasAnswered ? t("exam.incorrect") : t("exam.notAnswered")}
+                </Text>
+              </View>
+              <Text variant="bodyMedium" style={styles.reviewQuestion}>
+                {localized.question}
+              </Text>
+              <Text variant="bodySmall" style={{ color: theme.colors.onSurfaceVariant }}>
+                {t("exam.yourAnswer")}: {wasAnswered ? localized.options[selectedIndex] : "—"}
+              </Text>
+              <Text variant="bodySmall" style={{ color: success }}>
+                {t("exam.correctAnswer")}: {localized.options[localized.correctIndex]}
+              </Text>
+              <Text variant="bodyMedium" style={styles.reviewExplanation}>
+                💡 {localized.explanation}
+              </Text>
+              <SourceCitationCard source={localized.source} />
+            </Card.Content>
+          </Card>
+        }
+      />
     );
   };
 
@@ -85,7 +96,7 @@ export default function ExamResultsScreen() {
       ListHeaderComponent={
         <Card
           mode="elevated"
-          style={[styles.scoreCard, { backgroundColor: result.passed ? theme.colors.primaryContainer : theme.colors.errorContainer }]}
+          style={[styles.scoreCard, { backgroundColor: result.passed ? successContainer : theme.colors.errorContainer }]}
         >
           <Card.Content style={styles.scoreContent}>
             <Text variant="displaySmall">{result.passed ? "🎉" : "📚"}</Text>
@@ -95,7 +106,7 @@ export default function ExamResultsScreen() {
             <Chip
               icon={result.passed ? "trophy" : "refresh"}
               style={{ backgroundColor: "transparent" }}
-              textStyle={{ color: result.passed ? theme.colors.primary : theme.colors.error, fontWeight: "700" }}
+              textStyle={{ color: result.passed ? success : theme.colors.error, fontWeight: "700" }}
             >
               {result.passed ? t("exam.passed") : t("exam.notPassed")}
             </Chip>
