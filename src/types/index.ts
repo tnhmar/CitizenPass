@@ -21,6 +21,18 @@ export type LocalizedQuestion = {
   source: SourceCitation;
 };
 
+/**
+ * Arabic is a comprehension aid, not a third exam language: no correctIndex
+ * (nothing is ever selectable on the Arabic face) and no SourceCitation
+ * (this is a translation of already-verified en/fr content, not an
+ * independently-sourced fact — see docs/question-bank-scaling.md).
+ */
+export type ArabicTranslation = {
+  question: string;
+  options: string[];
+  explanation: string;
+};
+
 export type Question = {
   id: string;
   chapterId: string;
@@ -41,6 +53,8 @@ export type Question = {
   difficulty: 1 | 2 | 3;
   en: LocalizedQuestion;
   fr: LocalizedQuestion;
+  /** Present only for questions that have an Arabic translation so far (rollout is in progress). */
+  ar?: ArabicTranslation;
 };
 
 export type AppLanguage = "en" | "fr";
