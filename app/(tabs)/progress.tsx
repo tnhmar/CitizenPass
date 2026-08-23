@@ -5,6 +5,7 @@ import { MaterialCommunityIcons } from "@expo/vector-icons";
 import { useTranslation } from "react-i18next";
 import { useProgressStore } from "../../src/store/useProgressStore";
 import { useSettingsStore } from "../../src/store/useSettingsStore";
+import { useSemanticColors } from "../../src/theme/useSemanticColors";
 import { getChapterList, getChapterTitle } from "../../src/data/contentLoader";
 import { getChapterVisual } from "../../src/constants/chapterIcons";
 import { StatPill } from "../../src/components/StatPill";
@@ -14,6 +15,7 @@ export default function ProgressScreen() {
   const router = useRouter();
   const { t } = useTranslation();
   const theme = useTheme();
+  const { success, successContainer } = useSemanticColors();
   const language = useSettingsStore((state) => state.language);
   const practiceStats = useProgressStore((state) => state.practiceStats);
   const chapterProgress = useProgressStore((state) => state.chapterProgress);
@@ -130,8 +132,8 @@ export default function ProgressScreen() {
                   </View>
                   <Chip
                     compact
-                    style={{ backgroundColor: attempt.passed ? theme.colors.primaryContainer : theme.colors.errorContainer }}
-                    textStyle={{ color: attempt.passed ? theme.colors.primary : theme.colors.error }}
+                    style={{ backgroundColor: attempt.passed ? successContainer : theme.colors.errorContainer }}
+                    textStyle={{ color: attempt.passed ? success : theme.colors.error }}
                   >
                     {attempt.passed ? `🎉 ${t("progress.examPassed")}` : `📚 ${t("progress.examFailed")}`}
                   </Chip>
