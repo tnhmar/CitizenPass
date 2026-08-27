@@ -37,6 +37,14 @@ type ArabicFlipCardProps = {
  * taller of the two, so a shorter Arabic face (before an answer, before
  * showExplanation) can't visually collapse the layout, and a taller one
  * (after showExplanation adds a paragraph) can't get clipped.
+ *
+ * Option rows: the dot and the option letter are rendered as two separate
+ * Text nodes inside their own row (letterDotGroup), not as one concatenated
+ * string. This lets plain flex ordering (JSX order, not text-bidi rules)
+ * control which glyph is rightmost. With the group as the second child of
+ * optionRow (flex-end, row), and the dot before the letter inside the
+ * group, the on-screen right-to-left reading order comes out as:
+ * option label → dot → Arabic option text.
  */
 export function ArabicFlipCard({ enabled, arabic, showExplanation, front, style }: ArabicFlipCardProps) {
   const { t } = useTranslation();
@@ -105,9 +113,10 @@ export function ArabicFlipCard({ enabled, arabic, showExplanation, front, style 
                 <Text variant="bodyLarge" style={styles.optionText}>
                   {option}
                 </Text>
-                <Text variant="bodyLarge" style={styles.optionLetter}>
-                  {OPTION_LETTERS[index]}.
-                </Text>
+                <View style={styles.letterDotGroup}>
+                  <Text variant="bodyLarge">{"."}</Text>
+                  <Text variant="bodyLarge">{OPTION_LETTERS[index]}</Text>
+                </View>
               </View>
             ))}
             {showExplanation ? (
@@ -136,7 +145,7 @@ const styles = StyleSheet.create({
   arabicCard: { borderWidth: 1, borderRadius: 14, padding: 16, gap: 10 },
   rtlText: { textAlign: "right" },
   optionRow: { flexDirection: "row", justifyContent: "flex-end", alignItems: "flex-start", gap: 6 },
-  optionLetter: { flexShrink: 0, direction: "ltr" }, // ← fixed: keeps period after letter in RTL context
+  letterDotGroup: { flexDirection: "row", flexShrink: 0 },
   optionText: { textAlign: "right", flexShrink: 1 },
   explanationSpacing: { marginTop: 6 },
   noteSpacing: { marginTop: 10, fontStyle: "italic" },
