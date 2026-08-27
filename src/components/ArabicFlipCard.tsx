@@ -101,9 +101,14 @@ export function ArabicFlipCard({ enabled, arabic, showExplanation, front, style 
               {arabic.question}
             </Text>
             {arabic.options.map((option, index) => (
-              <Text key={index} variant="bodyLarge" style={styles.rtlText}>
-                {option} .{OPTION_LETTERS[index]}
-              </Text>
+              <View key={index} style={styles.optionRow}>
+                <Text variant="bodyLarge" style={styles.optionText}>
+                  {option}
+                </Text>
+                <Text variant="bodyLarge" style={styles.optionLetter}>
+                  {OPTION_LETTERS[index]}.
+                </Text>
+              </View>
             ))}
             {showExplanation ? (
               <Text variant="bodyMedium" style={[styles.rtlText, styles.explanationSpacing]}>
@@ -129,7 +134,10 @@ const styles = StyleSheet.create({
   face: { backfaceVisibility: "hidden", width: "100%" },
   backFace: { position: "absolute", top: 0, left: 0, right: 0 },
   arabicCard: { borderWidth: 1, borderRadius: 14, padding: 16, gap: 10 },
-  rtlText: { writingDirection: "rtl", textAlign: "right" },
+  rtlText: { textAlign: "right" },
+  optionRow: { flexDirection: "row", justifyContent: "flex-end", alignItems: "flex-start", gap: 6 },
+  optionLetter: { flexShrink: 0 },
+  optionText: { textAlign: "right", flexShrink: 1 },
   explanationSpacing: { marginTop: 6 },
   noteSpacing: { marginTop: 10, fontStyle: "italic" },
 });
