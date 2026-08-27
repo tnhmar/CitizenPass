@@ -136,7 +136,7 @@ const styles = StyleSheet.create({
   arabicCard: { borderWidth: 1, borderRadius: 14, padding: 16, gap: 10 },
   rtlText: { textAlign: "right" },
   optionRow: { flexDirection: "row", justifyContent: "flex-end", alignItems: "flex-start", gap: 6 },
-  optionLetter: { flexShrink: 0 },
+  optionLetter: { flexShrink: 0, direction: "ltr" }, // ← fixed: keeps period after letter in RTL context
   optionText: { textAlign: "right", flexShrink: 1 },
   explanationSpacing: { marginTop: 6 },
   noteSpacing: { marginTop: 10, fontStyle: "italic" },
