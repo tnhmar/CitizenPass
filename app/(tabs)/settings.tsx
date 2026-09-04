@@ -2,6 +2,7 @@ import { StyleSheet, ScrollView, Alert, View } from "react-native";
 import { Text, Button, Divider, SegmentedButtons, Switch, Card, useTheme, TouchableRipple } from "react-native-paper";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 import { useTranslation } from "react-i18next";
+import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { useSettingsStore } from "../../src/store/useSettingsStore";
 import { useProgressStore } from "../../src/store/useProgressStore";
 import { useResponsive } from "../../src/hooks/useResponsive";
@@ -17,6 +18,7 @@ export default function SettingsScreen() {
   const { t } = useTranslation();
   const theme = useTheme();
   const { isTablet, isLandscape, scale, contentMaxWidth } = useResponsive();
+  const insets = useSafeAreaInsets();
   const language = useSettingsStore((state) => state.language);
   const setLanguage = useSettingsStore((state) => state.setLanguage);
   const themePref = useSettingsStore((state) => state.theme);
@@ -44,7 +46,7 @@ export default function SettingsScreen() {
   const dividerSpacing = isTablet ? 26 : 20;
 
   return (
-    <ScrollView style={{ backgroundColor: theme.colors.background }} contentContainerStyle={styles.scrollContent}>
+    <ScrollView style={{ backgroundColor: theme.colors.background }} contentContainerStyle={[styles.scrollContent, { paddingTop: 16 + insets.top }]}>
       <View
         style={[
           styles.container,
@@ -193,7 +195,10 @@ const styles = StyleSheet.create({
   sectionTitle: { marginTop: 8, marginBottom: 10 },
   resetButton: { marginTop: 4 },
   arabicToggleRow: { flexDirection: "row", alignItems: "center", gap: 12 },
-  arabicToggleText: { flex: 1 },
+  // flex:1 alone can still let RN/Yoga overflow a Text past its row in
+  // some layouts; flexShrink+minWidth:0 is the standard fix so long copy
+  // wraps inside the card instead of pushing past its border.
+  arabicToggleText: { flex: 1, flexShrink: 1, minWidth: 0 },
   disclaimerCard: { marginTop: 24 },
   disclaimerContent: { flexDirection: "row", gap: 8, alignItems: "flex-start" },
   swatchRow: { flexDirection: "row", flexWrap: "wrap", gap: 20, marginTop: 2 },

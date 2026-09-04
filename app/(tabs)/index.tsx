@@ -2,6 +2,7 @@ import { ScrollView, StyleSheet, View } from "react-native";
 import { useRouter } from "expo-router";
 import { Text, Card, Divider, useTheme } from "react-native-paper";
 import { useTranslation } from "react-i18next";
+import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { NavCard } from "../../src/components/NavCard";
 import { StatPill } from "../../src/components/StatPill";
 import { useProgressStore } from "../../src/store/useProgressStore";
@@ -22,6 +23,7 @@ export default function HomeScreen() {
   const { t } = useTranslation();
   const theme = useTheme();
   const { success } = useSemanticColors();
+  const insets = useSafeAreaInsets();
 
   const practiceStats = useProgressStore((state) => state.practiceStats);
   const chapterProgress = useProgressStore((state) => state.chapterProgress);
@@ -36,7 +38,10 @@ export default function HomeScreen() {
   const greeting = getGreeting();
 
   return (
-    <ScrollView style={{ backgroundColor: theme.colors.background }} contentContainerStyle={styles.container}>
+    <ScrollView
+      style={{ backgroundColor: theme.colors.background }}
+      contentContainerStyle={[styles.container, { paddingTop: 16 + insets.top }]}
+    >
       <Text variant="headlineSmall" style={styles.brand}>
         🍁 {t("common.appName")}
       </Text>
