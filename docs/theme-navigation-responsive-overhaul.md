@@ -203,3 +203,92 @@ Screens outside this set (Home, Practice, Study, Progress, Bookmarks) were inten
 alone for the responsive pass — the task scoped step 4 to "all the above changes (theme,
 settings, exam screen)," and going further would be unrequested scope creep. Practice still
 benefits indirectly through the shared `OptionButton`.
+
+---
+
+## 5. Follow-up fixes (post-QA round)
+
+Seven issues surfaced from actually running the app; each is a distinct root cause, not a
+re-litigation of §1–4 above.
+
+### 5.1 Home screen title had no top margin
+
+Every screen renders its own content with no header (`headerShown: false` throughout, see
+`app/(tabs)/_layout.tsx`), and `react-native-safe-area-context` was already a dependency but was
+never actually wired up anywhere in the app — every screen's content started flush at `y = 0`,
+under the status bar/notch/Dynamic Island on real devices. Fixed by wrapping the app in
+`SafeAreaProvider` (`app/_layout.tsx`) and having each screen add `useSafeAreaInsets().top` to its
+own top padding. Applied to Home and Settings (as asked) and, for consistency, to all three exam
+screens (idle, in-progress, review, and results), since those were already being touched this
+branch and leaving them still flush-at-top would have been an inconsistent partial fix. Practice,
+Study, Progress, and Bookmarks were left alone, matching the same scope discipline as §4.
+
+### 5.2 App defaulted to French instead of English
+
+Root cause, in `src/i18n/index.ts`: the i18next instance's *initial* boot language was derived
+from the device's OS locale (`expo-localization`), independently of `DEFAULT_SETTINGS.language`
+("en") in `settingsRepository.ts`. A device/simulator set to French booted the app in French every
+time — the two "defaults" simply disagreed with each other. Fixed by removing the device-locale
+detection entirely; `"en"` is now the one hardcoded initial value, matching `DEFAULT_SETTINGS`.
+French is unaffected as a user choice — picking it in Settings still persists and is honored on
+every future launch via `useSettingsStore.hydrate()`.
+
+### 5.3 Only three color themes
+
+Not a bug, but a fair ask for more variety. Added three more WCAG-AA-verified schemes to
+`src/theme/tokens.ts` (contrast-checked the same way as the original three — see §1.1): **Terracotta**
+(burnt orange / deep plum), **Slate Charcoal** (cool blue-grey / muted slate), and **Plum Magenta**
+(deep magenta / muted indigo-grey) — six total. None of the three uses green (reserved for
+"success") and Slate Charcoal's secondary was deliberately kept grey-purple rather than
+grey-green, for the same reason as §1: a scheme's `secondaryContainer`-tinted "selected" state
+(see `OptionButton`) must never accidentally read as an implicit "correct."
+
+### 5.4 Arabic-help description overflowed its card
+
+Same root cause as an RN/Yoga gotcha found again in §5.5 below: a `Text` with `flex: 1` sitting
+next to a fixed-size sibling (the `Switch`) can overflow instead of wrapping unless it also has
+`flexShrink: 1` and `minWidth: 0`. Fixed the style in `app/(tabs)/settings.tsx`, and — as asked —
+shortened the copy itself in both `en.json`/`fr.json` (three sentences down to one, keeping the
+"for understanding only, not available in the exam" meaning).
+
+### 5.5 Practice screen: long option text got cut off
+
+Exact same layout bug as §5.4, in the shared `OptionButton` component. It only showed up once an
+option had a leading icon (Practice mode's correct/incorrect reveal adds one; an unanswered
+option has no icon and no sibling to compete with, so it happened to wrap fine on its own).
+Fixed by adding `flexShrink: 1, minWidth: 0` to the label style in `src/components/OptionButton.tsx`
+— this fixes it for Practice and Exam alike, since both share the component.
+
+### 5.6 Exiting the exam and coming back reset the timer instead of continuing
+
+The explicit "Exit Exam" action (✕ button / menu item) already correctly paused the clock before
+navigating away. The gap was every *other* way of leaving the screen — the OS back gesture,
+Android's hardware back button, or any other unmount not funneled through that one handler — none
+of which called `pause()`, so the clock kept running unseen in the background. Fixed by adding
+`src/hooks/useExamSessionLifecycle.ts`: a mount/unmount effect (not tied to any specific button)
+that resumes on mount and pauses on unmount whenever the exam is in progress. Moving between the
+question screen and the new review screen (§5.7) unmounts one and mounts the other in the same
+tick, so that pause+resume pair nets out to ~0ms — the clock keeps running while the user stays
+anywhere in the exam flow, and only actually stops when they leave the flow entirely, by whatever
+means. This is layered on top of (not a replacement for) the existing `AppState`-based pause/resume
+in each screen, which handles the separate case of the OS backgrounding the app while a screen
+stays mounted (e.g. a phone call).
+
+Also made the always-visible "cancel the exam" affordance more discoverable per the earlier
+report: a dedicated "✕" `IconButton` now sits directly in the exam header (`app/exam/index.tsx`),
+in addition to "Exit Exam" staying in the "⋮" options menu.
+
+### 5.7 No way to review/change answers before submitting
+
+`app/exam/index.tsx` intentionally still allows moving past a question without answering it (like
+the real exam this simulates) — that's not the bug; the missing safety net for it was. Added a new
+screen, `app/exam/review.tsx`: every question, answered or not, in one tappable list; tapping any
+row jumps back to that exact question (`setCurrentIndex` + `router.back()`); a single confirmed
+"Submit Exam" at the bottom (with a stronger warning if questions are still unanswered). Reached
+either from the last question's new "Review & Submit" button, or from "Review Answers" in the
+options menu at any point during the exam. The countdown and the actual submit logic were
+extracted into shared hooks (`useExamCountdown`, `useFinishExam`) so the question screen and the
+review screen share one definition of each rather than two copies that could drift — notably,
+timing out still auto-submits immediately from either screen (no review step on timeout), since
+letting review always be reachable would make the 45-minute limit meaningless.
+
