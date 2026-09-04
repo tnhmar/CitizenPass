@@ -7,7 +7,9 @@ describe("persistence defaults", () => {
     expect(DEFAULT_SETTINGS.schemaVersion).toBe(1);
     expect(["en", "fr"]).toContain(DEFAULT_SETTINGS.language);
     expect(["light", "dark", "system"]).toContain(DEFAULT_SETTINGS.theme);
-    expect(["classicRed", "oceanBlue", "twilightIndigo"]).toContain(DEFAULT_SETTINGS.colorScheme);
+    expect(["classicRed", "oceanBlue", "twilightIndigo", "terracotta", "slateCharcoal", "plumMagenta"]).toContain(
+      DEFAULT_SETTINGS.colorScheme
+    );
   });
 
   it("DEFAULT_PROGRESS starts empty with no bookmarks or history", () => {

@@ -135,4 +135,62 @@ describe("useExamStore", () => {
     expect(state.currentIndex).toBe(0);
     expect(state.questions).toHaveLength(0);
   });
+
+  // Regression coverage for "quit the exam and come back later - the timer
+  // had reset instead of continuing from where it was." Simulates exactly
+  // that: pause (as "Exit Exam" does), let real time pass while paused,
+  // resume (as coming back to either exam screen does via
+  // useExamSessionLifecycle), and confirm the paused interval was excluded
+  // from elapsed time rather than counted against the exam or dropped.
+  describe("pause/resume timer math", () => {
+    beforeEach(() => {
+      jest.useFakeTimers();
+    });
+
+    afterEach(() => {
+      jest.useRealTimers();
+    });
+
+    it("excludes paused time from elapsed exam time, however long the pause", () => {
+      useExamStore.getState().startExam();
+
+      jest.advanceTimersByTime(2 * 60 * 1000); // 2 minutes into the exam
+      useExamStore.getState().pause(); // e.g. "Exit Exam"
+
+      jest.advanceTimersByTime(60 * 60 * 1000); // an hour away - longer than the exam itself
+      useExamStore.getState().resume(); // back to /exam or /exam/review
+
+      jest.advanceTimersByTime(1 * 60 * 1000); // 1 more active minute
+
+      const state = useExamStore.getState();
+      const remaining = getRemainingMs({
+        startTimeMs: state.startTimeMs,
+        pausedMs: state.pausedMs,
+        pausedAt: state.pausedAt,
+      });
+      // Only 2 + 1 = 3 active minutes should have counted, regardless of
+      // the hour spent paused in between - i.e. "continues", not "reset".
+      const expectedRemaining = EXAM_DURATION_MS - 3 * 60 * 1000;
+      expect(Math.abs(remaining - expectedRemaining)).toBeLessThan(1000);
+      expect(state.pausedAt).toBeNull();
+    });
+
+    it("pause() is a no-op if already paused (no double-counting)", () => {
+      useExamStore.getState().startExam();
+      useExamStore.getState().pause();
+      const pausedAtFirst = useExamStore.getState().pausedAt;
+
+      jest.advanceTimersByTime(60 * 1000);
+      useExamStore.getState().pause(); // calling pause again while already paused
+
+      expect(useExamStore.getState().pausedAt).toBe(pausedAtFirst);
+    });
+
+    it("resume() is a no-op if nothing is paused", () => {
+      useExamStore.getState().startExam();
+      const before = useExamStore.getState().pausedMs;
+      useExamStore.getState().resume();
+      expect(useExamStore.getState().pausedMs).toBe(before);
+    });
+  });
 });
