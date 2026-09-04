@@ -88,13 +88,13 @@ export default function ProgressScreen() {
               icon="book-open-page-variant"
               label={t("progress.chaptersLabel")}
               value={`${chaptersStartedCount}/${chapters.length}`}
-              color="#1E8E5A"
+              color={success}
             />
             <StatPill
               icon="bookmark"
               label={t("progress.bookmarksLabel")}
               value={String(bookmarkedQuestionIds.length)}
-              color="#C77F1A"
+              color={theme.colors.tertiary}
               onPress={() => router.push("/bookmarks")}
             />
           </View>
@@ -120,7 +120,7 @@ export default function ProgressScreen() {
                   <MaterialCommunityIcons
                     name={attempt.passed ? "trophy" : "close-circle-outline"}
                     size={22}
-                    color={attempt.passed ? "#E5B94E" : theme.colors.error}
+                    color={attempt.passed ? theme.colors.tertiary : theme.colors.error}
                   />
                   <View style={styles.examTextBlock}>
                     <Text variant="bodyMedium">

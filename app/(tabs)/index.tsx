@@ -5,6 +5,7 @@ import { useTranslation } from "react-i18next";
 import { NavCard } from "../../src/components/NavCard";
 import { StatPill } from "../../src/components/StatPill";
 import { useProgressStore } from "../../src/store/useProgressStore";
+import { useSemanticColors } from "../../src/theme/useSemanticColors";
 import { getChapterList } from "../../src/data/contentLoader";
 
 type GreetingKey = "home.greetingMorning" | "home.greetingAfternoon" | "home.greetingEvening";
@@ -20,6 +21,7 @@ export default function HomeScreen() {
   const router = useRouter();
   const { t } = useTranslation();
   const theme = useTheme();
+  const { success } = useSemanticColors();
 
   const practiceStats = useProgressStore((state) => state.practiceStats);
   const chapterProgress = useProgressStore((state) => state.chapterProgress);
@@ -100,7 +102,7 @@ export default function HomeScreen() {
         description={t("home.simulatedExamDescription")}
         icon="timer-outline"
         emoji="⏱️"
-        color="#C77F1A"
+        color={theme.colors.tertiary}
         onPress={() => router.push("/exam")}
       />
       <NavCard
@@ -108,7 +110,7 @@ export default function HomeScreen() {
         description={t("home.progressDescription")}
         icon="chart-donut"
         emoji="📊"
-        color="#1E8E5A"
+        color={success}
         onPress={() => router.push("/progress")}
       />
       <NavCard
