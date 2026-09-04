@@ -86,7 +86,13 @@
     "newExam": "New Exam",
     "newExamConfirmTitle": "Start a new exam?",
     "newExamConfirmBody": "This will discard your current progress and draw a new set of questions.",
-    "exitExam": "Exit Exam"
+    "exitExam": "Exit Exam",
+    "reviewAnswers": "Review Answers",
+    "reviewAndSubmit": "Review & Submit",
+    "reviewTitle": "Review Your Answers",
+    "reviewSummary": "{{answered}} of {{total}} questions answered",
+    "submitConfirmTitleUnanswered": "Submit with {{count}} unanswered?",
+    "backToExam": "Back to Exam"
   },
   "progress": {
     "title": "Progress",
@@ -108,12 +114,15 @@
     "colorSchemeClassicRed": "Classic Red (Default)",
     "colorSchemeOceanBlue": "Ocean Blue",
     "colorSchemeTwilightIndigo": "Twilight Indigo",
+    "colorSchemeTerracotta": "Terracotta",
+    "colorSchemeSlateCharcoal": "Slate Charcoal",
+    "colorSchemePlumMagenta": "Plum Magenta",
     "resetData": "Reset local data",
     "resetConfirmBody": "This will erase all locally stored settings, bookmarks, and progress on this device. This cannot be undone.",
     "resetConfirmCancel": "Cancel",
     "dataSection": "Data",
     "arabicHelp": "Arabic translation help",
-    "arabicHelpDescription": "Show a button on practice questions to see an Arabic translation. Read-only, for understanding only — you still answer in English or French. Not available during the simulated exam."
+    "arabicHelpDescription": "Adds an Arabic translation button on practice questions, for understanding only. Not available during the exam."
   },
   "bookmarks": {
     "title": "Saved Questions",

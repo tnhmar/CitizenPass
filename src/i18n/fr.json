@@ -86,7 +86,13 @@
     "newExam": "Nouvel examen",
     "newExamConfirmTitle": "Commencer un nouvel examen ?",
     "newExamConfirmBody": "Cela effacera votre progrès actuel et tirera un nouvel ensemble de questions.",
-    "exitExam": "Quitter l'examen"
+    "exitExam": "Quitter l'examen",
+    "reviewAnswers": "Revoir les réponses",
+    "reviewAndSubmit": "Revoir et soumettre",
+    "reviewTitle": "Revoir vos réponses",
+    "reviewSummary": "{{answered}} question(s) sur {{total}} répondues",
+    "submitConfirmTitleUnanswered": "Soumettre avec {{count}} sans réponse ?",
+    "backToExam": "Retour à l'examen"
   },
   "progress": {
     "title": "Progrès",
@@ -108,12 +114,15 @@
     "colorSchemeClassicRed": "Rouge classique (par défaut)",
     "colorSchemeOceanBlue": "Bleu océan",
     "colorSchemeTwilightIndigo": "Indigo crépuscule",
+    "colorSchemeTerracotta": "Terracotta",
+    "colorSchemeSlateCharcoal": "Anthracite",
+    "colorSchemePlumMagenta": "Prune magenta",
     "resetData": "Réinitialiser les données locales",
     "resetConfirmBody": "Cela effacera tous les paramètres, signets et progrès stockés localement sur cet appareil. Cette action est irréversible.",
     "resetConfirmCancel": "Annuler",
     "dataSection": "Données",
     "arabicHelp": "Aide à la traduction en arabe",
-    "arabicHelpDescription": "Afficher un bouton sur les questions de pratique pour voir une traduction en arabe. Lecture seule, pour la compréhension seulement — vous répondez toujours en anglais ou en français. Non disponible pendant l'examen simulé."
+    "arabicHelpDescription": "Ajoute un bouton de traduction en arabe sur les questions de pratique, à titre indicatif seulement. Non disponible pendant l'examen."
   },
   "bookmarks": {
     "title": "Questions enregistrées",
