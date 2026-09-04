@@ -1,35 +1,48 @@
 import { MD3LightTheme, MD3DarkTheme } from "react-native-paper";
-import { brandColors } from "./tokens";
+import type { AppColorScheme } from "../types";
+import { COLOR_SCHEMES, NEUTRAL_COLORS, SEMANTIC_COLORS } from "./tokens";
 
-export const lightTheme = {
-  ...MD3LightTheme,
-  roundness: 16,
-  colors: {
-    ...MD3LightTheme.colors,
-    primary: brandColors.canadaRed,
-    onPrimary: "#FFFFFF",
-    primaryContainer: brandColors.canadaRedSoft,
-    secondary: brandColors.navy,
-    secondaryContainer: "#E4E9F5",
-    tertiary: brandColors.gold,
-    error: brandColors.danger,
-    errorContainer: brandColors.dangerSoft,
-    background: "#FAFAFC",
-  },
-};
+/**
+ * Builds a full Paper MD3 theme for the given accent scheme + light/dark
+ * mode. Every color role this app reads (directly or via
+ * `useSemanticColors`) is set explicitly from the audited palette in
+ * `tokens.ts`; we only fall back to Paper's own MD3 base theme for the
+ * handful of roles this app never touches (elevation overlays, `scrim`,
+ * `inverseSurface`, etc.), so those stay sensible without needing their
+ * own audit.
+ */
+export function getPaperTheme(scheme: AppColorScheme, mode: "light" | "dark") {
+  const base = mode === "dark" ? MD3DarkTheme : MD3LightTheme;
+  const accent = COLOR_SCHEMES[scheme][mode];
+  const neutral = NEUTRAL_COLORS[mode];
+  const semantic = SEMANTIC_COLORS[mode];
 
-export const darkTheme = {
-  ...MD3DarkTheme,
-  roundness: 16,
-  colors: {
-    ...MD3DarkTheme.colors,
-    primary: "#FF8A80",
-    primaryContainer: "#5C1A1A",
-    secondary: "#9FB8E0",
-    secondaryContainer: "#243654",
-    tertiary: brandColors.gold,
-    error: "#FF6B6B",
-    errorContainer: "#4A1616",
-    background: "#0F1420",
-  },
-};
+  return {
+    ...base,
+    roundness: 16,
+    colors: {
+      ...base.colors,
+      primary: accent.primary,
+      onPrimary: accent.onPrimary,
+      primaryContainer: accent.primaryContainer,
+      onPrimaryContainer: accent.onPrimaryContainer,
+      secondary: accent.secondary,
+      onSecondary: accent.onSecondary,
+      secondaryContainer: accent.secondaryContainer,
+      onSecondaryContainer: accent.onSecondaryContainer,
+      tertiary: accent.tertiary,
+      onTertiary: accent.onTertiary,
+      error: semantic.error,
+      onError: semantic.onError,
+      errorContainer: semantic.errorContainer,
+      onErrorContainer: semantic.onErrorContainer,
+      background: neutral.background,
+      onBackground: neutral.onSurface,
+      surface: neutral.surface,
+      onSurface: neutral.onSurface,
+      surfaceVariant: neutral.surfaceVariant,
+      onSurfaceVariant: neutral.onSurfaceVariant,
+      outline: neutral.outline,
+    },
+  };
+}
