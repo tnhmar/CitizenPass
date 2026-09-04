@@ -1,19 +1,17 @@
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useState } from "react";
 import { AppState, Alert, ScrollView, StyleSheet, View } from "react-native";
 import { useRouter } from "expo-router";
 import { Text, Button, Card, Divider, IconButton, Menu, useTheme } from "react-native-paper";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 import { useTranslation } from "react-i18next";
+import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { useSettingsStore } from "../../src/store/useSettingsStore";
-import { useProgressStore } from "../../src/store/useProgressStore";
 import { useResponsive } from "../../src/hooks/useResponsive";
+import { useExamCountdown } from "../../src/hooks/useExamCountdown";
+import { useFinishExam } from "../../src/hooks/useFinishExam";
+import { useExamSessionLifecycle } from "../../src/hooks/useExamSessionLifecycle";
 import { OptionButton } from "../../src/components/OptionButton";
-import {
-  useExamStore,
-  getRemainingMs,
-  formatRemainingTime,
-  EXAM_QUESTION_COUNT,
-} from "../../src/store/useExamStore";
+import { useExamStore, formatRemainingTime, EXAM_QUESTION_COUNT } from "../../src/store/useExamStore";
 
 const OPTION_LETTERS = ["A", "B", "C", "D"];
 
@@ -32,8 +30,8 @@ export default function ExamIndexScreen() {
   const { t } = useTranslation();
   const theme = useTheme();
   const { isTablet, isLandscape, scale, contentMaxWidth } = useResponsive();
+  const insets = useSafeAreaInsets();
   const language = useSettingsStore((state) => state.language);
-  const recordExamAttempt = useProgressStore((state) => state.recordExamAttempt);
 
   const status = useExamStore((state) => state.status);
   const questions = useExamStore((state) => state.questions);
@@ -46,21 +44,11 @@ export default function ExamIndexScreen() {
   const selectAnswer = useExamStore((state) => state.selectAnswer);
   const pauseExam = useExamStore((state) => state.pause);
   const resumeExam = useExamStore((state) => state.resume);
-  const submitExam = useExamStore((state) => state.submitExam);
 
   const [menuVisible, setMenuVisible] = useState(false);
-
-  // The tick value itself is intentionally unused: each tick causes this
-  // component to re-render and `examState` below to be recomputed with a
-  // new object reference, which is what actually triggers getRemainingMs
-  // to re-run via the useMemo dependency.
-  const [, setNow] = useState(Date.now());
-
-  useEffect(() => {
-    if (status !== "in-progress") return;
-    const interval = setInterval(() => setNow(Date.now()), 1000);
-    return () => clearInterval(interval);
-  }, [status]);
+  const remainingMs = useExamCountdown();
+  const finishExam = useFinishExam();
+  useExamSessionLifecycle();
 
   useEffect(() => {
     const subscription = AppState.addEventListener("change", (nextState) => {
@@ -74,37 +62,10 @@ export default function ExamIndexScreen() {
   }, [pauseExam, resumeExam]);
 
   useEffect(() => {
-    // Covers two cases with one call (resume() is a no-op if nothing is
-    // paused): returning to this screen after "Exit Exam" paused the
-    // clock on the way out, and the app having been hydrated from a
-    // session that was still paused when it was last closed/killed.
-    if (status === "in-progress") {
-      resumeExam();
-    }
-    // Deliberately mount-only: subsequent pause/resume during this
-    // mount's lifetime is handled by the AppState listener above.
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
-
-  const examState = useExamStore((state) => ({
-    startTimeMs: state.startTimeMs,
-    pausedMs: state.pausedMs,
-    pausedAt: state.pausedAt,
-  }));
-  const remainingMs = useMemo(() => getRemainingMs(examState), [examState]);
-
-  const finishExam = () => {
-    const result = submitExam();
-    void recordExamAttempt({
-      dateIso: new Date().toISOString(),
-      score: result.correct,
-      total: result.total,
-      passed: result.passed,
-    });
-    router.push("/exam/results");
-  };
-
-  useEffect(() => {
+    // Time running out auto-submits immediately - unlike the user's own
+    // "Review & Submit"/"Review Answers" paths, there is no review step
+    // here on purpose: the 45-minute limit would otherwise be
+    // meaningless if reaching it just opened unlimited extra review time.
     if (status === "in-progress" && remainingMs <= 0) {
       finishExam();
     }
@@ -144,7 +105,10 @@ export default function ExamIndexScreen() {
 
   if (status === "idle") {
     return (
-      <ScrollView style={{ backgroundColor: theme.colors.background }} contentContainerStyle={styles.container}>
+      <ScrollView
+        style={{ backgroundColor: theme.colors.background }}
+        contentContainerStyle={[styles.container, { paddingTop: 16 + insets.top }]}
+      >
         <View style={contentWrapperStyle}>
           <Text
             variant="headlineSmall"
@@ -221,9 +185,23 @@ export default function ExamIndexScreen() {
   const isLowTime = remainingMs < 5 * 60 * 1000;
 
   return (
-    <ScrollView style={{ backgroundColor: theme.colors.background }} contentContainerStyle={styles.container}>
+    <ScrollView
+      style={{ backgroundColor: theme.colors.background }}
+      contentContainerStyle={[styles.container, { paddingTop: 12 + insets.top }]}
+    >
       <View style={contentWrapperStyle}>
         <View style={styles.headerRow}>
+          {/* Dedicated, always-visible exit affordance (issue: "where is
+              the option to cancel the exam" - the overflow menu below
+              also has it, but a single tap here is the more discoverable
+              path for the single most commonly needed action). */}
+          <IconButton
+            icon="close"
+            size={22 * scale}
+            onPress={handleExitExam}
+            accessibilityLabel={t("exam.exitExam")}
+            style={styles.exitButton}
+          />
           <Text
             variant="titleMedium"
             style={[styles.headerTitle, { fontSize: MD3_SIZE.titleMedium * scale }]}
@@ -243,6 +221,15 @@ export default function ExamIndexScreen() {
                 />
               }
             >
+              <Menu.Item
+                leadingIcon="format-list-checks"
+                onPress={() => {
+                  setMenuVisible(false);
+                  router.push("/exam/review");
+                }}
+                title={t("exam.reviewAnswers")}
+              />
+              <Divider />
               <Menu.Item leadingIcon="restart" onPress={handleRestartExam} title={t("exam.restartExam")} />
               <Menu.Item leadingIcon="shuffle-variant" onPress={handleNewExam} title={t("exam.newExam")} />
               <Divider />
@@ -322,18 +309,21 @@ export default function ExamIndexScreen() {
             {t("exam.previous")}
           </Button>
           {isLastQuestion ? (
+            // Skipping a question is allowed on purpose (see the "Next"
+            // button below, and answeredCount/progress dots which flag
+            // unanswered ones rather than blocking navigation) - the real
+            // exam this simulates lets you move on and come back. This is
+            // the safety net for that: instead of submitting immediately,
+            // the last question hands off to a dedicated review list
+            // (app/exam/review.tsx) where every question - answered or
+            // not - can be revisited before the actual, confirmed submit.
             <Button
               mode="contained"
-              icon="check-circle"
+              icon="format-list-checks"
               labelStyle={{ fontSize: MD3_SIZE.bodyMedium * scale }}
-              onPress={() =>
-                Alert.alert(t("exam.submitConfirmTitle"), t("exam.submitConfirmBody"), [
-                  { text: t("exam.cancelLabel"), style: "cancel" },
-                  { text: t("exam.submitLabel"), style: "destructive", onPress: finishExam },
-                ])
-              }
+              onPress={() => router.push("/exam/review")}
             >
-              {t("exam.submitExam")}
+              {t("exam.reviewAndSubmit")}
             </Button>
           ) : (
             <Button
@@ -370,7 +360,8 @@ const styles = StyleSheet.create({
   ruleText: { flex: 1 },
   startButton: { marginBottom: 32 },
   headerRow: { flexDirection: "row", justifyContent: "space-between", alignItems: "center", marginBottom: 12 },
-  headerTitle: { flex: 1 },
+  exitButton: { marginLeft: -8 },
+  headerTitle: { flex: 1, textAlign: "center" },
   headerRight: { flexDirection: "row", alignItems: "center", gap: 2 },
   timerBadge: {
     flexDirection: "row",

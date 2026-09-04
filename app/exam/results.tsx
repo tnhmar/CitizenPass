@@ -7,6 +7,7 @@ import { useSettingsStore } from "../../src/store/useSettingsStore";
 import { useExamStore } from "../../src/store/useExamStore";
 import { useSemanticColors } from "../../src/theme/useSemanticColors";
 import { useResponsive } from "../../src/hooks/useResponsive";
+import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { SourceCitationCard } from "../../src/components/SourceCitationCard";
 import { ArabicFlipCard } from "../../src/components/ArabicFlipCard";
 import type { Question } from "../../src/types";
@@ -21,6 +22,7 @@ export default function ExamResultsScreen() {
   const theme = useTheme();
   const { success, successContainer } = useSemanticColors();
   const { scale, contentMaxWidth } = useResponsive();
+  const insets = useSafeAreaInsets();
   const language = useSettingsStore((state) => state.language);
   const arabicHelpEnabled = useSettingsStore((state) => state.arabicHelpEnabled);
   const status = useExamStore((state) => state.status);
@@ -108,7 +110,7 @@ export default function ExamResultsScreen() {
   return (
     <FlatList
       style={{ backgroundColor: theme.colors.background }}
-      contentContainerStyle={styles.listContent}
+      contentContainerStyle={[styles.listContent, { paddingTop: 16 + insets.top }]}
       data={questions}
       keyExtractor={(item) => item.id}
       renderItem={renderItem}
