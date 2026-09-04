@@ -38,12 +38,12 @@ export const TABLET_BREAKPOINT = 600;
  * whether it had ever been answered.
  *
  * This file now defines every color role this app actually uses,
- * explicitly, for both light and dark mode, and for three selectable
+ * explicitly, for both light and dark mode, and for six selectable
  * accent families. Every text-on-background and icon-on-background pairing
  * listed below has been verified to meet WCAG AA (4.5:1 for text, 3:1 for
  * large text/icons) - see the contrast check referenced in the overhaul
  * doc. Neutral surfaces and the success/error semantic colors are shared
- * across all three schemes (only the brand accent hues change), which
+ * across all schemes (only the brand accent hues change), which
  * keeps "correct"/"incorrect" reliably recognizable no matter which accent
  * a user has picked, and keeps the neutral checker script small since it
  * only has to verify each accent against a fixed set of neutrals.
@@ -222,6 +222,105 @@ export const COLOR_SCHEMES: Record<AppColorScheme, ColorSchemeDefinition> = {
       onTertiary: "#402C00",
     },
   },
+  terracotta: {
+    id: "terracotta",
+    labelKey: "settings.colorSchemeTerracotta",
+    swatch: "#A6461A",
+    light: {
+      primary: "#A6461A",
+      onPrimary: "#FFFFFF",
+      primaryContainer: "#FBDDCB",
+      onPrimaryContainer: "#3D1400",
+      secondary: "#6B3A52",
+      onSecondary: "#FFFFFF",
+      secondaryContainer: "#F5DCE7",
+      onSecondaryContainer: "#2B0A19",
+      tertiary: "#92600A",
+      onTertiary: "#FFFFFF",
+    },
+    dark: {
+      primary: "#FFB68C",
+      onPrimary: "#5C1E00",
+      primaryContainer: "#7D2E00",
+      onPrimaryContainer: "#FFDBC7",
+      secondary: "#E8B7CE",
+      onSecondary: "#45152F",
+      secondaryContainer: "#5E2945",
+      onSecondaryContainer: "#FFD8E9",
+      tertiary: "#E3B978",
+      onTertiary: "#402C00",
+    },
+  },
+  slateCharcoal: {
+    id: "slateCharcoal",
+    labelKey: "settings.colorSchemeSlateCharcoal",
+    swatch: "#3E4A59",
+    light: {
+      primary: "#3E4A59",
+      onPrimary: "#FFFFFF",
+      primaryContainer: "#DCE2E9",
+      onPrimaryContainer: "#10181F",
+      // Deliberately a slate-purple-grey, not slate-green: a greenish
+      // secondary here would risk the exact collision this palette audit
+      // exists to prevent, since a scheme's "selected" state (see
+      // OptionButton's mode="selected") is secondaryContainer-tinted and
+      // must never read as an implicit "correct" (success is green).
+      secondary: "#5C5B70",
+      onSecondary: "#FFFFFF",
+      secondaryContainer: "#E3E1EC",
+      onSecondaryContainer: "#191825",
+      tertiary: "#92600A",
+      onTertiary: "#FFFFFF",
+    },
+    dark: {
+      primary: "#B4C7DB",
+      onPrimary: "#17293A",
+      primaryContainer: "#283B4E",
+      onPrimaryContainer: "#D5E3F0",
+      secondary: "#C6C4DC",
+      onSecondary: "#2D2C40",
+      secondaryContainer: "#434258",
+      onSecondaryContainer: "#E3E1F5",
+      tertiary: "#E3B978",
+      onTertiary: "#402C00",
+    },
+  },
+  plumMagenta: {
+    id: "plumMagenta",
+    labelKey: "settings.colorSchemePlumMagenta",
+    swatch: "#8E2A6B",
+    light: {
+      primary: "#8E2A6B",
+      onPrimary: "#FFFFFF",
+      primaryContainer: "#F8D9EC",
+      onPrimaryContainer: "#390026",
+      secondary: "#55536B",
+      onSecondary: "#FFFFFF",
+      secondaryContainer: "#E1E0F0",
+      onSecondaryContainer: "#16152B",
+      tertiary: "#92600A",
+      onTertiary: "#FFFFFF",
+    },
+    dark: {
+      primary: "#F0B4DC",
+      onPrimary: "#55103F",
+      primaryContainer: "#6E1D54",
+      onPrimaryContainer: "#FFD8ED",
+      secondary: "#C0BEDC",
+      onSecondary: "#2C2B44",
+      secondaryContainer: "#43415C",
+      onSecondaryContainer: "#E1E0F7",
+      tertiary: "#E3B978",
+      onTertiary: "#402C00",
+    },
+  },
 };
 
-export const COLOR_SCHEME_IDS: AppColorScheme[] = ["classicRed", "oceanBlue", "twilightIndigo"];
+export const COLOR_SCHEME_IDS: AppColorScheme[] = [
+  "classicRed",
+  "oceanBlue",
+  "twilightIndigo",
+  "terracotta",
+  "slateCharcoal",
+  "plumMagenta",
+];
