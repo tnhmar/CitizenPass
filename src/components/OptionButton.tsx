@@ -137,7 +137,13 @@ const styles = StyleSheet.create({
   wrapper: { borderRadius: 12, overflow: "hidden" },
   touchable: { minHeight: 44 },
   content: { flexDirection: "row", alignItems: "center", paddingVertical: 10, paddingHorizontal: 16 },
-  icon: { marginRight: 8 },
-  label: { flex: 1, fontSize: 14, lineHeight: 20 },
+  icon: { marginRight: 8, flexShrink: 0 },
+  // Bug fix: flex:1 alone isn't enough once a sibling icon is present
+  // (Practice mode's correct/incorrect reveal adds one) - without
+  // flexShrink:1 + minWidth:0, RN/Yoga can let long option text overflow
+  // past the button instead of wrapping to a second line. Same root cause
+  // and same fix as the Arabic-help description text in Settings - see
+  // docs/theme-navigation-responsive-overhaul.md.
+  label: { flex: 1, flexShrink: 1, minWidth: 0, fontSize: 14, lineHeight: 20 },
   disabled: { opacity: 0.6 },
 });
