@@ -5,6 +5,7 @@ import { MaterialCommunityIcons } from "@expo/vector-icons";
 import { useTranslation } from "react-i18next";
 import { useSettingsStore } from "../../src/store/useSettingsStore";
 import { useProgressStore } from "../../src/store/useProgressStore";
+import { useSemanticColors } from "../../src/theme/useSemanticColors";
 import { getChapterList, getChapterTitle } from "../../src/data/contentLoader";
 import { getChapterVisual } from "../../src/constants/chapterIcons";
 import type { ManifestChapterEntry } from "../../src/types/content";
@@ -13,6 +14,7 @@ export default function StudyIndexScreen() {
   const router = useRouter();
   const { t } = useTranslation();
   const theme = useTheme();
+  const { success } = useSemanticColors();
   const language = useSettingsStore((state) => state.language);
   const chapterProgress = useProgressStore((state) => state.chapterProgress);
 
@@ -49,7 +51,7 @@ export default function StudyIndexScreen() {
             </View>
           </View>
           {isComplete ? (
-            <MaterialCommunityIcons name="check-circle" size={22} color="#1E8E5A" />
+            <MaterialCommunityIcons name="check-circle" size={22} color={success} />
           ) : (
             <MaterialCommunityIcons name="chevron-right" size={22} color={theme.colors.onSurfaceVariant} />
           )}
