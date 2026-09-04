@@ -78,7 +78,15 @@
     "correctAnswer": "Réponse correcte",
     "passed": "RÉUSSI",
     "notPassed": "NON RÉUSSI",
-    "done": "Terminé"
+    "done": "Terminé",
+    "examOptions": "Options de l'examen",
+    "restartExam": "Recommencer l'examen",
+    "restartConfirmTitle": "Recommencer cet examen ?",
+    "restartConfirmBody": "Vos réponses actuelles seront effacées et le minuteur sera réinitialisé. Le même ensemble de questions sera utilisé.",
+    "newExam": "Nouvel examen",
+    "newExamConfirmTitle": "Commencer un nouvel examen ?",
+    "newExamConfirmBody": "Cela effacera votre progrès actuel et tirera un nouvel ensemble de questions.",
+    "exitExam": "Quitter l'examen"
   },
   "progress": {
     "title": "Progrès",
@@ -96,6 +104,10 @@
     "title": "Paramètres",
     "language": "Langue",
     "theme": "Thème",
+    "colorScheme": "Thème de couleur",
+    "colorSchemeClassicRed": "Rouge classique (par défaut)",
+    "colorSchemeOceanBlue": "Bleu océan",
+    "colorSchemeTwilightIndigo": "Indigo crépuscule",
     "resetData": "Réinitialiser les données locales",
     "resetConfirmBody": "Cela effacera tous les paramètres, signets et progrès stockés localement sur cet appareil. Cette action est irréversible.",
     "resetConfirmCancel": "Annuler",

@@ -78,7 +78,15 @@
     "correctAnswer": "Correct answer",
     "passed": "PASSED",
     "notPassed": "NOT PASSED",
-    "done": "Done"
+    "done": "Done",
+    "examOptions": "Exam options",
+    "restartExam": "Restart Exam",
+    "restartConfirmTitle": "Restart this exam?",
+    "restartConfirmBody": "Your current answers will be cleared and the timer will reset. The same set of questions will be used.",
+    "newExam": "New Exam",
+    "newExamConfirmTitle": "Start a new exam?",
+    "newExamConfirmBody": "This will discard your current progress and draw a new set of questions.",
+    "exitExam": "Exit Exam"
   },
   "progress": {
     "title": "Progress",
@@ -96,6 +104,10 @@
     "title": "Settings",
     "language": "Language",
     "theme": "Theme",
+    "colorScheme": "Color theme",
+    "colorSchemeClassicRed": "Classic Red (Default)",
+    "colorSchemeOceanBlue": "Ocean Blue",
+    "colorSchemeTwilightIndigo": "Twilight Indigo",
     "resetData": "Reset local data",
     "resetConfirmBody": "This will erase all locally stored settings, bookmarks, and progress on this device. This cannot be undone.",
     "resetConfirmCancel": "Cancel",
