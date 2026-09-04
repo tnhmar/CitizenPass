@@ -4,6 +4,7 @@ import { Text, Card, IconButton, Button, useTheme } from "react-native-paper";
 import { useTranslation } from "react-i18next";
 import { useProgressStore } from "../src/store/useProgressStore";
 import { useSettingsStore } from "../src/store/useSettingsStore";
+import { useSemanticColors } from "../src/theme/useSemanticColors";
 import { getQuestionById } from "../src/data/questionLoader";
 import { SourceCitationCard } from "../src/components/SourceCitationCard";
 import type { Question } from "../src/types";
@@ -12,6 +13,7 @@ export default function BookmarksScreen() {
   const router = useRouter();
   const { t } = useTranslation();
   const theme = useTheme();
+  const { success } = useSemanticColors();
   const language = useSettingsStore((state) => state.language);
   const bookmarkedQuestionIds = useProgressStore((state) => state.bookmarkedQuestionIds);
   const toggleBookmark = useProgressStore((state) => state.toggleBookmark);
@@ -36,7 +38,11 @@ export default function BookmarksScreen() {
               accessibilityLabel={t("bookmarks.remove")}
             />
           </View>
-          <Text variant="bodySmall" style={{ color: theme.colors.primary }}>
+          {/* Theme audit: this used theme.colors.primary (brand red) for a
+              correct-answer confirmation, pairing a green checkmark emoji
+              with red text - now uses the shared success color instead,
+              see docs/theme-navigation-responsive-overhaul.md. */}
+          <Text variant="bodySmall" style={{ color: success }}>
             ✅ {localized.options[localized.correctIndex]}
           </Text>
           <Text variant="bodyMedium" style={styles.explanation}>
