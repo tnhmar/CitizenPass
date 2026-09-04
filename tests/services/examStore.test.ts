@@ -74,4 +74,65 @@ describe("useExamStore", () => {
     expect(formatRemainingTime(65 * 1000)).toBe("1:05");
     expect(formatRemainingTime(5 * 1000)).toBe("0:05");
   });
+
+  // Regression coverage for the "quitting and resuming resets the question
+  // index to 0" bug: currentIndex now lives in this store (not local
+  // component state in app/exam/index.tsx), so it survives the component
+  // being unmounted and remounted.
+  describe("currentIndex", () => {
+    it("starts at 0 and can be moved forward/backward, clamped to the question list", () => {
+      useExamStore.getState().startExam();
+      expect(useExamStore.getState().currentIndex).toBe(0);
+
+      useExamStore.getState().setCurrentIndex(5);
+      expect(useExamStore.getState().currentIndex).toBe(5);
+
+      useExamStore.getState().setCurrentIndex(-3);
+      expect(useExamStore.getState().currentIndex).toBe(0);
+
+      useExamStore.getState().setCurrentIndex(9999);
+      expect(useExamStore.getState().currentIndex).toBe(EXAM_QUESTION_COUNT - 1);
+    });
+
+    it("is ignored once the exam has been submitted", () => {
+      useExamStore.getState().startExam();
+      useExamStore.getState().setCurrentIndex(3);
+      useExamStore.getState().submitExam();
+      useExamStore.getState().setCurrentIndex(7);
+      expect(useExamStore.getState().currentIndex).toBe(3);
+    });
+  });
+
+  describe("restartExam", () => {
+    it("keeps the same drawn questions but clears answers, index, and result", () => {
+      useExamStore.getState().startExam();
+      const originalQuestionIds = useExamStore.getState().questions.map((q) => q.id);
+      const firstQuestionId = originalQuestionIds[0];
+      useExamStore.getState().selectAnswer(firstQuestionId, 1);
+      useExamStore.getState().setCurrentIndex(4);
+
+      useExamStore.getState().restartExam();
+      const state = useExamStore.getState();
+      expect(state.questions.map((q) => q.id)).toEqual(originalQuestionIds);
+      expect(state.answers).toEqual({});
+      expect(state.currentIndex).toBe(0);
+      expect(state.status).toBe("in-progress");
+      expect(state.result).toBeNull();
+    });
+
+    it("does nothing if there is no exam to restart", () => {
+      useExamStore.getState().restartExam();
+      expect(useExamStore.getState().status).toBe("idle");
+    });
+  });
+
+  it("resetExam clears back to idle with a fresh currentIndex", () => {
+    useExamStore.getState().startExam();
+    useExamStore.getState().setCurrentIndex(6);
+    useExamStore.getState().resetExam();
+    const state = useExamStore.getState();
+    expect(state.status).toBe("idle");
+    expect(state.currentIndex).toBe(0);
+    expect(state.questions).toHaveLength(0);
+  });
 });
