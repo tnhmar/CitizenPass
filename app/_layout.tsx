@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Stack } from "expo-router";
 import { PaperProvider } from "react-native-paper";
+import { SafeAreaProvider } from "react-native-safe-area-context";
 import "../src/i18n";
 import { useSettingsStore } from "../src/store/useSettingsStore";
 import { useProgressStore } from "../src/store/useProgressStore";
@@ -33,9 +34,17 @@ export default function RootLayout() {
 
   const paperTheme = getPaperTheme(colorScheme, resolvedScheme);
 
+  // react-native-safe-area-context was already a dependency but was never
+  // actually wired up anywhere, and every screen's header (headerShown is
+  // false everywhere - see app/(tabs)/_layout.tsx) renders flush at y=0.
+  // Screens that need the inset (Home, Settings, both Exam screens) read
+  // it via useSafeAreaInsets(); this provider is what makes that hook
+  // work at all.
   return (
-    <PaperProvider theme={paperTheme}>
-      <Stack screenOptions={{ headerShown: false }} />
-    </PaperProvider>
+    <SafeAreaProvider>
+      <PaperProvider theme={paperTheme}>
+        <Stack screenOptions={{ headerShown: false }} />
+      </PaperProvider>
+    </SafeAreaProvider>
   );
 }
