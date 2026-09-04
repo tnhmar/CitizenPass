@@ -1,13 +1,18 @@
 import { render } from "@testing-library/react-native";
 import { PaperProvider } from "react-native-paper";
 import { StyleSheet } from "react-native";
+import type { StyleProp, TextStyle } from "react-native";
 import { OptionButton } from "../../src/components/OptionButton";
 import { getPaperTheme } from "../../src/theme/paperThemes";
 
 const theme = getPaperTheme("classicRed", "light");
 
-function textColor(style: unknown): string | undefined {
-  return StyleSheet.flatten(style as never).color;
+// Typed against TextStyle (not `never`/`unknown`) so StyleSheet.flatten's
+// generic resolves properly; the final `as string | undefined` only covers
+// the gap between RN's ColorValue type and the plain hex strings this app's
+// theme always uses for `color`.
+function textColor(style: StyleProp<TextStyle>): string | undefined {
+  return StyleSheet.flatten(style)?.color as string | undefined;
 }
 
 // Theme audit regression coverage: OptionButton previously defaulted every
