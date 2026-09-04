@@ -6,15 +6,21 @@ import { useTranslation } from "react-i18next";
 import { useSettingsStore } from "../../src/store/useSettingsStore";
 import { useExamStore } from "../../src/store/useExamStore";
 import { useSemanticColors } from "../../src/theme/useSemanticColors";
+import { useResponsive } from "../../src/hooks/useResponsive";
 import { SourceCitationCard } from "../../src/components/SourceCitationCard";
 import { ArabicFlipCard } from "../../src/components/ArabicFlipCard";
 import type { Question } from "../../src/types";
+
+// MD3 type-scale base sizes, used to scale text on tablets - see
+// useResponsive() and docs/theme-navigation-responsive-overhaul.md.
+const MD3_SIZE = { titleSmall: 14, bodyMedium: 14, bodySmall: 12, headlineMedium: 28, displaySmall: 36 } as const;
 
 export default function ExamResultsScreen() {
   const router = useRouter();
   const { t } = useTranslation();
   const theme = useTheme();
   const { success, successContainer } = useSemanticColors();
+  const { scale, contentMaxWidth } = useResponsive();
   const language = useSettingsStore((state) => state.language);
   const arabicHelpEnabled = useSettingsStore((state) => state.arabicHelpEnabled);
   const status = useExamStore((state) => state.status);
@@ -22,6 +28,10 @@ export default function ExamResultsScreen() {
   const answers = useExamStore((state) => state.answers);
   const result = useExamStore((state) => state.result);
   const resetExam = useExamStore((state) => state.resetExam);
+
+  const wideItemStyle = contentMaxWidth
+    ? { maxWidth: contentMaxWidth, alignSelf: "center" as const, width: "100%" as const }
+    : null;
 
   if (status !== "submitted" || !result) {
     return (
@@ -53,29 +63,38 @@ export default function ExamResultsScreen() {
         arabic={item.ar}
         showExplanation
         front={
-          <Card mode="outlined" style={styles.reviewCard}>
+          <Card mode="outlined" style={[styles.reviewCard, wideItemStyle]}>
             <Card.Content>
               <View style={styles.reviewHeaderRow}>
                 <MaterialCommunityIcons
                   name={wasCorrect ? "check-circle" : wasAnswered ? "close-circle" : "minus-circle-outline"}
-                  size={18}
+                  size={18 * scale}
                   color={wasCorrect ? success : wasAnswered ? theme.colors.error : theme.colors.onSurfaceVariant}
                 />
-                <Text variant="titleSmall">
+                <Text variant="titleSmall" style={{ fontSize: MD3_SIZE.titleSmall * scale, flex: 1 }}>
                   {t("exam.questionOf", { current: index + 1, total: questions.length })} —{" "}
                   {wasCorrect ? t("exam.correct") : wasAnswered ? t("exam.incorrect") : t("exam.notAnswered")}
                 </Text>
               </View>
-              <Text variant="bodyMedium" style={styles.reviewQuestion}>
+              <Text
+                variant="bodyMedium"
+                style={[styles.reviewQuestion, { fontSize: MD3_SIZE.bodyMedium * scale, lineHeight: 20 * scale }]}
+              >
                 {localized.question}
               </Text>
-              <Text variant="bodySmall" style={{ color: theme.colors.onSurfaceVariant }}>
+              <Text
+                variant="bodySmall"
+                style={{ color: theme.colors.onSurfaceVariant, fontSize: MD3_SIZE.bodySmall * scale }}
+              >
                 {t("exam.yourAnswer")}: {wasAnswered ? localized.options[selectedIndex] : "—"}
               </Text>
-              <Text variant="bodySmall" style={{ color: success }}>
+              <Text variant="bodySmall" style={{ color: success, fontSize: MD3_SIZE.bodySmall * scale }}>
                 {t("exam.correctAnswer")}: {localized.options[localized.correctIndex]}
               </Text>
-              <Text variant="bodyMedium" style={styles.reviewExplanation}>
+              <Text
+                variant="bodyMedium"
+                style={[styles.reviewExplanation, { fontSize: MD3_SIZE.bodyMedium * scale, lineHeight: 20 * scale }]}
+              >
                 💡 {localized.explanation}
               </Text>
               <SourceCitationCard source={localized.source} />
@@ -96,11 +115,17 @@ export default function ExamResultsScreen() {
       ListHeaderComponent={
         <Card
           mode="elevated"
-          style={[styles.scoreCard, { backgroundColor: result.passed ? successContainer : theme.colors.errorContainer }]}
+          style={[
+            styles.scoreCard,
+            { backgroundColor: result.passed ? successContainer : theme.colors.errorContainer },
+            wideItemStyle,
+          ]}
         >
           <Card.Content style={styles.scoreContent}>
-            <Text variant="displaySmall">{result.passed ? "🎉" : "📚"}</Text>
-            <Text variant="headlineMedium">
+            <Text variant="displaySmall" style={{ fontSize: MD3_SIZE.displaySmall * scale }}>
+              {result.passed ? "🎉" : "📚"}
+            </Text>
+            <Text variant="headlineMedium" style={{ fontSize: MD3_SIZE.headlineMedium * scale }}>
               {result.correct} / {result.total} ({scorePercent}%)
             </Text>
             <Chip
@@ -114,7 +139,14 @@ export default function ExamResultsScreen() {
         </Card>
       }
       ListFooterComponent={
-        <Button mode="contained" icon="home" onPress={handleDone} style={styles.doneButton}>
+        <Button
+          mode="contained"
+          icon="home"
+          onPress={handleDone}
+          style={[styles.doneButton, wideItemStyle]}
+          contentStyle={{ paddingVertical: scale > 1 ? 6 : 2 }}
+          labelStyle={{ fontSize: MD3_SIZE.bodyMedium * scale }}
+        >
           {t("exam.done")}
         </Button>
       }
