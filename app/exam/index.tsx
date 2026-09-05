@@ -10,6 +10,7 @@ import { useResponsive } from "../../src/hooks/useResponsive";
 import { useExamCountdown } from "../../src/hooks/useExamCountdown";
 import { useFinishExam } from "../../src/hooks/useFinishExam";
 import { useExamSessionLifecycle } from "../../src/hooks/useExamSessionLifecycle";
+import { useLowTimeWarning } from "../../src/hooks/useLowTimeWarning";
 import { OptionButton } from "../../src/components/OptionButton";
 import { useExamStore, formatRemainingTime, EXAM_QUESTION_COUNT } from "../../src/store/useExamStore";
 
@@ -39,6 +40,8 @@ export default function ExamIndexScreen() {
   const optionOrder = useExamStore((state) => state.optionOrder);
   const currentIndex = useExamStore((state) => state.currentIndex);
   const setCurrentIndex = useExamStore((state) => state.setCurrentIndex);
+  const markedForReview = useExamStore((state) => state.markedForReview);
+  const toggleMarkedForReview = useExamStore((state) => state.toggleMarkedForReview);
   const startExam = useExamStore((state) => state.startExam);
   const restartExam = useExamStore((state) => state.restartExam);
   const selectAnswer = useExamStore((state) => state.selectAnswer);
@@ -49,6 +52,7 @@ export default function ExamIndexScreen() {
   const remainingMs = useExamCountdown();
   const finishExam = useFinishExam();
   useExamSessionLifecycle();
+  useLowTimeWarning(remainingMs);
 
   useEffect(() => {
     const subscription = AppState.addEventListener("change", (nextState) => {
@@ -181,6 +185,8 @@ export default function ExamIndexScreen() {
   const selectedCanonicalIndex = answers[current.id];
   const selectedDisplayPosition =
     selectedCanonicalIndex !== undefined ? order.indexOf(selectedCanonicalIndex) : undefined;
+  const hasAnswered = selectedCanonicalIndex !== undefined;
+  const isMarkedForReview = markedForReview[current.id] === true;
   const answeredCount = Object.keys(answers).length;
   const isLowTime = remainingMs < 5 * 60 * 1000;
 
@@ -263,6 +269,7 @@ export default function ExamIndexScreen() {
           {questions.map((q, index) => {
             const isCurrent = index === currentIndex;
             const isAnswered = answers[q.id] !== undefined;
+            const isMarked = markedForReview[q.id] === true;
             const dotSize = 8 * scale;
             return (
               <View
@@ -272,9 +279,17 @@ export default function ExamIndexScreen() {
                   { width: dotSize, height: dotSize, borderRadius: dotSize / 2 },
                   isCurrent
                     ? { backgroundColor: theme.colors.primary, borderColor: theme.colors.primary }
-                    : isAnswered
-                      ? { backgroundColor: theme.colors.secondary, borderColor: theme.colors.secondary }
-                      : { backgroundColor: "transparent", borderColor: theme.colors.outline },
+                    : {
+                        // Fill reflects answered status; border adds marked-
+                        // for-review as independent information, so a dot
+                        // can show both at once (e.g. answered-but-marked).
+                        backgroundColor: isAnswered ? theme.colors.secondary : "transparent",
+                        borderColor: isMarked
+                          ? theme.colors.tertiary
+                          : isAnswered
+                            ? theme.colors.secondary
+                            : theme.colors.outline,
+                      },
                 ]}
               />
             );
@@ -308,15 +323,21 @@ export default function ExamIndexScreen() {
           >
             {t("exam.previous")}
           </Button>
+          <IconButton
+            icon={isMarkedForReview ? "flag" : "flag-outline"}
+            mode={isMarkedForReview ? "contained-tonal" : "outlined"}
+            size={20 * scale}
+            onPress={() => toggleMarkedForReview(current.id)}
+            accessibilityLabel={t("exam.markForReview")}
+            accessibilityState={{ selected: isMarkedForReview }}
+          />
           {isLastQuestion ? (
-            // Skipping a question is allowed on purpose (see the "Next"
-            // button below, and answeredCount/progress dots which flag
-            // unanswered ones rather than blocking navigation) - the real
-            // exam this simulates lets you move on and come back. This is
-            // the safety net for that: instead of submitting immediately,
-            // the last question hands off to a dedicated review list
-            // (app/exam/review.tsx) where every question - answered or
-            // not - can be revisited before the actual, confirmed submit.
+            // Skipping a question is allowed on purpose (see "Next"
+            // below) - the real exam this simulates lets you move on and
+            // come back. Unlike "Next", reaching the review list from the
+            // last question is never gated on answering it: that list is
+            // exactly the place stragglers - answered, marked, or neither
+            // - get resolved, so it must stay reachable regardless.
             <Button
               mode="contained"
               icon="format-list-checks"
@@ -330,12 +351,28 @@ export default function ExamIndexScreen() {
               icon="chevron-right"
               contentStyle={{ flexDirection: "row-reverse" }}
               labelStyle={{ fontSize: MD3_SIZE.bodyMedium * scale }}
+              // Bug fix: this used to have no disabled condition at all,
+              // so tapping through 20 questions without ever picking an
+              // answer was silently possible. Requiring either an answer
+              // or an explicit "mark for review" flag means moving on is
+              // always a deliberate choice - answer it, or consciously
+              // flag it to revisit - never an unnoticed accidental skip.
+              disabled={!hasAnswered && !isMarkedForReview}
               onPress={() => setCurrentIndex(currentIndex + 1)}
             >
               {t("exam.next")}
             </Button>
           )}
         </View>
+
+        {!isLastQuestion && !hasAnswered && !isMarkedForReview ? (
+          <Text
+            variant="bodySmall"
+            style={[styles.nextHint, { color: theme.colors.onSurfaceVariant, fontSize: MD3_SIZE.bodySmall * scale }]}
+          >
+            {t("exam.answerOrMarkHint")}
+          </Text>
+        ) : null}
 
         <Text
           variant="bodySmall"
@@ -375,7 +412,8 @@ const styles = StyleSheet.create({
   dot: { width: 8, height: 8, borderRadius: 4, borderWidth: 1 },
   questionCard: { marginBottom: 16 },
   optionButton: { marginBottom: 10 },
-  navRow: { flexDirection: "row", justifyContent: "space-between", marginTop: 16 },
+  navRow: { flexDirection: "row", justifyContent: "space-between", alignItems: "center", marginTop: 16 },
   navRowCompact: { marginTop: 8 },
+  nextHint: { textAlign: "center", marginTop: 8 },
   answeredCount: { textAlign: "center", marginTop: 16, marginBottom: 32 },
 });

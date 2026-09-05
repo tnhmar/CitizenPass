@@ -10,6 +10,7 @@ import { useResponsive } from "../../src/hooks/useResponsive";
 import { useExamCountdown } from "../../src/hooks/useExamCountdown";
 import { useFinishExam } from "../../src/hooks/useFinishExam";
 import { useExamSessionLifecycle } from "../../src/hooks/useExamSessionLifecycle";
+import { useLowTimeWarning } from "../../src/hooks/useLowTimeWarning";
 import { useExamStore, formatRemainingTime } from "../../src/store/useExamStore";
 import type { Question } from "../../src/types";
 
@@ -45,6 +46,7 @@ export default function ExamReviewScreen() {
   const answers = useExamStore((state) => state.answers);
   const optionOrder = useExamStore((state) => state.optionOrder);
   const setCurrentIndex = useExamStore((state) => state.setCurrentIndex);
+  const markedForReview = useExamStore((state) => state.markedForReview);
   const startExam = useExamStore((state) => state.startExam);
   const restartExam = useExamStore((state) => state.restartExam);
   const pauseExam = useExamStore((state) => state.pause);
@@ -54,6 +56,7 @@ export default function ExamReviewScreen() {
   const remainingMs = useExamCountdown();
   const finishExam = useFinishExam();
   useExamSessionLifecycle();
+  useLowTimeWarning(remainingMs);
 
   useEffect(() => {
     const subscription = AppState.addEventListener("change", (nextState) => {
@@ -135,17 +138,28 @@ export default function ExamReviewScreen() {
     const selectedCanonicalIndex = answers[item.id];
     const order = optionOrder[item.id] ?? item.en.options.map((_, i) => i);
     const isAnswered = selectedCanonicalIndex !== undefined;
+    const isMarked = markedForReview[item.id] === true;
     const selectedDisplayPosition = isAnswered ? order.indexOf(selectedCanonicalIndex) : undefined;
+
+    const statusParts = [
+      isAnswered ? `${t("exam.yourAnswer")}: ${OPTION_LETTERS[selectedDisplayPosition ?? 0]}` : t("exam.notAnswered"),
+    ];
+    if (isMarked) statusParts.push(t("exam.markedForReview"));
 
     return (
       <View style={contentWrapperStyle}>
         <Card mode="outlined" style={styles.reviewRow} onPress={() => goToQuestion(index)}>
           <Card.Content style={styles.reviewRowContent}>
-            <MaterialCommunityIcons
-              name={isAnswered ? "check-circle-outline" : "circle-outline"}
-              size={20 * scale}
-              color={isAnswered ? theme.colors.secondary : theme.colors.error}
-            />
+            <View style={styles.reviewRowIcons}>
+              <MaterialCommunityIcons
+                name={isAnswered ? "check-circle-outline" : "circle-outline"}
+                size={20 * scale}
+                color={isAnswered ? theme.colors.secondary : theme.colors.error}
+              />
+              {isMarked ? (
+                <MaterialCommunityIcons name="flag" size={16 * scale} color={theme.colors.tertiary} />
+              ) : null}
+            </View>
             <View style={styles.reviewRowText}>
               <Text variant="bodyMedium" numberOfLines={2} style={{ fontSize: MD3_SIZE.bodyMedium * scale }}>
                 {index + 1}. {localized.question}
@@ -154,9 +168,7 @@ export default function ExamReviewScreen() {
                 variant="bodySmall"
                 style={{ color: theme.colors.onSurfaceVariant, fontSize: MD3_SIZE.bodySmall * scale }}
               >
-                {isAnswered
-                  ? `${t("exam.yourAnswer")}: ${OPTION_LETTERS[selectedDisplayPosition ?? 0]}`
-                  : t("exam.notAnswered")}
+                {statusParts.join(" • ")}
               </Text>
             </View>
             <MaterialCommunityIcons name="chevron-right" size={20 * scale} color={theme.colors.onSurfaceVariant} />
@@ -289,6 +301,7 @@ const styles = StyleSheet.create({
   },
   reviewRow: { marginBottom: 10 },
   reviewRowContent: { flexDirection: "row", alignItems: "center", gap: 10 },
+  reviewRowIcons: { flexDirection: "row", alignItems: "center", gap: 2 },
   reviewRowText: { flex: 1, flexShrink: 1, minWidth: 0 },
   footer: { flexDirection: "row", gap: 12, marginTop: 8 },
   footerButton: { flex: 1 },
