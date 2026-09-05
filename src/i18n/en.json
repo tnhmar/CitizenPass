@@ -92,7 +92,12 @@
     "reviewTitle": "Review Your Answers",
     "reviewSummary": "{{answered}} of {{total}} questions answered",
     "submitConfirmTitleUnanswered": "Submit with {{count}} unanswered?",
-    "backToExam": "Back to Exam"
+    "backToExam": "Back to Exam",
+    "markForReview": "Mark for Review",
+    "markedForReview": "Marked for review",
+    "answerOrMarkHint": "Select an answer or mark this question for review to continue.",
+    "fiveMinuteWarningTitle": "5 minutes left!",
+    "fiveMinuteWarningBody": "You have 5 minutes remaining to finish the exam."
   },
   "progress": {
     "title": "Progress",

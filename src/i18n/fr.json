@@ -92,7 +92,12 @@
     "reviewTitle": "Revoir vos réponses",
     "reviewSummary": "{{answered}} question(s) sur {{total}} répondues",
     "submitConfirmTitleUnanswered": "Soumettre avec {{count}} sans réponse ?",
-    "backToExam": "Retour à l'examen"
+    "backToExam": "Retour à l'examen",
+    "markForReview": "Marquer pour révision",
+    "markedForReview": "Marquée pour révision",
+    "answerOrMarkHint": "Choisissez une réponse ou marquez cette question pour révision afin de continuer.",
+    "fiveMinuteWarningTitle": "Il reste 5 minutes !",
+    "fiveMinuteWarningBody": "Il vous reste 5 minutes pour terminer l'examen."
   },
   "progress": {
     "title": "Progrès",
