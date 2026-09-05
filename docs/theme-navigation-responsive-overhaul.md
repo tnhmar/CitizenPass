@@ -292,3 +292,80 @@ review screen share one definition of each rather than two copies that could dri
 timing out still auto-submits immediately from either screen (no review step on timeout), since
 letting review always be reachable would make the 45-minute limit meaningless.
 
+---
+
+## 6. Second follow-up round (screenshots from a live test pass)
+
+Seven more issues, found by actually running the app on a device. Two of these change how the
+exam flow behaves rather than just fixing a rendering bug, so they're called out as design
+decisions, not just patches.
+
+### 6.1 Practice: chapter names truncated in the picker
+
+Paper's `Menu.Item` renders its `title` on a single line with an ellipsis, no way around it via
+props. Replaced the chapter list in `app/(tabs)/practice.tsx` with plain `TouchableRipple` rows
+(the same primitive `OptionButton` is built on) instead of `Menu.Item` - full control, no line
+limit, wraps to as many lines as a chapter name needs. `Menu` itself doesn't require `Menu.Item`
+children; any content works.
+
+### 6.2 Practice: question icon sat above the question text instead of beside it
+
+`Card.Content`'s default flex direction is column, so the icon and the question `Text` stacked
+vertically with nothing telling them to sit in a row. Changed `questionContent` to
+`flexDirection: "row"` with the icon nudged down 3px to align with the text's first line rather
+than its very top.
+
+### 6.3 Exam: "Next" was enabled with no answer selected - added Mark for Review
+
+Not a rendering bug - Next intentionally allows skipping a question (see §5.7), which is realistic
+exam behavior, but it had no gate at all, so tapping through all 20 questions without ever
+answering was silently possible. The fix isn't to block skipping - that would undo the whole point
+of the review screen - it's to require a *deliberate* choice before moving on: Next is now disabled
+unless the current question is either answered or explicitly flagged "Mark for Review" (new flag
+icon between Previous and Next in `app/exam/index.tsx`, `toggleMarkedForReview` in
+`useExamStore.ts`). An inline hint explains why Next is disabled when it is. The review screen
+(`app/exam/review.tsx`) now surfaces marked questions too, alongside answered/unanswered, so
+"I'm not sure about this one, I'll flag it and decide later" has an actual place to land. The
+progress dots gained a second, independent visual channel for this: fill still reflects
+answered/unanswered, while the border color turns tertiary specifically for a marked question, so
+a dot can show "answered but marked" and "unanswered and marked" as distinct states. Reaching the
+review list from the last question's button is deliberately *not* gated the same way - that list
+exists specifically to resolve stragglers, so it has to stay reachable regardless of the last
+question's own state.
+
+### 6.4 Settings: Arabic-help description still crowded its card border
+
+The §5.4 fix (flexShrink/minWidth) addressed the text overflowing *past* the card, but the
+fixed-width `Switch` sitting in the same row still visually crowded the left/right edges on some
+screens. Removed the row entirely: the description now sits on its own full-width line, with the
+`Switch` on a second line below, right-aligned. No sibling means no competition for width, which
+is a stronger guarantee than tuning flex properties on a shared row.
+
+### 6.5 Exam: added a 5-minutes-remaining notification
+
+The countdown badge already turned red under 5 minutes, but that's passive - easy to miss if the
+user isn't looking at the header. Added `src/hooks/useLowTimeWarning.ts`: fires a one-time
+`Alert` the instant the countdown first crosses the threshold. The "already warned" flag
+(`lowTimeWarningShown`) lives in the store, not in the hook's local state, specifically so it
+doesn't re-fire when navigating between the question screen and the review screen, or after
+exiting and coming back - only a fresh `startExam`/`restartExam` resets it.
+
+### 6.6 Revisited: "exit exam, come back later" and the timer
+
+Re-verified the §5.6 fix (`useExamSessionLifecycle`) end to end: added a fake-timer test that
+starts an exam, runs it 2 minutes in, pauses, advances the clock a full hour while paused, resumes,
+runs 1 more active minute, and asserts only those 3 active minutes counted against the 45-minute
+limit - see `pause/resume timer math` in `tests/services/examStore.test.ts`. That test passes
+against the current pause/resume/getRemainingMs logic, which hasn't changed since §5.6. If this is
+still visibly wrong after this update, the most useful next report would be the *exact* sequence
+used to "exit" (the ✕ button, the menu's "Exit Exam", the OS back gesture, or the home button) and
+roughly how long the app was left closed for, since those exercise different code paths
+(`handleExitExam` vs. the unmount cleanup in `useExamSessionLifecycle` vs. the `AppState` listener)
+and narrowing which one is involved would make the next fix precise instead of another broad pass.
+
+### 6.7 (Not a bug) Confirmed working: long option text wraps in Practice
+
+The screenshots showed multi-clause options wrapping correctly across two lines - confirms the
+`OptionButton` label fix in §5.5 is doing its job for Practice as well as Exam.
+
+
