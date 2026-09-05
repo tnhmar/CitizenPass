@@ -36,10 +36,24 @@ type ExamState = {
    *  instead of snapping back to question 1. See hydrate() below for the
    *  app-restart half of that fix. */
   currentIndex: number;
+  /** Question IDs the user has explicitly flagged "come back to this one."
+   *  Independent of whether the question has been answered - a question
+   *  can be answered-and-marked (not sure about a tentative pick) or
+   *  unanswered-and-marked (skipped on purpose, not by accident). Advancing
+   *  past a question via "Next" requires it to be either answered or
+   *  marked (see app/exam/index.tsx), so moving on is always a deliberate
+   *  choice rather than a silent, unnoticed skip. */
+  markedForReview: Record<string, boolean>;
   status: ExamStatus;
   startTimeMs: number | null;
   pausedMs: number;
   pausedAt: number | null;
+  /** Whether the one-time "5 minutes left" alert has already fired for
+   *  this attempt - see src/hooks/useLowTimeWarning.ts. Lives here (not in
+   *  that hook's local state) so it doesn't re-fire if the user exits and
+   *  comes back while already under the threshold, and persists so it
+   *  doesn't re-fire after an app restart either. */
+  lowTimeWarningShown: boolean;
   result: ExamResult | null;
   hydrated: boolean;
 
@@ -47,6 +61,8 @@ type ExamState = {
   startExam: () => void;
   selectAnswer: (questionId: string, index: number) => void;
   setCurrentIndex: (index: number) => void;
+  toggleMarkedForReview: (questionId: string) => void;
+  markLowTimeWarningShown: () => void;
   pause: () => void;
   resume: () => void;
   submitExam: () => ExamResult;
@@ -81,9 +97,11 @@ function persistSession(state: ExamState): void {
     answers: state.answers,
     optionOrder: state.optionOrder,
     currentIndex: state.currentIndex,
+    markedForReview: state.markedForReview,
     startTimeMs: state.startTimeMs,
     pausedMs: state.pausedMs,
     pausedAt: state.pausedAt,
+    lowTimeWarningShown: state.lowTimeWarningShown,
   });
 }
 
@@ -92,10 +110,12 @@ export const useExamStore = create<ExamState>((set, get) => ({
   answers: {},
   optionOrder: {},
   currentIndex: 0,
+  markedForReview: {},
   status: "idle",
   startTimeMs: null,
   pausedMs: 0,
   pausedAt: null,
+  lowTimeWarningShown: false,
   result: null,
   hydrated: false,
 
@@ -117,10 +137,12 @@ export const useExamStore = create<ExamState>((set, get) => ({
       answers: stored.answers,
       optionOrder: stored.optionOrder,
       currentIndex: stored.currentIndex,
+      markedForReview: stored.markedForReview ?? {},
       status: "in-progress",
       startTimeMs: stored.startTimeMs,
       pausedMs: stored.pausedMs,
       pausedAt: stored.pausedAt,
+      lowTimeWarningShown: stored.lowTimeWarningShown ?? false,
       result: null,
       hydrated: true,
     });
@@ -137,10 +159,12 @@ export const useExamStore = create<ExamState>((set, get) => ({
       answers: {},
       optionOrder,
       currentIndex: 0,
+      markedForReview: {},
       status: "in-progress",
       startTimeMs: Date.now(),
       pausedMs: 0,
       pausedAt: null,
+      lowTimeWarningShown: false,
       result: null,
     });
     persistSession(get());
@@ -157,6 +181,23 @@ export const useExamStore = create<ExamState>((set, get) => ({
     if (status !== "in-progress" || questions.length === 0) return;
     const clamped = Math.max(0, Math.min(index, questions.length - 1));
     set({ currentIndex: clamped });
+    persistSession(get());
+  },
+
+  toggleMarkedForReview: (questionId) => {
+    if (get().status !== "in-progress") return;
+    const next = { ...get().markedForReview };
+    if (next[questionId]) {
+      delete next[questionId];
+    } else {
+      next[questionId] = true;
+    }
+    set({ markedForReview: next });
+    persistSession(get());
+  },
+
+  markLowTimeWarningShown: () => {
+    set({ lowTimeWarningShown: true });
     persistSession(get());
   },
 
@@ -207,10 +248,12 @@ export const useExamStore = create<ExamState>((set, get) => ({
     set({
       answers: {},
       currentIndex: 0,
+      markedForReview: {},
       status: "in-progress",
       startTimeMs: Date.now(),
       pausedMs: 0,
       pausedAt: null,
+      lowTimeWarningShown: false,
       result: null,
     });
     persistSession(get());
@@ -222,10 +265,12 @@ export const useExamStore = create<ExamState>((set, get) => ({
       answers: {},
       optionOrder: {},
       currentIndex: 0,
+      markedForReview: {},
       status: "idle",
       startTimeMs: null,
       pausedMs: 0,
       pausedAt: null,
+      lowTimeWarningShown: false,
       result: null,
     });
     persistSession(get());
