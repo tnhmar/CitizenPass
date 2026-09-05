@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 import { ScrollView, StyleSheet, View } from "react-native";
 import { useLocalSearchParams, useRouter } from "expo-router";
-import { Text, Button, Card, IconButton, Menu, useTheme } from "react-native-paper";
+import { Text, Button, Card, Divider, IconButton, Menu, TouchableRipple, useTheme } from "react-native-paper";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 import { useTranslation } from "react-i18next";
 import { useSettingsStore } from "../../src/store/useSettingsStore";
@@ -140,13 +140,18 @@ export default function PracticeScreen() {
         </Button>
       }
     >
-      <Menu.Item title={t("practice.allChapters")} onPress={() => handlePickChapter(null)} />
+      {/* Bug fix: Paper's Menu.Item truncates its title to a single line
+          with an ellipsis, which cut off longer chapter names entirely.
+          Plain TouchableRipple rows (same primitive OptionButton is built
+          on) give full control - no line limit, text wraps as needed. */}
+      <TouchableRipple onPress={() => handlePickChapter(null)} style={styles.menuRow}>
+        <Text style={styles.menuRowText}>{t("practice.allChapters")}</Text>
+      </TouchableRipple>
+      <Divider />
       {chapters.map((chapter) => (
-        <Menu.Item
-          key={chapter.id}
-          title={getChapterTitle(chapter, language)}
-          onPress={() => handlePickChapter(chapter.id)}
-        />
+        <TouchableRipple key={chapter.id} onPress={() => handlePickChapter(chapter.id)} style={styles.menuRow}>
+          <Text style={styles.menuRowText}>{getChapterTitle(chapter, language)}</Text>
+        </TouchableRipple>
       ))}
     </Menu>
   );
@@ -232,14 +237,16 @@ export default function PracticeScreen() {
         front={
           <>
             <Card mode="elevated" style={styles.questionCard}>
-              <Card.Content>
+              <Card.Content style={styles.questionContent}>
                 <MaterialCommunityIcons
                   name="help-circle-outline"
                   size={20}
                   color={theme.colors.primary}
                   style={styles.questionIcon}
                 />
-                <Text variant="titleMedium">{localized.question}</Text>
+                <Text variant="titleMedium" style={styles.questionText}>
+                  {localized.question}
+                </Text>
               </Card.Content>
             </Card>
 
@@ -341,9 +348,17 @@ const styles = StyleSheet.create({
   },
   chapterPickerButton: { marginVertical: 12, alignSelf: "flex-start" },
   chapterPickerContent: { flexDirection: "row-reverse" },
+  menuRow: { paddingVertical: 12, paddingHorizontal: 16, minWidth: 260, maxWidth: 320 },
+  menuRowText: { fontSize: 14, lineHeight: 20 },
   questionCard: { marginBottom: 16 },
   flipRegion: { marginBottom: 4 },
-  questionIcon: { marginBottom: 8 },
+  // Bug fix: icon and question text used to stack vertically (icon on its
+  // own line, question below) because Card.Content's default flex
+  // direction is column. Now a row, with the icon nudged down slightly to
+  // optically align with the first line of text instead of its very top.
+  questionContent: { flexDirection: "row", alignItems: "flex-start" },
+  questionIcon: { marginRight: 8, marginTop: 3, flexShrink: 0 },
+  questionText: { flex: 1, flexShrink: 1, minWidth: 0 },
   optionButton: { marginBottom: 10 },
   feedbackBanner: {
     flexDirection: "row",

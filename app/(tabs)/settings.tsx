@@ -141,14 +141,22 @@ export default function SettingsScreen() {
           🗣️ {t("settings.arabicHelp")}
         </Text>
         <Card mode="outlined">
-          <Card.Content style={[styles.arabicToggleRow, { paddingVertical: isTablet ? 8 : 0 }]}>
+          {/* Bug fix: this used to be a single row (text + Switch side by
+              side). Even with flexShrink/minWidth on the text, the fixed-
+              width Switch still visually crowded the border on some
+              screens. Stacking the switch on its own line below removes
+              the competing sibling entirely, so the description always
+              gets the full card width to wrap in. */}
+          <Card.Content style={[styles.arabicToggleContent, { paddingVertical: isTablet ? 14 : 12 }]}>
             <Text
               variant="bodyMedium"
               style={[styles.arabicToggleText, { fontSize: MD3_SIZE.bodyMedium * scale }]}
             >
               {t("settings.arabicHelpDescription")}
             </Text>
-            <Switch value={arabicHelpEnabled} onValueChange={setArabicHelpEnabled} />
+            <View style={styles.arabicToggleSwitchRow}>
+              <Switch value={arabicHelpEnabled} onValueChange={setArabicHelpEnabled} />
+            </View>
           </Card.Content>
         </Card>
 
@@ -194,11 +202,9 @@ const styles = StyleSheet.create({
   header: { marginBottom: 16 },
   sectionTitle: { marginTop: 8, marginBottom: 10 },
   resetButton: { marginTop: 4 },
-  arabicToggleRow: { flexDirection: "row", alignItems: "center", gap: 12 },
-  // flex:1 alone can still let RN/Yoga overflow a Text past its row in
-  // some layouts; flexShrink+minWidth:0 is the standard fix so long copy
-  // wraps inside the card instead of pushing past its border.
-  arabicToggleText: { flex: 1, flexShrink: 1, minWidth: 0 },
+  arabicToggleContent: { gap: 12 },
+  arabicToggleText: { flexShrink: 1, minWidth: 0 },
+  arabicToggleSwitchRow: { flexDirection: "row", justifyContent: "flex-end" },
   disclaimerCard: { marginTop: 24 },
   disclaimerContent: { flexDirection: "row", gap: 8, alignItems: "flex-start" },
   swatchRow: { flexDirection: "row", flexWrap: "wrap", gap: 20, marginTop: 2 },
