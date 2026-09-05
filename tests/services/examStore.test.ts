@@ -193,4 +193,67 @@ describe("useExamStore", () => {
       expect(useExamStore.getState().pausedMs).toBe(before);
     });
   });
+
+  // Regression coverage for "Next enabled with no answer selected" and the
+  // new Mark for Review affordance that fixes it: app/exam/index.tsx gates
+  // its Next button on (answered OR marked), so the store-level toggle
+  // needs to actually flip and needs to reset between attempts.
+  describe("markedForReview", () => {
+    it("toggles on and off per question, independent of other questions", () => {
+      useExamStore.getState().startExam();
+      const [firstId, secondId] = useExamStore.getState().questions.map((q) => q.id);
+
+      useExamStore.getState().toggleMarkedForReview(firstId);
+      expect(useExamStore.getState().markedForReview[firstId]).toBe(true);
+      expect(useExamStore.getState().markedForReview[secondId]).toBeUndefined();
+
+      useExamStore.getState().toggleMarkedForReview(firstId);
+      expect(useExamStore.getState().markedForReview[firstId]).toBeUndefined();
+    });
+
+    it("is ignored once the exam has been submitted", () => {
+      useExamStore.getState().startExam();
+      const questionId = useExamStore.getState().questions[0].id;
+      useExamStore.getState().submitExam();
+      useExamStore.getState().toggleMarkedForReview(questionId);
+      expect(useExamStore.getState().markedForReview[questionId]).toBeUndefined();
+    });
+
+    it("is cleared by restartExam and resetExam", () => {
+      useExamStore.getState().startExam();
+      const questionId = useExamStore.getState().questions[0].id;
+      useExamStore.getState().toggleMarkedForReview(questionId);
+
+      useExamStore.getState().restartExam();
+      expect(useExamStore.getState().markedForReview).toEqual({});
+
+      useExamStore.getState().toggleMarkedForReview(useExamStore.getState().questions[0].id);
+      useExamStore.getState().resetExam();
+      expect(useExamStore.getState().markedForReview).toEqual({});
+    });
+  });
+
+  // Regression coverage for the "notify at 5 minutes left" feature: the
+  // "already shown" flag has to reset between attempts, or a second exam
+  // taken back-to-back would never warn again.
+  describe("lowTimeWarningShown", () => {
+    it("starts false and can be marked shown", () => {
+      useExamStore.getState().startExam();
+      expect(useExamStore.getState().lowTimeWarningShown).toBe(false);
+      useExamStore.getState().markLowTimeWarningShown();
+      expect(useExamStore.getState().lowTimeWarningShown).toBe(true);
+    });
+
+    it("resets on restartExam and on a fresh startExam", () => {
+      useExamStore.getState().startExam();
+      useExamStore.getState().markLowTimeWarningShown();
+
+      useExamStore.getState().restartExam();
+      expect(useExamStore.getState().lowTimeWarningShown).toBe(false);
+
+      useExamStore.getState().markLowTimeWarningShown();
+      useExamStore.getState().startExam();
+      expect(useExamStore.getState().lowTimeWarningShown).toBe(false);
+    });
+  });
 });
