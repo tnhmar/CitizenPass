@@ -3,7 +3,7 @@
     "name": "CitizenPass",
     "slug": "citizenpass",
     "version": "0.1.0",
-    "orientation": "portrait",
+    "orientation": "default",
     "scheme": "citizenpass",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,

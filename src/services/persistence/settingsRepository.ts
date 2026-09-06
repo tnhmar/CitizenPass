@@ -1,4 +1,4 @@
-import type { AppLanguage, AppTheme } from "../../types";
+import type { AppColorScheme, AppLanguage, AppTheme } from "../../types";
 import { STORAGE_KEYS } from "./storageKeys";
 import { readJson, writeJson, removeKey } from "./genericStorage";
 
@@ -6,6 +6,7 @@ export type PersistedSettings = {
   schemaVersion: 1;
   language: AppLanguage;
   theme: AppTheme;
+  colorScheme: AppColorScheme;
   arabicHelpEnabled: boolean;
 };
 
@@ -13,6 +14,7 @@ export const DEFAULT_SETTINGS: PersistedSettings = {
   schemaVersion: 1,
   language: "en",
   theme: "system",
+  colorScheme: "classicRed",
   arabicHelpEnabled: false,
 };
 

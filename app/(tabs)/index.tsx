@@ -2,9 +2,11 @@ import { ScrollView, StyleSheet, View } from "react-native";
 import { useRouter } from "expo-router";
 import { Text, Card, Divider, useTheme } from "react-native-paper";
 import { useTranslation } from "react-i18next";
+import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { NavCard } from "../../src/components/NavCard";
 import { StatPill } from "../../src/components/StatPill";
 import { useProgressStore } from "../../src/store/useProgressStore";
+import { useSemanticColors } from "../../src/theme/useSemanticColors";
 import { getChapterList } from "../../src/data/contentLoader";
 
 type GreetingKey = "home.greetingMorning" | "home.greetingAfternoon" | "home.greetingEvening";
@@ -20,6 +22,8 @@ export default function HomeScreen() {
   const router = useRouter();
   const { t } = useTranslation();
   const theme = useTheme();
+  const { success } = useSemanticColors();
+  const insets = useSafeAreaInsets();
 
   const practiceStats = useProgressStore((state) => state.practiceStats);
   const chapterProgress = useProgressStore((state) => state.chapterProgress);
@@ -34,7 +38,10 @@ export default function HomeScreen() {
   const greeting = getGreeting();
 
   return (
-    <ScrollView style={{ backgroundColor: theme.colors.background }} contentContainerStyle={styles.container}>
+    <ScrollView
+      style={{ backgroundColor: theme.colors.background }}
+      contentContainerStyle={[styles.container, { paddingTop: 16 + insets.top }]}
+    >
       <Text variant="headlineSmall" style={styles.brand}>
         🍁 {t("common.appName")}
       </Text>
@@ -100,7 +107,7 @@ export default function HomeScreen() {
         description={t("home.simulatedExamDescription")}
         icon="timer-outline"
         emoji="⏱️"
-        color="#C77F1A"
+        color={theme.colors.tertiary}
         onPress={() => router.push("/exam")}
       />
       <NavCard
@@ -108,7 +115,7 @@ export default function HomeScreen() {
         description={t("home.progressDescription")}
         icon="chart-donut"
         emoji="📊"
-        color="#1E8E5A"
+        color={success}
         onPress={() => router.push("/progress")}
       />
       <NavCard

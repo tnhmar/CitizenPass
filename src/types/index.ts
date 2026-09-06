@@ -59,3 +59,19 @@ export type Question = {
 
 export type AppLanguage = "en" | "fr";
 export type AppTheme = "light" | "dark" | "system";
+
+/**
+ * Accent color family, independent of the light/dark mode in `AppTheme`.
+ * "classicRed" is the original Canada-inspired default; the rest are the
+ * alternate palettes proposed in the theme audit (see
+ * docs/theme-navigation-responsive-overhaul.md). Adding a new scheme means
+ * adding one entry to `COLOR_SCHEMES` in `src/theme/tokens.ts` plus a label
+ * key in i18n - nothing else needs to change.
+ */
+export type AppColorScheme =
+  | "classicRed"
+  | "oceanBlue"
+  | "twilightIndigo"
+  | "terracotta"
+  | "slateCharcoal"
+  | "plumMagenta";

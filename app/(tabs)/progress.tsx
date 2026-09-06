@@ -6,6 +6,7 @@ import { useTranslation } from "react-i18next";
 import { useProgressStore } from "../../src/store/useProgressStore";
 import { useSettingsStore } from "../../src/store/useSettingsStore";
 import { useSemanticColors } from "../../src/theme/useSemanticColors";
+import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { getChapterList, getChapterTitle } from "../../src/data/contentLoader";
 import { getChapterVisual } from "../../src/constants/chapterIcons";
 import { StatPill } from "../../src/components/StatPill";
@@ -16,6 +17,7 @@ export default function ProgressScreen() {
   const { t } = useTranslation();
   const theme = useTheme();
   const { success, successContainer } = useSemanticColors();
+  const insets = useSafeAreaInsets();
   const language = useSettingsStore((state) => state.language);
   const practiceStats = useProgressStore((state) => state.practiceStats);
   const chapterProgress = useProgressStore((state) => state.chapterProgress);
@@ -59,7 +61,7 @@ export default function ProgressScreen() {
   return (
     <FlatList
       style={{ backgroundColor: theme.colors.background }}
-      contentContainerStyle={styles.listContent}
+      contentContainerStyle={[styles.listContent, { paddingTop: 16 + insets.top }]}
       data={chapters}
       keyExtractor={(item) => item.id}
       renderItem={renderChapter}
@@ -88,13 +90,13 @@ export default function ProgressScreen() {
               icon="book-open-page-variant"
               label={t("progress.chaptersLabel")}
               value={`${chaptersStartedCount}/${chapters.length}`}
-              color="#1E8E5A"
+              color={success}
             />
             <StatPill
               icon="bookmark"
               label={t("progress.bookmarksLabel")}
               value={String(bookmarkedQuestionIds.length)}
-              color="#C77F1A"
+              color={theme.colors.tertiary}
               onPress={() => router.push("/bookmarks")}
             />
           </View>
@@ -120,7 +122,7 @@ export default function ProgressScreen() {
                   <MaterialCommunityIcons
                     name={attempt.passed ? "trophy" : "close-circle-outline"}
                     size={22}
-                    color={attempt.passed ? "#E5B94E" : theme.colors.error}
+                    color={attempt.passed ? theme.colors.tertiary : theme.colors.error}
                   />
                   <View style={styles.examTextBlock}>
                     <Text variant="bodyMedium">
