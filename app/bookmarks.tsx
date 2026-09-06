@@ -5,6 +5,7 @@ import { useTranslation } from "react-i18next";
 import { useProgressStore } from "../src/store/useProgressStore";
 import { useSettingsStore } from "../src/store/useSettingsStore";
 import { useSemanticColors } from "../src/theme/useSemanticColors";
+import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { getQuestionById } from "../src/data/questionLoader";
 import { SourceCitationCard } from "../src/components/SourceCitationCard";
 import type { Question } from "../src/types";
@@ -14,6 +15,7 @@ export default function BookmarksScreen() {
   const { t } = useTranslation();
   const theme = useTheme();
   const { success } = useSemanticColors();
+  const insets = useSafeAreaInsets();
   const language = useSettingsStore((state) => state.language);
   const bookmarkedQuestionIds = useProgressStore((state) => state.bookmarkedQuestionIds);
   const toggleBookmark = useProgressStore((state) => state.toggleBookmark);
@@ -57,7 +59,7 @@ export default function BookmarksScreen() {
   return (
     <FlatList
       style={{ backgroundColor: theme.colors.background }}
-      contentContainerStyle={styles.listContent}
+      contentContainerStyle={[styles.listContent, { paddingTop: 16 + insets.top }]}
       data={bookmarkedQuestions}
       keyExtractor={(item) => item.id}
       renderItem={renderItem}
