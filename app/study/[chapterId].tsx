@@ -5,6 +5,7 @@ import { MaterialCommunityIcons } from "@expo/vector-icons";
 import { useTranslation } from "react-i18next";
 import { useSettingsStore } from "../../src/store/useSettingsStore";
 import { useProgressStore } from "../../src/store/useProgressStore";
+import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { getChapterContent } from "../../src/data/contentLoader";
 import { getChapterVisual } from "../../src/constants/chapterIcons";
 
@@ -13,6 +14,7 @@ export default function ChapterDetailScreen() {
   const router = useRouter();
   const { t } = useTranslation();
   const theme = useTheme();
+  const insets = useSafeAreaInsets();
   const language = useSettingsStore((state) => state.language);
   const chapterProgress = useProgressStore((state) => state.chapterProgress);
   const setChapterCompletion = useProgressStore((state) => state.setChapterCompletion);
@@ -31,7 +33,10 @@ export default function ChapterDetailScreen() {
   }
 
   return (
-    <ScrollView style={{ backgroundColor: theme.colors.background }} contentContainerStyle={styles.container}>
+    <ScrollView
+      style={{ backgroundColor: theme.colors.background }}
+      contentContainerStyle={[styles.container, { paddingTop: 16 + insets.top }]}
+    >
       <View style={styles.titleRow}>
         <View style={[styles.iconCircle, { backgroundColor: `${visual.color}1A` }]}>
           <MaterialCommunityIcons name={visual.icon as any} size={26} color={visual.color} />

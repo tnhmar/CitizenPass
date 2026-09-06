@@ -6,6 +6,7 @@ import { useTranslation } from "react-i18next";
 import { useSettingsStore } from "../../src/store/useSettingsStore";
 import { useProgressStore } from "../../src/store/useProgressStore";
 import { useSemanticColors } from "../../src/theme/useSemanticColors";
+import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { getChapterList, getChapterTitle } from "../../src/data/contentLoader";
 import { getChapterVisual } from "../../src/constants/chapterIcons";
 import type { ManifestChapterEntry } from "../../src/types/content";
@@ -15,6 +16,7 @@ export default function StudyIndexScreen() {
   const { t } = useTranslation();
   const theme = useTheme();
   const { success } = useSemanticColors();
+  const insets = useSafeAreaInsets();
   const language = useSettingsStore((state) => state.language);
   const chapterProgress = useProgressStore((state) => state.chapterProgress);
 
@@ -63,7 +65,7 @@ export default function StudyIndexScreen() {
   return (
     <FlatList
       style={{ backgroundColor: theme.colors.background }}
-      contentContainerStyle={styles.listContent}
+      contentContainerStyle={[styles.listContent, { paddingTop: 16 + insets.top }]}
       data={chapters}
       keyExtractor={(item) => item.id}
       renderItem={renderItem}
