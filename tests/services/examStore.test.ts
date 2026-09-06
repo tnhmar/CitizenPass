@@ -57,16 +57,26 @@ describe("useExamStore", () => {
     expect(result.passed).toBe(false);
   });
 
+  // getRemainingMs takes `now` explicitly (rather than reading Date.now()
+  // itself) specifically so this stays trivial to test - see
+  // src/store/useExamStore.ts and useExamCountdown.ts.
   it("getRemainingMs returns the full duration before the exam starts", () => {
-    expect(getRemainingMs({ startTimeMs: null, pausedMs: 0, pausedAt: null })).toBe(EXAM_DURATION_MS);
+    expect(getRemainingMs(null)).toBe(EXAM_DURATION_MS);
   });
 
-  it("getRemainingMs subtracts elapsed and paused time", () => {
-    const now = Date.now();
+  it("getRemainingMs subtracts elapsed time, with no pause/resume math anymore", () => {
+    // IRCC-parity refactor: the timer never pauses, so this is now a pure
+    // "duration minus elapsed" calculation - see docs section 7.
+    const now = 1_000_000_000;
     const tenMinutesAgo = now - 10 * 60 * 1000;
-    const remaining = getRemainingMs({ startTimeMs: tenMinutesAgo, pausedMs: 0, pausedAt: null });
-    expect(remaining).toBeLessThanOrEqual(35 * 60 * 1000);
-    expect(remaining).toBeGreaterThan(34 * 60 * 1000);
+    const remaining = getRemainingMs(tenMinutesAgo, now);
+    expect(remaining).toBe(EXAM_DURATION_MS - 10 * 60 * 1000);
+  });
+
+  it("getRemainingMs never goes below zero once the duration has elapsed", () => {
+    const now = 1_000_000_000;
+    const wayBefore = now - EXAM_DURATION_MS - 60 * 60 * 1000;
+    expect(getRemainingMs(wayBefore, now)).toBe(0);
   });
 
   it("formatRemainingTime formats minutes and seconds with zero-padding", () => {
@@ -136,72 +146,21 @@ describe("useExamStore", () => {
     expect(state.questions).toHaveLength(0);
   });
 
-  // Regression coverage for "quit the exam and come back later - the timer
-  // had reset instead of continuing from where it was." Simulates exactly
-  // that: pause (as "Exit Exam" does), let real time pass while paused,
-  // resume (as coming back to either exam screen does via
-  // useExamSessionLifecycle), and confirm the paused interval was excluded
-  // from elapsed time rather than counted against the exam or dropped.
-  describe("pause/resume timer math", () => {
-    beforeEach(() => {
-      jest.useFakeTimers();
-    });
-
-    afterEach(() => {
-      jest.useRealTimers();
-    });
-
-    it("excludes paused time from elapsed exam time, however long the pause", () => {
-      useExamStore.getState().startExam();
-
-      jest.advanceTimersByTime(2 * 60 * 1000); // 2 minutes into the exam
-      useExamStore.getState().pause(); // e.g. "Exit Exam"
-
-      jest.advanceTimersByTime(60 * 60 * 1000); // an hour away - longer than the exam itself
-      useExamStore.getState().resume(); // back to /exam or /exam/review
-
-      jest.advanceTimersByTime(1 * 60 * 1000); // 1 more active minute
-
-      const state = useExamStore.getState();
-      const remaining = getRemainingMs({
-        startTimeMs: state.startTimeMs,
-        pausedMs: state.pausedMs,
-        pausedAt: state.pausedAt,
-      });
-      // Only 2 + 1 = 3 active minutes should have counted, regardless of
-      // the hour spent paused in between - i.e. "continues", not "reset".
-      const expectedRemaining = EXAM_DURATION_MS - 3 * 60 * 1000;
-      expect(Math.abs(remaining - expectedRemaining)).toBeLessThan(1000);
-      expect(state.pausedAt).toBeNull();
-    });
-
-    it("pause() is a no-op if already paused (no double-counting)", () => {
-      useExamStore.getState().startExam();
-      useExamStore.getState().pause();
-      const pausedAtFirst = useExamStore.getState().pausedAt;
-
-      jest.advanceTimersByTime(60 * 1000);
-      useExamStore.getState().pause(); // calling pause again while already paused
-
-      expect(useExamStore.getState().pausedAt).toBe(pausedAtFirst);
-    });
-
-    it("resume() is a no-op if nothing is paused", () => {
-      useExamStore.getState().startExam();
-      const before = useExamStore.getState().pausedMs;
-      useExamStore.getState().resume();
-      expect(useExamStore.getState().pausedMs).toBe(before);
-    });
-  });
-
-  // Regression coverage for "Next enabled with no answer selected" and the
-  // new Mark for Review affordance that fixes it: app/exam/index.tsx gates
-  // its Next button on (answered OR marked), so the store-level toggle
-  // needs to actually flip and needs to reset between attempts.
+  // Regression coverage for the IRCC-parity refactor: matching the real
+  // test exactly, a question can only be marked for review *after* it has
+  // an answer - see docs/theme-navigation-responsive-overhaul.md section 7.
   describe("markedForReview", () => {
-    it("toggles on and off per question, independent of other questions", () => {
+    it("is a no-op on a question with no answer yet", () => {
+      useExamStore.getState().startExam();
+      const questionId = useExamStore.getState().questions[0].id;
+      useExamStore.getState().toggleMarkedForReview(questionId);
+      expect(useExamStore.getState().markedForReview[questionId]).toBeUndefined();
+    });
+
+    it("toggles on and off once the question has an answer, independent of other questions", () => {
       useExamStore.getState().startExam();
       const [firstId, secondId] = useExamStore.getState().questions.map((q) => q.id);
+      useExamStore.getState().selectAnswer(firstId, 0);
 
       useExamStore.getState().toggleMarkedForReview(firstId);
       expect(useExamStore.getState().markedForReview[firstId]).toBe(true);
@@ -214,6 +173,7 @@ describe("useExamStore", () => {
     it("is ignored once the exam has been submitted", () => {
       useExamStore.getState().startExam();
       const questionId = useExamStore.getState().questions[0].id;
+      useExamStore.getState().selectAnswer(questionId, 0);
       useExamStore.getState().submitExam();
       useExamStore.getState().toggleMarkedForReview(questionId);
       expect(useExamStore.getState().markedForReview[questionId]).toBeUndefined();
@@ -222,38 +182,17 @@ describe("useExamStore", () => {
     it("is cleared by restartExam and resetExam", () => {
       useExamStore.getState().startExam();
       const questionId = useExamStore.getState().questions[0].id;
+      useExamStore.getState().selectAnswer(questionId, 0);
       useExamStore.getState().toggleMarkedForReview(questionId);
 
       useExamStore.getState().restartExam();
       expect(useExamStore.getState().markedForReview).toEqual({});
 
-      useExamStore.getState().toggleMarkedForReview(useExamStore.getState().questions[0].id);
+      const freshQuestionId = useExamStore.getState().questions[0].id;
+      useExamStore.getState().selectAnswer(freshQuestionId, 0);
+      useExamStore.getState().toggleMarkedForReview(freshQuestionId);
       useExamStore.getState().resetExam();
       expect(useExamStore.getState().markedForReview).toEqual({});
-    });
-  });
-
-  // Regression coverage for the "notify at 5 minutes left" feature: the
-  // "already shown" flag has to reset between attempts, or a second exam
-  // taken back-to-back would never warn again.
-  describe("lowTimeWarningShown", () => {
-    it("starts false and can be marked shown", () => {
-      useExamStore.getState().startExam();
-      expect(useExamStore.getState().lowTimeWarningShown).toBe(false);
-      useExamStore.getState().markLowTimeWarningShown();
-      expect(useExamStore.getState().lowTimeWarningShown).toBe(true);
-    });
-
-    it("resets on restartExam and on a fresh startExam", () => {
-      useExamStore.getState().startExam();
-      useExamStore.getState().markLowTimeWarningShown();
-
-      useExamStore.getState().restartExam();
-      expect(useExamStore.getState().lowTimeWarningShown).toBe(false);
-
-      useExamStore.getState().markLowTimeWarningShown();
-      useExamStore.getState().startExam();
-      expect(useExamStore.getState().lowTimeWarningShown).toBe(false);
     });
   });
 });

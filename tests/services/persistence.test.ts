@@ -35,9 +35,8 @@ describe("exam session persistence", () => {
       answers: { "q-1": 2 },
       optionOrder: { "q-1": [0, 1, 2, 3] },
       currentIndex: 3,
+      markedForReview: { "q-1": true },
       startTimeMs: 1000,
-      pausedMs: 0,
-      pausedAt: null,
     };
     await saveExamSession(session);
     expect(await loadExamSession()).toEqual(session);
