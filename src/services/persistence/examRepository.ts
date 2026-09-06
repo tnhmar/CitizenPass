@@ -17,16 +17,12 @@ export type PersistedExamSession = {
   answers: Record<string, number>;
   optionOrder: Record<string, number[]>;
   currentIndex: number;
-  // Optional: sessions persisted before these two fields existed won't
-  // have them on disk even though this app always writes them now -
-  // useExamStore.hydrate() falls back to {} / false for either being
-  // absent, so an older cached session still loads instead of being
-  // treated as corrupt.
+  // Optional: sessions persisted before this field existed won't have it
+  // on disk even though this app always writes it now -
+  // useExamStore.hydrate() falls back to {} if absent, so an older cached
+  // session still loads instead of being treated as corrupt.
   markedForReview?: Record<string, boolean>;
   startTimeMs: number;
-  pausedMs: number;
-  pausedAt: number | null;
-  lowTimeWarningShown?: boolean;
 };
 
 /**
