@@ -7,6 +7,7 @@ import { useTranslation } from "react-i18next";
 import { useSettingsStore } from "../../src/store/useSettingsStore";
 import { useProgressStore } from "../../src/store/useProgressStore";
 import { useSemanticColors } from "../../src/theme/useSemanticColors";
+import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { drawRandomQuestions } from "../../src/data/questionLoader";
 import { getChapterList, getChapterTitle } from "../../src/data/contentLoader";
 import { randomOptionOrder, applyOptionOrder, applyOptionOrderToArabic } from "../../src/utils/questionDisplay";
@@ -29,6 +30,7 @@ export default function PracticeScreen() {
   const { t } = useTranslation();
   const theme = useTheme();
   const { success, onSuccess, successContainer } = useSemanticColors();
+  const insets = useSafeAreaInsets();
   const language = useSettingsStore((state) => state.language);
   const arabicHelpEnabled = useSettingsStore((state) => state.arabicHelpEnabled);
   const bookmarkedQuestionIds = useProgressStore((state) => state.bookmarkedQuestionIds);
@@ -159,7 +161,7 @@ export default function PracticeScreen() {
   if (sessionComplete) {
     const accuracyPercent = sessionAnswered > 0 ? Math.round((sessionCorrect / sessionAnswered) * 100) : 0;
     return (
-      <ScrollView style={{ backgroundColor: theme.colors.background }} contentContainerStyle={styles.container}>
+      <ScrollView style={{ backgroundColor: theme.colors.background }} contentContainerStyle={[styles.container, { paddingTop: 16 + insets.top }]}>
         <Text variant="headlineSmall" style={styles.headerTitle}>
           ✏️ {t("practice.title")}
         </Text>
@@ -199,7 +201,7 @@ export default function PracticeScreen() {
   const isCorrect = selectedIndex === localized.correctIndex;
 
   return (
-    <ScrollView style={{ backgroundColor: theme.colors.background }} contentContainerStyle={styles.container}>
+    <ScrollView style={{ backgroundColor: theme.colors.background }} contentContainerStyle={[styles.container, { paddingTop: 16 + insets.top }]}>
       <View style={styles.headerRow}>
         <Text variant="headlineSmall" style={styles.headerTitle}>
           ✏️ {t("practice.title")}
