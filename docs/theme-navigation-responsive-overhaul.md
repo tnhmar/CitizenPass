@@ -368,4 +368,89 @@ and narrowing which one is involved would make the next fix precise instead of a
 The screenshots showed multi-clause options wrapping correctly across two lines - confirms the
 `OptionButton` label fix in §5.5 is doing its job for Practice as well as Exam.
 
+---
+
+## 7. IRCC-parity refactor: matching the real exam interface
+
+The exam flow up to this point had accumulated several rounds of incremental fixes (§2, §3, §5.6,
+§5.7, §6.3, §6.5, §6.6), but the underlying design was never checked against what the actual,
+official test looks and behaves like. This section replaces several of those earlier decisions
+outright, based on direct research into canada.ca's own published description of their test
+interface, followed by an approval step before any code changed.
+
+### Research: what canada.ca actually documents
+
+Per "Online citizenship test: the test page" (canada.ca), the real IRCC computer-based test:
+
+- Runs a 45-minute timer that **cannot be paused once started**, for any reason.
+- Shows a persistent **red "Time is almost up"** label above the timer once under 5 minutes remain
+  - not a popup.
+- Auto-saves and auto-submits the instant the timer hits zero, with a dedicated "you've run out of
+  time" screen.
+- Uses plain "Previous question" / "Next question" buttons with **no gating** - skipping a question
+  is normal, expected behavior.
+- Offers an "I want to review this answer later" checkbox that is **only selectable after an
+  answer has been chosen** - you can flag "I answered this but I'm not sure," not "I'm skipping
+  this and flagging it."
+- Provides question-level navigation via a **Grid view** (20 numbered tiles, tap to jump) with live
+  counts underneath - "To be reviewed" / "Not answered" / "Answered" - and an alternate **List
+  view** toggle that groups the same 20 questions under four headers: Current question / To be
+  reviewed / Not answered / Answered. Neither view shows question text or chosen answers - it's
+  status-only navigation.
+- Submission is a "Confirm submission" action.
+
+### Decisions approved before implementation
+
+Presented as a requirements document first, per the request; three of four questions came back
+"match the official test exactly" (never pause; replace the review list with Grid/List), and
+in-exam language switching was declined (stays Settings-only). The fourth (Next-button gating) had
+no explicit answer, so it defaulted to matching official behavior too, consistent with the other
+three decisions, rather than assuming the opposite.
+
+### What changed
+
+**Timer (`src/store/useExamStore.ts`, `src/hooks/useExamCountdown.ts`)** - `pausedMs`/`pausedAt`
+and the `pause()`/`resume()` actions from §2/§5.6/§6.6 are gone entirely, not just unused:
+`getRemainingMs` is now a pure `duration - (now - startTime)` calculation with no paused-time
+bookkeeping to get wrong. `src/hooks/useExamSessionLifecycle.ts` (the mount/unmount pause hook from
+§5.6) and the `AppState` background/foreground listener are both deleted - there is nothing left
+for either to do. Exiting the exam (✕ button or the options menu) now shows a confirmation
+explicitly warning "your timer will keep running even after you leave this screen," so the change
+in behavior is never a silent surprise.
+
+**5-minute warning (`app/exam/index.tsx`, `app/exam/review.tsx`)** - The one-time popup `Alert` from
+§6.5 (and its `lowTimeWarningShown` store flag, `src/hooks/useLowTimeWarning.ts`) is retired.
+Since a persistent banner is naturally derived from "is remaining time under the threshold right
+now" with no one-time-fire logic needed, this is simpler than what it replaces, not just
+different: a `{isLowTime && <Text>...}` line above the timer badge, matching the official wording
+and placement exactly.
+
+**Mark for Review (`useExamStore.toggleMarkedForReview`)** - Now a no-op unless the question
+already has an answer, matching the official checkbox's own rule precisely. The flag button in
+`app/exam/index.tsx` reflects this via its own `disabled={!hasAnswered}`.
+
+**Next button (`app/exam/index.tsx`)** - The answered-or-marked gating added in §6.3 is removed.
+Next is unconditionally enabled, matching the official test's own lack of any such restriction -
+skipping and returning later (via Previous or the navigator) is normal.
+
+**No persistent progress indicator on the question screen** - The progress-dots row is gone.
+Progress/status live exclusively in the navigator now, matching the official design, where the
+per-question screen shows no running tally at all.
+
+**Grid/List navigator (`app/exam/review.tsx`, full rewrite)** - Replaces the full-detail review
+list from §5.7 (question text + chosen answer, tap to jump) with the lighter, official-matching
+model: a **Grid view** of 20 numbered tiles (color/border-coded: grey outline = not answered, blue
+= answered, blue fill with a tertiary border and a small flag icon = to be reviewed, thicker
+primary border = current question) and a **List view** toggle that groups the same 20 questions
+under four headers - Current question / To be reviewed / Not answered / Answered - each just a
+tappable number, no question text. A live three-part count ("To be reviewed: X · Not answered: Y ·
+Answered: Z", always summing to 20) sits above both views. The footer button is now labeled
+"Confirm submission," matching official wording, in place of "Submit Exam."
+
+**Deliberately unchanged**: `currentIndex` living in the store and persisting across app
+restarts (§2) - that fix's value has nothing to do with pausing and stays exactly as it was; the
+restart/new-exam/exit options menu (§3); and the answer-locking-in-place behavior (once submitted,
+answers can't change).
+
+
 
