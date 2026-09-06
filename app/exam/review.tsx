@@ -1,73 +1,62 @@
 import { useEffect, useState } from "react";
-import { AppState, Alert, FlatList, StyleSheet, View } from "react-native";
+import { Alert, ScrollView, StyleSheet, View } from "react-native";
 import { useRouter } from "expo-router";
-import { Text, Button, Card, Divider, IconButton, Menu, useTheme } from "react-native-paper";
+import { Text, Button, Divider, IconButton, Menu, SegmentedButtons, TouchableRipple, useTheme } from "react-native-paper";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 import { useTranslation } from "react-i18next";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
-import { useSettingsStore } from "../../src/store/useSettingsStore";
 import { useResponsive } from "../../src/hooks/useResponsive";
 import { useExamCountdown } from "../../src/hooks/useExamCountdown";
 import { useFinishExam } from "../../src/hooks/useFinishExam";
-import { useExamSessionLifecycle } from "../../src/hooks/useExamSessionLifecycle";
-import { useLowTimeWarning } from "../../src/hooks/useLowTimeWarning";
-import { useExamStore, formatRemainingTime } from "../../src/store/useExamStore";
-import type { Question } from "../../src/types";
+import {
+  useExamStore,
+  formatRemainingTime,
+  LOW_TIME_THRESHOLD_MS,
+} from "../../src/store/useExamStore";
 
-const OPTION_LETTERS = ["A", "B", "C", "D"];
+type QuestionStatus = "answered" | "notAnswered" | "toBeReviewed";
+type ViewMode = "grid" | "list";
 
 // MD3 type-scale base sizes, used to scale text on tablets - see
 // useResponsive() and docs/theme-navigation-responsive-overhaul.md.
-const MD3_SIZE = { titleMedium: 16, titleSmall: 14, bodyMedium: 14, bodySmall: 12 } as const;
+const MD3_SIZE = { titleMedium: 16, titleSmall: 14, bodyMedium: 14, bodySmall: 13, labelSmall: 11 } as const;
 
 /**
- * Pre-submit review list: every question in the current exam, answered or
- * not, tappable to jump back and change/add an answer, with a single
- * confirmed "Submit Exam" at the bottom. This is the answer to "add an
- * option to revise answers when not sure, before submitting" - skipping a
- * question during the exam (app/exam/index.tsx's "Next") is intentionally
- * still allowed, since this screen is the safety net for exactly that.
+ * The exam's question navigator - a Grid view (numbered tiles) and a List
+ * view (same questions grouped by status), matching the official IRCC
+ * online citizenship test's own "grid view"/"list view" almost exactly
+ * (canada.ca's own description of their test interface - see
+ * docs/theme-navigation-responsive-overhaul.md section 7). Deliberately
+ * does NOT show question text or chosen answers here, unlike an earlier
+ * version of this screen - the official test's navigator is status-only
+ * (answered / not answered / to be reviewed) with no content preview, and
+ * that's what this now matches.
  *
- * Reached either from the last question's "Review & Submit" button, or
- * from the "Review Answers" item in the exam options menu at any point -
- * both just `router.push` here, so `router.back()` throughout this screen
- * correctly returns to /exam without stacking duplicate entries.
+ * Reached either from the last question's button, or from "Review
+ * Answers" in the exam options menu at any point - both just
+ * `router.push` here, so `router.back()` throughout this screen correctly
+ * returns to /exam without stacking duplicate entries.
  */
 export default function ExamReviewScreen() {
   const router = useRouter();
   const { t } = useTranslation();
   const theme = useTheme();
-  const { isTablet, scale, contentMaxWidth } = useResponsive();
+  const { scale, contentMaxWidth } = useResponsive();
   const insets = useSafeAreaInsets();
-  const language = useSettingsStore((state) => state.language);
 
   const status = useExamStore((state) => state.status);
   const questions = useExamStore((state) => state.questions);
   const answers = useExamStore((state) => state.answers);
-  const optionOrder = useExamStore((state) => state.optionOrder);
+  const currentIndex = useExamStore((state) => state.currentIndex);
   const setCurrentIndex = useExamStore((state) => state.setCurrentIndex);
   const markedForReview = useExamStore((state) => state.markedForReview);
   const startExam = useExamStore((state) => state.startExam);
   const restartExam = useExamStore((state) => state.restartExam);
-  const pauseExam = useExamStore((state) => state.pause);
-  const resumeExam = useExamStore((state) => state.resume);
 
   const [menuVisible, setMenuVisible] = useState(false);
+  const [viewMode, setViewMode] = useState<ViewMode>("grid");
   const remainingMs = useExamCountdown();
   const finishExam = useFinishExam();
-  useExamSessionLifecycle();
-  useLowTimeWarning(remainingMs);
-
-  useEffect(() => {
-    const subscription = AppState.addEventListener("change", (nextState) => {
-      if (nextState === "background" || nextState === "inactive") {
-        pauseExam();
-      } else if (nextState === "active") {
-        resumeExam();
-      }
-    });
-    return () => subscription.remove();
-  }, [pauseExam, resumeExam]);
 
   // Reachable only from an in-progress exam; if there's nothing to review
   // (deep link, already submitted, or reset), bounce back to /exam. The
@@ -87,9 +76,23 @@ export default function ExamReviewScreen() {
     return null;
   }
 
-  const answeredCount = Object.keys(answers).length;
-  const unansweredCount = questions.length - answeredCount;
-  const isLowTime = remainingMs < 5 * 60 * 1000;
+  const getStatus = (questionId: string): QuestionStatus => {
+    if (markedForReview[questionId]) return "toBeReviewed";
+    if (answers[questionId] !== undefined) return "answered";
+    return "notAnswered";
+  };
+
+  let answeredCount = 0;
+  let notAnsweredCount = 0;
+  let toBeReviewedCount = 0;
+  for (const q of questions) {
+    const s = getStatus(q.id);
+    if (s === "answered") answeredCount += 1;
+    else if (s === "notAnswered") notAnsweredCount += 1;
+    else toBeReviewedCount += 1;
+  }
+
+  const isLowTime = remainingMs < LOW_TIME_THRESHOLD_MS;
 
   const goToQuestion = (index: number) => {
     setCurrentIndex(index);
@@ -98,8 +101,8 @@ export default function ExamReviewScreen() {
 
   const handleSubmit = () => {
     const title =
-      unansweredCount > 0
-        ? t("exam.submitConfirmTitleUnanswered", { count: unansweredCount })
+      notAnsweredCount > 0
+        ? t("exam.submitConfirmTitleUnanswered", { count: notAnsweredCount })
         : t("exam.submitConfirmTitle");
     Alert.alert(title, t("exam.submitConfirmBody"), [
       { text: t("exam.cancelLabel"), style: "cancel" },
@@ -111,7 +114,14 @@ export default function ExamReviewScreen() {
     setMenuVisible(false);
     Alert.alert(t("exam.restartConfirmTitle"), t("exam.restartConfirmBody"), [
       { text: t("exam.cancelLabel"), style: "cancel" },
-      { text: t("exam.restartExam"), style: "destructive", onPress: () => { restartExam(); router.replace("/exam"); } },
+      {
+        text: t("exam.restartExam"),
+        style: "destructive",
+        onPress: () => {
+          restartExam();
+          router.replace("/exam");
+        },
+      },
     ]);
   };
 
@@ -119,64 +129,97 @@ export default function ExamReviewScreen() {
     setMenuVisible(false);
     Alert.alert(t("exam.newExamConfirmTitle"), t("exam.newExamConfirmBody"), [
       { text: t("exam.cancelLabel"), style: "cancel" },
-      { text: t("exam.newExam"), style: "destructive", onPress: () => { startExam(); router.replace("/exam"); } },
+      {
+        text: t("exam.newExam"),
+        style: "destructive",
+        onPress: () => {
+          startExam();
+          router.replace("/exam");
+        },
+      },
     ]);
   };
 
   const handleExitExam = () => {
     setMenuVisible(false);
-    pauseExam();
-    router.replace("/");
+    Alert.alert(t("exam.exitConfirmTitle"), t("exam.exitConfirmBody"), [
+      { text: t("exam.cancelLabel"), style: "cancel" },
+      { text: t("exam.exitExam"), style: "destructive", onPress: () => router.replace("/") },
+    ]);
   };
 
   const contentWrapperStyle = contentMaxWidth
     ? { maxWidth: contentMaxWidth, alignSelf: "center" as const, width: "100%" as const }
     : null;
 
-  const renderItem = ({ item, index }: { item: Question; index: number }) => {
-    const localized = item[language];
-    const selectedCanonicalIndex = answers[item.id];
-    const order = optionOrder[item.id] ?? item.en.options.map((_, i) => i);
-    const isAnswered = selectedCanonicalIndex !== undefined;
-    const isMarked = markedForReview[item.id] === true;
-    const selectedDisplayPosition = isAnswered ? order.indexOf(selectedCanonicalIndex) : undefined;
+  const tileColors = (s: QuestionStatus) => {
+    if (s === "toBeReviewed") {
+      return { background: theme.colors.secondaryContainer, border: theme.colors.tertiary, text: theme.colors.onSecondaryContainer };
+    }
+    if (s === "answered") {
+      return { background: theme.colors.secondaryContainer, border: theme.colors.secondary, text: theme.colors.onSecondaryContainer };
+    }
+    return { background: theme.colors.surfaceVariant, border: theme.colors.outline, text: theme.colors.onSurfaceVariant };
+  };
 
-    const statusParts = [
-      isAnswered ? `${t("exam.yourAnswer")}: ${OPTION_LETTERS[selectedDisplayPosition ?? 0]}` : t("exam.notAnswered"),
-    ];
-    if (isMarked) statusParts.push(t("exam.markedForReview"));
-
+  const renderTile = (index: number, size: number) => {
+    const q = questions[index];
+    const s = getStatus(q.id);
+    const isCurrent = index === currentIndex;
+    const colors = tileColors(s);
     return (
-      <View style={contentWrapperStyle}>
-        <Card mode="outlined" style={styles.reviewRow} onPress={() => goToQuestion(index)}>
-          <Card.Content style={styles.reviewRowContent}>
-            <View style={styles.reviewRowIcons}>
+      <View key={q.id} style={{ width: size, height: size }}>
+        <TouchableRipple
+          onPress={() => goToQuestion(index)}
+          style={[
+            styles.tileTouchable,
+            {
+              backgroundColor: colors.background,
+              borderColor: isCurrent ? theme.colors.primary : colors.border,
+              borderWidth: isCurrent ? 3 : 1.5,
+            },
+          ]}
+          accessibilityRole="button"
+          accessibilityLabel={`${t("exam.questionOf", { current: index + 1, total: questions.length })}`}
+        >
+          <View style={styles.tileContent}>
+            <Text style={[styles.tileText, { color: colors.text, fontSize: MD3_SIZE.bodyMedium * scale }]}>
+              {index + 1}
+            </Text>
+            {s === "toBeReviewed" ? (
               <MaterialCommunityIcons
-                name={isAnswered ? "check-circle-outline" : "circle-outline"}
-                size={20 * scale}
-                color={isAnswered ? theme.colors.secondary : theme.colors.error}
+                name="flag"
+                size={11 * scale}
+                color={theme.colors.tertiary}
+                style={styles.tileFlag}
               />
-              {isMarked ? (
-                <MaterialCommunityIcons name="flag" size={16 * scale} color={theme.colors.tertiary} />
-              ) : null}
-            </View>
-            <View style={styles.reviewRowText}>
-              <Text variant="bodyMedium" numberOfLines={2} style={{ fontSize: MD3_SIZE.bodyMedium * scale }}>
-                {index + 1}. {localized.question}
-              </Text>
-              <Text
-                variant="bodySmall"
-                style={{ color: theme.colors.onSurfaceVariant, fontSize: MD3_SIZE.bodySmall * scale }}
-              >
-                {statusParts.join(" • ")}
-              </Text>
-            </View>
-            <MaterialCommunityIcons name="chevron-right" size={20 * scale} color={theme.colors.onSurfaceVariant} />
-          </Card.Content>
-        </Card>
+            ) : null}
+          </View>
+        </TouchableRipple>
       </View>
     );
   };
+
+  const tileSize = 44 * scale;
+
+  const listGroups: { key: string; titleKey: string; count: number; indices: number[] }[] = (() => {
+    const marked: number[] = [];
+    const notAnswered: number[] = [];
+    const answered: number[] = [];
+    questions.forEach((q, index) => {
+      if (index === currentIndex) return;
+      const s = getStatus(q.id);
+      if (s === "toBeReviewed") marked.push(index);
+      else if (s === "answered") answered.push(index);
+      else notAnswered.push(index);
+    });
+    return [
+      { key: "current", titleKey: "exam.currentQuestion", count: 1, indices: [currentIndex] },
+      { key: "marked", titleKey: "exam.toBeReviewed", count: marked.length, indices: marked },
+      { key: "notAnswered", titleKey: "exam.notAnswered", count: notAnswered.length, indices: notAnswered },
+      { key: "answered", titleKey: "exam.answered", count: answered.length, indices: answered },
+    ];
+  })();
 
   return (
     <View style={{ flex: 1, backgroundColor: theme.colors.background }}>
@@ -190,10 +233,7 @@ export default function ExamReviewScreen() {
               accessibilityLabel={t("exam.backToExam")}
               style={styles.backButtonIcon}
             />
-            <Text
-              variant="titleMedium"
-              style={[styles.headerTitle, { fontSize: MD3_SIZE.titleMedium * scale }]}
-            >
+            <Text variant="titleMedium" style={[styles.headerTitle, { fontSize: MD3_SIZE.titleMedium * scale }]}>
               {t("exam.reviewTitle")}
             </Text>
             <Menu
@@ -217,69 +257,110 @@ export default function ExamReviewScreen() {
         </View>
       </View>
 
-      <FlatList
-        data={questions}
-        keyExtractor={(item) => item.id}
-        contentContainerStyle={styles.listContent}
-        renderItem={renderItem}
-        ListHeaderComponent={
-          <View style={contentWrapperStyle}>
-            <View style={styles.summaryRow}>
-              <View
-                style={[
-                  styles.timerBadge,
-                  { backgroundColor: isLowTime ? theme.colors.errorContainer : theme.colors.secondaryContainer },
-                ]}
-              >
-                <MaterialCommunityIcons
-                  name="clock-outline"
-                  size={16 * scale}
-                  color={isLowTime ? theme.colors.error : theme.colors.secondary}
-                />
-                <Text
-                  variant="titleSmall"
-                  style={{
-                    color: isLowTime ? theme.colors.error : theme.colors.secondary,
-                    fontSize: MD3_SIZE.titleSmall * scale,
-                  }}
-                >
-                  {formatRemainingTime(remainingMs)}
-                </Text>
-              </View>
+      <ScrollView contentContainerStyle={styles.scrollContent}>
+        <View style={contentWrapperStyle}>
+          <View style={styles.summaryRow}>
+            <View
+              style={[
+                styles.timerBadge,
+                { backgroundColor: isLowTime ? theme.colors.errorContainer : theme.colors.secondaryContainer },
+              ]}
+            >
+              <MaterialCommunityIcons
+                name="clock-outline"
+                size={16 * scale}
+                color={isLowTime ? theme.colors.error : theme.colors.secondary}
+              />
               <Text
-                variant="bodyMedium"
-                style={{ color: theme.colors.onSurfaceVariant, fontSize: MD3_SIZE.bodyMedium * scale }}
+                variant="titleSmall"
+                style={{
+                  color: isLowTime ? theme.colors.error : theme.colors.secondary,
+                  fontSize: MD3_SIZE.titleSmall * scale,
+                }}
               >
-                {t("exam.reviewSummary", { answered: answeredCount, total: questions.length })}
+                {formatRemainingTime(remainingMs)}
               </Text>
             </View>
+            {isLowTime ? (
+              <Text
+                variant="bodySmall"
+                style={{ color: theme.colors.error, fontSize: MD3_SIZE.bodySmall * scale }}
+              >
+                {t("exam.timeAlmostUp")}
+              </Text>
+            ) : null}
           </View>
-        }
-        ListFooterComponent={
-          <View style={[styles.footer, contentWrapperStyle]}>
-            <Button
-              mode="outlined"
-              icon="arrow-left"
-              onPress={() => router.back()}
-              style={styles.footerButton}
-              contentStyle={{ paddingVertical: isTablet ? 6 : 2 }}
-              labelStyle={{ fontSize: MD3_SIZE.bodyMedium * scale }}
-            >
-              {t("exam.backToExam")}
-            </Button>
-            <Button
-              mode="contained"
-              icon="check-circle"
-              onPress={handleSubmit}
-              style={styles.footerButton}
-              contentStyle={{ paddingVertical: isTablet ? 6 : 2 }}
-              labelStyle={{ fontSize: MD3_SIZE.bodyMedium * scale }}
-            >
-              {t("exam.submitExam")}
-            </Button>
-          </View>
-        }
-      />
+
+          <SegmentedButtons
+            value={viewMode}
+            onValueChange={(value) => setViewMode(value as ViewMode)}
+            style={styles.viewToggle}
+            buttons={[
+              { value: "grid", label: t("exam.gridView"), icon: "view-grid-outline" },
+              { value: "list", label: t("exam.listView"), icon: "view-list-outline" },
+            ]}
+          />
+
+          {/* Matches the official test's own count summary shown under the
+              grid - three mutually exclusive buckets that always sum to
+              the total question count. */}
+          <Text
+            variant="bodySmall"
+            style={[styles.countsRow, { color: theme.colors.onSurfaceVariant, fontSize: MD3_SIZE.bodySmall * scale }]}
+          >
+            {t("exam.toBeReviewed")}: {toBeReviewedCount} · {t("exam.notAnswered")}: {notAnsweredCount} ·{" "}
+            {t("exam.answered")}: {answeredCount}
+          </Text>
+
+          {viewMode === "grid" ? (
+            <View style={styles.grid}>{questions.map((_, index) => renderTile(index, tileSize))}</View>
+          ) : (
+            <View>
+              {listGroups.map((group) => (
+                <View key={group.key} style={styles.listSection}>
+                  <Text
+                    variant="labelLarge"
+                    style={[styles.listSectionHeader, { fontSize: MD3_SIZE.bodyMedium * scale }]}
+                  >
+                    {t(group.titleKey)} ({group.count})
+                  </Text>
+                  {group.indices.length > 0 ? (
+                    <View style={styles.grid}>{group.indices.map((index) => renderTile(index, tileSize))}</View>
+                  ) : (
+                    <Text
+                      variant="bodySmall"
+                      style={{ color: theme.colors.onSurfaceVariant, fontSize: MD3_SIZE.labelSmall * scale }}
+                    >
+                      —
+                    </Text>
+                  )}
+                </View>
+              ))}
+            </View>
+          )}
+        </View>
+      </ScrollView>
+
+      <View style={[styles.footer, contentWrapperStyle]}>
+        <Button
+          mode="outlined"
+          icon="arrow-left"
+          onPress={() => router.back()}
+          style={styles.footerButton}
+          labelStyle={{ fontSize: MD3_SIZE.bodyMedium * scale }}
+        >
+          {t("exam.backToExam")}
+        </Button>
+        <Button
+          mode="contained"
+          icon="check-circle"
+          onPress={handleSubmit}
+          style={styles.footerButton}
+          labelStyle={{ fontSize: MD3_SIZE.bodyMedium * scale }}
+        >
+          {t("exam.confirmSubmission")}
+        </Button>
+      </View>
     </View>
   );
 }
@@ -289,8 +370,8 @@ const styles = StyleSheet.create({
   headerInner: { flexDirection: "row", alignItems: "center" },
   backButtonIcon: { marginRight: -4 },
   headerTitle: { flex: 1, textAlign: "center" },
-  listContent: { padding: 16, paddingBottom: 32 },
-  summaryRow: { flexDirection: "row", alignItems: "center", gap: 12, marginBottom: 16, flexWrap: "wrap" },
+  scrollContent: { padding: 16, paddingBottom: 16 },
+  summaryRow: { flexDirection: "row", alignItems: "center", gap: 12, marginBottom: 12, flexWrap: "wrap" },
   timerBadge: {
     flexDirection: "row",
     alignItems: "center",
@@ -299,10 +380,19 @@ const styles = StyleSheet.create({
     paddingHorizontal: 12,
     paddingVertical: 6,
   },
-  reviewRow: { marginBottom: 10 },
-  reviewRowContent: { flexDirection: "row", alignItems: "center", gap: 10 },
-  reviewRowIcons: { flexDirection: "row", alignItems: "center", gap: 2 },
-  reviewRowText: { flex: 1, flexShrink: 1, minWidth: 0 },
-  footer: { flexDirection: "row", gap: 12, marginTop: 8 },
+  viewToggle: { marginBottom: 12 },
+  countsRow: { marginBottom: 16 },
+  grid: { flexDirection: "row", flexWrap: "wrap", gap: 10 },
+  tileTouchable: {
+    flex: 1,
+    borderRadius: 10,
+    overflow: "hidden",
+  },
+  tileContent: { flex: 1, alignItems: "center", justifyContent: "center" },
+  tileText: { fontWeight: "600" },
+  tileFlag: { position: "absolute", top: 2, right: 2 },
+  listSection: { marginBottom: 20 },
+  listSectionHeader: { marginBottom: 10, fontWeight: "700" },
+  footer: { flexDirection: "row", gap: 12, padding: 16, paddingTop: 8 },
   footerButton: { flex: 1 },
 });

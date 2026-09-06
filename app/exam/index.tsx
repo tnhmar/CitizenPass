@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { AppState, Alert, ScrollView, StyleSheet, View } from "react-native";
+import { Alert, ScrollView, StyleSheet, View } from "react-native";
 import { useRouter } from "expo-router";
 import { Text, Button, Card, Divider, IconButton, Menu, useTheme } from "react-native-paper";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
@@ -9,10 +9,13 @@ import { useSettingsStore } from "../../src/store/useSettingsStore";
 import { useResponsive } from "../../src/hooks/useResponsive";
 import { useExamCountdown } from "../../src/hooks/useExamCountdown";
 import { useFinishExam } from "../../src/hooks/useFinishExam";
-import { useExamSessionLifecycle } from "../../src/hooks/useExamSessionLifecycle";
-import { useLowTimeWarning } from "../../src/hooks/useLowTimeWarning";
 import { OptionButton } from "../../src/components/OptionButton";
-import { useExamStore, formatRemainingTime, EXAM_QUESTION_COUNT } from "../../src/store/useExamStore";
+import {
+  useExamStore,
+  formatRemainingTime,
+  EXAM_QUESTION_COUNT,
+  LOW_TIME_THRESHOLD_MS,
+} from "../../src/store/useExamStore";
 
 const OPTION_LETTERS = ["A", "B", "C", "D"];
 
@@ -25,6 +28,14 @@ const MD3_SIZE = { headlineSmall: 24, titleMedium: 16, titleSmall: 14, bodyMediu
 // arabicHelpEnabled check at all — even if a user has the setting on
 // elsewhere, this screen never reads it. Arabic help lives in Practice
 // (app/(tabs)/practice.tsx) and in the post-exam review (app/exam/results.tsx).
+//
+// IRCC-parity refactor: this screen (and app/exam/review.tsx) was rebuilt
+// to match the real, official IRCC online citizenship test interface as
+// documented at canada.ca - see docs/theme-navigation-responsive-overhaul.md
+// section 7 for the full comparison and the decisions made. In short: the
+// timer never pauses, "Next" is never gated, "mark for review" only works
+// once a question has an answer, and there is no persistent progress
+// indicator on this screen - that all lives in the Grid/List navigator.
 
 export default function ExamIndexScreen() {
   const router = useRouter();
@@ -45,31 +56,17 @@ export default function ExamIndexScreen() {
   const startExam = useExamStore((state) => state.startExam);
   const restartExam = useExamStore((state) => state.restartExam);
   const selectAnswer = useExamStore((state) => state.selectAnswer);
-  const pauseExam = useExamStore((state) => state.pause);
-  const resumeExam = useExamStore((state) => state.resume);
 
   const [menuVisible, setMenuVisible] = useState(false);
   const remainingMs = useExamCountdown();
   const finishExam = useFinishExam();
-  useExamSessionLifecycle();
-  useLowTimeWarning(remainingMs);
 
   useEffect(() => {
-    const subscription = AppState.addEventListener("change", (nextState) => {
-      if (nextState === "background" || nextState === "inactive") {
-        pauseExam();
-      } else if (nextState === "active") {
-        resumeExam();
-      }
-    });
-    return () => subscription.remove();
-  }, [pauseExam, resumeExam]);
-
-  useEffect(() => {
-    // Time running out auto-submits immediately - unlike the user's own
-    // "Review & Submit"/"Review Answers" paths, there is no review step
-    // here on purpose: the 45-minute limit would otherwise be
-    // meaningless if reaching it just opened unlimited extra review time.
+    // Matches the official test exactly: time running out auto-submits
+    // immediately, whatever is selected so far - no review step, no
+    // second chance. The clock never pauses (see useExamStore.ts), so
+    // this fires the same way whether the app was in the foreground the
+    // whole time or not.
     if (status === "in-progress" && remainingMs <= 0) {
       finishExam();
     }
@@ -94,13 +91,14 @@ export default function ExamIndexScreen() {
 
   const handleExitExam = () => {
     setMenuVisible(false);
-    // Pausing (rather than resetting) is what makes this resumable: the
-    // in-progress session - answers, question index, and now-paused timer
-    // - stays intact in the store (and persisted to disk, see
-    // useExamStore.ts) until the user comes back to /exam, at which point
-    // the mount effect above calls resume().
-    pauseExam();
-    router.replace("/");
+    // No pausing here (unlike an earlier version of this screen): the
+    // real IRCC test never stops the clock once started, so leaving no
+    // longer freezes it either - the confirmation below exists specifically
+    // so that isn't a surprise.
+    Alert.alert(t("exam.exitConfirmTitle"), t("exam.exitConfirmBody"), [
+      { text: t("exam.cancelLabel"), style: "cancel" },
+      { text: t("exam.exitExam"), style: "destructive", onPress: () => router.replace("/") },
+    ]);
   };
 
   const contentWrapperStyle = contentMaxWidth
@@ -187,8 +185,7 @@ export default function ExamIndexScreen() {
     selectedCanonicalIndex !== undefined ? order.indexOf(selectedCanonicalIndex) : undefined;
   const hasAnswered = selectedCanonicalIndex !== undefined;
   const isMarkedForReview = markedForReview[current.id] === true;
-  const answeredCount = Object.keys(answers).length;
-  const isLowTime = remainingMs < 5 * 60 * 1000;
+  const isLowTime = remainingMs < LOW_TIME_THRESHOLD_MS;
 
   return (
     <ScrollView
@@ -228,7 +225,7 @@ export default function ExamIndexScreen() {
               }
             >
               <Menu.Item
-                leadingIcon="format-list-checks"
+                leadingIcon="view-grid-outline"
                 onPress={() => {
                   setMenuVisible(false);
                   router.push("/exam/review");
@@ -265,36 +262,19 @@ export default function ExamIndexScreen() {
           </View>
         </View>
 
-        <View style={styles.progressDots}>
-          {questions.map((q, index) => {
-            const isCurrent = index === currentIndex;
-            const isAnswered = answers[q.id] !== undefined;
-            const isMarked = markedForReview[q.id] === true;
-            const dotSize = 8 * scale;
-            return (
-              <View
-                key={q.id}
-                style={[
-                  styles.dot,
-                  { width: dotSize, height: dotSize, borderRadius: dotSize / 2 },
-                  isCurrent
-                    ? { backgroundColor: theme.colors.primary, borderColor: theme.colors.primary }
-                    : {
-                        // Fill reflects answered status; border adds marked-
-                        // for-review as independent information, so a dot
-                        // can show both at once (e.g. answered-but-marked).
-                        backgroundColor: isAnswered ? theme.colors.secondary : "transparent",
-                        borderColor: isMarked
-                          ? theme.colors.tertiary
-                          : isAnswered
-                            ? theme.colors.secondary
-                            : theme.colors.outline,
-                      },
-                ]}
-              />
-            );
-          })}
-        </View>
+        {/* Matches the official test's own "Time is almost up" wording and
+            placement (a persistent red label above the timer), replacing
+            an earlier one-time popup alert - less disruptive, and it's
+            still visible for as long as the condition holds, not just the
+            instant it first becomes true. */}
+        {isLowTime ? (
+          <Text
+            variant="bodySmall"
+            style={[styles.timeAlmostUp, { color: theme.colors.error, fontSize: MD3_SIZE.bodySmall * scale }]}
+          >
+            {t("exam.timeAlmostUp")}
+          </Text>
+        ) : null}
 
         <Card mode="elevated" style={styles.questionCard}>
           <Card.Content>
@@ -323,66 +303,42 @@ export default function ExamIndexScreen() {
           >
             {t("exam.previous")}
           </Button>
+          {/* Matches the official test's own rule: this only becomes
+              available once the current question has an answer - you can
+              flag "I answered this but I'm not sure," not "I'm skipping
+              this and flagging it." */}
           <IconButton
             icon={isMarkedForReview ? "flag" : "flag-outline"}
             mode={isMarkedForReview ? "contained-tonal" : "outlined"}
             size={20 * scale}
+            disabled={!hasAnswered}
             onPress={() => toggleMarkedForReview(current.id)}
             accessibilityLabel={t("exam.markForReview")}
-            accessibilityState={{ selected: isMarkedForReview }}
+            accessibilityState={{ selected: isMarkedForReview, disabled: !hasAnswered }}
           />
           {isLastQuestion ? (
-            // Skipping a question is allowed on purpose (see "Next"
-            // below) - the real exam this simulates lets you move on and
-            // come back. Unlike "Next", reaching the review list from the
-            // last question is never gated on answering it: that list is
-            // exactly the place stragglers - answered, marked, or neither
-            // - get resolved, so it must stay reachable regardless.
             <Button
               mode="contained"
-              icon="format-list-checks"
+              icon="view-grid-outline"
               labelStyle={{ fontSize: MD3_SIZE.bodyMedium * scale }}
               onPress={() => router.push("/exam/review")}
             >
-              {t("exam.reviewAndSubmit")}
+              {t("exam.reviewAnswers")}
             </Button>
           ) : (
+            // Matches the official test: Next is never gated. Skipping a
+            // question and coming back to it later (via Previous or the
+            // Grid/List navigator) is completely normal, expected behavior.
             <Button
               icon="chevron-right"
               contentStyle={{ flexDirection: "row-reverse" }}
               labelStyle={{ fontSize: MD3_SIZE.bodyMedium * scale }}
-              // Bug fix: this used to have no disabled condition at all,
-              // so tapping through 20 questions without ever picking an
-              // answer was silently possible. Requiring either an answer
-              // or an explicit "mark for review" flag means moving on is
-              // always a deliberate choice - answer it, or consciously
-              // flag it to revisit - never an unnoticed accidental skip.
-              disabled={!hasAnswered && !isMarkedForReview}
               onPress={() => setCurrentIndex(currentIndex + 1)}
             >
               {t("exam.next")}
             </Button>
           )}
         </View>
-
-        {!isLastQuestion && !hasAnswered && !isMarkedForReview ? (
-          <Text
-            variant="bodySmall"
-            style={[styles.nextHint, { color: theme.colors.onSurfaceVariant, fontSize: MD3_SIZE.bodySmall * scale }]}
-          >
-            {t("exam.answerOrMarkHint")}
-          </Text>
-        ) : null}
-
-        <Text
-          variant="bodySmall"
-          style={[
-            styles.answeredCount,
-            { color: theme.colors.onSurfaceVariant, fontSize: MD3_SIZE.bodySmall * scale },
-          ]}
-        >
-          📝 {answeredCount}/{questions.length} {t("exam.answeredLabel")}
-        </Text>
       </View>
     </ScrollView>
   );
@@ -396,7 +352,7 @@ const styles = StyleSheet.create({
   ruleRow: { flexDirection: "row", alignItems: "center", gap: 10 },
   ruleText: { flex: 1 },
   startButton: { marginBottom: 32 },
-  headerRow: { flexDirection: "row", justifyContent: "space-between", alignItems: "center", marginBottom: 12 },
+  headerRow: { flexDirection: "row", justifyContent: "space-between", alignItems: "center", marginBottom: 4 },
   exitButton: { marginLeft: -8 },
   headerTitle: { flex: 1, textAlign: "center" },
   headerRight: { flexDirection: "row", alignItems: "center", gap: 2 },
@@ -408,12 +364,9 @@ const styles = StyleSheet.create({
     paddingHorizontal: 12,
     paddingVertical: 6,
   },
-  progressDots: { flexDirection: "row", gap: 4, marginBottom: 16, flexWrap: "wrap" },
-  dot: { width: 8, height: 8, borderRadius: 4, borderWidth: 1 },
+  timeAlmostUp: { textAlign: "right", marginBottom: 12 },
   questionCard: { marginBottom: 16 },
   optionButton: { marginBottom: 10 },
-  navRow: { flexDirection: "row", justifyContent: "space-between", alignItems: "center", marginTop: 16 },
-  navRowCompact: { marginTop: 8 },
-  nextHint: { textAlign: "center", marginTop: 8 },
-  answeredCount: { textAlign: "center", marginTop: 16, marginBottom: 32 },
+  navRow: { flexDirection: "row", justifyContent: "space-between", alignItems: "center", marginTop: 16, marginBottom: 32 },
+  navRowCompact: { marginTop: 8, marginBottom: 16 },
 });
