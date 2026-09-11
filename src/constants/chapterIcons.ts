@@ -25,6 +25,7 @@ export const CHAPTER_VISUALS: Record<string, ChapterVisual> = {
   "justice-system": { icon: "scale-balance", emoji: "\u2696\ufe0f", color: "#7A2E2E" },
   "canadian-symbols": { icon: "flag-variant", emoji: "\ud83c\udf41", color: "#B10E1E" },
   "canadas-regions": { icon: "map-marker-radius", emoji: "\ud83d\uddfa\ufe0f", color: "#1E8E5A" },
+  "canadas-economy": { icon: "chart-line", emoji: "\ud83d\udcc8", color: "#9C6B12" },
 };
 
 export function getChapterVisual(chapterId: string): ChapterVisual {
