@@ -21,6 +21,8 @@ import canadianSymbolsEn from "./content/canadian-symbols.en.json";
 import canadianSymbolsFr from "./content/canadian-symbols.fr.json";
 import canadasRegionsEn from "./content/canadas-regions.en.json";
 import canadasRegionsFr from "./content/canadas-regions.fr.json";
+import canadasEconomyEn from "./content/canadas-economy.en.json";
+import canadasEconomyFr from "./content/canadas-economy.fr.json";
 
 const manifest = manifestJson as Manifest;
 
@@ -67,6 +69,10 @@ const CONTENT_BY_ID: Record<string, { en: ChapterContent; fr: ChapterContent }> 
   "canadas-regions": {
     en: canadasRegionsEn as ChapterContent,
     fr: canadasRegionsFr as ChapterContent,
+  },
+  "canadas-economy": {
+    en: canadasEconomyEn as ChapterContent,
+    fr: canadasEconomyFr as ChapterContent,
   },
 };
 
