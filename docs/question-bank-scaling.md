@@ -100,3 +100,49 @@ shortcut described here.
   and use the shared citation (already validated as non-machine-translated).
 - No release without citation: `SourceCitation.reviewStatus` remains `"verified"` for every
   variant, since it's inherited from an already-verified base fact.
+
+## Update, 2026-09: the second content pass happened
+
+The "Rollout complete" section above is a snapshot as of the date it was written (411 questions,
+107 objectives, 9 chapters) — the numbers in its table are now stale and are not being rewritten
+retroactively here, to avoid introducing transcription errors into historical figures; the current
+authoritative counts live in `docs/source-register.md`'s release-log table instead, which is kept
+up to date.
+
+This document's own closing line said reaching a genuinely higher total than 411 "would mean a
+second content pass to find learning objectives the original review missed... and should follow
+the full workflow in `docs/content-governance.md`, not the variant shortcut described here." That
+pass happened, driven by `docs/deep-analysis-report.md`'s §2 and §7 recommendations, in four parts:
+
+- **Completed under-varianted facts** (§2.2.A of the analysis report): 20 base facts across five
+  chapters had only 2 of the standard 3 variant angles. Rather than mechanically force a third
+  onto all 20, each was checked individually against its already-verified excerpt for whether a
+  genuinely distinct, non-redundant angle actually existed without inventing new facts. Only 6 of
+  the 20 did; the other 14 were left as-is rather than padded with weak or unsourced content -
+  consistent with "do not pad" in `docs/content-governance.md`.
+- **Formalized and applied a "scope/applicability" angle** (§2.2.B): the same fact-by-fact
+  rigor applied to 20 candidates across the chapters most likely to support a genuine scope
+  question (rights, justice, governance, elections) - 4 were well-grounded enough to add.
+- **Matching/combination questions** (§2.2.C): on reflection, this needed no new schema, UI, or
+  scoring - see `docs/content-governance.md`'s "Matching/combination questions" section, which
+  was corrected to reflect that. One question was added, built entirely from three facts already
+  independently verified elsewhere in the bank (no new source-finding required for it either).
+- **A genuinely new chapter** (§2.2.D and §2.3): `canadas-economy` had no study content or
+  questions at all. It required real new research against the official guide - see
+  `docs/source-register.md`'s entry for it, including the two stale facts (an outdated "NAFTA"
+  reference and a "G8...with...Russia" reference) found and deliberately excluded from the
+  verified pool, following the same time-sensitive-facts policy already established for other
+  chapters.
+
+Two process gaps were also found and fixed as a result of this pass, both now covered by
+permanent automated tests rather than relying on manual diligence next time:
+
+- `manifest.json`'s `questionCount` is displayed to users directly (`app/study/index.tsx`) and
+  had no automated check that it matched each chapter's actual question count - see
+  `tests/services/questionBankGovernance.test.ts`, "manifest.json's questionCount matches...".
+- `variantOf` validity was checked, but two different questions silently sharing the same
+  `learningObjectiveId` was not - see the same test file, "has a unique learningObjectiveId per
+  question." This caught a real mistake (twice) during this exact pass: assuming a variant's
+  `-vN` suffix was free based on variant *count* alone, rather than checking which suffixes were
+  actually already in use.
+
