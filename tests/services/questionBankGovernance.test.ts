@@ -1,4 +1,5 @@
-import { getAllVerifiedQuestions } from "../../src/data/questionLoader";
+import { getAllVerifiedQuestions, getVerifiedQuestionsByChapter } from "../../src/data/questionLoader";
+import { getChapterList } from "../../src/data/contentLoader";
 
 function normalizeQuestionText(value: string): string {
   return value
@@ -68,6 +69,28 @@ describe("question bank governance", () => {
     }
   });
 
+  // Regression coverage: the "links every variant..." test above only
+  // checks that variantOf resolves to *some* real learningObjectiveId in
+  // the chapter - it uses a Set, so two different questions silently
+  // sharing the same learningObjectiveId would not fail it (the Set just
+  // collapses them into one entry). This test catches that directly:
+  // every question must have its own unique learningObjectiveId, whether
+  // it's a base fact or a variant with its own "-vN" suffix.
+  it("has a unique learningObjectiveId per question - no two questions share one", () => {
+    const seenAt = new Map<string, string>();
+    const duplicates: string[] = [];
+    for (const question of questions) {
+      const key = `${question.chapterId}::${question.learningObjectiveId}`;
+      const existing = seenAt.get(key);
+      if (existing) {
+        duplicates.push(`${question.learningObjectiveId}: ${existing} and ${question.id}`);
+      } else {
+        seenAt.set(key, question.id);
+      }
+    }
+    expect(duplicates).toEqual([]);
+  });
+
   it("does not contain exact duplicate question text in either language", () => {
     const findDuplicateEntries = (language: "en" | "fr") => {
       const firstIndexByText = new Map<string, number>();
@@ -88,5 +111,21 @@ describe("question bank governance", () => {
 
     expect(findDuplicateEntries("en")).toEqual([]);
     expect(findDuplicateEntries("fr")).toEqual([]);
+  });
+
+  // Regression coverage: manifest.json's questionCount is displayed to
+  // users directly (see app/study/index.tsx), so it silently going stale
+  // whenever questions are added to a chapter's data file - without
+  // anyone remembering to also update the manifest - would show a wrong
+  // number in the app with nothing catching it. This test is that catch.
+  it("manifest.json's questionCount matches each chapter's actual verified question count", () => {
+    const mismatches: string[] = [];
+    for (const chapter of getChapterList()) {
+      const actual = getVerifiedQuestionsByChapter(chapter.id).length;
+      if (actual !== chapter.questionCount) {
+        mismatches.push(`${chapter.id}: manifest says ${chapter.questionCount}, actual is ${actual}`);
+      }
+    }
+    expect(mismatches).toEqual([]);
   });
 });
