@@ -1,9 +1,9 @@
 import { getChapterList, getChapterContent, getChapterTitle, getChapterManifestEntry } from "../../src/data/contentLoader";
 
 describe("contentLoader", () => {
-  it("returns all 9 chapters from the manifest", () => {
+  it("returns all 10 chapters from the manifest", () => {
     const chapters = getChapterList();
-    expect(chapters.length).toBe(9);
+    expect(chapters.length).toBe(10);
   });
 
   it("returns bilingual content for a known chapter", () => {

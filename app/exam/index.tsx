@@ -212,6 +212,20 @@ export default function ExamIndexScreen() {
             {t("exam.questionOf", { current: currentIndex + 1, total: questions.length })}
           </Text>
           <View style={styles.headerRight}>
+            {/* Promoted out of the "⋮" menu to its own always-visible icon
+                (deep-analysis report §4): reviewing progress during a
+                45-minute, 20-question exam is a frequent action, unlike
+                Restart/New Exam/Exit, which stay menu-only since they're
+                rare and already confirmation-gated. This makes the round
+                trip to the navigator and back symmetric - one tap each
+                way, matching how the "✕" exit is already a dedicated icon
+                rather than menu-only. */}
+            <IconButton
+              icon="view-grid-outline"
+              size={22 * scale}
+              onPress={() => router.push("/exam/review")}
+              accessibilityLabel={t("exam.reviewAnswers")}
+            />
             <Menu
               visible={menuVisible}
               onDismiss={() => setMenuVisible(false)}
@@ -224,15 +238,6 @@ export default function ExamIndexScreen() {
                 />
               }
             >
-              <Menu.Item
-                leadingIcon="view-grid-outline"
-                onPress={() => {
-                  setMenuVisible(false);
-                  router.push("/exam/review");
-                }}
-                title={t("exam.reviewAnswers")}
-              />
-              <Divider />
               <Menu.Item leadingIcon="restart" onPress={handleRestartExam} title={t("exam.restartExam")} />
               <Menu.Item leadingIcon="shuffle-variant" onPress={handleNewExam} title={t("exam.newExam")} />
               <Divider />

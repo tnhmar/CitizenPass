@@ -9,6 +9,7 @@ import federalElectionsQuestions from "./questions/federal-elections.json";
 import justiceSystemQuestions from "./questions/justice-system.json";
 import canadianSymbolsQuestions from "./questions/canadian-symbols.json";
 import canadasRegionsQuestions from "./questions/canadas-regions.json";
+import canadasEconomyQuestions from "./questions/canadas-economy.json";
 
 /**
  * Static imports of every chapter's question bank so Metro bundles all
@@ -25,7 +26,8 @@ const ALL_QUESTIONS: Question[] = ([] as Question[]).concat(
   federalElectionsQuestions as Question[],
   justiceSystemQuestions as Question[],
   canadianSymbolsQuestions as Question[],
-  canadasRegionsQuestions as Question[]
+  canadasRegionsQuestions as Question[],
+  canadasEconomyQuestions as Question[]
 );
 
 const VERIFIED_QUESTIONS: Question[] = ALL_QUESTIONS.filter(
