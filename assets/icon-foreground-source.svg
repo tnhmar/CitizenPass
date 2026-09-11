@@ -1,0 +1,12 @@
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+  <!-- Android adaptive-icon foreground layer: same leaf as icon-source.svg,
+       transparent background (Android composites app.json's
+       android.adaptiveIcon.backgroundColor separately), scaled to 78%
+       and held at the same center point to stay within Android's
+       adaptive-icon safe zone (content should sit within roughly the
+       center 66% circle so it isn't clipped by circular, squircle, or
+       rounded-square launcher masks). -->
+  <g transform="translate(512 512) scale(0.78) translate(-512 -512)">
+    <path d="M 512.0 160.0 L 637.6 279.0 L 733.2 262.0 L 749.2 391.0 L 853.7 408.3 L 795.7 519.3 L 838.0 567.2 L 760.0 616.1 L 770.7 654.5 L 671.5 654.4 L 559.3 663.0 L 512.0 865.2 L 464.7 663.0 L 352.5 654.4 L 253.3 654.5 L 264.0 616.1 L 186.0 567.2 L 228.3 519.3 L 170.3 408.3 L 274.8 391.0 L 290.8 262.0 L 386.4 279.0 Z" fill="#FF0000" />
+  </g>
+</svg>
