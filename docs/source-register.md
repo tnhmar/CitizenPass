@@ -17,7 +17,7 @@ This register tracks the official source documents used as the factual authority
 - Publisher: Gouvernement du Canada / Immigration, Réfugiés et Citoyenneté Canada (IRCC)
 - Guide landing page: https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada.html
 - Online contents: https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne.html
-- Official PDF: https://www.canada.ca/content/dam/ircc/migration/ircc/francais/pdf/pub/decouvrir.pdf
+- Official PDF: ~~https://www.canada.ca/content/dam/ircc/migration/ircc/francais/pdf/pub/decouvrir.pdf~~ — **checked 2026-09 and found broken (404).** Use the online contents link above (the live HTML) instead; this is consistent with using HTML as the authoritative source anyway (see Usage notes).
 - Language: fr
 - Access verified: 2026-08-17
 
@@ -30,19 +30,22 @@ This register tracks the official source documents used as the factual authority
 
 ## Content release log
 
-| Chapter ID | Guide chapter | Questions | Review status | Verified |
+**"Questions" below counts distinct verified base facts (`learningObjectiveId`s with no `variantOf`), not the total question pool.** Each base fact normally yields 3-4 total questions once its angle variants (`-v2`, `-v3`, etc. — see `docs/content-governance.md`, "Variant question rules") are included, since variants inherit their base fact's citation rather than getting a new register entry. As of 2026-09 the actual total pool is 437 questions across 115 base facts (see `docs/deep-analysis-report.md` §1.1 for a snapshot of the per-chapter base/variant/total breakdown as of that report's date — the total here supersedes it, and predates the `canadas-economy` chapter entirely) — this table intentionally still tracks base facts only, since that is the unit citation review actually happens at. One of the 115 (`gov-levels-of-government-matching`) is a matching/combination question rather than a single-fact base objective — see `docs/content-governance.md`, "Matching/combination questions" — it has no variants of its own.
+
+| Chapter ID | Guide chapter | Base facts | Review status | Verified |
 |---|---|---|---|---|
 | `rights-responsibilities` | Rights and Responsibilities of Citizenship / Les droits et responsabilités liés à la citoyenneté | 8 | verified | 2026-08-17 |
 | `who-we-are` | Who We Are / Qui sommes-nous, les Canadiens? | 8 | verified | 2026-08-17 |
 | `canadas-history` | Canada's History / L'histoire du Canada | 14 | verified | 2026-08-17 |
 | `modern-canada` | Modern Canada / Le Canada moderne | 15 | verified | 2026-08-17 |
-| `how-canadians-govern-themselves` | How Canadians Govern Themselves / Les Canadiens et leur système de gouvernement | 12 | verified | 2026-08-17 |
+| `how-canadians-govern-themselves` | How Canadians Govern Themselves / Les Canadiens et leur système de gouvernement | 13 | verified | 2026-08-17 |
 | `federal-elections` | Federal Elections / Les élections fédérales | 10 | verified | 2026-08-17 |
 | `justice-system` | The Justice System / Le système de justice | 6 | verified | 2026-08-17 |
 | `canadian-symbols` | Canadian Symbols / Les symboles canadiens | 16 | verified | 2026-08-17 |
 | `canadas-regions` | Canada's Regions / Les régions du Canada | 18 | verified | 2026-08-17 |
+| `canadas-economy` | Canada's Economy / L'économie canadienne | 7 | verified | 2026-09-10 |
 
-Question counts are intentionally not fixed per chapter — see `docs/content-governance.md`, "Question count policy" (critical section). `canadas-regions` is the richest chapter to date, earning the largest verified question set so far.
+Question counts are intentionally not fixed per chapter — see `docs/content-governance.md`, "Question count policy" (critical section). `canadas-regions` is the richest chapter to date, earning the largest verified question set so far. `canadas-economy` has no release yet — see `docs/deep-analysis-report.md` §2.3.
 
 ## Time-sensitive facts excluded from `canadas-regions`
 
@@ -50,11 +53,11 @@ Per `docs/content-governance.md`, "Time-sensitive facts," the live guide page st
 
 ## Time-sensitive facts excluded from `canadian-symbols`
 
-The live guide page contains an internally inconsistent, outdated reference to the reigning monarch. No question about the identity of the current monarch was created.
+The live guide page contains an internally inconsistent, outdated reference to the reigning monarch: the body text correctly uses the generic "Sovereign (Queen or King)," but a fill-in-the-blank study section on the same page still says "the Queen of Canada," and the printed Oath of Citizenship names "Queen Elizabeth the Second" specifically — stale since 2022. No question about the identity of the current monarch was created; see `docs/content-governance.md`, "Time-sensitive facts," for the full policy this follows.
 
 ## Time-sensitive facts excluded from `federal-elections`
 
-- **"Canada is divided into 308 electoral districts."** Canada has had 338 since 2015; the guide page is outdated.
+- **"Canada is divided into 308 electoral districts."** The guide page itself was still live with this figure as of 2025-08-08. The real count was 338 from 2015 to the 2025 general election, and has been 343 since — the guide has not caught up with either change. No verified question states a specific riding count.
 - **"Three major political parties currently represented in the House of Commons."** Party standings change with every election.
 
 Notes:

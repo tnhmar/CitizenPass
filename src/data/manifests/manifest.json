@@ -2,74 +2,142 @@
   "chapters": [
     {
       "id": "rights-responsibilities",
-      "en": {"title": "Rights and Responsibilities of Citizenship", "contentPath": "src/data/content/rights-responsibilities.en.json"},
-      "fr": {"title": "Les droits et responsabilités liés à la citoyenneté", "contentPath": "src/data/content/rights-responsibilities.fr.json"},
+      "en": {
+        "title": "Rights and Responsibilities of Citizenship",
+        "contentPath": "src/data/content/rights-responsibilities.en.json"
+      },
+      "fr": {
+        "title": "Les droits et responsabilités liés à la citoyenneté",
+        "contentPath": "src/data/content/rights-responsibilities.fr.json"
+      },
       "questionsPath": "src/data/questions/rights-responsibilities.json",
-      "questionCount": 34,
+      "questionCount": 35,
       "reviewStatus": "verified"
     },
     {
       "id": "who-we-are",
-      "en": {"title": "Who We Are", "contentPath": "src/data/content/who-we-are.en.json"},
-      "fr": {"title": "Qui sommes-nous, les Canadiens?", "contentPath": "src/data/content/who-we-are.fr.json"},
+      "en": {
+        "title": "Who We Are",
+        "contentPath": "src/data/content/who-we-are.en.json"
+      },
+      "fr": {
+        "title": "Qui sommes-nous, les Canadiens?",
+        "contentPath": "src/data/content/who-we-are.fr.json"
+      },
       "questionsPath": "src/data/questions/who-we-are.json",
       "questionCount": 32,
       "reviewStatus": "verified"
     },
     {
       "id": "canadas-history",
-      "en": {"title": "Canada's History", "contentPath": "src/data/content/canadas-history.en.json"},
-      "fr": {"title": "L'histoire du Canada", "contentPath": "src/data/content/canadas-history.fr.json"},
+      "en": {
+        "title": "Canada's History",
+        "contentPath": "src/data/content/canadas-history.en.json"
+      },
+      "fr": {
+        "title": "L'histoire du Canada",
+        "contentPath": "src/data/content/canadas-history.fr.json"
+      },
       "questionsPath": "src/data/questions/canadas-history.json",
-      "questionCount": 55,
+      "questionCount": 56,
       "reviewStatus": "verified"
     },
     {
       "id": "modern-canada",
-      "en": {"title": "Modern Canada", "contentPath": "src/data/content/modern-canada.en.json"},
-      "fr": {"title": "Le Canada moderne", "contentPath": "src/data/content/modern-canada.fr.json"},
+      "en": {
+        "title": "Modern Canada",
+        "contentPath": "src/data/content/modern-canada.en.json"
+      },
+      "fr": {
+        "title": "Le Canada moderne",
+        "contentPath": "src/data/content/modern-canada.fr.json"
+      },
       "questionsPath": "src/data/questions/modern-canada.json",
       "questionCount": 59,
       "reviewStatus": "verified"
     },
     {
       "id": "how-canadians-govern-themselves",
-      "en": {"title": "How Canadians Govern Themselves", "contentPath": "src/data/content/how-canadians-govern-themselves.en.json"},
-      "fr": {"title": "Les Canadiens et leur système de gouvernement", "contentPath": "src/data/content/how-canadians-govern-themselves.fr.json"},
+      "en": {
+        "title": "How Canadians Govern Themselves",
+        "contentPath": "src/data/content/how-canadians-govern-themselves.en.json"
+      },
+      "fr": {
+        "title": "Les Canadiens et leur système de gouvernement",
+        "contentPath": "src/data/content/how-canadians-govern-themselves.fr.json"
+      },
       "questionsPath": "src/data/questions/how-canadians-govern-themselves.json",
-      "questionCount": 47,
+      "questionCount": 50,
       "reviewStatus": "verified"
     },
     {
       "id": "federal-elections",
-      "en": {"title": "Federal Elections", "contentPath": "src/data/content/federal-elections.en.json"},
-      "fr": {"title": "Les élections fédérales", "contentPath": "src/data/content/federal-elections.fr.json"},
+      "en": {
+        "title": "Federal Elections",
+        "contentPath": "src/data/content/federal-elections.en.json"
+      },
+      "fr": {
+        "title": "Les élections fédérales",
+        "contentPath": "src/data/content/federal-elections.fr.json"
+      },
       "questionsPath": "src/data/questions/federal-elections.json",
-      "questionCount": 40,
+      "questionCount": 41,
       "reviewStatus": "verified"
     },
     {
       "id": "justice-system",
-      "en": {"title": "The Justice System", "contentPath": "src/data/content/justice-system.en.json"},
-      "fr": {"title": "Le système de justice", "contentPath": "src/data/content/justice-system.fr.json"},
+      "en": {
+        "title": "The Justice System",
+        "contentPath": "src/data/content/justice-system.en.json"
+      },
+      "fr": {
+        "title": "Le système de justice",
+        "contentPath": "src/data/content/justice-system.fr.json"
+      },
       "questionsPath": "src/data/questions/justice-system.json",
-      "questionCount": 25,
+      "questionCount": 26,
       "reviewStatus": "verified"
     },
     {
       "id": "canadian-symbols",
-      "en": {"title": "Canadian Symbols", "contentPath": "src/data/content/canadian-symbols.en.json"},
-      "fr": {"title": "Les symboles canadiens", "contentPath": "src/data/content/canadian-symbols.fr.json"},
+      "en": {
+        "title": "Canadian Symbols",
+        "contentPath": "src/data/content/canadian-symbols.en.json"
+      },
+      "fr": {
+        "title": "Les symboles canadiens",
+        "contentPath": "src/data/content/canadian-symbols.fr.json"
+      },
       "questionsPath": "src/data/questions/canadian-symbols.json",
-      "questionCount": 57,
+      "questionCount": 59,
       "reviewStatus": "verified"
     },
     {
       "id": "canadas-regions",
-      "en": {"title": "Canada's Regions", "contentPath": "src/data/content/canadas-regions.en.json"},
-      "fr": {"title": "Les régions du Canada", "contentPath": "src/data/content/canadas-regions.fr.json"},
+      "en": {
+        "title": "Canada's Regions",
+        "contentPath": "src/data/content/canadas-regions.en.json"
+      },
+      "fr": {
+        "title": "Les régions du Canada",
+        "contentPath": "src/data/content/canadas-regions.fr.json"
+      },
       "questionsPath": "src/data/questions/canadas-regions.json",
-      "questionCount": 62,
+      "questionCount": 64,
+      "reviewStatus": "verified"
+    },
+    {
+      "id": "canadas-economy",
+      "en": {
+        "title": "Canada's Economy",
+        "contentPath": "src/data/content/canadas-economy.en.json"
+      },
+      "fr": {
+        "title": "L'économie canadienne",
+        "contentPath": "src/data/content/canadas-economy.fr.json"
+      },
+      "questionsPath": "src/data/questions/canadas-economy.json",
+      "questionCount": 15,
       "reviewStatus": "verified"
     }
   ]

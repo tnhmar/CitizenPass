@@ -7,9 +7,9 @@ import {
 } from "../../src/data/questionLoader";
 
 describe("questionLoader", () => {
-  it("loads 411 verified questions across all 9 chapters", () => {
+  it("loads 437 verified questions across all 10 chapters", () => {
     const all = getAllVerifiedQuestions();
-    expect(all.length).toBe(411);
+    expect(all.length).toBe(437);
     for (const question of all) {
       expect(question.en.source.reviewStatus).toBe("verified");
       expect(question.fr.source.reviewStatus).toBe("verified");
@@ -21,7 +21,7 @@ describe("questionLoader", () => {
 
   it("filters questions by chapter", () => {
     const chapterQuestions = getVerifiedQuestionsByChapter("justice-system");
-    expect(chapterQuestions.length).toBe(25);
+    expect(chapterQuestions.length).toBe(26);
     for (const question of chapterQuestions) {
       expect(question.chapterId).toBe("justice-system");
     }
@@ -29,7 +29,7 @@ describe("questionLoader", () => {
 
   it("expanded rights-responsibilities chapter with variant questions", () => {
     const chapterQuestions = getVerifiedQuestionsByChapter("rights-responsibilities");
-    expect(chapterQuestions.length).toBe(34);
+    expect(chapterQuestions.length).toBe(35);
   });
 
   it("expanded who-we-are chapter with variant questions", () => {
@@ -39,12 +39,12 @@ describe("questionLoader", () => {
 
   it("expanded federal-elections chapter with variant questions", () => {
     const chapterQuestions = getVerifiedQuestionsByChapter("federal-elections");
-    expect(chapterQuestions.length).toBe(40);
+    expect(chapterQuestions.length).toBe(41);
   });
 
   it("expanded canadas-history chapter with variant questions", () => {
     const chapterQuestions = getVerifiedQuestionsByChapter("canadas-history");
-    expect(chapterQuestions.length).toBe(55);
+    expect(chapterQuestions.length).toBe(56);
   });
 
   it("expanded modern-canada chapter with variant questions", () => {
@@ -54,17 +54,25 @@ describe("questionLoader", () => {
 
   it("expanded how-canadians-govern-themselves chapter with variant questions", () => {
     const chapterQuestions = getVerifiedQuestionsByChapter("how-canadians-govern-themselves");
-    expect(chapterQuestions.length).toBe(47);
+    expect(chapterQuestions.length).toBe(50);
   });
 
   it("expanded canadian-symbols chapter with variant questions", () => {
     const chapterQuestions = getVerifiedQuestionsByChapter("canadian-symbols");
-    expect(chapterQuestions.length).toBe(57);
+    expect(chapterQuestions.length).toBe(59);
   });
 
   it("expanded canadas-regions chapter with variant questions", () => {
     const chapterQuestions = getVerifiedQuestionsByChapter("canadas-regions");
-    expect(chapterQuestions.length).toBe(62);
+    expect(chapterQuestions.length).toBe(64);
+  });
+
+  it("loads the canadas-economy chapter", () => {
+    const chapterQuestions = getVerifiedQuestionsByChapter("canadas-economy");
+    expect(chapterQuestions.length).toBe(15);
+    for (const question of chapterQuestions) {
+      expect(question.chapterId).toBe("canadas-economy");
+    }
   });
 
   it("every variantOf reference points to a learning objective that exists in the same chapter", () => {
