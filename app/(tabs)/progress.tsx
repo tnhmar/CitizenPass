@@ -10,6 +10,7 @@ import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { getChapterList, getChapterTitle } from "../../src/data/contentLoader";
 import { getChapterVisual } from "../../src/constants/chapterIcons";
 import { StatPill } from "../../src/components/StatPill";
+import { computeChapterAccuracy, computeCurrentStreak, getFocusAreas, getRecentActivity, humanizeTag } from "../../src/utils/progressStats";
 import type { ManifestChapterEntry } from "../../src/types/content";
 
 export default function ProgressScreen() {
@@ -23,6 +24,7 @@ export default function ProgressScreen() {
   const chapterProgress = useProgressStore((state) => state.chapterProgress);
   const bookmarkedQuestionIds = useProgressStore((state) => state.bookmarkedQuestionIds);
   const examHistory = useProgressStore((state) => state.examHistory);
+  const attemptLog = useProgressStore((state) => state.attemptLog);
 
   const chapters = getChapterList();
   const chaptersStartedCount = Object.keys(chapterProgress).length;
@@ -30,6 +32,12 @@ export default function ProgressScreen() {
   const accuracyPercent = hasAttempts
     ? Math.round((practiceStats.totalCorrect / practiceStats.totalAttempts) * 100)
     : 0;
+
+  const hasLoggedAttempts = attemptLog.length > 0;
+  const chapterAccuracy = computeChapterAccuracy(attemptLog);
+  const focusAreas = getFocusAreas(attemptLog);
+  const currentStreak = computeCurrentStreak(attemptLog);
+  const recentActivity = getRecentActivity(attemptLog);
 
   const sortedExamHistory = [...examHistory].sort((a, b) => (a.dateIso < b.dateIso ? 1 : -1));
 
@@ -71,6 +79,32 @@ export default function ProgressScreen() {
             📊 {t("progress.title")}
           </Text>
 
+          <Card mode="outlined" style={styles.streakCard}>
+            <Card.Content style={styles.streakCardContent}>
+              <MaterialCommunityIcons
+                name="fire"
+                size={28}
+                color={currentStreak > 0 ? theme.colors.tertiary : theme.colors.onSurfaceVariant}
+              />
+              <View style={styles.streakTextBlock}>
+                <Text variant="titleMedium">
+                  {currentStreak > 0 ? t("progress.streakDays", { count: currentStreak }) : t("progress.streakZero")}
+                </Text>
+                <View style={styles.streakDaysRow}>
+                  {recentActivity.map((active, index) => (
+                    <View
+                      key={index}
+                      style={[
+                        styles.streakDot,
+                        { backgroundColor: active ? theme.colors.tertiary : theme.colors.surfaceVariant },
+                      ]}
+                    />
+                  ))}
+                </View>
+              </View>
+            </Card.Content>
+          </Card>
+
           <View style={styles.statsRow}>
             <StatPill
               icon="target"
@@ -100,6 +134,66 @@ export default function ProgressScreen() {
               onPress={() => router.push("/bookmarks")}
             />
           </View>
+
+          <Text variant="titleMedium" style={styles.sectionTitle}>
+            🎯 {t("progress.accuracyByChapterTitle")}
+          </Text>
+          {!hasLoggedAttempts ? (
+            <Text variant="bodyMedium" style={{ color: theme.colors.onSurfaceVariant, marginBottom: 16 }}>
+              {t("progress.accuracyEmpty")}
+            </Text>
+          ) : (
+            chapters.map((chapter) => {
+              const visual = getChapterVisual(chapter.id);
+              const stat = chapterAccuracy[chapter.id];
+              return (
+                <Card mode="outlined" style={styles.chapterCard} key={chapter.id}>
+                  <Card.Content style={styles.chapterCardContent}>
+                    <View style={[styles.chapterIconCircle, { backgroundColor: `${visual.color}1A` }]}>
+                      <MaterialCommunityIcons name={visual.icon as any} size={20} color={visual.color} />
+                    </View>
+                    <View style={styles.chapterTextBlock}>
+                      <Text variant="bodyMedium">
+                        {visual.emoji} {getChapterTitle(chapter, language)}
+                      </Text>
+                      {stat ? (
+                        <ProgressBar progress={stat.accuracyPercent / 100} color={visual.color} style={styles.progressBar} />
+                      ) : (
+                        <Text variant="labelSmall" style={{ color: theme.colors.onSurfaceVariant }}>
+                          {t("progress.notAttemptedYet")}
+                        </Text>
+                      )}
+                    </View>
+                    <Text variant="labelSmall" style={{ color: theme.colors.onSurfaceVariant }}>
+                      {stat ? `${stat.accuracyPercent}%` : "—"}
+                    </Text>
+                  </Card.Content>
+                </Card>
+              );
+            })
+          )}
+
+          <Text variant="titleMedium" style={styles.sectionTitle}>
+            🔍 {t("progress.focusAreasTitle")}
+          </Text>
+          {focusAreas.length === 0 ? (
+            <Text variant="bodyMedium" style={{ color: theme.colors.onSurfaceVariant, marginBottom: 16 }}>
+              {t("progress.focusAreasEmpty")}
+            </Text>
+          ) : (
+            focusAreas.map((area) => (
+              <Card key={area.tag} mode="outlined" style={styles.focusAreaCard}>
+                <Card.Content style={styles.focusAreaCardContent}>
+                  <Text variant="bodyMedium" style={styles.focusAreaLabel} numberOfLines={1}>
+                    {humanizeTag(area.tag)}
+                  </Text>
+                  <Text variant="labelSmall" style={{ color: theme.colors.error }}>
+                    {area.accuracyPercent}% · {area.correct}/{area.attempts}
+                  </Text>
+                </Card.Content>
+              </Card>
+            ))
+          )}
 
           <Text variant="titleMedium" style={styles.sectionTitle}>
             📘 {t("progress.chapterProgressTitle")}
@@ -162,4 +256,12 @@ const styles = StyleSheet.create({
   examCard: { marginBottom: 10 },
   examCardContent: { flexDirection: "row", alignItems: "center", gap: 12 },
   examTextBlock: { flex: 1 },
+  focusAreaCard: { marginBottom: 8 },
+  focusAreaCardContent: { flexDirection: "row", alignItems: "center", justifyContent: "space-between", gap: 12 },
+  focusAreaLabel: { flex: 1 },
+  streakCard: { marginBottom: 16 },
+  streakCardContent: { flexDirection: "row", alignItems: "center", gap: 12 },
+  streakTextBlock: { flex: 1, gap: 6 },
+  streakDaysRow: { flexDirection: "row", gap: 6 },
+  streakDot: { width: 10, height: 10, borderRadius: 5 },
 });
