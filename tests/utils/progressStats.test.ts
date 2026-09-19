@@ -6,6 +6,7 @@ import {
   getActivityDateKeys,
   computeCurrentStreak,
   getRecentActivity,
+  computeExamReadiness,
 } from "../../src/utils/progressStats";
 import type { AttemptLogEntry } from "../../src/services/persistence/progressRepository";
 
@@ -191,5 +192,65 @@ describe("getRecentActivity", () => {
     expect(activity[4]).toBe(true); // 2 days ago
     expect(activity[5]).toBe(false); // 1 day ago - no activity
     expect(activity[0]).toBe(false); // 6 days ago - no activity
+  });
+});
+
+function makeAttempts(chapterId: string, correctCount: number, incorrectCount: number): AttemptLogEntry[] {
+  return [
+    ...Array.from({ length: correctCount }, () => entry({ chapterId, correct: true })),
+    ...Array.from({ length: incorrectCount }, () => entry({ chapterId, correct: false })),
+  ];
+}
+
+describe("computeExamReadiness", () => {
+  const chapters = ["a", "b", "c", "d"];
+
+  it("reports insufficient-data below the minimum attempt count", () => {
+    const log = makeAttempts("a", 5, 0);
+    const result = computeExamReadiness(log, chapters, 75);
+    expect(result.level).toBe("insufficient-data");
+    expect(result.attemptsUntilSignal).toBe(15);
+  });
+
+  it("is needs-practice when accuracy is low even with plenty of attempts across every chapter", () => {
+    const log = chapters.flatMap((c) => makeAttempts(c, 2, 8)); // 40 attempts, 20% accuracy
+    const result = computeExamReadiness(log, chapters, 75);
+    expect(result.level).toBe("needs-practice");
+  });
+
+  it("is getting-there with moderate accuracy and partial chapter coverage", () => {
+    const log = [...makeAttempts("a", 13, 7), ...makeAttempts("b", 13, 7)]; // 40 attempts, 65% accuracy, 2/4 chapters
+    const result = computeExamReadiness(log, chapters, 75);
+    expect(result.level).toBe("getting-there");
+    expect(result.chaptersAttempted).toBe(2);
+  });
+
+  it("is exam-ready only with high accuracy, full chapter coverage, and no weak chapters", () => {
+    const log = chapters.flatMap((c) => makeAttempts(c, 9, 1)); // 40 attempts, 90% accuracy, all 4 chapters
+    const result = computeExamReadiness(log, chapters, 75);
+    expect(result.level).toBe("exam-ready");
+  });
+
+  it("a single weak, well-evidenced chapter blocks exam-ready even if overall accuracy clears the pass mark", () => {
+    const log = [
+      ...makeAttempts("a", 10, 0),
+      ...makeAttempts("b", 10, 0),
+      ...makeAttempts("c", 10, 0),
+      ...makeAttempts("d", 3, 7), // 30% accuracy, 10 attempts
+    ];
+    const result = computeExamReadiness(log, chapters, 75);
+    expect(result.weakChapterIds).toEqual(["d"]);
+    expect(result.level).not.toBe("exam-ready");
+  });
+
+  it("does not count a chapter as weak until it has enough attempts to judge", () => {
+    const log = [
+      ...makeAttempts("a", 10, 0),
+      ...makeAttempts("b", 10, 0),
+      ...makeAttempts("c", 10, 0),
+      ...makeAttempts("d", 0, 1), // only 1 attempt - below the judging minimum
+    ];
+    const result = computeExamReadiness(log, chapters, 75);
+    expect(result.weakChapterIds).toEqual([]);
   });
 });
