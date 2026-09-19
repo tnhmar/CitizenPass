@@ -11,6 +11,8 @@ import { getChapterList, getChapterTitle } from "../../src/data/contentLoader";
 import { getChapterVisual } from "../../src/constants/chapterIcons";
 import { StatPill } from "../../src/components/StatPill";
 import { computeChapterAccuracy, computeCurrentStreak, getFocusAreas, getRecentActivity, humanizeTag } from "../../src/utils/progressStats";
+import { ExamTrendChart } from "../../src/components/ExamTrendChart";
+import { EXAM_PASS_THRESHOLD } from "../../src/store/useExamStore";
 import type { ManifestChapterEntry } from "../../src/types/content";
 
 export default function ProgressScreen() {
@@ -40,6 +42,9 @@ export default function ProgressScreen() {
   const recentActivity = getRecentActivity(attemptLog);
 
   const sortedExamHistory = [...examHistory].sort((a, b) => (a.dateIso < b.dateIso ? 1 : -1));
+  // Chart wants oldest-first, and only the same recent slice the list
+  // below shows, so the two stay in sync.
+  const trendAttempts = [...sortedExamHistory.slice(0, 10)].reverse();
 
   const renderChapter = ({ item }: { item: ManifestChapterEntry }) => {
     const visual = getChapterVisual(item.id);
@@ -210,32 +215,52 @@ export default function ProgressScreen() {
               {t("progress.noExamHistory")}
             </Text>
           ) : (
-            sortedExamHistory.slice(0, 10).map((attempt, index) => (
-              <Card key={`${attempt.dateIso}-${index}`} mode="outlined" style={styles.examCard}>
-                <Card.Content style={styles.examCardContent}>
-                  <MaterialCommunityIcons
-                    name={attempt.passed ? "trophy" : "close-circle-outline"}
-                    size={22}
-                    color={attempt.passed ? theme.colors.tertiary : theme.colors.error}
-                  />
-                  <View style={styles.examTextBlock}>
-                    <Text variant="bodyMedium">
-                      {attempt.score} / {attempt.total}
-                    </Text>
-                    <Text variant="bodySmall" style={{ color: theme.colors.onSurfaceVariant }}>
-                      {new Date(attempt.dateIso).toLocaleDateString()}
-                    </Text>
-                  </View>
-                  <Chip
-                    compact
-                    style={{ backgroundColor: attempt.passed ? successContainer : theme.colors.errorContainer }}
-                    textStyle={{ color: attempt.passed ? success : theme.colors.error }}
-                  >
-                    {attempt.passed ? `🎉 ${t("progress.examPassed")}` : `📚 ${t("progress.examFailed")}`}
-                  </Chip>
-                </Card.Content>
-              </Card>
-            ))
+            <>
+              <ExamTrendChart attempts={trendAttempts} />
+              <View style={styles.trendLegendRow}>
+                <View style={styles.legendItem}>
+                  <View style={[styles.legendDot, { backgroundColor: theme.colors.tertiary }]} />
+                  <Text variant="labelSmall" style={{ color: theme.colors.onSurfaceVariant }}>
+                    {t("progress.examPassed")}
+                  </Text>
+                </View>
+                <View style={styles.legendItem}>
+                  <View style={[styles.legendDot, { backgroundColor: theme.colors.error }]} />
+                  <Text variant="labelSmall" style={{ color: theme.colors.onSurfaceVariant }}>
+                    {t("progress.examFailed")}
+                  </Text>
+                </View>
+                <Text variant="labelSmall" style={{ color: theme.colors.onSurfaceVariant }}>
+                  {t("progress.examTrendPassMark", { percent: Math.round(EXAM_PASS_THRESHOLD * 100) })}
+                </Text>
+              </View>
+              {sortedExamHistory.slice(0, 10).map((attempt, index) => (
+                <Card key={`${attempt.dateIso}-${index}`} mode="outlined" style={styles.examCard}>
+                  <Card.Content style={styles.examCardContent}>
+                    <MaterialCommunityIcons
+                      name={attempt.passed ? "trophy" : "close-circle-outline"}
+                      size={22}
+                      color={attempt.passed ? theme.colors.tertiary : theme.colors.error}
+                    />
+                    <View style={styles.examTextBlock}>
+                      <Text variant="bodyMedium">
+                        {attempt.score} / {attempt.total}
+                      </Text>
+                      <Text variant="bodySmall" style={{ color: theme.colors.onSurfaceVariant }}>
+                        {new Date(attempt.dateIso).toLocaleDateString()}
+                      </Text>
+                    </View>
+                    <Chip
+                      compact
+                      style={{ backgroundColor: attempt.passed ? successContainer : theme.colors.errorContainer }}
+                      textStyle={{ color: attempt.passed ? success : theme.colors.error }}
+                    >
+                      {attempt.passed ? `🎉 ${t("progress.examPassed")}` : `📚 ${t("progress.examFailed")}`}
+                    </Chip>
+                  </Card.Content>
+                </Card>
+              ))}
+            </>
           )}
         </View>
       }
@@ -264,4 +289,7 @@ const styles = StyleSheet.create({
   streakTextBlock: { flex: 1, gap: 6 },
   streakDaysRow: { flexDirection: "row", gap: 6 },
   streakDot: { width: 10, height: 10, borderRadius: 5 },
+  trendLegendRow: { flexDirection: "row", alignItems: "center", gap: 16, marginTop: 8, marginBottom: 16 },
+  legendItem: { flexDirection: "row", alignItems: "center", gap: 6 },
+  legendDot: { width: 8, height: 8, borderRadius: 4 },
 });
