@@ -42,6 +42,8 @@
     "toggleBookmark": "Basculer le signet",
     "viewBookmarks": "Voir les questions enregistrées",
     "allChapters": "Tous les chapitres",
+    "missedQuestionsLabel": "Questions ratées",
+    "missedQuestionsMenuItem": "Questions ratées ({{count}})",
     "sessionComplete": "Session terminée !",
     "sessionSummary": "Vous avez obtenu {{correct}} sur {{total}} bonnes réponses ({{percent}} %).",
     "practiceAgain": "Pratiquer à nouveau",

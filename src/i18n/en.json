@@ -42,6 +42,8 @@
     "toggleBookmark": "Toggle bookmark",
     "viewBookmarks": "View saved questions",
     "allChapters": "All chapters",
+    "missedQuestionsLabel": "Missed Questions",
+    "missedQuestionsMenuItem": "Missed Questions ({{count}})",
     "sessionComplete": "Session complete!",
     "sessionSummary": "You got {{correct}} of {{total}} correct ({{percent}}%).",
     "practiceAgain": "Practice again",
