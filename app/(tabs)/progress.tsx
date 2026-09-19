@@ -10,7 +10,7 @@ import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { getChapterList, getChapterTitle } from "../../src/data/contentLoader";
 import { getChapterVisual } from "../../src/constants/chapterIcons";
 import { StatPill } from "../../src/components/StatPill";
-import { computeChapterAccuracy, computeCurrentStreak, getFocusAreas, getRecentActivity, humanizeTag } from "../../src/utils/progressStats";
+import { computeChapterAccuracy, computeCurrentStreak, computeExamReadiness, getFocusAreas, getRecentActivity, humanizeTag } from "../../src/utils/progressStats";
 import { ExamTrendChart } from "../../src/components/ExamTrendChart";
 import { EXAM_PASS_THRESHOLD } from "../../src/store/useExamStore";
 import type { ManifestChapterEntry } from "../../src/types/content";
@@ -40,6 +40,11 @@ export default function ProgressScreen() {
   const focusAreas = getFocusAreas(attemptLog);
   const currentStreak = computeCurrentStreak(attemptLog);
   const recentActivity = getRecentActivity(attemptLog);
+  const readiness = computeExamReadiness(
+    attemptLog,
+    chapters.map((chapter) => chapter.id),
+    Math.round(EXAM_PASS_THRESHOLD * 100)
+  );
 
   const sortedExamHistory = [...examHistory].sort((a, b) => (a.dateIso < b.dateIso ? 1 : -1));
   // Chart wants oldest-first, and only the same recent slice the list
@@ -83,6 +88,44 @@ export default function ProgressScreen() {
           <Text variant="headlineSmall" style={styles.header}>
             📊 {t("progress.title")}
           </Text>
+
+          <Card mode="outlined" style={styles.readinessCard}>
+            <Card.Content style={styles.readinessCardContent}>
+              <MaterialCommunityIcons
+                name={
+                  readiness.level === "exam-ready"
+                    ? "check-decagram"
+                    : readiness.level === "getting-there"
+                      ? "trending-up"
+                      : readiness.level === "needs-practice"
+                        ? "alert-circle-outline"
+                        : "help-circle-outline"
+                }
+                size={28}
+                color={
+                  readiness.level === "exam-ready"
+                    ? theme.colors.tertiary
+                    : readiness.level === "getting-there"
+                      ? theme.colors.secondary
+                      : readiness.level === "needs-practice"
+                        ? theme.colors.error
+                        : theme.colors.onSurfaceVariant
+                }
+              />
+              <View style={styles.readinessTextBlock}>
+                <Text variant="titleMedium">{t(`progress.readiness.${readiness.level}.title`)}</Text>
+                <Text variant="bodySmall" style={{ color: theme.colors.onSurfaceVariant }}>
+                  {readiness.level === "insufficient-data"
+                    ? t("progress.readiness.insufficient-data.detail", { count: readiness.attemptsUntilSignal })
+                    : t("progress.readinessDetail", {
+                        accuracy: readiness.overallAccuracyPercent,
+                        attempted: readiness.chaptersAttempted,
+                        total: readiness.chaptersTotal,
+                      })}
+                </Text>
+              </View>
+            </Card.Content>
+          </Card>
 
           <Card mode="outlined" style={styles.streakCard}>
             <Card.Content style={styles.streakCardContent}>
@@ -294,6 +337,9 @@ const styles = StyleSheet.create({
   streakTextBlock: { flex: 1, gap: 6 },
   streakDaysRow: { flexDirection: "row", gap: 6 },
   streakDot: { width: 10, height: 10, borderRadius: 5 },
+  readinessCard: { marginBottom: 16 },
+  readinessCardContent: { flexDirection: "row", alignItems: "center", gap: 12 },
+  readinessTextBlock: { flex: 1, gap: 4 },
   trendLegendRow: { flexDirection: "row", alignItems: "center", gap: 16, marginTop: 8, marginBottom: 16 },
   legendItem: { flexDirection: "row", alignItems: "center", gap: 6 },
   legendDot: { width: 8, height: 8, borderRadius: 4 },
