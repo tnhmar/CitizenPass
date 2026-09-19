@@ -3,6 +3,7 @@ import {
   getVerifiedQuestionsByChapter,
   getQuestionById,
   drawRandomQuestions,
+  drawFilteredQuestions,
   shuffle,
 } from "../../src/data/questionLoader";
 
@@ -125,5 +126,47 @@ describe("questionLoader", () => {
     const result = shuffle(input);
     expect(input).toEqual([1, 2, 3, 4, 5]);
     expect(result.sort()).toEqual([1, 2, 3, 4, 5]);
+  });
+
+  describe("drawFilteredQuestions", () => {
+    it("draws only from the specified chapter", () => {
+      const drawn = drawFilteredQuestions(5, { chapterId: "justice-system" });
+      for (const question of drawn) {
+        expect(question.chapterId).toBe("justice-system");
+      }
+    });
+
+    it("draws only questions carrying the given tag", () => {
+      const [sample] = getAllVerifiedQuestions().filter((q) => q.tags.length > 0);
+      const drawn = drawFilteredQuestions(3, { tag: sample.tags[0] });
+      expect(drawn.length).toBeGreaterThan(0);
+      for (const question of drawn) {
+        expect(question.tags).toContain(sample.tags[0]);
+      }
+    });
+
+    it("restricts the pool to exactly onlyIds - Smart Practice's 'missed questions' case", () => {
+      const allowed = getAllVerifiedQuestions()
+        .slice(0, 3)
+        .map((q) => q.id);
+      const drawn = drawFilteredQuestions(10, { onlyIds: allowed });
+      expect(drawn.length).toBe(3);
+      for (const question of drawn) {
+        expect(allowed).toContain(question.id);
+      }
+    });
+
+    it("still applies excludeIds on top of a filter (e.g. questions already seen this session)", () => {
+      const allowed = getAllVerifiedQuestions()
+        .slice(0, 3)
+        .map((q) => q.id);
+      const drawn = drawFilteredQuestions(10, { onlyIds: allowed }, [allowed[0]]);
+      expect(drawn.length).toBe(2);
+      expect(drawn.map((q) => q.id)).not.toContain(allowed[0]);
+    });
+
+    it("returns an empty array once every matching question has been excluded", () => {
+      expect(drawFilteredQuestions(5, { onlyIds: ["not-a-real-id"] })).toEqual([]);
+    });
   });
 });
