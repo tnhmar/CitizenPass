@@ -108,6 +108,23 @@
     "streakZero": "Practice today to start a streak!",
     "streakDays_one": "{{count}}-day streak",
     "streakDays_other": "{{count}}-day streak",
+    "readinessDetail": "{{accuracy}}% accuracy across {{attempted}} of {{total}} chapters",
+    "readiness": {
+      "insufficient-data": {
+        "title": "Keep practicing to see your readiness",
+        "detail_one": "{{count}} more question to unlock this",
+        "detail_other": "{{count}} more questions to unlock this"
+      },
+      "needs-practice": {
+        "title": "Needs more practice"
+      },
+      "getting-there": {
+        "title": "Getting there"
+      },
+      "exam-ready": {
+        "title": "Exam ready!"
+      }
+    },
     "attemptsLabel": "Answered",
     "chaptersLabel": "Chapters",
     "bookmarksLabel": "Saved",

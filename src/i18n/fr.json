@@ -108,6 +108,23 @@
     "streakZero": "Pratiquez aujourd'hui pour commencer une série !",
     "streakDays_one": "Série de {{count}} jour",
     "streakDays_other": "Série de {{count}} jours",
+    "readinessDetail": "{{accuracy}} % de précision sur {{attempted}} des {{total}} chapitres",
+    "readiness": {
+      "insufficient-data": {
+        "title": "Continuez à pratiquer pour voir votre niveau de préparation",
+        "detail_one": "Encore {{count}} question pour débloquer ceci",
+        "detail_other": "Encore {{count}} questions pour débloquer ceci"
+      },
+      "needs-practice": {
+        "title": "Encore un peu de pratique"
+      },
+      "getting-there": {
+        "title": "Vous progressez"
+      },
+      "exam-ready": {
+        "title": "Prêt pour l'examen !"
+      }
+    },
     "attemptsLabel": "Répondues",
     "chaptersLabel": "Chapitres",
     "bookmarksLabel": "Enregistrées",
