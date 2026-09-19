@@ -167,3 +167,74 @@ export function humanizeTag(tag: string): string {
     .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
     .join(" ");
 }
+
+export type ReadinessLevel = "insufficient-data" | "needs-practice" | "getting-there" | "exam-ready";
+
+export type ReadinessAssessment = {
+  level: ReadinessLevel;
+  overallAccuracyPercent: number;
+  chaptersAttempted: number;
+  chaptersTotal: number;
+  weakChapterIds: string[];
+  /** Only meaningful when level is "insufficient-data". */
+  attemptsUntilSignal: number;
+};
+
+/** Below this many total attempts (practice + exam combined), there
+ *  isn't enough evidence yet to say anything about readiness at all. */
+const MIN_ATTEMPTS_FOR_SIGNAL = 20;
+/** A chapter below this accuracy counts as a weak spot - but only once
+ *  it has enough attempts to trust the number (see the tag version of
+ *  this same idea in getFocusAreas above). */
+const WEAK_CHAPTER_THRESHOLD_PERCENT = 60;
+const MIN_ATTEMPTS_PER_CHAPTER_TO_JUDGE = 3;
+
+/**
+ * A single honest readiness signal combining three things a learner
+ * actually needs before a real exam: enough evidence to trust the
+ * number at all, overall accuracy relative to the real pass mark, and
+ * breadth (every chapter attempted, no chapter left weak). Deliberately
+ * conservative - "exam-ready" requires full chapter coverage with no
+ * weak spots, not just a high average that a few untouched chapters
+ * could be hiding a gap behind.
+ */
+export function computeExamReadiness(
+  attemptLog: AttemptLogEntry[],
+  allChapterIds: string[],
+  passThresholdPercent: number
+): ReadinessAssessment {
+  const totalAttempts = attemptLog.length;
+  const chapterAccuracy = computeChapterAccuracy(attemptLog);
+  const chaptersAttempted = allChapterIds.filter((id) => chapterAccuracy[id]).length;
+  const overallCorrect = attemptLog.filter((entry) => entry.correct).length;
+  const overallAccuracyPercent = totalAttempts > 0 ? Math.round((overallCorrect / totalAttempts) * 100) : 0;
+  const weakChapterIds = allChapterIds.filter((id) => {
+    const stat = chapterAccuracy[id];
+    return !!stat && stat.attempts >= MIN_ATTEMPTS_PER_CHAPTER_TO_JUDGE && stat.accuracyPercent < WEAK_CHAPTER_THRESHOLD_PERCENT;
+  });
+
+  if (totalAttempts < MIN_ATTEMPTS_FOR_SIGNAL) {
+    return {
+      level: "insufficient-data",
+      overallAccuracyPercent,
+      chaptersAttempted,
+      chaptersTotal: allChapterIds.length,
+      weakChapterIds,
+      attemptsUntilSignal: MIN_ATTEMPTS_FOR_SIGNAL - totalAttempts,
+    };
+  }
+
+  const fullyCovered = chaptersAttempted === allChapterIds.length;
+  const noWeakChapters = weakChapterIds.length === 0;
+
+  let level: ReadinessLevel;
+  if (overallAccuracyPercent >= passThresholdPercent && fullyCovered && noWeakChapters) {
+    level = "exam-ready";
+  } else if (overallAccuracyPercent >= WEAK_CHAPTER_THRESHOLD_PERCENT && chaptersAttempted >= Math.ceil(allChapterIds.length / 2)) {
+    level = "getting-there";
+  } else {
+    level = "needs-practice";
+  }
+
+  return { level, overallAccuracyPercent, chaptersAttempted, chaptersTotal: allChapterIds.length, weakChapterIds, attemptsUntilSignal: 0 };
+}
