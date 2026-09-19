@@ -116,6 +116,7 @@
     "focusAreasTitle": "Focus Areas",
     "focusAreasEmpty": "Keep practicing - the topics you're struggling with most will show up here once you've answered enough questions on them.",
     "examHistory": "Exam History",
+    "examTrendPassMark": "{{percent}}% pass mark",
     "noExamHistory": "No simulated exams taken yet.",
     "examPassed": "Passed",
     "examFailed": "Not passed"

@@ -116,6 +116,7 @@
     "focusAreasTitle": "Points à travailler",
     "focusAreasEmpty": "Continuez à pratiquer : les sujets qui vous posent le plus de difficulté apparaîtront ici une fois que vous aurez répondu à assez de questions.",
     "examHistory": "Historique des examens",
+    "examTrendPassMark": "Seuil de réussite : {{percent}} %",
     "noExamHistory": "Aucun examen simulé effectué pour l'instant.",
     "examPassed": "Réussi",
     "examFailed": "Non réussi"
