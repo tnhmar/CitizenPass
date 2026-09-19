@@ -187,7 +187,12 @@ export default function ProgressScreen() {
             </Text>
           ) : (
             focusAreas.map((area) => (
-              <Card key={area.tag} mode="outlined" style={styles.focusAreaCard}>
+              <Card
+                key={area.tag}
+                mode="outlined"
+                style={styles.focusAreaCard}
+                onPress={() => router.push({ pathname: "/practice", params: { tag: area.tag } })}
+              >
                 <Card.Content style={styles.focusAreaCardContent}>
                   <Text variant="bodyMedium" style={styles.focusAreaLabel} numberOfLines={1}>
                     {humanizeTag(area.tag)}
