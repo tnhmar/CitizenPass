@@ -68,3 +68,36 @@ export function drawRandomQuestions(count: number, excludeIds: string[] = [], ch
   const pool = basePool.filter((question) => !excludeIds.includes(question.id));
   return shuffle(pool).slice(0, count);
 }
+
+export type PracticeQueryFilter = {
+  chapterId?: string;
+  tag?: string;
+  /** Restrict the pool to exactly these ids (e.g. Smart Practice's
+   *  "questions I've gotten wrong before"). Combines with chapterId/tag
+   *  if more than one is given, though callers currently only ever pass
+   *  one filter dimension at a time - see practice.tsx's PracticeFilter. */
+  onlyIds?: string[];
+};
+
+/**
+ * Draws up to `count` random questions matching an optional chapter,
+ * tag, and/or explicit id allowlist, excluding ids already seen this
+ * session. A separate function from `drawRandomQuestions` (used by the
+ * exam) so Smart Practice's filtering can evolve without touching exam
+ * question selection at all.
+ */
+export function drawFilteredQuestions(count: number, filter: PracticeQueryFilter = {}, excludeIds: string[] = []): Question[] {
+  let pool = VERIFIED_QUESTIONS;
+  if (filter.chapterId) {
+    pool = pool.filter((question) => question.chapterId === filter.chapterId);
+  }
+  if (filter.tag) {
+    pool = pool.filter((question) => question.tags.includes(filter.tag as string));
+  }
+  if (filter.onlyIds) {
+    const allowed = new Set(filter.onlyIds);
+    pool = pool.filter((question) => allowed.has(question.id));
+  }
+  pool = pool.filter((question) => !excludeIds.includes(question.id));
+  return shuffle(pool).slice(0, count);
+}
