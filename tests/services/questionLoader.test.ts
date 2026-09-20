@@ -8,9 +8,9 @@ import {
 } from "../../src/data/questionLoader";
 
 describe("questionLoader", () => {
-  it("loads 437 verified questions across all 10 chapters", () => {
+  it("loads 442 verified questions across all 11 chapters", () => {
     const all = getAllVerifiedQuestions();
-    expect(all.length).toBe(437);
+    expect(all.length).toBe(442);
     for (const question of all) {
       expect(question.en.source.reviewStatus).toBe("verified");
       expect(question.fr.source.reviewStatus).toBe("verified");
@@ -73,6 +73,16 @@ describe("questionLoader", () => {
     expect(chapterQuestions.length).toBe(15);
     for (const question of chapterQuestions) {
       expect(question.chapterId).toBe("canadas-economy");
+    }
+  });
+
+  it("loads the new applying-for-citizenship chapter", () => {
+    const chapterQuestions = getVerifiedQuestionsByChapter("applying-for-citizenship");
+    expect(chapterQuestions.length).toBe(5);
+    for (const question of chapterQuestions) {
+      expect(question.chapterId).toBe("applying-for-citizenship");
+      expect(question.en.source.sourceUrl).toContain("applying-citizenship");
+      expect(question.fr.source.sourceUrl).toContain("demander-citoyennete");
     }
   });
 
