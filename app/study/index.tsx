@@ -1,6 +1,6 @@
 import { FlatList, StyleSheet, View } from "react-native";
 import { useRouter } from "expo-router";
-import { Text, Card, ProgressBar, useTheme } from "react-native-paper";
+import { Text, Card, ProgressBar, IconButton, useTheme } from "react-native-paper";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 import { useTranslation } from "react-i18next";
 import { useSettingsStore } from "../../src/store/useSettingsStore";
@@ -70,9 +70,12 @@ export default function StudyIndexScreen() {
       keyExtractor={(item) => item.id}
       renderItem={renderItem}
       ListHeaderComponent={
-        <Text variant="headlineSmall" style={styles.header}>
-          📘 {t("study.title")}
-        </Text>
+        <View style={styles.headerRow}>
+          <Text variant="headlineSmall" style={styles.header}>
+            📘 {t("study.title")}
+          </Text>
+          <IconButton icon="magnify" size={24} onPress={() => router.push("/search")} accessibilityLabel={t("search.title")} />
+        </View>
       }
     />
   );
@@ -80,7 +83,8 @@ export default function StudyIndexScreen() {
 
 const styles = StyleSheet.create({
   listContent: { padding: 16, paddingBottom: 32 },
-  header: { marginBottom: 16 },
+  headerRow: { flexDirection: "row", alignItems: "center", justifyContent: "space-between", marginBottom: 16 },
+  header: { flex: 1 },
   card: { marginBottom: 12 },
   cardContent: { flexDirection: "row", alignItems: "center", gap: 12 },
   iconCircle: { width: 44, height: 44, borderRadius: 22, alignItems: "center", justifyContent: "center" },
