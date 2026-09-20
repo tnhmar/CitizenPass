@@ -263,6 +263,7 @@ export default function PracticeScreen() {
             {sessionAnswered}
           </Text>
         </View>
+        <IconButton icon="magnify" onPress={() => router.push("/search")} accessibilityLabel={t("search.title")} />
         <IconButton
           icon="bookmark-multiple-outline"
           onPress={() => router.push("/bookmarks")}
