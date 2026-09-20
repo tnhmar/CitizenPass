@@ -1,0 +1,315 @@
+[
+  {
+    "id": "q-ac-001",
+    "chapterId": "applying-for-citizenship",
+    "type": "multiple-choice",
+    "tags": [
+      "citizenship-application",
+      "application-process"
+    ],
+    "learningObjectiveId": "ac-application-checks",
+    "difficulty": 1,
+    "en": {
+      "question": "What will officials check when you apply for citizenship?",
+      "options": [
+        "Your status, that you are not prohibited from applying, and that you meet the requirements",
+        "Only your criminal record",
+        "Your physical fitness for citizenship duties",
+        "Your fluency in both English and French"
+      ],
+      "correctIndex": 0,
+      "explanation": "When you apply for citizenship, officials check your status, verify that you are not prohibited from applying, and ensure that you meet the requirements.",
+      "source": {
+        "guide": "Discover Canada",
+        "language": "en",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/applying-citizenship.html",
+        "chapter": "Applying for Citizenship",
+        "section": "Applying for Citizenship (introduction)",
+        "excerpt": "When you apply for citizenship, officials will check your status, verify that you are not prohibited from applying, and ensure that you meet the requirements.",
+        "verifiedAt": "2026-09-20",
+        "reviewStatus": "verified"
+      }
+    },
+    "fr": {
+      "question": "Que vérifient les fonctionnaires lorsque vous demandez la citoyenneté ?",
+      "options": [
+        "Votre statut, que vous avez le droit de présenter une demande, et que vous remplissez les exigences",
+        "Uniquement votre casier judiciaire",
+        "Votre condition physique pour les devoirs de citoyen",
+        "Votre maîtrise à la fois de l'anglais et du français"
+      ],
+      "correctIndex": 0,
+      "explanation": "Lorsque vous demandez la citoyenneté, des fonctionnaires examinent votre statut, vérifient si vous avez le droit de présenter une demande et s'assurent que vous remplissez les exigences.",
+      "source": {
+        "guide": "Découvrir le Canada",
+        "language": "fr",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/demander-citoyennete.html",
+        "chapter": "Demander la citoyenneté",
+        "section": "Demander la citoyenneté (introduction)",
+        "excerpt": "Lorsque vous demandez la citoyenneté, des fonctionnaires examinent votre statut, vérifient si vous avez le droit de présenter une demande et s'assurent que vous remplissez les exigences.",
+        "verifiedAt": "2026-09-20",
+        "reviewStatus": "verified"
+      }
+    },
+    "ar": {
+      "question": "ماذا يتحقق المسؤولون عند تقديم طلب الحصول على الجنسية؟",
+      "options": [
+        "وضعك القانوني، وأنك غير ممنوع من التقديم، وأنك تستوفي المتطلبات",
+        "سجلك الجنائي فقط",
+        "لياقتك البدنية لواجبات المواطنة",
+        "إتقانك للغتين الإنجليزية والفرنسية معًا"
+      ],
+      "explanation": "عند تقديم طلب الحصول على الجنسية، يتحقق المسؤولون من وضعك، ويتأكدون من أنك غير ممنوع من التقديم، ويضمنون استيفاءك للمتطلبات."
+    }
+  },
+  {
+    "id": "q-ac-002",
+    "chapterId": "applying-for-citizenship",
+    "type": "true-false",
+    "tags": [
+      "language-classes",
+      "citizenship-application"
+    ],
+    "learningObjectiveId": "ac-free-language-classes",
+    "difficulty": 1,
+    "en": {
+      "question": "The Government of Canada offers free English or French language classes to help you prepare for citizenship.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correctIndex": 0,
+      "explanation": "Discover Canada lists taking English or French language classes, offered free of charge by the Government of Canada, as one way to prepare for the citizenship test.",
+      "source": {
+        "guide": "Discover Canada",
+        "language": "en",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/applying-citizenship.html",
+        "chapter": "Applying for Citizenship",
+        "section": "How to Use this Booklet to Prepare for the Citizenship Test",
+        "excerpt": "Take English or French language classes, which the Government of Canada offers free of charge.",
+        "verifiedAt": "2026-09-20",
+        "reviewStatus": "verified"
+      }
+    },
+    "fr": {
+      "question": "Le gouvernement du Canada offre gratuitement des cours d'anglais ou de français pour vous aider à vous préparer à la citoyenneté.",
+      "options": [
+        "Vrai",
+        "Faux"
+      ],
+      "correctIndex": 0,
+      "explanation": "Découvrir le Canada mentionne le fait de suivre des cours de français ou d'anglais, offerts gratuitement par le gouvernement du Canada, comme un moyen de se préparer à l'examen pour la citoyenneté.",
+      "source": {
+        "guide": "Découvrir le Canada",
+        "language": "fr",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/demander-citoyennete.html",
+        "chapter": "Demander la citoyenneté",
+        "section": "Comment utiliser la présente brochure afin de vous préparer à l'examen pour la citoyenneté",
+        "excerpt": "Suivre des cours de français ou d'anglais, offerts gratuitement par le gouvernement du Canada.",
+        "verifiedAt": "2026-09-20",
+        "reviewStatus": "verified"
+      }
+    },
+    "ar": {
+      "question": "تقدم حكومة كندا دروسًا مجانية في اللغة الإنجليزية أو الفرنسية لمساعدتك على الاستعداد للحصول على الجنسية.",
+      "options": [
+        "صحيح",
+        "خطأ"
+      ],
+      "explanation": "يذكر دليل «اكتشف كندا» أن حضور دروس اللغة الفرنسية أو الإنجليزية، التي تقدمها حكومة كندا مجانًا، هو إحدى طرق الاستعداد لامتحان الجنسية."
+    }
+  },
+  {
+    "id": "q-ac-003",
+    "chapterId": "applying-for-citizenship",
+    "type": "multiple-choice",
+    "tags": [
+      "citizenship-test",
+      "knowledge-requirement"
+    ],
+    "learningObjectiveId": "ac-knowledge-test-content",
+    "difficulty": 2,
+    "en": {
+      "question": "What does the citizenship knowledge test itself assess?",
+      "options": [
+        "Knowledge of Canada and the rights and responsibilities of citizenship",
+        "Fluency in both English and French",
+        "A written essay about Canadian history",
+        "Proof of employment in Canada"
+      ],
+      "correctIndex": 0,
+      "explanation": "The citizenship test assesses your knowledge of Canada and of the rights and responsibilities of citizenship. Since October 2017, adequate knowledge of English or French is demonstrated separately - the knowledge test itself is not used to assess language ability.",
+      "source": {
+        "guide": "Discover Canada",
+        "language": "en",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/applying-citizenship.html",
+        "chapter": "Applying for Citizenship",
+        "section": "About the Citizenship Test / Note: How Language Ability Is Assessed",
+        "excerpt": "You will be tested on two basic requirements for citizenship: 1) knowledge of Canada and of the rights and responsibilities of citizenship, and 2) adequate knowledge of English or French.",
+        "verifiedAt": "2026-09-20",
+        "reviewStatus": "verified"
+      }
+    },
+    "fr": {
+      "question": "Qu'évalue l'examen de connaissances pour la citoyenneté lui-même ?",
+      "options": [
+        "La connaissance du Canada ainsi que des droits et responsabilités liés à la citoyenneté",
+        "La maîtrise à la fois de l'anglais et du français",
+        "Une dissertation écrite sur l'histoire du Canada",
+        "Une preuve d'emploi au Canada"
+      ],
+      "correctIndex": 0,
+      "explanation": "L'examen pour la citoyenneté évalue votre connaissance du Canada ainsi que des droits et responsabilités liés à la citoyenneté. Depuis octobre 2017, la connaissance adéquate de l'anglais ou du français est démontrée séparément : l'examen de connaissances lui-même ne sert pas à évaluer les compétences linguistiques.",
+      "source": {
+        "guide": "Découvrir le Canada",
+        "language": "fr",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/demander-citoyennete.html",
+        "chapter": "Demander la citoyenneté",
+        "section": "Renseignements sur l'examen pour la citoyenneté / Remarque : comment les compétences linguistiques sont évaluées",
+        "excerpt": "On évaluera si vous remplissez deux critères fondamentaux d'attribution de la citoyenneté, c'est-à-dire : 1) si vous connaissez le Canada ainsi que les droits et responsabilités liés à la citoyenneté; et 2) si vous connaissez suffisamment le français ou l'anglais.",
+        "verifiedAt": "2026-09-20",
+        "reviewStatus": "verified"
+      }
+    },
+    "ar": {
+      "question": "ماذا يقيّم امتحان معرفة الجنسية نفسه؟",
+      "options": [
+        "معرفة كندا وحقوق ومسؤوليات المواطنة",
+        "إتقان اللغتين الإنجليزية والفرنسية معًا",
+        "مقالًا مكتوبًا عن تاريخ كندا",
+        "إثبات العمل في كندا"
+      ],
+      "explanation": "يقيّم امتحان الجنسية معرفتك بكندا وبحقوق ومسؤوليات المواطنة. ومنذ أكتوبر 2017، يتم إثبات المعرفة الكافية بالإنجليزية أو الفرنسية بشكل منفصل، ولا يُستخدم امتحان المعرفة نفسه لتقييم القدرة اللغوية."
+    }
+  },
+  {
+    "id": "q-ac-004",
+    "chapterId": "applying-for-citizenship",
+    "type": "true-false",
+    "tags": [
+      "citizenship-test",
+      "age-exemption"
+    ],
+    "learningObjectiveId": "ac-age-exemption",
+    "difficulty": 2,
+    "en": {
+      "question": "Applicants who are 55 years of age or older are required to write the citizenship knowledge test.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correctIndex": 1,
+      "explanation": "Adult applicants 55 years of age and over do not need to write the citizenship test.",
+      "source": {
+        "guide": "Discover Canada",
+        "language": "en",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/applying-citizenship.html",
+        "chapter": "Applying for Citizenship",
+        "section": "About the Citizenship Test",
+        "excerpt": "Adult applicants 55 years of age and over do not need to write the citizenship test.",
+        "verifiedAt": "2026-09-20",
+        "reviewStatus": "verified"
+      }
+    },
+    "fr": {
+      "question": "Les candidats âgés de 55 ans ou plus sont tenus de passer l'examen de connaissances pour la citoyenneté.",
+      "options": [
+        "Vrai",
+        "Faux"
+      ],
+      "correctIndex": 1,
+      "explanation": "Les candidats adultes qui ont 55 ans ou plus n'ont pas besoin de passer l'examen pour la citoyenneté.",
+      "source": {
+        "guide": "Découvrir le Canada",
+        "language": "fr",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/demander-citoyennete.html",
+        "chapter": "Demander la citoyenneté",
+        "section": "Renseignements sur l'examen pour la citoyenneté",
+        "excerpt": "Les candidats adultes qui ont 55 ans ou plus n'ont pas besoin de passer l'examen pour la citoyenneté.",
+        "verifiedAt": "2026-09-20",
+        "reviewStatus": "verified"
+      }
+    },
+    "ar": {
+      "question": "يُطلب من المتقدمين الذين تبلغ أعمارهم 55 عامًا أو أكثر أداء امتحان معرفة الجنسية.",
+      "options": [
+        "صحيح",
+        "خطأ"
+      ],
+      "explanation": "لا يحتاج المتقدمون البالغون الذين تبلغ أعمارهم 55 عامًا فما فوق إلى أداء امتحان الجنسية."
+    }
+  },
+  {
+    "id": "q-ac-005",
+    "chapterId": "applying-for-citizenship",
+    "type": "multiple-choice",
+    "tags": [
+      "citizenship-ceremony",
+      "oath-of-citizenship"
+    ],
+    "learningObjectiveId": "ac-ceremony-steps",
+    "difficulty": 1,
+    "en": {
+      "question": "What happens at the citizenship ceremony?",
+      "options": [
+        "You take the Oath of Citizenship, sign the oath form, and receive your Canadian Citizenship Certificate",
+        "You pay a final citizenship fee and receive your passport immediately",
+        "You take a formal photo with a government minister",
+        "You complete one last written exam"
+      ],
+      "correctIndex": 0,
+      "explanation": "At the citizenship ceremony, you take the Oath of Citizenship, sign the oath form, and receive your Canadian Citizenship Certificate.",
+      "source": {
+        "guide": "Discover Canada",
+        "language": "en",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/applying-citizenship.html",
+        "chapter": "Applying for Citizenship",
+        "section": "After the Test",
+        "excerpt": "At the ceremony, you will: Take the Oath of Citizenship; Sign the oath form; and Receive your Canadian Citizenship Certificate.",
+        "verifiedAt": "2026-09-20",
+        "reviewStatus": "verified"
+      }
+    },
+    "fr": {
+      "question": "Que se passe-t-il lors de la cérémonie de citoyenneté ?",
+      "options": [
+        "Vous prêtez le serment de citoyenneté, vous signez le formulaire de ce serment et vous recevez votre certificat de citoyenneté canadienne",
+        "Vous payez des frais de citoyenneté finaux et recevez votre passeport immédiatement",
+        "Vous prenez une photo officielle avec un ministre du gouvernement",
+        "Vous passez un dernier examen écrit"
+      ],
+      "correctIndex": 0,
+      "explanation": "Au cours de la cérémonie de citoyenneté, vous prêtez le serment de citoyenneté, vous signez le formulaire de ce serment et vous recevez votre certificat de citoyenneté canadienne.",
+      "source": {
+        "guide": "Découvrir le Canada",
+        "language": "fr",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/demander-citoyennete.html",
+        "chapter": "Demander la citoyenneté",
+        "section": "Après l'examen",
+        "excerpt": "Au cours de cette cérémonie : vous prêterez le serment de citoyenneté; vous signerez le formulaire de ce serment; vous recevrez votre certificat de citoyenneté canadienne.",
+        "verifiedAt": "2026-09-20",
+        "reviewStatus": "verified"
+      }
+    },
+    "ar": {
+      "question": "ماذا يحدث في حفل الحصول على الجنسية؟",
+      "options": [
+        "تؤدي قسم المواطنة، وتوقّع نموذج القسم، وتستلم شهادة الجنسية الكندية",
+        "تدفع رسوم جنسية نهائية وتستلم جواز سفرك فورًا",
+        "تلتقط صورة رسمية مع أحد الوزراء",
+        "تخوض امتحانًا كتابيًا أخيرًا"
+      ],
+      "explanation": "خلال حفل الحصول على الجنسية، تؤدي قسم المواطنة، وتوقّع نموذج القسم، وتستلم شهادة الجنسية الكندية."
+    }
+  }
+]
