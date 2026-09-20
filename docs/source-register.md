@@ -30,10 +30,11 @@ This register tracks the official source documents used as the factual authority
 
 ## Content release log
 
-**"Questions" below counts distinct verified base facts (`learningObjectiveId`s with no `variantOf`), not the total question pool.** Each base fact normally yields 3-4 total questions once its angle variants (`-v2`, `-v3`, etc. — see `docs/content-governance.md`, "Variant question rules") are included, since variants inherit their base fact's citation rather than getting a new register entry. As of 2026-09 the actual total pool is 437 questions across 115 base facts (see `docs/deep-analysis-report.md` §1.1 for a snapshot of the per-chapter base/variant/total breakdown as of that report's date — the total here supersedes it, and predates the `canadas-economy` chapter entirely) — this table intentionally still tracks base facts only, since that is the unit citation review actually happens at. One of the 115 (`gov-levels-of-government-matching`) is a matching/combination question rather than a single-fact base objective — see `docs/content-governance.md`, "Matching/combination questions" — it has no variants of its own.
+**"Questions" below counts distinct verified base facts (`learningObjectiveId`s with no `variantOf`), not the total question pool.** Each base fact normally yields 3-4 total questions once its angle variants (`-v2`, `-v3`, etc. — see `docs/content-governance.md`, "Variant question rules") are included, since variants inherit their base fact's citation rather than getting a new register entry. As of 2026-09-20 the actual total pool is 442 questions across 120 base facts (see `docs/deep-analysis-report.md` §1.1 for a snapshot of the per-chapter base/variant/total breakdown as of that report's date — the total here supersedes it, and predates both the `canadas-economy` and `applying-for-citizenship` chapters entirely) — this table intentionally still tracks base facts only, since that is the unit citation review actually happens at. One of the 115 (`gov-levels-of-government-matching`) is a matching/combination question rather than a single-fact base objective — see `docs/content-governance.md`, "Matching/combination questions" — it has no variants of its own.
 
 | Chapter ID | Guide chapter | Base facts | Review status | Verified |
 |---|---|---|---|---|
+| `applying-for-citizenship` | Applying for Citizenship / Demander la citoyenneté | 5 | verified | 2026-09-20 |
 | `rights-responsibilities` | Rights and Responsibilities of Citizenship / Les droits et responsabilités liés à la citoyenneté | 8 | verified | 2026-08-17 |
 | `who-we-are` | Who We Are / Qui sommes-nous, les Canadiens? | 8 | verified | 2026-08-17 |
 | `canadas-history` | Canada's History / L'histoire du Canada | 14 | verified | 2026-08-17 |
@@ -60,7 +61,12 @@ The live guide page contains an internally inconsistent, outdated reference to t
 - **"Canada is divided into 308 electoral districts."** The guide page itself was still live with this figure as of 2025-08-08. The real count was 338 from 2015 to the 2025 general election, and has been 343 since — the guide has not caught up with either change. No verified question states a specific riding count.
 - **"Three major political parties currently represented in the House of Commons."** Party standings change with every election.
 
+## Time-sensitive nuance handled differently in `applying-for-citizenship`
+
+Unlike the exclusions above, this one wasn't silently dropped, because the guide's own live page already surfaces the correction rather than leaving it stale. The "About the Citizenship Test" section still says you're tested on "two basic requirements," including "adequate knowledge of English or French" — but the same live page carries a dated note (effective 2017-10-11) stating the citizenship *knowledge* test itself is **not** used to assess language ability; language is demonstrated separately. Both the original text and the update note are included in the Study content (as a leading "Note" section, matching the source page's own layout), and no verified question's correct answer asserts that the knowledge test evaluates language — see `q-ac-003`, which is grounded in the update note specifically.
+
 Notes:
+- `applying-for-citizenship` source pages: English — https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/applying-citizenship.html ; French — https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/demander-citoyennete.html
 - Chapter content and question citations for all nine chapters were sourced from the official `canada.ca` online HTML guides (English and French), not the attached PDF, because the attached PDF's body-text layer extracted as garbled/unreadable characters.
 - Printed/PDF page numbers are not recorded for these chapters' citations because they could not be reliably verified against the unreadable PDF text layer.
 - Edition identifier `Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8` was confirmed against the attached PDF's colophon text (page 2), which extracted correctly.
