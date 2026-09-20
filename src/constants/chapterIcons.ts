@@ -16,6 +16,7 @@ export const DEFAULT_CHAPTER_VISUAL: ChapterVisual = {
 };
 
 export const CHAPTER_VISUALS: Record<string, ChapterVisual> = {
+  "applying-for-citizenship": { icon: "passport", emoji: "\ud83d\udec2", color: "#0E7C7B" },
   "rights-responsibilities": { icon: "gavel", emoji: "\u2696\ufe0f", color: "#B10E1E" },
   "who-we-are": { icon: "account-group", emoji: "\ud83c\udf41", color: "#1A3763" },
   "canadas-history": { icon: "book-open-page-variant", emoji: "\ud83d\udcdc", color: "#8B5E34" },
