@@ -1,6 +1,20 @@
 {
   "chapters": [
     {
+      "id": "applying-for-citizenship",
+      "en": {
+        "title": "Applying for Citizenship",
+        "contentPath": "src/data/content/applying-for-citizenship.en.json"
+      },
+      "fr": {
+        "title": "Demander la citoyenneté",
+        "contentPath": "src/data/content/applying-for-citizenship.fr.json"
+      },
+      "questionsPath": "src/data/questions/applying-for-citizenship.json",
+      "questionCount": 5,
+      "reviewStatus": "verified"
+    },
+    {
       "id": "rights-responsibilities",
       "en": {
         "title": "Rights and Responsibilities of Citizenship",
