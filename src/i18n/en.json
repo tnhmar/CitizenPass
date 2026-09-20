@@ -163,5 +163,14 @@
     "back": "Back",
     "remove": "Remove bookmark",
     "empty": "You haven't saved any questions yet. Bookmark questions in Practice or the Simulated Exam to review them here."
+  },
+  "search": {
+    "title": "Search",
+    "back": "Back",
+    "placeholder": "Search chapters and questions",
+    "studySectionTitle": "Study",
+    "practiceSectionTitle": "Practice Questions",
+    "promptShort": "Type at least 2 characters to search",
+    "noResults": "No matches for \"{{query}}\""
   }
 }

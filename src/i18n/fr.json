@@ -163,5 +163,14 @@
     "back": "Retour",
     "remove": "Retirer le signet",
     "empty": "Vous n'avez enregistré aucune question. Ajoutez des signets en Pratique ou à l'Examen simulé pour les revoir ici."
+  },
+  "search": {
+    "title": "Recherche",
+    "back": "Retour",
+    "placeholder": "Rechercher des chapitres et des questions",
+    "studySectionTitle": "Étude",
+    "practiceSectionTitle": "Questions de pratique",
+    "promptShort": "Tapez au moins 2 caractères pour rechercher",
+    "noResults": "Aucun résultat pour « {{query}} »"
   }
 }
