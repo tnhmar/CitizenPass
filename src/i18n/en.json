@@ -172,5 +172,16 @@
     "practiceSectionTitle": "Practice Questions",
     "promptShort": "Type at least 2 characters to search",
     "noResults": "No matches for \"{{query}}\""
+  },
+  "onboarding": {
+    "skip": "Skip",
+    "next": "Next",
+    "getStarted": "Get Started",
+    "studyTitle": "Study",
+    "studyDescription": "Read through each chapter of the official guide at your own pace, organized by topic.",
+    "practiceTitle": "Practice",
+    "practiceDescription": "Test yourself with practice questions and get instant feedback with an explanation for every answer.",
+    "examTitle": "Simulated Exam",
+    "examDescription": "When you're ready, take a full simulated exam under real test conditions to check you're prepared."
   }
 }

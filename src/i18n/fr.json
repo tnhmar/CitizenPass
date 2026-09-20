@@ -172,5 +172,16 @@
     "practiceSectionTitle": "Questions de pratique",
     "promptShort": "Tapez au moins 2 caractères pour rechercher",
     "noResults": "Aucun résultat pour « {{query}} »"
+  },
+  "onboarding": {
+    "skip": "Passer",
+    "next": "Suivant",
+    "getStarted": "Commencer",
+    "studyTitle": "Étudier",
+    "studyDescription": "Lisez chaque chapitre du guide officiel à votre rythme, organisé par thème.",
+    "practiceTitle": "Pratiquer",
+    "practiceDescription": "Testez-vous avec des questions de pratique et obtenez une explication immédiate pour chaque réponse.",
+    "examTitle": "Examen simulé",
+    "examDescription": "Quand vous êtes prêt, passez un examen simulé dans des conditions réelles pour vérifier votre préparation."
   }
 }
