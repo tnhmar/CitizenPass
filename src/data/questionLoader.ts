@@ -1,5 +1,6 @@
 import type { Question } from "../types";
 
+import applyingForCitizenshipQuestions from "./questions/applying-for-citizenship.json";
 import rightsResponsibilitiesQuestions from "./questions/rights-responsibilities.json";
 import whoWeAreQuestions from "./questions/who-we-are.json";
 import canadasHistoryQuestions from "./questions/canadas-history.json";
@@ -18,6 +19,7 @@ import canadasEconomyQuestions from "./questions/canadas-economy.json";
  * docs/content-governance.md, "Release rule."
  */
 const ALL_QUESTIONS: Question[] = ([] as Question[]).concat(
+  applyingForCitizenshipQuestions as Question[],
   rightsResponsibilitiesQuestions as Question[],
   whoWeAreQuestions as Question[],
   canadasHistoryQuestions as Question[],
