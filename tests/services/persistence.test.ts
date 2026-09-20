@@ -1,5 +1,5 @@
 import AsyncStorage from "@react-native-async-storage/async-storage";
-import { DEFAULT_SETTINGS } from "../../src/services/persistence/settingsRepository";
+import { DEFAULT_SETTINGS, loadSettings } from "../../src/services/persistence/settingsRepository";
 import { DEFAULT_PROGRESS, loadProgress, saveProgress } from "../../src/services/persistence/progressRepository";
 import { STORAGE_KEYS } from "../../src/services/persistence/storageKeys";
 import { loadExamSession, saveExamSession, clearExamSession } from "../../src/services/persistence/examRepository";
@@ -12,6 +12,26 @@ describe("persistence defaults", () => {
     expect(["classicRed", "oceanBlue", "twilightIndigo", "terracotta", "slateCharcoal", "plumMagenta"]).toContain(
       DEFAULT_SETTINGS.colorScheme
     );
+    expect(DEFAULT_SETTINGS.hasSeenOnboarding).toBe(false);
+  });
+
+  it("a settings blob saved before onboarding existed still loads, with hasSeenOnboarding defaulting to false", async () => {
+    const preOnboardingRecord = {
+      schemaVersion: 1,
+      language: "fr",
+      theme: "dark",
+      colorScheme: "oceanBlue",
+      arabicHelpEnabled: true,
+      // no hasSeenOnboarding field at all - this is what every settings
+      // blob saved before this feature existed looks like.
+    };
+    await AsyncStorage.setItem(STORAGE_KEYS.SETTINGS, JSON.stringify(preOnboardingRecord));
+
+    const loaded = await loadSettings();
+    expect(loaded.language).toBe("fr");
+    expect(loaded.hasSeenOnboarding).toBe(false);
+
+    await AsyncStorage.removeItem(STORAGE_KEYS.SETTINGS);
   });
 
   it("DEFAULT_PROGRESS starts empty with no bookmarks, history, or attempt log", () => {
