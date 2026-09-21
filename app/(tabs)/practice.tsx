@@ -365,6 +365,38 @@ export default function PracticeScreen() {
             💡 {localized.explanation}
           </Text>
           <SourceCitationCard source={localized.source} />
+
+          {localized.optionAnnotations && (
+            <View style={styles.annotationsBlock}>
+              <Text variant="labelLarge" style={styles.annotationsTitle}>
+                🔎 {t("practice.whyOtherOptionsTitle")}
+              </Text>
+              {localized.options.map((option, index) => {
+                if (index === localized.correctIndex) return null;
+                const annotation = localized.optionAnnotations?.[index];
+                if (!annotation?.explanation) return null;
+                return (
+                  <View key={index} style={styles.annotationRow}>
+                    <Text variant="bodySmall" style={styles.annotationLabel}>
+                      {OPTION_LETTERS[index]}. {option}
+                    </Text>
+                    <Text variant="bodySmall" style={{ color: theme.colors.onSurfaceVariant }}>
+                      {annotation.explanation}
+                    </Text>
+                  </View>
+                );
+              })}
+            </View>
+          )}
+
+          {current.testTip && (
+            <View style={[styles.testTipCard, { backgroundColor: theme.colors.tertiaryContainer }]}>
+              <MaterialCommunityIcons name="lightbulb-on-outline" size={18} color={theme.colors.tertiary} />
+              <Text variant="bodySmall" style={styles.testTipText}>
+                {current.testTip}
+              </Text>
+            </View>
+          )}
         </>
       ) : null}
 
@@ -423,6 +455,12 @@ const styles = StyleSheet.create({
     marginTop: 16,
   },
   explanation: { marginTop: 12, marginBottom: 4 },
+  annotationsBlock: { marginTop: 12, gap: 6 },
+  annotationsTitle: { marginBottom: 2 },
+  annotationRow: { marginBottom: 6 },
+  annotationLabel: { fontWeight: "600", marginBottom: 2 },
+  testTipCard: { flexDirection: "row", alignItems: "flex-start", gap: 8, borderRadius: 8, padding: 10, marginTop: 12 },
+  testTipText: { flex: 1 },
   navRow: { flexDirection: "row", justifyContent: "space-between", marginTop: 16, marginBottom: 32 },
   completeCard: { marginTop: 8, marginBottom: 20 },
   completeContent: { alignItems: "center", gap: 8 },
