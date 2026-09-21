@@ -52,7 +52,8 @@
     "next": "Suivant",
     "arabicHelpButton": "Aide arabe",
     "backToQuestionButton": "Retour à la question",
-    "arabicReadOnly": "Traduction en lecture seule pour vous aider à comprendre. Répondez de l'autre côté."
+    "arabicReadOnly": "Traduction en lecture seule pour vous aider à comprendre. Répondez de l'autre côté.",
+    "whyOtherOptionsTitle": "Pourquoi les autres options sont incorrectes"
   },
   "exam": {
     "title": "Examen simulé",
