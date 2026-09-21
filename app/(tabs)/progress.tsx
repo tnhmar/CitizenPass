@@ -113,8 +113,10 @@ export default function ProgressScreen() {
                 }
               />
               <View style={styles.readinessTextBlock}>
-                <Text variant="titleMedium">{t(`progress.readiness.${readiness.level}.title`)}</Text>
-                <Text variant="bodySmall" style={{ color: theme.colors.onSurfaceVariant }}>
+                <Text variant="titleMedium" numberOfLines={2}>
+                  {t(`progress.readiness.${readiness.level}.title`)}
+                </Text>
+                <Text variant="bodySmall" numberOfLines={2} style={{ color: theme.colors.onSurfaceVariant }}>
                   {readiness.level === "insufficient-data"
                     ? t("progress.readiness.insufficient-data.detail", { count: readiness.attemptsUntilSignal })
                     : t("progress.readinessDetail", {
