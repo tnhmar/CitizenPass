@@ -13,12 +13,41 @@ export type SourceCitation = {
   reviewStatus: "verified" | "needs-review";
 };
 
+/**
+ * Per-option "why" - not just for the correct answer, but a category +
+ * explanation for every option, so a future UI could show why each wrong
+ * option is wrong, not only which one is right. Optional and additive:
+ * existing questions with no annotations still work exactly as before,
+ * falling back to LocalizedQuestion.explanation (which every question
+ * has). See docs/question-bank-comparison-report.md §4-5 for where this
+ * shape comes from and a data-quality pitfall to avoid when authoring
+ * it: a wrong option's `relevance` must never be "CORRECT_ANSWER" - that
+ * exact mislabeling was found in ~50% of the reference bank's true/false
+ * questions there, and `questionBankGovernance.test.ts` now rejects it
+ * (see the "option annotation integrity" describe block).
+ */
+export type OptionRelevance =
+  | "CORRECT_ANSWER"
+  | "PARTIALLY_CORRECT"
+  | "PLAUSIBLE_DISTRACTOR"
+  | "COMMON_MISCONCEPTION"
+  | "RELATED_FACT"
+  | "WRONG_CATEGORY"
+  | "ANACHRONISM";
+
+export type OptionAnnotation = {
+  relevance: OptionRelevance;
+  explanation: string;
+};
+
 export type LocalizedQuestion = {
   question: string;
   options: string[];
   correctIndex: number;
   explanation: string;
   source: SourceCitation;
+  /** Same length and order as `options`, when present. Optional - see OptionAnnotation. */
+  optionAnnotations?: OptionAnnotation[];
 };
 
 /**
@@ -55,6 +84,23 @@ export type Question = {
   fr: LocalizedQuestion;
   /** Present only for questions that have an Arabic translation so far (rollout is in progress). */
   ar?: ArabicTranslation;
+  /**
+   * Coarse/fine category labels, independent of `tags` and `chapterId` -
+   * carried over from a broader reference question bank's own taxonomy
+   * (e.g. topic: "history", subtopic: "confederation_year") rather than
+   * derived from this app's chapter/tag vocabulary. Optional: only
+   * questions authored from that source populate these; existing
+   * questions are unaffected. Not localized (internal identifiers, same
+   * rationale as `tags` - see humanizeTag in src/utils/progressStats.ts).
+   */
+  topic?: string;
+  subtopic?: string;
+  /** A short memorization aid, shown regardless of app language (an
+   *  internal study hint, not sourced/cited content). Optional. */
+  testTip?: string;
+  /** Ids of related questions (e.g. the reverse-lookup or a commonly
+   *  confused fact), for a future "related questions" UI. Optional. */
+  crossReferences?: string[];
 };
 
 export type AppLanguage = "en" | "fr";
