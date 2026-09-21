@@ -111,7 +111,7 @@
     "readinessDetail": "{{accuracy}} % de précision sur {{attempted}} des {{total}} chapitres",
     "readiness": {
       "insufficient-data": {
-        "title": "Continuez à pratiquer pour voir votre niveau de préparation",
+        "title": "Continuez à pratiquer",
         "detail_one": "Encore {{count}} question pour débloquer ceci",
         "detail_other": "Encore {{count}} questions pour débloquer ceci"
       },

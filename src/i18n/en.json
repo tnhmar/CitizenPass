@@ -111,7 +111,7 @@
     "readinessDetail": "{{accuracy}}% accuracy across {{attempted}} of {{total}} chapters",
     "readiness": {
       "insufficient-data": {
-        "title": "Keep practicing to see your readiness",
+        "title": "Keep practicing",
         "detail_one": "{{count}} more question to unlock this",
         "detail_other": "{{count}} more questions to unlock this"
       },
