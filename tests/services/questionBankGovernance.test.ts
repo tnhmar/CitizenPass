@@ -128,4 +128,46 @@ describe("question bank governance", () => {
     }
     expect(mismatches).toEqual([]);
   });
+
+  // optionAnnotations is optional (see src/types/index.ts) - most
+  // questions have none, and that's fine. But for any question that
+  // does carry them, this guards against the exact data-quality bug
+  // found in the reference 511-question bank during the bank-comparison
+  // review (docs/question-bank-comparison-report.md §5): ~50% of its
+  // true/false questions had the *wrong* option's relevance mislabeled
+  // "CORRECT_ANSWER" (a copy-paste artifact from the base fact's
+  // annotation). is_correct/correctIndex stayed right there - only the
+  // relevance label was wrong - but that's exactly the kind of subtle
+  // error that's easy to introduce when authoring annotations by hand
+  // and easy to miss in review, so it's worth a permanent, cheap check.
+  it("option annotations, where present, are internally consistent with correctIndex", () => {
+    const problems: string[] = [];
+    for (const question of questions) {
+      for (const language of ["en", "fr"] as const) {
+        const block = question[language];
+        const annotations = block.optionAnnotations;
+        if (!annotations) continue;
+
+        if (annotations.length !== block.options.length) {
+          problems.push(`${question.id} (${language}): ${annotations.length} annotations for ${block.options.length} options`);
+          continue;
+        }
+
+        annotations.forEach((annotation, index) => {
+          const shouldBeCorrect = index === block.correctIndex;
+          const isMarkedCorrect = annotation.relevance === "CORRECT_ANSWER";
+          if (shouldBeCorrect && !isMarkedCorrect) {
+            problems.push(`${question.id} (${language}): correct option ${index} is not annotated CORRECT_ANSWER`);
+          }
+          if (!shouldBeCorrect && isMarkedCorrect) {
+            problems.push(`${question.id} (${language}): wrong option ${index} is mislabeled CORRECT_ANSWER`);
+          }
+          if (!annotation.explanation || !annotation.explanation.trim()) {
+            problems.push(`${question.id} (${language}): option ${index} has an empty annotation explanation`);
+          }
+        });
+      }
+    }
+    expect(problems).toEqual([]);
+  });
 });
