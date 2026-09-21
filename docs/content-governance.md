@@ -114,6 +114,17 @@ example, `gov-levels-of-government-matching`, for the pattern this follows in pr
 10. Check for exact or near-duplicate questions already in the bank, including questions in the same `variantOf` family.
 11. Set `reviewStatus` to `verified` only once all the above steps pass; otherwise set it to `needs-review`.
 
+### Importing from the reference 511-question bank
+
+Some questions start from a fact identified in the external 511-question reference bank (see `docs/question-bank-comparison-report.md`) rather than from scratch. That bank is a *pointer to what to test*, not a source of ready-to-ship content — every step of the workflow above still applies in full, in particular steps 2-5 (the reference bank's own citations are PDF page numbers, which do not satisfy this project's citation bar). Additionally:
+
+- Map `question_type` (`multiple_choice`/`true_false`) to this project's `type`, and `difficulty` (`easy`/`medium`/`hard`) to this project's `1`/`2`/`3`.
+- `topic`/`subtopic` may be carried over as-is into the optional `Question.topic`/`subtopic` fields (see `src/types/index.ts`) - they're informal category labels, not citations, so they don't need re-verification.
+- Per-option `annotation.relevance` may be carried over into `optionAnnotations`, but never copy `annotation.explanation` text verbatim if it says "Not provided" or is a bare page citation (e.g. `"Page 8: '...'"`, ) - write a real, natural-language explanation, same bar as the main `explanation` field.
+- Before shipping, re-check every option's `relevance` against `correctIndex`: the reference bank has a confirmed bug (see `docs/question-bank-comparison-report.md` §5) where the *wrong* option's relevance is sometimes mislabeled `CORRECT_ANSWER`. `questionBankGovernance.test.ts`'s "option annotation integrity" check catches this, but verify by hand too.
+- A reference-bank distractor that isn't realistic exam-style (e.g. clearly a placeholder rather than something a real test might use) should be replaced, not preserved for fidelity's sake — see `applying-for-citizenship.json`'s `q-ac-001` for an example (the source bank's "Your favorite hockey team" distractor was swapped out).
+- `tags` should still be populated even when the reference bank left them empty for a question - the humanized `subtopic` value is normally a good tag on its own.
+
 ## Release rule
 
 Only questions with `reviewStatus: "verified"` may be included in the production question pool used by Practice Mode, Study chapter quizzes, and Simulated Exam Mode.

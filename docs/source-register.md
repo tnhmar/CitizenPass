@@ -30,12 +30,12 @@ This register tracks the official source documents used as the factual authority
 
 ## Content release log
 
-**"Questions" below counts distinct verified base facts (`learningObjectiveId`s with no `variantOf`), not the total question pool.** Each base fact normally yields 3-4 total questions once its angle variants (`-v2`, `-v3`, etc. — see `docs/content-governance.md`, "Variant question rules") are included, since variants inherit their base fact's citation rather than getting a new register entry. As of 2026-09-20 the actual total pool is 442 questions across 120 base facts (see `docs/deep-analysis-report.md` §1.1 for a snapshot of the per-chapter base/variant/total breakdown as of that report's date — the total here supersedes it, and predates both the `canadas-economy` and `applying-for-citizenship` chapters entirely) — this table intentionally still tracks base facts only, since that is the unit citation review actually happens at. One of the 115 (`gov-levels-of-government-matching`) is a matching/combination question rather than a single-fact base objective — see `docs/content-governance.md`, "Matching/combination questions" — it has no variants of its own.
+**"Questions" below counts distinct verified base facts (`learningObjectiveId`s with no `variantOf`), not the total question pool.** Each base fact normally yields 3-4 total questions once its angle variants (`-v2`, `-v3`, etc. — see `docs/content-governance.md`, "Variant question rules") are included, since variants inherit their base fact's citation rather than getting a new register entry. As of 2026-09-20 the actual total pool is 450 questions across 128 base facts (see `docs/deep-analysis-report.md` §1.1 for a snapshot of the per-chapter base/variant/total breakdown as of that report's date — the total here supersedes it by a wide margin) — this table intentionally still tracks base facts only, since that is the unit citation review actually happens at. One of the 115 (`gov-levels-of-government-matching`) is a matching/combination question rather than a single-fact base objective — see `docs/content-governance.md`, "Matching/combination questions" — it has no variants of its own.
 
 | Chapter ID | Guide chapter | Base facts | Review status | Verified |
 |---|---|---|---|---|
 | `applying-for-citizenship` | Applying for Citizenship / Demander la citoyenneté | 5 | verified | 2026-09-20 |
-| `rights-responsibilities` | Rights and Responsibilities of Citizenship / Les droits et responsabilités liés à la citoyenneté | 8 | verified | 2026-08-17 |
+| `rights-responsibilities` | Rights and Responsibilities of Citizenship / Les droits et responsabilités liés à la citoyenneté | 16 | verified | 2026-08-17 (+8 facts 2026-09-20) |
 | `who-we-are` | Who We Are / Qui sommes-nous, les Canadiens? | 8 | verified | 2026-08-17 |
 | `canadas-history` | Canada's History / L'histoire du Canada | 14 | verified | 2026-08-17 |
 | `modern-canada` | Modern Canada / Le Canada moderne | 15 | verified | 2026-08-17 |
@@ -46,7 +46,9 @@ This register tracks the official source documents used as the factual authority
 | `canadas-regions` | Canada's Regions / Les régions du Canada | 18 | verified | 2026-08-17 |
 | `canadas-economy` | Canada's Economy / L'économie canadienne | 7 | verified | 2026-09-10 |
 
-Question counts are intentionally not fixed per chapter — see `docs/content-governance.md`, "Question count policy" (critical section). `canadas-regions` is the richest chapter to date, earning the largest verified question set so far. `canadas-economy` has no release yet — see `docs/deep-analysis-report.md` §2.3.
+Question counts are intentionally not fixed per chapter — see `docs/content-governance.md`, "Question count policy" (critical section). `canadas-regions` remains the richest chapter to date. `canadas-economy` has no release yet — see `docs/deep-analysis-report.md` §2.3.
+
+`rights-responsibilities` was expanded on 2026-09-20 from 8 to 16 base facts (`q-rr-036` through `q-rr-043`), closing a real coverage gap: the chapter's own Study content already cited the four fundamental freedoms, three of the Charter's four additional rights (Aboriginal Peoples' Rights, Official Language Rights, Multiculturalism — Mobility Rights was already tested), the Equality of Women and Men section, and three of six citizenship responsibilities (obeying the law, protecting heritage/environment, helping others — jury duty, voting and military service were already tested), none of which had a question testing them. All eight new facts cite the same already-verified `rights-resonsibilities-citizenship.html` / `droits-responsabilites-citoyennete.html` pages (re-fetched live to confirm current wording), so no new source pages were added to this register.
 
 ## Time-sensitive facts excluded from `canadas-regions`
 
@@ -60,6 +62,10 @@ The live guide page contains an internally inconsistent, outdated reference to t
 
 - **"Canada is divided into 308 electoral districts."** The guide page itself was still live with this figure as of 2025-08-08. The real count was 338 from 2015 to the 2025 general election, and has been 343 since — the guide has not caught up with either change. No verified question states a specific riding count.
 - **"Three major political parties currently represented in the House of Commons."** Party standings change with every election.
+
+## `applying-for-citizenship` upgraded from the reference 511-question bank
+
+On 2026-09-21, all 5 `applying-for-citizenship` questions except `q-ac-004` (age exemption, which the reference bank doesn't cover) were rewritten in place using the reference 511-question bank's `Q358`/`Q359`/`Q360`/`Q485` as the starting point for which facts and distractors to test — see `docs/content-governance.md`, "Importing from the reference 511-question bank" for the workflow this followed. IDs, `learningObjectiveId`s, and question count are unchanged; citations were independently re-verified against the same two pages already on file for this chapter (English/French URLs below), not carried over from the reference bank's page-number citations. Each question now also carries `topic`/`subtopic` and per-option `optionAnnotations`, checked against `questionBankGovernance.test.ts`'s annotation-integrity rule.
 
 ## Time-sensitive nuance handled differently in `applying-for-citizenship`
 
