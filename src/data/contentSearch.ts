@@ -1,6 +1,7 @@
 import type { AppLanguage } from "../types";
 import { getChapterList, getChapterContent, getChapterManifestEntry, getChapterTitle } from "./contentLoader";
-import { getAllVerifiedQuestions } from "./questionLoader";
+import { getAllQuestions } from "./questionLoader";
+import { getLocalizedQuestion } from "../utils/questionDisplay";
 
 export type SearchResultType = "study" | "practice";
 
@@ -54,14 +55,16 @@ export function searchContent(query: string, language: AppLanguage): SearchResul
     }
   }
 
-  const questionMatches = getAllVerifiedQuestions().filter((question) => question[language].question.toLowerCase().includes(needle));
+  const questionMatches = getAllQuestions().filter((question) =>
+    getLocalizedQuestion(question, language).question.toLowerCase().includes(needle)
+  );
   for (const question of questionMatches.slice(0, MAX_PRACTICE_RESULTS)) {
     const chapter = getChapterManifestEntry(question.chapterId);
     results.push({
       type: "practice",
       chapterId: question.chapterId,
       chapterTitle: chapter ? getChapterTitle(chapter, language) : question.chapterId,
-      snippet: question[language].question,
+      snippet: getLocalizedQuestion(question, language).question,
       questionId: question.id,
     });
   }
