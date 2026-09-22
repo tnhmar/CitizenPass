@@ -1,15 +1,26 @@
+/**
+ * Citation completeness scales with review status: a "verified" question
+ * must have sourceUrl/excerpt/verifiedAt (this project's original bar -
+ * a live canada.ca page, quoted). A "needs-review" question - notably,
+ * everything freshly imported from the reference 511-question bank,
+ * which only ever provided a PDF page number, not a canada.ca URL - may
+ * have only pdfPage/paragraph populated instead. See
+ * docs/content-governance.md, "Importing from the reference
+ * 511-question bank" for the workflow that upgrades a question from one
+ * state to the other.
+ */
 export type SourceCitation = {
   guide: "Discover Canada" | "Découvrir le Canada";
   language: "en" | "fr";
-  edition: string;
-  sourceUrl: string;
-  chapter: string;
-  section: string;
+  edition?: string;
+  sourceUrl?: string;
+  chapter?: string;
+  section?: string;
   printedPage?: number;
   pdfPage?: number;
   paragraph?: number;
-  excerpt: string;
-  verifiedAt: string;
+  excerpt?: string;
+  verifiedAt?: string;
   reviewStatus: "verified" | "needs-review";
 };
 
@@ -81,7 +92,16 @@ export type Question = {
   variantOf?: string;
   difficulty: 1 | 2 | 3;
   en: LocalizedQuestion;
-  fr: LocalizedQuestion;
+  /**
+   * Optional as of the reference-511-bank import: the app is running
+   * English-only for now (see docs/content-governance.md and the
+   * "French sourcing" phase in docs/question-bank-comparison-report.md).
+   * UI code must not assume this exists - use
+   * getLocalizedQuestion(question, language) from
+   * src/utils/questionDisplay.ts, which falls back to `en`, rather than
+   * indexing `question[language]` directly.
+   */
+  fr?: LocalizedQuestion;
   /** Present only for questions that have an Arabic translation so far (rollout is in progress). */
   ar?: ArabicTranslation;
   /**
