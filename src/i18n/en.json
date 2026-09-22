@@ -1,7 +1,8 @@
 {
   "common": {
     "appName": "CitizenPass",
-    "disclaimer": "CitizenPass is an independent educational tool and is not affiliated with, endorsed by, or sponsored by the Government of Canada."
+    "disclaimer": "CitizenPass is an independent educational tool and is not affiliated with, endorsed by, or sponsored by the Government of Canada.",
+    "citationNeedsReview": "Not yet independently verified against the live guide."
   },
   "home": {
     "title": "Home",

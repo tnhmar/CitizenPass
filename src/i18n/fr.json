@@ -1,7 +1,8 @@
 {
   "common": {
     "appName": "CitizenPass",
-    "disclaimer": "CitizenPass est un outil éducatif indépendant qui n'est pas affilié, approuvé ou parrainé par le gouvernement du Canada."
+    "disclaimer": "CitizenPass est un outil éducatif indépendant qui n'est pas affilié, approuvé ou parrainé par le gouvernement du Canada.",
+    "citationNeedsReview": "Pas encore vérifié de manière indépendante par rapport au guide en ligne."
   },
   "home": {
     "title": "Accueil",
