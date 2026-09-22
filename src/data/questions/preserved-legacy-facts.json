@@ -1,0 +1,832 @@
+[
+  {
+    "id": "q-ac-004",
+    "chapterId": "applying-for-citizenship",
+    "type": "true-false",
+    "tags": [
+      "citizenship-test",
+      "age-exemption"
+    ],
+    "learningObjectiveId": "ac-age-exemption",
+    "difficulty": 2,
+    "en": {
+      "question": "Applicants who are 55 years of age or older are required to write the citizenship knowledge test.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correctIndex": 1,
+      "explanation": "Adult applicants 55 years of age and over do not need to write the citizenship test.",
+      "source": {
+        "guide": "Discover Canada",
+        "language": "en",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/applying-citizenship.html",
+        "chapter": "Applying for Citizenship",
+        "section": "About the Citizenship Test",
+        "excerpt": "Adult applicants 55 years of age and over do not need to write the citizenship test.",
+        "verifiedAt": "2026-09-20",
+        "reviewStatus": "verified"
+      }
+    },
+    "fr": {
+      "question": "Les candidats âgés de 55 ans ou plus sont tenus de passer l'examen de connaissances pour la citoyenneté.",
+      "options": [
+        "Vrai",
+        "Faux"
+      ],
+      "correctIndex": 1,
+      "explanation": "Les candidats adultes qui ont 55 ans ou plus n'ont pas besoin de passer l'examen pour la citoyenneté.",
+      "source": {
+        "guide": "Découvrir le Canada",
+        "language": "fr",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/demander-citoyennete.html",
+        "chapter": "Demander la citoyenneté",
+        "section": "Renseignements sur l'examen pour la citoyenneté",
+        "excerpt": "Les candidats adultes qui ont 55 ans ou plus n'ont pas besoin de passer l'examen pour la citoyenneté.",
+        "verifiedAt": "2026-09-20",
+        "reviewStatus": "verified"
+      }
+    },
+    "ar": {
+      "question": "يُطلب من المتقدمين الذين تبلغ أعمارهم 55 عامًا أو أكثر أداء امتحان معرفة الجنسية.",
+      "options": [
+        "صحيح",
+        "خطأ"
+      ],
+      "explanation": "لا يحتاج المتقدمون البالغون الذين تبلغ أعمارهم 55 عامًا فما فوق إلى أداء امتحان الجنسية."
+    }
+  },
+  {
+    "id": "q-mc-001",
+    "chapterId": "modern-canada",
+    "type": "multiple-choice",
+    "tags": [
+      "economy",
+      "oil"
+    ],
+    "learningObjectiveId": "mc-oil-discovery-alberta",
+    "difficulty": 2,
+    "en": {
+      "question": "In what year was oil discovered in Alberta, beginning Canada's modern energy industry?",
+      "options": [
+        "1947",
+        "1927",
+        "1965",
+        "1970"
+      ],
+      "correctIndex": 0,
+      "explanation": "The guide states the discovery of oil in Alberta in 1947 began Canada's modern energy industry.",
+      "source": {
+        "guide": "Discover Canada",
+        "language": "en",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/modern-canada.html",
+        "chapter": "Modern Canada",
+        "section": "Trade and Economic Growth",
+        "excerpt": "The discovery of oil in Alberta in 1947 began Canada’s modern energy industry.",
+        "verifiedAt": "2026-08-17",
+        "reviewStatus": "verified"
+      }
+    },
+    "fr": {
+      "question": "En quelle année le pétrole a-t-il été découvert en Alberta ?",
+      "options": [
+        "1947",
+        "1927",
+        "1965",
+        "1970"
+      ],
+      "correctIndex": 0,
+      "explanation": "La découverte de gisements de pétrole en Alberta en 1947 lance l'industrie énergétique moderne du Canada.",
+      "source": {
+        "guide": "Découvrir le Canada",
+        "language": "fr",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/canada-moderne.html",
+        "chapter": "Le Canada moderne",
+        "section": "Commerce et croissance économique",
+        "excerpt": "La découverte de gisements de pétrole en Alberta en 1947 lance l'industrie énergétique moderne du Canada.",
+        "verifiedAt": "2026-08-17",
+        "reviewStatus": "verified"
+      }
+    },
+    "ar": {
+      "question": "في أي عام اكتُشف النفط في ألبرتا، لتبدأ صناعة الطاقة الحديثة في كندا؟",
+      "options": [
+        "1947",
+        "1927",
+        "1965",
+        "1970"
+      ],
+      "explanation": "ينص الدليل على أن اكتشاف النفط في ألبرتا عام 1947 بدأ صناعة الطاقة الحديثة في كندا."
+    }
+  },
+  {
+    "id": "q-mc-011",
+    "chapterId": "modern-canada",
+    "type": "multiple-choice",
+    "tags": [
+      "sports",
+      "inventions"
+    ],
+    "learningObjectiveId": "mc-basketball-naismith",
+    "difficulty": 1,
+    "en": {
+      "question": "Which Canadian invented basketball, in 1891?",
+      "options": [
+        "James Naismith",
+        "Joseph-Armand Bombardier",
+        "Alexander Graham Bell",
+        "Sir Sandford Fleming"
+      ],
+      "correctIndex": 0,
+      "explanation": "Basketball was invented by Canadian James Naismith in 1891.",
+      "source": {
+        "guide": "Discover Canada",
+        "language": "en",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/modern-canada.html",
+        "chapter": "Modern Canada",
+        "section": "Arts and Culture in Canada",
+        "excerpt": "Basketball was invented by Canadian James Naismith in 1891.",
+        "verifiedAt": "2026-08-17",
+        "reviewStatus": "verified"
+      }
+    },
+    "fr": {
+      "question": "Quel Canadien a inventé le basket-ball, en 1891 ?",
+      "options": [
+        "James Naismith",
+        "Joseph-Armand Bombardier",
+        "Alexander Graham Bell",
+        "Sir Sandford Fleming"
+      ],
+      "correctIndex": 0,
+      "explanation": "C'est le Canadien James Naismith qui invente le basket-ball en 1891.",
+      "source": {
+        "guide": "Découvrir le Canada",
+        "language": "fr",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/canada-moderne.html",
+        "chapter": "Le Canada moderne",
+        "section": "Les arts et la culture au Canada",
+        "excerpt": "C'est le Canadien James Naismith qui invente le basket-ball en 1891.",
+        "verifiedAt": "2026-08-17",
+        "reviewStatus": "verified"
+      }
+    },
+    "ar": {
+      "question": "أي كندي اخترع كرة السلة، عام 1891؟",
+      "options": [
+        "جيمس نايسميث",
+        "جوزيف أرماند بومباردييه",
+        "ألكسندر غراهام بيل",
+        "السير سانفورد فليمنغ"
+      ],
+      "explanation": "اخترع الكندي جيمس نايسميث كرة السلة عام 1891."
+    }
+  },
+  {
+    "id": "q-mc-014",
+    "chapterId": "modern-canada",
+    "type": "multiple-choice",
+    "tags": [
+      "inventions",
+      "medicine"
+    ],
+    "learningObjectiveId": "mc-cardiac-pacemaker-hopps",
+    "difficulty": 2,
+    "en": {
+      "question": "Which Canadian invented the first cardiac pacemaker?",
+      "options": [
+        "Dr. John A. Hopps",
+        "Dr. Wilder Penfield",
+        "Sir Frederick Banting",
+        "Charles Best"
+      ],
+      "correctIndex": 0,
+      "explanation": "Dr. John A. Hopps invented the first cardiac pacemaker.",
+      "source": {
+        "guide": "Discover Canada",
+        "language": "en",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/modern-canada.html",
+        "chapter": "Modern Canada",
+        "section": "Great Canadian Discoveries and Inventions",
+        "excerpt": "Dr. John A. Hopps — invented the first cardiac pacemaker, used today to save the lives of people with heart disorders.",
+        "verifiedAt": "2026-08-17",
+        "reviewStatus": "verified"
+      }
+    },
+    "fr": {
+      "question": "Quel Canadien a inventé le premier stimulateur cardiaque ?",
+      "options": [
+        "Le Dr John A. Hopps",
+        "Le Dr Wilder Penfield",
+        "Sir Frederick Banting",
+        "Charles Best"
+      ],
+      "correctIndex": 0,
+      "explanation": "Le Dr John A. Hopps invente le premier stimulateur cardiaque.",
+      "source": {
+        "guide": "Découvrir le Canada",
+        "language": "fr",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/canada-moderne.html",
+        "chapter": "Le Canada moderne",
+        "section": "Grandes découvertes et inventions canadiennes",
+        "excerpt": "Le Dr John A. Hopps invente le premier stimulateur cardiaque, utilisé aujourd'hui pour sauver la vie de personnes atteintes de problèmes cardiaques.",
+        "verifiedAt": "2026-08-17",
+        "reviewStatus": "verified"
+      }
+    },
+    "ar": {
+      "question": "أي كندي اخترع أول جهاز تنظيم ضربات القلب؟",
+      "options": [
+        "الدكتور جون أ. هوبس",
+        "الدكتور وايلدر بنفيلد",
+        "السير فريدريك بانتينغ",
+        "تشارلز بست"
+      ],
+      "explanation": "اخترع الدكتور جون أ. هوبس أول جهاز تنظيم ضربات القلب."
+    }
+  },
+  {
+    "id": "q-mc-016",
+    "chapterId": "modern-canada",
+    "type": "multiple-choice",
+    "tags": [
+      "economy",
+      "oil"
+    ],
+    "learningObjectiveId": "mc-oil-discovery-alberta-v2",
+    "variantOf": "mc-oil-discovery-alberta",
+    "difficulty": 2,
+    "en": {
+      "question": "In which province was oil discovered in 1947, beginning Canada's modern energy industry?",
+      "options": [
+        "Alberta",
+        "Saskatchewan",
+        "Ontario",
+        "British Columbia"
+      ],
+      "correctIndex": 0,
+      "explanation": "Oil was discovered in Alberta in 1947, beginning Canada's modern energy industry.",
+      "source": {
+        "guide": "Discover Canada",
+        "language": "en",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/modern-canada.html",
+        "chapter": "Modern Canada",
+        "section": "Trade and Economic Growth",
+        "excerpt": "The discovery of oil in Alberta in 1947 began Canada’s modern energy industry.",
+        "verifiedAt": "2026-08-17",
+        "reviewStatus": "verified"
+      }
+    },
+    "fr": {
+      "question": "Dans quelle province a-t-on découvert du pétrole en 1947, lançant l'industrie énergétique moderne du Canada ?",
+      "options": [
+        "L'Alberta",
+        "La Saskatchewan",
+        "L'Ontario",
+        "La Colombie-Britannique"
+      ],
+      "correctIndex": 0,
+      "explanation": "Le pétrole a été découvert en Alberta en 1947, lançant l'industrie énergétique moderne du Canada.",
+      "source": {
+        "guide": "Découvrir le Canada",
+        "language": "fr",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/canada-moderne.html",
+        "chapter": "Le Canada moderne",
+        "section": "Commerce et croissance économique",
+        "excerpt": "La découverte de gisements de pétrole en Alberta en 1947 lance l'industrie énergétique moderne du Canada.",
+        "verifiedAt": "2026-08-17",
+        "reviewStatus": "verified"
+      }
+    },
+    "ar": {
+      "question": "في أي مقاطعة اكتُشف النفط عام 1947، لتبدأ صناعة الطاقة الحديثة في كندا؟",
+      "options": [
+        "ألبرتا",
+        "ساسكاتشوان",
+        "أونتاريو",
+        "كولومبيا البريطانية"
+      ],
+      "explanation": "اكتُشف النفط في ألبرتا عام 1947، لتبدأ صناعة الطاقة الحديثة في كندا."
+    }
+  },
+  {
+    "id": "q-mc-017",
+    "chapterId": "modern-canada",
+    "type": "multiple-choice",
+    "tags": [
+      "economy",
+      "oil"
+    ],
+    "learningObjectiveId": "mc-oil-discovery-alberta-v3",
+    "variantOf": "mc-oil-discovery-alberta",
+    "difficulty": 2,
+    "en": {
+      "question": "The 1947 discovery of oil in Alberta marked the beginning of what for Canada?",
+      "options": [
+        "Canada's modern energy industry",
+        "Canada's mining industry",
+        "The fur trade",
+        "The automobile industry"
+      ],
+      "correctIndex": 0,
+      "explanation": "The discovery marked the beginning of Canada's modern energy industry.",
+      "source": {
+        "guide": "Discover Canada",
+        "language": "en",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/modern-canada.html",
+        "chapter": "Modern Canada",
+        "section": "Trade and Economic Growth",
+        "excerpt": "The discovery of oil in Alberta in 1947 began Canada’s modern energy industry.",
+        "verifiedAt": "2026-08-17",
+        "reviewStatus": "verified"
+      }
+    },
+    "fr": {
+      "question": "La découverte de pétrole en Alberta en 1947 a marqué le début de quoi pour le Canada ?",
+      "options": [
+        "L'industrie énergétique moderne du Canada",
+        "L'industrie minière du Canada",
+        "La traite des fourrures",
+        "L'industrie automobile"
+      ],
+      "correctIndex": 0,
+      "explanation": "Cette découverte a marqué le début de l'industrie énergétique moderne du Canada.",
+      "source": {
+        "guide": "Découvrir le Canada",
+        "language": "fr",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/canada-moderne.html",
+        "chapter": "Le Canada moderne",
+        "section": "Commerce et croissance économique",
+        "excerpt": "La découverte de gisements de pétrole en Alberta en 1947 lance l'industrie énergétique moderne du Canada.",
+        "verifiedAt": "2026-08-17",
+        "reviewStatus": "verified"
+      }
+    },
+    "ar": {
+      "question": "اكتشاف النفط في ألبرتا عام 1947 كان بداية ماذا بالنسبة لكندا؟",
+      "options": [
+        "صناعة الطاقة الحديثة في كندا",
+        "صناعة التعدين في كندا",
+        "تجارة الفراء",
+        "صناعة السيارات"
+      ],
+      "explanation": "شكّل الاكتشاف بداية صناعة الطاقة الحديثة في كندا."
+    }
+  },
+  {
+    "id": "q-mc-018",
+    "chapterId": "modern-canada",
+    "type": "true-false",
+    "tags": [
+      "economy",
+      "oil"
+    ],
+    "learningObjectiveId": "mc-oil-discovery-alberta-v4",
+    "variantOf": "mc-oil-discovery-alberta",
+    "difficulty": 2,
+    "en": {
+      "question": "The discovery of oil in Saskatchewan in 1947 began Canada's modern energy industry.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correctIndex": 1,
+      "explanation": "False. It was Alberta, not Saskatchewan, where oil was discovered in 1947, beginning Canada's modern energy industry.",
+      "source": {
+        "guide": "Discover Canada",
+        "language": "en",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/modern-canada.html",
+        "chapter": "Modern Canada",
+        "section": "Trade and Economic Growth",
+        "excerpt": "The discovery of oil in Alberta in 1947 began Canada’s modern energy industry.",
+        "verifiedAt": "2026-08-17",
+        "reviewStatus": "verified"
+      }
+    },
+    "fr": {
+      "question": "La découverte de pétrole en Saskatchewan en 1947 a lancé l'industrie énergétique moderne du Canada.",
+      "options": [
+        "Vrai",
+        "Faux"
+      ],
+      "correctIndex": 1,
+      "explanation": "Faux. C'est en Alberta, et non en Saskatchewan, que le pétrole a été découvert en 1947, lançant l'industrie énergétique moderne du Canada.",
+      "source": {
+        "guide": "Découvrir le Canada",
+        "language": "fr",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/canada-moderne.html",
+        "chapter": "Le Canada moderne",
+        "section": "Commerce et croissance économique",
+        "excerpt": "La découverte de gisements de pétrole en Alberta en 1947 lance l'industrie énergétique moderne du Canada.",
+        "verifiedAt": "2026-08-17",
+        "reviewStatus": "verified"
+      }
+    },
+    "ar": {
+      "question": "اكتشاف النفط في ساسكاتشوان عام 1947 بدأ صناعة الطاقة الحديثة في كندا.",
+      "options": [
+        "صحيح",
+        "خطأ"
+      ],
+      "explanation": "خطأ. اكتُشف النفط في ألبرتا، وليس ساسكاتشوان، عام 1947، لتبدأ صناعة الطاقة الحديثة في كندا."
+    }
+  },
+  {
+    "id": "q-mc-046",
+    "chapterId": "modern-canada",
+    "type": "multiple-choice",
+    "tags": [
+      "sports",
+      "inventions"
+    ],
+    "learningObjectiveId": "mc-basketball-naismith-v2",
+    "variantOf": "mc-basketball-naismith",
+    "difficulty": 1,
+    "en": {
+      "question": "What did Canadian James Naismith invent in 1891?",
+      "options": [
+        "Basketball",
+        "The snowmobile",
+        "The telephone",
+        "Standard time zones"
+      ],
+      "correctIndex": 0,
+      "explanation": "James Naismith invented basketball in 1891.",
+      "source": {
+        "guide": "Discover Canada",
+        "language": "en",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/modern-canada.html",
+        "chapter": "Modern Canada",
+        "section": "Arts and Culture in Canada",
+        "excerpt": "Basketball was invented by Canadian James Naismith in 1891.",
+        "verifiedAt": "2026-08-17",
+        "reviewStatus": "verified"
+      }
+    },
+    "fr": {
+      "question": "Qu'a inventé le Canadien James Naismith en 1891 ?",
+      "options": [
+        "Le basket-ball",
+        "La motoneige",
+        "Le téléphone",
+        "Les fuseaux horaires"
+      ],
+      "correctIndex": 0,
+      "explanation": "James Naismith a inventé le basket-ball en 1891.",
+      "source": {
+        "guide": "Découvrir le Canada",
+        "language": "fr",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/canada-moderne.html",
+        "chapter": "Le Canada moderne",
+        "section": "Les arts et la culture au Canada",
+        "excerpt": "C'est le Canadien James Naismith qui invente le basket-ball en 1891.",
+        "verifiedAt": "2026-08-17",
+        "reviewStatus": "verified"
+      }
+    },
+    "ar": {
+      "question": "ماذا اخترع الكندي جيمس نايسميث عام 1891؟",
+      "options": [
+        "كرة السلة",
+        "الدراجة الثلجية",
+        "الهاتف",
+        "التوقيت الزمني الموحد"
+      ],
+      "explanation": "اخترع جيمس نايسميث كرة السلة عام 1891."
+    }
+  },
+  {
+    "id": "q-mc-047",
+    "chapterId": "modern-canada",
+    "type": "multiple-choice",
+    "tags": [
+      "sports",
+      "inventions"
+    ],
+    "learningObjectiveId": "mc-basketball-naismith-v3",
+    "variantOf": "mc-basketball-naismith",
+    "difficulty": 1,
+    "en": {
+      "question": "In what year did Canadian James Naismith invent basketball?",
+      "options": [
+        "1891",
+        "1901",
+        "1867",
+        "1917"
+      ],
+      "correctIndex": 0,
+      "explanation": "Naismith invented basketball in 1891.",
+      "source": {
+        "guide": "Discover Canada",
+        "language": "en",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/modern-canada.html",
+        "chapter": "Modern Canada",
+        "section": "Arts and Culture in Canada",
+        "excerpt": "Basketball was invented by Canadian James Naismith in 1891.",
+        "verifiedAt": "2026-08-17",
+        "reviewStatus": "verified"
+      }
+    },
+    "fr": {
+      "question": "En quelle année le Canadien James Naismith a-t-il inventé le basket-ball ?",
+      "options": [
+        "1891",
+        "1901",
+        "1867",
+        "1917"
+      ],
+      "correctIndex": 0,
+      "explanation": "Naismith a inventé le basket-ball en 1891.",
+      "source": {
+        "guide": "Découvrir le Canada",
+        "language": "fr",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/canada-moderne.html",
+        "chapter": "Le Canada moderne",
+        "section": "Les arts et la culture au Canada",
+        "excerpt": "C'est le Canadien James Naismith qui invente le basket-ball en 1891.",
+        "verifiedAt": "2026-08-17",
+        "reviewStatus": "verified"
+      }
+    },
+    "ar": {
+      "question": "في أي عام اخترع الكندي جيمس نايسميث كرة السلة؟",
+      "options": [
+        "1891",
+        "1901",
+        "1867",
+        "1917"
+      ],
+      "explanation": "اخترع نايسميث كرة السلة عام 1891."
+    }
+  },
+  {
+    "id": "q-mc-048",
+    "chapterId": "modern-canada",
+    "type": "true-false",
+    "tags": [
+      "sports",
+      "inventions"
+    ],
+    "learningObjectiveId": "mc-basketball-naismith-v4",
+    "variantOf": "mc-basketball-naismith",
+    "difficulty": 1,
+    "en": {
+      "question": "Basketball was invented by Canadian James Naismith in 1891.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correctIndex": 0,
+      "explanation": "True. Basketball was invented by Canadian James Naismith in 1891.",
+      "source": {
+        "guide": "Discover Canada",
+        "language": "en",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/modern-canada.html",
+        "chapter": "Modern Canada",
+        "section": "Arts and Culture in Canada",
+        "excerpt": "Basketball was invented by Canadian James Naismith in 1891.",
+        "verifiedAt": "2026-08-17",
+        "reviewStatus": "verified"
+      }
+    },
+    "fr": {
+      "question": "Le basket-ball a été inventé par le Canadien James Naismith en 1891.",
+      "options": [
+        "Vrai",
+        "Faux"
+      ],
+      "correctIndex": 0,
+      "explanation": "Vrai. Le basket-ball a été inventé par le Canadien James Naismith en 1891.",
+      "source": {
+        "guide": "Découvrir le Canada",
+        "language": "fr",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/canada-moderne.html",
+        "chapter": "Le Canada moderne",
+        "section": "Les arts et la culture au Canada",
+        "excerpt": "C'est le Canadien James Naismith qui invente le basket-ball en 1891.",
+        "verifiedAt": "2026-08-17",
+        "reviewStatus": "verified"
+      }
+    },
+    "ar": {
+      "question": "اخترع الكندي جيمس نايسميث كرة السلة عام 1891.",
+      "options": [
+        "صحيح",
+        "خطأ"
+      ],
+      "explanation": "صحيح. اخترع الكندي جيمس نايسميث كرة السلة عام 1891."
+    }
+  },
+  {
+    "id": "q-mc-054",
+    "chapterId": "modern-canada",
+    "type": "multiple-choice",
+    "tags": [
+      "inventions",
+      "medicine"
+    ],
+    "learningObjectiveId": "mc-cardiac-pacemaker-hopps-v2",
+    "variantOf": "mc-cardiac-pacemaker-hopps",
+    "difficulty": 2,
+    "en": {
+      "question": "What did Dr. John A. Hopps invent?",
+      "options": [
+        "The first cardiac pacemaker",
+        "Basketball",
+        "The snowmobile",
+        "Standard time zones"
+      ],
+      "correctIndex": 0,
+      "explanation": "Dr. John A. Hopps invented the first cardiac pacemaker.",
+      "source": {
+        "guide": "Discover Canada",
+        "language": "en",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/modern-canada.html",
+        "chapter": "Modern Canada",
+        "section": "Great Canadian Discoveries and Inventions",
+        "excerpt": "Dr. John A. Hopps — invented the first cardiac pacemaker, used today to save the lives of people with heart disorders.",
+        "verifiedAt": "2026-08-17",
+        "reviewStatus": "verified"
+      }
+    },
+    "fr": {
+      "question": "Qu'a inventé le Dr John A. Hopps ?",
+      "options": [
+        "Le premier stimulateur cardiaque",
+        "Le basket-ball",
+        "La motoneige",
+        "Les fuseaux horaires"
+      ],
+      "correctIndex": 0,
+      "explanation": "Le Dr John A. Hopps a inventé le premier stimulateur cardiaque.",
+      "source": {
+        "guide": "Découvrir le Canada",
+        "language": "fr",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/canada-moderne.html",
+        "chapter": "Le Canada moderne",
+        "section": "Grandes découvertes et inventions canadiennes",
+        "excerpt": "Le Dr John A. Hopps invente le premier stimulateur cardiaque, utilisé aujourd'hui pour sauver la vie de personnes atteintes de problèmes cardiaques.",
+        "verifiedAt": "2026-08-17",
+        "reviewStatus": "verified"
+      }
+    },
+    "ar": {
+      "question": "ماذا اخترع الدكتور جون أ. هوبس؟",
+      "options": [
+        "أول جهاز تنظيم ضربات القلب",
+        "كرة السلة",
+        "الدراجة الثلجية",
+        "التوقيت الزمني الموحد"
+      ],
+      "explanation": "اخترع الدكتور جون أ. هوبس أول جهاز تنظيم ضربات القلب."
+    }
+  },
+  {
+    "id": "q-mc-055",
+    "chapterId": "modern-canada",
+    "type": "multiple-choice",
+    "tags": [
+      "inventions",
+      "medicine"
+    ],
+    "learningObjectiveId": "mc-cardiac-pacemaker-hopps-v3",
+    "variantOf": "mc-cardiac-pacemaker-hopps",
+    "difficulty": 2,
+    "en": {
+      "question": "Dr. John A. Hopps' invention, the cardiac pacemaker, is used today to do what?",
+      "options": [
+        "Save the lives of people with heart disorders",
+        "Regulate body temperature",
+        "Monitor blood sugar",
+        "Treat respiratory illness"
+      ],
+      "correctIndex": 0,
+      "explanation": "The cardiac pacemaker is used today to save the lives of people with heart disorders.",
+      "source": {
+        "guide": "Discover Canada",
+        "language": "en",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/modern-canada.html",
+        "chapter": "Modern Canada",
+        "section": "Great Canadian Discoveries and Inventions",
+        "excerpt": "Dr. John A. Hopps — invented the first cardiac pacemaker, used today to save the lives of people with heart disorders.",
+        "verifiedAt": "2026-08-17",
+        "reviewStatus": "verified"
+      }
+    },
+    "fr": {
+      "question": "Le stimulateur cardiaque inventé par le Dr John A. Hopps sert aujourd'hui à faire quoi ?",
+      "options": [
+        "Sauver la vie de personnes atteintes de troubles cardiaques",
+        "Réguler la température corporelle",
+        "Surveiller la glycémie",
+        "Traiter les maladies respiratoires"
+      ],
+      "correctIndex": 0,
+      "explanation": "Le stimulateur cardiaque sert aujourd'hui à sauver la vie de personnes atteintes de troubles cardiaques.",
+      "source": {
+        "guide": "Découvrir le Canada",
+        "language": "fr",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/canada-moderne.html",
+        "chapter": "Le Canada moderne",
+        "section": "Grandes découvertes et inventions canadiennes",
+        "excerpt": "Le Dr John A. Hopps invente le premier stimulateur cardiaque, utilisé aujourd'hui pour sauver la vie de personnes atteintes de problèmes cardiaques.",
+        "verifiedAt": "2026-08-17",
+        "reviewStatus": "verified"
+      }
+    },
+    "ar": {
+      "question": "اختراع الدكتور جون أ. هوبس، جهاز تنظيم ضربات القلب، يُستخدم اليوم لفعل ماذا؟",
+      "options": [
+        "إنقاذ حياة المصابين باضطرابات القلب",
+        "تنظيم حرارة الجسم",
+        "مراقبة سكر الدم",
+        "علاج أمراض الجهاز التنفسي"
+      ],
+      "explanation": "يُستخدم جهاز تنظيم ضربات القلب اليوم لإنقاذ حياة المصابين باضطرابات القلب."
+    }
+  },
+  {
+    "id": "q-mc-056",
+    "chapterId": "modern-canada",
+    "type": "true-false",
+    "tags": [
+      "inventions",
+      "medicine"
+    ],
+    "learningObjectiveId": "mc-cardiac-pacemaker-hopps-v4",
+    "variantOf": "mc-cardiac-pacemaker-hopps",
+    "difficulty": 2,
+    "en": {
+      "question": "Sir Sandford Fleming invented the first cardiac pacemaker, used today to save the lives of people with heart disorders.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correctIndex": 1,
+      "explanation": "False. It was Dr. John A. Hopps, not Sir Sandford Fleming, who invented the first cardiac pacemaker. Fleming invented the world system of standard time zones.",
+      "source": {
+        "guide": "Discover Canada",
+        "language": "en",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/modern-canada.html",
+        "chapter": "Modern Canada",
+        "section": "Great Canadian Discoveries and Inventions",
+        "excerpt": "Dr. John A. Hopps — invented the first cardiac pacemaker, used today to save the lives of people with heart disorders.",
+        "verifiedAt": "2026-08-17",
+        "reviewStatus": "verified"
+      }
+    },
+    "fr": {
+      "question": "Sir Sandford Fleming a inventé le premier stimulateur cardiaque, utilisé aujourd'hui pour sauver la vie de personnes atteintes de troubles cardiaques.",
+      "options": [
+        "Vrai",
+        "Faux"
+      ],
+      "correctIndex": 1,
+      "explanation": "Faux. C'est le Dr John A. Hopps, et non Sir Sandford Fleming, qui a inventé le premier stimulateur cardiaque. Fleming a inventé le système mondial des fuseaux horaires.",
+      "source": {
+        "guide": "Découvrir le Canada",
+        "language": "fr",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/canada-moderne.html",
+        "chapter": "Le Canada moderne",
+        "section": "Grandes découvertes et inventions canadiennes",
+        "excerpt": "Le Dr John A. Hopps invente le premier stimulateur cardiaque, utilisé aujourd'hui pour sauver la vie de personnes atteintes de problèmes cardiaques.",
+        "verifiedAt": "2026-08-17",
+        "reviewStatus": "verified"
+      }
+    },
+    "ar": {
+      "question": "اخترع السير سانفورد فليمنغ أول جهاز تنظيم ضربات القلب، المستخدم اليوم لإنقاذ حياة المصابين باضطرابات القلب.",
+      "options": [
+        "صحيح",
+        "خطأ"
+      ],
+      "explanation": "خطأ. الدكتور جون أ. هوبس، وليس السير سانفورد فليمنغ، هو من اخترع أول جهاز تنظيم ضربات القلب. فليمنغ اخترع النظام العالمي للتوقيت الزمني الموحد."
+    }
+  }
+]
