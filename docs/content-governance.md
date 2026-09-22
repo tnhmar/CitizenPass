@@ -4,6 +4,16 @@
 
 This document defines how study content and practice questions are sourced, cited, reviewed, and released in CitizenPass.
 
+## Current state (as of 2026-09-21)
+
+As of this date, the practice/exam question pool is the reference 511-question bank, adapted programmatically (see `src/data/questionLoader.ts`) rather than hand-authored chapter by chapter. This is a deliberate, explicit decision — not a lapse of the policy below — made in three phases:
+
+1. **Done:** integrate the reference bank as-is, English only, code adjusted to run on it (optional French, citation shape that accepts a PDF page reference instead of a live URL, `reviewStatus: "needs-review"` by default). A small number of facts (13 questions across 4 base facts) were preserved from this project's previous hand-verified bank because the reference bank doesn't cover them at all — see "Reference-bank gap facts" below.
+2. **Next:** French, sourced independently from the live French guide (never a machine translation of the English text) - the same bar this document always held EN/FR to. This is what upgrades a question from `needs-review` to `verified` (see the updated Release rule below).
+3. **Last:** Arabic, machine-translated - the comprehension-aid bar this project has always used for Arabic (see `ArabicTranslation` in `src/types/index.ts`), unchanged by any of this.
+
+Most of the sections below (question style, the official exam format, the variant/matching-question rules, the time-sensitive-facts policy) describe standards that still apply in full once a question is upgraded to `verified` - they describe the bar content is written *to*, not a claim that every question already meets it today. The "Question production workflow" and "Importing from the reference 511-question bank" sections describe how a question gets upgraded.
+
 ## Source of truth
 
 - English: *Discover Canada: The Rights and Responsibilities of Citizenship* (official Government of Canada / IRCC guide)
@@ -114,20 +124,27 @@ example, `gov-levels-of-government-matching`, for the pattern this follows in pr
 10. Check for exact or near-duplicate questions already in the bank, including questions in the same `variantOf` family.
 11. Set `reviewStatus` to `verified` only once all the above steps pass; otherwise set it to `needs-review`.
 
-### Importing from the reference 511-question bank
+### Importing from the reference 511-question bank (mechanical adapter, in place today)
 
-Some questions start from a fact identified in the external 511-question reference bank (see `docs/question-bank-comparison-report.md`) rather than from scratch. That bank is a *pointer to what to test*, not a source of ready-to-ship content — every step of the workflow above still applies in full, in particular steps 2-5 (the reference bank's own citations are PDF page numbers, which do not satisfy this project's citation bar). Additionally:
+The 511-question bank is adapted into the app's `Question` shape at load time by `src/data/questionLoader.ts`, not hand-authored per question. This is a mechanical, deterministic transform only — it does not verify citations, source real French, or rewrite content, all of which stay future work (see "Current state" above):
 
-- Map `question_type` (`multiple_choice`/`true_false`) to this project's `type`, and `difficulty` (`easy`/`medium`/`hard`) to this project's `1`/`2`/`3`.
-- `topic`/`subtopic` may be carried over as-is into the optional `Question.topic`/`subtopic` fields (see `src/types/index.ts`) - they're informal category labels, not citations, so they don't need re-verification.
-- Per-option `annotation.relevance` may be carried over into `optionAnnotations`, but never copy `annotation.explanation` text verbatim if it says "Not provided" or is a bare page citation (e.g. `"Page 8: '...'"`, ) - write a real, natural-language explanation, same bar as the main `explanation` field.
-- Before shipping, re-check every option's `relevance` against `correctIndex`: the reference bank has a confirmed bug (see `docs/question-bank-comparison-report.md` §5) where the *wrong* option's relevance is sometimes mislabeled `CORRECT_ANSWER`. `questionBankGovernance.test.ts`'s "option annotation integrity" check catches this, but verify by hand too.
-- A reference-bank distractor that isn't realistic exam-style (e.g. clearly a placeholder rather than something a real test might use) should be replaced, not preserved for fidelity's sake — see `applying-for-citizenship.json`'s `q-ac-001` for an example (the source bank's "Your favorite hockey team" distractor was swapped out).
-- `tags` should still be populated even when the reference bank left them empty for a question - the humanized `subtopic` value is normally a good tag on its own.
+- `question_type`/`difficulty` are mapped to this project's `type`/`1|2|3`; `source_chapter`/`topic`/`subtopic` classify the question into one of this app's 11 chapters (a static lookup table, with "How Canadians Govern Themselves" split into itself vs. `federal-elections` by subtopic keyword, since the reference bank doesn't pre-split that one).
+- `topic`/`subtopic` carry straight into the optional `Question.topic`/`subtopic` fields; `subtopic` (underscores to hyphens) becomes the question's `tags` entry.
+- `source_page` carries into `SourceCitation.pdfPage`; there is no `sourceUrl`/`excerpt`/`verifiedAt` yet, and `reviewStatus` is set to `needs-review` accordingly.
+- Per-option `annotation.relevance` carries into `optionAnnotations`, with one deterministic fix applied uniformly: the reference bank has a confirmed bug (`docs/question-bank-comparison-report.md` §5) where a non-correct option's relevance is sometimes mislabeled `CORRECT_ANSWER`. The adapter forces the correct option's relevance to `CORRECT_ANSWER` and demotes any other option carrying that label to `RELATED_FACT`. `questionBankGovernance.test.ts`'s "option annotation integrity" check enforces this holds for every question, permanently.
+- An `annotation.explanation` (or the correct option's, used as the question's top-level `explanation`) that is empty or literally "Not provided" is replaced with a minimal generated fallback (`"The correct answer is: <option text>"`) rather than shipping the placeholder text - this hit exactly 1 of 511 questions at last count.
+- Exact duplicate question text within the same chapter (the reference bank has one such pair, `Q100`/`Q348`) is deduplicated, keeping the first occurrence.
+- One record (`Q494`, `source_chapter: "Authorities"`) doesn't map to any of this app's 11 chapters and is dropped rather than guessed at.
+
+**Upgrading a question to `verified`** is the separate, still-manual workflow this document's other sections describe in full (locate the live canada.ca excerpt in both languages, record a real citation, replace placeholder distractors that aren't realistic exam-style, etc.) - the adapter step above does not do this, by design, so that integrating the bank's structure and this project's own citation-verification bar remain two separable pieces of work.
+
+### Reference-bank gap facts
+
+Four base facts (13 questions with variants) from this project's previous bank have no equivalent anywhere in the 511-question reference bank and were kept as-is (already `verified`, with real EN/FR/AR content) rather than deleted along with the rest of that bank: `ac-age-exemption` (Applying for Citizenship - the 55+ knowledge-test exemption), and three Modern Canada facts - `mc-oil-discovery-alberta` (Leduc No. 1, 1947), `mc-basketball-naismith` (James Naismith), and `mc-cardiac-pacemaker-hopps` (John Hopps). They live in `src/data/questions/preserved-legacy-facts.json`, loaded alongside the adapted reference bank in `questionLoader.ts`.
 
 ## Release rule
 
-Only questions with `reviewStatus: "verified"` may be included in the production question pool used by Practice Mode, Study chapter quizzes, and Simulated Exam Mode.
+Practice Mode, Study chapter quizzes, and Simulated Exam Mode currently draw from every loaded question regardless of `reviewStatus`, not only `verified` ones - see "Current state" above for why. `SourceCitationCard` renders a `needs-review` question's citation visibly differently (muted color, no clickable URL, an explicit "not yet independently verified" line - see `src/components/SourceCitationCard.tsx`) rather than presenting it as equivalent to a `verified` one. Once French sourcing upgrades a question to `verified`, it should meet the full citation bar described elsewhere in this document (a live canada.ca URL, a verbatim excerpt, a verification date) with no visible difference from this project's original 450-question bank.
 
 ## Citation display rule
 

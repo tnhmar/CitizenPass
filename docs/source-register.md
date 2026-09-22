@@ -2,6 +2,14 @@
 
 This register tracks the official source documents used as the factual authority for CitizenPass study content and questions.
 
+## Current state (as of 2026-09-21)
+
+The practice/exam question pool is now the reference 511-question bank, adapted programmatically (`src/data/questionLoader.ts`), not the hand-verified 450-question bank this register originally tracked chapter by chapter — see `docs/content-governance.md`, "Current state" for the phased plan (English now, French sourcing next, Arabic last) and "Importing from the reference 511-question bank" for exactly what the adapter does and doesn't do. Almost every question's `reviewStatus` is `needs-review` today: it has a `source_chapter`/`source_section`/PDF page carried over from the reference bank, but no live `canada.ca` URL, excerpt, or verification date yet.
+
+**What's still valid from before and reusable going forward:** the guide metadata and, especially, the per-chapter `canada.ca` source URLs at the bottom of this register. Verifying a question (upgrading it from `needs-review` to `verified`) means finding its fact on the matching chapter's page below and citing the live excerpt — the URLs don't need to be rediscovered chapter by chapter the way they were the first time.
+
+**What's now historical** (describes the deleted 450-question bank, kept for record, not the current pool): the "Content release log" table, the `applying-for-citizenship` upgrade note, and the "Time-sensitive facts excluded from ..." sections below all describe decisions made *within that bank*. The reference-bank-derived pool has not yet been individually checked against the same stale/inconsistent-guide-text pitfalls those sections identify — that check is part of the verification work in phase 2, not something inherited automatically. Re-apply the same scrutiny (each section names exactly what to watch for) when verifying the corresponding chapter.
+
 ## English guide
 
 - Title: Discover Canada: The Rights and Responsibilities of Citizenship
@@ -23,14 +31,18 @@ This register tracks the official source documents used as the factual authority
 
 ## Usage notes
 
-- Record `sourceEdition`, `sourceUrl`, `verifiedAt`, chapter, section, and excerpt for every question and study-content record.
+- Record `sourceEdition`, `sourceUrl`, `verifiedAt`, chapter, section, and excerpt for every question and study-content record being upgraded to `verified`.
 - Save both `printedPage` and `pdfPage` when available, since pagination can differ between the printed guide and the PDF file.
 - Re-verify this register if IRCC republishes an updated edition of either guide.
 - Do not cite a French excerpt that was machine-translated from the English guide; French citations must come from the official French guide.
 
-## Content release log
+## Reference-bank gap facts (still verified, still current)
 
-**"Questions" below counts distinct verified base facts (`learningObjectiveId`s with no `variantOf`), not the total question pool.** Each base fact normally yields 3-4 total questions once its angle variants (`-v2`, `-v3`, etc. — see `docs/content-governance.md`, "Variant question rules") are included, since variants inherit their base fact's citation rather than getting a new register entry. As of 2026-09-20 the actual total pool is 450 questions across 128 base facts (see `docs/deep-analysis-report.md` §1.1 for a snapshot of the per-chapter base/variant/total breakdown as of that report's date — the total here supersedes it by a wide margin) — this table intentionally still tracks base facts only, since that is the unit citation review actually happens at. One of the 115 (`gov-levels-of-government-matching`) is a matching/combination question rather than a single-fact base objective — see `docs/content-governance.md`, "Matching/combination questions" — it has no variants of its own.
+Four base facts (13 questions with variants) from the deleted 450-question bank have no equivalent in the reference 511-question bank and were kept rather than discarded — see `docs/content-governance.md`, "Reference-bank gap facts" for the list and rationale. They live in `src/data/questions/preserved-legacy-facts.json`, remain `reviewStatus: "verified"`, and their citations (Modern Canada and Applying for Citizenship pages, both listed below) are unchanged and still accurate.
+
+## Content release log (historical — describes the deleted 450-question bank)
+
+**"Questions" below counted distinct verified base facts (`learningObjectiveId`s with no `variantOf`), not the total question pool.** As of 2026-09-20 (just before the reference-bank integration) the bank held 450 questions across 128 base facts.
 
 | Chapter ID | Guide chapter | Base facts | Review status | Verified |
 |---|---|---|---|---|
@@ -46,41 +58,43 @@ This register tracks the official source documents used as the factual authority
 | `canadas-regions` | Canada's Regions / Les régions du Canada | 18 | verified | 2026-08-17 |
 | `canadas-economy` | Canada's Economy / L'économie canadienne | 7 | verified | 2026-09-10 |
 
-Question counts are intentionally not fixed per chapter — see `docs/content-governance.md`, "Question count policy" (critical section). `canadas-regions` remains the richest chapter to date. `canadas-economy` has no release yet — see `docs/deep-analysis-report.md` §2.3.
+## `applying-for-citizenship` upgrade (historical — this file's content was since replaced by the reference-bank adapter)
 
-`rights-responsibilities` was expanded on 2026-09-20 from 8 to 16 base facts (`q-rr-036` through `q-rr-043`), closing a real coverage gap: the chapter's own Study content already cited the four fundamental freedoms, three of the Charter's four additional rights (Aboriginal Peoples' Rights, Official Language Rights, Multiculturalism — Mobility Rights was already tested), the Equality of Women and Men section, and three of six citizenship responsibilities (obeying the law, protecting heritage/environment, helping others — jury duty, voting and military service were already tested), none of which had a question testing them. All eight new facts cite the same already-verified `rights-resonsibilities-citizenship.html` / `droits-responsabilites-citoyennete.html` pages (re-fetched live to confirm current wording), so no new source pages were added to this register.
+On 2026-09-21, this chapter's 5 questions were briefly rewritten in place using the reference bank's `Q358`/`Q359`/`Q360`/`Q485` with independently re-verified citations. That hand-conversion was itself superseded later the same day when the whole bank was replaced by the mechanical adapter per the "just delete it, don't migrate" decision recorded in `docs/content-governance.md` — the chapter's 5 current questions (4 adapted + `q-ac-004` preserved) are `needs-review` again, like the rest of the reference-bank-derived pool. Kept here as a record that this specific conversion approach (hand-verify each reference-bank question chapter by chapter) was tried, worked, and was then deliberately abandoned in favor of the bulk adapter for speed.
 
-## Time-sensitive facts excluded from `canadas-regions`
+## Time-sensitive facts excluded from `canadas-regions` (historical — see "Current state" above)
 
-Per `docs/content-governance.md`, "Time-sensitive facts," the live guide page states Canada's population as "about 34 million" and gives similarly dated provincial population figures. Canada's actual population now exceeds 41 million. **No question in this chapter's release tests any population statistic.** All 18 questions instead test stable geographic, historical, and structural facts.
+Per `docs/content-governance.md`, "Time-sensitive facts," the live guide page states Canada's population as "about 34 million" and gives similarly dated provincial population figures. Canada's actual population now exceeds 41 million. The deleted bank's 18 `canadas-regions` questions tested no population statistic for this reason. The reference-bank-derived `canadas-regions` questions (90 of them) have not yet been checked against this same pitfall.
 
-## Time-sensitive facts excluded from `canadian-symbols`
+## Time-sensitive facts excluded from `canadian-symbols` (historical — see "Current state" above)
 
-The live guide page contains an internally inconsistent, outdated reference to the reigning monarch: the body text correctly uses the generic "Sovereign (Queen or King)," but a fill-in-the-blank study section on the same page still says "the Queen of Canada," and the printed Oath of Citizenship names "Queen Elizabeth the Second" specifically — stale since 2022. No question about the identity of the current monarch was created; see `docs/content-governance.md`, "Time-sensitive facts," for the full policy this follows.
+The live guide page contains an internally inconsistent, outdated reference to the reigning monarch: the body text correctly uses the generic "Sovereign (Queen or King)," but a fill-in-the-blank study section on the same page still says "the Queen of Canada," and the printed Oath of Citizenship names "Queen Elizabeth the Second" specifically — stale since 2022. The deleted bank had no question about the current monarch's identity for this reason. The reference-bank-derived `canadian-symbols` questions (56 of them) have not yet been checked against this same pitfall.
 
-## Time-sensitive facts excluded from `federal-elections`
+## Time-sensitive facts excluded from `federal-elections` (historical — see "Current state" above)
 
-- **"Canada is divided into 308 electoral districts."** The guide page itself was still live with this figure as of 2025-08-08. The real count was 338 from 2015 to the 2025 general election, and has been 343 since — the guide has not caught up with either change. No verified question states a specific riding count.
+- **"Canada is divided into 308 electoral districts."** The guide page itself was still live with this figure as of 2025-08-08. The real count was 338 from 2015 to the 2025 general election, and has been 343 since — the guide has not caught up with either change.
 - **"Three major political parties currently represented in the House of Commons."** Party standings change with every election.
 
-## `applying-for-citizenship` upgraded from the reference 511-question bank
+The deleted bank's 41 `federal-elections` questions avoided both. The reference-bank-derived `federal-elections` questions (21 of them) have not yet been checked against either pitfall.
 
-On 2026-09-21, all 5 `applying-for-citizenship` questions except `q-ac-004` (age exemption, which the reference bank doesn't cover) were rewritten in place using the reference 511-question bank's `Q358`/`Q359`/`Q360`/`Q485` as the starting point for which facts and distractors to test — see `docs/content-governance.md`, "Importing from the reference 511-question bank" for the workflow this followed. IDs, `learningObjectiveId`s, and question count are unchanged; citations were independently re-verified against the same two pages already on file for this chapter (English/French URLs below), not carried over from the reference bank's page-number citations. Each question now also carries `topic`/`subtopic` and per-option `optionAnnotations`, checked against `questionBankGovernance.test.ts`'s annotation-integrity rule.
+## Time-sensitive nuance in `applying-for-citizenship`
 
-## Time-sensitive nuance handled differently in `applying-for-citizenship`
+Worth re-checking regardless of the adapter/hand-conversion history above, since it's about the source page itself, not a specific bank: the "About the Citizenship Test" section says you're tested on "two basic requirements," including "adequate knowledge of English or French" — but the same live page carries a dated note (effective 2017-10-11) stating the citizenship *knowledge* test itself is **not** used to assess language ability; language is demonstrated separately. When verifying this chapter's questions, ground any question touching this in the update note, not the older "two basic requirements" framing alone.
 
-Unlike the exclusions above, this one wasn't silently dropped, because the guide's own live page already surfaces the correction rather than leaving it stale. The "About the Citizenship Test" section still says you're tested on "two basic requirements," including "adequate knowledge of English or French" — but the same live page carries a dated note (effective 2017-10-11) stating the citizenship *knowledge* test itself is **not** used to assess language ability; language is demonstrated separately. Both the original text and the update note are included in the Study content (as a leading "Note" section, matching the source page's own layout), and no verified question's correct answer asserts that the knowledge test evaluates language — see `q-ac-003`, which is grounded in the update note specifically.
+## Per-chapter source pages (still valid — use these when verifying reference-bank-derived questions)
+
+- `applying-for-citizenship`: English — https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/applying-citizenship.html ; French — https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/demander-citoyennete.html
+- `rights-responsibilities`: English — https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/rights-resonsibilities-citizenship.html (yes, "resonsibilities" — that's canada.ca's own typo, not ours) ; French — https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/droits-responsabilites-citoyennete.html
+- `who-we-are`: English — https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/who-are-canadians.html ; French — https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/qui-sont-canadiens.html
+- `canadas-history`: English — https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/canadas-history.html ; French — https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/histoire-canada.html
+- `modern-canada`: English — https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/modern-canada.html ; French — https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/canada-moderne.html
+- `how-canadians-govern-themselves`: English — https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/how-canadians-govern-themselves.html ; French — https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/canadiens-systeme-gouvernement.html
+- `federal-elections`: English — https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/federal-elections.html ; French — https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/elections-federales.html
+- `justice-system`: English — https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/justice-system.html ; French — https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/systeme-justice.html
+- `canadian-symbols`: English — https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/canadian-symbols.html ; French — https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/symboles-canadiens.html
+- `canadas-regions`: English — https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/canadas-regions.html ; French — https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/regions-canada.html
+- `canadas-economy`: source pages not yet on file — was added late in the deleted bank's life (2026-09-10) without a note here; re-locate when verifying.
 
 Notes:
-- `applying-for-citizenship` source pages: English — https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/applying-citizenship.html ; French — https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/demander-citoyennete.html
-- Chapter content and question citations for all nine chapters were sourced from the official `canada.ca` online HTML guides (English and French), not the attached PDF, because the attached PDF's body-text layer extracted as garbled/unreadable characters.
-- Printed/PDF page numbers are not recorded for these chapters' citations because they could not be reliably verified against the unreadable PDF text layer.
+- Chapter content (Study reading material, `src/data/content/*.json`) and the preserved legacy facts' citations were sourced from the official `canada.ca` online HTML guides (English and French), not the attached PDF, because the attached PDF's body-text layer extracted as garbled/unreadable characters.
 - Edition identifier `Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8` was confirmed against the attached PDF's colophon text (page 2), which extracted correctly.
-- `who-we-are` source pages: English — https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/who-are-canadians.html ; French — https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/qui-sont-canadiens.html
-- `canadas-history` source pages: English — https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/canadas-history.html ; French — https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/histoire-canada.html
-- `modern-canada` source pages: English — https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/modern-canada.html ; French — https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/canada-moderne.html
-- `how-canadians-govern-themselves` source pages: English — https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/how-canadians-govern-themselves.html ; French — https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/canadiens-systeme-gouvernement.html
-- `federal-elections` source pages: English — https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/federal-elections.html ; French — https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/elections-federales.html
-- `justice-system` source pages: English — https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/justice-system.html ; French — https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/systeme-justice.html
-- `canadian-symbols` source pages: English — https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/canadian-symbols.html ; French — https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/symboles-canadiens.html
-- `canadas-regions` source pages: English — https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/canadas-regions.html ; French — https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/regions-canada.html
