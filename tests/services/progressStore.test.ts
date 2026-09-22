@@ -1,8 +1,8 @@
 import { useProgressStore } from "../../src/store/useProgressStore";
-import { getAllVerifiedQuestions } from "../../src/data/questionLoader";
+import { getAllQuestions } from "../../src/data/questionLoader";
 import { MAX_ATTEMPT_LOG_ENTRIES } from "../../src/services/persistence/progressRepository";
 
-const [questionA, questionB] = getAllVerifiedQuestions();
+const [questionA, questionB] = getAllQuestions();
 
 describe("useProgressStore - attempt log", () => {
   beforeEach(async () => {

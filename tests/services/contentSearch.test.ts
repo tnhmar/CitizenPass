@@ -1,5 +1,5 @@
 import { searchContent } from "../../src/data/contentSearch";
-import { getAllVerifiedQuestions } from "../../src/data/questionLoader";
+import { getAllQuestions } from "../../src/data/questionLoader";
 
 describe("searchContent", () => {
   it("returns nothing for a query shorter than the minimum length", () => {
@@ -31,7 +31,7 @@ describe("searchContent", () => {
   });
 
   it("finds a Practice match from a real question's own text", () => {
-    const [sample] = getAllVerifiedQuestions();
+    const [sample] = getAllQuestions();
     const distinctiveWord = sample.en.question.split(/\s+/).find((word) => word.length > 5) ?? sample.en.question;
 
     const results = searchContent(distinctiveWord, "en");

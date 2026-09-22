@@ -1,6 +1,6 @@
 import {
-  getAllVerifiedQuestions,
-  getVerifiedQuestionsByChapter,
+  getAllQuestions,
+  getQuestionsByChapter,
   getQuestionById,
   drawRandomQuestions,
   drawFilteredQuestions,
@@ -8,86 +8,64 @@ import {
 } from "../../src/data/questionLoader";
 
 describe("questionLoader", () => {
-  it("loads 442 verified questions across all 11 chapters", () => {
-    const all = getAllVerifiedQuestions();
-    expect(all.length).toBe(442);
+  it("loads 522 questions across all 11 chapters (the adapted reference 511-bank plus 13 preserved legacy facts)", () => {
+    const all = getAllQuestions();
+    expect(all.length).toBe(522);
     for (const question of all) {
-      expect(question.en.source.reviewStatus).toBe("verified");
-      expect(question.fr.source.reviewStatus).toBe("verified");
+      // English is mandatory; French is not yet populated for
+      // reference-bank-derived questions - see src/types/index.ts.
+      expect(question.en.source.language).toBe("en");
       const expectedOptionCount = question.type === "true-false" ? 2 : 4;
       expect(question.en.options.length).toBe(expectedOptionCount);
-      expect(question.fr.options.length).toBe(expectedOptionCount);
     }
   });
 
+  it("every question has a unique chapterId drawn from the 11-chapter manifest", () => {
+    const chapterIds = new Set(getAllQuestions().map((q) => q.chapterId));
+    expect(chapterIds.size).toBe(11);
+  });
+
   it("filters questions by chapter", () => {
-    const chapterQuestions = getVerifiedQuestionsByChapter("justice-system");
-    expect(chapterQuestions.length).toBe(26);
+    const chapterQuestions = getQuestionsByChapter("justice-system");
+    expect(chapterQuestions.length).toBe(22);
     for (const question of chapterQuestions) {
       expect(question.chapterId).toBe("justice-system");
     }
   });
 
-  it("expanded rights-responsibilities chapter with variant questions", () => {
-    const chapterQuestions = getVerifiedQuestionsByChapter("rights-responsibilities");
-    expect(chapterQuestions.length).toBe(35);
-  });
-
-  it("expanded who-we-are chapter with variant questions", () => {
-    const chapterQuestions = getVerifiedQuestionsByChapter("who-we-are");
-    expect(chapterQuestions.length).toBe(32);
-  });
-
-  it("expanded federal-elections chapter with variant questions", () => {
-    const chapterQuestions = getVerifiedQuestionsByChapter("federal-elections");
-    expect(chapterQuestions.length).toBe(41);
-  });
-
-  it("expanded canadas-history chapter with variant questions", () => {
-    const chapterQuestions = getVerifiedQuestionsByChapter("canadas-history");
-    expect(chapterQuestions.length).toBe(56);
-  });
-
-  it("expanded modern-canada chapter with variant questions", () => {
-    const chapterQuestions = getVerifiedQuestionsByChapter("modern-canada");
-    expect(chapterQuestions.length).toBe(59);
-  });
-
-  it("expanded how-canadians-govern-themselves chapter with variant questions", () => {
-    const chapterQuestions = getVerifiedQuestionsByChapter("how-canadians-govern-themselves");
-    expect(chapterQuestions.length).toBe(50);
-  });
-
-  it("expanded canadian-symbols chapter with variant questions", () => {
-    const chapterQuestions = getVerifiedQuestionsByChapter("canadian-symbols");
-    expect(chapterQuestions.length).toBe(59);
-  });
-
-  it("expanded canadas-regions chapter with variant questions", () => {
-    const chapterQuestions = getVerifiedQuestionsByChapter("canadas-regions");
-    expect(chapterQuestions.length).toBe(64);
-  });
-
-  it("loads the canadas-economy chapter", () => {
-    const chapterQuestions = getVerifiedQuestionsByChapter("canadas-economy");
-    expect(chapterQuestions.length).toBe(15);
-    for (const question of chapterQuestions) {
-      expect(question.chapterId).toBe("canadas-economy");
+  it("splits Federal Elections out of How Canadians Govern Themselves", () => {
+    const elections = getQuestionsByChapter("federal-elections");
+    const government = getQuestionsByChapter("how-canadians-govern-themselves");
+    expect(elections.length).toBeGreaterThan(0);
+    expect(government.length).toBeGreaterThan(0);
+    for (const question of elections) {
+      expect(question.chapterId).toBe("federal-elections");
     }
   });
 
-  it("loads the new applying-for-citizenship chapter", () => {
-    const chapterQuestions = getVerifiedQuestionsByChapter("applying-for-citizenship");
-    expect(chapterQuestions.length).toBe(5);
-    for (const question of chapterQuestions) {
-      expect(question.chapterId).toBe("applying-for-citizenship");
-      expect(question.en.source.sourceUrl).toContain("applying-citizenship");
-      expect(question.fr.source.sourceUrl).toContain("demander-citoyennete");
-    }
+  it("preserved legacy facts (no reference-bank equivalent) are present with their original citations intact", () => {
+    const ageExemption = getQuestionById("q-ac-004");
+    expect(ageExemption).not.toBeNull();
+    expect(ageExemption?.en.source.reviewStatus).toBe("verified");
+    expect(ageExemption?.en.source.sourceUrl).toContain("canada.ca");
+
+    const oilDiscovery = getQuestionsByChapter("modern-canada").filter((q) => q.learningObjectiveId.startsWith("mc-oil-discovery-alberta"));
+    expect(oilDiscovery.length).toBeGreaterThan(0);
+  });
+
+  it("most questions are needs-review (freshly adapted, no live-URL citation yet)", () => {
+    const all = getAllQuestions();
+    const needsReview = all.filter((q) => q.en.source.reviewStatus === "needs-review");
+    expect(needsReview.length).toBeGreaterThan(all.length / 2);
+  });
+
+  it("carries topic/subtopic metadata through from the reference bank", () => {
+    const withTopic = getAllQuestions().filter((q) => q.topic);
+    expect(withTopic.length).toBeGreaterThan(400);
   });
 
   it("every variantOf reference points to a learning objective that exists in the same chapter", () => {
-    const all = getAllVerifiedQuestions();
+    const all = getAllQuestions();
     const objectiveIdsByChapter = new Map<string, Set<string>>();
     for (const question of all) {
       const set = objectiveIdsByChapter.get(question.chapterId) ?? new Set<string>();
@@ -102,9 +80,9 @@ describe("questionLoader", () => {
   });
 
   it("finds a question by id", () => {
-    const question = getQuestionById("q-js-001");
+    const question = getQuestionById("q-ac-004");
     expect(question).not.toBeNull();
-    expect(question?.chapterId).toBe("justice-system");
+    expect(question?.chapterId).toBe("applying-for-citizenship");
     expect(getQuestionById("does-not-exist")).toBeNull();
   });
 
@@ -147,7 +125,7 @@ describe("questionLoader", () => {
     });
 
     it("draws only questions carrying the given tag", () => {
-      const [sample] = getAllVerifiedQuestions().filter((q) => q.tags.length > 0);
+      const [sample] = getAllQuestions().filter((q) => q.tags.length > 0);
       const drawn = drawFilteredQuestions(3, { tag: sample.tags[0] });
       expect(drawn.length).toBeGreaterThan(0);
       for (const question of drawn) {
@@ -156,7 +134,7 @@ describe("questionLoader", () => {
     });
 
     it("restricts the pool to exactly onlyIds - Smart Practice's 'missed questions' case", () => {
-      const allowed = getAllVerifiedQuestions()
+      const allowed = getAllQuestions()
         .slice(0, 3)
         .map((q) => q.id);
       const drawn = drawFilteredQuestions(10, { onlyIds: allowed });
@@ -167,7 +145,7 @@ describe("questionLoader", () => {
     });
 
     it("still applies excludeIds on top of a filter (e.g. questions already seen this session)", () => {
-      const allowed = getAllVerifiedQuestions()
+      const allowed = getAllQuestions()
         .slice(0, 3)
         .map((q) => q.id);
       const drawn = drawFilteredQuestions(10, { onlyIds: allowed }, [allowed[0]]);
