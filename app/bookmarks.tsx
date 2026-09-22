@@ -10,6 +10,7 @@ import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { getQuestionById } from "../src/data/questionLoader";
 import { getChapterList, getChapterTitle } from "../src/data/contentLoader";
 import { getChapterVisual } from "../src/constants/chapterIcons";
+import { getLocalizedQuestion } from "../src/utils/questionDisplay";
 import { SourceCitationCard } from "../src/components/SourceCitationCard";
 import type { Question } from "../src/types";
 
@@ -58,7 +59,7 @@ export default function BookmarksScreen() {
   };
 
   const renderItem = ({ item }: { item: Question }) => {
-    const localized = item[language];
+    const localized = getLocalizedQuestion(item, language);
     return (
       <Card mode="outlined" style={styles.card}>
         <Card.Content>
