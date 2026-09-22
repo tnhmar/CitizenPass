@@ -9,6 +9,7 @@ import { useSemanticColors } from "../../src/theme/useSemanticColors";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { getChapterList, getChapterTitle } from "../../src/data/contentLoader";
 import { getChapterVisual } from "../../src/constants/chapterIcons";
+import { getQuestionsByChapter } from "../../src/data/questionLoader";
 import type { ManifestChapterEntry } from "../../src/types/content";
 
 export default function StudyIndexScreen() {
@@ -45,7 +46,7 @@ export default function StudyIndexScreen() {
               {visual.emoji} {title}
             </Text>
             <Text variant="bodySmall" style={{ color: theme.colors.onSurfaceVariant }}>
-              {item.questionCount} {t("study.chapters")}
+              {getQuestionsByChapter(item.id).length} {t("study.chapters")}
             </Text>
             <View style={styles.progressRow}>
               <ProgressBar progress={completionPercent / 100} color={visual.color} style={styles.progressBar} />
