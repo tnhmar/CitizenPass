@@ -11,7 +11,7 @@ import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { drawFilteredQuestions, type PracticeQueryFilter } from "../../src/data/questionLoader";
 import { getChapterList, getChapterTitle } from "../../src/data/contentLoader";
 import { humanizeTag } from "../../src/utils/progressStats";
-import { randomOptionOrder, applyOptionOrder, applyOptionOrderToArabic } from "../../src/utils/questionDisplay";
+import { randomOptionOrder, applyOptionOrder, applyOptionOrderToArabic, getLocalizedQuestion } from "../../src/utils/questionDisplay";
 import { SourceCitationCard } from "../../src/components/SourceCitationCard";
 import { OptionButton } from "../../src/components/OptionButton";
 import { ArabicFlipCard } from "../../src/components/ArabicFlipCard";
@@ -121,7 +121,7 @@ export default function PracticeScreen() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  const localizedRaw = useMemo(() => (current ? current[language] : null), [current, language]);
+  const localizedRaw = useMemo(() => (current ? getLocalizedQuestion(current, language) : null), [current, language]);
   const localized = useMemo(
     () => (localizedRaw && optionOrder.length ? applyOptionOrder(localizedRaw, optionOrder) : null),
     [localizedRaw, optionOrder]
