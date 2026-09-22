@@ -1,4 +1,17 @@
-import type { LocalizedQuestion } from "../types";
+import type { LocalizedQuestion, Question, AppLanguage } from "../types";
+
+/**
+ * Resolves a question's content for the given app language, falling
+ * back to English when that language isn't available yet - notably,
+ * every question imported from the reference 511-question bank has no
+ * `fr` at all while the French-sourcing phase is still ahead (see
+ * docs/content-governance.md). Always use this instead of indexing
+ * `question[language]` directly, so a French-mode learner sees English
+ * content for those questions rather than a crash or blank screen.
+ */
+export function getLocalizedQuestion(question: Question, language: AppLanguage): LocalizedQuestion {
+  return question[language] ?? question.en;
+}
 
 /**
  * Produces a random permutation of option indices (e.g. [2, 0, 3, 1] for
