@@ -9,10 +9,7 @@
       "fr": {
         "title": "Demander la citoyenneté",
         "contentPath": "src/data/content/applying-for-citizenship.fr.json"
-      },
-      "questionsPath": "src/data/questions/applying-for-citizenship.json",
-      "questionCount": 5,
-      "reviewStatus": "verified"
+      }
     },
     {
       "id": "rights-responsibilities",
@@ -23,10 +20,7 @@
       "fr": {
         "title": "Les droits et responsabilités liés à la citoyenneté",
         "contentPath": "src/data/content/rights-responsibilities.fr.json"
-      },
-      "questionsPath": "src/data/questions/rights-responsibilities.json",
-      "questionCount": 35,
-      "reviewStatus": "verified"
+      }
     },
     {
       "id": "who-we-are",
@@ -37,10 +31,7 @@
       "fr": {
         "title": "Qui sommes-nous, les Canadiens?",
         "contentPath": "src/data/content/who-we-are.fr.json"
-      },
-      "questionsPath": "src/data/questions/who-we-are.json",
-      "questionCount": 32,
-      "reviewStatus": "verified"
+      }
     },
     {
       "id": "canadas-history",
@@ -51,10 +42,7 @@
       "fr": {
         "title": "L'histoire du Canada",
         "contentPath": "src/data/content/canadas-history.fr.json"
-      },
-      "questionsPath": "src/data/questions/canadas-history.json",
-      "questionCount": 56,
-      "reviewStatus": "verified"
+      }
     },
     {
       "id": "modern-canada",
@@ -65,10 +53,7 @@
       "fr": {
         "title": "Le Canada moderne",
         "contentPath": "src/data/content/modern-canada.fr.json"
-      },
-      "questionsPath": "src/data/questions/modern-canada.json",
-      "questionCount": 59,
-      "reviewStatus": "verified"
+      }
     },
     {
       "id": "how-canadians-govern-themselves",
@@ -79,10 +64,7 @@
       "fr": {
         "title": "Les Canadiens et leur système de gouvernement",
         "contentPath": "src/data/content/how-canadians-govern-themselves.fr.json"
-      },
-      "questionsPath": "src/data/questions/how-canadians-govern-themselves.json",
-      "questionCount": 50,
-      "reviewStatus": "verified"
+      }
     },
     {
       "id": "federal-elections",
@@ -93,10 +75,7 @@
       "fr": {
         "title": "Les élections fédérales",
         "contentPath": "src/data/content/federal-elections.fr.json"
-      },
-      "questionsPath": "src/data/questions/federal-elections.json",
-      "questionCount": 41,
-      "reviewStatus": "verified"
+      }
     },
     {
       "id": "justice-system",
@@ -107,10 +86,7 @@
       "fr": {
         "title": "Le système de justice",
         "contentPath": "src/data/content/justice-system.fr.json"
-      },
-      "questionsPath": "src/data/questions/justice-system.json",
-      "questionCount": 26,
-      "reviewStatus": "verified"
+      }
     },
     {
       "id": "canadian-symbols",
@@ -121,10 +97,7 @@
       "fr": {
         "title": "Les symboles canadiens",
         "contentPath": "src/data/content/canadian-symbols.fr.json"
-      },
-      "questionsPath": "src/data/questions/canadian-symbols.json",
-      "questionCount": 59,
-      "reviewStatus": "verified"
+      }
     },
     {
       "id": "canadas-regions",
@@ -135,10 +108,7 @@
       "fr": {
         "title": "Les régions du Canada",
         "contentPath": "src/data/content/canadas-regions.fr.json"
-      },
-      "questionsPath": "src/data/questions/canadas-regions.json",
-      "questionCount": 64,
-      "reviewStatus": "verified"
+      }
     },
     {
       "id": "canadas-economy",
@@ -149,10 +119,7 @@
       "fr": {
         "title": "L'économie canadienne",
         "contentPath": "src/data/content/canadas-economy.fr.json"
-      },
-      "questionsPath": "src/data/questions/canadas-economy.json",
-      "questionCount": 15,
-      "reviewStatus": "verified"
+      }
     }
   ]
 }
