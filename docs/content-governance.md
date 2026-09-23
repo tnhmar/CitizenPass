@@ -9,7 +9,7 @@ This document defines how study content and practice questions are sourced, cite
 As of this date, the practice/exam question pool is the reference 511-question bank, adapted programmatically (see `src/data/questionLoader.ts`) rather than hand-authored chapter by chapter. This is a deliberate, explicit decision — not a lapse of the policy below — made in three phases:
 
 1. **Done:** integrate the reference bank as-is, English only, code adjusted to run on it (optional French, citation shape that accepts a PDF page reference instead of a live URL, `reviewStatus: "needs-review"` by default). A small number of facts (13 questions across 4 base facts) were preserved from this project's previous hand-verified bank because the reference bank doesn't cover them at all — see "Reference-bank gap facts" below.
-2. **Next:** French, sourced independently from the live French guide (never a machine translation of the English text) - the same bar this document always held EN/FR to. This is what upgrades a question from `needs-review` to `verified` (see the updated Release rule below).
+2. **In progress, chapter by chapter:** French, sourced independently from the live French guide (never a machine translation of the English text) — the same bar this document always held EN/FR to. This is what upgrades a question from `needs-review` to `verified` (see the updated Release rule below). **`applying-for-citizenship` is done** (all 5 questions verified, 2026-09-22) — see "Verified-upgrade chapters" below for how this is tracked and how to do the next one.
 3. **Last:** Arabic, machine-translated - the comprehension-aid bar this project has always used for Arabic (see `ArabicTranslation` in `src/types/index.ts`), unchanged by any of this.
 
 Most of the sections below (question style, the official exam format, the variant/matching-question rules, the time-sensitive-facts policy) describe standards that still apply in full once a question is upgraded to `verified` - they describe the bar content is written *to*, not a claim that every question already meets it today. The "Question production workflow" and "Importing from the reference 511-question bank" sections describe how a question gets upgraded.
@@ -137,6 +137,17 @@ The 511-question bank is adapted into the app's `Question` shape at load time by
 - One record (`Q494`, `source_chapter: "Authorities"`) doesn't map to any of this app's 11 chapters and is dropped rather than guessed at.
 
 **Upgrading a question to `verified`** is the separate, still-manual workflow this document's other sections describe in full (locate the live canada.ca excerpt in both languages, record a real citation, replace placeholder distractors that aren't realistic exam-style, etc.) - the adapter step above does not do this, by design, so that integrating the bank's structure and this project's own citation-verification bar remain two separable pieces of work.
+
+### Verified-upgrade chapters (French-sourcing progress)
+
+A verified question lives in its own file under `src/data/questions/verified/<chapterId>.json` (full `Question` objects, both `en` and `fr` populated with real, independently-sourced citations), imported explicitly in `src/data/questionLoader.ts` and added to that file's `VERIFIED_UPGRADES` array. The loader excludes each verified question's id from the raw reference-bank adapter pass, so a verified question fully replaces its `needs-review` counterpart rather than existing alongside it. When verifying French for a chapter, do **not** rewrite the English question/options that were already adapted from the reference bank (that's out of scope for this pass — see "Current state") — only add the real citations and the real `fr` block. Note any distractor quality issue you notice in passing (e.g. `Q358`'s "favorite hockey team") rather than silently fixing it, so it can be addressed deliberately later if wanted.
+
+Progress:
+
+| Chapter | Status |
+|---|---|
+| `applying-for-citizenship` | ✅ Done (2026-09-22) — 5/5 verified |
+| all other 10 chapters | Not started — still 100% `needs-review` |
 
 ### Reference-bank gap facts
 

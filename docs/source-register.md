@@ -58,9 +58,9 @@ Four base facts (13 questions with variants) from the deleted 450-question bank 
 | `canadas-regions` | Canada's Regions / Les régions du Canada | 18 | verified | 2026-08-17 |
 | `canadas-economy` | Canada's Economy / L'économie canadienne | 7 | verified | 2026-09-10 |
 
-## `applying-for-citizenship` upgrade (historical — this file's content was since replaced by the reference-bank adapter)
+## `applying-for-citizenship` upgrade (current — first chapter verified under the new architecture)
 
-On 2026-09-21, this chapter's 5 questions were briefly rewritten in place using the reference bank's `Q358`/`Q359`/`Q360`/`Q485` with independently re-verified citations. That hand-conversion was itself superseded later the same day when the whole bank was replaced by the mechanical adapter per the "just delete it, don't migrate" decision recorded in `docs/content-governance.md` — the chapter's 5 current questions (4 adapted + `q-ac-004` preserved) are `needs-review` again, like the rest of the reference-bank-derived pool. Kept here as a record that this specific conversion approach (hand-verify each reference-bank question chapter by chapter) was tried, worked, and was then deliberately abandoned in favor of the bulk adapter for speed.
+On 2026-09-22, this chapter's 4 reference-bank questions (`Q358`, `Q359`, `Q360`, `Q485`) were upgraded to `reviewStatus: "verified"`: real `canada.ca` EN citations plus independently-sourced French (not translated), living in `src/data/questions/verified/applying-for-citizenship.json`. English question text and options were left exactly as the reference bank wrote them — including `Q358`'s weak "favorite hockey team" distractor — since rewriting English content is out of scope for this pass (see `docs/content-governance.md`, "Verified-upgrade chapters"). Combined with `q-ac-004` (the preserved 55+ exemption fact, already verified), this chapter is now **5/5 verified**, the first chapter fully done under the new architecture.
 
 ## Time-sensitive facts excluded from `canadas-regions` (historical — see "Current state" above)
 
@@ -77,9 +77,9 @@ The live guide page contains an internally inconsistent, outdated reference to t
 
 The deleted bank's 41 `federal-elections` questions avoided both. The reference-bank-derived `federal-elections` questions (21 of them) have not yet been checked against either pitfall.
 
-## Time-sensitive nuance in `applying-for-citizenship`
+## Time-sensitive nuance in `applying-for-citizenship` (applied in the 2026-09-22 verification)
 
-Worth re-checking regardless of the adapter/hand-conversion history above, since it's about the source page itself, not a specific bank: the "About the Citizenship Test" section says you're tested on "two basic requirements," including "adequate knowledge of English or French" — but the same live page carries a dated note (effective 2017-10-11) stating the citizenship *knowledge* test itself is **not** used to assess language ability; language is demonstrated separately. When verifying this chapter's questions, ground any question touching this in the update note, not the older "two basic requirements" framing alone.
+The "About the Citizenship Test" section says you're tested on "two basic requirements," including "adequate knowledge of English or French" — but the same live page carries a dated note (effective 2017-10-11) stating the citizenship *knowledge* test itself is **not** used to assess language ability; language is demonstrated separately. `Q485`'s verified citation and explanation are grounded in the update note, not the older "two basic requirements" framing alone.
 
 ## Per-chapter source pages (still valid — use these when verifying reference-bank-derived questions)
 
