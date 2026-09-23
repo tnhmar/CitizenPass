@@ -53,6 +53,17 @@ describe("questionLoader", () => {
     expect(oilDiscovery.length).toBeGreaterThan(0);
   });
 
+  it("Applying for Citizenship is fully upgraded to verified, with real French, as the first completed chapter", () => {
+    const chapterQuestions = getQuestionsByChapter("applying-for-citizenship");
+    expect(chapterQuestions.length).toBe(5);
+    for (const question of chapterQuestions) {
+      expect(question.en.source.reviewStatus).toBe("verified");
+      expect(question.fr).toBeDefined();
+      expect(question.fr?.source.reviewStatus).toBe("verified");
+      expect(question.fr?.source.sourceUrl).toContain("canada.ca");
+    }
+  });
+
   it("most questions are needs-review (freshly adapted, no live-URL citation yet)", () => {
     const all = getAllQuestions();
     const needsReview = all.filter((q) => q.en.source.reviewStatus === "needs-review");
