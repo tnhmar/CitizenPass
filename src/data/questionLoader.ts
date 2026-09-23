@@ -2,6 +2,7 @@ import type { Question, LocalizedQuestion, OptionAnnotation, OptionRelevance } f
 
 import referenceBank from "./reference/reference-511-bank.json";
 import preservedLegacyFacts from "./questions/preserved-legacy-facts.json";
+import verifiedApplyingForCitizenship from "./questions/verified/applying-for-citizenship.json";
 
 // ---------------------------------------------------------------------
 // Reference-511-bank adapter
@@ -186,19 +187,40 @@ function dedupeByQuestionText(questions: Question[]): Question[] {
   return result;
 }
 
+// ---------------------------------------------------------------------
+// Verified upgrades
+//
+// A question is upgraded from `needs-review` to `verified` (real
+// canada.ca citation + real, independently-sourced French - see
+// docs/content-governance.md, "Current state") by adding it to one of
+// these per-chapter files under src/data/questions/verified/, not by
+// editing the reference bank. Each file's questions replace their raw
+// reference-bank counterpart entirely (same id) rather than merging
+// with it, so the excluded-ids set below is exactly which raw records
+// to skip when adapting.
+// ---------------------------------------------------------------------
+const VERIFIED_UPGRADES: Question[][] = [verifiedApplyingForCitizenship as Question[]];
+
+const verifiedQuestions: Question[] = VERIFIED_UPGRADES.flat();
+const verifiedIds = new Set(verifiedQuestions.map((question) => question.id));
+
 const adaptedReferenceQuestions: Question[] = dedupeByQuestionText(
-  (referenceBank.questions as ReferenceQuestion[]).map(adaptReferenceQuestion).filter((q): q is Question => q !== null)
+  (referenceBank.questions as ReferenceQuestion[])
+    .filter((raw) => !verifiedIds.has(raw.id))
+    .map(adaptReferenceQuestion)
+    .filter((q): q is Question => q !== null)
 );
 
 /**
- * Every question the app can draw from: the adapted reference bank plus
- * a small set of facts from this project's previous (pre-511) bank that
- * the reference bank doesn't cover at all - see
- * docs/content-governance.md, "Reference-bank gap facts" for exactly
- * which four and why. Static imports (not dynamic requires) so Metro
- * bundles everything offline.
+ * Every question the app can draw from: the adapted reference bank
+ * (minus any record superseded by a verified upgrade above), the
+ * verified upgrades themselves, and a small set of facts from this
+ * project's previous (pre-511) bank that the reference bank doesn't
+ * cover at all - see docs/content-governance.md, "Reference-bank gap
+ * facts" for exactly which four and why. Static imports (not dynamic
+ * requires) so Metro bundles everything offline.
  */
-const ALL_QUESTIONS: Question[] = [...adaptedReferenceQuestions, ...(preservedLegacyFacts as Question[])];
+const ALL_QUESTIONS: Question[] = [...adaptedReferenceQuestions, ...verifiedQuestions, ...(preservedLegacyFacts as Question[])];
 
 export function getAllQuestions(): Question[] {
   return ALL_QUESTIONS;
