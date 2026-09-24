@@ -4,12 +4,12 @@
   "memoryBox": {
     "en": {
       "title": "Rights, Freedoms & Responsibilities",
-      "mnemonic": "Remember the FOUR freedoms (conscience/religion, thought/expression, assembly, association) vs. the FOUR Charter rights (Mobility, Aboriginal Peoples', Official Language, Multiculturalism) — freedoms come from the 1215 Magna Carta tradition, rights were added in the 1982 Charter. For responsibilities, use 'JOVHP': Jury duty, Obey the law, Vote, Help others, Protect heritage.",
+      "mnemonic": "FOUR freedoms vs FOUR Charter rights. Charter: 1982, not 1867. No 'right to bear arms' — US concept, common trap.",
       "keyFactsChecklist": [
         "Magna Carta: 1215",
-        "Charter entrenched: 1982",
-        "6 citizenship responsibilities",
-        "4 fundamental freedoms vs 4 Charter rights"
+        "Charter: 1982 (not 1867)",
+        "6 responsibilities",
+        "No 'right to bear arms' in Canada"
       ]
     }
   },
@@ -40,7 +40,7 @@
           "chapter": "Rights and Responsibilities of Citizenship",
           "section": "Canadian Charter — Multiculturalism",
           "pdfPage": 12,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -61,8 +61,37 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Multiculturalisme Charte.",
+        "options": [
+          "Abandon héritage",
+          "Caractéristique fondamentale",
+          "Politique temporaire2030",
+          "Restreint FR/EN"
+        ],
+        "correctIndex": 1,
+        "explanation": "Fondamentale.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Rights and Responsibilities of Citizenship",
+          "section": "La Charte canadienne des droits et libertés",
+          "excerpt": "Multiculturalisme fondamental.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "تعددية؟",
+        "options": [
+          "تخلي",
+          "أساسية",
+          "مؤقتة",
+          "مقيدة"
+        ],
+        "explanation": "أساسية.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0001"
@@ -224,7 +253,7 @@
           "chapter": "Rights and Responsibilities of Citizenship",
           "section": "Defending Canada",
           "pdfPage": 15,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -245,8 +274,37 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Services protection.",
+        "options": [
+          "Garde côtière police pompiers",
+          "Police seule",
+          "Garde nationale",
+          "Casques bleus"
+        ],
+        "correctIndex": 0,
+        "explanation": "Garde côtière.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Rights and Responsibilities of Citizenship",
+          "section": "Défendre le Canada",
+          "excerpt": "Garde côtière.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "خدمات؟",
+        "options": [
+          "خفر",
+          "شرطة",
+          "حرس",
+          "حفظ"
+        ],
+        "explanation": "خفر.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0004"
@@ -457,7 +515,7 @@
           "chapter": "Rights and Responsibilities of Citizenship",
           "section": "Rights and Responsibilities (opening)",
           "pdfPage": 11,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -478,8 +536,37 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Traditions droit.",
+        "options": [
+          "Loisparlement common law",
+          "US seul",
+          "Charia",
+          "Canon"
+        ],
+        "correctIndex": 0,
+        "explanation": "Plusieurs.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Rights and Responsibilities of Citizenship",
+          "section": "Les droits et responsabilités liés à la citoyenneté (introduction)",
+          "excerpt": "Sources.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "تقاليد؟",
+        "options": [
+          "قوانين",
+          "أمريكي",
+          "شريعة",
+          "كنسي"
+        ],
+        "explanation": "مصادر.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0008"
@@ -508,7 +595,7 @@
           "chapter": "Rights and Responsibilities of Citizenship",
           "section": "Magna Carta",
           "pdfPage": 11,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -521,8 +608,33 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Magna1215.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation": "Vrai.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Rights and Responsibilities of Citizenship",
+          "section": "Les droits et responsabilités liés à la citoyenneté (introduction)",
+          "excerpt": "1215.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "1215؟",
+        "options": [
+          "صحيح",
+          "خطأ"
+        ],
+        "explanation": "صحيح.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0009"
@@ -548,7 +660,7 @@
           "chapter": "Rights and Responsibilities of Citizenship",
           "section": "Magna Carta",
           "pdfPage": 11,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -561,8 +673,33 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Liberté1215.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation": "Vrai.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Rights and Responsibilities of Citizenship",
+          "section": "Les droits et responsabilités liés à la citoyenneté (introduction)",
+          "excerpt": "1215.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "حرية1215؟",
+        "options": [
+          "صحيح",
+          "خطأ"
+        ],
+        "explanation": "صحيح.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0010"
@@ -722,7 +859,7 @@
           "chapter": "Rights and Responsibilities of Citizenship",
           "section": "Magna Carta",
           "pdfPage": 11,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -735,8 +872,33 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Réunionpacifique.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation": "Vrai.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Rights and Responsibilities of Citizenship",
+          "section": "Les droits et responsabilités liés à la citoyenneté (introduction)",
+          "excerpt": "Réunion.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "تجمع؟",
+        "options": [
+          "صحيح",
+          "خطأ"
+        ],
+        "explanation": "صحيح.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0013"
@@ -892,7 +1054,7 @@
           "chapter": "Rights and Responsibilities of Citizenship",
           "section": "Magna Carta",
           "pdfPage": 11,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -905,8 +1067,33 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Habeassilence.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation": "Fauxdétention.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Rights and Responsibilities of Citizenship",
+          "section": "Les droits et responsabilités liés à la citoyenneté (introduction)",
+          "excerpt": "Détention.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "إحضار؟",
+        "options": [
+          "صحيح",
+          "خطأ"
+        ],
+        "explanation": "خطأ.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0016"
@@ -934,7 +1121,7 @@
           "chapter": "Rights and Responsibilities of Citizenship",
           "section": "Canadian Charter",
           "pdfPage": 12,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -955,8 +1142,37 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Traditionsreligieuses.",
+        "options": [
+          "Importantes",
+          "Aucuneplace",
+          "Christianismeseul",
+          "Interdit"
+        ],
+        "correctIndex": 0,
+        "explanation": "Importantes.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Rights and Responsibilities of Citizenship",
+          "section": "La Charte canadienne des droits et libertés",
+          "excerpt": "Dignité.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "دينية؟",
+        "options": [
+          "مهمة",
+          "لامكان",
+          "مسيحية",
+          "ممنوع"
+        ],
+        "explanation": "مهمة.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0017"
@@ -984,7 +1200,7 @@
           "chapter": "Rights and Responsibilities of Citizenship",
           "section": "The Equality of Women and Men",
           "pdfPage": 13,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -1005,8 +1221,37 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Honneurcrimes.",
+        "options": [
+          "Sévèrementpunis",
+          "Tolérés",
+          "Fédéralseul",
+          "Religieux"
+        ],
+        "correctIndex": 0,
+        "explanation": "Punis.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Rights and Responsibilities of Citizenship",
+          "section": "L'égalité des femmes et des hommes",
+          "excerpt": "Sévèrement.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "شرف؟",
+        "options": [
+          "عقاب",
+          "تسامح",
+          "فيدرالي",
+          "ديني"
+        ],
+        "explanation": "عقاب.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0018"
@@ -1168,7 +1413,7 @@
           "chapter": "Rights and Responsibilities of Citizenship",
           "section": "Citizenship Responsibilities",
           "pdfPage": 13,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -1189,8 +1434,37 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Travailresponsabilité.",
+        "options": [
+          "Dignitéprospérité",
+          "Emploigaranti",
+          "Requislaloi",
+          "Languesobligatoires"
+        ],
+        "correctIndex": 0,
+        "explanation": "Dignité.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Rights and Responsibilities of Citizenship",
+          "section": "Responsabilités liées à la citoyenneté",
+          "excerpt": "Contribue.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "عمل؟",
+        "options": [
+          "كرامة",
+          "مضمون",
+          "مطلوب",
+          "لغتين"
+        ],
+        "explanation": "كرامة.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0021"
@@ -1606,7 +1880,7 @@
           "chapter": "Rights and Responsibilities of Citizenship",
           "section": "Citizenship Responsibilities",
           "pdfPage": 13,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -1619,8 +1893,33 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Jurégfacultatif.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation": "Fauxobligatoire.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Rights and Responsibilities of Citizenship",
+          "section": "Responsabilités liées à la citoyenneté",
+          "excerpt": "Obligatoire.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "محلفين؟",
+        "options": [
+          "صحيح",
+          "خطأ"
+        ],
+        "explanation": "خطأ.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0028"
@@ -1646,7 +1945,7 @@
           "chapter": "Rights and Responsibilities of Citizenship",
           "section": "Canadian Charter of Rights and Freedoms",
           "pdfPage": 12,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -1659,8 +1958,33 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Chartepeuple.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation": "Fauxattendu.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Rights and Responsibilities of Citizenship",
+          "section": "La Charte canadienne des droits et libertés",
+          "excerpt": "Attendu.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "ميثاق؟",
+        "options": [
+          "صحيح",
+          "خطأ"
+        ],
+        "explanation": "خطأ.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0029"
@@ -1690,7 +2014,7 @@
           "chapter": "Rights and Responsibilities of Citizenship",
           "section": "Canadian Charter of Rights and Freedoms",
           "pdfPage": 12,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -1703,8 +2027,33 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Charte1867.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation": "Faux1982.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Rights and Responsibilities of Citizenship",
+          "section": "La Charte canadienne des droits et libertés",
+          "excerpt": "1982.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "1867؟",
+        "options": [
+          "صحيح",
+          "خطأ"
+        ],
+        "explanation": "خطأ.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": "Three key dates often appear together on the test: 1867 (Confederation), 1965 (flag), 1982 (Charter). Don't confuse them.",
       "crossReferences": [
         "Q006"
@@ -1796,7 +2145,7 @@
           "chapter": "Rights and Responsibilities of Citizenship",
           "section": "Magna Carta and Fundamental Freedoms",
           "pdfPage": 11,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -1809,8 +2158,33 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Armesliberté.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation": "Fauxpasliberté.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Rights and Responsibilities of Citizenship",
+          "section": "Les droits et responsabilités liés à la citoyenneté (introduction)",
+          "excerpt": "Pasliberté.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "أسلحة؟",
+        "options": [
+          "صحيح",
+          "خطأ"
+        ],
+        "explanation": "خطأ.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": "The four fundamental freedoms (p. 11) trace back to Magna Carta (1215): conscience/religion, thought/expression, peaceful assembly, association. 'Right to bear arms' is American — not in the Canadian Charter.",
       "crossReferences": [],
       "id": "CIT-0032"
@@ -1964,7 +2338,7 @@
           "chapter": "Rights and Responsibilities of Citizenship",
           "section": "Citizenship Responsibilities",
           "pdfPage": 13,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -1977,8 +2351,33 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Porterarmes.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation": "Fauxaméricain.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Rights and Responsibilities of Citizenship",
+          "section": "Les droits et responsabilités liés à la citoyenneté (introduction)",
+          "excerpt": "Américain.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "حملسلاح؟",
+        "options": [
+          "صحيح",
+          "خطأ"
+        ],
+        "explanation": "خطأ.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0035"
@@ -2006,7 +2405,7 @@
           "chapter": "Rights and Responsibilities of Citizenship",
           "section": "Understanding the Oath",
           "pdfPage": 4,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -2027,8 +2426,37 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Serment loyauté.",
+        "options": [
+          "Souverain",
+          "Premierministre",
+          "Parlement",
+          "Drapeau"
+        ],
+        "correctIndex": 0,
+        "explanation": "Souverain.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Rights and Responsibilities of Citizenship",
+          "section": "Comprendre le serment",
+          "excerpt": "Personnifie.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "ولاء؟",
+        "options": [
+          "الملك",
+          "رئيس",
+          "برلمان",
+          "علم"
+        ],
+        "explanation": "الملك.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0036"
@@ -2194,7 +2622,7 @@
           "chapter": "Rights and Responsibilities of Citizenship",
           "section": "Citizenship Responsibilities",
           "pdfPage": 14,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -2215,8 +2643,37 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Troisresponsabilités.",
+        "options": [
+          "Loyautérecyclage",
+          "Obéirfamillejury",
+          "Languesvoteunion",
+          "Achatentrepriseeau"
+        ],
+        "correctIndex": 1,
+        "explanation": "Obéir.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Rights and Responsibilities of Citizenship",
+          "section": "Responsabilités liées à la citoyenneté",
+          "excerpt": "Obéir.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "ثلاث؟",
+        "options": [
+          "ولاء",
+          "احترام",
+          "لغتين",
+          "شراء"
+        ],
+        "explanation": "احترام.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": "The six responsibilities (obey law, take responsibility for family, serve on jury, vote, help others, protect heritage/environment) are explicit on p. 14. Memorize the list.",
       "crossReferences": [
         "Q002"
@@ -2246,7 +2703,7 @@
           "chapter": "Rights and Responsibilities of Citizenship",
           "section": "Canadian Charter — Aboriginal Peoples' Rights",
           "pdfPage": 12,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -2267,8 +2724,37 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Droitsautochtones.",
+        "options": [
+          "Nonaffectetraités",
+          "Constitutionséparée",
+          "Exemptionlois",
+          "Inuitseuls"
+        ],
+        "correctIndex": 0,
+        "explanation": "Protection.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Rights and Responsibilities of Citizenship",
+          "section": "La Charte canadienne des droits et libertés",
+          "excerpt": "Protection.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "أصلية؟",
+        "options": [
+          "حماية",
+          "دستور",
+          "إعفاء",
+          "إنويت"
+        ],
+        "explanation": "حماية.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0040"
@@ -2296,7 +2782,7 @@
           "chapter": "Rights and Responsibilities of Citizenship",
           "section": "Canadian Charter — Minority Language Education",
           "pdfPage": 12,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -2317,8 +2803,37 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Éducationminorité.",
+        "options": [
+          "Éducationlangue",
+          "Françaisseul",
+          "Autochtonesobligatoires",
+          "Troislangues"
+        ],
+        "correctIndex": 0,
+        "explanation": "Éducation.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Rights and Responsibilities of Citizenship",
+          "section": "La Charte canadienne des droits et libertés",
+          "excerpt": "Minorité.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "تعليم؟",
+        "options": [
+          "تعليم",
+          "فرنسية",
+          "أصلية",
+          "ثلاث"
+        ],
+        "explanation": "تعليم.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0041"
@@ -2415,7 +2930,7 @@
           "chapter": "Rights and Responsibilities of Citizenship",
           "section": "Canadian Charter of Rights and Freedoms — Mobility Rights",
           "pdfPage": 12,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -2436,8 +2951,37 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Mobilitégarantit.",
+        "options": [
+          "Vivretravailler",
+          "Transportgratuit",
+          "Conduiresanspermis",
+          "Voyagepayé"
+        ],
+        "correctIndex": 0,
+        "explanation": "Vivretravailler.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Rights and Responsibilities of Citizenship",
+          "section": "La Charte canadienne des droits et libertés",
+          "excerpt": "Partout.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "تنقل؟",
+        "options": [
+          "عيش",
+          "نقل",
+          "قيادة",
+          "سفر"
+        ],
+        "explanation": "عيش.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0043"
@@ -2465,7 +3009,7 @@
           "chapter": "Rights and Responsibilities of Citizenship",
           "section": "Magna Carta",
           "pdfPage": 11,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -2486,8 +3030,37 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Conscience religion.",
+        "options": [
+          "Croireounon",
+          "Christianismeseul",
+          "Enfreindrelois",
+          "Restreintprivé"
+        ],
+        "correctIndex": 0,
+        "explanation": "Croyance.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Rights and Responsibilities of Citizenship",
+          "section": "Les droits et responsabilités liés à la citoyenneté (introduction)",
+          "excerpt": "Conscience.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "وجدان؟",
+        "options": [
+          "اعتقاد",
+          "مسيحية",
+          "خرق",
+          "خاص"
+        ],
+        "explanation": "اعتقاد.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0044"
@@ -2582,7 +3155,7 @@
           "chapter": "Rights and Responsibilities of Citizenship",
           "section": "Canadian Charter — Official Language Rights",
           "pdfPage": 12,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -2603,8 +3176,37 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "CharteFrancaisAnglais.",
+        "options": [
+          "Statutégal",
+          "Françaisseul",
+          "Bilinguismeobligatoire",
+          "Autochtonesofficielles"
+        ],
+        "correctIndex": 0,
+        "explanation": "Égal.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Rights and Responsibilities of Citizenship",
+          "section": "La Charte canadienne des droits et libertés",
+          "excerpt": "Statutégal.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "فرنسية؟",
+        "options": [
+          "متساوٍ",
+          "فرنسية",
+          "إلزامي",
+          "رسمية"
+        ],
+        "explanation": "متساوٍ.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0046"
@@ -2632,7 +3234,7 @@
           "chapter": "Rights and Responsibilities of Citizenship",
           "section": "Canadian Charter",
           "pdfPage": 12,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -2653,8 +3255,37 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Suprématiedieu.",
+        "options": [
+          "Traditionsreligieuses",
+          "Étatreligieux",
+          "Chrétiensseuls",
+          "Loisignorées"
+        ],
+        "correctIndex": 0,
+        "explanation": "Traditions.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Rights and Responsibilities of Citizenship",
+          "section": "La Charte canadienne des droits et libertés",
+          "excerpt": "Souligne.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "سيادة؟",
+        "options": [
+          "تقاليد",
+          "دينية",
+          "مسيحيون",
+          "تجاهل"
+        ],
+        "explanation": "تقاليد.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0047"
@@ -2682,7 +3313,7 @@
           "chapter": "Rights and Responsibilities of Citizenship",
           "section": "Citizenship Responsibilities",
           "pdfPage": 13,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -2703,8 +3334,37 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Primautédroit.",
+        "options": [
+          "Personneaudessus",
+          "Loischoisiespolice",
+          "Décisionpm",
+          "Loisvotées"
+        ],
+        "correctIndex": 0,
+        "explanation": "Personneaudessus.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Rights and Responsibilities of Citizenship",
+          "section": "Qui sommes-nous (intro)",
+          "excerpt": "Aucunepersonne.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "سيادةقانون؟",
+        "options": [
+          "لاأحد",
+          "شرطة",
+          "قرار",
+          "أسبوعي"
+        ],
+        "explanation": "لاأحد.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0048"
@@ -2801,7 +3461,7 @@
           "chapter": "Rights and Responsibilities of Citizenship",
           "section": "Citizenship Responsibilities — Helping Others",
           "pdfPage": 14,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -2822,8 +3482,37 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Responsabilitécommunauté.",
+        "options": [
+          "Bénévolat",
+          "Impôts",
+          "Parti",
+          "Voisins"
+        ],
+        "correctIndex": 0,
+        "explanation": "Bénévolat.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Rights and Responsibilities of Citizenship",
+          "section": "Responsabilités liées à la citoyenneté",
+          "excerpt": "Aider.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "مجتمع؟",
+        "options": [
+          "تطوع",
+          "ضرائب",
+          "حزب",
+          "جيران"
+        ],
+        "explanation": "تطوع.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0050"
@@ -2851,7 +3540,7 @@
           "chapter": "Rights and Responsibilities of Citizenship",
           "section": "Defending Canada",
           "pdfPage": 14,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -2872,8 +3561,37 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Servicemilitaire.",
+        "options": [
+          "Pasobligatoire",
+          "Deuxansobligatoire",
+          "Illégal",
+          "Marineseule"
+        ],
+        "correctIndex": 0,
+        "explanation": "Pasobligatoire.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Rights and Responsibilities of Citizenship",
+          "section": "Défendre le Canada",
+          "excerpt": "Aucun.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "عسكرية؟",
+        "options": [
+          "غيرإلزامية",
+          "إلزامية",
+          "غيرقانونية",
+          "بحرية"
+        ],
+        "explanation": "غيرإلزامية.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0051"
@@ -2904,7 +3622,7 @@
           "chapter": "Rights and Responsibilities of Citizenship",
           "section": "The Equality of Women and Men",
           "pdfPage": 13,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -2925,8 +3643,37 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Égalitéfemmeshommes.",
+        "options": [
+          "Égauxloi",
+          "Préférencefemmes",
+          "Séparésmaiségaux",
+          "Travailseulement"
+        ],
+        "correctIndex": 0,
+        "explanation": "Égaux.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Rights and Responsibilities of Citizenship",
+          "section": "L'égalité des femmes et des hommes",
+          "excerpt": "Égaux.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "مساواة؟",
+        "options": [
+          "متساوون",
+          "تفضيل",
+          "منفصل",
+          "عمل"
+        ],
+        "explanation": "متساوون.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0052"
@@ -2954,7 +3701,7 @@
           "chapter": "Rights and Responsibilities of Citizenship",
           "section": "Citizenship Responsibilities",
           "pdfPage": 14,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -2975,8 +3722,37 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Patrimoineenvironnement.",
+        "options": [
+          "Éviterhasard",
+          "Achetercanadien",
+          "Démolir",
+          "Donneraux"
+        ],
+        "correctIndex": 0,
+        "explanation": "Éviter.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Rights and Responsibilities of Citizenship",
+          "section": "Responsabilités liées à la citoyenneté",
+          "excerpt": "Gaspillage.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "تراث؟",
+        "options": [
+          "تجنب",
+          "شراء",
+          "هدم",
+          "تبرع"
+        ],
+        "explanation": "تجنب.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0053"
@@ -3205,7 +3981,7 @@
           "chapter": "Rights and Responsibilities of Citizenship",
           "section": "Defending Canada",
           "pdfPage": 14,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -3226,8 +4002,37 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Troisbranchesforces.",
+        "options": [
+          "Marinearméearmée",
+          "Armésmarines",
+          "Gardebmarine",
+          "Montéeréserves"
+        ],
+        "correctIndex": 0,
+        "explanation": "Marine.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Rights and Responsibilities of Citizenship",
+          "section": "Défendre le Canada",
+          "excerpt": "Marinearméeaviation.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "فروع؟",
+        "options": [
+          "بحرية",
+          "جيش",
+          "خفر",
+          "خيالة"
+        ],
+        "explanation": "بحرية.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0057"
@@ -3255,7 +4060,7 @@
           "chapter": "Rights and Responsibilities of Citizenship",
           "section": "Defending Canada",
           "pdfPage": 14,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -3276,8 +4081,37 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Jeunesapprennent.",
+        "options": [
+          "Cadets",
+          "Partis",
+          "Policierà16",
+          "Marineseule"
+        ],
+        "correctIndex": 0,
+        "explanation": "Cadets.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Rights and Responsibilities of Citizenship",
+          "section": "Défendre le Canada",
+          "excerpt": "Cadets.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "شباب؟",
+        "options": [
+          "كاديت",
+          "أحزاب",
+          "شرطي",
+          "بحرية"
+        ],
+        "explanation": "كاديت.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0058"
@@ -3372,7 +4206,7 @@
           "chapter": "Rights and Responsibilities of Citizenship",
           "section": "Magna Carta",
           "pdfPage": 11,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -3393,8 +4227,37 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Libertéparole.",
+        "options": [
+          "Penséeexpression",
+          "Réunion",
+          "Association",
+          "Religionseule"
+        ],
+        "correctIndex": 0,
+        "explanation": "Pensée.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Rights and Responsibilities of Citizenship",
+          "section": "Les droits et responsabilités liés à la citoyenneté (introduction)",
+          "excerpt": "Pensée.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "كلام؟",
+        "options": [
+          "فكر",
+          "تجمع",
+          "جمعيات",
+          "دين"
+        ],
+        "explanation": "فكر.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0060"
@@ -3425,7 +4288,7 @@
           "chapter": "Rights and Responsibilities of Citizenship",
           "section": "Citizenship Responsibilities",
           "pdfPage": 13,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -3446,8 +4309,37 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Responsabilitéfamille.",
+        "options": [
+          "Jury",
+          "Bénévolat",
+          "Emploifamille",
+          "Revenuconseil"
+        ],
+        "correctIndex": 2,
+        "explanation": "Emploi.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Rights and Responsibilities of Citizenship",
+          "section": "Responsabilités liées à la citoyenneté",
+          "excerpt": "Emploi.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "أسرة؟",
+        "options": [
+          "محلفين",
+          "تطوع",
+          "عمل",
+          "دخل"
+        ],
+        "explanation": "عمل.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": "Six responsibilities sit on pp. 13-14. 'Taking responsibility for oneself and one's family' = getting a job, caring for family, working hard. Don't mix it up with 'helping others in the community.'",
       "crossReferences": [
         "Q001",
@@ -3549,7 +4441,7 @@
           "chapter": "Rights and Responsibilities of Citizenship",
           "section": "The Charter of Rights and Freedoms",
           "pdfPage": 12,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -3570,8 +4462,37 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Quatredroitscharte.",
+        "options": [
+          "Conscience",
+          "Mobilitéautochtones",
+          "Emploisanté",
+          "Votepasseport"
+        ],
+        "correctIndex": 1,
+        "explanation": "Mobilité.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Rights and Responsibilities of Citizenship",
+          "section": "La Charte canadienne des droits et libertés",
+          "excerpt": "Importants.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "حقوق؟",
+        "options": [
+          "وجدان",
+          "تنقل",
+          "وظيفة",
+          "تصويت"
+        ],
+        "explanation": "تنقل.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": "Rights vs. freedoms is the classic trap. The four CHARTER RIGHTS (p. 12): Mobility, Aboriginal Peoples', Official Language, Multiculturalism. The four FREEDOMS (p. 11) are a separate list.",
       "crossReferences": [
         "Q011",
@@ -3607,7 +4528,7 @@
           "chapter": "Rights and Responsibilities of Citizenship",
           "section": "Magna Carta and Fundamental Freedoms",
           "pdfPage": 11,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -3628,8 +4549,37 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Quatrelibertés.",
+        "options": [
+          "Conscience",
+          "Mobilitéautochtones",
+          "Religionarmes",
+          "Paroleépresse"
+        ],
+        "correctIndex": 0,
+        "explanation": "Conscience.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Rights and Responsibilities of Citizenship",
+          "section": "Les droits et responsabilités liés à la citoyenneté (introduction)",
+          "excerpt": "Fondamentales.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "حريات؟",
+        "options": [
+          "وجدان",
+          "تنقل",
+          "دين",
+          "كلام"
+        ],
+        "explanation": "وجدان.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": "Four freedoms (p. 11), all rooted in Magna Carta (1215): conscience/religion, thought/expression (incl. speech & press), peaceful assembly, association.",
       "crossReferences": [
         "Q011"
@@ -3997,7 +4947,7 @@
           "chapter": "Rights and Responsibilities of Citizenship",
           "section": "Magna Carta and the Charter of Rights and Freedoms",
           "pdfPage": 11,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -4018,8 +4968,37 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Deuxdocuments.",
+        "options": [
+          "Constitution1867",
+          "Magnacharte",
+          "Proclamation1763",
+          "Loislangues"
+        ],
+        "correctIndex": 1,
+        "explanation": "Magna.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Rights and Responsibilities of Citizenship",
+          "section": "Les droits et responsabilités liés à la citoyenneté (introduction)",
+          "excerpt": "Magna.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "وثيقتين؟",
+        "options": [
+          "دستور",
+          "ماغنا",
+          "إعلان",
+          "لغات"
+        ],
+        "explanation": "ماغنا.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": "Two pillars: the historic Magna Carta (1215) tradition of ordered liberty, and the modern Charter of Rights and Freedoms entrenched in the Constitution in 1982.",
       "crossReferences": [
         "Q002",
@@ -4050,7 +5029,7 @@
           "chapter": "Rights and Responsibilities of Citizenship",
           "section": "Understanding the Oath",
           "pdfPage": 4,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -4071,8 +5050,37 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Sermentpersonne.",
+        "options": [
+          "Souverainreprésente",
+          "Restecolonial",
+          "Changerfacilement",
+          "Sansconstitution"
+        ],
+        "correctIndex": 0,
+        "explanation": "Souverain.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Rights and Responsibilities of Citizenship",
+          "section": "Comprendre le serment",
+          "excerpt": "Personnifie.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "لماذاشخص؟",
+        "options": [
+          "ملك",
+          "استعمار",
+          "تغيير",
+          "بلادستور"
+        ],
+        "explanation": "ملك.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0071"
@@ -4100,7 +5108,7 @@
           "chapter": "Rights and Responsibilities of Citizenship",
           "section": "Citizenship Responsibilities",
           "pdfPage": 14,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -4121,8 +5129,37 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Votedroitresponsabilité.",
+        "options": [
+          "Droitresponsabilité",
+          "Amende",
+          "Électeursseuls",
+          "Seuleresponsabilité"
+        ],
+        "correctIndex": 0,
+        "explanation": "Lié.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Rights and Responsibilities of Citizenship",
+          "section": "Responsabilités liées à la citoyenneté",
+          "excerpt": "Responsabilité.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "تصويت؟",
+        "options": [
+          "حقومسؤولية",
+          "غرامة",
+          "ناخبون",
+          "الوحيدة"
+        ],
+        "explanation": "حقومسؤولية.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0072"

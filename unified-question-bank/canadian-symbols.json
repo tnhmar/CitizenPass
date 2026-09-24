@@ -4,11 +4,11 @@
   "memoryBox": {
     "en": {
       "title": "Symbols, Anthem & Honours",
-      "mnemonic": "'O Canada' was FIRST SUNG in Québec City (1880), but PROCLAIMED the national anthem in 1980 — a century apart! Flag raised: 1965. Order of Canada created: 1967.",
+      "mnemonic": "O Canada sung 1880, anthem 1980. Flag: 1965. Order of Canada: 1967.",
       "keyFactsChecklist": [
-        "Flag first raised: 1965",
-        "O Canada first sung: 1880 (Québec City)",
-        "O Canada proclaimed anthem: 1980",
+        "Flag: 1965",
+        "First sung: 1880",
+        "Anthem: 1980",
         "Order of Canada: 1967"
       ]
     }

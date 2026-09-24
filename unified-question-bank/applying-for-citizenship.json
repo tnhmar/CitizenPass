@@ -4,12 +4,12 @@
   "memoryBox": {
     "en": {
       "title": "The Application & Ceremony",
-      "mnemonic": "There are NO free flights to the test — don't fall for that distractor. The test's real purpose: assess your knowledge of Canada and the rights/responsibilities of citizenship. At the ceremony: take the oath, sign the form, receive your certificate.",
+      "mnemonic": "NO free flights. Test = knowledge + rights/responsibilities. Ceremony: oath, sign, certificate.",
       "keyFactsChecklist": [
-        "No free-flights benefit (common false distractor)",
-        "Test purpose: knowledge of Canada + rights/responsibilities",
-        "Ceremony steps: oath, sign form, receive certificate",
-        "Officials check status, eligibility, and requirements"
+        "No free flights",
+        "Test purpose",
+        "Ceremony steps",
+        "Officials check eligibility"
       ]
     }
   },
@@ -36,7 +36,7 @@
           "chapter": "Applying for Citizenship",
           "section": "Applying for Citizenship",
           "pdfPage": 9,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -49,8 +49,33 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Vols gratuits.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation": "Faux cours langue.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Applying for Citizenship",
+          "section": "How to Use this Booklet",
+          "excerpt": "Guide gratuit.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "رحلات مجانية.",
+        "options": [
+          "صحيح",
+          "خطأ"
+        ],
+        "explanation": "خطأ دروس.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0921"
@@ -78,7 +103,7 @@
           "chapter": "Applying for Citizenship",
           "section": "Applying for Citizenship",
           "pdfPage": 10,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -99,8 +124,37 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Cérémonie ?",
+        "options": [
+          "Serment signature certificat",
+          "Vote",
+          "Don",
+          "Renoncement"
+        ],
+        "correctIndex": 0,
+        "explanation": "Serment.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Applying for Citizenship",
+          "section": "Après l'examen",
+          "excerpt": "Serment citoyenneté.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "حفل الجنسية؟",
+        "options": [
+          "قسم شهادة",
+          "تصويت",
+          "تبرع",
+          "تنازل"
+        ],
+        "explanation": "قسم شهادة.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0922"
@@ -128,7 +182,7 @@
           "chapter": "Applying for Citizenship",
           "section": "About the Citizenship Test",
           "pdfPage": 9,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -149,8 +203,37 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "But examen ?",
+        "options": [
+          "Connaissance et droits",
+          "Langue seule",
+          "Antécédents",
+          "Poste public"
+        ],
+        "correctIndex": 0,
+        "explanation": "Deux critères.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Applying for Citizenship",
+          "section": "Renseignements sur l'examen",
+          "excerpt": "Deux critères.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "غرض الامتحان؟",
+        "options": [
+          "معرفة حقوق",
+          "لغة",
+          "خلفية",
+          "منصب"
+        ],
+        "explanation": "معرفة.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0923"
@@ -178,7 +261,7 @@
           "chapter": "Applying for Citizenship",
           "section": "Applying for Citizenship",
           "pdfPage": 8,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -199,8 +282,37 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Vérification ?",
+        "options": [
+          "Statut éligibilité",
+          "Hockey",
+          "Comptes",
+          "Politique"
+        ],
+        "correctIndex": 0,
+        "explanation": "Statut.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Applying for Citizenship",
+          "section": "Demander la citoyenneté",
+          "excerpt": "Fonctionnaires examinent.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "تحقق المسؤولين؟",
+        "options": [
+          "وضع أهلية",
+          "هوكي",
+          "حسابات",
+          "سياسة"
+        ],
+        "explanation": "وضع.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0924"

@@ -4,13 +4,12 @@
   "memoryBox": {
     "en": {
       "title": "Voting Rules & Process",
-      "mnemonic": "Voting is secret — you never have to disclose your choice, and no one can require you to. After an election, the party with the most seats forms government; a 'minority government' holds less than half the seats. Watch for the guide's outdated 308-electoral-district figure (it's changed since).",
+      "mnemonic": "Secret ballot. Most-seats party forms government. Candidate age: 18. 3rd Monday October, every 4yrs.",
       "keyFactsChecklist": [
-        "Voting is a right AND a responsibility",
-        "Ballot is secret, cannot be compelled to disclose",
-        "Most-seats party forms government",
-        "Minority government = <50% of seats",
-        "Guide's electoral-district count (308) is outdated"
+        "Secret ballot",
+        "Most-seats forms government",
+        "Candidate age: 18",
+        "3rd Monday Oct, every 4yrs"
       ]
     }
   },
@@ -103,7 +102,7 @@
           "chapter": "How Canadians Govern Themselves",
           "section": "After an Election",
           "pdfPage": 62,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -124,8 +123,37 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Parti gouvernement.",
+        "options": [
+          "Plus sièges invité",
+          "Plus votes",
+          "Sénat",
+          "Provincial"
+        ],
+        "correctIndex": 0,
+        "explanation": "Chef invité.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Federal Elections",
+          "section": "Après une élection",
+          "excerpt": "Invité.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "حكومة؟",
+        "options": [
+          "أكثر مقاعد",
+          "أكثر أصوات",
+          "شيوخ",
+          "إقليمي"
+        ],
+        "explanation": "أكثر مقاعد.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0521"
@@ -156,7 +184,7 @@
           "chapter": "How Canadians Govern Themselves",
           "section": "Secret Ballot",
           "pdfPage": 62,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -177,8 +205,37 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Dire vote.",
+        "options": [
+          "Non secret",
+          "Oui Élections",
+          "Oui employeur",
+          "Oui syndicat"
+        ],
+        "correctIndex": 0,
+        "explanation": "Personne insister.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Federal Elections",
+          "section": "Scrutin secret",
+          "excerpt": "Droit insister.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "سري؟",
+        "options": [
+          "لا",
+          "نعم",
+          "نعم",
+          "نعم"
+        ],
+        "explanation": "لاسرية.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0522"
@@ -403,7 +460,7 @@
           "chapter": "How Canadians Govern Themselves",
           "section": "Federal Elections",
           "pdfPage": 60,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -416,8 +473,33 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "308circonscriptions.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation": "Vrai.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Federal Elections",
+          "section": "Élections fédérales",
+          "excerpt": "308zones.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "308؟",
+        "options": [
+          "صحيح",
+          "خطأ"
+        ],
+        "explanation": "صحيح.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0526"
@@ -503,7 +585,7 @@
           "chapter": "How Canadians Govern Themselves",
           "section": "Parliamentary Democracy",
           "pdfPage": 55,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -516,8 +598,33 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Sénateurs élus.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation": "Faux nommés.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Federal Elections",
+          "section": "Les Canadiens et leur système de gouvernement",
+          "excerpt": "Nommés.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "منتخبون؟",
+        "options": [
+          "صحيح",
+          "خطأ"
+        ],
+        "explanation": "خطأ.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0528"
@@ -603,7 +710,7 @@
           "chapter": "How Canadians Govern Themselves",
           "section": "Voting",
           "pdfPage": 61,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -616,8 +723,33 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Registre national.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation": "Vrai.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Federal Elections",
+          "section": "Élections fédérales",
+          "excerpt": "Registre.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "سجل؟",
+        "options": [
+          "صحيح",
+          "خطأ"
+        ],
+        "explanation": "صحيح.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0530"
@@ -711,7 +843,7 @@
           "chapter": "How Canadians Govern Themselves",
           "section": "Voting Procedures",
           "pdfPage": 65,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -732,8 +864,37 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Marquer bulletin.",
+        "options": [
+          "X candidat",
+          "Classer",
+          "Parti",
+          "Tous"
+        ],
+        "correctIndex": 0,
+        "explanation": "X candidat.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Federal Elections",
+          "section": "Procédures de vote",
+          "excerpt": "X.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "تعليم؟",
+        "options": [
+          "X",
+          "ترتيب",
+          "حزب",
+          "الكل"
+        ],
+        "explanation": "X.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0532"
@@ -761,7 +922,7 @@
           "chapter": "How Canadians Govern Themselves",
           "section": "Federal Elections",
           "pdfPage": 60,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -782,8 +943,37 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Durée traditionnelle.",
+        "options": [
+          "4ans",
+          "2ans",
+          "6ans",
+          "10ans"
+        ],
+        "correctIndex": 0,
+        "explanation": "4ans.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Federal Elections",
+          "section": "Les Canadiens et leur système de gouvernement",
+          "excerpt": "4ans.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "مدة؟",
+        "options": [
+          "4",
+          "2",
+          "6",
+          "10"
+        ],
+        "explanation": "4.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0533"
@@ -809,7 +999,7 @@
           "chapter": "How Canadians Govern Themselves",
           "section": "Parliamentary Democracy",
           "pdfPage": 55,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -822,8 +1012,33 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Sénat gouvernement.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation": "Faux dissolution.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Federal Elections",
+          "section": "Les Canadiens et leur système de gouvernement",
+          "excerpt": "Demande.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "شيوخ؟",
+        "options": [
+          "صحيح",
+          "خطأ"
+        ],
+        "explanation": "خطأ.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0534"
@@ -911,7 +1126,7 @@
           "chapter": "How Canadians Govern Themselves",
           "section": "Voting Procedures",
           "pdfPage": 64,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -932,8 +1147,37 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Options nonvote.",
+        "options": [
+          "Anticipation",
+          "Téléphone",
+          "Sauter",
+          "Conjoint"
+        ],
+        "correctIndex": 0,
+        "explanation": "Anticipé.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Federal Elections",
+          "section": "Procédures de vote",
+          "excerpt": "Anticipation.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "خيارات؟",
+        "options": [
+          "مبكر",
+          "هاتف",
+          "تجاوز",
+          "زوج"
+        ],
+        "explanation": "مبكر.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0536"
@@ -964,7 +1208,7 @@
           "chapter": "How Canadians Govern Themselves",
           "section": "Voting Procedures",
           "pdfPage": 64,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -985,8 +1229,37 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Pascarte.",
+        "options": [
+          "Appeler bureau",
+          "Supposer",
+          "Attendre",
+          "Citoyenneté"
+        ],
+        "correctIndex": 0,
+        "explanation": "Appeler.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Federal Elections",
+          "section": "Procédures de vote",
+          "excerpt": "Téléphonez.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "لابطاقة؟",
+        "options": [
+          "اتصال",
+          "افتراض",
+          "انتظار",
+          "جنسية"
+        ],
+        "explanation": "اتصال.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0537"
@@ -1014,7 +1287,7 @@
           "chapter": "How Canadians Govern Themselves",
           "section": "Parliamentary Democracy",
           "pdfPage": 55,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -1035,8 +1308,37 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Responsabilité députés.",
+        "options": [
+          "Adopter lois",
+          "Choisir souverain",
+          "Nommer tribunaux",
+          "Éducation"
+        ],
+        "correctIndex": 0,
+        "explanation": "Adopter.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Federal Elections",
+          "section": "Les Canadiens et leur système de gouvernement",
+          "excerpt": "Députés.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "مسؤولية؟",
+        "options": [
+          "قوانين",
+          "ملك",
+          "محاكم",
+          "تعليم"
+        ],
+        "explanation": "قوانين.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0538"
@@ -1249,7 +1551,7 @@
           "chapter": "How Canadians Govern Themselves",
           "section": "After an Election",
           "pdfPage": 62,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -1262,8 +1564,33 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Gouverneur invite.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation": "Vrai.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Federal Elections",
+          "section": "Après une élection",
+          "excerpt": "Invité.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "يدعو؟",
+        "options": [
+          "صحيح",
+          "خطأ"
+        ],
+        "explanation": "صحيح.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0542"
@@ -1289,7 +1616,7 @@
           "chapter": "How Canadians Govern Themselves",
           "section": "Federal Elections",
           "pdfPage": 60,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -1302,8 +1629,33 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Député chefs.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation": "Faux élu.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Federal Elections",
+          "section": "Élections fédérales",
+          "excerpt": "Citoyens élisent.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "تعيين؟",
+        "options": [
+          "صحيح",
+          "خطأ"
+        ],
+        "explanation": "خطأ.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": "Note for applicants: while the test asks HOW an MP is chosen, it is strongly recommended that you also know WHO your own member of Parliament is — the candidate elected in your electoral district (riding) to represent you in the House of Commons (p. 60).",
       "crossReferences": [],
       "id": "CIT-0543"
@@ -1329,7 +1681,7 @@
           "chapter": "How Canadians Govern Themselves",
           "section": "Federal Elections",
           "pdfPage": 60,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -1342,8 +1694,33 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "18ans candidat.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation": "Vrai.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Federal Elections",
+          "section": "Élections fédérales",
+          "excerpt": "18ans.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "18؟",
+        "options": [
+          "صحيح",
+          "خطأ"
+        ],
+        "explanation": "صحيح.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0544"
@@ -1489,7 +1866,7 @@
           "chapter": "How Canadians Govern Themselves",
           "section": "Constitutional Monarchy",
           "pdfPage": 57,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -1502,8 +1879,33 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Souverain parti.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation": "Faux neutre.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Federal Elections",
+          "section": "Les Canadiens et leur système de gouvernement",
+          "excerpt": "Neutre.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "ملك يدعم؟",
+        "options": [
+          "صحيح",
+          "خطأ"
+        ],
+        "explanation": "خطأ.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0547"
@@ -1916,7 +2318,7 @@
           "chapter": "How Canadians Govern Themselves",
           "section": "Three Branches / Federal Table",
           "pdfPage": 68,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -1937,8 +2339,37 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Membres législature.",
+        "options": [
+          "MLA MNA MPP MHA",
+          "Députés",
+          "Sénateurs",
+          "Maires"
+        ],
+        "correctIndex": 0,
+        "explanation": "Titres.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Federal Elections",
+          "section": "Les autres ordres de gouvernement",
+          "excerpt": "Assemblée.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "أعضاء؟",
+        "options": [
+          "MLA",
+          "نواب",
+          "شيوخ",
+          "عمداء"
+        ],
+        "explanation": "تسميات.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0554"
@@ -2098,7 +2529,7 @@
           "chapter": "How Canadians Govern Themselves",
           "section": "Voting Procedures",
           "pdfPage": 65,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -2119,8 +2550,37 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Numérobulletin.",
+        "options": [
+          "Détaché rendu",
+          "Signé",
+          "Gardé",
+          "Photographié"
+        ],
+        "correctIndex": 0,
+        "explanation": "Détaché.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Federal Elections",
+          "section": "Procédures de vote",
+          "excerpt": "Détache.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "رقم؟",
+        "options": [
+          "يفصل",
+          "يوقع",
+          "يحتفظ",
+          "يصور"
+        ],
+        "explanation": "يفصل.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0557"
@@ -2148,7 +2608,7 @@
           "chapter": "How Canadians Govern Themselves",
           "section": "Voting",
           "pdfPage": 61,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -2169,8 +2629,37 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Carte info.",
+        "options": [
+          "Quand où",
+          "Compte direct",
+          "Passeport",
+          "Citoyenneté"
+        ],
+        "correctIndex": 0,
+        "explanation": "Quand où.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Federal Elections",
+          "section": "Procédures de vote",
+          "excerpt": "Indique.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "بطاقة؟",
+        "options": [
+          "مكان",
+          "صوت",
+          "جواز",
+          "جنسية"
+        ],
+        "explanation": "مكان.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0558"
@@ -2264,7 +2753,7 @@
           "chapter": "How Canadians Govern Themselves",
           "section": "Secret Ballot / Voting",
           "pdfPage": 62,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -2285,8 +2774,37 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Après fermeture.",
+        "options": [
+          "Comptage",
+          "Un an",
+          "Souverain",
+          "Seconde"
+        ],
+        "correctIndex": 0,
+        "explanation": "Comptage.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Federal Elections",
+          "section": "Scrutin secret",
+          "excerpt": "Compte.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "إغلاق؟",
+        "options": [
+          "إحصاء",
+          "تخزين",
+          "فحص",
+          "إعادة"
+        ],
+        "explanation": "إحصاء.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0560"
@@ -2710,7 +3228,7 @@
           "chapter": "How Canadians Govern Themselves",
           "section": "Federal Elections",
           "pdfPage": 60,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -2731,8 +3249,37 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Âge candidat.",
+        "options": [
+          "18",
+          "16",
+          "21",
+          "25"
+        ],
+        "correctIndex": 0,
+        "explanation": "18.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Federal Elections",
+          "section": "Élections fédérales",
+          "excerpt": "18ans.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "عمر؟",
+        "options": [
+          "18",
+          "16",
+          "21",
+          "25"
+        ],
+        "explanation": "18.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0567"
@@ -2763,7 +3310,7 @@
           "chapter": "How Canadians Govern Themselves",
           "section": "Federal Elections",
           "pdfPage": 60,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -2784,8 +3331,37 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Quand élections.",
+        "options": [
+          "3elundi",
+          "2ans",
+          "Souverain",
+          "5ans"
+        ],
+        "correctIndex": 0,
+        "explanation": "3elundi.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Federal Elections",
+          "section": "Élections fédérales",
+          "excerpt": "Troisième.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "متى؟",
+        "options": [
+          "ثالث",
+          "سنتين",
+          "ملك",
+          "5"
+        ],
+        "explanation": "ثالث.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0568"
@@ -2882,7 +3458,7 @@
           "chapter": "How Canadians Govern Themselves",
           "section": "Voting Procedures During an Election Period",
           "pdfPage": 64,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -2903,8 +3479,37 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Jour vote.",
+        "options": [
+          "Bureau isoloir",
+          "Enligne",
+          "Direpréposé",
+          "Classer"
+        ],
+        "correctIndex": 0,
+        "explanation": "Isoloir.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Federal Elections",
+          "section": "Procédures de vote",
+          "excerpt": "Isoloir.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "يوم؟",
+        "options": [
+          "مركز",
+          "أونلاين",
+          "حزب",
+          "ترتيب"
+        ],
+        "explanation": "مركز.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": "On election day: bring your voter card + ID to your polling station, mark an 'X' for ONE candidate behind the screen, and drop your ballot in the box. The vote is secret.",
       "crossReferences": [
         "Q170",
@@ -2935,7 +3540,7 @@
           "chapter": "How Canadians Govern Themselves",
           "section": "Voting Procedures",
           "pdfPage": 65,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -2956,8 +3561,37 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Vérifier résultats.",
+        "options": [
+          "Site Élections",
+          "Blogue",
+          "Sénat",
+          "Ambassade"
+        ],
+        "correctIndex": 0,
+        "explanation": "Site.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Federal Elections",
+          "section": "Procédures de vote",
+          "excerpt": "elections.ca.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "نتائج؟",
+        "options": [
+          "موقع",
+          "مدونة",
+          "مكتبة",
+          "سفارة"
+        ],
+        "explanation": "موقع.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0571"
@@ -3515,7 +4149,7 @@
           "chapter": "How Canadians Govern Themselves",
           "section": "Other Levels of Government",
           "pdfPage": 66,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -3536,8 +4170,37 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Élus municipaux.",
+        "options": [
+          "Maire conseillers",
+          "PMprovincial",
+          "PMfédéral",
+          "Souverain"
+        ],
+        "correctIndex": 0,
+        "explanation": "Maire.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Federal Elections",
+          "section": "Les autres ordres de gouvernement",
+          "excerpt": "Échevins.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "بلدية؟",
+        "options": [
+          "عمدة",
+          "إقليمي",
+          "فيدرالي",
+          "ملك"
+        ],
+        "explanation": "عمدة.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0580"
@@ -3565,7 +4228,7 @@
           "chapter": "How Canadians Govern Themselves",
           "section": "Federal Elections",
           "pdfPage": 60,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -3586,8 +4249,37 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Élection anticipée.",
+        "options": [
+          "PMdemande",
+          "Souverain",
+          "Sénat",
+          "PMprovinciaux"
+        ],
+        "correctIndex": 0,
+        "explanation": "PMdemande.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Federal Elections",
+          "section": "Élections fédérales",
+          "excerpt": "PMdemande.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "مبكرة؟",
+        "options": [
+          "رئيس",
+          "ملك",
+          "شيوخ",
+          "إقليميون"
+        ],
+        "explanation": "رئيس.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0581"
@@ -3686,7 +4378,7 @@
           "chapter": "How Canadians Govern Themselves",
           "section": "Voting",
           "pdfPage": 61,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -3707,8 +4399,37 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Qui vote.",
+        "options": [
+          "18tout",
+          "Citoyen18liste",
+          "Propriétaire21",
+          "10ans"
+        ],
+        "correctIndex": 1,
+        "explanation": "Citoyen18.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Federal Elections",
+          "section": "Élections fédérales",
+          "excerpt": "Citoyen18.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "من يصوت؟",
+        "options": [
+          "18",
+          "مواطن18",
+          "مالك21",
+          "10"
+        ],
+        "explanation": "مواطن.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0583"
@@ -3934,7 +4655,7 @@
           "chapter": "How Canadians Govern Themselves",
           "section": "Voting Procedures",
           "pdfPage": 65,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -3955,8 +4676,37 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Pourquoi isoloir.",
+        "options": [
+          "Secret",
+          "Empêcher",
+          "Rituel",
+          "Photo"
+        ],
+        "correctIndex": 0,
+        "explanation": "Secret.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Federal Elections",
+          "section": "Scrutin secret",
+          "excerpt": "Secret.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "لماذا؟",
+        "options": [
+          "سرية",
+          "منع",
+          "طقس",
+          "تصوير"
+        ],
+        "explanation": "سرية.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0587"
@@ -3984,7 +4734,7 @@
           "chapter": "How Canadians Govern Themselves",
           "section": "After an Election",
           "pdfPage": 62,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -4005,8 +4755,37 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Budgetconfiance.",
+        "options": [
+          "Défaiteparti",
+          "Calcul",
+          "Sénat",
+          "Opposition"
+        ],
+        "correctIndex": 0,
+        "explanation": "Défaite.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Federal Elections",
+          "section": "Les Canadiens et leur système de gouvernement",
+          "excerpt": "Confiance.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "ميزانية؟",
+        "options": [
+          "هزيمة",
+          "حساب",
+          "شيوخ",
+          "معارضة"
+        ],
+        "explanation": "هزيمة.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0588"

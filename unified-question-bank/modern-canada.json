@@ -3,13 +3,14 @@
   "chapterTitle": "Modern Canada",
   "memoryBox": {
     "en": {
-      "title": "Postwar Growth & Rights Milestones",
-      "mnemonic": "Oil discovered in Alberta in 1947. Free trade with the US: 1988 — six years before Mexico joined as NAFTA (1994), don't merge these two. Aboriginal peoples got the federal vote in 1960; Japanese Canadians got it in 1948 (12 years earlier).",
+      "title": "Postwar Growth, Vote Milestones & Culture",
+      "mnemonic": "Oil: 1947. Japanese-Canadian vote 1948, Aboriginal 1960. Terry Fox ran the Marathon of Hope (1980) — didn't wheelchair the globe. Paul Henderson scored the 1972 goal, not Gretzky. Banting/Best discovered insulin, not Bell.",
       "keyFactsChecklist": [
-        "Oil discovered in Alberta: 1947",
-        "Free trade with US: 1988",
-        "Aboriginal federal vote: 1960",
-        "Korean War participation dates"
+        "Oil: 1947",
+        "Japanese-Canadian vote 1948, Aboriginal 1960",
+        "Terry Fox: Marathon of Hope, 1980",
+        "1972 goal: Paul Henderson",
+        "Insulin: Banting/Best"
       ]
     }
   },
@@ -166,7 +167,7 @@
           "chapter": "Modern Canada",
           "section": "A Changing Society",
           "pdfPage": 48,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -187,8 +188,37 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Réfugiés viet.",
+        "options": [
+          "50000",
+          "37000",
+          "1000",
+          "500000"
+        ],
+        "correctIndex": 0,
+        "explanation": "50000.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Modern Canada",
+          "section": "Le Canada moderne",
+          "excerpt": "50000.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "lاجئون؟",
+        "options": [
+          "50000",
+          "37000",
+          "1000",
+          "500000"
+        ],
+        "explanation": "50000.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0325"
@@ -281,7 +311,7 @@
           "chapter": "Modern Canada",
           "section": "International Engagement",
           "pdfPage": 46,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -294,8 +324,33 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "OTAN NORAD.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation": "Vrai.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Modern Canada",
+          "section": "Engagement international",
+          "excerpt": "OTAN.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "ناتو؟",
+        "options": [
+          "صحيح",
+          "خطأ"
+        ],
+        "explanation": "صحيح.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0327"
@@ -321,7 +376,7 @@
           "chapter": "Modern Canada",
           "section": "Discoveries and Inventions",
           "pdfPage": 52,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -334,8 +389,33 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Bell message.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation": "Faux Fessenden.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Modern Canada",
+          "section": "Grandes découvertes et inventions canadiennes",
+          "excerpt": "Fessenden.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "بيل؟",
+        "options": [
+          "صحيح",
+          "خطأ"
+        ],
+        "explanation": "خطأ.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0328"
@@ -556,7 +636,7 @@
           "chapter": "Modern Canada",
           "section": "A Changing Society",
           "pdfPage": 48,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -569,8 +649,33 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Deux tiers.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation": "Faux non confirmé.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Modern Canada",
+          "section": "Le Canada moderne",
+          "excerpt": "Non mentionné.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "ثلثان؟",
+        "options": [
+          "صحيح",
+          "خطأ"
+        ],
+        "explanation": "خطأ.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0332"
@@ -661,7 +766,7 @@
           "chapter": "Modern Canada",
           "section": "International Engagement",
           "pdfPage": 46,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -674,8 +779,33 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Vietnam ONU.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation": "Faux Corée.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Modern Canada",
+          "section": "Engagement international",
+          "excerpt": "Corée.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "فيتنام؟",
+        "options": [
+          "صحيح",
+          "خطأ"
+        ],
+        "explanation": "خطأ.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0334"
@@ -890,7 +1020,7 @@
           "chapter": "Modern Canada",
           "section": "Sports in Canada",
           "pdfPage": 50,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -903,8 +1033,33 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "LeMayDoan.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation": "Vrai.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Modern Canada",
+          "section": "Le Canada moderne",
+          "excerpt": "Drapeau.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "لوماي؟",
+        "options": [
+          "صحيح",
+          "خطأ"
+        ],
+        "explanation": "صحيح.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0338"
@@ -990,7 +1145,7 @@
           "chapter": "Modern Canada",
           "section": "Sports in Canada",
           "pdfPage": 50,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -1003,8 +1158,33 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Bailey.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation": "Vrai.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Modern Canada",
+          "section": "Le Canada moderne",
+          "excerpt": "Sprinteur.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "بيلي؟",
+        "options": [
+          "صحيح",
+          "خطأ"
+        ],
+        "explanation": "صحيح.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0340"
@@ -1097,7 +1277,7 @@
           "chapter": "Modern Canada",
           "section": "Discoveries and Inventions",
           "pdfPage": 52,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -1110,8 +1290,33 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Penfield.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation": "Vrai.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Modern Canada",
+          "section": "Grandes découvertes et inventions canadiennes",
+          "excerpt": "McGill.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "بنفيلد؟",
+        "options": [
+          "صحيح",
+          "خطأ"
+        ],
+        "explanation": "صحيح.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0342"
@@ -1204,7 +1409,7 @@
           "chapter": "Modern Canada",
           "section": "A Changing Society",
           "pdfPage": 47,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -1217,8 +1422,33 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "18ans.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation": "Vrai.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Modern Canada",
+          "section": "Le Canada moderne",
+          "excerpt": "18ans.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "18يصوت؟",
+        "options": [
+          "صحيح",
+          "خطأ"
+        ],
+        "explanation": "صحيح.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0344"
@@ -2171,7 +2401,7 @@
           "chapter": "Modern Canada",
           "section": "Great Canadian Discoveries and Inventions",
           "pdfPage": 52,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -2184,8 +2414,33 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Insuline Bell.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation": "Faux Banting.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Modern Canada",
+          "section": "Grandes découvertes et inventions canadiennes",
+          "excerpt": "Banting.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "أنسولين؟",
+        "options": [
+          "صحيح",
+          "خطأ"
+        ],
+        "explanation": "خطأ.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0359"
@@ -2271,7 +2526,7 @@
           "chapter": "Modern Canada",
           "section": "A Changing Society",
           "pdfPage": 47,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -2284,8 +2539,33 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Japonais1948.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation": "Vrai.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Modern Canada",
+          "section": "Le Canada moderne",
+          "excerpt": "1948.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "يابانيون؟",
+        "options": [
+          "صحيح",
+          "خطأ"
+        ],
+        "explanation": "صحيح.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0361"
@@ -2377,7 +2657,7 @@
           "chapter": "Modern Canada",
           "section": "Discoveries and Inventions",
           "pdfPage": 52,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -2390,8 +2670,33 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Lazaridis.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation": "Faux BlackBerry.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Modern Canada",
+          "section": "Grandes découvertes et inventions canadiennes",
+          "excerpt": "BlackBerry.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "لازاريدس؟",
+        "options": [
+          "صحيح",
+          "خطأ"
+        ],
+        "explanation": "خطأ.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0363"
@@ -2484,7 +2789,7 @@
           "chapter": "Modern Canada",
           "section": "Canada and Quebec",
           "pdfPage": 46,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -2497,8 +2802,33 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Commission1963.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation": "Vrai.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Modern Canada",
+          "section": "Le Canada et le Québec",
+          "excerpt": "1963.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "لجنة؟",
+        "options": [
+          "صحيح",
+          "خطأ"
+        ],
+        "explanation": "صحيح.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0365"
@@ -2527,7 +2857,7 @@
           "chapter": "Modern Canada",
           "section": "Canada and Quebec",
           "pdfPage": 47,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -2540,8 +2870,33 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Trois référendums.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation": "Faux deux.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Modern Canada",
+          "section": "Le Canada et le Québec",
+          "excerpt": "Deux.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "ثلاثة؟",
+        "options": [
+          "صحيح",
+          "خطأ"
+        ],
+        "explanation": "خطأ.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0366"
@@ -2569,7 +2924,7 @@
           "chapter": "Modern Canada",
           "section": "Discoveries and Inventions",
           "pdfPage": 51,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -2590,8 +2945,37 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Astronautes.",
+        "options": [
+          "1989",
+          "1967",
+          "1957",
+          "2000"
+        ],
+        "correctIndex": 0,
+        "explanation": "1989.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Modern Canada",
+          "section": "Le Canada moderne",
+          "excerpt": "1989.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "فضاء؟",
+        "options": [
+          "1989",
+          "1967",
+          "1957",
+          "2000"
+        ],
+        "explanation": "1989.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0367"
@@ -2741,7 +3125,7 @@
           "chapter": "Modern Canada",
           "section": "Arts and Culture in Canada",
           "pdfPage": 48,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -2762,8 +3146,37 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Leacock.",
+        "options": [
+          "Humoriste",
+          "Hockey",
+          "Téléphone",
+          "PM"
+        ],
+        "correctIndex": 0,
+        "explanation": "Humoriste.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Modern Canada",
+          "section": "Le Canada moderne",
+          "excerpt": "Leacock.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "ليكوك؟",
+        "options": [
+          "فكاهي",
+          "هوكي",
+          "هاتف",
+          "رئيس"
+        ],
+        "explanation": "فكاهي.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0370"
@@ -2789,7 +3202,7 @@
           "chapter": "Modern Canada",
           "section": "Sports in Canada",
           "pdfPage": 50,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -2802,8 +3215,33 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Foxfauteuil.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation": "Faux marathon.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Modern Canada",
+          "section": "Le Canada moderne",
+          "excerpt": "Marathon.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "فوكس؟",
+        "options": [
+          "صحيح",
+          "خطأ"
+        ],
+        "explanation": "خطأ.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0371"
@@ -3097,7 +3535,7 @@
           "chapter": "Modern Canada",
           "section": "Trade and Economic Growth",
           "pdfPage": 45,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -3110,8 +3548,33 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Pensions1927.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation": "Faux1965.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Modern Canada",
+          "section": "Le Canada moderne",
+          "excerpt": "1965.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "تقاعد؟",
+        "options": [
+          "صحيح",
+          "خطأ"
+        ],
+        "explanation": "خطأ.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0376"
@@ -3141,7 +3604,7 @@
           "chapter": "Modern Canada",
           "section": "Great Canadian Discoveries and Inventions",
           "pdfPage": 52,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -3154,8 +3617,33 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "NobelPhysique.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation": "Faux.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Modern Canada",
+          "section": "Grandes découvertes et inventions canadiennes",
+          "excerpt": "Pasnobel.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "نوبل؟",
+        "options": [
+          "صحيح",
+          "خطأ"
+        ],
+        "explanation": "خطأ.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": "Insulin (Banting & Best, Toronto) = a diabetes treatment credited with saving ~16 million lives worldwide. It is a hormone treatment, not a vaccine.",
       "crossReferences": [
         "Q090"
@@ -3244,7 +3732,7 @@
           "chapter": "Modern Canada",
           "section": "Trade and Economic Growth",
           "pdfPage": 45,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -3257,8 +3745,33 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Assurance1940.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation": "Vrai.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Modern Canada",
+          "section": "Le Canada moderne",
+          "excerpt": "1940.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "تأمين؟",
+        "options": [
+          "صحيح",
+          "خطأ"
+        ],
+        "explanation": "صحيح.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0379"
@@ -3284,7 +3797,7 @@
           "chapter": "Modern Canada",
           "section": "Arts and Culture in Canada",
           "pdfPage": 49,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -3297,8 +3810,33 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Groupe71948.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation": "Faux1920.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Modern Canada",
+          "section": "Le Canada moderne",
+          "excerpt": "1920.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "سبعة؟",
+        "options": [
+          "صحيح",
+          "خطأ"
+        ],
+        "explanation": "خطأ.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0380"
@@ -3324,7 +3862,7 @@
           "chapter": "Modern Canada",
           "section": "Arts and Culture in Canada",
           "pdfPage": 49,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -3337,8 +3875,33 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "JackPine.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation": "Vrai.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Modern Canada",
+          "section": "Le Canada moderne",
+          "excerpt": "Thomson.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "جاك؟",
+        "options": [
+          "صحيح",
+          "خطأ"
+        ],
+        "explanation": "صحيح.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0381"
@@ -3553,7 +4116,7 @@
           "chapter": "Modern Canada",
           "section": "Canada and Quebec",
           "pdfPage": 46,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -3566,8 +4129,33 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Révolutioncoup.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation": "Faux changements.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Modern Canada",
+          "section": "Le Canada et le Québec",
+          "excerpt": "Changements.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "انقلاب؟",
+        "options": [
+          "صحيح",
+          "خطأ"
+        ],
+        "explanation": "خطأ.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0385"
@@ -3719,7 +4307,7 @@
           "chapter": "Modern Canada",
           "section": "Sports in Canada",
           "pdfPage": 50,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -3732,8 +4320,33 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Gretzky1972.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation": "Faux Henderson.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Modern Canada",
+          "section": "Le Canada moderne",
+          "excerpt": "Henderson.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "غريتسكي؟",
+        "options": [
+          "صحيح",
+          "خطأ"
+        ],
+        "explanation": "خطأ.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0388"
@@ -4162,7 +4775,7 @@
           "chapter": "Modern Canada",
           "section": "Trade and Economic Growth",
           "pdfPage": 45,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -4183,8 +4796,37 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "OMCsuccesseur.",
+        "options": [
+          "GATT",
+          "ALENA",
+          "SDN",
+          "OTAN"
+        ],
+        "correctIndex": 0,
+        "explanation": "GATT.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Modern Canada",
+          "section": "Commerce et croissance économique",
+          "excerpt": "GATT.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "منظمة؟",
+        "options": [
+          "جات",
+          "نافتا",
+          "عصبة",
+          "ناتو"
+        ],
+        "explanation": "جات.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0395"
@@ -4412,7 +5054,7 @@
           "chapter": "Modern Canada",
           "section": "International Engagement",
           "pdfPage": 46,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -4433,8 +5075,37 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Guerrefroide.",
+        "options": [
+          "Bloccommuniste",
+          "Chutemur",
+          "Corée",
+          "GM1"
+        ],
+        "correctIndex": 0,
+        "explanation": "Bloc.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Modern Canada",
+          "section": "Engagement international",
+          "excerpt": "Bloc.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "باردة؟",
+        "options": [
+          "كتلة",
+          "سقوط",
+          "كوريا",
+          "أولى"
+        ],
+        "explanation": "كتلة.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0399"
@@ -4529,7 +5200,7 @@
           "chapter": "Modern Canada",
           "section": "Arts and Culture in Canada",
           "pdfPage": 49,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -4550,8 +5221,37 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Carrconnue.",
+        "options": [
+          "Forêtscôte",
+          "Parlement",
+          "Hymne",
+          "Motoneige"
+        ],
+        "correctIndex": 0,
+        "explanation": "Forêts.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Modern Canada",
+          "section": "Le Canada moderne",
+          "excerpt": "Forêts.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "كار؟",
+        "options": [
+          "غابات",
+          "برلمان",
+          "نشيد",
+          "دراجة"
+        ],
+        "explanation": "غابات.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0401"
@@ -4646,7 +5346,7 @@
           "chapter": "Modern Canada",
           "section": "International Engagement",
           "pdfPage": 46,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -4667,8 +5367,37 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Vietnamrôle.",
+        "options": [
+          "Pascombattant",
+          "Dirigéusa",
+          "60000morts",
+          "Envahi1965"
+        ],
+        "correctIndex": 0,
+        "explanation": "Réfugiés.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Modern Canada",
+          "section": "Le Canada moderne",
+          "excerpt": "Réfugiés.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "فيتنام؟",
+        "options": [
+          "لاجئون",
+          "حرب",
+          "60000",
+          "غزو"
+        ],
+        "explanation": "لاجئون.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0403"
@@ -4696,7 +5425,7 @@
           "chapter": "Modern Canada",
           "section": "Trade and Economic Growth",
           "pdfPage": 45,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -4717,8 +5446,37 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Majoriténiveau.",
+        "options": [
+          "1951",
+          "1867",
+          "1929",
+          "1982"
+        ],
+        "correctIndex": 0,
+        "explanation": "1951.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Modern Canada",
+          "section": "Commerce et croissance économique",
+          "excerpt": "1951.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "معيشة؟",
+        "options": [
+          "1951",
+          "1867",
+          "1929",
+          "1982"
+        ],
+        "explanation": "1951.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0404"
@@ -4746,7 +5504,7 @@
           "chapter": "Modern Canada",
           "section": "International Engagement",
           "pdfPage": 47,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -4767,8 +5525,37 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Francophonie.",
+        "options": [
+          "1970",
+          "1867",
+          "1969",
+          "1980"
+        ],
+        "correctIndex": 0,
+        "explanation": "1970.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Modern Canada",
+          "section": "Le Canada et le Québec",
+          "excerpt": "1970.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "فرانكو؟",
+        "options": [
+          "1970",
+          "1867",
+          "1969",
+          "1980"
+        ],
+        "explanation": "1970.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0405"
@@ -4796,7 +5583,7 @@
           "chapter": "Modern Canada",
           "section": "International Engagement",
           "pdfPage": 47,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -4817,8 +5604,37 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Francophonie2.",
+        "options": [
+          "1970",
+          "1867",
+          "1949",
+          "1982"
+        ],
+        "correctIndex": 0,
+        "explanation": "1970.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Modern Canada",
+          "section": "Le Canada et le Québec",
+          "excerpt": "1970.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "فرانكو2؟",
+        "options": [
+          "1970",
+          "1867",
+          "1949",
+          "1982"
+        ],
+        "explanation": "1970.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0406"
@@ -4846,7 +5662,7 @@
           "chapter": "Modern Canada",
           "section": "International Engagement",
           "pdfPage": 46,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -4867,8 +5683,37 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Opérationsautres.",
+        "options": [
+          "ExYougoslavie",
+          "Antarctique",
+          "Mars",
+          "Islande"
+        ],
+        "correctIndex": 0,
+        "explanation": "Yougoslavie.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Modern Canada",
+          "section": "Engagement international",
+          "excerpt": "Yougoslavie.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "عمليات؟",
+        "options": [
+          "يوغوسلافيا",
+          "القطب",
+          "المريخ",
+          "آيسلندا"
+        ],
+        "explanation": "يوغوسلافيا.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0407"
@@ -5296,7 +6141,7 @@
           "chapter": "Modern Canada",
           "section": "Sports in Canada",
           "pdfPage": 50,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -5317,8 +6162,37 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "CoupeGrey.",
+        "options": [
+          "Grey1909",
+          "Stanley1892",
+          "Victoria1867",
+          "Macdonald1885"
+        ],
+        "correctIndex": 0,
+        "explanation": "Grey.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Modern Canada",
+          "section": "Le Canada moderne",
+          "excerpt": "Grey.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "كأس؟",
+        "options": [
+          "غراي",
+          "ستانلي",
+          "فيكتوريا",
+          "ماكدونالد"
+        ],
+        "explanation": "غراي.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0414"
@@ -5346,7 +6220,7 @@
           "chapter": "Modern Canada",
           "section": "Discoveries and Inventions",
           "pdfPage": 52,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -5367,8 +6241,37 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Canadarm.",
+        "options": [
+          "SPAR CNRC",
+          "Lazaridis",
+          "Penfield",
+          "Fleming"
+        ],
+        "correctIndex": 0,
+        "explanation": "SPAR.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Modern Canada",
+          "section": "Grandes découvertes et inventions canadiennes",
+          "excerpt": "SPAR.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "كانادارم؟",
+        "options": [
+          "سبار",
+          "لازاريدس",
+          "بنفيلد",
+          "فليمنغ"
+        ],
+        "explanation": "سبار.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0415"
@@ -5396,7 +6299,7 @@
           "chapter": "Modern Canada",
           "section": "Discoveries and Inventions",
           "pdfPage": 51,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -5417,8 +6320,37 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Ampoule.",
+        "options": [
+          "EvansWoodward",
+          "Bell",
+          "Fleming",
+          "Fessenden"
+        ],
+        "correctIndex": 0,
+        "explanation": "Evans.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Modern Canada",
+          "section": "Grandes découvertes et inventions canadiennes",
+          "excerpt": "Evans.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "لمبة؟",
+        "options": [
+          "إيفانز",
+          "بيل",
+          "فليمنغ",
+          "فيسندن"
+        ],
+        "explanation": "إيفانز.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0416"
@@ -5446,7 +6378,7 @@
           "chapter": "Modern Canada",
           "section": "Discoveries and Inventions",
           "pdfPage": 51,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -5467,8 +6399,37 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Motoneige.",
+        "options": [
+          "Bombardier",
+          "Fleming",
+          "Bell",
+          "Penfield"
+        ],
+        "correctIndex": 0,
+        "explanation": "Bombardier.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Modern Canada",
+          "section": "Grandes découvertes et inventions canadiennes",
+          "excerpt": "Bombardier.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "دراجة؟",
+        "options": [
+          "بومباردييه",
+          "فليمنغ",
+          "بيل",
+          "بنفيلد"
+        ],
+        "explanation": "بومباردييه.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0417"
@@ -5496,7 +6457,7 @@
           "chapter": "Modern Canada",
           "section": "Discoveries and Inventions",
           "pdfPage": 51,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -5517,8 +6478,37 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Fuseaux.",
+        "options": [
+          "Fleming",
+          "Bell",
+          "Fessenden",
+          "Bombardier"
+        ],
+        "correctIndex": 0,
+        "explanation": "Fleming.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Modern Canada",
+          "section": "Grandes découvertes et inventions canadiennes",
+          "excerpt": "Fleming.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "توقيت؟",
+        "options": [
+          "فليمنغ",
+          "بيل",
+          "فيسندن",
+          "بومباردييه"
+        ],
+        "explanation": "فليمنغ.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0418"
@@ -5546,7 +6536,7 @@
           "chapter": "Modern Canada",
           "section": "Sports in Canada",
           "pdfPage": 50,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -5567,8 +6557,37 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Petitclerc.",
+        "options": [
+          "Paralympique",
+          "Infirmière",
+          "Députée",
+          "Nobel"
+        ],
+        "correctIndex": 0,
+        "explanation": "Paralympique.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Modern Canada",
+          "section": "Le Canada moderne",
+          "excerpt": "Championne.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "بوتيكلير؟",
+        "options": [
+          "بارالمبية",
+          "ممرضة",
+          "نائبة",
+          "نوبل"
+        ],
+        "explanation": "بارالمبية.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0419"
@@ -5596,7 +6615,7 @@
           "chapter": "Modern Canada",
           "section": "Sports in Canada",
           "pdfPage": 50,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -5617,8 +6636,37 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Tewksbury.",
+        "options": [
+          "Médaillémilitant",
+          "PM",
+          "Patineuse",
+          "Aviateur"
+        ],
+        "correctIndex": 0,
+        "explanation": "Médaillé.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Modern Canada",
+          "section": "Le Canada moderne",
+          "excerpt": "Militant.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "تيوكسبري؟",
+        "options": [
+          "ميدالي",
+          "رئيس",
+          "متزلجة",
+          "طيار"
+        ],
+        "explanation": "ميدالي.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0420"
@@ -5646,7 +6694,7 @@
           "chapter": "Modern Canada",
           "section": "Sports in Canada",
           "pdfPage": 50,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -5667,8 +6715,37 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Oilers.",
+        "options": [
+          "Gretzky",
+          "Henderson",
+          "Tewksbury",
+          "Bailey"
+        ],
+        "correctIndex": 0,
+        "explanation": "Gretzky.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Modern Canada",
+          "section": "Le Canada moderne",
+          "excerpt": "Gretzky.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "أويلرز؟",
+        "options": [
+          "غريتسكي",
+          "هندرسون",
+          "تيوكسبري",
+          "بيلي"
+        ],
+        "explanation": "غريتسكي.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0421"
@@ -5696,7 +6773,7 @@
           "chapter": "Modern Canada",
           "section": "Sports/Discoveries",
           "pdfPage": 50,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -5717,8 +6794,37 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "McLuhan.",
+        "options": [
+          "McLuhan",
+          "Bell",
+          "Fleming",
+          "Fessenden"
+        ],
+        "correctIndex": 0,
+        "explanation": "McLuhan.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Modern Canada",
+          "section": "Le Canada moderne",
+          "excerpt": "McLuhan.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "إعلام؟",
+        "options": [
+          "ماكلوهان",
+          "بيل",
+          "فليمنغ",
+          "فيسندن"
+        ],
+        "explanation": "ماكلوهان.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0422"
@@ -5749,7 +6855,7 @@
           "chapter": "Modern Canada",
           "section": "Sports in Canada",
           "pdfPage": 50,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -5770,8 +6876,37 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "TerryFox.",
+        "options": [
+          "Perdujambe",
+          "Fauteuil1985",
+          "Hockey1972",
+          "Nobel"
+        ],
+        "correctIndex": 0,
+        "explanation": "Marathon.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Modern Canada",
+          "section": "Le Canada moderne",
+          "excerpt": "Marathon.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "فوكسمن؟",
+        "options": [
+          "ماراثون",
+          "كرسي",
+          "هوكي",
+          "نوبل"
+        ],
+        "explanation": "ماراثون.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0423"
@@ -5797,7 +6932,7 @@
           "chapter": "Modern Canada",
           "section": "Trade and Economic Growth / banks",
           "pdfPage": 45,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -5810,8 +6945,33 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "King50$.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation": "Vrai.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Modern Canada",
+          "section": "Le Canada moderne",
+          "excerpt": "Billet.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "كينغ؟",
+        "options": [
+          "صحيح",
+          "خطأ"
+        ],
+        "explanation": "صحيح.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0424"

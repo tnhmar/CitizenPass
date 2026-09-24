@@ -4,12 +4,12 @@
   "memoryBox": {
     "en": {
       "title": "Three Founding Peoples & Aboriginal Groups",
-      "mnemonic": "Three founding peoples: Aboriginal, French, British. Three Aboriginal groups by size: First Nations (65%) > Métis (30%) > Inuit (4%). New Brunswick is the ONLY officially bilingual province.",
+      "mnemonic": "Aboriginal/French/British. First Nations 65% > Métis 30% > Inuit 4%. NB = only bilingual province. Apology: 2008.",
       "keyFactsChecklist": [
-        "Aboriginal, French, British founding peoples",
-        "First Nations 65% / Métis 30% / Inuit 4%",
-        "New Brunswick only bilingual province",
-        "2008 residential schools apology"
+        "Founding peoples",
+        "65/30/4 split",
+        "NB bilingual province",
+        "Apology: 2008"
       ]
     }
   },
@@ -36,7 +36,7 @@
           "chapter": "Who We Are",
           "section": "Aboriginal and Treaty Rights",
           "pdfPage": 17,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -49,8 +49,33 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Droits ancestraux.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation": "Vrai.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Who We Are",
+          "section": "Les peuples autochtones",
+          "excerpt": "Ancestraux.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "حقوق أصلية؟",
+        "options": [
+          "صحيح",
+          "خطأ"
+        ],
+        "explanation": "صحيح.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0073"
@@ -139,7 +164,7 @@
           "chapter": "Who We Are",
           "section": "English and French",
           "pdfPage": 20,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -160,8 +185,37 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Anglo-Québécois.",
+        "options": [
+          "Un million",
+          "10000",
+          "Moitié",
+          "100000"
+        ],
+        "correctIndex": 0,
+        "explanation": "Un million.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Who We Are",
+          "section": "Les français et les anglais",
+          "excerpt": "Un million.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "أنجلو كيبيك؟",
+        "options": [
+          "مليون",
+          "10000",
+          "نصف",
+          "100000"
+        ],
+        "explanation": "مليون.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0075"
@@ -253,7 +307,7 @@
           "chapter": "Who We Are",
           "section": "English and French",
           "pdfPage": 19,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -274,8 +328,37 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Anglo/franco.",
+        "options": [
+          "10M/5M",
+          "18M/7M",
+          "25M/4M",
+          "15M/10M"
+        ],
+        "correctIndex": 1,
+        "explanation": "18/7.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Who We Are",
+          "section": "Les français et les anglais",
+          "excerpt": "18millions.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "ناطقون؟",
+        "options": [
+          "10/5",
+          "18/7",
+          "25/4",
+          "15/10"
+        ],
+        "explanation": "18/7.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0077"
@@ -368,7 +451,7 @@
           "chapter": "Who We Are",
           "section": "Who We Are (opening)",
           "pdfPage": 16,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -381,8 +464,33 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Tradition ancienne.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation": "Vrai.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Who We Are",
+          "section": "Qui sommes-nous (intro)",
+          "excerpt": "Ancienne.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "تقليد؟",
+        "options": [
+          "صحيح",
+          "خطأ"
+        ],
+        "explanation": "صحيح.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0079"
@@ -731,7 +839,7 @@
           "chapter": "Who We Are",
           "section": "Diversity in Canada",
           "pdfPage": 21,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -744,8 +852,33 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Chinois second.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation": "Vrai.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Who We Are",
+          "section": "Diversité au Canada",
+          "excerpt": "Second.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "صينية؟",
+        "options": [
+          "صحيح",
+          "خطأ"
+        ],
+        "explanation": "صحيح.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0085"
@@ -910,7 +1043,7 @@
           "chapter": "Who We Are",
           "section": "English and French — Quebecers",
           "pdfPage": 20,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -931,8 +1064,37 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Reconnaissance.",
+        "options": [
+          "1867",
+          "1982",
+          "1995",
+          "2006"
+        ],
+        "correctIndex": 3,
+        "explanation": "2006.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Who We Are",
+          "section": "Les français et les anglais",
+          "excerpt": "2006.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "اعتراف؟",
+        "options": [
+          "1867",
+          "1982",
+          "1995",
+          "2006"
+        ],
+        "explanation": "2006.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0088"
@@ -1086,7 +1248,7 @@
           "chapter": "Who We Are",
           "section": "Diversity in Canada",
           "pdfPage": 21,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -1099,8 +1261,33 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Nés hors.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation": "Faux.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Who We Are",
+          "section": "Diversité au Canada",
+          "excerpt": "Au pays.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "خارجًا؟",
+        "options": [
+          "صحيح",
+          "خطأ"
+        ],
+        "explanation": "خطأ.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0091"
@@ -1126,7 +1313,7 @@
           "chapter": "Who We Are",
           "section": "Diversity in Canada",
           "pdfPage": 21,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -1139,8 +1326,33 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Asie2000.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation": "Faux1970s.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Who We Are",
+          "section": "Diversité au Canada",
+          "excerpt": "1970s.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "آسيا2000؟",
+        "options": [
+          "صحيح",
+          "خطأ"
+        ],
+        "explanation": "خطأ1970.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0092"
@@ -1166,7 +1378,7 @@
           "chapter": "Who We Are",
           "section": "English and French",
           "pdfPage": 19,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -1179,8 +1391,33 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "8500colons.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation": "Vrai.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Who We Are",
+          "section": "Les français et les anglais",
+          "excerpt": "8500.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "8500؟",
+        "options": [
+          "صحيح",
+          "خطأ"
+        ],
+        "explanation": "صحيح.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0093"
@@ -1395,7 +1632,7 @@
           "chapter": "Who We Are",
           "section": "Unity in Diversity",
           "pdfPage": 18,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -1408,8 +1645,33 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Dialecte cri.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation": "Faux michif.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Who We Are",
+          "section": "Les peuples autochtones",
+          "excerpt": "Michif.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "كري؟",
+        "options": [
+          "صحيح",
+          "خطأ"
+        ],
+        "explanation": "خطأميشيف.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0097"
@@ -1438,7 +1700,7 @@
           "chapter": "Who We Are",
           "section": "Aboriginal and Treaty Rights",
           "pdfPage": 17,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -1451,8 +1713,33 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Excuses2015.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation": "Faux2008.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Who We Are",
+          "section": "Les peuples autochtones",
+          "excerpt": "2008.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "2015؟",
+        "options": [
+          "صحيح",
+          "خطأ"
+        ],
+        "explanation": "خطأ2008.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0098"
@@ -1539,7 +1826,7 @@
           "chapter": "Who We Are",
           "section": "Diversity in Canada",
           "pdfPage": 21,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -1552,8 +1839,33 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Islam plus grande.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation": "Faux catholique.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Who We Are",
+          "section": "Diversité au Canada",
+          "excerpt": "Catholique.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "إسلام؟",
+        "options": [
+          "صحيح",
+          "خطأ"
+        ],
+        "explanation": "خطأكاثوليك.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0100"
@@ -1649,7 +1961,7 @@
           "chapter": "Who We Are",
           "section": "Aboriginal and Treaty Rights",
           "pdfPage": 17,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -1662,8 +1974,33 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Proclamation1763.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation": "Vrai.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Who We Are",
+          "section": "Les peuples autochtones",
+          "excerpt": "1763.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "1763؟",
+        "options": [
+          "صحيح",
+          "خطأ"
+        ],
+        "explanation": "صحيح.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0102"
@@ -1693,7 +2030,7 @@
           "chapter": "Who We Are",
           "section": "Unity in Diversity",
           "pdfPage": 18,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -1706,8 +2043,33 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Inuit premiers.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation": "Faux peuple.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Who We Are",
+          "section": "Les peuples autochtones",
+          "excerpt": "Peuple.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "إنويت؟",
+        "options": [
+          "صحيح",
+          "خطأ"
+        ],
+        "explanation": "خطأشعب.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0103"
@@ -1733,7 +2095,7 @@
           "chapter": "Who We Are",
           "section": "Aboriginal Peoples",
           "pdfPage": 17,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -1746,8 +2108,33 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "600communautés.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation": "Vrai.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Who We Are",
+          "section": "Les peuples autochtones",
+          "excerpt": "600.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "600؟",
+        "options": [
+          "صحيح",
+          "خطأ"
+        ],
+        "explanation": "صحيح.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0104"
@@ -1775,7 +2162,7 @@
           "chapter": "Who We Are",
           "section": "Diversity in Canada",
           "pdfPage": 22,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -1796,8 +2183,37 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Gais traitement.",
+        "options": [
+          "Pleine protection",
+          "Tolérés",
+          "Mariage limité",
+          "Aucune"
+        ],
+        "correctIndex": 0,
+        "explanation": "Pleine.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Who We Are",
+          "section": "Diversité au Canada",
+          "excerpt": "Protection.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "مثليون؟",
+        "options": [
+          "حماية",
+          "تسامح",
+          "محدود",
+          "لاشيء"
+        ],
+        "explanation": "حماية.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0105"
@@ -1892,7 +2308,7 @@
           "chapter": "Who We Are",
           "section": "Becoming Canadian",
           "pdfPage": 20,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -1913,8 +2329,37 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Adopter quoi.",
+        "options": [
+          "Démocratie",
+          "Christianisme",
+          "Parti",
+          "Culture"
+        ],
+        "correctIndex": 0,
+        "explanation": "Démocratie.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Who We Are",
+          "section": "Devenir Canadien",
+          "excerpt": "Primauté.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "تبني؟",
+        "options": [
+          "ديمقراطية",
+          "مسيحية",
+          "حزب",
+          "تنازل"
+        ],
+        "explanation": "ديمقراطية.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0107"
@@ -1945,7 +2390,7 @@
           "chapter": "Who We Are",
           "section": "Aboriginal Peoples",
           "pdfPage": 17,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -1966,8 +2411,37 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Trois groupes.",
+        "options": [
+          "Indien Inuit Métis",
+          "Autochtone français",
+          "Cri Iroquois",
+          "Mohawk Inuit"
+        ],
+        "correctIndex": 0,
+        "explanation": "PN Inuit Métis.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Who We Are",
+          "section": "Les peuples autochtones",
+          "excerpt": "Trois.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "مجموعات؟",
+        "options": [
+          "هندي",
+          "أصلي",
+          "كري",
+          "موهوك"
+        ],
+        "explanation": "ثلاث.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [
         "Q018",
@@ -2133,7 +2607,7 @@
           "chapter": "Who We Are",
           "section": "Diversity in Canada",
           "pdfPage": 21,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -2154,8 +2628,37 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "État religion.",
+        "options": [
+          "Partenariat",
+          "Interdit",
+          "Christianisme",
+          "Inscription"
+        ],
+        "correctIndex": 0,
+        "explanation": "Partenariat.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Who We Are",
+          "section": "Diversité au Canada",
+          "excerpt": "Confessionnel.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "دين؟",
+        "options": [
+          "شراكة",
+          "ممنوع",
+          "مسيحية",
+          "تسجيل"
+        ],
+        "explanation": "شراكة.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0111"
@@ -2250,7 +2753,7 @@
           "chapter": "Who We Are",
           "section": "Unity in Diversity",
           "pdfPage": 18,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -2271,8 +2774,37 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Pourcentages.",
+        "options": [
+          "65/30/4",
+          "Tiers",
+          "Inuit",
+          "90Métis"
+        ],
+        "correctIndex": 0,
+        "explanation": "65/30/4.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Who We Are",
+          "section": "Les peuples autochtones",
+          "excerpt": "65/30/4.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "نسب؟",
+        "options": [
+          "65/30/4",
+          "ثلث",
+          "إنويت",
+          "90"
+        ],
+        "explanation": "65/30/4.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0113"
@@ -2769,7 +3301,7 @@
           "chapter": "Who We Are",
           "section": "Diversity in Canada",
           "pdfPage": 21,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -2790,8 +3322,37 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Groupes ethniques.",
+        "options": [
+          "Anglais Français",
+          "Anglais/Français",
+          "Russes",
+          "Autochtones"
+        ],
+        "correctIndex": 0,
+        "explanation": "Liste.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Who We Are",
+          "section": "Diversité au Canada",
+          "excerpt": "Importants.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "عرقية؟",
+        "options": [
+          "إنجليز",
+          "فرنسيون",
+          "روس",
+          "أصليون"
+        ],
+        "explanation": "قائمة.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0121"
@@ -3089,7 +3650,7 @@
           "chapter": "Who We Are",
           "section": "English and French",
           "pdfPage": 19,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -3110,8 +3671,37 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Acadiens.",
+        "options": [
+          "Colons1604",
+          "Nation",
+          "Loyalistes",
+          "Explorateurs"
+        ],
+        "correctIndex": 0,
+        "explanation": "Colons.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Who We Are",
+          "section": "Les français et les anglais",
+          "excerpt": "Descendants.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "أكاديون؟",
+        "options": [
+          "مستعمرون",
+          "أمة",
+          "موالون",
+          "مستكشفون"
+        ],
+        "explanation": "مستعمرون.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0126"
@@ -3143,7 +3733,7 @@
           "chapter": "Who We Are",
           "section": "Unity in Diversity",
           "pdfPage": 18,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -3164,8 +3754,37 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Métis.",
+        "options": [
+          "Peuple mixte",
+          "Colons",
+          "Inuit",
+          "Loyalistes"
+        ],
+        "correctIndex": 0,
+        "explanation": "Mixte.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Who We Are",
+          "section": "Les peuples autochtones",
+          "excerpt": "Distinct.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "ميتيس؟",
+        "options": [
+          "مختلط",
+          "مستعمرون",
+          "إنويت",
+          "موالون"
+        ],
+        "explanation": "مختلط.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [
         "Q019"
@@ -3198,7 +3817,7 @@
           "chapter": "Who We Are",
           "section": "Who We Are (opening)",
           "pdfPage": 16,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -3219,8 +3838,37 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Trois fondateurs.",
+        "options": [
+          "Autochtones Français Britanniques",
+          "Anglais Français",
+          "Inuit Métis",
+          "Anglais Américains"
+        ],
+        "correctIndex": 0,
+        "explanation": "Trois.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Who We Are",
+          "section": "Qui sommes-nous (intro)",
+          "excerpt": "Fondateurs.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "مؤسسة؟",
+        "options": [
+          "أصلي",
+          "إنجليزي",
+          "إنويت",
+          "إنجليزي"
+        ],
+        "explanation": "ثلاثة.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [
         "Q019"
@@ -3250,7 +3898,7 @@
           "chapter": "Who We Are",
           "section": "Unity in Diversity",
           "pdfPage": 18,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -3271,8 +3919,37 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "15egouverneur.",
+        "options": [
+          "John Buchan",
+          "Durham",
+          "Stanley",
+          "Laurier"
+        ],
+        "correctIndex": 0,
+        "explanation": "Buchan.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Who We Are",
+          "section": "Les français et les anglais",
+          "excerpt": "15e.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "حاكم15؟",
+        "options": [
+          "بوكان",
+          "دورهام",
+          "ستانلي",
+          "لورييه"
+        ],
+        "explanation": "بوكان.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0129"
@@ -3300,7 +3977,7 @@
           "chapter": "Who We Are",
           "section": "Becoming Canadian",
           "pdfPage": 20,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -3321,8 +3998,37 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Canadiens anglais.",
+        "options": [
+          "Colons britanniques",
+          "Angleterre",
+          "Légal",
+          "Anglais"
+        ],
+        "correctIndex": 0,
+        "explanation": "Colons.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Who We Are",
+          "section": "Devenir Canadien",
+          "excerpt": "Mode vie.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "كنديون؟",
+        "options": [
+          "مستوطنون",
+          "إنجلترا",
+          "تسمية",
+          "لغة"
+        ],
+        "explanation": "مستوطنون.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0130"
@@ -3350,7 +4056,7 @@
           "chapter": "Who We Are",
           "section": "Who We Are (opening)",
           "pdfPage": 16,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -3371,8 +4077,37 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Grand Dominion.",
+        "options": [
+          "Société prospère",
+          "Guerres",
+          "Empire",
+          "Climat"
+        ],
+        "correctIndex": 0,
+        "explanation": "Prospère.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Who We Are",
+          "section": "Qui sommes-nous (intro)",
+          "excerpt": "Dominion.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "هيمنة؟",
+        "options": [
+          "مزدهر",
+          "حروب",
+          "إمبراطورية",
+          "مناخ"
+        ],
+        "explanation": "مزدهر.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0131"

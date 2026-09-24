@@ -4,12 +4,12 @@
   "memoryBox": {
     "en": {
       "title": "Court Hierarchy & Core Principles",
-      "mnemonic": "Supreme Court sits at the top. Federal Court handles federal-government matters only. RCMP is provincial police everywhere EXCEPT Ontario and Quebec.",
+      "mnemonic": "Supreme Court = top. Federal Court = federal only. RCMP not provincial in ON/QC.",
       "keyFactsChecklist": [
-        "Supreme Court = highest court",
+        "Supreme Court = highest",
         "Presumption of innocence",
-        "RCMP not provincial in Ontario/Quebec",
-        "Legal aid available in most communities"
+        "RCMP exception: ON/QC",
+        "Legal aid exists"
       ]
     }
   },
@@ -38,7 +38,7 @@
           "chapter": "The Justice System",
           "section": "Justice System (opening)",
           "pdfPage": 75,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -59,8 +59,37 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Juges liés loi.",
+        "options": [
+          "Oui tous",
+          "Non",
+          "Hors service",
+          "Juges exemptés"
+        ],
+        "correctIndex": 0,
+        "explanation": "Tous.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "The Justice System",
+          "section": "Le système de justice (introduction)",
+          "excerpt": "Loi tous.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "قضاة خاضعون؟",
+        "options": [
+          "نعم",
+          "لا",
+          "خارج",
+          "قضاة"
+        ],
+        "explanation": "نعم.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0589"
@@ -532,7 +561,7 @@
           "chapter": "The Justice System",
           "section": "Police",
           "pdfPage": 77,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -553,8 +582,37 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Préoccupation police.",
+        "options": [
+          "Processus formel",
+          "Élection",
+          "Sénat",
+          "Confronter"
+        ],
+        "correctIndex": 0,
+        "explanation": "Processus.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "The Justice System",
+          "section": "La police",
+          "excerpt": "Préoccupations.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "قلق شرطة؟",
+        "options": [
+          "شكوى",
+          "انتخابات",
+          "شيوخ",
+          "مواجهة"
+        ],
+        "explanation": "شكوى.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0597"
@@ -585,7 +643,7 @@
           "chapter": "The Justice System",
           "section": "Police",
           "pdfPage": 77,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -606,8 +664,37 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Questionner police.",
+        "options": [
+          "Oui",
+          "Non infraction",
+          "Députés",
+          "Ordonnance"
+        ],
+        "correctIndex": 0,
+        "explanation": "Oui.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "The Justice System",
+          "section": "La police",
+          "excerpt": "Questions agents.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "مساءلة؟",
+        "options": [
+          "نعم",
+          "لا",
+          "برلمان",
+          "محكمة"
+        ],
+        "explanation": "نعم.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0598"
@@ -700,7 +787,7 @@
           "chapter": "The Justice System",
           "section": "Justice System (opening)",
           "pdfPage": 75,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -713,8 +800,33 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Justice bandée.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation": "Vrai.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "The Justice System",
+          "section": "Le système de justice",
+          "excerpt": "Impartialité.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "عدالة؟",
+        "options": [
+          "صحيح",
+          "خطأ"
+        ],
+        "explanation": "صحيح.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0600"
@@ -740,7 +852,7 @@
           "chapter": "The Justice System",
           "section": "Courts",
           "pdfPage": 76,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -753,8 +865,33 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Petites créances.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation": "Vrai.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "The Justice System",
+          "section": "Les tribunaux",
+          "excerpt": "Petites créances.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "مطالبات؟",
+        "options": [
+          "صحيح",
+          "خطأ"
+        ],
+        "explanation": "صحيح.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0601"
@@ -780,7 +917,7 @@
           "chapter": "The Justice System",
           "section": "Courts",
           "pdfPage": 76,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -793,8 +930,33 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Fédérale.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation": "Vrai.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "The Justice System",
+          "section": "Les tribunaux",
+          "excerpt": "Fédérale.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "فيدرالية؟",
+        "options": [
+          "صحيح",
+          "خطأ"
+        ],
+        "explanation": "صحيح.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0602"
@@ -947,7 +1109,7 @@
           "chapter": "The Justice System",
           "section": "Courts",
           "pdfPage": 76,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -960,8 +1122,33 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Suprême.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation": "Vrai.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "The Justice System",
+          "section": "Les tribunaux",
+          "excerpt": "Plus haut.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "عليا؟",
+        "options": [
+          "صحيح",
+          "خطأ"
+        ],
+        "explanation": "صحيح.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0605"
@@ -1175,7 +1362,7 @@
           "chapter": "The Justice System",
           "section": "Justice System (opening)",
           "pdfPage": 75,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -1196,8 +1383,37 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Qui règle.",
+        "options": [
+          "Tribunaux",
+          "Police",
+          "Parlement",
+          "Sénat"
+        ],
+        "correctIndex": 0,
+        "explanation": "Tribunaux.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "The Justice System",
+          "section": "Le système de justice (introduction)",
+          "excerpt": "Règlent.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "من يسوي؟",
+        "options": [
+          "محاكم",
+          "شرطة",
+          "برلمان",
+          "شيوخ"
+        ],
+        "explanation": "محاكم.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0609"
@@ -1291,7 +1507,7 @@
           "chapter": "The Justice System",
           "section": "Getting Legal Help",
           "pdfPage": 77,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -1312,8 +1528,37 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Aide avocats.",
+        "options": [
+          "Problèmes juridiques",
+          "Criminel",
+          "Divorce",
+          "10000$"
+        ],
+        "correctIndex": 0,
+        "explanation": "Juridique.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "The Justice System",
+          "section": "Obtenir une aide juridique",
+          "excerpt": "Problèmes.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "محامون؟",
+        "options": [
+          "قانونية",
+          "جنائي",
+          "طلاق",
+          "10000"
+        ],
+        "explanation": "قانونية.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0611"
@@ -1407,7 +1652,7 @@
           "chapter": "The Justice System",
           "section": "Justice System (opening)",
           "pdfPage": 75,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -1428,8 +1673,37 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Symbole bandé.",
+        "options": [
+          "Impartialité",
+          "Bandeau",
+          "Nuit",
+          "Lenteur"
+        ],
+        "correctIndex": 0,
+        "explanation": "Impartialité.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "The Justice System",
+          "section": "Le système de justice",
+          "excerpt": "Impartialité.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "رمز؟",
+        "options": [
+          "حياد",
+          "بندانة",
+          "ليل",
+          "بطء"
+        ],
+        "explanation": "حياد.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0613"
@@ -1457,7 +1731,7 @@
           "chapter": "The Justice System",
           "section": "Getting Legal Help",
           "pdfPage": 77,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -1478,8 +1752,37 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Aide sans avocat.",
+        "options": [
+          "Aide juridique",
+          "Rien",
+          "Municipal",
+          "US"
+        ],
+        "correctIndex": 0,
+        "explanation": "Disponible.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "The Justice System",
+          "section": "Obtenir une aide juridique",
+          "excerpt": "Gratuite.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "مساعدة؟",
+        "options": [
+          "قانونية",
+          "لاشيء",
+          "بلدية",
+          "أمريكي"
+        ],
+        "explanation": "قانونية.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0614"
@@ -1573,7 +1876,7 @@
           "chapter": "The Justice System",
           "section": "Justice System (opening)",
           "pdfPage": 75,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -1594,8 +1897,37 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "But lois.",
+        "options": [
+          "Ordre paix",
+          "Revenus",
+          "Punir",
+          "Avocats"
+        ],
+        "correctIndex": 0,
+        "explanation": "Ordre.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "The Justice System",
+          "section": "Le système de justice (introduction)",
+          "excerpt": "Maintenir ordre.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "هدف؟",
+        "options": [
+          "نظام",
+          "إيرادات",
+          "عقاب",
+          "محامين"
+        ],
+        "explanation": "نظام.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0616"
@@ -1693,7 +2025,7 @@
           "chapter": "The Justice System",
           "section": "Justice System (opening)",
           "pdfPage": 75,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -1714,8 +2046,37 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Rôle tribunaux.",
+        "options": [
+          "Régler différends",
+          "Créer lois",
+          "Impôts",
+          "Prisons"
+        ],
+        "correctIndex": 0,
+        "explanation": "Régler.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "The Justice System",
+          "section": "Le système de justice (introduction)",
+          "excerpt": "Règlent.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "دور محاكم؟",
+        "options": [
+          "تسوية",
+          "قوانين",
+          "ضرائب",
+          "سجون"
+        ],
+        "explanation": "تسوية.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0618"
@@ -1743,7 +2104,7 @@
           "chapter": "The Justice System",
           "section": "Justice System (opening)",
           "pdfPage": 75,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -1764,8 +2125,37 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Devoir gouvernement.",
+        "options": [
+          "Respecter garanties",
+          "Aveu",
+          "Secret",
+          "Français"
+        ],
+        "correctIndex": 0,
+        "explanation": "Respecter.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "The Justice System",
+          "section": "Le système de justice (introduction)",
+          "excerpt": "Régulière.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "واجب؟",
+        "options": [
+          "احترام",
+          "اعتراف",
+          "سرية",
+          "فرنسي"
+        ],
+        "explanation": "احترام.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0619"
@@ -1925,7 +2315,7 @@
           "chapter": "The Justice System",
           "section": "Courts/Police picture context",
           "pdfPage": 76,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -1946,8 +2336,37 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Rôle prisons.",
+        "options": [
+          "Punir prévenir",
+          "Camps",
+          "Monuments",
+          "Étrangers"
+        ],
+        "correctIndex": 0,
+        "explanation": "Punition.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "The Justice System",
+          "section": "Le système de justice",
+          "excerpt": "Essentiel.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "سجون؟",
+        "options": [
+          "عقاب",
+          "معسكرات",
+          "معالم",
+          "أجانب"
+        ],
+        "explanation": "عقاب.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0622"
@@ -1975,7 +2394,7 @@
           "chapter": "The Justice System",
           "section": "Police",
           "pdfPage": 76,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -1996,8 +2415,37 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Quand police.",
+        "options": [
+          "Accident vol",
+          "Citoyens",
+          "Heures",
+          "Villes"
+        ],
+        "correctIndex": 0,
+        "explanation": "Toutes.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "The Justice System",
+          "section": "La police",
+          "excerpt": "Situations.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "متى شرطة؟",
+        "options": [
+          "حوادث",
+          "مواطنون",
+          "دوام",
+          "مدن"
+        ],
+        "explanation": "كل حالة.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0623"
@@ -2157,7 +2605,7 @@
           "chapter": "The Justice System",
           "section": "Courts",
           "pdfPage": 76,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -2178,8 +2626,37 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Tribunaux provinces.",
+        "options": [
+          "Appel instance",
+          "Suprême",
+          "Fédéraux",
+          "Militaires"
+        ],
+        "correctIndex": 0,
+        "explanation": "Plusieurs.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "The Justice System",
+          "section": "Les tribunaux",
+          "excerpt": "Appel.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "محاكم؟",
+        "options": [
+          "استئناف",
+          "عليا",
+          "فيدرالية",
+          "عسكرية"
+        ],
+        "explanation": "عدة.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0626"
@@ -2540,7 +3017,7 @@
           "chapter": "The Justice System",
           "section": "Justice System (opening)",
           "pdfPage": 75,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -2561,8 +3038,37 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Qui lié.",
+        "options": [
+          "Tout monde",
+          "Ordinaires",
+          "Condamnés",
+          "Nés Canada"
+        ],
+        "correctIndex": 0,
+        "explanation": "Tous.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "The Justice System",
+          "section": "Le système de justice (introduction)",
+          "excerpt": "Tous.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "خاضع؟",
+        "options": [
+          "الجميع",
+          "عاديون",
+          "مذنبون",
+          "كنديون"
+        ],
+        "explanation": "الجميع.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0632"

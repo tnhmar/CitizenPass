@@ -4,9 +4,9 @@
   "memoryBox": {
     "en": {
       "title": "Legal Basis of Citizenship",
-      "mnemonic": "The legal basis for granting Canadian citizenship traces to Section 5 of the Citizenship Act — if a question asks 'what law says so,' that's the answer.",
+      "mnemonic": "Citizenship Act, Section 5 = legal basis.",
       "keyFactsChecklist": [
-        "Citizenship Act, Section 5 = legal basis for granting citizenship"
+        "Citizenship Act, Section 5"
       ]
     }
   },
@@ -33,7 +33,7 @@
           "chapter": "Authorities",
           "section": "Citizenship Act Section 5",
           "pdfPage": 122,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -46,8 +46,33 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Fondement juridique art.5 Loi citoyenneté.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation": "Vrai.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Authorities",
+          "section": "La Loi sur la citoyenneté et son Règlement (extraits)",
+          "excerpt": "Article5.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "مادة5.",
+        "options": [
+          "صحيح",
+          "خطأ"
+        ],
+        "explanation": "صحيح.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0925"

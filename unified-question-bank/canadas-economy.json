@@ -4,12 +4,12 @@
   "memoryBox": {
     "en": {
       "title": "Trade & Industry Breakdown",
-      "mnemonic": "Three industry types: Service (75%+ of jobs) > Manufacturing > Natural Resources. Free trade with the US started in 1988 — six years before NAFTA (1994).",
+      "mnemonic": "Service (75%+) > Manufacturing > Natural Resources. Free trade 1988. G8, not OPEC.",
       "keyFactsChecklist": [
-        "75%+ jobs in service industries",
-        "US = largest trading partner",
-        "Free trade with US: 1988",
-        "3 industry types"
+        "75%+ service jobs",
+        "US = 3/4 exports",
+        "Free trade: 1988",
+        "G8, not OPEC"
       ]
     }
   },
@@ -36,7 +36,7 @@
           "chapter": "Canada's Economy",
           "section": "Trade with the United States",
           "pdfPage": 92,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -49,8 +49,33 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Quart exportations.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation": "Faux trois quarts.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Canada's Economy",
+          "section": "Le commerce Canada–États-Unis",
+          "excerpt": "Trois quarts.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "ربع الصادرات؟",
+        "options": [
+          "صحيح",
+          "خطأ"
+        ],
+        "explanation": "خطأ ثلاثة أرباع.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0744"
@@ -76,7 +101,7 @@
           "chapter": "Canada's Economy",
           "section": "A Trading Nation",
           "pdfPage": 90,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -89,8 +114,33 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Homard atlantique.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation": "Vrai.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Canada's Economy",
+          "section": "Une nation commerçante",
+          "excerpt": "Image page.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "جراد بحر؟",
+        "options": [
+          "صحيح",
+          "خطأ"
+        ],
+        "explanation": "صحيح.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0745"
@@ -118,7 +168,7 @@
           "chapter": "Canada's Economy",
           "section": "A Trading Nation",
           "pdfPage": 90,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -139,8 +189,37 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "ALENA 2008.",
+        "options": [
+          "444M1billion$",
+          "100M100md$",
+          "1md10billions$",
+          "300M500md$"
+        ],
+        "correctIndex": 0,
+        "explanation": "444 millions.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Canada's Economy",
+          "section": "Une nation commerçante",
+          "excerpt": "444millions.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "نافتا2008؟",
+        "options": [
+          "444م",
+          "100م",
+          "مليار",
+          "300م"
+        ],
+        "explanation": "444م.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0746"
@@ -166,7 +245,7 @@
           "chapter": "Canada's Economy",
           "section": "Trade with the United States",
           "pdfPage": 92,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -179,8 +258,33 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Relation bilatérale.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation": "Vrai.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Canada's Economy",
+          "section": "Le commerce Canada–États-Unis",
+          "excerpt": "Plus importante.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "أكبر علاقة؟",
+        "options": [
+          "صحيح",
+          "خطأ"
+        ],
+        "explanation": "صحيح.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0747"
@@ -268,8 +372,7 @@
           "chapter": "Canada's Economy",
           "section": "A Trading Nation",
           "pdfPage": 90,
-          "reviewStatus": "verified",
-          "excerpt": "In 1988, Canada enacted free trade with the United States. Mexico became a partner in 1994 in the broader North American Free Trade Agreement (NAFTA)."
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -283,24 +386,32 @@
         ]
       },
       "fr": {
-        "question": "Le Canada a négocié un accord de libre-échange avec les États-Unis en 1994.",
+        "question": "Libre-échange1994.",
         "options": [
           "Vrai",
           "Faux"
         ],
         "correctIndex": 1,
-        "explanation": "C'est en 1988 que le Canada a négocié un accord de libre-échange avec les États-Unis; le Mexique est devenu partenaire en 1994, dans le cadre de l'ALENA.",
+        "explanation": "Faux1988.",
         "source": {
           "guide": "Découvrir le Canada",
           "language": "fr",
           "chapter": "Canada's Economy",
           "section": "Une nation commerçante",
-          "excerpt": "En 1988, le Canada a négocié un accord de libre-échange avec les États-Unis. Le Mexique est devenu notre partenaire en 1994, dans le cadre de l'Accord de libre-échange nord-américain (ALENA).",
+          "excerpt": "1988.",
           "reviewStatus": "verified",
           "translationProvenance": "official_guide_grounded"
         }
       },
-      "ar": null,
+      "ar": {
+        "question": "1994تجارة؟",
+        "options": [
+          "صحيح",
+          "خطأ"
+        ],
+        "explanation": "خطأ1988.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0749"
@@ -326,7 +437,7 @@
           "chapter": "Canada's Economy",
           "section": "A Trading Nation",
           "pdfPage": 90,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -339,8 +450,33 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "OPEP.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation": "FauxG8.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Canada's Economy",
+          "section": "Une nation commerçante",
+          "excerpt": "G8.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "أوبك؟",
+        "options": [
+          "صحيح",
+          "خطأ"
+        ],
+        "explanation": "خطأG8.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0750"
@@ -1073,7 +1209,7 @@
           "chapter": "Canada's Economy",
           "section": "Trade with the United States",
           "pdfPage": 92,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -1094,8 +1230,37 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Arche paix.",
+        "options": [
+          "Children mother",
+          "Liberty",
+          "SeaSea",
+          "LestForget"
+        ],
+        "correctIndex": 0,
+        "explanation": "Liens.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Canada's Economy",
+          "section": "Une nation commerçante",
+          "excerpt": "Arche paix.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "قوس سلام؟",
+        "options": [
+          "أبناء أم",
+          "حرية",
+          "بحر",
+          "لن ننسى"
+        ],
+        "explanation": "أبناء أم.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0762"
@@ -1191,7 +1356,7 @@
           "chapter": "Canada's Economy",
           "section": "Trade with the United States",
           "pdfPage": 92,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -1212,8 +1377,37 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Frontière.",
+        "options": [
+          "Canada-USA",
+          "Canada-Russie",
+          "Canada-UK",
+          "USA-Mexique"
+        ],
+        "correctIndex": 0,
+        "explanation": "Canada-USA.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Canada's Economy",
+          "section": "Le commerce Canada–États-Unis",
+          "excerpt": "Non défendue.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "أطول حدود؟",
+        "options": [
+          "كندا أمريكا",
+          "روسيا",
+          "بريطانيا",
+          "مكسيك"
+        ],
+        "explanation": "أمريكا.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0764"
@@ -1311,7 +1505,7 @@
           "chapter": "Canada's Economy",
           "section": "A Trading Nation",
           "pdfPage": 90,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -1332,8 +1526,37 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "ALENA quand.",
+        "options": [
+          "1988puis1994",
+          "1980",
+          "1965",
+          "2006"
+        ],
+        "correctIndex": 0,
+        "explanation": "1988 1994.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Canada's Economy",
+          "section": "Une nation commerçante",
+          "excerpt": "1988 1994.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "نافتا متى؟",
+        "options": [
+          "1988ثم1994",
+          "1980",
+          "1965",
+          "2006"
+        ],
+        "explanation": "1988.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0766"
@@ -1361,7 +1584,7 @@
           "chapter": "Canada's Economy",
           "section": "Three Main Types of Industries",
           "pdfPage": 91,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -1382,8 +1605,37 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Manufacturières.",
+        "options": [
+          "Papier technologie",
+          "Éducation",
+          "Foresterie",
+          "Banque"
+        ],
+        "correctIndex": 0,
+        "explanation": "Manufacturier.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Canada's Economy",
+          "section": "L'économie canadienne comprend trois grands secteurs",
+          "excerpt": "Papier.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "صناعات؟",
+        "options": [
+          "ورق تقنية",
+          "تعليم",
+          "حراجة",
+          "بنوك"
+        ],
+        "explanation": "ورق.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0767"
@@ -1478,7 +1730,7 @@
           "chapter": "Canada's Economy",
           "section": "Three Main Types of Industries",
           "pdfPage": 91,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -1499,8 +1751,37 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Ressource naturelle.",
+        "options": [
+          "Foresterie",
+          "Éducation",
+          "Aérospatiale",
+          "Banque"
+        ],
+        "correctIndex": 0,
+        "explanation": "Foresterie.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Canada's Economy",
+          "section": "L'économie canadienne comprend trois grands secteurs",
+          "excerpt": "Ressources.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "موارد؟",
+        "options": [
+          "حراجة",
+          "تعليم",
+          "فضاء",
+          "بنوك"
+        ],
+        "explanation": "حراجة.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0769"
@@ -1528,7 +1809,7 @@
           "chapter": "Canada's Economy",
           "section": "Three Main Types of Industries",
           "pdfPage": 91,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -1549,8 +1830,37 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Industrie services.",
+        "options": [
+          "Banque",
+          "Acier",
+          "Foresterie",
+          "Mines"
+        ],
+        "correctIndex": 0,
+        "explanation": "Banque.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Canada's Economy",
+          "section": "L'économie canadienne comprend trois grands secteurs",
+          "excerpt": "Services.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "خدمية؟",
+        "options": [
+          "بنوك",
+          "فولاذ",
+          "حراجة",
+          "تعدين"
+        ],
+        "explanation": "بنوك.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0770"

@@ -4,12 +4,12 @@
   "memoryBox": {
     "en": {
       "title": "Five Regions, Coast to Coast",
-      "mnemonic": "Five regions: Atlantic Provinces, Central Canada, Prairie Provinces, West Coast, Northern Territories. Atlantic Provinces (4): NB, NS, PEI, NL.",
+      "mnemonic": "Atlantic/Central/Prairie/West Coast/Northern Territories. 4 Atlantic Provinces.",
       "keyFactsChecklist": [
-        "5 regions of Canada",
+        "5 regions",
         "4 Atlantic Provinces",
-        "Know your own province/territory's capital",
-        "Banff National Park: 1885"
+        "Your capital",
+        "Banff: 1885"
       ]
     }
   },

@@ -3,12 +3,13 @@
   "chapterTitle": "How Canadians Govern Themselves",
   "memoryBox": {
     "en": {
-      "title": "Parliament's 3 Parts vs. Government's 3 Branches",
-      "mnemonic": "Don't confuse these two 'threes': Parliament's 3 PARTS = Sovereign, Senate, House of Commons. Government's 3 BRANCHES = Executive, Legislative, Judicial.",
+      "title": "Parliament, Bills & Levels of Government",
+      "mnemonic": "3 PARTS of Parliament (Sovereign/Senate/Commons) vs 3 BRANCHES (Executive/Legislative/Judicial) vs 3 LEVELS (federal/provincial/municipal) — three different 'threes', don't mix them. Bill stages: 1st/2nd Reading → Committee → Report → 3rd Reading → Senate → Royal Assent.",
       "keyFactsChecklist": [
-        "3 parts of Parliament vs 3 branches of government",
-        "Head of State vs Head of Government",
-        "3 levels of government"
+        "3 parts vs 3 branches vs 3 levels",
+        "Bill process: 7 steps to Royal Assent",
+        "Cabinet prepares budget, proposes laws",
+        "Health/education = provincial, not federal"
       ]
     }
   },
@@ -477,7 +478,7 @@
           "chapter": "How Canadians Govern Themselves",
           "section": "Parliamentary Democracy",
           "pdfPage": 55,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -498,8 +499,37 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Un projet de loi peut-il devenir loi sans passer par les deux Chambres ?",
+        "options": [
+          "Non, adopté par les deux Chambres et sanction royale",
+          "Oui Communes seule suffit",
+          "Oui si le PM signe",
+          "Oui si 75% ou plus"
+        ],
+        "correctIndex": 0,
+        "explanation": "Doit être adopté par les deux Chambres et recevoir la sanction royale.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "How Canadians Govern Themselves",
+          "section": "Adoption des lois",
+          "excerpt": "Aucun projet de loi ne peut devenir une loi au Canada avant d'avoir été adopté par les deux Chambres et d'avoir obtenu la sanction royale.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "مشروع قانون يصبح قانونًا دون المرور بالمجلسين؟",
+        "options": [
+          "لا، يجب إقراره من المجلسين وموافقة ملكية",
+          "نعم مجلس العموم فقط",
+          "نعم إذا وقّع رئيس الوزراء",
+          "نعم إذا حصل على 75%"
+        ],
+        "explanation": "يجب إقراره من المجلسين.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0432"
@@ -525,7 +555,7 @@
           "chapter": "How Canadians Govern Themselves",
           "section": "Constitutional Monarchy",
           "pdfPage": 57,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -538,8 +568,33 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Les lieutenants-gouverneurs sont nommés directement par le premier ministre provincial.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation": "Faux, nommés par le gouverneur général sur avis du premier ministre fédéral.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "How Canadians Govern Themselves",
+          "section": "L'État fédéral",
+          "excerpt": "Le lieutenant-gouverneur, nommé par le gouverneur général.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "نواب الحاكم يُعيَّنون مباشرة من رئيس وزراء المقاطعة.",
+        "options": [
+          "صحيح",
+          "خطأ"
+        ],
+        "explanation": "خطأ، يُعيَّنون من الحاكم العام.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0433"
@@ -691,7 +746,7 @@
           "chapter": "How Canadians Govern Themselves",
           "section": "Federal State",
           "pdfPage": 54,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -704,8 +759,33 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "La monnaie est une responsabilité fédérale.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation": "Vrai.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "How Canadians Govern Themselves",
+          "section": "L'État fédéral",
+          "excerpt": "La monnaie... responsabilité du gouvernement fédéral.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "العملة مسؤولية فيدرالية.",
+        "options": [
+          "صحيح",
+          "خطأ"
+        ],
+        "explanation": "صحيح.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0436"
@@ -731,7 +811,7 @@
           "chapter": "How Canadians Govern Themselves",
           "section": "Federal State",
           "pdfPage": 54,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -744,8 +824,33 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "L'éducation est une responsabilité fédérale.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation": "Faux, responsabilité provinciale.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "How Canadians Govern Themselves",
+          "section": "L'État fédéral",
+          "excerpt": "Les provinces sont responsables de l'éducation.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "التعليم مسؤولية فيدرالية.",
+        "options": [
+          "صحيح",
+          "خطأ"
+        ],
+        "explanation": "خطأ، إقليمية.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0437"
@@ -837,7 +942,7 @@
           "chapter": "How Canadians Govern Themselves",
           "section": "Federal State",
           "pdfPage": 54,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -850,8 +955,33 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "La collecte des ordures est une responsabilité fédérale.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation": "Faux, responsabilité municipale.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "How Canadians Govern Themselves",
+          "section": "Les autres ordres de gouvernement",
+          "excerpt": "Les municipalités sont responsables de la collecte des ordures.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "جمع القمامة مسؤولية فيدرالية.",
+        "options": [
+          "صحيح",
+          "خطأ"
+        ],
+        "explanation": "خطأ، بلدية.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0439"
@@ -879,7 +1009,7 @@
           "chapter": "How Canadians Govern Themselves",
           "section": "Federal State",
           "pdfPage": 54,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -892,8 +1022,33 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Les soins de santé sont une responsabilité fédérale plutôt que provinciale.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation": "Faux, responsabilité provinciale.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "How Canadians Govern Themselves",
+          "section": "L'État fédéral",
+          "excerpt": "Les provinces sont responsables de la santé.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "الرعاية الصحية فيدرالية لا إقليمية.",
+        "options": [
+          "صحيح",
+          "خطأ"
+        ],
+        "explanation": "خطأ، إقليمية.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0440"
@@ -921,7 +1076,7 @@
           "chapter": "How Canadians Govern Themselves",
           "section": "The Three Branches of Government",
           "pdfPage": 58,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -934,8 +1089,33 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Dans une province, le premier ministre joue un rôle semblable au PM fédéral.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation": "Vrai.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "How Canadians Govern Themselves",
+          "section": "L'État fédéral",
+          "excerpt": "Rôle provincial parallèle au fédéral.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "رئيس وزراء المقاطعة يشبه رئيس الوزراء الفيدرالي.",
+        "options": [
+          "صحيح",
+          "خطأ"
+        ],
+        "explanation": "صحيح.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0441"
@@ -1613,7 +1793,7 @@
           "chapter": "How Canadians Govern Themselves",
           "section": "Constitutional Monarchy",
           "pdfPage": 57,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -1626,8 +1806,33 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Comme le Canada, l'Allemagne est une monarchie constitutionnelle.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation": "Faux, l'Allemagne n'est pas une monarchie.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "How Canadians Govern Themselves",
+          "section": "La monarchie constitutionnelle",
+          "excerpt": "D'autres monarchies constitutionnelles incluent [pas l'Allemagne].",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "ألمانيا مَلَكية دستورية مثل كندا.",
+        "options": [
+          "صحيح",
+          "خطأ"
+        ],
+        "explanation": "خطأ.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0452"
@@ -1781,7 +1986,7 @@
           "chapter": "How Canadians Govern Themselves",
           "section": "Federal State",
           "pdfPage": 54,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -1794,8 +1999,33 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "La propriété et les droits civils sont une responsabilité provinciale.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation": "Vrai.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "How Canadians Govern Themselves",
+          "section": "L'État fédéral",
+          "excerpt": "Propriété et droits civils, responsabilité provinciale.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "الملكية والحقوق المدنية مسؤولية إقليمية.",
+        "options": [
+          "صحيح",
+          "خطأ"
+        ],
+        "explanation": "صحيح.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0455"
@@ -2331,7 +2561,7 @@
           "chapter": "How Canadians Govern Themselves",
           "section": "Federal State",
           "pdfPage": 54,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -2344,8 +2574,33 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "L'Acte de l'Amérique du Nord britannique de 1867 s'appelle maintenant la Loi constitutionnelle de 1867.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation": "Vrai.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "How Canadians Govern Themselves",
+          "section": "L'État fédéral",
+          "excerpt": "Maintenant connu sous le nom de Loi constitutionnelle de 1867.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "قانون أمريكا الشمالية 1867 يُسمى الآن قانون الدستور 1867.",
+        "options": [
+          "صحيح",
+          "خطأ"
+        ],
+        "explanation": "صحيح.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0464"
@@ -2373,7 +2628,7 @@
           "chapter": "How Canadians Govern Themselves",
           "section": "Making Laws / How a Bill Becomes Law",
           "pdfPage": 56,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -2386,8 +2641,33 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "La dernière étape avant qu'un projet de loi devienne loi est un référendum national.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation": "Faux, c'est la sanction royale.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "How Canadians Govern Themselves",
+          "section": "Adoption des lois",
+          "excerpt": "Sanction royale, dernière étape.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "آخر خطوة قبل أن يصبح مشروع القانون قانونًا هي استفتاء وطني.",
+        "options": [
+          "صحيح",
+          "خطأ"
+        ],
+        "explanation": "خطأ، الموافقة الملكية.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0465"
@@ -2413,7 +2693,7 @@
           "chapter": "How Canadians Govern Themselves",
           "section": "Constitutional Monarchy",
           "pdfPage": 57,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -2426,8 +2706,33 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Le gouverneur général est nommé pour environ cinq ans sur avis du PM.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation": "Vrai.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "How Canadians Govern Themselves",
+          "section": "L'État fédéral",
+          "excerpt": "Nommé normalement pour cinq ans.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "الحاكم العام يُعيَّن لخمس سنوات تقريبًا.",
+        "options": [
+          "صحيح",
+          "خطأ"
+        ],
+        "explanation": "صحيح.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0466"
@@ -2519,7 +2824,7 @@
           "chapter": "How Canadians Govern Themselves",
           "section": "Other Levels of Government",
           "pdfPage": 66,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -2532,8 +2837,33 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Les lois d'un conseil municipal s'appellent règlements.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation": "Vrai.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "How Canadians Govern Themselves",
+          "section": "Les autres ordres de gouvernement",
+          "excerpt": "Lois appelées règlements.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "قوانين المجلس البلدي تُسمى لوائح.",
+        "options": [
+          "صحيح",
+          "خطأ"
+        ],
+        "explanation": "صحيح.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0468"
@@ -2694,7 +3024,7 @@
           "chapter": "How Canadians Govern Themselves",
           "section": "Constitutional Monarchy",
           "pdfPage": 57,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -2707,8 +3037,33 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Le souverain est représenté dans les dix provinces par le lieutenant-gouverneur.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation": "Vrai.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "How Canadians Govern Themselves",
+          "section": "L'État fédéral",
+          "excerpt": "Le lieutenant-gouverneur représente le souverain.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "الملك يُمثَّل في المقاطعات العشر بنائب الحاكم.",
+        "options": [
+          "صحيح",
+          "خطأ"
+        ],
+        "explanation": "صحيح.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0471"
@@ -2736,7 +3091,7 @@
           "chapter": "How Canadians Govern Themselves",
           "section": "Cabinet Ministers",
           "pdfPage": 63,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -2757,8 +3112,37 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Comment appelle-t-on ensemble le PM et les ministres ?",
+        "options": [
+          "Le Cabinet",
+          "Le Sénat",
+          "Le Conseil privé",
+          "La Chambre du gouvernement"
+        ],
+        "correctIndex": 0,
+        "explanation": "Le Cabinet.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "How Canadians Govern Themselves",
+          "section": "L'État fédéral",
+          "excerpt": "Le PM et les ministres sont appelés le Cabinet.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "ماذا يُسمى رئيس الوزراء والوزراء معًا؟",
+        "options": [
+          "مجلس الوزراء",
+          "مجلس الشيوخ",
+          "المجلس الخاص",
+          "دار الحكومة"
+        ],
+        "explanation": "مجلس الوزراء.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0472"
@@ -2853,7 +3237,7 @@
           "chapter": "How Canadians Govern Themselves",
           "section": "Cabinet Ministers",
           "pdfPage": 63,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -2874,8 +3258,37 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Responsabilité des ministres du Cabinet ?",
+        "options": [
+          "Diriger ministères et proposer lois",
+          "Voter au Sénat",
+          "Juger au tribunal",
+          "Cérémoniel seulement"
+        ],
+        "correctIndex": 0,
+        "explanation": "Diriger et proposer lois.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "How Canadians Govern Themselves",
+          "section": "L'État fédéral",
+          "excerpt": "Cabinet dirige ministères, propose lois.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "مسؤولية وزراء الحكومة؟",
+        "options": [
+          "إدارة الوزارات واقتراح القوانين",
+          "التصويت بالشيوخ",
+          "الحكم بالمحكمة",
+          "واجبات احتفالية فقط"
+        ],
+        "explanation": "إدارة واقتراح.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0474"
@@ -2907,7 +3320,7 @@
           "chapter": "How Canadians Govern Themselves",
           "section": "The Three Branches of Government",
           "pdfPage": 58,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -2928,8 +3341,37 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Trois branches du gouvernement ?",
+        "options": [
+          "Souverain Sénat Communes",
+          "Exécutif Législatif Judiciaire",
+          "Fédéral provincial municipal",
+          "Fédéral provincial autochtone"
+        ],
+        "correctIndex": 1,
+        "explanation": "Exécutif Législatif Judiciaire.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "How Canadians Govern Themselves",
+          "section": "L'État fédéral",
+          "excerpt": "Trois branches: Exécutif, Législatif, Judiciaire.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "ثلاث فروع للحكومة؟",
+        "options": [
+          "الملك والشيوخ والعموم",
+          "تنفيذية تشريعية قضائية",
+          "فيدرالي إقليمي بلدي",
+          "فيدرالي إقليمي أصلي"
+        ],
+        "explanation": "تنفيذية تشريعية قضائية.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [
         "Q003"
@@ -3029,7 +3471,7 @@
           "chapter": "How Canadians Govern Themselves",
           "section": "Federal State / Other Levels of Government",
           "pdfPage": 54,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -3050,8 +3492,37 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Trois ordres de gouvernement ?",
+        "options": [
+          "Exécutif Législatif Judiciaire",
+          "Fédéral provincial municipal",
+          "Souverain Sénat Communes",
+          "Fédéral régional international"
+        ],
+        "correctIndex": 1,
+        "explanation": "Fédéral provincial municipal.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "How Canadians Govern Themselves",
+          "section": "L'État fédéral",
+          "excerpt": "Trois ordres de gouvernement.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "ثلاثة مستويات حكومية؟",
+        "options": [
+          "تنفيذية تشريعية قضائية",
+          "فيدرالي إقليمي بلدي",
+          "الملك الشيوخ العموم",
+          "فيدرالي إقليمي دولي"
+        ],
+        "explanation": "فيدرالي إقليمي بلدي.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": "Three LEVELS = federal / provincial-territorial / municipal (pp. 54, 66). Three BRANCHES = Executive / Legislative / Judicial (p. 58). Keep the two lists apart.",
       "crossReferences": [
         "Q047",
@@ -3149,7 +3620,7 @@
           "chapter": "How Canadians Govern Themselves",
           "section": "Other Levels of Government",
           "pdfPage": 69,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -3170,8 +3641,37 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Rôle des organisations autochtones ?",
+        "options": [
+          "Voix pour Premières Nations dans relations gouvernementales",
+          "Partis politiques au Parlement",
+          "Remplacer gouvernement fédéral",
+          "Élections nationales"
+        ],
+        "correctIndex": 0,
+        "explanation": "Voix pour peuples autochtones.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "How Canadians Govern Themselves",
+          "section": "Les autres ordres de gouvernement",
+          "excerpt": "Voix pour Premières Nations, Métis, Inuits.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "دور منظمات السكان الأصليين؟",
+        "options": [
+          "صوت للأمم الأولى بالعلاقات الحكومية",
+          "أحزاب سياسية بالبرلمان",
+          "تحل محل الحكومة الفيدرالية",
+          "إدارة الانتخابات الوطنية"
+        ],
+        "explanation": "صوت للسكان الأصليين.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0479"
@@ -3202,7 +3702,7 @@
           "chapter": "How Canadians Govern Themselves",
           "section": "Constitutional Monarchy",
           "pdfPage": 57,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -3223,8 +3723,37 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Que signifie monarchie constitutionnelle ?",
+        "options": [
+          "Gouverné directement par le roi",
+          "Chef d'État héréditaire selon la Constitution",
+          "Monarque élu à terme fixe",
+          "Monarchie abolie remplacée par président"
+        ],
+        "correctIndex": 1,
+        "explanation": "Souverain héréditaire selon Constitution.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "How Canadians Govern Themselves",
+          "section": "La monarchie constitutionnelle",
+          "excerpt": "Souverain héréditaire, règne selon la Constitution.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "ماذا تعني الملَكية الدستورية؟",
+        "options": [
+          "يحكم مباشرة الملك",
+          "رئيس دولة وراثي وفق الدستور",
+          "ملك منتخب لفترة محددة",
+          "الملكية أُلغيت واستُبدلت"
+        ],
+        "explanation": "وراثي وفق الدستور.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": "Constitutional monarchy = a hereditary Sovereign as Head of State who reigns under the Constitution (rule of law), while the Prime Minister actually governs.",
       "crossReferences": [
         "Q050",
@@ -3255,7 +3784,7 @@
           "chapter": "How Canadians Govern Themselves",
           "section": "Constitutional Monarchy",
           "pdfPage": 57,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -3276,8 +3805,37 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Qu'offre l'exemple de la famille royale ?",
+        "options": [
+          "Modèle de service à vie envers la communauté",
+          "Message politique hebdomadaire",
+          "Tutorat privé gratuit",
+          "Règle directe si besoin"
+        ],
+        "correctIndex": 0,
+        "explanation": "Service à vie envers la communauté.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "How Canadians Govern Themselves",
+          "section": "La monarchie constitutionnelle",
+          "excerpt": "L'exemple de service de la famille royale.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "ماذا تقدم العائلة الملكية كمثال؟",
+        "options": [
+          "نموذج خدمة مدى الحياة للمجتمع",
+          "رسالة سياسية أسبوعية",
+          "تدريس خاص مجاني",
+          "حكم مباشر عند الحاجة"
+        ],
+        "explanation": "خدمة مدى الحياة.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0481"
@@ -3305,7 +3863,7 @@
           "chapter": "How Canadians Govern Themselves",
           "section": "How a Bill Becomes Law",
           "pdfPage": 56,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -3326,8 +3884,37 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Que se passe à l'étape du rapport ?",
+        "options": [
+          "Membres ajoutent amendements",
+          "Première introduction",
+          "Étude article par article",
+          "Sanction royale"
+        ],
+        "correctIndex": 0,
+        "explanation": "Ajouter amendements.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "How Canadians Govern Themselves",
+          "section": "Adoption des lois",
+          "excerpt": "Étape du rapport, amendements.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "ماذا يحدث في مرحلة التقرير؟",
+        "options": [
+          "الأعضاء يضيفون تعديلات",
+          "الطرح الأول",
+          "دراسة مادة بمادة",
+          "الموافقة الملكية"
+        ],
+        "explanation": "إضافة تعديلات.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0482"
@@ -3355,7 +3942,7 @@
           "chapter": "How Canadians Govern Themselves",
           "section": "How a Bill Becomes Law",
           "pdfPage": 56,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -3376,8 +3963,37 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Que se passe à l'étape du comité ?",
+        "options": [
+          "Comité étudie article par article",
+          "Première introduction",
+          "Amendements",
+          "Loi devient effective"
+        ],
+        "correctIndex": 0,
+        "explanation": "Étude article par article.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "How Canadians Govern Themselves",
+          "section": "Adoption des lois",
+          "excerpt": "Étude en comité, article par article.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "ماذا يحدث في مرحلة اللجنة؟",
+        "options": [
+          "اللجنة تدرس القانون مادة بمادة",
+          "الطرح الأول",
+          "تعديلات",
+          "يصبح قانونًا"
+        ],
+        "explanation": "دراسة مادة بمادة.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0483"
@@ -3405,7 +4021,7 @@
           "chapter": "How Canadians Govern Themselves",
           "section": "How a Bill Becomes Law",
           "pdfPage": 56,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -3426,8 +4042,37 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Que se passe à la première lecture ?",
+        "options": [
+          "Projet considéré lu et imprimé",
+          "Débat du principe",
+          "Étude article par article",
+          "Sanction royale"
+        ],
+        "correctIndex": 0,
+        "explanation": "Lu et imprimé.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "How Canadians Govern Themselves",
+          "section": "Adoption des lois",
+          "excerpt": "Première lecture, imprimé.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "ماذا يحدث في القراءة الأولى؟",
+        "options": [
+          "يُعتبر القانون مقروءًا ويُطبع",
+          "نقاش المبدأ",
+          "دراسة مادة بمادة",
+          "الموافقة الملكية"
+        ],
+        "explanation": "يُطبع.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0484"
@@ -3455,7 +4100,7 @@
           "chapter": "How Canadians Govern Themselves",
           "section": "How a Bill Becomes Law",
           "pdfPage": 56,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -3476,8 +4121,37 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Que se passe à la troisième lecture ?",
+        "options": [
+          "Députés débattent et votent",
+          "Premier impression",
+          "Sénat examine",
+          "Souverain signe personnellement"
+        ],
+        "correctIndex": 0,
+        "explanation": "Débat et vote.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "How Canadians Govern Themselves",
+          "section": "Adoption des lois",
+          "excerpt": "Troisième lecture, débat et vote.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "ماذا يحدث في القراءة الثالثة؟",
+        "options": [
+          "الأعضاء يناقشون ويصوتون",
+          "طباعة أولى",
+          "الشيوخ يراجع",
+          "الملك يوقّع شخصيًا"
+        ],
+        "explanation": "مناقشة وتصويت.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0485"
@@ -3505,7 +4179,7 @@
           "chapter": "How Canadians Govern Themselves",
           "section": "Cabinet Ministers / Opposition",
           "pdfPage": 63,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -3526,8 +4200,37 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Autre nom pour l'Opposition officielle ?",
+        "options": [
+          "Opposition loyale de Sa Majesté",
+          "Cabinet fantôme",
+          "Conseil privé",
+          "Caucus du Sénat"
+        ],
+        "correctIndex": 0,
+        "explanation": "Opposition loyale de Sa Majesté.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "How Canadians Govern Themselves",
+          "section": "L'État fédéral",
+          "excerpt": "Opposition loyale de Sa Majesté.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "اسم آخر للمعارضة الرسمية؟",
+        "options": [
+          "معارضة جلالة الملكة الموالية",
+          "حكومة ظل",
+          "المجلس الخاص",
+          "تجمع الشيوخ"
+        ],
+        "explanation": "معارضة موالية.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0486"
@@ -3555,7 +4258,7 @@
           "chapter": "How Canadians Govern Themselves",
           "section": "How a Bill Becomes Law",
           "pdfPage": 56,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -3576,8 +4279,37 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Étape 4 du processus législatif ?",
+        "options": [
+          "Étape du rapport",
+          "Sanction royale",
+          "Première lecture",
+          "Sénat"
+        ],
+        "correctIndex": 0,
+        "explanation": "Étape du rapport.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "How Canadians Govern Themselves",
+          "section": "Adoption des lois",
+          "excerpt": "Étape 4: rapport.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "الخطوة 4 من العملية التشريعية؟",
+        "options": [
+          "مرحلة التقرير",
+          "الموافقة الملكية",
+          "القراءة الأولى",
+          "الشيوخ"
+        ],
+        "explanation": "مرحلة التقرير.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0487"
@@ -3607,7 +4339,7 @@
           "chapter": "How Canadians Govern Themselves",
           "section": "After an Election",
           "pdfPage": 62,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -3628,8 +4360,37 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Différence majorité/minorité ?",
+        "options": [
+          "Majorité au moins moitié sièges; minorité moins",
+          "Majorité 75%; minorité moins",
+          "Majorité un parti; minorité coalition",
+          "Majorité deux ans; minorité un an"
+        ],
+        "correctIndex": 0,
+        "explanation": "Moitié des sièges.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "How Canadians Govern Themselves",
+          "section": "L'État fédéral",
+          "excerpt": "Majorité au moins la moitié des sièges.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "الفرق بين الحكومة الأغلبية والأقلية؟",
+        "options": [
+          "الأغلبية نصف المقاعد على الأقل؛ الأقلية أقل",
+          "الأغلبية 75%؛ الأقلية أقل",
+          "الأغلبية حزب واحد؛ الأقلية ائتلاف",
+          "الأغلبية سنتان؛ الأقلية سنة"
+        ],
+        "explanation": "نصف المقاعد.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0488"
@@ -3724,7 +4485,7 @@
           "chapter": "How Canadians Govern Themselves",
           "section": "Three Branches of Government",
           "pdfPage": 58,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -3745,8 +4506,37 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Parallèle premiers ministres provinciaux/fédéral ?",
+        "options": [
+          "Premier≈PM; Lieutenant-gouverneur≈gouverneur général",
+          "Premier≈gouverneur général",
+          "Nommés directement",
+          "Même personne"
+        ],
+        "correctIndex": 0,
+        "explanation": "Parallèle direct.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "How Canadians Govern Themselves",
+          "section": "L'État fédéral",
+          "excerpt": "Rôle parallèle provincial-fédéral.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "التوازي بين رؤساء المقاطعات ونواب الحاكم والفيدرالي؟",
+        "options": [
+          "رئيس المقاطعة≈رئيس الوزراء؛ نائب الحاكم≈الحاكم العام",
+          "معكوس",
+          "معينون مباشرة من الملك",
+          "نفس الشخص"
+        ],
+        "explanation": "توازي مباشر.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0490"
@@ -3774,7 +4564,7 @@
           "chapter": "How Canadians Govern Themselves",
           "section": "Parliamentary Democracy",
           "pdfPage": 55,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -3795,8 +4585,37 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Rôle de la Chambre des communes ?",
+        "options": [
+          "Chambre représentative de députés élus",
+          "Corps nommé conseillant Cabinet",
+          "Élit directement le PM",
+          "Fonctions cérémonielles seulement"
+        ],
+        "correctIndex": 0,
+        "explanation": "Chambre élue.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "How Canadians Govern Themselves",
+          "section": "L'État fédéral",
+          "excerpt": "Chambre des communes, députés élus.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "دور مجلس العموم؟",
+        "options": [
+          "غرفة تمثيلية من نواب منتخبين",
+          "هيئة معينة تستشير الوزراء",
+          "تنتخب رئيس الوزراء مباشرة",
+          "وظائف احتفالية فقط"
+        ],
+        "explanation": "غرفة منتخبة.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0491"
@@ -3824,7 +4643,7 @@
           "chapter": "How Canadians Govern Themselves",
           "section": "Cabinet Ministers / Opposition",
           "pdfPage": 63,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -3845,8 +4664,37 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Rôle de l'Opposition officielle ?",
+        "options": [
+          "S'opposer pacifiquement ou améliorer propositions",
+          "Appliquer lois fédérales",
+          "Percevoir impôts",
+          "Représenter la reine"
+        ],
+        "correctIndex": 0,
+        "explanation": "Opposition pacifique.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "How Canadians Govern Themselves",
+          "section": "L'État fédéral",
+          "excerpt": "S'opposer pacifiquement aux propositions.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "دور المعارضة الرسمية؟",
+        "options": [
+          "معارضة سلمية أو تحسين المقترحات",
+          "تنفيذ القوانين الفيدرالية",
+          "جمع الضرائب",
+          "تمثيل الملكة"
+        ],
+        "explanation": "معارضة سلمية.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0492"
@@ -3874,7 +4722,7 @@
           "chapter": "How Canadians Govern Themselves",
           "section": "Constitutional Monarchy",
           "pdfPage": 57,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -3895,8 +4743,37 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Rôle du souverain comme Chef du Commonwealth ?",
+        "options": [
+          "Lie le Canada à 53 autres nations",
+          "Gouverne personnellement chaque pays",
+          "Choisit chaque premier ministre",
+          "Gère le commerce du Commonwealth"
+        ],
+        "correctIndex": 0,
+        "explanation": "Lie à 53 nations.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "How Canadians Govern Themselves",
+          "section": "La monarchie constitutionnelle",
+          "excerpt": "Chef du Commonwealth, lie à 53 nations.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "دور الملك كرئيس للكومنولث؟",
+        "options": [
+          "يربط كندا بـ53 دولة أخرى",
+          "يحكم كل دولة شخصيًا",
+          "يختار كل رئيس وزراء",
+          "يدير تجارة الكومنولث"
+        ],
+        "explanation": "يربط بـ53 دولة.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0493"
@@ -4124,7 +5001,7 @@
           "chapter": "How Canadians Govern Themselves",
           "section": "Three Branches of Government",
           "pdfPage": 58,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -4145,8 +5022,37 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Rôle du commissaire dans les territoires ?",
+        "options": [
+          "Représente gouvernement fédéral, rôle cérémoniel",
+          "Représentant du souverain comme lieutenant-gouverneur",
+          "Chef élu du territoire",
+          "Gère finances territoriales"
+        ],
+        "correctIndex": 0,
+        "explanation": "Représente le fédéral.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "How Canadians Govern Themselves",
+          "section": "Les autres ordres de gouvernement",
+          "excerpt": "Commissaire, rôle cérémoniel.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "دور المفوض في الأقاليم الثلاثة؟",
+        "options": [
+          "يمثل الحكومة الفيدرالية بدور احتفالي",
+          "يمثل الملك كنائب حاكم",
+          "رئيس منتخب للإقليم",
+          "يدير مالية الإقليم"
+        ],
+        "explanation": "يمثل الفيدرالية.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0497"
@@ -4242,7 +5148,7 @@
           "chapter": "How Canadians Govern Themselves",
           "section": "Cabinet Ministers / Opposition",
           "pdfPage": 63,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -4263,8 +5169,37 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Trois grands partis fédéraux ?",
+        "options": [
+          "Conservateur NPD Libéral",
+          "Républicain Démocrate Indépendant",
+          "Réforme Bloc Progressiste",
+          "Vert Conservateur Bloc"
+        ],
+        "correctIndex": 0,
+        "explanation": "Conservateur NPD Libéral.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "How Canadians Govern Themselves",
+          "section": "L'État fédéral",
+          "excerpt": "Trois grands partis politiques.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "ثلاثة أحزاب فيدرالية كبرى؟",
+        "options": [
+          "المحافظ والديمقراطي الجديد والليبرالي",
+          "الجمهوري والديمقراطي والمستقل",
+          "الإصلاح وكتلة كيبيك والتقدمي",
+          "الأخضر والمحافظ وحزب الكتلة"
+        ],
+        "explanation": "المحافظ والديمقراطي الجديد والليبرالي.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0499"
@@ -4292,7 +5227,7 @@
           "chapter": "How Canadians Govern Themselves",
           "section": "Federal State",
           "pdfPage": 54,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -4313,8 +5248,37 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Niveau responsable du droit criminel ?",
+        "options": [
+          "Fédéral",
+          "Provincial",
+          "Municipal",
+          "Les deux"
+        ],
+        "correctIndex": 0,
+        "explanation": "Fédéral.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "How Canadians Govern Themselves",
+          "section": "L'État fédéral",
+          "excerpt": "Droit criminel, responsabilité fédérale.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "من مسؤول عن القانون الجنائي؟",
+        "options": [
+          "الفيدرالية",
+          "الإقليمية",
+          "البلدية",
+          "كلاهما"
+        ],
+        "explanation": "الفيدرالية.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0500"
@@ -4342,7 +5306,7 @@
           "chapter": "How Canadians Govern Themselves",
           "section": "Federal State",
           "pdfPage": 54,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -4363,8 +5327,37 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Niveau responsable de la navigation ?",
+        "options": [
+          "Fédéral",
+          "Provincial",
+          "Municipal",
+          "Partagé"
+        ],
+        "correctIndex": 0,
+        "explanation": "Fédéral.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "How Canadians Govern Themselves",
+          "section": "L'État fédéral",
+          "excerpt": "Navigation, responsabilité fédérale.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "من مسؤول عن الملاحة؟",
+        "options": [
+          "الفيدرالية",
+          "الإقليمية",
+          "البلدية",
+          "مشترك"
+        ],
+        "explanation": "الفيدرالية.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0501"
@@ -4726,7 +5719,7 @@
           "chapter": "How Canadians Govern Themselves",
           "section": "Federal/Provincial Tables",
           "pdfPage": 68,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -4747,8 +5740,37 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Provinces avec police provinciale propre ?",
+        "options": [
+          "Ontario et Québec",
+          "Alberta et CB",
+          "Toutes les dix",
+          "Aucune, fédérale seulement"
+        ],
+        "correctIndex": 0,
+        "explanation": "Ontario et Québec.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "How Canadians Govern Themselves",
+          "section": "La police",
+          "excerpt": "Ontario et Québec, police provinciale propre.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "مقاطعات لها شرطة إقليمية خاصة؟",
+        "options": [
+          "أونتاريو وكيبيك",
+          "ألبرتا وكولومبيا",
+          "جميع المقاطعات العشر",
+          "لا أحد فيدرالية فقط"
+        ],
+        "explanation": "أونتاريو وكيبيك.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0507"
@@ -4776,7 +5798,7 @@
           "chapter": "How Canadians Govern Themselves",
           "section": "Federal State (opening)",
           "pdfPage": 54,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -4797,8 +5819,37 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Événement royal en 1957 ?",
+        "options": [
+          "Reine Elizabeth II ouvre la 23e législature",
+          "Fête du Canada célébrée",
+          "Drapeau levé",
+          "Ordre du Canada créé"
+        ],
+        "correctIndex": 0,
+        "explanation": "Ouverture 23e législature.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "How Canadians Govern Themselves",
+          "section": "L'État fédéral",
+          "excerpt": "Reine Elizabeth II ouvrant la 23e législature (1957).",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "حدث ملكي 1957؟",
+        "options": [
+          "الملكة إليزابيث تفتتح البرلمان 23",
+          "عيد كندا الأول",
+          "رفع العلم",
+          "إنشاء وسام كندا"
+        ],
+        "explanation": "افتتاح البرلمان.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0508"
@@ -4828,7 +5879,7 @@
           "chapter": "How Canadians Govern Themselves",
           "section": "Federal State",
           "pdfPage": 54,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -4849,8 +5900,37 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Deux domaines partagés fédéral-provincial ?",
+        "options": [
+          "Agriculture et immigration",
+          "Défense et monnaie",
+          "Éducation et santé",
+          "Droit criminel et police"
+        ],
+        "correctIndex": 0,
+        "explanation": "Agriculture et immigration.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "How Canadians Govern Themselves",
+          "section": "L'État fédéral",
+          "excerpt": "Le fédéral et les provinces partagent l'agriculture et l'immigration.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "مجالان مشتركان فيدراليًا وإقليميًا؟",
+        "options": [
+          "الزراعة والهجرة",
+          "الدفاع والعملة",
+          "التعليم والصحة",
+          "القانون الجنائي والشرطة"
+        ],
+        "explanation": "الزراعة والهجرة.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0509"
@@ -5011,7 +6091,7 @@
           "chapter": "How Canadians Govern Themselves",
           "section": "Cabinet Ministers",
           "pdfPage": 63,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -5032,8 +6112,37 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Qui peut questionner les décisions du Cabinet ?",
+        "options": [
+          "Tous les députés de la Chambre",
+          "Le souverain seul",
+          "Chefs de l'opposition seulement",
+          "Le Sénat seul"
+        ],
+        "correctIndex": 0,
+        "explanation": "Tous les députés.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "How Canadians Govern Themselves",
+          "section": "L'État fédéral",
+          "excerpt": "Décisions questionnées par tous les membres.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "من يستطيع مساءلة قرارات مجلس الوزراء؟",
+        "options": [
+          "جميع أعضاء مجلس العموم",
+          "الملك فقط",
+          "زعماء المعارضة فقط",
+          "مجلس الشيوخ فقط"
+        ],
+        "explanation": "جميع الأعضاء.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0512"
@@ -5063,7 +6172,7 @@
           "chapter": "How Canadians Govern Themselves",
           "section": "Cabinet Ministers",
           "pdfPage": 63,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -5084,8 +6193,37 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Qui choisit les ministres du Cabinet ?",
+        "options": [
+          "Le PM, la plupart parmi les députés",
+          "Électeurs élisent directement",
+          "Gouverneur général sur avis du souverain",
+          "Sénat par vote majoritaire"
+        ],
+        "correctIndex": 0,
+        "explanation": "Le PM choisit.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "How Canadians Govern Themselves",
+          "section": "L'État fédéral",
+          "excerpt": "Le premier ministre choisit les ministres.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "من يختار وزراء الحكومة الفيدراليين؟",
+        "options": [
+          "رئيس الوزراء، معظمهم نواب",
+          "الناخبون مباشرة",
+          "الحاكم العام",
+          "مجلس الشيوخ"
+        ],
+        "explanation": "رئيس الوزراء.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0513"
@@ -5247,7 +6385,7 @@
           "chapter": "How Canadians Govern Themselves",
           "section": "Other Levels of Government",
           "pdfPage": 69,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -5268,8 +6406,37 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Qui dirige les gouvernements des Premières Nations sur réserves ?",
+        "options": [
+          "Chefs de bande et conseillers",
+          "Premiers ministres provinciaux",
+          "Maires et conseillers",
+          "Sénateurs"
+        ],
+        "correctIndex": 0,
+        "explanation": "Chefs de bande.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "How Canadians Govern Themselves",
+          "section": "Les autres ordres de gouvernement",
+          "excerpt": "Chefs de bande et conseillers, responsabilités sur réserves.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "من يقود حكومات الأمم الأولى بالمحميات؟",
+        "options": [
+          "رؤساء العشائر والمستشارون",
+          "رؤساء وزراء إقليميون",
+          "عمداء ومستشارون",
+          "أعضاء مجلس الشيوخ"
+        ],
+        "explanation": "رؤساء العشائر.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0516"
@@ -5297,7 +6464,7 @@
           "chapter": "How Canadians Govern Themselves",
           "section": "Cabinet Ministers",
           "pdfPage": 63,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -5318,8 +6485,37 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Qui prépare le budget fédéral ?",
+        "options": [
+          "Le Cabinet",
+          "Le Sénat",
+          "Premiers ministres provinciaux",
+          "La Banque du Canada"
+        ],
+        "correctIndex": 0,
+        "explanation": "Le Cabinet.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "How Canadians Govern Themselves",
+          "section": "L'État fédéral",
+          "excerpt": "Le Cabinet prépare le budget.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "من يُعِدّ الميزانية الفيدرالية؟",
+        "options": [
+          "مجلس الوزراء",
+          "مجلس الشيوخ",
+          "رؤساء وزراء إقليميون",
+          "بنك كندا"
+        ],
+        "explanation": "مجلس الوزراء.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0517"
@@ -5347,7 +6543,7 @@
           "chapter": "How Canadians Govern Themselves",
           "section": "Cabinet Ministers",
           "pdfPage": 63,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -5368,8 +6564,37 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Qui propose la plupart des nouvelles lois fédérales ?",
+        "options": [
+          "Le Cabinet",
+          "Le Sénat",
+          "Gouvernements provinciaux",
+          "Électeurs par initiative"
+        ],
+        "correctIndex": 0,
+        "explanation": "Le Cabinet.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "How Canadians Govern Themselves",
+          "section": "L'État fédéral",
+          "excerpt": "Le Cabinet propose la plupart des nouvelles lois.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "من يقترح معظم القوانين الفيدرالية الجديدة؟",
+        "options": [
+          "مجلس الوزراء",
+          "مجلس الشيوخ",
+          "الحكومات الإقليمية",
+          "الناخبون بمبادرة فردية"
+        ],
+        "explanation": "مجلس الوزراء.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0518"
@@ -5399,7 +6624,7 @@
           "chapter": "How Canadians Govern Themselves",
           "section": "Constitutional Monarchy",
           "pdfPage": 57,
-          "reviewStatus": "needs-review"
+          "reviewStatus": "verified"
         },
         "optionAnnotations": [
           {
@@ -5420,8 +6645,37 @@
           }
         ]
       },
-      "fr": null,
-      "ar": null,
+      "fr": {
+        "question": "Qui représente le souverain au niveau fédéral, et comment est-il nommé ?",
+        "options": [
+          "Le gouverneur général, nommé par le souverain sur avis du PM, cinq ans",
+          "Le PM, élu par le peuple",
+          "Le lieutenant-gouverneur, nommé par le Cabinet fédéral",
+          "Le président du Sénat, élu par les sénateurs"
+        ],
+        "correctIndex": 0,
+        "explanation": "Gouverneur général, cinq ans.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "How Canadians Govern Themselves",
+          "section": "L'État fédéral",
+          "excerpt": "Le gouverneur général, nommé sur avis du premier ministre, normalement pour cinq ans.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "من يمثل الملك فيدراليًا، وكيف يُعيَّن؟",
+        "options": [
+          "الحاكم العام، يُعيَّن على مشورة رئيس الوزراء لخمس سنوات",
+          "رئيس الوزراء منتخب",
+          "نائب الحاكم من مجلس الوزراء الفيدرالي",
+          "رئيس مجلس الشيوخ منتخب"
+        ],
+        "explanation": "الحاكم العام، خمس سنوات.",
+        "translationProvenance": "machine_translated"
+      },
       "testTip": null,
       "crossReferences": [],
       "id": "CIT-0519"

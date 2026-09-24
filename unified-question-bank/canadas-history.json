@@ -4,12 +4,12 @@
   "memoryBox": {
     "en": {
       "title": "Timeline of Key Dates",
-      "mnemonic": "Build a mental timeline: 1497 Cabot, 1608 Champlain founds Quebec, 1759 Plains of Abraham, 1867 Confederation, 1885 last spike CPR, 1917 women vote federally, 1982 Constitution patriated.",
+      "mnemonic": "1497 Cabot, 1608 Champlain, 1759 Plains of Abraham, 1867 Confederation, 1885 CPR, 1917 women vote, 1982 patriation.",
       "keyFactsChecklist": [
-        "Confederation: July 1, 1867",
-        "CPR completed: 1885",
-        "Women's federal vote: 1917-1918",
-        "Constitution patriated: 1982"
+        "Confederation: 1867",
+        "CPR: 1885",
+        "Women's vote: 1917-18",
+        "Patriation: 1982"
       ]
     }
   },
