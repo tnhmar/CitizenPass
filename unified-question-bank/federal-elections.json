@@ -3,13 +3,14 @@
   "chapterTitle": "Federal Elections",
   "memoryBox": {
     "en": {
-      "title": "Voting Rules & Milestones",
-      "mnemonic": "Aboriginal peoples got the federal vote in 1960. Voting is secret. The party with the most seats forms government.",
+      "title": "Voting Rules & Process",
+      "mnemonic": "Voting is secret — you never have to disclose your choice, and no one can require you to. After an election, the party with the most seats forms government; a 'minority government' holds less than half the seats. Watch for the guide's outdated 308-electoral-district figure (it's changed since).",
       "keyFactsChecklist": [
-        "Aboriginal federal vote: 1960",
         "Voting is a right AND a responsibility",
-        "Ballot is secret",
-        "Most-seats party forms government"
+        "Ballot is secret, cannot be compelled to disclose",
+        "Most-seats party forms government",
+        "Minority government = <50% of seats",
+        "Guide's electoral-district count (308) is outdated"
       ]
     }
   },
