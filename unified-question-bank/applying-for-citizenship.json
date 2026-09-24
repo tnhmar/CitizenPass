@@ -1,0 +1,209 @@
+{
+  "chapterId": "applying-for-citizenship",
+  "chapterTitle": "Applying for Citizenship",
+  "memoryBox": {
+    "en": {
+      "title": "The Application & Test Process",
+      "mnemonic": "Two test requirements: knowledge of Canada + adequate English/French — but since Oct 2017 language is assessed SEPARATELY. Age 55+ = no test required.",
+      "keyFactsChecklist": [
+        "55+ exempt from knowledge test",
+        "Free official-language classes exist",
+        "Language assessed separately since Oct 2017",
+        "Ceremony: oath, sign form, receive certificate"
+      ]
+    }
+  },
+  "questionCount": 4,
+  "questions": [
+    {
+      "chapterId": "applying-for-citizenship",
+      "type": "true-false",
+      "tags": [],
+      "difficulty": 1,
+      "topic": "rights",
+      "subtopic": "language_classes",
+      "en": {
+        "question": "The Government of Canada offers free flights to take the citizenship test for applicants.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correctIndex": 1,
+        "explanation": "Not provided.",
+        "source": {
+          "guide": "Discover Canada",
+          "language": "en",
+          "chapter": "Applying for Citizenship",
+          "section": "Applying for Citizenship",
+          "pdfPage": 9,
+          "reviewStatus": "needs-review"
+        },
+        "optionAnnotations": [
+          {
+            "relevance": "PLAUSIBLE_DISTRACTOR",
+            "explanation": "Not provided."
+          },
+          {
+            "relevance": "CORRECT_ANSWER",
+            "explanation": "Not provided."
+          }
+        ]
+      },
+      "fr": null,
+      "ar": null,
+      "testTip": null,
+      "crossReferences": [],
+      "id": "CIT-0921"
+    },
+    {
+      "chapterId": "applying-for-citizenship",
+      "type": "multiple-choice",
+      "tags": [],
+      "difficulty": 2,
+      "topic": "rights",
+      "subtopic": "ceremony_steps",
+      "en": {
+        "question": "What do new Canadians do at the citizenship ceremony?",
+        "options": [
+          "Take the Oath of Citizenship, sign the oath form, and receive their Canadian Citizenship Certificate",
+          "Vote in their first federal election",
+          "Donate to the Government of Canada",
+          "Renounce all previous citizenship"
+        ],
+        "correctIndex": 0,
+        "explanation": "Page 10: 'At the ceremony, you will: Take the Oath of Citizenship; Sign the oath form; and Receive your Canadian Citizenship Certificate.'",
+        "source": {
+          "guide": "Discover Canada",
+          "language": "en",
+          "chapter": "Applying for Citizenship",
+          "section": "Applying for Citizenship",
+          "pdfPage": 10,
+          "reviewStatus": "needs-review"
+        },
+        "optionAnnotations": [
+          {
+            "relevance": "CORRECT_ANSWER",
+            "explanation": "Page 10: 'At the ceremony, you will: Take the Oath of Citizenship; Sign the oath form; and Receive your Canadian Citizenship Certificate.'"
+          },
+          {
+            "relevance": "RELATED_FACT",
+            "explanation": "Voting is separate from the ceremony itself."
+          },
+          {
+            "relevance": "PLAUSIBLE_DISTRACTOR",
+            "explanation": "Not a ceremony step."
+          },
+          {
+            "relevance": "PARTIALLY_CORRECT",
+            "explanation": "Canada permits dual citizenship; the ceremony doesn't require renunciation."
+          }
+        ]
+      },
+      "fr": null,
+      "ar": null,
+      "testTip": null,
+      "crossReferences": [],
+      "id": "CIT-0922"
+    },
+    {
+      "chapterId": "applying-for-citizenship",
+      "type": "multiple-choice",
+      "tags": [],
+      "difficulty": 1,
+      "topic": "rights",
+      "subtopic": "citizenship_test_format",
+      "en": {
+        "question": "What is the purpose of the citizenship test?",
+        "options": [
+          "To assess your knowledge of Canada and the rights and responsibilities of being a citizen",
+          "To test your French/English fluency only",
+          "To verify your background-check status",
+          "To determine if you can run for office"
+        ],
+        "correctIndex": 0,
+        "explanation": "Page 9 (and p. 106): 'The citizenship test is used to assess your knowledge of Canada and the rights and responsibilities of being a citizen in Canada.'",
+        "source": {
+          "guide": "Discover Canada",
+          "language": "en",
+          "chapter": "Applying for Citizenship",
+          "section": "About the Citizenship Test",
+          "pdfPage": 9,
+          "reviewStatus": "needs-review"
+        },
+        "optionAnnotations": [
+          {
+            "relevance": "CORRECT_ANSWER",
+            "explanation": "Page 9 (and p. 106): 'The citizenship test is used to assess your knowledge of Canada and the rights and responsibilities of being a citizen in Canada.'"
+          },
+          {
+            "relevance": "PARTIALLY_CORRECT",
+            "explanation": "Language is a separate requirement (p. 82). The test assesses knowledge of Canada."
+          },
+          {
+            "relevance": "WRONG_CATEGORY",
+            "explanation": "Background checks are part of the application process (p. 8), not the test."
+          },
+          {
+            "relevance": "WRONG_CATEGORY",
+            "explanation": "Not the test's purpose."
+          }
+        ]
+      },
+      "fr": null,
+      "ar": null,
+      "testTip": null,
+      "crossReferences": [],
+      "id": "CIT-0923"
+    },
+    {
+      "chapterId": "applying-for-citizenship",
+      "type": "multiple-choice",
+      "tags": [],
+      "difficulty": 1,
+      "topic": "rights",
+      "subtopic": "citizenship_application",
+      "en": {
+        "question": "What will officials check when you apply for citizenship?",
+        "options": [
+          "Your status, that you are not prohibited from citizenship, and that you meet the requirements",
+          "Your favorite hockey team",
+          "Your assets and bank accounts",
+          "Your political party affiliation"
+        ],
+        "correctIndex": 0,
+        "explanation": "Page 8: 'When you apply for citizenship, officials will check your status, verify that you are not prohibited from citizenship.'",
+        "source": {
+          "guide": "Discover Canada",
+          "language": "en",
+          "chapter": "Applying for Citizenship",
+          "section": "Applying for Citizenship",
+          "pdfPage": 8,
+          "reviewStatus": "needs-review"
+        },
+        "optionAnnotations": [
+          {
+            "relevance": "CORRECT_ANSWER",
+            "explanation": "Page 8: 'When you apply for citizenship, officials will check your status, verify that you are not prohibited from citizenship.'"
+          },
+          {
+            "relevance": "PLAUSIBLE_DISTRACTOR",
+            "explanation": "Not a citizenship-application criterion."
+          },
+          {
+            "relevance": "PLAUSIBLE_DISTRACTOR",
+            "explanation": "Not a Canadian citizenship-application criterion per p. 8."
+          },
+          {
+            "relevance": "PLAUSIBLE_DISTRACTOR",
+            "explanation": "Not a Canadian citizenship-application criterion."
+          }
+        ]
+      },
+      "fr": null,
+      "ar": null,
+      "testTip": null,
+      "crossReferences": [],
+      "id": "CIT-0924"
+    }
+  ]
+}

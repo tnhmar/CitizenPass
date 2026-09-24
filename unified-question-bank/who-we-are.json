@@ -1,0 +1,3381 @@
+{
+  "chapterId": "who-we-are",
+  "chapterTitle": "Who We Are",
+  "memoryBox": {
+    "en": {
+      "title": "Three Founding Peoples & Aboriginal Groups",
+      "mnemonic": "Three founding peoples: Aboriginal, French, British. Three Aboriginal groups by size: First Nations (65%) > Métis (30%) > Inuit (4%). New Brunswick is the ONLY officially bilingual province.",
+      "keyFactsChecklist": [
+        "Aboriginal, French, British founding peoples",
+        "First Nations 65% / Métis 30% / Inuit 4%",
+        "New Brunswick only bilingual province",
+        "2008 residential schools apology"
+      ]
+    }
+  },
+  "questionCount": 59,
+  "questions": [
+    {
+      "chapterId": "who-we-are",
+      "type": "true-false",
+      "tags": [],
+      "difficulty": 2,
+      "topic": "rights",
+      "subtopic": "aboriginal_constitutional_rights",
+      "en": {
+        "question": "Aboriginal and treaty rights are guaranteed in the Canadian Constitution.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correctIndex": 0,
+        "explanation": "Aboriginal and treaty rights are protected in the Canadian Constitution.",
+        "source": {
+          "guide": "Discover Canada",
+          "language": "en",
+          "chapter": "Who We Are",
+          "section": "Aboriginal and Treaty Rights",
+          "pdfPage": 17,
+          "reviewStatus": "needs-review"
+        },
+        "optionAnnotations": [
+          {
+            "relevance": "CORRECT_ANSWER",
+            "explanation": "Aboriginal and treaty rights are protected in the Canadian Constitution."
+          },
+          {
+            "relevance": "CORRECT_ANSWER",
+            "explanation": "This statement is accurate, so 'False' is incorrect. Aboriginal and treaty rights are protected in the Canadian Constitution."
+          }
+        ]
+      },
+      "fr": null,
+      "ar": null,
+      "testTip": null,
+      "crossReferences": [],
+      "id": "CIT-0073"
+    },
+    {
+      "chapterId": "who-we-are",
+      "type": "true-false",
+      "tags": [
+        "aboriginal-peoples",
+        "demographics"
+      ],
+      "difficulty": 3,
+      "topic": null,
+      "subtopic": null,
+      "en": {
+        "question": "About 65% of Aboriginal people in Canada are First Nations.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correctIndex": 0,
+        "explanation": "True. About 65% of Aboriginal people are First Nations, while 30% are Métis and 4% Inuit.",
+        "source": {
+          "guide": "Discover Canada",
+          "language": "en",
+          "chapter": "Who We Are",
+          "section": "Aboriginal Peoples",
+          "sourceUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/who-are-canadians.html",
+          "excerpt": "About 65% of the Aboriginal people are First Nations, while 30% are Métis and 4% Inuit.",
+          "verifiedAt": "2026-08-17",
+          "reviewStatus": "verified"
+        },
+        "optionAnnotations": null
+      },
+      "fr": {
+        "question": "Environ 65 % des peuples autochtones du Canada sont des Premières Nations.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation": "Vrai. Environ 65 % des peuples autochtones sont des Premières Nations, 30 % des Métis et 4 %, des Inuits.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Qui sommes-nous, les Canadiens?",
+          "section": "Les peuples autochtones",
+          "sourceUrl": "https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/qui-sont-canadiens.html",
+          "excerpt": "Environ 65 pour 100 des peuples autochtones sont des Premières Nations, 30 pour 100 des Métis et 4 pour 100, des Inuits.",
+          "verifiedAt": "2026-08-17",
+          "reviewStatus": "verified"
+        }
+      },
+      "ar": {
+        "question": "حوالي 65% من الشعوب الأصلية في كندا هم من الأمم الأولى.",
+        "options": [
+          "صحيح",
+          "خطأ"
+        ],
+        "explanation": "صحيح. حوالي 65% من الشعوب الأصلية هم من الأمم الأولى، بينما 30% من الميتيس و4% من الإنويت."
+      },
+      "testTip": null,
+      "crossReferences": [],
+      "id": "CIT-0074"
+    },
+    {
+      "chapterId": "who-we-are",
+      "type": "multiple-choice",
+      "tags": [],
+      "difficulty": 2,
+      "topic": "rights",
+      "subtopic": "anglo_quebecers",
+      "en": {
+        "question": "About how many Anglo-Quebecers form a vibrant part of Quebec's fabric, with a heritage of 250 years?",
+        "options": [
+          "One million",
+          "About 10,000",
+          "Half the province",
+          "100,000"
+        ],
+        "correctIndex": 0,
+        "explanation": "Page 20: 'One million Anglo-Quebecers have a heritage of 250 years and form a vibrant part of the Quebec fabric.'",
+        "source": {
+          "guide": "Discover Canada",
+          "language": "en",
+          "chapter": "Who We Are",
+          "section": "English and French",
+          "pdfPage": 20,
+          "reviewStatus": "needs-review"
+        },
+        "optionAnnotations": [
+          {
+            "relevance": "CORRECT_ANSWER",
+            "explanation": "Page 20: 'One million Anglo-Quebecers have a heritage of 250 years and form a vibrant part of the Quebec fabric.'"
+          },
+          {
+            "relevance": "PLAUSIBLE_DISTRACTOR",
+            "explanation": "Significantly understates. The figure is one million."
+          },
+          {
+            "relevance": "PLAUSIBLE_DISTRACTOR",
+            "explanation": "Quebec is overwhelmingly French-speaking. Anglos are a minority around one million per p. 20."
+          },
+          {
+            "relevance": "PLAUSIBLE_DISTRACTOR",
+            "explanation": "Understates. The figure on p. 20 is one million."
+          }
+        ]
+      },
+      "fr": null,
+      "ar": null,
+      "testTip": null,
+      "crossReferences": [],
+      "id": "CIT-0075"
+    },
+    {
+      "chapterId": "who-we-are",
+      "type": "true-false",
+      "tags": [
+        "aboriginal-peoples",
+        "terminology"
+      ],
+      "difficulty": 2,
+      "topic": null,
+      "subtopic": null,
+      "en": {
+        "question": "Acadians are one of the three distinct groups referred to by the term 'Aboriginal peoples'.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correctIndex": 1,
+        "explanation": "False. The term 'Aboriginal peoples' refers to First Nations, Inuit, and Métis. Acadians are descendants of French colonists, not an Aboriginal group.",
+        "source": {
+          "guide": "Discover Canada",
+          "language": "en",
+          "chapter": "Who We Are",
+          "section": "Aboriginal Peoples",
+          "sourceUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/who-are-canadians.html",
+          "excerpt": "Today, the term Aboriginal peoples refers to three distinct groups.",
+          "verifiedAt": "2026-08-17",
+          "reviewStatus": "verified"
+        },
+        "optionAnnotations": null
+      },
+      "fr": {
+        "question": "Les Acadiens font partie des trois groupes distincts désignés par le terme « peuples autochtones ».",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation": "Faux. Le terme désigne les Premières Nations, les Inuits et les Métis. Les Acadiens sont des descendants de colons français, pas un groupe autochtone.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Qui sommes-nous, les Canadiens?",
+          "section": "Les peuples autochtones",
+          "sourceUrl": "https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/qui-sont-canadiens.html",
+          "excerpt": "Aujourd'hui, le terme peuples autochtones désigne trois groupes distincts.",
+          "verifiedAt": "2026-08-17",
+          "reviewStatus": "verified"
+        }
+      },
+      "ar": {
+        "question": "الأكاديون هم إحدى المجموعات الثلاث المتميزة التي يشير إليها مصطلح 'الشعوب الأصلية'.",
+        "options": [
+          "صحيح",
+          "خطأ"
+        ],
+        "explanation": "خطأ. يشير مصطلح 'الشعوب الأصلية' إلى الأمم الأولى والإنويت والميتيس. الأكاديون من سلالة المستوطنين الفرنسيين، وليسوا مجموعة من الشعوب الأصلية."
+      },
+      "testTip": null,
+      "crossReferences": [],
+      "id": "CIT-0076"
+    },
+    {
+      "chapterId": "who-we-are",
+      "type": "multiple-choice",
+      "tags": [
+        "chapter_who_we_are",
+        "numbers"
+      ],
+      "difficulty": 3,
+      "topic": "who_we_are",
+      "subtopic": "anglophone_francophone_numbers",
+      "en": {
+        "question": "Approximately how many Anglophones and Francophones live in Canada?",
+        "options": [
+          "10 million Anglophones, 5 million Francophones",
+          "18 million Anglophones, 7 million Francophones",
+          "25 million Anglophones, 4 million Francophones",
+          "15 million Anglophones, 10 million Francophones"
+        ],
+        "correctIndex": 1,
+        "explanation": "Page 19: 'Today, there are 18 million Anglophones—people who speak English as a first language—and seven million Francophones—people who speak French as their first language.'",
+        "source": {
+          "guide": "Discover Canada",
+          "language": "en",
+          "chapter": "Who We Are",
+          "section": "English and French",
+          "pdfPage": 19,
+          "reviewStatus": "needs-review"
+        },
+        "optionAnnotations": [
+          {
+            "relevance": "PLAUSIBLE_DISTRACTOR",
+            "explanation": "Wrong numbers. The actual figures per Discover Canada are 18 million / 7 million."
+          },
+          {
+            "relevance": "CORRECT_ANSWER",
+            "explanation": "Page 19: 'Today, there are 18 million Anglophones—people who speak English as a first language—and seven million Francophones—people who speak French as their first language.'"
+          },
+          {
+            "relevance": "PLAUSIBLE_DISTRACTOR",
+            "explanation": "Inflated Anglophone count and deflated Francophone count. Not what Discover Canada states."
+          },
+          {
+            "relevance": "PLAUSIBLE_DISTRACTOR",
+            "explanation": "Overstates Francophone population. The 7 million figure is on page 19."
+          }
+        ]
+      },
+      "fr": null,
+      "ar": null,
+      "testTip": null,
+      "crossReferences": [],
+      "id": "CIT-0077"
+    },
+    {
+      "chapterId": "who-we-are",
+      "type": "multiple-choice",
+      "tags": [
+        "aboriginal-peoples",
+        "demographics"
+      ],
+      "difficulty": 3,
+      "topic": null,
+      "subtopic": null,
+      "en": {
+        "question": "Approximately what percentage of Aboriginal people are First Nations?",
+        "options": [
+          "65%",
+          "30%",
+          "4%",
+          "50%"
+        ],
+        "correctIndex": 0,
+        "explanation": "The guide states about 65% of Aboriginal people are First Nations, 30% are Métis, and 4% Inuit.",
+        "source": {
+          "guide": "Discover Canada",
+          "language": "en",
+          "chapter": "Who We Are",
+          "section": "Aboriginal Peoples",
+          "sourceUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/who-are-canadians.html",
+          "excerpt": "About 65% of the Aboriginal people are First Nations, while 30% are Métis and 4% Inuit.",
+          "verifiedAt": "2026-08-17",
+          "reviewStatus": "verified"
+        },
+        "optionAnnotations": null
+      },
+      "fr": {
+        "question": "Environ quel pourcentage des peuples autochtones sont des Premières Nations ?",
+        "options": [
+          "65 %",
+          "30 %",
+          "4 %",
+          "50 %"
+        ],
+        "correctIndex": 0,
+        "explanation": "Le guide précise environ 65 % des peuples autochtones sont des Premières Nations, 30 % des Métis et 4 %, des Inuits.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Qui sommes-nous, les Canadiens?",
+          "section": "Les peuples autochtones",
+          "sourceUrl": "https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/qui-sont-canadiens.html",
+          "excerpt": "Environ 65 pour 100 des peuples autochtones sont des Premières Nations, 30 pour 100 des Métis et 4 pour 100, des Inuits.",
+          "verifiedAt": "2026-08-17",
+          "reviewStatus": "verified"
+        }
+      },
+      "ar": {
+        "question": "ما النسبة التقريبية للشعوب الأصلية التي تنتمي إلى الأمم الأولى؟",
+        "options": [
+          "65%",
+          "30%",
+          "4%",
+          "50%"
+        ],
+        "explanation": "ينص الدليل على أن حوالي 65% من الشعوب الأصلية هم من الأمم الأولى، و30% من الميتيس، و4% من الإنويت."
+      },
+      "testTip": null,
+      "crossReferences": [],
+      "id": "CIT-0078"
+    },
+    {
+      "chapterId": "who-we-are",
+      "type": "true-false",
+      "tags": [],
+      "difficulty": 2,
+      "topic": "rights",
+      "subtopic": "constitutional_oldest",
+      "en": {
+        "question": "Canada has inherited the oldest continuous constitutional tradition in the world.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correctIndex": 0,
+        "explanation": "Canada possesses the world's oldest continuous constitutional tradition.",
+        "source": {
+          "guide": "Discover Canada",
+          "language": "en",
+          "chapter": "Who We Are",
+          "section": "Who We Are (opening)",
+          "pdfPage": 16,
+          "reviewStatus": "needs-review"
+        },
+        "optionAnnotations": [
+          {
+            "relevance": "CORRECT_ANSWER",
+            "explanation": "Canada possesses the world's oldest continuous constitutional tradition."
+          },
+          {
+            "relevance": "CORRECT_ANSWER",
+            "explanation": "This statement is accurate, so 'False' is incorrect. Canada possesses the world's oldest continuous constitutional tradition."
+          }
+        ]
+      },
+      "fr": null,
+      "ar": null,
+      "testTip": null,
+      "crossReferences": [],
+      "id": "CIT-0079"
+    },
+    {
+      "chapterId": "who-we-are",
+      "type": "true-false",
+      "tags": [
+        "identity",
+        "monarchy"
+      ],
+      "difficulty": 1,
+      "topic": null,
+      "subtopic": null,
+      "en": {
+        "question": "Canada is the only constitutional monarchy in North America.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correctIndex": 0,
+        "explanation": "True. Canada is the only constitutional monarchy in North America.",
+        "source": {
+          "guide": "Discover Canada",
+          "language": "en",
+          "chapter": "Who We Are",
+          "section": "Who We Are (introduction)",
+          "sourceUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/who-are-canadians.html",
+          "excerpt": "We are the only constitutional monarchy in North America.",
+          "verifiedAt": "2026-08-17",
+          "reviewStatus": "verified"
+        },
+        "optionAnnotations": null
+      },
+      "fr": {
+        "question": "Le Canada est la seule monarchie constitutionnelle d'Amérique du Nord.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation": "Vrai. Le Canada est la seule monarchie constitutionnelle d'Amérique du Nord.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Qui sommes-nous, les Canadiens?",
+          "section": "Qui sommes-nous, les Canadiens? (introduction)",
+          "sourceUrl": "https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/qui-sont-canadiens.html",
+          "excerpt": "Nous sommes la seule monarchie constitutionnelle d'Amérique du Nord.",
+          "verifiedAt": "2026-08-17",
+          "reviewStatus": "verified"
+        }
+      },
+      "ar": {
+        "question": "كندا هي المَلَكية الدستورية الوحيدة في أمريكا الشمالية.",
+        "options": [
+          "صحيح",
+          "خطأ"
+        ],
+        "explanation": "صحيح. كندا هي المَلَكية الدستورية الوحيدة في أمريكا الشمالية."
+      },
+      "testTip": null,
+      "crossReferences": [],
+      "id": "CIT-0080"
+    },
+    {
+      "chapterId": "who-we-are",
+      "type": "true-false",
+      "tags": [
+        "identity",
+        "founding-peoples"
+      ],
+      "difficulty": 1,
+      "topic": null,
+      "subtopic": null,
+      "en": {
+        "question": "Canada's three founding peoples are Aboriginal, French, and British.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correctIndex": 0,
+        "explanation": "True. To understand what it means to be Canadian, it is important to know about the three founding peoples: Aboriginal, French, and British.",
+        "source": {
+          "guide": "Discover Canada",
+          "language": "en",
+          "chapter": "Who We Are",
+          "section": "Who We Are (introduction)",
+          "sourceUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/who-are-canadians.html",
+          "excerpt": "To understand what it means to be Canadian, it is important to know about our three founding peoples—Aboriginal, French and British.",
+          "verifiedAt": "2026-08-17",
+          "reviewStatus": "verified"
+        },
+        "optionAnnotations": null
+      },
+      "fr": {
+        "question": "Les trois peuples fondateurs du Canada sont les Autochtones, les Français et les Britanniques.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation": "Vrai. Pour comprendre ce que signifie être Canadien, il faut connaître les trois peuples fondateurs : les Autochtones, les Français et les Britanniques.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Qui sommes-nous, les Canadiens?",
+          "section": "Qui sommes-nous, les Canadiens? (introduction)",
+          "sourceUrl": "https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/qui-sont-canadiens.html",
+          "excerpt": "Pour comprendre ce que signifie être Canadien, il faut connaître nos trois peuples fondateurs : les Autochtones, les Français et les Britanniques.",
+          "verifiedAt": "2026-08-17",
+          "reviewStatus": "verified"
+        }
+      },
+      "ar": {
+        "question": "شعوب كندا المؤسِّسة الثلاثة هي الشعوب الأصلية والفرنسيون والبريطانيون.",
+        "options": [
+          "صحيح",
+          "خطأ"
+        ],
+        "explanation": "صحيح. لفهم معنى أن تكون كنديًا، من المهم معرفة الشعوب المؤسِّسة الثلاثة: الشعوب الأصلية والفرنسيون والبريطانيون."
+      },
+      "testTip": null,
+      "crossReferences": [],
+      "id": "CIT-0081"
+    },
+    {
+      "chapterId": "who-we-are",
+      "type": "multiple-choice",
+      "tags": [
+        "history",
+        "acadians"
+      ],
+      "difficulty": 2,
+      "topic": null,
+      "subtopic": null,
+      "en": {
+        "question": "During which years were more than two-thirds of the Acadians deported from their homeland?",
+        "options": [
+          "1755 to 1763",
+          "1867 to 1870",
+          "1608 to 1663",
+          "1914 to 1918"
+        ],
+        "correctIndex": 0,
+        "explanation": "Between 1755 and 1763, during the war between Britain and France, more than two-thirds of the Acadians were deported.",
+        "source": {
+          "guide": "Discover Canada",
+          "language": "en",
+          "chapter": "Who We Are",
+          "section": "English and French",
+          "sourceUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/who-are-canadians.html",
+          "excerpt": "Between 1755 and 1763, during the war between Britain and France, more than two-thirds of the Acadians were deported from their homeland.",
+          "verifiedAt": "2026-08-17",
+          "reviewStatus": "verified"
+        },
+        "optionAnnotations": null
+      },
+      "fr": {
+        "question": "Pendant quelles années plus des deux tiers des Acadiens ont-ils été déportés hors de leur patrie ?",
+        "options": [
+          "De 1755 à 1763",
+          "De 1867 à 1870",
+          "De 1608 à 1663",
+          "De 1914 à 1918"
+        ],
+        "correctIndex": 0,
+        "explanation": "De 1755 à 1763, pendant la guerre entre la Grande-Bretagne et la France, plus des deux tiers des Acadiens ont été déportés.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Qui sommes-nous, les Canadiens?",
+          "section": "Les français et les anglais",
+          "sourceUrl": "https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/qui-sont-canadiens.html",
+          "excerpt": "De 1755 à 1763, pendant la guerre entre la Grande-Bretagne et la France, plus des deux tiers des Acadiens ont été déportés hors de leur patrie.",
+          "verifiedAt": "2026-08-17",
+          "reviewStatus": "verified"
+        }
+      },
+      "ar": {
+        "question": "خلال أي سنوات تم ترحيل أكثر من ثلثي الأكاديين من وطنهم؟",
+        "options": [
+          "من 1755 إلى 1763",
+          "من 1867 إلى 1870",
+          "من 1608 إلى 1663",
+          "من 1914 إلى 1918"
+        ],
+        "explanation": "بين عامي 1755 و1763، خلال الحرب بين بريطانيا وفرنسا، تم ترحيل أكثر من ثلثي الأكاديين."
+      },
+      "testTip": null,
+      "crossReferences": [],
+      "id": "CIT-0082"
+    },
+    {
+      "chapterId": "who-we-are",
+      "type": "multiple-choice",
+      "tags": [
+        "identity",
+        "monarchy"
+      ],
+      "difficulty": 1,
+      "topic": null,
+      "subtopic": null,
+      "en": {
+        "question": "How many constitutional monarchies exist in North America?",
+        "options": [
+          "Only one — Canada",
+          "Two — Canada and the United States",
+          "Three, including Mexico",
+          "None; all are republics"
+        ],
+        "correctIndex": 0,
+        "explanation": "The guide states Canada is the only constitutional monarchy in North America.",
+        "source": {
+          "guide": "Discover Canada",
+          "language": "en",
+          "chapter": "Who We Are",
+          "section": "Who We Are (introduction)",
+          "sourceUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/who-are-canadians.html",
+          "excerpt": "We are the only constitutional monarchy in North America.",
+          "verifiedAt": "2026-08-17",
+          "reviewStatus": "verified"
+        },
+        "optionAnnotations": null
+      },
+      "fr": {
+        "question": "Combien de monarchies constitutionnelles existent en Amérique du Nord ?",
+        "options": [
+          "Une seule — le Canada",
+          "Deux — le Canada et les États-Unis",
+          "Trois, y compris le Mexique",
+          "Aucune; ce sont toutes des républiques"
+        ],
+        "correctIndex": 0,
+        "explanation": "Le guide précise que le Canada est la seule monarchie constitutionnelle d'Amérique du Nord.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Qui sommes-nous, les Canadiens?",
+          "section": "Qui sommes-nous, les Canadiens? (introduction)",
+          "sourceUrl": "https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/qui-sont-canadiens.html",
+          "excerpt": "Nous sommes la seule monarchie constitutionnelle d'Amérique du Nord.",
+          "verifiedAt": "2026-08-17",
+          "reviewStatus": "verified"
+        }
+      },
+      "ar": {
+        "question": "كم عدد المَلَكيات الدستورية الموجودة في أمريكا الشمالية؟",
+        "options": [
+          "واحدة فقط — كندا",
+          "اثنتان — كندا والولايات المتحدة",
+          "ثلاث، بما فيها المكسيك",
+          "لا توجد؛ جميعها جمهوريات"
+        ],
+        "explanation": "ينص الدليل على أن كندا هي المَلَكية الدستورية الوحيدة في أمريكا الشمالية."
+      },
+      "testTip": null,
+      "crossReferences": [],
+      "id": "CIT-0083"
+    },
+    {
+      "chapterId": "who-we-are",
+      "type": "multiple-choice",
+      "tags": [
+        "aboriginal-peoples",
+        "terminology"
+      ],
+      "difficulty": 2,
+      "topic": null,
+      "subtopic": null,
+      "en": {
+        "question": "How many distinct groups does the term 'Aboriginal peoples' refer to today?",
+        "options": [
+          "Three",
+          "Two",
+          "Four",
+          "Five"
+        ],
+        "correctIndex": 0,
+        "explanation": "Today, the term Aboriginal peoples refers to three distinct groups: First Nations, Inuit, and Métis.",
+        "source": {
+          "guide": "Discover Canada",
+          "language": "en",
+          "chapter": "Who We Are",
+          "section": "Aboriginal Peoples",
+          "sourceUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/who-are-canadians.html",
+          "excerpt": "Today, the term Aboriginal peoples refers to three distinct groups.",
+          "verifiedAt": "2026-08-17",
+          "reviewStatus": "verified"
+        },
+        "optionAnnotations": null
+      },
+      "fr": {
+        "question": "À combien de groupes distincts le terme 'peuples autochtones' fait-il référence aujourd'hui ?",
+        "options": [
+          "Trois",
+          "Deux",
+          "Quatre",
+          "Cinq"
+        ],
+        "correctIndex": 0,
+        "explanation": "Aujourd'hui, le terme peuples autochtones désigne trois groupes distincts : les Premières Nations, les Inuits et les Métis.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Qui sommes-nous, les Canadiens?",
+          "section": "Les peuples autochtones",
+          "sourceUrl": "https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/qui-sont-canadiens.html",
+          "excerpt": "Aujourd'hui, le terme peuples autochtones désigne trois groupes distincts.",
+          "verifiedAt": "2026-08-17",
+          "reviewStatus": "verified"
+        }
+      },
+      "ar": {
+        "question": "كم عدد المجموعات المتميزة التي يشير إليها مصطلح 'الشعوب الأصلية' اليوم؟",
+        "options": [
+          "ثلاث",
+          "اثنتان",
+          "أربع",
+          "خمس"
+        ],
+        "explanation": "يشير مصطلح الشعوب الأصلية اليوم إلى ثلاث مجموعات متميزة: الأمم الأولى والإنويت والميتيس."
+      },
+      "testTip": null,
+      "crossReferences": [],
+      "id": "CIT-0084"
+    },
+    {
+      "chapterId": "who-we-are",
+      "type": "true-false",
+      "tags": [],
+      "difficulty": 3,
+      "topic": "rights",
+      "subtopic": "chinese_at_home",
+      "en": {
+        "question": "In Vancouver and Toronto, Chinese languages are the second-most-spoken at home after English.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correctIndex": 0,
+        "explanation": "Chinese languages rank second after English in homes in both Vancouver and Toronto.",
+        "source": {
+          "guide": "Discover Canada",
+          "language": "en",
+          "chapter": "Who We Are",
+          "section": "Diversity in Canada",
+          "pdfPage": 21,
+          "reviewStatus": "needs-review"
+        },
+        "optionAnnotations": [
+          {
+            "relevance": "CORRECT_ANSWER",
+            "explanation": "Chinese languages rank second after English in homes in both Vancouver and Toronto."
+          },
+          {
+            "relevance": "CORRECT_ANSWER",
+            "explanation": "This statement is accurate, so 'False' is incorrect. Chinese languages rank second after English in homes in both Vancouver and Toronto."
+          }
+        ]
+      },
+      "fr": null,
+      "ar": null,
+      "testTip": null,
+      "crossReferences": [],
+      "id": "CIT-0085"
+    },
+    {
+      "chapterId": "who-we-are",
+      "type": "multiple-choice",
+      "tags": [
+        "history",
+        "residential-schools"
+      ],
+      "difficulty": 2,
+      "topic": null,
+      "subtopic": null,
+      "en": {
+        "question": "In what year did Ottawa formally apologize to former students of Indian residential schools?",
+        "options": [
+          "2008",
+          "1982",
+          "1988",
+          "1998"
+        ],
+        "correctIndex": 0,
+        "explanation": "Ottawa formally apologized to the former students in 2008.",
+        "source": {
+          "guide": "Discover Canada",
+          "language": "en",
+          "chapter": "Who We Are",
+          "section": "Aboriginal Peoples",
+          "sourceUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/who-are-canadians.html",
+          "excerpt": "In 2008, Ottawa formally apologized to the former students.",
+          "verifiedAt": "2026-08-17",
+          "reviewStatus": "verified"
+        },
+        "optionAnnotations": null
+      },
+      "fr": {
+        "question": "En quelle année Ottawa a-t-il présenté des excuses officielles aux anciens élèves des pensionnats indiens ?",
+        "options": [
+          "2008",
+          "1982",
+          "1988",
+          "1998"
+        ],
+        "correctIndex": 0,
+        "explanation": "Ottawa a présenté des excuses officielles aux anciens élèves en 2008.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Qui sommes-nous, les Canadiens?",
+          "section": "Les peuples autochtones",
+          "sourceUrl": "https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/qui-sont-canadiens.html",
+          "excerpt": "En 2008, Ottawa a présenté des excuses officielles à tous les anciens élèves des pensionnats indiens.",
+          "verifiedAt": "2026-08-17",
+          "reviewStatus": "verified"
+        }
+      },
+      "ar": {
+        "question": "في أي عام قدّمت أوتاوا اعتذارًا رسميًا للطلاب السابقين في المدارس الداخلية للسكان الأصليين؟",
+        "options": [
+          "2008",
+          "1982",
+          "1988",
+          "1998"
+        ],
+        "explanation": "قدّمت أوتاوا اعتذارًا رسميًا للطلاب السابقين عام 2008."
+      },
+      "testTip": null,
+      "crossReferences": [],
+      "id": "CIT-0086"
+    },
+    {
+      "chapterId": "who-we-are",
+      "type": "multiple-choice",
+      "tags": [
+        "history",
+        "residential-schools"
+      ],
+      "difficulty": 2,
+      "topic": null,
+      "subtopic": null,
+      "en": {
+        "question": "In what year did the Government of Canada formally apologize to former students of Indian residential schools?",
+        "options": [
+          "2008",
+          "1982",
+          "1763",
+          "1867"
+        ],
+        "correctIndex": 0,
+        "explanation": "The guide states in 2008, Ottawa formally apologized to the former students.",
+        "source": {
+          "guide": "Discover Canada",
+          "language": "en",
+          "chapter": "Who We Are",
+          "section": "Aboriginal Peoples",
+          "sourceUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/who-are-canadians.html",
+          "excerpt": "In 2008, Ottawa formally apologized to the former students.",
+          "verifiedAt": "2026-08-17",
+          "reviewStatus": "verified"
+        },
+        "optionAnnotations": null
+      },
+      "fr": {
+        "question": "En quelle année le gouvernement du Canada a-t-il présenté des excuses officielles aux anciens élèves des pensionnats indiens ?",
+        "options": [
+          "2008",
+          "1982",
+          "1763",
+          "1867"
+        ],
+        "correctIndex": 0,
+        "explanation": "Le guide précise qu'en 2008, Ottawa a présenté des excuses officielles aux anciens élèves.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Qui sommes-nous, les Canadiens?",
+          "section": "Les peuples autochtones",
+          "sourceUrl": "https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/qui-sont-canadiens.html",
+          "excerpt": "En 2008, Ottawa a présenté des excuses officielles à tous les anciens élèves des pensionnats indiens.",
+          "verifiedAt": "2026-08-17",
+          "reviewStatus": "verified"
+        }
+      },
+      "ar": {
+        "question": "في أي عام قدّمت حكومة كندا اعتذارًا رسميًا للطلاب السابقين في المدارس الداخلية للسكان الأصليين؟",
+        "options": [
+          "2008",
+          "1982",
+          "1763",
+          "1867"
+        ],
+        "explanation": "ينص الدليل على أنه في عام 2008، قدّمت أوتاوا اعتذارًا رسميًا للطلاب السابقين."
+      },
+      "testTip": null,
+      "crossReferences": [],
+      "id": "CIT-0087"
+    },
+    {
+      "chapterId": "who-we-are",
+      "type": "multiple-choice",
+      "tags": [
+        "chapter_who_we_are",
+        "dates"
+      ],
+      "difficulty": 2,
+      "topic": "who_we_are",
+      "subtopic": "quebec_nation",
+      "en": {
+        "question": "In what year did the House of Commons recognize that the Québécois form a nation within a united Canada?",
+        "options": [
+          "1867",
+          "1982",
+          "1995",
+          "2006"
+        ],
+        "correctIndex": 3,
+        "explanation": "Page 20: 'The House of Commons recognized in 2006 that the Quebecois form a nation within a united Canada.'",
+        "source": {
+          "guide": "Discover Canada",
+          "language": "en",
+          "chapter": "Who We Are",
+          "section": "English and French — Quebecers",
+          "pdfPage": 20,
+          "reviewStatus": "needs-review"
+        },
+        "optionAnnotations": [
+          {
+            "relevance": "RELATED_FACT",
+            "explanation": "1867 is Confederation. The Québécois-as-nation recognition came much later."
+          },
+          {
+            "relevance": "PLAUSIBLE_DISTRACTOR",
+            "explanation": "1982 is the Charter year. Plausible because it's a major constitutional milestone — but not when Québécois were recognized as a nation."
+          },
+          {
+            "relevance": "PLAUSIBLE_DISTRACTOR",
+            "explanation": "1995 was the Quebec sovereignty referendum (held in October 1995 — narrowly defeated). The formal nation-within-Canada recognition came over a decade later."
+          },
+          {
+            "relevance": "CORRECT_ANSWER",
+            "explanation": "Page 20: 'The House of Commons recognized in 2006 that the Quebecois form a nation within a united Canada.'"
+          }
+        ]
+      },
+      "fr": null,
+      "ar": null,
+      "testTip": null,
+      "crossReferences": [],
+      "id": "CIT-0088"
+    },
+    {
+      "chapterId": "who-we-are",
+      "type": "multiple-choice",
+      "tags": [
+        "history",
+        "constitution"
+      ],
+      "difficulty": 2,
+      "topic": null,
+      "subtopic": null,
+      "en": {
+        "question": "In what year was the British North America Act, Canada's original constitutional document, established?",
+        "options": [
+          "1867",
+          "1215",
+          "1982",
+          "1763"
+        ],
+        "correctIndex": 0,
+        "explanation": "Discover Canada states 'Peace, Order, and Good Government' is a key phrase in Canada's original constitutional document in 1867, the British North America Act.",
+        "source": {
+          "guide": "Discover Canada",
+          "language": "en",
+          "chapter": "Who We Are",
+          "section": "Who We Are (introduction)",
+          "sourceUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/who-are-canadians.html",
+          "excerpt": "Our institutions uphold a commitment to Peace, Order, and Good Government, a key phrase in Canada’s original constitutional document in 1867, the British North America Act.",
+          "verifiedAt": "2026-08-17",
+          "reviewStatus": "verified"
+        },
+        "optionAnnotations": null
+      },
+      "fr": {
+        "question": "En quelle année l'Acte de l'Amérique du Nord britannique, premier document constitutionnel du Canada, a-t-il été établi ?",
+        "options": [
+          "1867",
+          "1215",
+          "1982",
+          "1763"
+        ],
+        "correctIndex": 0,
+        "explanation": "Découvrir le Canada indique que les valeurs de paix, d'ordre et de bon gouvernement ont été énoncées en 1867 dans l'Acte de l'Amérique du Nord britannique.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Qui sommes-nous, les Canadiens?",
+          "section": "Qui sommes-nous, les Canadiens? (introduction)",
+          "sourceUrl": "https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/qui-sont-canadiens.html",
+          "excerpt": "Nos institutions préservent un engagement envers les valeurs de la paix, de l'ordre et de bon gouvernement, énoncées en 1867 dans le premier document constitutionnel du Canada, l'Acte de l'Amérique du Nord britannique.",
+          "verifiedAt": "2026-08-17",
+          "reviewStatus": "verified"
+        }
+      },
+      "ar": {
+        "question": "في أي عام تم إقرار قانون أمريكا الشمالية البريطانية، وثيقة كندا الدستورية الأصلية؟",
+        "options": [
+          "1867",
+          "1215",
+          "1982",
+          "1763"
+        ],
+        "explanation": "ينص دليل اكتشف كندا على أن عبارة 'السلام والنظام والحكم الرشيد' هي عبارة أساسية في وثيقة كندا الدستورية الأصلية لعام 1867، قانون أمريكا الشمالية البريطانية."
+      },
+      "testTip": null,
+      "crossReferences": [],
+      "id": "CIT-0089"
+    },
+    {
+      "chapterId": "who-we-are",
+      "type": "true-false",
+      "tags": [
+        "history",
+        "acadians"
+      ],
+      "difficulty": 2,
+      "topic": null,
+      "subtopic": null,
+      "en": {
+        "question": "More than two-thirds of the Acadians were deported from their homeland between 1755 and 1763, in what became known as the Great Upheaval.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correctIndex": 0,
+        "explanation": "True. Between 1755 and 1763, more than two-thirds of the Acadians were deported from their homeland.",
+        "source": {
+          "guide": "Discover Canada",
+          "language": "en",
+          "chapter": "Who We Are",
+          "section": "English and French",
+          "sourceUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/who-are-canadians.html",
+          "excerpt": "Between 1755 and 1763, during the war between Britain and France, more than two-thirds of the Acadians were deported from their homeland.",
+          "verifiedAt": "2026-08-17",
+          "reviewStatus": "verified"
+        },
+        "optionAnnotations": null
+      },
+      "fr": {
+        "question": "Plus des deux tiers des Acadiens ont été déportés hors de leur patrie entre 1755 et 1763, lors d'un événement appelé le Grand Dérangement.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation": "Vrai. De 1755 à 1763, plus des deux tiers des Acadiens ont été déportés hors de leur patrie.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Qui sommes-nous, les Canadiens?",
+          "section": "Les français et les anglais",
+          "sourceUrl": "https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/qui-sont-canadiens.html",
+          "excerpt": "De 1755 à 1763, pendant la guerre entre la Grande-Bretagne et la France, plus des deux tiers des Acadiens ont été déportés hors de leur patrie.",
+          "verifiedAt": "2026-08-17",
+          "reviewStatus": "verified"
+        }
+      },
+      "ar": {
+        "question": "تم ترحيل أكثر من ثلثي الأكاديين من وطنهم بين عامي 1755 و1763، في حدث عُرف باسم 'الاضطراب الكبير'.",
+        "options": [
+          "صحيح",
+          "خطأ"
+        ],
+        "explanation": "صحيح. بين عامي 1755 و1763، تم ترحيل أكثر من ثلثي الأكاديين من وطنهم."
+      },
+      "testTip": null,
+      "crossReferences": [],
+      "id": "CIT-0090"
+    },
+    {
+      "chapterId": "who-we-are",
+      "type": "true-false",
+      "tags": [],
+      "difficulty": 2,
+      "topic": "rights",
+      "subtopic": "born_canadian_majority",
+      "en": {
+        "question": "Most Canadians were born outside Canada.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correctIndex": 1,
+        "explanation": "Opposite — majority Canadian-born since the 1800s per p. 21.",
+        "source": {
+          "guide": "Discover Canada",
+          "language": "en",
+          "chapter": "Who We Are",
+          "section": "Diversity in Canada",
+          "pdfPage": 21,
+          "reviewStatus": "needs-review"
+        },
+        "optionAnnotations": [
+          {
+            "relevance": "COMMON_MISCONCEPTION",
+            "explanation": "Opposite — majority Canadian-born since the 1800s per p. 21."
+          },
+          {
+            "relevance": "CORRECT_ANSWER",
+            "explanation": "Opposite — majority Canadian-born since the 1800s per p. 21."
+          }
+        ]
+      },
+      "fr": null,
+      "ar": null,
+      "testTip": null,
+      "crossReferences": [],
+      "id": "CIT-0091"
+    },
+    {
+      "chapterId": "who-we-are",
+      "type": "true-false",
+      "tags": [],
+      "difficulty": 3,
+      "topic": "rights",
+      "subtopic": "non_english_french_majority",
+      "en": {
+        "question": "Most immigrants to Canada have come from Asian countries since the year 2000.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correctIndex": 1,
+        "explanation": "The trend started in the 1970s per p. 21.",
+        "source": {
+          "guide": "Discover Canada",
+          "language": "en",
+          "chapter": "Who We Are",
+          "section": "Diversity in Canada",
+          "pdfPage": 21,
+          "reviewStatus": "needs-review"
+        },
+        "optionAnnotations": [
+          {
+            "relevance": "PLAUSIBLE_DISTRACTOR",
+            "explanation": "The trend started in the 1970s per p. 21."
+          },
+          {
+            "relevance": "CORRECT_ANSWER",
+            "explanation": "The trend started in the 1970s per p. 21."
+          }
+        ]
+      },
+      "fr": null,
+      "ar": null,
+      "testTip": null,
+      "crossReferences": [],
+      "id": "CIT-0092"
+    },
+    {
+      "chapterId": "who-we-are",
+      "type": "true-false",
+      "tags": [],
+      "difficulty": 2,
+      "topic": "rights",
+      "subtopic": "quebecers_origin",
+      "en": {
+        "question": "Most Quebecers are descended from about 8,500 French settlers of the 1600s and 1700s.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correctIndex": 0,
+        "explanation": "Most Quebecers descend from roughly 8,500 French settlers who arrived in the 1600s and 1700s.",
+        "source": {
+          "guide": "Discover Canada",
+          "language": "en",
+          "chapter": "Who We Are",
+          "section": "English and French",
+          "pdfPage": 19,
+          "reviewStatus": "needs-review"
+        },
+        "optionAnnotations": [
+          {
+            "relevance": "CORRECT_ANSWER",
+            "explanation": "Most Quebecers descend from roughly 8,500 French settlers who arrived in the 1600s and 1700s."
+          },
+          {
+            "relevance": "CORRECT_ANSWER",
+            "explanation": "This statement is accurate, so 'False' is incorrect. Most Quebecers descend from roughly 8,500 French settlers who arrived in the 1600s and 1700s."
+          }
+        ]
+      },
+      "fr": null,
+      "ar": null,
+      "testTip": null,
+      "crossReferences": [],
+      "id": "CIT-0093"
+    },
+    {
+      "chapterId": "who-we-are",
+      "type": "true-false",
+      "tags": [
+        "languages",
+        "bilingual-province"
+      ],
+      "difficulty": 1,
+      "topic": null,
+      "subtopic": null,
+      "en": {
+        "question": "Quebec is the only officially bilingual province in Canada.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correctIndex": 1,
+        "explanation": "False. New Brunswick, not Quebec, is the only officially bilingual province.",
+        "source": {
+          "guide": "Discover Canada",
+          "language": "en",
+          "chapter": "Who We Are",
+          "section": "English and French",
+          "sourceUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/who-are-canadians.html",
+          "excerpt": "New Brunswick is the only officially bilingual province.",
+          "verifiedAt": "2026-08-17",
+          "reviewStatus": "verified"
+        },
+        "optionAnnotations": null
+      },
+      "fr": {
+        "question": "Le Québec est la seule province officiellement bilingue du Canada.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation": "Faux. C'est le Nouveau-Brunswick, et non le Québec, qui est la seule province officiellement bilingue.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Qui sommes-nous, les Canadiens?",
+          "section": "Les français et les anglais",
+          "sourceUrl": "https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/qui-sont-canadiens.html",
+          "excerpt": "Le Nouveau-Brunswick est la seule province officiellement bilingue.",
+          "verifiedAt": "2026-08-17",
+          "reviewStatus": "verified"
+        }
+      },
+      "ar": {
+        "question": "كيبيك هي المقاطعة الوحيدة الرسمية ثنائية اللغة في كندا.",
+        "options": [
+          "صحيح",
+          "خطأ"
+        ],
+        "explanation": "خطأ. نيو برونزويك، وليست كيبيك، هي المقاطعة الرسمية الوحيدة ثنائية اللغة."
+      },
+      "testTip": null,
+      "crossReferences": [],
+      "id": "CIT-0094"
+    },
+    {
+      "chapterId": "who-we-are",
+      "type": "true-false",
+      "tags": [
+        "history",
+        "constitution"
+      ],
+      "difficulty": 2,
+      "topic": null,
+      "subtopic": null,
+      "en": {
+        "question": "The British North America Act, Canada's original constitutional document, was established in 1982.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correctIndex": 1,
+        "explanation": "False. The British North America Act was established in 1867, not 1982.",
+        "source": {
+          "guide": "Discover Canada",
+          "language": "en",
+          "chapter": "Who We Are",
+          "section": "Who We Are (introduction)",
+          "sourceUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/who-are-canadians.html",
+          "excerpt": "Our institutions uphold a commitment to Peace, Order, and Good Government, a key phrase in Canada’s original constitutional document in 1867, the British North America Act.",
+          "verifiedAt": "2026-08-17",
+          "reviewStatus": "verified"
+        },
+        "optionAnnotations": null
+      },
+      "fr": {
+        "question": "L'Acte de l'Amérique du Nord britannique, premier document constitutionnel du Canada, a été établi en 1982.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation": "Faux. L'Acte de l'Amérique du Nord britannique a été établi en 1867, et non en 1982.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Qui sommes-nous, les Canadiens?",
+          "section": "Qui sommes-nous, les Canadiens? (introduction)",
+          "sourceUrl": "https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/qui-sont-canadiens.html",
+          "excerpt": "Nos institutions préservent un engagement envers les valeurs de la paix, de l'ordre et de bon gouvernement, énoncées en 1867 dans le premier document constitutionnel du Canada, l'Acte de l'Amérique du Nord britannique.",
+          "verifiedAt": "2026-08-17",
+          "reviewStatus": "verified"
+        }
+      },
+      "ar": {
+        "question": "أُقرّ قانون أمريكا الشمالية البريطانية، وثيقة كندا الدستورية الأصلية، عام 1982.",
+        "options": [
+          "صحيح",
+          "خطأ"
+        ],
+        "explanation": "خطأ. أُقرّ قانون أمريكا الشمالية البريطانية عام 1867، وليس 1982."
+      },
+      "testTip": null,
+      "crossReferences": [],
+      "id": "CIT-0095"
+    },
+    {
+      "chapterId": "who-we-are",
+      "type": "multiple-choice",
+      "tags": [
+        "history",
+        "acadians"
+      ],
+      "difficulty": 2,
+      "topic": null,
+      "subtopic": null,
+      "en": {
+        "question": "The deportation of the Acadians between 1755 and 1763 occurred during a war between which two powers?",
+        "options": [
+          "Britain and France",
+          "Britain and Spain",
+          "France and the United States",
+          "Spain and the Netherlands"
+        ],
+        "correctIndex": 0,
+        "explanation": "The deportation occurred during the war between Britain and France.",
+        "source": {
+          "guide": "Discover Canada",
+          "language": "en",
+          "chapter": "Who We Are",
+          "section": "English and French",
+          "sourceUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/who-are-canadians.html",
+          "excerpt": "Between 1755 and 1763, during the war between Britain and France, more than two-thirds of the Acadians were deported from their homeland.",
+          "verifiedAt": "2026-08-17",
+          "reviewStatus": "verified"
+        },
+        "optionAnnotations": null
+      },
+      "fr": {
+        "question": "La déportation des Acadiens entre 1755 et 1763 a eu lieu pendant une guerre entre quelles deux puissances ?",
+        "options": [
+          "La Grande-Bretagne et la France",
+          "La Grande-Bretagne et l'Espagne",
+          "La France et les États-Unis",
+          "L'Espagne et les Pays-Bas"
+        ],
+        "correctIndex": 0,
+        "explanation": "La déportation a eu lieu pendant la guerre entre la Grande-Bretagne et la France.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Qui sommes-nous, les Canadiens?",
+          "section": "Les français et les anglais",
+          "sourceUrl": "https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/qui-sont-canadiens.html",
+          "excerpt": "De 1755 à 1763, pendant la guerre entre la Grande-Bretagne et la France, plus des deux tiers des Acadiens ont été déportés hors de leur patrie.",
+          "verifiedAt": "2026-08-17",
+          "reviewStatus": "verified"
+        }
+      },
+      "ar": {
+        "question": "حدث ترحيل الأكاديين بين عامي 1755 و1763 خلال حرب بين أي قوتين؟",
+        "options": [
+          "بريطانيا وفرنسا",
+          "بريطانيا وإسبانيا",
+          "فرنسا والولايات المتحدة",
+          "إسبانيا وهولندا"
+        ],
+        "explanation": "حدث الترحيل خلال الحرب بين بريطانيا وفرنسا."
+      },
+      "testTip": null,
+      "crossReferences": [],
+      "id": "CIT-0096"
+    },
+    {
+      "chapterId": "who-we-are",
+      "type": "true-false",
+      "tags": [],
+      "difficulty": 3,
+      "topic": "rights",
+      "subtopic": "michif_language",
+      "en": {
+        "question": "The dialect spoken by the Métis is called Cree.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correctIndex": 1,
+        "explanation": "Cree is a First Nations language. Michif draws on French and Cree but is distinct.",
+        "source": {
+          "guide": "Discover Canada",
+          "language": "en",
+          "chapter": "Who We Are",
+          "section": "Unity in Diversity",
+          "pdfPage": 18,
+          "reviewStatus": "needs-review"
+        },
+        "optionAnnotations": [
+          {
+            "relevance": "PLAUSIBLE_DISTRACTOR",
+            "explanation": "Cree is a First Nations language. Michif draws on French and Cree but is distinct."
+          },
+          {
+            "relevance": "CORRECT_ANSWER",
+            "explanation": "Cree is a First Nations language. Michif draws on French and Cree but is distinct."
+          }
+        ]
+      },
+      "fr": null,
+      "ar": null,
+      "testTip": null,
+      "crossReferences": [],
+      "id": "CIT-0097"
+    },
+    {
+      "chapterId": "who-we-are",
+      "type": "true-false",
+      "tags": [
+        "chapter_who_we_are",
+        "dates"
+      ],
+      "difficulty": 2,
+      "topic": "who_we_are",
+      "subtopic": "residential_schools_apology",
+      "en": {
+        "question": "The Government of Canada formally apologized to former students of Aboriginal residential schools in 2015.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correctIndex": 1,
+        "explanation": "2015 is when the Truth and Reconciliation Commission released its final report — significant for the residential schools story, but the formal apology came earlier in 2008.",
+        "source": {
+          "guide": "Discover Canada",
+          "language": "en",
+          "chapter": "Who We Are",
+          "section": "Aboriginal and Treaty Rights",
+          "pdfPage": 17,
+          "reviewStatus": "needs-review"
+        },
+        "optionAnnotations": [
+          {
+            "relevance": "PLAUSIBLE_DISTRACTOR",
+            "explanation": "2015 is when the Truth and Reconciliation Commission released its final report — significant for the residential schools story, but the formal apology came earlier in 2008."
+          },
+          {
+            "relevance": "CORRECT_ANSWER",
+            "explanation": "2015 is when the Truth and Reconciliation Commission released its final report — significant for the residential schools story, but the formal apology came earlier in 2008."
+          }
+        ]
+      },
+      "fr": null,
+      "ar": null,
+      "testTip": null,
+      "crossReferences": [],
+      "id": "CIT-0098"
+    },
+    {
+      "chapterId": "who-we-are",
+      "type": "true-false",
+      "tags": [
+        "history",
+        "residential-schools"
+      ],
+      "difficulty": 2,
+      "topic": null,
+      "subtopic": null,
+      "en": {
+        "question": "The Government of Canada formally apologized to former students of Indian residential schools in 1982.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correctIndex": 1,
+        "explanation": "False. The formal apology was made in 2008, not 1982.",
+        "source": {
+          "guide": "Discover Canada",
+          "language": "en",
+          "chapter": "Who We Are",
+          "section": "Aboriginal Peoples",
+          "sourceUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/who-are-canadians.html",
+          "excerpt": "In 2008, Ottawa formally apologized to the former students.",
+          "verifiedAt": "2026-08-17",
+          "reviewStatus": "verified"
+        },
+        "optionAnnotations": null
+      },
+      "fr": {
+        "question": "Le gouvernement du Canada a présenté des excuses officielles aux anciens élèves des pensionnats indiens en 1982.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation": "Faux. Les excuses officielles ont été présentées en 2008, et non en 1982.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Qui sommes-nous, les Canadiens?",
+          "section": "Les peuples autochtones",
+          "sourceUrl": "https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/qui-sont-canadiens.html",
+          "excerpt": "En 2008, Ottawa a présenté des excuses officielles à tous les anciens élèves des pensionnats indiens.",
+          "verifiedAt": "2026-08-17",
+          "reviewStatus": "verified"
+        }
+      },
+      "ar": {
+        "question": "قدّمت حكومة كندا اعتذارًا رسميًا للطلاب السابقين في المدارس الداخلية للسكان الأصليين عام 1982.",
+        "options": [
+          "صحيح",
+          "خطأ"
+        ],
+        "explanation": "خطأ. قُدّم الاعتذار الرسمي عام 2008، وليس عام 1982."
+      },
+      "testTip": null,
+      "crossReferences": [],
+      "id": "CIT-0099"
+    },
+    {
+      "chapterId": "who-we-are",
+      "type": "true-false",
+      "tags": [],
+      "difficulty": 2,
+      "topic": "rights",
+      "subtopic": "catholic_largest",
+      "en": {
+        "question": "The largest religious affiliation in Canada is Muslim.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correctIndex": 1,
+        "explanation": "Muslim communities are growing in Canada (p. 21), but the largest single affiliation is Catholic.",
+        "source": {
+          "guide": "Discover Canada",
+          "language": "en",
+          "chapter": "Who We Are",
+          "section": "Diversity in Canada",
+          "pdfPage": 21,
+          "reviewStatus": "needs-review"
+        },
+        "optionAnnotations": [
+          {
+            "relevance": "PARTIALLY_CORRECT",
+            "explanation": "Muslim communities are growing in Canada (p. 21), but the largest single affiliation is Catholic."
+          },
+          {
+            "relevance": "CORRECT_ANSWER",
+            "explanation": "Muslim communities are growing in Canada (p. 21), but the largest single affiliation is Catholic."
+          }
+        ]
+      },
+      "fr": null,
+      "ar": null,
+      "testTip": null,
+      "crossReferences": [],
+      "id": "CIT-0100"
+    },
+    {
+      "chapterId": "who-we-are",
+      "type": "multiple-choice",
+      "tags": [
+        "history",
+        "constitution"
+      ],
+      "difficulty": 2,
+      "topic": null,
+      "subtopic": null,
+      "en": {
+        "question": "The phrase 'Peace, Order, and Good Government' comes from which document?",
+        "options": [
+          "The British North America Act of 1867",
+          "The Canadian Charter of Rights and Freedoms",
+          "The Magna Carta",
+          "The Quebec Act"
+        ],
+        "correctIndex": 0,
+        "explanation": "Peace, Order, and Good Government is a key phrase from the 1867 British North America Act.",
+        "source": {
+          "guide": "Discover Canada",
+          "language": "en",
+          "chapter": "Who We Are",
+          "section": "Who We Are (introduction)",
+          "sourceUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/who-are-canadians.html",
+          "excerpt": "Our institutions uphold a commitment to Peace, Order, and Good Government, a key phrase in Canada’s original constitutional document in 1867, the British North America Act.",
+          "verifiedAt": "2026-08-17",
+          "reviewStatus": "verified"
+        },
+        "optionAnnotations": null
+      },
+      "fr": {
+        "question": "L'expression 'paix, ordre et bon gouvernement' provient de quel document ?",
+        "options": [
+          "L'Acte de l'Amérique du Nord britannique de 1867",
+          "La Charte canadienne des droits et libertés",
+          "La Magna Carta",
+          "L'Acte de Québec"
+        ],
+        "correctIndex": 0,
+        "explanation": "Les valeurs de paix, d'ordre et de bon gouvernement proviennent de l'Acte de l'Amérique du Nord britannique de 1867.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Qui sommes-nous, les Canadiens?",
+          "section": "Qui sommes-nous, les Canadiens? (introduction)",
+          "sourceUrl": "https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/qui-sont-canadiens.html",
+          "excerpt": "Nos institutions préservent un engagement envers les valeurs de la paix, de l'ordre et de bon gouvernement, énoncées en 1867 dans le premier document constitutionnel du Canada, l'Acte de l'Amérique du Nord britannique.",
+          "verifiedAt": "2026-08-17",
+          "reviewStatus": "verified"
+        }
+      },
+      "ar": {
+        "question": "من أي وثيقة جاءت عبارة 'السلام والنظام والحكم الرشيد'؟",
+        "options": [
+          "قانون أمريكا الشمالية البريطانية لعام 1867",
+          "الميثاق الكندي للحقوق والحريات",
+          "الماغنا كارتا",
+          "قانون كيبيك"
+        ],
+        "explanation": "عبارة السلام والنظام والحكم الرشيد هي عبارة أساسية من قانون أمريكا الشمالية البريطانية لعام 1867."
+      },
+      "testTip": null,
+      "crossReferences": [],
+      "id": "CIT-0101"
+    },
+    {
+      "chapterId": "who-we-are",
+      "type": "true-false",
+      "tags": [
+        "chapter_who_we_are",
+        "dates"
+      ],
+      "difficulty": 2,
+      "topic": "who_we_are",
+      "subtopic": "royal_proclamation_1763",
+      "en": {
+        "question": "The Royal Proclamation of 1763 by King George III first guaranteed territorial rights for Aboriginal peoples.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correctIndex": 0,
+        "explanation": "The Royal Proclamation of 1763, issued by King George III, first guaranteed territorial rights for Aboriginal peoples.",
+        "source": {
+          "guide": "Discover Canada",
+          "language": "en",
+          "chapter": "Who We Are",
+          "section": "Aboriginal and Treaty Rights",
+          "pdfPage": 17,
+          "reviewStatus": "needs-review"
+        },
+        "optionAnnotations": [
+          {
+            "relevance": "CORRECT_ANSWER",
+            "explanation": "The Royal Proclamation of 1763, issued by King George III, first guaranteed territorial rights for Aboriginal peoples."
+          },
+          {
+            "relevance": "CORRECT_ANSWER",
+            "explanation": "This statement is accurate, so 'False' is incorrect. The Royal Proclamation of 1763, issued by King George III, first guaranteed territorial rights for Aboriginal peoples."
+          }
+        ]
+      },
+      "fr": null,
+      "ar": null,
+      "testTip": null,
+      "crossReferences": [],
+      "id": "CIT-0102"
+    },
+    {
+      "chapterId": "who-we-are",
+      "type": "true-false",
+      "tags": [
+        "frequently_tested",
+        "chapter_who_we_are",
+        "official_irrc_sample_topic"
+      ],
+      "difficulty": 1,
+      "topic": "who_we_are",
+      "subtopic": "inuit",
+      "en": {
+        "question": "The word 'Inuit' means 'the first ones'.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correctIndex": 1,
+        "explanation": "Plausible but not the correct meaning. 'First peoples' and 'First Nations' are related Canadian terms but 'Inuit' specifically means 'the people'.",
+        "source": {
+          "guide": "Discover Canada",
+          "language": "en",
+          "chapter": "Who We Are",
+          "section": "Unity in Diversity",
+          "pdfPage": 18,
+          "reviewStatus": "needs-review"
+        },
+        "optionAnnotations": [
+          {
+            "relevance": "PLAUSIBLE_DISTRACTOR",
+            "explanation": "Plausible but not the correct meaning. 'First peoples' and 'First Nations' are related Canadian terms but 'Inuit' specifically means 'the people'."
+          },
+          {
+            "relevance": "CORRECT_ANSWER",
+            "explanation": "Plausible but not the correct meaning. 'First peoples' and 'First Nations' are related Canadian terms but 'Inuit' specifically means 'the people'."
+          }
+        ]
+      },
+      "fr": null,
+      "ar": null,
+      "testTip": null,
+      "crossReferences": [],
+      "id": "CIT-0103"
+    },
+    {
+      "chapterId": "who-we-are",
+      "type": "true-false",
+      "tags": [],
+      "difficulty": 3,
+      "topic": "rights",
+      "subtopic": "fn_communities",
+      "en": {
+        "question": "There are about 600 First Nations communities on reserve land in Canada.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correctIndex": 0,
+        "explanation": "There are roughly 600 First Nations communities on reserve land in Canada.",
+        "source": {
+          "guide": "Discover Canada",
+          "language": "en",
+          "chapter": "Who We Are",
+          "section": "Aboriginal Peoples",
+          "pdfPage": 17,
+          "reviewStatus": "needs-review"
+        },
+        "optionAnnotations": [
+          {
+            "relevance": "CORRECT_ANSWER",
+            "explanation": "There are roughly 600 First Nations communities on reserve land in Canada."
+          },
+          {
+            "relevance": "CORRECT_ANSWER",
+            "explanation": "This statement is accurate, so 'False' is incorrect. There are roughly 600 First Nations communities on reserve land in Canada."
+          }
+        ]
+      },
+      "fr": null,
+      "ar": null,
+      "testTip": null,
+      "crossReferences": [],
+      "id": "CIT-0104"
+    },
+    {
+      "chapterId": "who-we-are",
+      "type": "multiple-choice",
+      "tags": [],
+      "difficulty": 1,
+      "topic": "rights",
+      "subtopic": "civil_marriage",
+      "en": {
+        "question": "Under Canadian law, how are gay and lesbian Canadians treated?",
+        "options": [
+          "They enjoy the full protection of and equal treatment under the law, including access to civil marriage",
+          "They are tolerated but not equal under law",
+          "Civil marriage is available only in some provinces",
+          "There is no specific legal protection for their status"
+        ],
+        "correctIndex": 0,
+        "explanation": "Page 22: 'Canada's diversity includes gay and lesbian Canadians, who enjoy the full protection of and equal treatment under the law, including access to civil marriage.'",
+        "source": {
+          "guide": "Discover Canada",
+          "language": "en",
+          "chapter": "Who We Are",
+          "section": "Diversity in Canada",
+          "pdfPage": 22,
+          "reviewStatus": "needs-review"
+        },
+        "optionAnnotations": [
+          {
+            "relevance": "CORRECT_ANSWER",
+            "explanation": "Page 22: 'Canada's diversity includes gay and lesbian Canadians, who enjoy the full protection of and equal treatment under the law, including access to civil marriage.'"
+          },
+          {
+            "relevance": "COMMON_MISCONCEPTION",
+            "explanation": "The opposite. Full equality and civil marriage access per p. 22."
+          },
+          {
+            "relevance": "COMMON_MISCONCEPTION",
+            "explanation": "Civil marriage equality is national, not provincial."
+          },
+          {
+            "relevance": "COMMON_MISCONCEPTION",
+            "explanation": "Incorrect — gay and lesbian Canadians enjoy full protection and equal treatment under the law, including access to civil marriage (p. 22)."
+          }
+        ]
+      },
+      "fr": null,
+      "ar": null,
+      "testTip": null,
+      "crossReferences": [],
+      "id": "CIT-0105"
+    },
+    {
+      "chapterId": "who-we-are",
+      "type": "multiple-choice",
+      "tags": [
+        "identity",
+        "founding-peoples"
+      ],
+      "difficulty": 1,
+      "topic": null,
+      "subtopic": null,
+      "en": {
+        "question": "Understanding Canadian identity requires knowledge of which groups?",
+        "options": [
+          "The three founding peoples: Aboriginal, French and British",
+          "Only immigrants who arrived after 1900",
+          "Only the original 4 confederating provinces",
+          "Only English-speaking settlers"
+        ],
+        "correctIndex": 0,
+        "explanation": "The guide states understanding Canadian identity requires knowing the three founding peoples.",
+        "source": {
+          "guide": "Discover Canada",
+          "language": "en",
+          "chapter": "Who We Are",
+          "section": "Who We Are (introduction)",
+          "sourceUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/who-are-canadians.html",
+          "excerpt": "To understand what it means to be Canadian, it is important to know about our three founding peoples—Aboriginal, French and British.",
+          "verifiedAt": "2026-08-17",
+          "reviewStatus": "verified"
+        },
+        "optionAnnotations": null
+      },
+      "fr": {
+        "question": "Comprendre l'identité canadienne exige de connaître quels groupes ?",
+        "options": [
+          "Les trois peuples fondateurs : Autochtones, Français et Britanniques",
+          "Seulement les immigrants arrivés après 1900",
+          "Seulement les 4 provinces fondatrices d'origine",
+          "Seulement les colons anglophones"
+        ],
+        "correctIndex": 0,
+        "explanation": "Le guide indique que comprendre l'identité canadienne exige de connaître les trois peuples fondateurs.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Qui sommes-nous, les Canadiens?",
+          "section": "Qui sommes-nous, les Canadiens? (introduction)",
+          "sourceUrl": "https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/qui-sont-canadiens.html",
+          "excerpt": "Pour comprendre ce que signifie être Canadien, il faut connaître nos trois peuples fondateurs : les Autochtones, les Français et les Britanniques.",
+          "verifiedAt": "2026-08-17",
+          "reviewStatus": "verified"
+        }
+      },
+      "ar": {
+        "question": "فهم الهوية الكندية يتطلب معرفة أي المجموعات؟",
+        "options": [
+          "الشعوب المؤسِّسة الثلاثة: الشعوب الأصلية والفرنسيون والبريطانيون",
+          "المهاجرين الذين وصلوا بعد عام 1900 فقط",
+          "المقاطعات الأربع المؤسِّسة الأصلية فقط",
+          "المستوطنين الناطقين بالإنجليزية فقط"
+        ],
+        "explanation": "ينص الدليل على أن فهم الهوية الكندية يتطلب معرفة الشعوب المؤسِّسة الثلاثة."
+      },
+      "testTip": null,
+      "crossReferences": [],
+      "id": "CIT-0106"
+    },
+    {
+      "chapterId": "who-we-are",
+      "type": "multiple-choice",
+      "tags": [],
+      "difficulty": 2,
+      "topic": "rights",
+      "subtopic": "newcomers_embrace_democracy",
+      "en": {
+        "question": "What are newcomers expected to embrace when they become Canadian?",
+        "options": [
+          "Democratic principles such as the rule of law, and to set aside violent, extreme or hateful prejudices",
+          "Christianity as a religion",
+          "Membership in a political party",
+          "Renunciation of original culture"
+        ],
+        "correctIndex": 0,
+        "explanation": "Page 20: 'Some Canadians immigrate from places where they have experienced warfare or conflict. Such experiences do not justify bringing to Canada violent, extreme or hateful prejudices. In becoming Canadian, newcomers are expected to embrace democratic principles such as the rule of law.'",
+        "source": {
+          "guide": "Discover Canada",
+          "language": "en",
+          "chapter": "Who We Are",
+          "section": "Becoming Canadian",
+          "pdfPage": 20,
+          "reviewStatus": "needs-review"
+        },
+        "optionAnnotations": [
+          {
+            "relevance": "CORRECT_ANSWER",
+            "explanation": "Page 20: 'Some Canadians immigrate from places where they have experienced warfare or conflict. Such experiences do not justify bringing to Canada violent, extreme or hateful prejudices. In becoming Canadian, newcomers are expected to embrace democratic principles such as the rule of law.'"
+          },
+          {
+            "relevance": "COMMON_MISCONCEPTION",
+            "explanation": "Religious freedom is a fundamental freedom (p. 11)."
+          },
+          {
+            "relevance": "PLAUSIBLE_DISTRACTOR",
+            "explanation": "Not required."
+          },
+          {
+            "relevance": "COMMON_MISCONCEPTION",
+            "explanation": "Quite the opposite — newcomers retain their culture and contribute to the national character (p. 18)."
+          }
+        ]
+      },
+      "fr": null,
+      "ar": null,
+      "testTip": null,
+      "crossReferences": [],
+      "id": "CIT-0107"
+    },
+    {
+      "chapterId": "who-we-are",
+      "type": "multiple-choice",
+      "tags": [
+        "frequently_tested",
+        "chapter_who_we_are"
+      ],
+      "difficulty": 1,
+      "topic": "who_we_are",
+      "subtopic": "aboriginal_groups",
+      "en": {
+        "question": "What are the three distinct groups that 'Aboriginal peoples' refers to?",
+        "options": [
+          "Indian (First Nations), Inuit, and Métis",
+          "Aboriginal, French, and British",
+          "Cree, Iroquois, and Huron",
+          "Mohawk, Inuit, and Acadian"
+        ],
+        "correctIndex": 0,
+        "explanation": "Page 17: 'Today, the term Aboriginal peoples refers to three distinct groups: Indian … Inuit … Métis.' On page 18 the percentages are given: ~65% First Nations, 30% Métis, 4% Inuit.",
+        "source": {
+          "guide": "Discover Canada",
+          "language": "en",
+          "chapter": "Who We Are",
+          "section": "Aboriginal Peoples",
+          "pdfPage": 17,
+          "reviewStatus": "needs-review"
+        },
+        "optionAnnotations": [
+          {
+            "relevance": "CORRECT_ANSWER",
+            "explanation": "Page 17: 'Today, the term Aboriginal peoples refers to three distinct groups: Indian … Inuit … Métis.' On page 18 the percentages are given: ~65% First Nations, 30% Métis, 4% Inuit."
+          },
+          {
+            "relevance": "RELATED_FACT",
+            "explanation": "These are the three FOUNDING peoples of Canada as a whole (p. 16), not the three groups within Aboriginal peoples."
+          },
+          {
+            "relevance": "PARTIALLY_CORRECT",
+            "explanation": "Cree, Iroquois, and Huron are all specific First Nations groups (p. 23), but they're examples of First Nations — not the top-level categories the Canadian government uses."
+          },
+          {
+            "relevance": "WRONG_CATEGORY",
+            "explanation": "Acadians are descendants of French colonists (p. 19), not an Aboriginal group. Mohawk are one specific First Nation."
+          }
+        ]
+      },
+      "fr": null,
+      "ar": null,
+      "testTip": null,
+      "crossReferences": [
+        "Q018",
+        "Q020",
+        "Q021"
+      ],
+      "id": "CIT-0108"
+    },
+    {
+      "chapterId": "who-we-are",
+      "type": "multiple-choice",
+      "tags": [
+        "identity",
+        "monarchy"
+      ],
+      "difficulty": 1,
+      "topic": null,
+      "subtopic": null,
+      "en": {
+        "question": "What form of government distinguishes Canada from its North American neighbours?",
+        "options": [
+          "Constitutional monarchy",
+          "Federal republic",
+          "Parliamentary republic",
+          "Direct democracy"
+        ],
+        "correctIndex": 0,
+        "explanation": "Canada is the only constitutional monarchy in North America, distinguishing it from its neighbours.",
+        "source": {
+          "guide": "Discover Canada",
+          "language": "en",
+          "chapter": "Who We Are",
+          "section": "Who We Are (introduction)",
+          "sourceUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/who-are-canadians.html",
+          "excerpt": "We are the only constitutional monarchy in North America.",
+          "verifiedAt": "2026-08-17",
+          "reviewStatus": "verified"
+        },
+        "optionAnnotations": null
+      },
+      "fr": {
+        "question": "Quelle forme de gouvernement distingue le Canada de ses voisins nord-américains ?",
+        "options": [
+          "La monarchie constitutionnelle",
+          "La république fédérale",
+          "La république parlementaire",
+          "La démocratie directe"
+        ],
+        "correctIndex": 0,
+        "explanation": "Le Canada est la seule monarchie constitutionnelle d'Amérique du Nord, ce qui le distingue de ses voisins.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Qui sommes-nous, les Canadiens?",
+          "section": "Qui sommes-nous, les Canadiens? (introduction)",
+          "sourceUrl": "https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/qui-sont-canadiens.html",
+          "excerpt": "Nous sommes la seule monarchie constitutionnelle d'Amérique du Nord.",
+          "verifiedAt": "2026-08-17",
+          "reviewStatus": "verified"
+        }
+      },
+      "ar": {
+        "question": "ما شكل الحكم الذي يميز كندا عن جيرانها في أمريكا الشمالية؟",
+        "options": [
+          "المَلَكية الدستورية",
+          "الجمهورية الفيدرالية",
+          "الجمهورية البرلمانية",
+          "الديمقراطية المباشرة"
+        ],
+        "explanation": "كندا هي المَلَكية الدستورية الوحيدة في أمريكا الشمالية، مما يميزها عن جيرانها."
+      },
+      "testTip": null,
+      "crossReferences": [],
+      "id": "CIT-0109"
+    },
+    {
+      "chapterId": "who-we-are",
+      "type": "multiple-choice",
+      "tags": [
+        "history",
+        "acadians"
+      ],
+      "difficulty": 2,
+      "topic": null,
+      "subtopic": null,
+      "en": {
+        "question": "What happened to more than two-thirds of the Acadians between 1755 and 1763, in an event known as the 'Great Upheaval'?",
+        "options": [
+          "They were deported from their homeland",
+          "They were granted new land in Quebec",
+          "They received official bilingual status",
+          "They were relocated to New Brunswick as a reward for loyalty"
+        ],
+        "correctIndex": 0,
+        "explanation": "The guide states more than two-thirds of the Acadians were deported from their homeland in the Great Upheaval.",
+        "source": {
+          "guide": "Discover Canada",
+          "language": "en",
+          "chapter": "Who We Are",
+          "section": "English and French",
+          "sourceUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/who-are-canadians.html",
+          "excerpt": "Between 1755 and 1763, during the war between Britain and France, more than two-thirds of the Acadians were deported from their homeland.",
+          "verifiedAt": "2026-08-17",
+          "reviewStatus": "verified"
+        },
+        "optionAnnotations": null
+      },
+      "fr": {
+        "question": "Qu'est-il arrivé à plus des deux tiers des Acadiens entre 1755 et 1763, lors d'un événement appelé le 'Grand Dérangement' ?",
+        "options": [
+          "Ils ont été déportés hors de leur patrie",
+          "Ils ont reçu de nouvelles terres au Québec",
+          "Ils ont obtenu le statut officiel bilingue",
+          "Ils ont été relogés au Nouveau-Brunswick en récompense de leur loyauté"
+        ],
+        "correctIndex": 0,
+        "explanation": "Le guide précise que plus des deux tiers des Acadiens ont été déportés hors de leur patrie lors du Grand Dérangement.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Qui sommes-nous, les Canadiens?",
+          "section": "Les français et les anglais",
+          "sourceUrl": "https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/qui-sont-canadiens.html",
+          "excerpt": "De 1755 à 1763, pendant la guerre entre la Grande-Bretagne et la France, plus des deux tiers des Acadiens ont été déportés hors de leur patrie.",
+          "verifiedAt": "2026-08-17",
+          "reviewStatus": "verified"
+        }
+      },
+      "ar": {
+        "question": "ماذا حدث لأكثر من ثلثي الأكاديين بين عامي 1755 و1763، في حدث يُعرف باسم 'الاضطراب الكبير'؟",
+        "options": [
+          "تم ترحيلهم من وطنهم",
+          "مُنحوا أراضٍ جديدة في كيبيك",
+          "حصلوا على وضع رسمي ثنائي اللغة",
+          "تم نقلهم إلى نيو برونزويك مكافأةً على ولائهم"
+        ],
+        "explanation": "ينص الدليل على أن أكثر من ثلثي الأكاديين تم ترحيلهم من وطنهم في الاضطراب الكبير."
+      },
+      "testTip": null,
+      "crossReferences": [],
+      "id": "CIT-0110"
+    },
+    {
+      "chapterId": "who-we-are",
+      "type": "multiple-choice",
+      "tags": [],
+      "difficulty": 2,
+      "topic": "rights",
+      "subtopic": "religion_diversity",
+      "en": {
+        "question": "What has been the Canadian state's traditional relationship with faith communities?",
+        "options": [
+          "The state has traditionally partnered with faith communities to promote social welfare, harmony, mutual respect, and to uphold religious freedom",
+          "Religion is banned from public life",
+          "Only Christianity has official status",
+          "Faith groups must register with the federal government"
+        ],
+        "correctIndex": 0,
+        "explanation": "Page 21: 'In Canada the state has traditionally partnered with faith communities to promote social welfare, harmony and mutual respect; to provide schools and health care; to resettle refugees; and to uphold religious freedom.'",
+        "source": {
+          "guide": "Discover Canada",
+          "language": "en",
+          "chapter": "Who We Are",
+          "section": "Diversity in Canada",
+          "pdfPage": 21,
+          "reviewStatus": "needs-review"
+        },
+        "optionAnnotations": [
+          {
+            "relevance": "CORRECT_ANSWER",
+            "explanation": "Page 21: 'In Canada the state has traditionally partnered with faith communities to promote social welfare, harmony and mutual respect; to provide schools and health care; to resettle refugees; and to uphold religious freedom.'"
+          },
+          {
+            "relevance": "COMMON_MISCONCEPTION",
+            "explanation": "The opposite — Canada has historically partnered with faith communities (p. 21)."
+          },
+          {
+            "relevance": "COMMON_MISCONCEPTION",
+            "explanation": "There is no state church in Canada. Religious freedom is a fundamental freedom (p. 11)."
+          },
+          {
+            "relevance": "COMMON_MISCONCEPTION",
+            "explanation": "Religious freedom is unconditional, not contingent on registration."
+          }
+        ]
+      },
+      "fr": null,
+      "ar": null,
+      "testTip": null,
+      "crossReferences": [],
+      "id": "CIT-0111"
+    },
+    {
+      "chapterId": "who-we-are",
+      "type": "multiple-choice",
+      "tags": [
+        "aboriginal-peoples",
+        "demographics"
+      ],
+      "difficulty": 3,
+      "topic": null,
+      "subtopic": null,
+      "en": {
+        "question": "What percentage of Aboriginal people are Métis?",
+        "options": [
+          "30%",
+          "65%",
+          "4%",
+          "50%"
+        ],
+        "correctIndex": 0,
+        "explanation": "About 30% of Aboriginal people are Métis, 65% First Nations, and 4% Inuit.",
+        "source": {
+          "guide": "Discover Canada",
+          "language": "en",
+          "chapter": "Who We Are",
+          "section": "Aboriginal Peoples",
+          "sourceUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/who-are-canadians.html",
+          "excerpt": "About 65% of the Aboriginal people are First Nations, while 30% are Métis and 4% Inuit.",
+          "verifiedAt": "2026-08-17",
+          "reviewStatus": "verified"
+        },
+        "optionAnnotations": null
+      },
+      "fr": {
+        "question": "Quel pourcentage des peuples autochtones sont des Métis ?",
+        "options": [
+          "30 %",
+          "65 %",
+          "4 %",
+          "50 %"
+        ],
+        "correctIndex": 0,
+        "explanation": "Environ 30 % des peuples autochtones sont des Métis, 65 % des Premières Nations et 4 % des Inuits.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Qui sommes-nous, les Canadiens?",
+          "section": "Les peuples autochtones",
+          "sourceUrl": "https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/qui-sont-canadiens.html",
+          "excerpt": "Environ 65 pour 100 des peuples autochtones sont des Premières Nations, 30 pour 100 des Métis et 4 pour 100, des Inuits.",
+          "verifiedAt": "2026-08-17",
+          "reviewStatus": "verified"
+        }
+      },
+      "ar": {
+        "question": "ما نسبة الشعوب الأصلية التي تنتمي إلى الميتيس؟",
+        "options": [
+          "30%",
+          "65%",
+          "4%",
+          "50%"
+        ],
+        "explanation": "حوالي 30% من الشعوب الأصلية من الميتيس، و65% من الأمم الأولى، و4% من الإنويت."
+      },
+      "testTip": null,
+      "crossReferences": [],
+      "id": "CIT-0112"
+    },
+    {
+      "chapterId": "who-we-are",
+      "type": "multiple-choice",
+      "tags": [],
+      "difficulty": 3,
+      "topic": "rights",
+      "subtopic": "aboriginal_percentages",
+      "en": {
+        "question": "What percentages of Aboriginal people in Canada are First Nations, Métis, and Inuit?",
+        "options": [
+          "About 65% First Nations, 30% Métis, 4% Inuit",
+          "Roughly equal — about a third each",
+          "All are Inuit",
+          "90% Métis, with First Nations and Inuit splitting the rest"
+        ],
+        "correctIndex": 0,
+        "explanation": "Page 18: 'About 65% of the Aboriginal people are First Nations, while 30% are Métis and 4% Inuit.'",
+        "source": {
+          "guide": "Discover Canada",
+          "language": "en",
+          "chapter": "Who We Are",
+          "section": "Unity in Diversity",
+          "pdfPage": 18,
+          "reviewStatus": "needs-review"
+        },
+        "optionAnnotations": [
+          {
+            "relevance": "CORRECT_ANSWER",
+            "explanation": "Page 18: 'About 65% of the Aboriginal people are First Nations, while 30% are Métis and 4% Inuit.'"
+          },
+          {
+            "relevance": "PLAUSIBLE_DISTRACTOR",
+            "explanation": "Not equal. First Nations are the majority at 65%, Métis 30%, Inuit 4% per p. 18."
+          },
+          {
+            "relevance": "COMMON_MISCONCEPTION",
+            "explanation": "Inuit are only about 4% of the Aboriginal population (p. 18)."
+          },
+          {
+            "relevance": "PLAUSIBLE_DISTRACTOR",
+            "explanation": "Wrong distribution. First Nations are majority per p. 18."
+          }
+        ]
+      },
+      "fr": null,
+      "ar": null,
+      "testTip": null,
+      "crossReferences": [],
+      "id": "CIT-0113"
+    },
+    {
+      "chapterId": "who-we-are",
+      "type": "multiple-choice",
+      "tags": [
+        "history",
+        "constitution"
+      ],
+      "difficulty": 2,
+      "topic": null,
+      "subtopic": null,
+      "en": {
+        "question": "What was Canada's original constitutional document, established in 1867?",
+        "options": [
+          "The British North America Act",
+          "The Canadian Charter of Rights and Freedoms",
+          "The Statute of Westminster",
+          "The Constitution Act, 1982"
+        ],
+        "correctIndex": 0,
+        "explanation": "Canada's original constitutional document, established in 1867, is the British North America Act.",
+        "source": {
+          "guide": "Discover Canada",
+          "language": "en",
+          "chapter": "Who We Are",
+          "section": "Who We Are (introduction)",
+          "sourceUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/who-are-canadians.html",
+          "excerpt": "Our institutions uphold a commitment to Peace, Order, and Good Government, a key phrase in Canada’s original constitutional document in 1867, the British North America Act.",
+          "verifiedAt": "2026-08-17",
+          "reviewStatus": "verified"
+        },
+        "optionAnnotations": null
+      },
+      "fr": {
+        "question": "Quel était le premier document constitutionnel du Canada, établi en 1867 ?",
+        "options": [
+          "L'Acte de l'Amérique du Nord britannique",
+          "La Charte canadienne des droits et libertés",
+          "Le Statut de Westminster",
+          "La Loi constitutionnelle de 1982"
+        ],
+        "correctIndex": 0,
+        "explanation": "Le premier document constitutionnel du Canada, établi en 1867, est l'Acte de l'Amérique du Nord britannique.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Qui sommes-nous, les Canadiens?",
+          "section": "Qui sommes-nous, les Canadiens? (introduction)",
+          "sourceUrl": "https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/qui-sont-canadiens.html",
+          "excerpt": "Nos institutions préservent un engagement envers les valeurs de la paix, de l'ordre et de bon gouvernement, énoncées en 1867 dans le premier document constitutionnel du Canada, l'Acte de l'Amérique du Nord britannique.",
+          "verifiedAt": "2026-08-17",
+          "reviewStatus": "verified"
+        }
+      },
+      "ar": {
+        "question": "ما وثيقة كندا الدستورية الأصلية، التي أُقرّت عام 1867؟",
+        "options": [
+          "قانون أمريكا الشمالية البريطانية",
+          "الميثاق الكندي للحقوق والحريات",
+          "قانون وستمنستر",
+          "قانون الدستور لعام 1982"
+        ],
+        "explanation": "وثيقة كندا الدستورية الأصلية، التي أُقرّت عام 1867، هي قانون أمريكا الشمالية البريطانية."
+      },
+      "testTip": null,
+      "crossReferences": [],
+      "id": "CIT-0114"
+    },
+    {
+      "chapterId": "who-we-are",
+      "type": "multiple-choice",
+      "tags": [
+        "aboriginal-peoples",
+        "demographics"
+      ],
+      "difficulty": 3,
+      "topic": null,
+      "subtopic": null,
+      "en": {
+        "question": "Which Aboriginal group represents the smallest percentage, at about 4%?",
+        "options": [
+          "Inuit",
+          "First Nations",
+          "Métis",
+          "Acadians"
+        ],
+        "correctIndex": 0,
+        "explanation": "About 4% of Aboriginal people are Inuit, the smallest of the three groups by percentage.",
+        "source": {
+          "guide": "Discover Canada",
+          "language": "en",
+          "chapter": "Who We Are",
+          "section": "Aboriginal Peoples",
+          "sourceUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/who-are-canadians.html",
+          "excerpt": "About 65% of the Aboriginal people are First Nations, while 30% are Métis and 4% Inuit.",
+          "verifiedAt": "2026-08-17",
+          "reviewStatus": "verified"
+        },
+        "optionAnnotations": null
+      },
+      "fr": {
+        "question": "Quel groupe autochtone représente le plus petit pourcentage, soit environ 4 % ?",
+        "options": [
+          "Les Inuits",
+          "Les Premières Nations",
+          "Les Métis",
+          "Les Acadiens"
+        ],
+        "correctIndex": 0,
+        "explanation": "Environ 4 % des peuples autochtones sont des Inuits, le plus petit des trois groupes en pourcentage.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Qui sommes-nous, les Canadiens?",
+          "section": "Les peuples autochtones",
+          "sourceUrl": "https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/qui-sont-canadiens.html",
+          "excerpt": "Environ 65 pour 100 des peuples autochtones sont des Premières Nations, 30 pour 100 des Métis et 4 pour 100, des Inuits.",
+          "verifiedAt": "2026-08-17",
+          "reviewStatus": "verified"
+        }
+      },
+      "ar": {
+        "question": "أي مجموعة من الشعوب الأصلية تمثل أصغر نسبة، بحوالي 4%؟",
+        "options": [
+          "الإنويت",
+          "الأمم الأولى",
+          "الميتيس",
+          "الأكاديون"
+        ],
+        "explanation": "حوالي 4% من الشعوب الأصلية من الإنويت، وهي أصغر المجموعات الثلاث من حيث النسبة."
+      },
+      "testTip": null,
+      "crossReferences": [],
+      "id": "CIT-0115"
+    },
+    {
+      "chapterId": "who-we-are",
+      "type": "multiple-choice",
+      "tags": [
+        "history",
+        "residential-schools"
+      ],
+      "difficulty": 2,
+      "topic": null,
+      "subtopic": null,
+      "en": {
+        "question": "Which level of government formally apologized to former residential school students in 2008?",
+        "options": [
+          "The federal government (Ottawa)",
+          "Provincial governments only",
+          "Municipal governments only",
+          "The United Nations"
+        ],
+        "correctIndex": 0,
+        "explanation": "In 2008, Ottawa (the federal government) formally apologized to the former students.",
+        "source": {
+          "guide": "Discover Canada",
+          "language": "en",
+          "chapter": "Who We Are",
+          "section": "Aboriginal Peoples",
+          "sourceUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/who-are-canadians.html",
+          "excerpt": "In 2008, Ottawa formally apologized to the former students.",
+          "verifiedAt": "2026-08-17",
+          "reviewStatus": "verified"
+        },
+        "optionAnnotations": null
+      },
+      "fr": {
+        "question": "Quel palier de gouvernement a présenté des excuses officielles aux anciens élèves des pensionnats en 2008 ?",
+        "options": [
+          "Le gouvernement fédéral (Ottawa)",
+          "Seulement les gouvernements provinciaux",
+          "Seulement les gouvernements municipaux",
+          "Les Nations Unies"
+        ],
+        "correctIndex": 0,
+        "explanation": "En 2008, Ottawa (le gouvernement fédéral) a présenté des excuses officielles aux anciens élèves.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Qui sommes-nous, les Canadiens?",
+          "section": "Les peuples autochtones",
+          "sourceUrl": "https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/qui-sont-canadiens.html",
+          "excerpt": "En 2008, Ottawa a présenté des excuses officielles à tous les anciens élèves des pensionnats indiens.",
+          "verifiedAt": "2026-08-17",
+          "reviewStatus": "verified"
+        }
+      },
+      "ar": {
+        "question": "أي مستوى حكومي قدّم اعتذارًا رسميًا لطلاب المدارس الداخلية السابقين عام 2008؟",
+        "options": [
+          "الحكومة الفيدرالية (أوتاوا)",
+          "الحكومات الإقليمية فقط",
+          "الحكومات البلدية فقط",
+          "الأمم المتحدة"
+        ],
+        "explanation": "في عام 2008، قدّمت أوتاوا (الحكومة الفيدرالية) اعتذارًا رسميًا للطلاب السابقين."
+      },
+      "testTip": null,
+      "crossReferences": [],
+      "id": "CIT-0116"
+    },
+    {
+      "chapterId": "who-we-are",
+      "type": "multiple-choice",
+      "tags": [
+        "identity",
+        "monarchy"
+      ],
+      "difficulty": 1,
+      "topic": null,
+      "subtopic": null,
+      "en": {
+        "question": "Which of the following best describes Canada's status among North American countries?",
+        "options": [
+          "Canada is the only constitutional monarchy in North America",
+          "Canada is one of several constitutional monarchies in North America",
+          "Canada is a republic like its North American neighbours",
+          "Canada is governed jointly with the United Kingdom"
+        ],
+        "correctIndex": 0,
+        "explanation": "The guide states we are the only constitutional monarchy in North America.",
+        "source": {
+          "guide": "Discover Canada",
+          "language": "en",
+          "chapter": "Who We Are",
+          "section": "Who We Are (introduction)",
+          "sourceUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/who-are-canadians.html",
+          "excerpt": "We are the only constitutional monarchy in North America.",
+          "verifiedAt": "2026-08-17",
+          "reviewStatus": "verified"
+        },
+        "optionAnnotations": null
+      },
+      "fr": {
+        "question": "Laquelle des affirmations suivantes décrit le mieux le statut du Canada parmi les pays d'Amérique du Nord ?",
+        "options": [
+          "Le Canada est la seule monarchie constitutionnelle d'Amérique du Nord",
+          "Le Canada est l'une de plusieurs monarchies constitutionnelles d'Amérique du Nord",
+          "Le Canada est une république comme ses voisins nord-américains",
+          "Le Canada est gouverné conjointement avec le Royaume-Uni"
+        ],
+        "correctIndex": 0,
+        "explanation": "Le guide précise que nous sommes la seule monarchie constitutionnelle d'Amérique du Nord.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Qui sommes-nous, les Canadiens?",
+          "section": "Qui sommes-nous, les Canadiens? (introduction)",
+          "sourceUrl": "https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/qui-sont-canadiens.html",
+          "excerpt": "Nous sommes la seule monarchie constitutionnelle d'Amérique du Nord.",
+          "verifiedAt": "2026-08-17",
+          "reviewStatus": "verified"
+        }
+      },
+      "ar": {
+        "question": "أي مما يلي يصف على أفضل وجه وضع كندا بين دول أمريكا الشمالية؟",
+        "options": [
+          "كندا هي المَلَكية الدستورية الوحيدة في أمريكا الشمالية",
+          "كندا واحدة من عدة مَلَكيات دستورية في أمريكا الشمالية",
+          "كندا جمهورية مثل جيرانها في أمريكا الشمالية",
+          "تُحكَم كندا بالاشتراك مع المملكة المتحدة"
+        ],
+        "explanation": "ينص الدليل على أننا المَلَكية الدستورية الوحيدة في أمريكا الشمالية."
+      },
+      "testTip": null,
+      "crossReferences": [],
+      "id": "CIT-0117"
+    },
+    {
+      "chapterId": "who-we-are",
+      "type": "multiple-choice",
+      "tags": [
+        "identity",
+        "founding-peoples"
+      ],
+      "difficulty": 1,
+      "topic": null,
+      "subtopic": null,
+      "en": {
+        "question": "Which of the following is NOT one of Canada's three founding peoples?",
+        "options": [
+          "Spanish",
+          "Aboriginal",
+          "French",
+          "British"
+        ],
+        "correctIndex": 0,
+        "explanation": "Canada's three founding peoples are Aboriginal, French and British, not Spanish.",
+        "source": {
+          "guide": "Discover Canada",
+          "language": "en",
+          "chapter": "Who We Are",
+          "section": "Who We Are (introduction)",
+          "sourceUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/who-are-canadians.html",
+          "excerpt": "To understand what it means to be Canadian, it is important to know about our three founding peoples—Aboriginal, French and British.",
+          "verifiedAt": "2026-08-17",
+          "reviewStatus": "verified"
+        },
+        "optionAnnotations": null
+      },
+      "fr": {
+        "question": "Lequel des groupes suivants ne fait PAS partie des trois peuples fondateurs du Canada ?",
+        "options": [
+          "Les Espagnols",
+          "Les Autochtones",
+          "Les Français",
+          "Les Britanniques"
+        ],
+        "correctIndex": 0,
+        "explanation": "Les trois peuples fondateurs du Canada sont les Autochtones, les Français et les Britanniques, pas les Espagnols.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Qui sommes-nous, les Canadiens?",
+          "section": "Qui sommes-nous, les Canadiens? (introduction)",
+          "sourceUrl": "https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/qui-sont-canadiens.html",
+          "excerpt": "Pour comprendre ce que signifie être Canadien, il faut connaître nos trois peuples fondateurs : les Autochtones, les Français et les Britanniques.",
+          "verifiedAt": "2026-08-17",
+          "reviewStatus": "verified"
+        }
+      },
+      "ar": {
+        "question": "أي مما يلي ليس أحد شعوب كندا المؤسِّسة الثلاثة؟",
+        "options": [
+          "الإسبان",
+          "الشعوب الأصلية",
+          "الفرنسيون",
+          "البريطانيون"
+        ],
+        "explanation": "شعوب كندا المؤسِّسة الثلاثة هي الشعوب الأصلية والفرنسيون والبريطانيون، وليس الإسبان."
+      },
+      "testTip": null,
+      "crossReferences": [],
+      "id": "CIT-0118"
+    },
+    {
+      "chapterId": "who-we-are",
+      "type": "multiple-choice",
+      "tags": [
+        "aboriginal-peoples",
+        "terminology"
+      ],
+      "difficulty": 2,
+      "topic": null,
+      "subtopic": null,
+      "en": {
+        "question": "Which of the following is NOT one of the three distinct groups referred to by the term 'Aboriginal peoples'?",
+        "options": [
+          "Acadians",
+          "First Nations",
+          "Inuit",
+          "Métis"
+        ],
+        "correctIndex": 0,
+        "explanation": "The guide states the term 'Aboriginal peoples' refers to First Nations, Inuit, and Métis. Acadians are French colonist descendants, not an Aboriginal group.",
+        "source": {
+          "guide": "Discover Canada",
+          "language": "en",
+          "chapter": "Who We Are",
+          "section": "Aboriginal Peoples",
+          "sourceUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/who-are-canadians.html",
+          "excerpt": "Today, the term Aboriginal peoples refers to three distinct groups.",
+          "verifiedAt": "2026-08-17",
+          "reviewStatus": "verified"
+        },
+        "optionAnnotations": null
+      },
+      "fr": {
+        "question": "Lequel des groupes suivants ne fait PAS partie des trois groupes distincts désignés par le terme 'peuples autochtones' ?",
+        "options": [
+          "Les Acadiens",
+          "Les Premières Nations",
+          "Les Inuits",
+          "Les Métis"
+        ],
+        "correctIndex": 0,
+        "explanation": "Le guide indique que le terme désigne les Premières Nations, les Inuits et les Métis. Les Acadiens sont des descendants de colons français, pas un groupe autochtone.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Qui sommes-nous, les Canadiens?",
+          "section": "Les peuples autochtones",
+          "sourceUrl": "https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/qui-sont-canadiens.html",
+          "excerpt": "Aujourd'hui, le terme peuples autochtones désigne trois groupes distincts.",
+          "verifiedAt": "2026-08-17",
+          "reviewStatus": "verified"
+        }
+      },
+      "ar": {
+        "question": "أي مما يلي ليس أحد المجموعات الثلاث المتميزة التي يشير إليها مصطلح 'الشعوب الأصلية'؟",
+        "options": [
+          "الأكاديون",
+          "الأمم الأولى",
+          "الإنويت",
+          "الميتيس"
+        ],
+        "explanation": "ينص الدليل على أن مصطلح 'الشعوب الأصلية' يشير إلى الأمم الأولى والإنويت والميتيس. الأكاديون هم من سلالة المستوطنين الفرنسيين، وليسوا مجموعة من الشعوب الأصلية."
+      },
+      "testTip": null,
+      "crossReferences": [],
+      "id": "CIT-0119"
+    },
+    {
+      "chapterId": "who-we-are",
+      "type": "multiple-choice",
+      "tags": [
+        "languages",
+        "bilingual-province"
+      ],
+      "difficulty": 1,
+      "topic": null,
+      "subtopic": null,
+      "en": {
+        "question": "Which of the following statements about New Brunswick is correct?",
+        "options": [
+          "It is Canada's only officially bilingual province",
+          "It is Canada's only officially unilingual province",
+          "It was the last province to join Confederation",
+          "It is a territory, not a province"
+        ],
+        "correctIndex": 0,
+        "explanation": "New Brunswick is the only officially bilingual province in Canada.",
+        "source": {
+          "guide": "Discover Canada",
+          "language": "en",
+          "chapter": "Who We Are",
+          "section": "English and French",
+          "sourceUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/who-are-canadians.html",
+          "excerpt": "New Brunswick is the only officially bilingual province.",
+          "verifiedAt": "2026-08-17",
+          "reviewStatus": "verified"
+        },
+        "optionAnnotations": null
+      },
+      "fr": {
+        "question": "Laquelle des affirmations suivantes à propos du Nouveau-Brunswick est correcte ?",
+        "options": [
+          "C'est la seule province officiellement bilingue du Canada",
+          "C'est la seule province officiellement unilingue du Canada",
+          "Ce fut la dernière province à se joindre à la Confédération",
+          "C'est un territoire, pas une province"
+        ],
+        "correctIndex": 0,
+        "explanation": "Le Nouveau-Brunswick est la seule province officiellement bilingue du Canada.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Qui sommes-nous, les Canadiens?",
+          "section": "Les français et les anglais",
+          "sourceUrl": "https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/qui-sont-canadiens.html",
+          "excerpt": "Le Nouveau-Brunswick est la seule province officiellement bilingue.",
+          "verifiedAt": "2026-08-17",
+          "reviewStatus": "verified"
+        }
+      },
+      "ar": {
+        "question": "أي العبارات التالية بشأن نيو برونزويك صحيحة؟",
+        "options": [
+          "إنها المقاطعة الرسمية الوحيدة ثنائية اللغة في كندا",
+          "إنها المقاطعة الرسمية الوحيدة أحادية اللغة في كندا",
+          "كانت آخر مقاطعة تنضم إلى الكونفدرالية",
+          "إنها إقليم، وليست مقاطعة"
+        ],
+        "explanation": "نيو برونزويك هي المقاطعة الرسمية الوحيدة ثنائية اللغة في كندا."
+      },
+      "testTip": null,
+      "crossReferences": [],
+      "id": "CIT-0120"
+    },
+    {
+      "chapterId": "who-we-are",
+      "type": "multiple-choice",
+      "tags": [],
+      "difficulty": 2,
+      "topic": "rights",
+      "subtopic": "diversity_groups",
+      "en": {
+        "question": "Which of these are listed as the largest ethnic and religious groups in Canada?",
+        "options": [
+          "English, French, Scottish, Irish, German, Italian, Chinese, Aboriginal, Ukrainian, Dutch, South Asian and Scandinavian",
+          "Only English and French",
+          "Russian, Japanese, Filipino, and Brazilian",
+          "Only Aboriginal peoples"
+        ],
+        "correctIndex": 0,
+        "explanation": "Page 21: 'The largest groups are the English, French, Scottish, Irish, German, Italian, Chinese, Aboriginal, Ukrainian, Dutch, South Asian and Scandinavian.'",
+        "source": {
+          "guide": "Discover Canada",
+          "language": "en",
+          "chapter": "Who We Are",
+          "section": "Diversity in Canada",
+          "pdfPage": 21,
+          "reviewStatus": "needs-review"
+        },
+        "optionAnnotations": [
+          {
+            "relevance": "CORRECT_ANSWER",
+            "explanation": "Page 21: 'The largest groups are the English, French, Scottish, Irish, German, Italian, Chinese, Aboriginal, Ukrainian, Dutch, South Asian and Scandinavian.'"
+          },
+          {
+            "relevance": "PARTIALLY_CORRECT",
+            "explanation": "English and French are the founding linguistic communities (p. 19), but Canadian diversity is much broader per p. 21."
+          },
+          {
+            "relevance": "PARTIALLY_CORRECT",
+            "explanation": "Some of these communities exist but aren't named on the p. 21 'largest groups' list."
+          },
+          {
+            "relevance": "PARTIALLY_CORRECT",
+            "explanation": "Aboriginal peoples are one founding community (p. 16), but Discover Canada lists many groups on p. 21."
+          }
+        ]
+      },
+      "fr": null,
+      "ar": null,
+      "testTip": null,
+      "crossReferences": [],
+      "id": "CIT-0121"
+    },
+    {
+      "chapterId": "who-we-are",
+      "type": "multiple-choice",
+      "tags": [
+        "languages",
+        "bilingual-province"
+      ],
+      "difficulty": 1,
+      "topic": null,
+      "subtopic": null,
+      "en": {
+        "question": "Which province has both English and French as official languages at the provincial level?",
+        "options": [
+          "New Brunswick",
+          "Ontario",
+          "Manitoba",
+          "British Columbia"
+        ],
+        "correctIndex": 0,
+        "explanation": "New Brunswick is the only province with both English and French as official languages.",
+        "source": {
+          "guide": "Discover Canada",
+          "language": "en",
+          "chapter": "Who We Are",
+          "section": "English and French",
+          "sourceUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/who-are-canadians.html",
+          "excerpt": "New Brunswick is the only officially bilingual province.",
+          "verifiedAt": "2026-08-17",
+          "reviewStatus": "verified"
+        },
+        "optionAnnotations": null
+      },
+      "fr": {
+        "question": "Quelle province a à la fois l'anglais et le français comme langues officielles au niveau provincial ?",
+        "options": [
+          "Le Nouveau-Brunswick",
+          "L'Ontario",
+          "Le Manitoba",
+          "La Colombie-Britannique"
+        ],
+        "correctIndex": 0,
+        "explanation": "Le Nouveau-Brunswick est la seule province ayant à la fois l'anglais et le français comme langues officielles.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Qui sommes-nous, les Canadiens?",
+          "section": "Les français et les anglais",
+          "sourceUrl": "https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/qui-sont-canadiens.html",
+          "excerpt": "Le Nouveau-Brunswick est la seule province officiellement bilingue.",
+          "verifiedAt": "2026-08-17",
+          "reviewStatus": "verified"
+        }
+      },
+      "ar": {
+        "question": "أي مقاطعة تعتمد اللغتين الإنجليزية والفرنسية كلغتين رسميتين على المستوى الإقليمي؟",
+        "options": [
+          "نيو برونزويك",
+          "أونتاريو",
+          "مانيتوبا",
+          "كولومبيا البريطانية"
+        ],
+        "explanation": "نيو برونزويك هي المقاطعة الوحيدة التي تعتمد اللغتين الإنجليزية والفرنسية كلغتين رسميتين."
+      },
+      "testTip": null,
+      "crossReferences": [],
+      "id": "CIT-0122"
+    },
+    {
+      "chapterId": "who-we-are",
+      "type": "multiple-choice",
+      "tags": [
+        "languages",
+        "bilingual-province"
+      ],
+      "difficulty": 1,
+      "topic": null,
+      "subtopic": null,
+      "en": {
+        "question": "Which province is the only officially bilingual province in Canada?",
+        "options": [
+          "New Brunswick",
+          "Quebec",
+          "Ontario",
+          "Manitoba"
+        ],
+        "correctIndex": 0,
+        "explanation": "The guide states New Brunswick is the only officially bilingual province.",
+        "source": {
+          "guide": "Discover Canada",
+          "language": "en",
+          "chapter": "Who We Are",
+          "section": "English and French",
+          "sourceUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/who-are-canadians.html",
+          "excerpt": "New Brunswick is the only officially bilingual province.",
+          "verifiedAt": "2026-08-17",
+          "reviewStatus": "verified"
+        },
+        "optionAnnotations": null
+      },
+      "fr": {
+        "question": "Quelle province est la seule province officiellement bilingue du Canada ?",
+        "options": [
+          "Le Nouveau-Brunswick",
+          "Le Québec",
+          "L'Ontario",
+          "Le Manitoba"
+        ],
+        "correctIndex": 0,
+        "explanation": "Le guide précise que le Nouveau-Brunswick est la seule province officiellement bilingue.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Qui sommes-nous, les Canadiens?",
+          "section": "Les français et les anglais",
+          "sourceUrl": "https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/qui-sont-canadiens.html",
+          "excerpt": "Le Nouveau-Brunswick est la seule province officiellement bilingue.",
+          "verifiedAt": "2026-08-17",
+          "reviewStatus": "verified"
+        }
+      },
+      "ar": {
+        "question": "ما المقاطعة الوحيدة الرسمية ثنائية اللغة في كندا؟",
+        "options": [
+          "نيو برونزويك",
+          "كيبيك",
+          "أونتاريو",
+          "مانيتوبا"
+        ],
+        "explanation": "ينص الدليل على أن نيو برونزويك هي المقاطعة الرسمية الوحيدة ثنائية اللغة."
+      },
+      "testTip": null,
+      "crossReferences": [],
+      "id": "CIT-0123"
+    },
+    {
+      "chapterId": "who-we-are",
+      "type": "multiple-choice",
+      "tags": [
+        "aboriginal-peoples",
+        "terminology"
+      ],
+      "difficulty": 2,
+      "topic": null,
+      "subtopic": null,
+      "en": {
+        "question": "Which three groups are collectively referred to as 'Aboriginal peoples' in Canada?",
+        "options": [
+          "First Nations, Inuit, and Métis",
+          "Acadians, Loyalists, and Métis",
+          "First Nations, Loyalists, and Inuit",
+          "Métis, Acadians, and Quebecois"
+        ],
+        "correctIndex": 0,
+        "explanation": "The term Aboriginal peoples refers to three distinct groups: First Nations, Inuit, and Métis.",
+        "source": {
+          "guide": "Discover Canada",
+          "language": "en",
+          "chapter": "Who We Are",
+          "section": "Aboriginal Peoples",
+          "sourceUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/who-are-canadians.html",
+          "excerpt": "Today, the term Aboriginal peoples refers to three distinct groups.",
+          "verifiedAt": "2026-08-17",
+          "reviewStatus": "verified"
+        },
+        "optionAnnotations": null
+      },
+      "fr": {
+        "question": "Quels trois groupes sont collectivement désignés par le terme 'peuples autochtones' au Canada ?",
+        "options": [
+          "Les Premières Nations, les Inuits et les Métis",
+          "Les Acadiens, les Loyalistes et les Métis",
+          "Les Premières Nations, les Loyalistes et les Inuits",
+          "Les Métis, les Acadiens et les Québécois"
+        ],
+        "correctIndex": 0,
+        "explanation": "Le terme peuples autochtones désigne trois groupes distincts : les Premières Nations, les Inuits et les Métis.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Qui sommes-nous, les Canadiens?",
+          "section": "Les peuples autochtones",
+          "sourceUrl": "https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/qui-sont-canadiens.html",
+          "excerpt": "Aujourd'hui, le terme peuples autochtones désigne trois groupes distincts.",
+          "verifiedAt": "2026-08-17",
+          "reviewStatus": "verified"
+        }
+      },
+      "ar": {
+        "question": "ما المجموعات الثلاث التي يُشار إليها مجتمعةً باسم 'الشعوب الأصلية' في كندا؟",
+        "options": [
+          "الأمم الأولى والإنويت والميتيس",
+          "الأكاديون والموالون والميتيس",
+          "الأمم الأولى والموالون والإنويت",
+          "الميتيس والأكاديون والكيبيكيون"
+        ],
+        "explanation": "يشير مصطلح الشعوب الأصلية إلى ثلاث مجموعات متميزة: الأمم الأولى والإنويت والميتيس."
+      },
+      "testTip": null,
+      "crossReferences": [],
+      "id": "CIT-0124"
+    },
+    {
+      "chapterId": "who-we-are",
+      "type": "multiple-choice",
+      "tags": [
+        "identity",
+        "founding-peoples"
+      ],
+      "difficulty": 1,
+      "topic": null,
+      "subtopic": null,
+      "en": {
+        "question": "Who are Canada's three founding peoples?",
+        "options": [
+          "Aboriginal, French and British",
+          "French, Spanish and British",
+          "Aboriginal, French and American",
+          "British, German and French"
+        ],
+        "correctIndex": 0,
+        "explanation": "The guide states that to understand what it means to be Canadian, it is important to know about the three founding peoples: Aboriginal, French, and British.",
+        "source": {
+          "guide": "Discover Canada",
+          "language": "en",
+          "chapter": "Who We Are",
+          "section": "Who We Are (introduction)",
+          "sourceUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/who-are-canadians.html",
+          "excerpt": "To understand what it means to be Canadian, it is important to know about our three founding peoples—Aboriginal, French and British.",
+          "verifiedAt": "2026-08-17",
+          "reviewStatus": "verified"
+        },
+        "optionAnnotations": null
+      },
+      "fr": {
+        "question": "Quels sont les trois peuples fondateurs du Canada ?",
+        "options": [
+          "Les Autochtones, les Français et les Britanniques",
+          "Les Français, les Espagnols et les Britanniques",
+          "Les Autochtones, les Français et les Américains",
+          "Les Britanniques, les Allemands et les Français"
+        ],
+        "correctIndex": 0,
+        "explanation": "Le guide indique que pour comprendre ce que signifie être Canadien, il faut connaître les trois peuples fondateurs : les Autochtones, les Français et les Britanniques.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Qui sommes-nous, les Canadiens?",
+          "section": "Qui sommes-nous, les Canadiens? (introduction)",
+          "sourceUrl": "https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/qui-sont-canadiens.html",
+          "excerpt": "Pour comprendre ce que signifie être Canadien, il faut connaître nos trois peuples fondateurs : les Autochtones, les Français et les Britanniques.",
+          "verifiedAt": "2026-08-17",
+          "reviewStatus": "verified"
+        }
+      },
+      "ar": {
+        "question": "من هم شعوب كندا المؤسِّسة الثلاثة؟",
+        "options": [
+          "الشعوب الأصلية والفرنسيون والبريطانيون",
+          "الفرنسيون والإسبان والبريطانيون",
+          "الشعوب الأصلية والفرنسيون والأمريكيون",
+          "البريطانيون والألمان والفرنسيون"
+        ],
+        "explanation": "ينص الدليل على أنه لفهم معنى أن تكون كنديًا، من المهم معرفة الشعوب المؤسِّسة الثلاثة: الشعوب الأصلية والفرنسيون والبريطانيون."
+      },
+      "testTip": null,
+      "crossReferences": [],
+      "id": "CIT-0125"
+    },
+    {
+      "chapterId": "who-we-are",
+      "type": "multiple-choice",
+      "tags": [
+        "chapter_who_we_are"
+      ],
+      "difficulty": 2,
+      "topic": "who_we_are",
+      "subtopic": "acadians",
+      "en": {
+        "question": "Who are the Acadians?",
+        "options": [
+          "Descendants of French colonists who began settling in what are now the Maritime provinces in 1604, most of whom were deported between 1755 and 1763 in the 'Great Upheaval.'",
+          "An Aboriginal nation that lived along the St. Lawrence River.",
+          "Loyalists who fled to Canada from the American Revolution.",
+          "Early French explorers who searched for the Northwest Passage."
+        ],
+        "correctIndex": 0,
+        "explanation": "Page 19: 'The Acadians are the descendants of French colonists who began settling in what are now the Maritime provinces in 1604. Between 1755 and 1763 … more than two-thirds of the Acadians were deported from their homeland.'",
+        "source": {
+          "guide": "Discover Canada",
+          "language": "en",
+          "chapter": "Who We Are",
+          "section": "English and French",
+          "pdfPage": 19,
+          "reviewStatus": "needs-review"
+        },
+        "optionAnnotations": [
+          {
+            "relevance": "CORRECT_ANSWER",
+            "explanation": "Page 19: 'The Acadians are the descendants of French colonists who began settling in what are now the Maritime provinces in 1604. Between 1755 and 1763 … more than two-thirds of the Acadians were deported from their homeland.'"
+          },
+          {
+            "relevance": "WRONG_CATEGORY",
+            "explanation": "Acadians are French in origin, not Aboriginal. Confusing the two is a common error."
+          },
+          {
+            "relevance": "RELATED_FACT",
+            "explanation": "Those are the Loyalists, a different group. Acadians were already in Canada more than a century before the Loyalists arrived."
+          },
+          {
+            "relevance": "PLAUSIBLE_DISTRACTOR",
+            "explanation": "Acadians were settlers, not explorers. The Northwest Passage searches are a different historical thread."
+          }
+        ]
+      },
+      "fr": null,
+      "ar": null,
+      "testTip": null,
+      "crossReferences": [],
+      "id": "CIT-0126"
+    },
+    {
+      "chapterId": "who-we-are",
+      "type": "multiple-choice",
+      "tags": [
+        "frequently_tested",
+        "chapter_who_we_are",
+        "official_irrc_sample_topic"
+      ],
+      "difficulty": 1,
+      "topic": "who_we_are",
+      "subtopic": "metis",
+      "en": {
+        "question": "Who are the Métis?",
+        "options": [
+          "A distinct Aboriginal people of mixed Aboriginal and European ancestry, the majority of whom live in the Prairie provinces, who speak their own dialect called Michif.",
+          "Descendants of French colonists who settled in the Maritime provinces starting in 1604.",
+          "Inuit people who live in the Arctic.",
+          "Loyalists who came to Canada after the American Revolution."
+        ],
+        "correctIndex": 0,
+        "explanation": "Page 18: 'The Métis are a distinct people of mixed Aboriginal and European ancestry, the majority of whom live in the Prairie provinces. They come from both French- and English-speaking backgrounds and speak their own dialect, Michif.'",
+        "source": {
+          "guide": "Discover Canada",
+          "language": "en",
+          "chapter": "Who We Are",
+          "section": "Unity in Diversity",
+          "pdfPage": 18,
+          "reviewStatus": "needs-review"
+        },
+        "optionAnnotations": [
+          {
+            "relevance": "CORRECT_ANSWER",
+            "explanation": "Page 18: 'The Métis are a distinct people of mixed Aboriginal and European ancestry, the majority of whom live in the Prairie provinces. They come from both French- and English-speaking backgrounds and speak their own dialect, Michif.'"
+          },
+          {
+            "relevance": "WRONG_CATEGORY",
+            "explanation": "Those are the Acadians (p. 19), not the Métis. Acadians are part of French Canada's heritage; Métis are an Aboriginal people."
+          },
+          {
+            "relevance": "RELATED_FACT",
+            "explanation": "The Inuit are a separate Aboriginal group living in the Arctic — also described on p. 18. Métis are distinct from Inuit."
+          },
+          {
+            "relevance": "WRONG_CATEGORY",
+            "explanation": "The Loyalists are an entirely different historical group (p. 27) — settlers loyal to the British Crown who fled north after the American Revolution. Not Aboriginal."
+          }
+        ]
+      },
+      "fr": null,
+      "ar": null,
+      "testTip": null,
+      "crossReferences": [
+        "Q019"
+      ],
+      "id": "CIT-0127"
+    },
+    {
+      "chapterId": "who-we-are",
+      "type": "multiple-choice",
+      "tags": [
+        "frequently_tested",
+        "chapter_who_we_are"
+      ],
+      "difficulty": 1,
+      "topic": "who_we_are",
+      "subtopic": "founding_peoples",
+      "en": {
+        "question": "Who are the three founding peoples of Canada?",
+        "options": [
+          "Aboriginal, French, and British",
+          "English, French, and Spanish",
+          "Inuit, Métis, and First Nations",
+          "English, French, and American"
+        ],
+        "correctIndex": 0,
+        "explanation": "Page 16: 'To understand what it means to be Canadian, it is important to know about our three founding peoples—Aboriginal, French and British.'",
+        "source": {
+          "guide": "Discover Canada",
+          "language": "en",
+          "chapter": "Who We Are",
+          "section": "Who We Are (opening)",
+          "pdfPage": 16,
+          "reviewStatus": "needs-review"
+        },
+        "optionAnnotations": [
+          {
+            "relevance": "CORRECT_ANSWER",
+            "explanation": "Page 16: 'To understand what it means to be Canadian, it is important to know about our three founding peoples—Aboriginal, French and British.'"
+          },
+          {
+            "relevance": "PLAUSIBLE_DISTRACTOR",
+            "explanation": "Spanish colonization did not extend to what became Canada. The third founding people is Aboriginal — the original inhabitants — not Spanish."
+          },
+          {
+            "relevance": "RELATED_FACT",
+            "explanation": "These are the three groups within Aboriginal peoples (p. 17), not the three founding peoples of Canada as a whole."
+          },
+          {
+            "relevance": "COMMON_MISCONCEPTION",
+            "explanation": "Americans are not a founding people of Canada — the United States did not exist when European settlement of Canada began. The Loyalists who fled to Canada after the American Revolution were of British origin."
+          }
+        ]
+      },
+      "fr": null,
+      "ar": null,
+      "testTip": null,
+      "crossReferences": [
+        "Q019"
+      ],
+      "id": "CIT-0128"
+    },
+    {
+      "chapterId": "who-we-are",
+      "type": "multiple-choice",
+      "tags": [],
+      "difficulty": 3,
+      "topic": "rights",
+      "subtopic": "buchan_governor_general",
+      "en": {
+        "question": "Who was the 15th Governor General of Canada and a popular advocate of 'unity in diversity'?",
+        "options": [
+          "John Buchan, 1st Baron Tweedsmuir (1935-40)",
+          "Lord Durham",
+          "Lord Stanley",
+          "Sir Wilfrid Laurier"
+        ],
+        "correctIndex": 0,
+        "explanation": "Page 18: 'John Buchan, the 1st Baron Tweedsmuir, was a popular Governor General of Canada (1935-40).' His remarks about immigrant groups retaining individuality and contributing to national character are on the same page.",
+        "source": {
+          "guide": "Discover Canada",
+          "language": "en",
+          "chapter": "Who We Are",
+          "section": "Unity in Diversity",
+          "pdfPage": 18,
+          "reviewStatus": "needs-review"
+        },
+        "optionAnnotations": [
+          {
+            "relevance": "CORRECT_ANSWER",
+            "explanation": "Page 18: 'John Buchan, the 1st Baron Tweedsmuir, was a popular Governor General of Canada (1935-40).' His remarks about immigrant groups retaining individuality and contributing to national character are on the same page."
+          },
+          {
+            "relevance": "RELATED_FACT",
+            "explanation": "Durham reported on the Rebellions (p. 31), but was not Governor General."
+          },
+          {
+            "relevance": "RELATED_FACT",
+            "explanation": "Stanley donated the Stanley Cup as Governor General in 1892 (p. 81), not the 15th GG."
+          },
+          {
+            "relevance": "RELATED_FACT",
+            "explanation": "Laurier was a PM, not a Governor General."
+          }
+        ]
+      },
+      "fr": null,
+      "ar": null,
+      "testTip": null,
+      "crossReferences": [],
+      "id": "CIT-0129"
+    },
+    {
+      "chapterId": "who-we-are",
+      "type": "multiple-choice",
+      "tags": [],
+      "difficulty": 2,
+      "topic": "rights",
+      "subtopic": "british_origins_canadian",
+      "en": {
+        "question": "Why are Anglophones generally referred to as 'English Canadians'?",
+        "options": [
+          "Because the basic way of life in English-speaking areas was established by English, Welsh, Scottish, and Irish settlers from the 1600s to the 20th century",
+          "Because all Anglophones come from England",
+          "It is a recent legal designation",
+          "Because they spoke English better than other immigrants"
+        ],
+        "correctIndex": 0,
+        "explanation": "Page 20: 'The basic way of life in English-speaking areas was established by hundreds of thousands of English, Welsh, Scottish and Irish settlers, soldiers and migrants from the 1600s to the 20th century. Generations of pioneers and builders of British origins, as well as other groups, invested and endured hardship in laying the foundations of our country. This helps explain why Anglophones (English speakers) are generally referred to as English Canadians.'",
+        "source": {
+          "guide": "Discover Canada",
+          "language": "en",
+          "chapter": "Who We Are",
+          "section": "Becoming Canadian",
+          "pdfPage": 20,
+          "reviewStatus": "needs-review"
+        },
+        "optionAnnotations": [
+          {
+            "relevance": "CORRECT_ANSWER",
+            "explanation": "Page 20: 'The basic way of life in English-speaking areas was established by hundreds of thousands of English, Welsh, Scottish and Irish settlers, soldiers and migrants from the 1600s to the 20th century. Generations of pioneers and builders of British origins, as well as other groups, invested and endured hardship in laying the foundations of our country. This helps explain why Anglophones (English speakers) are generally referred to as English Canadians.'"
+          },
+          {
+            "relevance": "COMMON_MISCONCEPTION",
+            "explanation": "Anglophones came from England, Wales, Scotland, Ireland, plus other groups per p. 20."
+          },
+          {
+            "relevance": "COMMON_MISCONCEPTION",
+            "explanation": "Centuries-old origin per p. 20."
+          },
+          {
+            "relevance": "COMMON_MISCONCEPTION",
+            "explanation": "Not the explanation. p. 20 explains the historical settlement pattern."
+          }
+        ]
+      },
+      "fr": null,
+      "ar": null,
+      "testTip": null,
+      "crossReferences": [],
+      "id": "CIT-0130"
+    },
+    {
+      "chapterId": "who-we-are",
+      "type": "multiple-choice",
+      "tags": [],
+      "difficulty": 2,
+      "topic": "rights",
+      "subtopic": "great_dominion",
+      "en": {
+        "question": "Why did poets and songwriters hail Canada as 'the Great Dominion'?",
+        "options": [
+          "Because Canadians had built a prosperous society from the Atlantic to the Pacific and Arctic",
+          "Because Canada won every war",
+          "Because Canada had a large empire",
+          "Because of its tropical climate"
+        ],
+        "correctIndex": 0,
+        "explanation": "Page 16: 'A belief in ordered liberty, enterprise, hard work and fair play have enabled Canadians to build a prosperous society in a rugged environment from our Atlantic shores to the Pacific Ocean and to the Arctic Circle — so much so that poets and songwriters have hailed Canada as the \"Great Dominion.\"'",
+        "source": {
+          "guide": "Discover Canada",
+          "language": "en",
+          "chapter": "Who We Are",
+          "section": "Who We Are (opening)",
+          "pdfPage": 16,
+          "reviewStatus": "needs-review"
+        },
+        "optionAnnotations": [
+          {
+            "relevance": "CORRECT_ANSWER",
+            "explanation": "Page 16: 'A belief in ordered liberty, enterprise, hard work and fair play have enabled Canadians to build a prosperous society in a rugged environment from our Atlantic shores to the Pacific Ocean and to the Arctic Circle — so much so that poets and songwriters have hailed Canada as the \"Great Dominion.\"'"
+          },
+          {
+            "relevance": "PLAUSIBLE_DISTRACTOR",
+            "explanation": "Not the reason per p. 16. The 'Great Dominion' reference is about building prosperity coast to coast to coast."
+          },
+          {
+            "relevance": "COMMON_MISCONCEPTION",
+            "explanation": "Canada was not an empire; it was itself a Dominion within the British Empire."
+          },
+          {
+            "relevance": "COMMON_MISCONCEPTION",
+            "explanation": "Canada has a 'rugged environment' (p. 16) — far from tropical."
+          }
+        ]
+      },
+      "fr": null,
+      "ar": null,
+      "testTip": null,
+      "crossReferences": [],
+      "id": "CIT-0131"
+    }
+  ]
+}

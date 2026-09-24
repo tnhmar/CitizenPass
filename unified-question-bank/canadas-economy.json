@@ -1,0 +1,1559 @@
+{
+  "chapterId": "canadas-economy",
+  "chapterTitle": "Canada's Economy",
+  "memoryBox": {
+    "en": {
+      "title": "Trade & Industry Breakdown",
+      "mnemonic": "Three industry types: Service (75%+ of jobs) > Manufacturing > Natural Resources. Free trade with the US started in 1988 — six years before NAFTA (1994).",
+      "keyFactsChecklist": [
+        "75%+ jobs in service industries",
+        "US = largest trading partner",
+        "Free trade with US: 1988",
+        "3 industry types"
+      ]
+    }
+  },
+  "questionCount": 27,
+  "questions": [
+    {
+      "chapterId": "canadas-economy",
+      "type": "true-false",
+      "tags": [],
+      "difficulty": 2,
+      "topic": "economy",
+      "subtopic": "us_exports_share",
+      "en": {
+        "question": "About one-quarter of Canadian exports go to the United States.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correctIndex": 1,
+        "explanation": "Significantly understates per p. 92.",
+        "source": {
+          "guide": "Discover Canada",
+          "language": "en",
+          "chapter": "Canada's Economy",
+          "section": "Trade with the United States",
+          "pdfPage": 92,
+          "reviewStatus": "needs-review"
+        },
+        "optionAnnotations": [
+          {
+            "relevance": "PLAUSIBLE_DISTRACTOR",
+            "explanation": "Significantly understates per p. 92."
+          },
+          {
+            "relevance": "CORRECT_ANSWER",
+            "explanation": "Significantly understates per p. 92."
+          }
+        ]
+      },
+      "fr": null,
+      "ar": null,
+      "testTip": null,
+      "crossReferences": [],
+      "id": "CIT-0744"
+    },
+    {
+      "chapterId": "canadas-economy",
+      "type": "true-false",
+      "tags": [],
+      "difficulty": 2,
+      "topic": "economy",
+      "subtopic": "fish_lobster_atlantic",
+      "en": {
+        "question": "Atlantic lobster is a food product associated with Atlantic Canada's economy.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correctIndex": 0,
+        "explanation": "Atlantic lobster is closely tied to the economy of Atlantic Canada.",
+        "source": {
+          "guide": "Discover Canada",
+          "language": "en",
+          "chapter": "Canada's Economy",
+          "section": "A Trading Nation",
+          "pdfPage": 90,
+          "reviewStatus": "needs-review"
+        },
+        "optionAnnotations": [
+          {
+            "relevance": "CORRECT_ANSWER",
+            "explanation": "Atlantic lobster is closely tied to the economy of Atlantic Canada."
+          },
+          {
+            "relevance": "CORRECT_ANSWER",
+            "explanation": "This statement is accurate, so 'False' is incorrect. Atlantic lobster is closely tied to the economy of Atlantic Canada."
+          }
+        ]
+      },
+      "fr": null,
+      "ar": null,
+      "testTip": null,
+      "crossReferences": [],
+      "id": "CIT-0745"
+    },
+    {
+      "chapterId": "canadas-economy",
+      "type": "multiple-choice",
+      "tags": [],
+      "difficulty": 3,
+      "topic": "economy",
+      "subtopic": "nafta_size_2008",
+      "en": {
+        "question": "By 2008, how many people and how much trade did NAFTA cover?",
+        "options": [
+          "Over 444 million people and over $1 trillion in merchandise trade",
+          "About 100 million people and $100 billion",
+          "Over 1 billion people and $10 trillion",
+          "Exactly 300 million / $500 billion"
+        ],
+        "correctIndex": 0,
+        "explanation": "Page 90: '[NAFTA] with over 444 million people and over $1 trillion in merchandise trade in 2008.'",
+        "source": {
+          "guide": "Discover Canada",
+          "language": "en",
+          "chapter": "Canada's Economy",
+          "section": "A Trading Nation",
+          "pdfPage": 90,
+          "reviewStatus": "needs-review"
+        },
+        "optionAnnotations": [
+          {
+            "relevance": "CORRECT_ANSWER",
+            "explanation": "Page 90: '[NAFTA] with over 444 million people and over $1 trillion in merchandise trade in 2008.'"
+          },
+          {
+            "relevance": "PLAUSIBLE_DISTRACTOR",
+            "explanation": "Significantly understates both figures per p. 90."
+          },
+          {
+            "relevance": "PLAUSIBLE_DISTRACTOR",
+            "explanation": "Overstates. The figure on p. 90 is 444 million / $1 trillion."
+          },
+          {
+            "relevance": "PLAUSIBLE_DISTRACTOR",
+            "explanation": "Not the figure on p. 90."
+          }
+        ]
+      },
+      "fr": null,
+      "ar": null,
+      "testTip": null,
+      "crossReferences": [],
+      "id": "CIT-0746"
+    },
+    {
+      "chapterId": "canadas-economy",
+      "type": "true-false",
+      "tags": [],
+      "difficulty": 2,
+      "topic": "economy",
+      "subtopic": "biggest_bilateral",
+      "en": {
+        "question": "Canada and the United States have the biggest bilateral trading relationship in the world.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correctIndex": 0,
+        "explanation": "The trade between Canada and the US is the largest bilateral trading relationship in the world.",
+        "source": {
+          "guide": "Discover Canada",
+          "language": "en",
+          "chapter": "Canada's Economy",
+          "section": "Trade with the United States",
+          "pdfPage": 92,
+          "reviewStatus": "needs-review"
+        },
+        "optionAnnotations": [
+          {
+            "relevance": "CORRECT_ANSWER",
+            "explanation": "The trade between Canada and the US is the largest bilateral trading relationship in the world."
+          },
+          {
+            "relevance": "CORRECT_ANSWER",
+            "explanation": "This statement is accurate, so 'False' is incorrect. The trade between Canada and the US is the largest bilateral trading relationship in the world."
+          }
+        ]
+      },
+      "fr": null,
+      "ar": null,
+      "testTip": null,
+      "crossReferences": [],
+      "id": "CIT-0747"
+    },
+    {
+      "chapterId": "canadas-economy",
+      "type": "true-false",
+      "tags": [
+        "economy",
+        "trade",
+        "history"
+      ],
+      "difficulty": 2,
+      "topic": null,
+      "subtopic": null,
+      "en": {
+        "question": "Canada enacted free trade with the United States in 1988.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correctIndex": 0,
+        "explanation": "This is true - Canada enacted free trade with the United States in 1988.",
+        "source": {
+          "guide": "Discover Canada",
+          "language": "en",
+          "chapter": "Canada's Economy",
+          "section": "A Trading Nation",
+          "sourceUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/canadas-economy.html",
+          "excerpt": "In 1988, Canada enacted free trade with the United States.",
+          "verifiedAt": "2026-09-10",
+          "reviewStatus": "verified"
+        },
+        "optionAnnotations": null
+      },
+      "fr": {
+        "question": "Le Canada a négocié un accord de libre-échange avec les États-Unis en 1988.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation": "C'est vrai - le Canada a négocié un accord de libre-échange avec les États-Unis en 1988.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "L'économie canadienne",
+          "section": "Une nation commerçante",
+          "sourceUrl": "https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/economie-canada.html",
+          "excerpt": "En 1988, le Canada a négocié un accord de libre-échange avec les États-Unis.",
+          "verifiedAt": "2026-09-10",
+          "reviewStatus": "verified"
+        }
+      },
+      "ar": {
+        "question": "أبرمت كندا اتفاقية التجارة الحرة مع الولايات المتحدة في عام 1988.",
+        "options": [
+          "صحيح",
+          "خطأ"
+        ],
+        "explanation": "هذا صحيح - أبرمت كندا اتفاقية التجارة الحرة مع الولايات المتحدة في عام 1988."
+      },
+      "testTip": null,
+      "crossReferences": [],
+      "id": "CIT-0748"
+    },
+    {
+      "chapterId": "canadas-economy",
+      "type": "true-false",
+      "tags": [],
+      "difficulty": 2,
+      "topic": "economy",
+      "subtopic": "free_trade_us_year",
+      "en": {
+        "question": "Canada enacted free trade with the United States in 1994.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correctIndex": 1,
+        "explanation": "1994 is when Mexico joined to create NAFTA (p. 90). Canada-US free trade was 1988.",
+        "source": {
+          "guide": "Discover Canada",
+          "language": "en",
+          "chapter": "Canada's Economy",
+          "section": "A Trading Nation",
+          "pdfPage": 90,
+          "reviewStatus": "verified",
+          "excerpt": "In 1988, Canada enacted free trade with the United States. Mexico became a partner in 1994 in the broader North American Free Trade Agreement (NAFTA)."
+        },
+        "optionAnnotations": [
+          {
+            "relevance": "RELATED_FACT",
+            "explanation": "1994 is when Mexico joined to create NAFTA (p. 90). Canada-US free trade was 1988."
+          },
+          {
+            "relevance": "CORRECT_ANSWER",
+            "explanation": "1994 is when Mexico joined to create NAFTA (p. 90). Canada-US free trade was 1988."
+          }
+        ]
+      },
+      "fr": {
+        "question": "Le Canada a négocié un accord de libre-échange avec les États-Unis en 1994.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation": "C'est en 1988 que le Canada a négocié un accord de libre-échange avec les États-Unis; le Mexique est devenu partenaire en 1994, dans le cadre de l'ALENA.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Canada's Economy",
+          "section": "Une nation commerçante",
+          "excerpt": "En 1988, le Canada a négocié un accord de libre-échange avec les États-Unis. Le Mexique est devenu notre partenaire en 1994, dans le cadre de l'Accord de libre-échange nord-américain (ALENA).",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": null,
+      "testTip": null,
+      "crossReferences": [],
+      "id": "CIT-0749"
+    },
+    {
+      "chapterId": "canadas-economy",
+      "type": "true-false",
+      "tags": [],
+      "difficulty": 2,
+      "topic": "economy",
+      "subtopic": "g8_membership",
+      "en": {
+        "question": "Canada is part of OPEC, the group of leading oil-exporting countries.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correctIndex": 1,
+        "explanation": "OPEC is oil exporters, mostly Middle Eastern. Canada is not a member.",
+        "source": {
+          "guide": "Discover Canada",
+          "language": "en",
+          "chapter": "Canada's Economy",
+          "section": "A Trading Nation",
+          "pdfPage": 90,
+          "reviewStatus": "needs-review"
+        },
+        "optionAnnotations": [
+          {
+            "relevance": "PLAUSIBLE_DISTRACTOR",
+            "explanation": "OPEC is oil exporters, mostly Middle Eastern. Canada is not a member."
+          },
+          {
+            "relevance": "CORRECT_ANSWER",
+            "explanation": "OPEC is oil exporters, mostly Middle Eastern. Canada is not a member."
+          }
+        ]
+      },
+      "fr": null,
+      "ar": null,
+      "testTip": null,
+      "crossReferences": [],
+      "id": "CIT-0750"
+    },
+    {
+      "chapterId": "canadas-economy",
+      "type": "true-false",
+      "tags": [
+        "economy",
+        "industries"
+      ],
+      "difficulty": 1,
+      "topic": null,
+      "subtopic": null,
+      "en": {
+        "question": "Canada's economy includes three main types of industries: service, manufacturing, and natural resources industries.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correctIndex": 0,
+        "explanation": "This is true - these are the three main types of industries described in Canada's economy.",
+        "source": {
+          "guide": "Discover Canada",
+          "language": "en",
+          "chapter": "Canada's Economy",
+          "section": "Canada's Economy Includes Three Main Types of Industries",
+          "sourceUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/canadas-economy.html",
+          "excerpt": "Canada's Economy Includes Three Main Types of Industries: Service industries... Manufacturing industries... Natural resources industries...",
+          "verifiedAt": "2026-09-10",
+          "reviewStatus": "verified"
+        },
+        "optionAnnotations": null
+      },
+      "fr": {
+        "question": "L'économie canadienne comprend trois grands secteurs industriels : les services, le secteur manufacturier et les ressources naturelles.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation": "C'est vrai - ce sont les trois grands secteurs industriels de l'économie canadienne.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "L'économie canadienne",
+          "section": "L'économie canadienne comprend trois grands secteurs industriels",
+          "sourceUrl": "https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/economie-canada.html",
+          "excerpt": "L'économie canadienne comprend trois grands secteurs industriels : le secteur des services..., le secteur manufacturier..., le secteur de l'exploitation des ressources naturelles...",
+          "verifiedAt": "2026-09-10",
+          "reviewStatus": "verified"
+        }
+      },
+      "ar": {
+        "question": "يشمل الاقتصاد الكندي ثلاثة أنواع رئيسية من الصناعات: الخدمات والتصنيع والموارد الطبيعية.",
+        "options": [
+          "صحيح",
+          "خطأ"
+        ],
+        "explanation": "هذا صحيح - هذه هي الأنواع الرئيسية الثلاثة للصناعات في الاقتصاد الكندي."
+      },
+      "testTip": null,
+      "crossReferences": [],
+      "id": "CIT-0751"
+    },
+    {
+      "chapterId": "canadas-economy",
+      "type": "multiple-choice",
+      "tags": [
+        "economy",
+        "trade",
+        "history"
+      ],
+      "difficulty": 2,
+      "topic": null,
+      "subtopic": null,
+      "en": {
+        "question": "In what year did Canada enact free trade with the United States?",
+        "options": [
+          "1988",
+          "1994",
+          "1867",
+          "1931"
+        ],
+        "correctIndex": 0,
+        "explanation": "In 1988, Canada enacted free trade with the United States.",
+        "source": {
+          "guide": "Discover Canada",
+          "language": "en",
+          "chapter": "Canada's Economy",
+          "section": "A Trading Nation",
+          "sourceUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/canadas-economy.html",
+          "excerpt": "In 1988, Canada enacted free trade with the United States.",
+          "verifiedAt": "2026-09-10",
+          "reviewStatus": "verified"
+        },
+        "optionAnnotations": null
+      },
+      "fr": {
+        "question": "En quelle année le Canada a-t-il négocié un accord de libre-échange avec les États-Unis ?",
+        "options": [
+          "1988",
+          "1994",
+          "1867",
+          "1931"
+        ],
+        "correctIndex": 0,
+        "explanation": "En 1988, le Canada a négocié un accord de libre-échange avec les États-Unis.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "L'économie canadienne",
+          "section": "Une nation commerçante",
+          "sourceUrl": "https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/economie-canada.html",
+          "excerpt": "En 1988, le Canada a négocié un accord de libre-échange avec les États-Unis.",
+          "verifiedAt": "2026-09-10",
+          "reviewStatus": "verified"
+        }
+      },
+      "ar": {
+        "question": "في أي عام أبرمت كندا اتفاقية التجارة الحرة مع الولايات المتحدة؟",
+        "options": [
+          "1988",
+          "1994",
+          "1867",
+          "1931"
+        ],
+        "explanation": "في عام 1988، أبرمت كندا اتفاقية التجارة الحرة مع الولايات المتحدة."
+      },
+      "testTip": null,
+      "crossReferences": [],
+      "id": "CIT-0752"
+    },
+    {
+      "chapterId": "canadas-economy",
+      "type": "true-false",
+      "tags": [
+        "economy",
+        "service-industries"
+      ],
+      "difficulty": 2,
+      "topic": null,
+      "subtopic": null,
+      "en": {
+        "question": "Less than half of working Canadians have jobs in service industries.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correctIndex": 1,
+        "explanation": "This is false - more than 75% of working Canadians have jobs in service industries, well over half.",
+        "source": {
+          "guide": "Discover Canada",
+          "language": "en",
+          "chapter": "Canada's Economy",
+          "section": "Service industries",
+          "sourceUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/canadas-economy.html",
+          "excerpt": "Service industries provide thousands of different jobs... More than 75% of working Canadians now have jobs in service industries.",
+          "verifiedAt": "2026-09-10",
+          "reviewStatus": "verified"
+        },
+        "optionAnnotations": null
+      },
+      "fr": {
+        "question": "Moins de la moitié des travailleurs canadiens occupent un emploi dans le secteur des services.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation": "C'est faux - plus de 75 % des travailleurs canadiens occupent un emploi dans le secteur des services, bien plus de la moitié.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "L'économie canadienne",
+          "section": "Le secteur des services",
+          "sourceUrl": "https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/economie-canada.html",
+          "excerpt": "Le secteur des services fournit des milliers d'emplois... Plus de 75 pour 100 des travailleurs canadiens occupent maintenant un emploi dans le secteur des services.",
+          "verifiedAt": "2026-09-10",
+          "reviewStatus": "verified"
+        }
+      },
+      "ar": {
+        "question": "أقل من نصف العاملين الكنديين يعملون في قطاع الخدمات.",
+        "options": [
+          "صحيح",
+          "خطأ"
+        ],
+        "explanation": "هذا خطأ - أكثر من 75% من العاملين الكنديين يعملون في قطاع الخدمات، أي أكثر من النصف بكثير."
+      },
+      "testTip": null,
+      "crossReferences": [],
+      "id": "CIT-0753"
+    },
+    {
+      "chapterId": "canadas-economy",
+      "type": "true-false",
+      "tags": [
+        "economy",
+        "natural-resources"
+      ],
+      "difficulty": 2,
+      "topic": null,
+      "subtopic": null,
+      "en": {
+        "question": "Natural resources industries include forestry, fishing, agriculture, mining and energy.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correctIndex": 0,
+        "explanation": "This is true - these are the natural resources industries described as playing an important part in Canada's history and development.",
+        "source": {
+          "guide": "Discover Canada",
+          "language": "en",
+          "chapter": "Canada's Economy",
+          "section": "Natural resources industries",
+          "sourceUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/canadas-economy.html",
+          "excerpt": "Natural resources industries include forestry, fishing, agriculture, mining and energy. These industries have played an important part in the country's history and development.",
+          "verifiedAt": "2026-09-10",
+          "reviewStatus": "verified"
+        },
+        "optionAnnotations": null
+      },
+      "fr": {
+        "question": "Le secteur des ressources naturelles comprend la foresterie, la pêche, l'agriculture, l'exploitation minière et l'énergie.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation": "C'est vrai - ce sont les industries des ressources naturelles qui ont joué un rôle important dans l'histoire et le développement du Canada.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "L'économie canadienne",
+          "section": "Le secteur de l'exploitation des ressources naturelles",
+          "sourceUrl": "https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/economie-canada.html",
+          "excerpt": "Le secteur de l'exploitation des ressources naturelles comprend la foresterie, la pêche, l'agriculture, l'exploitation minière et l'énergie. Ces industries ont joué un rôle important dans l'histoire et le développement du Canada.",
+          "verifiedAt": "2026-09-10",
+          "reviewStatus": "verified"
+        }
+      },
+      "ar": {
+        "question": "تشمل صناعات الموارد الطبيعية الحراجة وصيد الأسماك والزراعة والتعدين والطاقة.",
+        "options": [
+          "صحيح",
+          "خطأ"
+        ],
+        "explanation": "هذا صحيح - هذه هي صناعات الموارد الطبيعية التي لعبت دورًا مهمًا في تاريخ كندا وتطورها."
+      },
+      "testTip": null,
+      "crossReferences": [],
+      "id": "CIT-0754"
+    },
+    {
+      "chapterId": "canadas-economy",
+      "type": "multiple-choice",
+      "tags": [
+        "economy",
+        "trade"
+      ],
+      "difficulty": 2,
+      "topic": null,
+      "subtopic": null,
+      "en": {
+        "question": "Over three-quarters of Canada's exports are destined for which country?",
+        "options": [
+          "The United States",
+          "Japan",
+          "Germany",
+          "Brazil"
+        ],
+        "correctIndex": 0,
+        "explanation": "Over three-quarters of Canadian exports are destined for the United States - the two countries are each other's largest trading partner.",
+        "source": {
+          "guide": "Discover Canada",
+          "language": "en",
+          "chapter": "Canada's Economy",
+          "section": "Canada-United States Trade",
+          "sourceUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/canadas-economy.html",
+          "excerpt": "Canada enjoys close relations with the United States and each is the other's largest trading partner. Over three-quarters of Canadian exports are destined for the United States.",
+          "verifiedAt": "2026-09-10",
+          "reviewStatus": "verified"
+        },
+        "optionAnnotations": null
+      },
+      "fr": {
+        "question": "Plus des trois quarts des exportations canadiennes sont destinées à quel pays ?",
+        "options": [
+          "Les États-Unis",
+          "Le Japon",
+          "L'Allemagne",
+          "Le Brésil"
+        ],
+        "correctIndex": 0,
+        "explanation": "Plus des trois quarts des exportations canadiennes sont destinées aux États-Unis - les deux pays sont le plus important partenaire commercial l'un de l'autre.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "L'économie canadienne",
+          "section": "Le commerce Canada–États-Unis",
+          "sourceUrl": "https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/economie-canada.html",
+          "excerpt": "Le Canada entretient des liens étroits avec les États-Unis, et chacun des deux pays est le plus important partenaire commercial de l'autre. Plus des trois quarts des exportations canadiennes sont destinées aux États-Unis.",
+          "verifiedAt": "2026-09-10",
+          "reviewStatus": "verified"
+        }
+      },
+      "ar": {
+        "question": "أكثر من ثلاثة أرباع صادرات كندا تذهب إلى أي بلد؟",
+        "options": [
+          "الولايات المتحدة",
+          "اليابان",
+          "ألمانيا",
+          "البرازيل"
+        ],
+        "explanation": "أكثر من ثلاثة أرباع الصادرات الكندية تذهب إلى الولايات المتحدة - والبلدان هما أكبر شريك تجاري لكل منهما للآخر."
+      },
+      "testTip": null,
+      "crossReferences": [],
+      "id": "CIT-0755"
+    },
+    {
+      "chapterId": "canadas-economy",
+      "type": "true-false",
+      "tags": [
+        "economy",
+        "trade",
+        "canada-us"
+      ],
+      "difficulty": 2,
+      "topic": null,
+      "subtopic": null,
+      "en": {
+        "question": "The Canada-United States border is traditionally known as \"the world's longest undefended border.\"",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correctIndex": 0,
+        "explanation": "This is true - millions of Canadians and Americans cross this border safely every year.",
+        "source": {
+          "guide": "Discover Canada",
+          "language": "en",
+          "chapter": "Canada's Economy",
+          "section": "Canada-United States Trade",
+          "sourceUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/canadas-economy.html",
+          "excerpt": "Millions of Canadians and Americans cross every year in safety what is traditionally known as \"the world's longest undefended border.\"",
+          "verifiedAt": "2026-09-10",
+          "reviewStatus": "verified"
+        },
+        "optionAnnotations": null
+      },
+      "fr": {
+        "question": "La frontière entre le Canada et les États-Unis est traditionnellement appelée « la plus longue frontière non défendue du monde ».",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation": "C'est vrai - des millions de Canadiens et d'Américains traversent cette frontière en toute sécurité chaque année.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "L'économie canadienne",
+          "section": "Le commerce Canada–États-Unis",
+          "sourceUrl": "https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/economie-canada.html",
+          "excerpt": "Des millions de Canadiens et d'Américains traversent chaque année en toute sécurité ce qu'on appelle couramment « la plus longue frontière non défendue du monde ».",
+          "verifiedAt": "2026-09-10",
+          "reviewStatus": "verified"
+        }
+      },
+      "ar": {
+        "question": "تُعرف الحدود بين كندا والولايات المتحدة تقليديًا بـ«أطول حدود غير محصنة في العالم».",
+        "options": [
+          "صحيح",
+          "خطأ"
+        ],
+        "explanation": "هذا صحيح - يعبر ملايين الكنديين والأمريكيين هذه الحدود بأمان كل عام."
+      },
+      "testTip": null,
+      "crossReferences": [],
+      "id": "CIT-0756"
+    },
+    {
+      "chapterId": "canadas-economy",
+      "type": "true-false",
+      "tags": [
+        "economy",
+        "canada-us",
+        "symbols"
+      ],
+      "difficulty": 3,
+      "topic": null,
+      "subtopic": null,
+      "en": {
+        "question": "The Peace Arch at Blaine, Washington symbolizes Canada and the United States' close ties and common interests.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correctIndex": 0,
+        "explanation": "This is true - the Peace Arch is inscribed with words symbolizing the close ties between the two countries.",
+        "source": {
+          "guide": "Discover Canada",
+          "language": "en",
+          "chapter": "Canada's Economy",
+          "section": "Canada-United States Trade",
+          "sourceUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/canadas-economy.html",
+          "excerpt": "At Blaine in the State of Washington, the Peace Arch, inscribed with the words \"children of a common mother\" and \"brethren dwelling together in unity,\" symbolizes our close ties and common interests.",
+          "verifiedAt": "2026-09-10",
+          "reviewStatus": "verified"
+        },
+        "optionAnnotations": null
+      },
+      "fr": {
+        "question": "L'Arche de la paix à Blaine, dans l'État de Washington, symbolise les liens étroits et les intérêts communs du Canada et des États-Unis.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation": "C'est vrai - l'Arche de la paix porte une inscription symbolisant les liens étroits entre les deux pays.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "L'économie canadienne",
+          "section": "Le commerce Canada–États-Unis",
+          "sourceUrl": "https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/economie-canada.html",
+          "excerpt": "À Blaine, dans l'État de Washington, l'Arche de la paix, sur laquelle on peut lire « children of a common mother » et « brethren dwelling together in unity », symbolise nos liens étroits et nos intérêts communs.",
+          "verifiedAt": "2026-09-10",
+          "reviewStatus": "verified"
+        }
+      },
+      "ar": {
+        "question": "ترمز قوس السلام في بلين بولاية واشنطن إلى العلاقات الوثيقة والمصالح المشتركة بين كندا والولايات المتحدة.",
+        "options": [
+          "صحيح",
+          "خطأ"
+        ],
+        "explanation": "هذا صحيح - نُقشت على قوس السلام عبارات ترمز إلى العلاقات الوثيقة بين البلدين."
+      },
+      "testTip": null,
+      "crossReferences": [],
+      "id": "CIT-0757"
+    },
+    {
+      "chapterId": "canadas-economy",
+      "type": "true-false",
+      "tags": [
+        "economy",
+        "trade"
+      ],
+      "difficulty": 2,
+      "topic": null,
+      "subtopic": null,
+      "en": {
+        "question": "The United States is Canada's largest trading partner.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correctIndex": 0,
+        "explanation": "This is true - Canada and the United States are each other's largest trading partner.",
+        "source": {
+          "guide": "Discover Canada",
+          "language": "en",
+          "chapter": "Canada's Economy",
+          "section": "Canada-United States Trade",
+          "sourceUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/canadas-economy.html",
+          "excerpt": "Canada enjoys close relations with the United States and each is the other's largest trading partner. Over three-quarters of Canadian exports are destined for the United States.",
+          "verifiedAt": "2026-09-10",
+          "reviewStatus": "verified"
+        },
+        "optionAnnotations": null
+      },
+      "fr": {
+        "question": "Les États-Unis sont le plus important partenaire commercial du Canada.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation": "C'est vrai - le Canada et les États-Unis sont le plus important partenaire commercial l'un de l'autre.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "L'économie canadienne",
+          "section": "Le commerce Canada–États-Unis",
+          "sourceUrl": "https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/economie-canada.html",
+          "excerpt": "Le Canada entretient des liens étroits avec les États-Unis, et chacun des deux pays est le plus important partenaire commercial de l'autre. Plus des trois quarts des exportations canadiennes sont destinées aux États-Unis.",
+          "verifiedAt": "2026-09-10",
+          "reviewStatus": "verified"
+        }
+      },
+      "ar": {
+        "question": "الولايات المتحدة هي أكبر شريك تجاري لكندا.",
+        "options": [
+          "صحيح",
+          "خطأ"
+        ],
+        "explanation": "هذا صحيح - كندا والولايات المتحدة هما أكبر شريك تجاري لكل منهما للأخرى."
+      },
+      "testTip": null,
+      "crossReferences": [],
+      "id": "CIT-0758"
+    },
+    {
+      "chapterId": "canadas-economy",
+      "type": "multiple-choice",
+      "tags": [
+        "economy",
+        "industries"
+      ],
+      "difficulty": 1,
+      "topic": null,
+      "subtopic": null,
+      "en": {
+        "question": "What are the three main types of industries in Canada's economy?",
+        "options": [
+          "Service, manufacturing, and natural resources industries",
+          "Agriculture, mining, and forestry industries",
+          "Public, private, and non-profit industries",
+          "Import, export, and domestic industries"
+        ],
+        "correctIndex": 0,
+        "explanation": "Canada's economy includes three main types of industries: service industries, manufacturing industries, and natural resources industries.",
+        "source": {
+          "guide": "Discover Canada",
+          "language": "en",
+          "chapter": "Canada's Economy",
+          "section": "Canada's Economy Includes Three Main Types of Industries",
+          "sourceUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/canadas-economy.html",
+          "excerpt": "Canada's Economy Includes Three Main Types of Industries: Service industries... Manufacturing industries... Natural resources industries...",
+          "verifiedAt": "2026-09-10",
+          "reviewStatus": "verified"
+        },
+        "optionAnnotations": null
+      },
+      "fr": {
+        "question": "Quels sont les trois grands secteurs industriels de l'économie canadienne ?",
+        "options": [
+          "Les secteurs des services, manufacturier et des ressources naturelles",
+          "Les secteurs de l'agriculture, des mines et de la foresterie",
+          "Les secteurs public, privé et sans but lucratif",
+          "Les secteurs de l'importation, de l'exportation et domestique"
+        ],
+        "correctIndex": 0,
+        "explanation": "L'économie canadienne comprend trois grands secteurs industriels : le secteur des services, le secteur manufacturier et le secteur de l'exploitation des ressources naturelles.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "L'économie canadienne",
+          "section": "L'économie canadienne comprend trois grands secteurs industriels",
+          "sourceUrl": "https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/economie-canada.html",
+          "excerpt": "L'économie canadienne comprend trois grands secteurs industriels : le secteur des services..., le secteur manufacturier..., le secteur de l'exploitation des ressources naturelles...",
+          "verifiedAt": "2026-09-10",
+          "reviewStatus": "verified"
+        }
+      },
+      "ar": {
+        "question": "ما هي الأنواع الرئيسية الثلاثة للصناعات في الاقتصاد الكندي؟",
+        "options": [
+          "صناعات الخدمات والتصنيع والموارد الطبيعية",
+          "صناعات الزراعة والتعدين والحراجة",
+          "الصناعات العامة والخاصة وغير الربحية",
+          "صناعات الاستيراد والتصدير والصناعات المحلية"
+        ],
+        "explanation": "يشمل الاقتصاد الكندي ثلاثة أنواع رئيسية من الصناعات: صناعات الخدمات، والصناعات التحويلية (التصنيع)، وصناعات الموارد الطبيعية."
+      },
+      "testTip": null,
+      "crossReferences": [],
+      "id": "CIT-0759"
+    },
+    {
+      "chapterId": "canadas-economy",
+      "type": "multiple-choice",
+      "tags": [
+        "economy",
+        "trade"
+      ],
+      "difficulty": 2,
+      "topic": null,
+      "subtopic": null,
+      "en": {
+        "question": "What country is Canada's largest trading partner?",
+        "options": [
+          "The United States",
+          "The United Kingdom",
+          "China",
+          "Mexico"
+        ],
+        "correctIndex": 0,
+        "explanation": "Canada and the United States are each other's largest trading partner, with over three-quarters of Canadian exports destined for the United States.",
+        "source": {
+          "guide": "Discover Canada",
+          "language": "en",
+          "chapter": "Canada's Economy",
+          "section": "Canada-United States Trade",
+          "sourceUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/canadas-economy.html",
+          "excerpt": "Canada enjoys close relations with the United States and each is the other's largest trading partner. Over three-quarters of Canadian exports are destined for the United States.",
+          "verifiedAt": "2026-09-10",
+          "reviewStatus": "verified"
+        },
+        "optionAnnotations": null
+      },
+      "fr": {
+        "question": "Quel pays est le plus important partenaire commercial du Canada ?",
+        "options": [
+          "Les États-Unis",
+          "Le Royaume-Uni",
+          "La Chine",
+          "Le Mexique"
+        ],
+        "correctIndex": 0,
+        "explanation": "Le Canada et les États-Unis sont le plus important partenaire commercial l'un de l'autre; plus des trois quarts des exportations canadiennes sont destinées aux États-Unis.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "L'économie canadienne",
+          "section": "Le commerce Canada–États-Unis",
+          "sourceUrl": "https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/economie-canada.html",
+          "excerpt": "Le Canada entretient des liens étroits avec les États-Unis, et chacun des deux pays est le plus important partenaire commercial de l'autre. Plus des trois quarts des exportations canadiennes sont destinées aux États-Unis.",
+          "verifiedAt": "2026-09-10",
+          "reviewStatus": "verified"
+        }
+      },
+      "ar": {
+        "question": "ما هو البلد الذي يُعد أكبر شريك تجاري لكندا؟",
+        "options": [
+          "الولايات المتحدة",
+          "المملكة المتحدة",
+          "الصين",
+          "المكسيك"
+        ],
+        "explanation": "كندا والولايات المتحدة هما أكبر شريك تجاري لكل منهما للأخرى، حيث تذهب أكثر من ثلاثة أرباع الصادرات الكندية إلى الولايات المتحدة."
+      },
+      "testTip": null,
+      "crossReferences": [],
+      "id": "CIT-0760"
+    },
+    {
+      "chapterId": "canadas-economy",
+      "type": "multiple-choice",
+      "tags": [
+        "economy",
+        "canada-us",
+        "symbols"
+      ],
+      "difficulty": 3,
+      "topic": null,
+      "subtopic": null,
+      "en": {
+        "question": "What does the Peace Arch at Blaine, Washington symbolize?",
+        "options": [
+          "Canada and the United States' close ties and common interests",
+          "The signing of the 1988 free trade agreement",
+          "Canada's independence from Britain",
+          "The end of the War of 1812"
+        ],
+        "correctIndex": 0,
+        "explanation": "At Blaine in the State of Washington, the Peace Arch, inscribed with the words \"children of a common mother\" and \"brethren dwelling together in unity,\" symbolizes Canada and the United States' close ties and common interests.",
+        "source": {
+          "guide": "Discover Canada",
+          "language": "en",
+          "chapter": "Canada's Economy",
+          "section": "Canada-United States Trade",
+          "sourceUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/canadas-economy.html",
+          "excerpt": "At Blaine in the State of Washington, the Peace Arch, inscribed with the words \"children of a common mother\" and \"brethren dwelling together in unity,\" symbolizes our close ties and common interests.",
+          "verifiedAt": "2026-09-10",
+          "reviewStatus": "verified"
+        },
+        "optionAnnotations": null
+      },
+      "fr": {
+        "question": "Que symbolise l'Arche de la paix à Blaine, dans l'État de Washington ?",
+        "options": [
+          "Les liens étroits et les intérêts communs du Canada et des États-Unis",
+          "La signature de l'accord de libre-échange de 1988",
+          "L'indépendance du Canada envers la Grande-Bretagne",
+          "La fin de la guerre de 1812"
+        ],
+        "correctIndex": 0,
+        "explanation": "À Blaine, dans l'État de Washington, l'Arche de la paix, sur laquelle on peut lire « children of a common mother » et « brethren dwelling together in unity », symbolise les liens étroits et les intérêts communs du Canada et des États-Unis.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "L'économie canadienne",
+          "section": "Le commerce Canada–États-Unis",
+          "sourceUrl": "https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/economie-canada.html",
+          "excerpt": "À Blaine, dans l'État de Washington, l'Arche de la paix, sur laquelle on peut lire « children of a common mother » et « brethren dwelling together in unity », symbolise nos liens étroits et nos intérêts communs.",
+          "verifiedAt": "2026-09-10",
+          "reviewStatus": "verified"
+        }
+      },
+      "ar": {
+        "question": "ماذا ترمز قوس السلام في بلين، بولاية واشنطن؟",
+        "options": [
+          "العلاقات الوثيقة والمصالح المشتركة بين كندا والولايات المتحدة",
+          "توقيع اتفاقية التجارة الحرة لعام 1988",
+          "استقلال كندا عن بريطانيا",
+          "نهاية حرب 1812"
+        ],
+        "explanation": "في بلين بولاية واشنطن، ترمز قوس السلام، المنقوش عليها عبارتا «أبناء أم واحدة» و«إخوة يعيشون معًا في وئام»، إلى العلاقات الوثيقة والمصالح المشتركة بين كندا والولايات المتحدة."
+      },
+      "testTip": null,
+      "crossReferences": [],
+      "id": "CIT-0761"
+    },
+    {
+      "chapterId": "canadas-economy",
+      "type": "multiple-choice",
+      "tags": [],
+      "difficulty": 3,
+      "topic": "economy",
+      "subtopic": "peace_arch",
+      "en": {
+        "question": "What is inscribed on the Peace Arch at Blaine, Washington, symbolizing Canada-US ties?",
+        "options": [
+          "'Children of a common mother' and 'brethren dwelling together in unity'",
+          "'Liberty and Justice for All'",
+          "'From Sea to Sea'",
+          "'Lest We Forget'"
+        ],
+        "correctIndex": 0,
+        "explanation": "Page 92: 'the Peace Arch, inscribed with the words \"children of a common mother\" and \"brethren dwelling together in unity,\" symbolizes our close ties and common interests.'",
+        "source": {
+          "guide": "Discover Canada",
+          "language": "en",
+          "chapter": "Canada's Economy",
+          "section": "Trade with the United States",
+          "pdfPage": 92,
+          "reviewStatus": "needs-review"
+        },
+        "optionAnnotations": [
+          {
+            "relevance": "CORRECT_ANSWER",
+            "explanation": "Page 92: 'the Peace Arch, inscribed with the words \"children of a common mother\" and \"brethren dwelling together in unity,\" symbolizes our close ties and common interests.'"
+          },
+          {
+            "relevance": "COMMON_MISCONCEPTION",
+            "explanation": "That's the American Pledge of Allegiance, not the Peace Arch inscription."
+          },
+          {
+            "relevance": "RELATED_FACT",
+            "explanation": "That's Canada's national motto in Latin (A Mari Usque Ad Mare, p. 80), not the Peace Arch."
+          },
+          {
+            "relevance": "RELATED_FACT",
+            "explanation": "'Lest We Forget' is a Remembrance Day phrase (p. 41), not the Peace Arch."
+          }
+        ]
+      },
+      "fr": null,
+      "ar": null,
+      "testTip": null,
+      "crossReferences": [],
+      "id": "CIT-0762"
+    },
+    {
+      "chapterId": "canadas-economy",
+      "type": "multiple-choice",
+      "tags": [
+        "economy",
+        "trade",
+        "canada-us"
+      ],
+      "difficulty": 2,
+      "topic": null,
+      "subtopic": null,
+      "en": {
+        "question": "What is the Canada-United States border traditionally known as?",
+        "options": [
+          "The world's longest undefended border",
+          "The world's busiest trading border",
+          "The peace and friendship line",
+          "The transcontinental boundary"
+        ],
+        "correctIndex": 0,
+        "explanation": "Millions of Canadians and Americans cross safely every year what is traditionally known as \"the world's longest undefended border.\"",
+        "source": {
+          "guide": "Discover Canada",
+          "language": "en",
+          "chapter": "Canada's Economy",
+          "section": "Canada-United States Trade",
+          "sourceUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/canadas-economy.html",
+          "excerpt": "Millions of Canadians and Americans cross every year in safety what is traditionally known as \"the world's longest undefended border.\"",
+          "verifiedAt": "2026-09-10",
+          "reviewStatus": "verified"
+        },
+        "optionAnnotations": null
+      },
+      "fr": {
+        "question": "Comment appelle-t-on traditionnellement la frontière entre le Canada et les États-Unis ?",
+        "options": [
+          "La plus longue frontière non défendue du monde",
+          "La frontière commerciale la plus achalandée du monde",
+          "La ligne de paix et d'amitié",
+          "La frontière transcontinentale"
+        ],
+        "correctIndex": 0,
+        "explanation": "Des millions de Canadiens et d'Américains traversent chaque année en toute sécurité ce qu'on appelle couramment « la plus longue frontière non défendue du monde ».",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "L'économie canadienne",
+          "section": "Le commerce Canada–États-Unis",
+          "sourceUrl": "https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/economie-canada.html",
+          "excerpt": "Des millions de Canadiens et d'Américains traversent chaque année en toute sécurité ce qu'on appelle couramment « la plus longue frontière non défendue du monde ».",
+          "verifiedAt": "2026-09-10",
+          "reviewStatus": "verified"
+        }
+      },
+      "ar": {
+        "question": "ماذا تُعرف الحدود بين كندا والولايات المتحدة تقليديًا؟",
+        "options": [
+          "أطول حدود غير محصنة في العالم",
+          "أكثر الحدود التجارية ازدحامًا في العالم",
+          "خط السلام والصداقة",
+          "الحدود العابرة للقارات"
+        ],
+        "explanation": "يعبر ملايين الكنديين والأمريكيين بأمان كل عام ما يُعرف تقليديًا بـ«أطول حدود غير محصنة في العالم»."
+      },
+      "testTip": null,
+      "crossReferences": [],
+      "id": "CIT-0763"
+    },
+    {
+      "chapterId": "canadas-economy",
+      "type": "multiple-choice",
+      "tags": [],
+      "difficulty": 1,
+      "topic": "economy",
+      "subtopic": "undefended_border",
+      "en": {
+        "question": "What is traditionally called 'the world's longest undefended border'?",
+        "options": [
+          "The Canada-USA border",
+          "The Canada-Russia border",
+          "The Canada-UK border",
+          "The US-Mexico border"
+        ],
+        "correctIndex": 0,
+        "explanation": "Page 92: 'Millions of Canadians and Americans cross every year and in safety what is traditionally known as \"the world's longest undefended border.\"'",
+        "source": {
+          "guide": "Discover Canada",
+          "language": "en",
+          "chapter": "Canada's Economy",
+          "section": "Trade with the United States",
+          "pdfPage": 92,
+          "reviewStatus": "needs-review"
+        },
+        "optionAnnotations": [
+          {
+            "relevance": "CORRECT_ANSWER",
+            "explanation": "Page 92: 'Millions of Canadians and Americans cross every year and in safety what is traditionally known as \"the world's longest undefended border.\"'"
+          },
+          {
+            "relevance": "COMMON_MISCONCEPTION",
+            "explanation": "Canada and Russia don't share a land border."
+          },
+          {
+            "relevance": "COMMON_MISCONCEPTION",
+            "explanation": "Canada and the UK don't share a border at all."
+          },
+          {
+            "relevance": "WRONG_CATEGORY",
+            "explanation": "The US-Mexico border is a heavily-policed border, not the 'undefended' one Discover Canada describes."
+          }
+        ]
+      },
+      "fr": null,
+      "ar": null,
+      "testTip": null,
+      "crossReferences": [],
+      "id": "CIT-0764"
+    },
+    {
+      "chapterId": "canadas-economy",
+      "type": "multiple-choice",
+      "tags": [
+        "economy",
+        "service-industries"
+      ],
+      "difficulty": 2,
+      "topic": null,
+      "subtopic": null,
+      "en": {
+        "question": "What percentage of working Canadians have jobs in service industries?",
+        "options": [
+          "More than 75%",
+          "More than 50%, but less than 60%",
+          "About 25%",
+          "Less than 10%"
+        ],
+        "correctIndex": 0,
+        "explanation": "More than 75% of working Canadians now have jobs in service industries, which include transportation, education, health care, banking, and tourism, among others.",
+        "source": {
+          "guide": "Discover Canada",
+          "language": "en",
+          "chapter": "Canada's Economy",
+          "section": "Service industries",
+          "sourceUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/canadas-economy.html",
+          "excerpt": "Service industries provide thousands of different jobs... More than 75% of working Canadians now have jobs in service industries.",
+          "verifiedAt": "2026-09-10",
+          "reviewStatus": "verified"
+        },
+        "optionAnnotations": null
+      },
+      "fr": {
+        "question": "Quel pourcentage des travailleurs canadiens occupe un emploi dans le secteur des services ?",
+        "options": [
+          "Plus de 75 %",
+          "Plus de 50 %, mais moins de 60 %",
+          "Environ 25 %",
+          "Moins de 10 %"
+        ],
+        "correctIndex": 0,
+        "explanation": "Plus de 75 % des travailleurs canadiens occupent maintenant un emploi dans le secteur des services, qui comprend le transport, l'éducation, les soins de santé, les opérations bancaires et le tourisme, entre autres.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "L'économie canadienne",
+          "section": "Le secteur des services",
+          "sourceUrl": "https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/economie-canada.html",
+          "excerpt": "Le secteur des services fournit des milliers d'emplois... Plus de 75 pour 100 des travailleurs canadiens occupent maintenant un emploi dans le secteur des services.",
+          "verifiedAt": "2026-09-10",
+          "reviewStatus": "verified"
+        }
+      },
+      "ar": {
+        "question": "ما هي نسبة العاملين الكنديين الذين يعملون في قطاع الخدمات؟",
+        "options": [
+          "أكثر من 75%",
+          "أكثر من 50% لكن أقل من 60%",
+          "حوالي 25%",
+          "أقل من 10%"
+        ],
+        "explanation": "أكثر من 75% من العاملين الكنديين يعملون الآن في قطاع الخدمات، الذي يشمل النقل والتعليم والرعاية الصحية والخدمات المصرفية والسياحة، من بين مجالات أخرى."
+      },
+      "testTip": null,
+      "crossReferences": [],
+      "id": "CIT-0765"
+    },
+    {
+      "chapterId": "canadas-economy",
+      "type": "multiple-choice",
+      "tags": [
+        "chapter_economy",
+        "dates"
+      ],
+      "difficulty": 2,
+      "topic": "economy",
+      "subtopic": "nafta",
+      "en": {
+        "question": "When did Canada, the US, and Mexico become partners in NAFTA?",
+        "options": [
+          "1988 (Canada-US free trade), then 1994 (Mexico joined to create NAFTA)",
+          "1980, with all three countries at once",
+          "1965, alongside the new Canadian flag",
+          "2006, in a Conservative-government agreement"
+        ],
+        "correctIndex": 0,
+        "explanation": "Page 90: 'In 1988, Canada enacted free trade with the United States. Mexico became a partner in 1994 in the broader North American Free Trade Agreement (NAFTA).'",
+        "source": {
+          "guide": "Discover Canada",
+          "language": "en",
+          "chapter": "Canada's Economy",
+          "section": "A Trading Nation",
+          "pdfPage": 90,
+          "reviewStatus": "needs-review"
+        },
+        "optionAnnotations": [
+          {
+            "relevance": "CORRECT_ANSWER",
+            "explanation": "Page 90: 'In 1988, Canada enacted free trade with the United States. Mexico became a partner in 1994 in the broader North American Free Trade Agreement (NAFTA).'"
+          },
+          {
+            "relevance": "PLAUSIBLE_DISTRACTOR",
+            "explanation": "Wrong year and wrong sequence. Canada-US came first in 1988; Mexico joined six years later."
+          },
+          {
+            "relevance": "RELATED_FACT",
+            "explanation": "1965 is the flag year (p. 79), unrelated to NAFTA. NAFTA is from the late 20th century."
+          },
+          {
+            "relevance": "PLAUSIBLE_DISTRACTOR",
+            "explanation": "Wrong era. NAFTA dates from 1994."
+          }
+        ]
+      },
+      "fr": null,
+      "ar": null,
+      "testTip": null,
+      "crossReferences": [],
+      "id": "CIT-0766"
+    },
+    {
+      "chapterId": "canadas-economy",
+      "type": "multiple-choice",
+      "tags": [],
+      "difficulty": 2,
+      "topic": "economy",
+      "subtopic": "manufacturing_examples",
+      "en": {
+        "question": "Which industries produce manufactured products in Canada?",
+        "options": [
+          "Paper, high-tech equipment, aerospace, automobiles, machinery, food, clothing",
+          "Education and health care",
+          "Forestry, fishing, mining, agriculture, energy",
+          "Banking and tourism"
+        ],
+        "correctIndex": 0,
+        "explanation": "Page 91 lists examples: 'paper, high technology equipment, aerospace technology, automobiles, machinery, food, clothing and many other goods.'",
+        "source": {
+          "guide": "Discover Canada",
+          "language": "en",
+          "chapter": "Canada's Economy",
+          "section": "Three Main Types of Industries",
+          "pdfPage": 91,
+          "reviewStatus": "needs-review"
+        },
+        "optionAnnotations": [
+          {
+            "relevance": "CORRECT_ANSWER",
+            "explanation": "Page 91 lists examples: 'paper, high technology equipment, aerospace technology, automobiles, machinery, food, clothing and many other goods.'"
+          },
+          {
+            "relevance": "RELATED_FACT",
+            "explanation": "Those are service industries (p. 91), not manufacturing."
+          },
+          {
+            "relevance": "RELATED_FACT",
+            "explanation": "Those are natural resources industries (p. 91)."
+          },
+          {
+            "relevance": "RELATED_FACT",
+            "explanation": "Those are services (p. 91), not manufacturing."
+          }
+        ]
+      },
+      "fr": null,
+      "ar": null,
+      "testTip": null,
+      "crossReferences": [],
+      "id": "CIT-0767"
+    },
+    {
+      "chapterId": "canadas-economy",
+      "type": "multiple-choice",
+      "tags": [
+        "economy",
+        "natural-resources"
+      ],
+      "difficulty": 2,
+      "topic": null,
+      "subtopic": null,
+      "en": {
+        "question": "Which of the following is part of Canada's natural resources industries?",
+        "options": [
+          "Forestry, fishing, agriculture, mining and energy",
+          "Banking, retail and tourism",
+          "Automobile and aerospace manufacturing",
+          "Transportation and communications"
+        ],
+        "correctIndex": 0,
+        "explanation": "Natural resources industries include forestry, fishing, agriculture, mining and energy. These industries have played an important part in the country's history and development.",
+        "source": {
+          "guide": "Discover Canada",
+          "language": "en",
+          "chapter": "Canada's Economy",
+          "section": "Natural resources industries",
+          "sourceUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/canadas-economy.html",
+          "excerpt": "Natural resources industries include forestry, fishing, agriculture, mining and energy. These industries have played an important part in the country's history and development.",
+          "verifiedAt": "2026-09-10",
+          "reviewStatus": "verified"
+        },
+        "optionAnnotations": null
+      },
+      "fr": {
+        "question": "Laquelle des réponses suivantes fait partie du secteur des ressources naturelles du Canada ?",
+        "options": [
+          "La foresterie, la pêche, l'agriculture, l'exploitation minière et l'énergie",
+          "Les opérations bancaires, la vente au détail et le tourisme",
+          "La fabrication d'automobiles et l'aérospatiale",
+          "Le transport et les communications"
+        ],
+        "correctIndex": 0,
+        "explanation": "Le secteur de l'exploitation des ressources naturelles comprend la foresterie, la pêche, l'agriculture, l'exploitation minière et l'énergie. Ces industries ont joué un rôle important dans l'histoire et le développement du Canada.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "L'économie canadienne",
+          "section": "Le secteur de l'exploitation des ressources naturelles",
+          "sourceUrl": "https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/economie-canada.html",
+          "excerpt": "Le secteur de l'exploitation des ressources naturelles comprend la foresterie, la pêche, l'agriculture, l'exploitation minière et l'énergie. Ces industries ont joué un rôle important dans l'histoire et le développement du Canada.",
+          "verifiedAt": "2026-09-10",
+          "reviewStatus": "verified"
+        }
+      },
+      "ar": {
+        "question": "أي مما يلي يُعد جزءًا من صناعات الموارد الطبيعية في كندا؟",
+        "options": [
+          "الحراجة وصيد الأسماك والزراعة والتعدين والطاقة",
+          "الخدمات المصرفية والبيع بالتجزئة والسياحة",
+          "تصنيع السيارات والصناعات الفضائية",
+          "النقل والاتصالات"
+        ],
+        "explanation": "تشمل صناعات الموارد الطبيعية الحراجة وصيد الأسماك والزراعة والتعدين والطاقة. لعبت هذه الصناعات دورًا مهمًا في تاريخ البلاد وتطورها."
+      },
+      "testTip": null,
+      "crossReferences": [],
+      "id": "CIT-0768"
+    },
+    {
+      "chapterId": "canadas-economy",
+      "type": "multiple-choice",
+      "tags": [],
+      "difficulty": 1,
+      "topic": "economy",
+      "subtopic": "natural_resources_examples",
+      "en": {
+        "question": "Which of these is a natural resources industry?",
+        "options": [
+          "Forestry",
+          "Education",
+          "Aerospace technology",
+          "Banking"
+        ],
+        "correctIndex": 0,
+        "explanation": "Page 91: natural resources industries include 'forestry, fishing, agriculture, mining and energy.'",
+        "source": {
+          "guide": "Discover Canada",
+          "language": "en",
+          "chapter": "Canada's Economy",
+          "section": "Three Main Types of Industries",
+          "pdfPage": 91,
+          "reviewStatus": "needs-review"
+        },
+        "optionAnnotations": [
+          {
+            "relevance": "CORRECT_ANSWER",
+            "explanation": "Page 91: natural resources industries include 'forestry, fishing, agriculture, mining and energy.'"
+          },
+          {
+            "relevance": "RELATED_FACT",
+            "explanation": "Education is a service industry (p. 91)."
+          },
+          {
+            "relevance": "RELATED_FACT",
+            "explanation": "Aerospace is manufacturing (p. 91)."
+          },
+          {
+            "relevance": "RELATED_FACT",
+            "explanation": "Banking is a service industry (p. 91)."
+          }
+        ]
+      },
+      "fr": null,
+      "ar": null,
+      "testTip": null,
+      "crossReferences": [],
+      "id": "CIT-0769"
+    },
+    {
+      "chapterId": "canadas-economy",
+      "type": "multiple-choice",
+      "tags": [],
+      "difficulty": 2,
+      "topic": "economy",
+      "subtopic": "service_examples",
+      "en": {
+        "question": "Which of these is an example of a service industry in Canada?",
+        "options": [
+          "Banking",
+          "Steel manufacturing",
+          "Forestry",
+          "Mining"
+        ],
+        "correctIndex": 0,
+        "explanation": "Page 91 lists service industries including 'transportation, education, health care, construction, banking, communications, retail services, tourism and government.'",
+        "source": {
+          "guide": "Discover Canada",
+          "language": "en",
+          "chapter": "Canada's Economy",
+          "section": "Three Main Types of Industries",
+          "pdfPage": 91,
+          "reviewStatus": "needs-review"
+        },
+        "optionAnnotations": [
+          {
+            "relevance": "CORRECT_ANSWER",
+            "explanation": "Page 91 lists service industries including 'transportation, education, health care, construction, banking, communications, retail services, tourism and government.'"
+          },
+          {
+            "relevance": "RELATED_FACT",
+            "explanation": "Steel is manufacturing (p. 91), one of the three industry types — but not a service industry."
+          },
+          {
+            "relevance": "RELATED_FACT",
+            "explanation": "Forestry is a natural resources industry (p. 91)."
+          },
+          {
+            "relevance": "RELATED_FACT",
+            "explanation": "Mining is a natural resources industry (p. 91)."
+          }
+        ]
+      },
+      "fr": null,
+      "ar": null,
+      "testTip": null,
+      "crossReferences": [],
+      "id": "CIT-0770"
+    }
+  ]
+}

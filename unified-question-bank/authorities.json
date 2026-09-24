@@ -1,0 +1,57 @@
+{
+  "chapterId": "authorities",
+  "chapterTitle": "Authorities",
+  "memoryBox": {
+    "en": {
+      "title": "Legal Basis of Citizenship",
+      "mnemonic": "The Citizenship Act and Citizenship Regulations are the legal backbone behind every requirement in this guide.",
+      "keyFactsChecklist": [
+        "Citizenship Act is the legal basis",
+        "Citizenship Regulations define test subject areas"
+      ]
+    }
+  },
+  "questionCount": 1,
+  "questions": [
+    {
+      "chapterId": "authorities",
+      "type": "true-false",
+      "tags": [],
+      "difficulty": 3,
+      "topic": "rights",
+      "subtopic": "section_5_act",
+      "en": {
+        "question": "The legal basis for granting Canadian citizenship is found in Section 5 of the Citizenship Act.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correctIndex": 0,
+        "explanation": "Section 5 of the Citizenship Act provides the legal basis for granting Canadian citizenship.",
+        "source": {
+          "guide": "Discover Canada",
+          "language": "en",
+          "chapter": "Authorities",
+          "section": "Citizenship Act Section 5",
+          "pdfPage": 122,
+          "reviewStatus": "needs-review"
+        },
+        "optionAnnotations": [
+          {
+            "relevance": "CORRECT_ANSWER",
+            "explanation": "Section 5 of the Citizenship Act provides the legal basis for granting Canadian citizenship."
+          },
+          {
+            "relevance": "CORRECT_ANSWER",
+            "explanation": "This statement is accurate, so 'False' is incorrect. Section 5 of the Citizenship Act provides the legal basis for granting Canadian citizenship."
+          }
+        ]
+      },
+      "fr": null,
+      "ar": null,
+      "testTip": null,
+      "crossReferences": [],
+      "id": "CIT-0925"
+    }
+  ]
+}
