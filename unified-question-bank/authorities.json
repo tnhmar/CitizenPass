@@ -1,0 +1,81 @@
+{
+  "chapterId": "authorities",
+  "chapterTitle": "Authorities",
+  "memoryBox": {
+    "en": {
+      "title": "Legal Basis of Citizenship",
+      "mnemonic": "Citizenship Act, Section 5 = legal basis.",
+      "keyFactsChecklist": [
+        "Citizenship Act, Section 5"
+      ]
+    }
+  },
+  "questionCount": 1,
+  "questions": [
+    {
+      "chapterId": "authorities",
+      "type": "true-false",
+      "tags": [],
+      "difficulty": 3,
+      "topic": "rights",
+      "subtopic": "section_5_act",
+      "en": {
+        "question": "The legal basis for granting Canadian citizenship is found in Section 5 of the Citizenship Act.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correctIndex": 0,
+        "explanation": "Section 5 of the Citizenship Act provides the legal basis for granting Canadian citizenship.",
+        "source": {
+          "guide": "Discover Canada",
+          "language": "en",
+          "chapter": "Authorities",
+          "section": "Citizenship Act Section 5",
+          "pdfPage": 122,
+          "reviewStatus": "verified"
+        },
+        "optionAnnotations": [
+          {
+            "relevance": "CORRECT_ANSWER",
+            "explanation": "Section 5 of the Citizenship Act provides the legal basis for granting Canadian citizenship."
+          },
+          {
+            "relevance": "CORRECT_ANSWER",
+            "explanation": "This statement is accurate, so 'False' is incorrect. Section 5 of the Citizenship Act provides the legal basis for granting Canadian citizenship."
+          }
+        ]
+      },
+      "fr": {
+        "question": "Fondement juridique art.5 Loi citoyenneté.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation": "Vrai.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Authorities",
+          "section": "La Loi sur la citoyenneté et son Règlement (extraits)",
+          "excerpt": "Article5.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "مادة5.",
+        "options": [
+          "صحيح",
+          "خطأ"
+        ],
+        "explanation": "صحيح.",
+        "translationProvenance": "machine_translated"
+      },
+      "testTip": null,
+      "crossReferences": [],
+      "id": "CIT-0925"
+    }
+  ]
+}

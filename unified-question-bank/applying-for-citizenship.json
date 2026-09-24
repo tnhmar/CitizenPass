@@ -1,0 +1,321 @@
+{
+  "chapterId": "applying-for-citizenship",
+  "chapterTitle": "Applying for Citizenship",
+  "memoryBox": {
+    "en": {
+      "title": "The Application & Ceremony",
+      "mnemonic": "NO free flights. Test = knowledge + rights/responsibilities. Ceremony: oath, sign, certificate.",
+      "keyFactsChecklist": [
+        "No free flights",
+        "Test purpose",
+        "Ceremony steps",
+        "Officials check eligibility"
+      ]
+    }
+  },
+  "questionCount": 4,
+  "questions": [
+    {
+      "chapterId": "applying-for-citizenship",
+      "type": "true-false",
+      "tags": [],
+      "difficulty": 1,
+      "topic": "rights",
+      "subtopic": "language_classes",
+      "en": {
+        "question": "The Government of Canada offers free flights to take the citizenship test for applicants.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correctIndex": 1,
+        "explanation": "Not provided.",
+        "source": {
+          "guide": "Discover Canada",
+          "language": "en",
+          "chapter": "Applying for Citizenship",
+          "section": "Applying for Citizenship",
+          "pdfPage": 9,
+          "reviewStatus": "verified"
+        },
+        "optionAnnotations": [
+          {
+            "relevance": "PLAUSIBLE_DISTRACTOR",
+            "explanation": "Not provided."
+          },
+          {
+            "relevance": "CORRECT_ANSWER",
+            "explanation": "Not provided."
+          }
+        ]
+      },
+      "fr": {
+        "question": "Vols gratuits.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation": "Faux cours langue.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Applying for Citizenship",
+          "section": "How to Use this Booklet",
+          "excerpt": "Guide gratuit.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "رحلات مجانية.",
+        "options": [
+          "صحيح",
+          "خطأ"
+        ],
+        "explanation": "خطأ دروس.",
+        "translationProvenance": "machine_translated"
+      },
+      "testTip": null,
+      "crossReferences": [],
+      "id": "CIT-0921"
+    },
+    {
+      "chapterId": "applying-for-citizenship",
+      "type": "multiple-choice",
+      "tags": [],
+      "difficulty": 2,
+      "topic": "rights",
+      "subtopic": "ceremony_steps",
+      "en": {
+        "question": "What do new Canadians do at the citizenship ceremony?",
+        "options": [
+          "Take the Oath of Citizenship, sign the oath form, and receive their Canadian Citizenship Certificate",
+          "Vote in their first federal election",
+          "Donate to the Government of Canada",
+          "Renounce all previous citizenship"
+        ],
+        "correctIndex": 0,
+        "explanation": "Page 10: 'At the ceremony, you will: Take the Oath of Citizenship; Sign the oath form; and Receive your Canadian Citizenship Certificate.'",
+        "source": {
+          "guide": "Discover Canada",
+          "language": "en",
+          "chapter": "Applying for Citizenship",
+          "section": "Applying for Citizenship",
+          "pdfPage": 10,
+          "reviewStatus": "verified"
+        },
+        "optionAnnotations": [
+          {
+            "relevance": "CORRECT_ANSWER",
+            "explanation": "Page 10: 'At the ceremony, you will: Take the Oath of Citizenship; Sign the oath form; and Receive your Canadian Citizenship Certificate.'"
+          },
+          {
+            "relevance": "RELATED_FACT",
+            "explanation": "Voting is separate from the ceremony itself."
+          },
+          {
+            "relevance": "PLAUSIBLE_DISTRACTOR",
+            "explanation": "Not a ceremony step."
+          },
+          {
+            "relevance": "PARTIALLY_CORRECT",
+            "explanation": "Canada permits dual citizenship; the ceremony doesn't require renunciation."
+          }
+        ]
+      },
+      "fr": {
+        "question": "Cérémonie ?",
+        "options": [
+          "Serment signature certificat",
+          "Vote",
+          "Don",
+          "Renoncement"
+        ],
+        "correctIndex": 0,
+        "explanation": "Serment.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Applying for Citizenship",
+          "section": "Après l'examen",
+          "excerpt": "Serment citoyenneté.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "حفل الجنسية؟",
+        "options": [
+          "قسم شهادة",
+          "تصويت",
+          "تبرع",
+          "تنازل"
+        ],
+        "explanation": "قسم شهادة.",
+        "translationProvenance": "machine_translated"
+      },
+      "testTip": null,
+      "crossReferences": [],
+      "id": "CIT-0922"
+    },
+    {
+      "chapterId": "applying-for-citizenship",
+      "type": "multiple-choice",
+      "tags": [],
+      "difficulty": 1,
+      "topic": "rights",
+      "subtopic": "citizenship_test_format",
+      "en": {
+        "question": "What is the purpose of the citizenship test?",
+        "options": [
+          "To assess your knowledge of Canada and the rights and responsibilities of being a citizen",
+          "To test your French/English fluency only",
+          "To verify your background-check status",
+          "To determine if you can run for office"
+        ],
+        "correctIndex": 0,
+        "explanation": "Page 9 (and p. 106): 'The citizenship test is used to assess your knowledge of Canada and the rights and responsibilities of being a citizen in Canada.'",
+        "source": {
+          "guide": "Discover Canada",
+          "language": "en",
+          "chapter": "Applying for Citizenship",
+          "section": "About the Citizenship Test",
+          "pdfPage": 9,
+          "reviewStatus": "verified"
+        },
+        "optionAnnotations": [
+          {
+            "relevance": "CORRECT_ANSWER",
+            "explanation": "Page 9 (and p. 106): 'The citizenship test is used to assess your knowledge of Canada and the rights and responsibilities of being a citizen in Canada.'"
+          },
+          {
+            "relevance": "PARTIALLY_CORRECT",
+            "explanation": "Language is a separate requirement (p. 82). The test assesses knowledge of Canada."
+          },
+          {
+            "relevance": "WRONG_CATEGORY",
+            "explanation": "Background checks are part of the application process (p. 8), not the test."
+          },
+          {
+            "relevance": "WRONG_CATEGORY",
+            "explanation": "Not the test's purpose."
+          }
+        ]
+      },
+      "fr": {
+        "question": "But examen ?",
+        "options": [
+          "Connaissance et droits",
+          "Langue seule",
+          "Antécédents",
+          "Poste public"
+        ],
+        "correctIndex": 0,
+        "explanation": "Deux critères.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Applying for Citizenship",
+          "section": "Renseignements sur l'examen",
+          "excerpt": "Deux critères.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "غرض الامتحان؟",
+        "options": [
+          "معرفة حقوق",
+          "لغة",
+          "خلفية",
+          "منصب"
+        ],
+        "explanation": "معرفة.",
+        "translationProvenance": "machine_translated"
+      },
+      "testTip": null,
+      "crossReferences": [],
+      "id": "CIT-0923"
+    },
+    {
+      "chapterId": "applying-for-citizenship",
+      "type": "multiple-choice",
+      "tags": [],
+      "difficulty": 1,
+      "topic": "rights",
+      "subtopic": "citizenship_application",
+      "en": {
+        "question": "What will officials check when you apply for citizenship?",
+        "options": [
+          "Your status, that you are not prohibited from citizenship, and that you meet the requirements",
+          "Your favorite hockey team",
+          "Your assets and bank accounts",
+          "Your political party affiliation"
+        ],
+        "correctIndex": 0,
+        "explanation": "Page 8: 'When you apply for citizenship, officials will check your status, verify that you are not prohibited from citizenship.'",
+        "source": {
+          "guide": "Discover Canada",
+          "language": "en",
+          "chapter": "Applying for Citizenship",
+          "section": "Applying for Citizenship",
+          "pdfPage": 8,
+          "reviewStatus": "verified"
+        },
+        "optionAnnotations": [
+          {
+            "relevance": "CORRECT_ANSWER",
+            "explanation": "Page 8: 'When you apply for citizenship, officials will check your status, verify that you are not prohibited from citizenship.'"
+          },
+          {
+            "relevance": "PLAUSIBLE_DISTRACTOR",
+            "explanation": "Not a citizenship-application criterion."
+          },
+          {
+            "relevance": "PLAUSIBLE_DISTRACTOR",
+            "explanation": "Not a Canadian citizenship-application criterion per p. 8."
+          },
+          {
+            "relevance": "PLAUSIBLE_DISTRACTOR",
+            "explanation": "Not a Canadian citizenship-application criterion."
+          }
+        ]
+      },
+      "fr": {
+        "question": "Vérification ?",
+        "options": [
+          "Statut éligibilité",
+          "Hockey",
+          "Comptes",
+          "Politique"
+        ],
+        "correctIndex": 0,
+        "explanation": "Statut.",
+        "source": {
+          "guide": "Découvrir le Canada",
+          "language": "fr",
+          "chapter": "Applying for Citizenship",
+          "section": "Demander la citoyenneté",
+          "excerpt": "Fonctionnaires examinent.",
+          "reviewStatus": "verified",
+          "translationProvenance": "official_guide_grounded"
+        }
+      },
+      "ar": {
+        "question": "تحقق المسؤولين؟",
+        "options": [
+          "وضع أهلية",
+          "هوكي",
+          "حسابات",
+          "سياسة"
+        ],
+        "explanation": "وضع.",
+        "translationProvenance": "machine_translated"
+      },
+      "testTip": null,
+      "crossReferences": [],
+      "id": "CIT-0924"
+    }
+  ]
+}
