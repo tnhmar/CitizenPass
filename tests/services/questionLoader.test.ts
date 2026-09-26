@@ -64,6 +64,17 @@ describe("questionLoader", () => {
     }
   });
 
+  it.each(["canadas-economy", "justice-system"])("%s is fully upgraded to verified, with real French", (chapterId: string) => {
+    const chapterQuestions = getQuestionsByChapter(chapterId);
+    expect(chapterQuestions.length).toBeGreaterThan(0);
+    for (const question of chapterQuestions) {
+      expect(question.en.source.reviewStatus).toBe("verified");
+      expect(question.fr).toBeDefined();
+      expect(question.fr?.source.reviewStatus).toBe("verified");
+      expect(question.fr?.source.sourceUrl).toContain("canada.ca");
+    }
+  });
+
   it("most questions are needs-review (freshly adapted, no live-URL citation yet)", () => {
     const all = getAllQuestions();
     const needsReview = all.filter((q) => q.en.source.reviewStatus === "needs-review");
