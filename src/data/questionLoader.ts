@@ -3,6 +3,8 @@ import type { Question, LocalizedQuestion, OptionAnnotation, OptionRelevance } f
 import referenceBank from "./reference/reference-511-bank.json";
 import preservedLegacyFacts from "./questions/preserved-legacy-facts.json";
 import verifiedApplyingForCitizenship from "./questions/verified/applying-for-citizenship.json";
+import verifiedCanadasEconomy from "./questions/verified/canadas-economy.json";
+import verifiedJusticeSystem from "./questions/verified/justice-system.json";
 
 // ---------------------------------------------------------------------
 // Reference-511-bank adapter
@@ -199,7 +201,11 @@ function dedupeByQuestionText(questions: Question[]): Question[] {
 // with it, so the excluded-ids set below is exactly which raw records
 // to skip when adapting.
 // ---------------------------------------------------------------------
-const VERIFIED_UPGRADES: Question[][] = [verifiedApplyingForCitizenship as Question[]];
+const VERIFIED_UPGRADES: Question[][] = [
+  verifiedApplyingForCitizenship as Question[],
+  verifiedCanadasEconomy as Question[],
+  verifiedJusticeSystem as Question[],
+];
 
 const verifiedQuestions: Question[] = VERIFIED_UPGRADES.flat();
 const verifiedIds = new Set(verifiedQuestions.map((question) => question.id));
