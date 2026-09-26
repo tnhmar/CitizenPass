@@ -8,9 +8,10 @@ import { useSettingsStore } from "../../src/store/useSettingsStore";
 import { useProgressStore } from "../../src/store/useProgressStore";
 import { useSemanticColors } from "../../src/theme/useSemanticColors";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
-import { drawRandomQuestions } from "../../src/data/questionLoader";
+import { drawFilteredQuestions, type PracticeQueryFilter } from "../../src/data/questionLoader";
 import { getChapterList, getChapterTitle } from "../../src/data/contentLoader";
-import { randomOptionOrder, applyOptionOrder, applyOptionOrderToArabic } from "../../src/utils/questionDisplay";
+import { humanizeTag } from "../../src/utils/progressStats";
+import { randomOptionOrder, applyOptionOrder, applyOptionOrderToArabic, getLocalizedQuestion } from "../../src/utils/questionDisplay";
 import { SourceCitationCard } from "../../src/components/SourceCitationCard";
 import { OptionButton } from "../../src/components/OptionButton";
 import { ArabicFlipCard } from "../../src/components/ArabicFlipCard";
@@ -24,8 +25,33 @@ type PracticeHistoryEntry = {
   selectedIndex: number | null;
 };
 
+/**
+ * What the current session is drawing from. "missed" carries a snapshot
+ * of `incorrectQuestionIds` taken when the session started, not a live
+ * reference - so getting one right mid-session (which removes it from
+ * the store immediately, see useProgressStore.recordPracticeAnswer)
+ * doesn't yank a question out of a session already under way. Only one
+ * dimension is active at a time; picking any one clears the others,
+ * which keeps "what am I practicing right now" a single, simple answer.
+ */
+type PracticeFilter =
+  | { type: "chapter"; chapterId: string | null }
+  | { type: "missed"; ids: string[] }
+  | { type: "tag"; tag: string };
+
+function toQueryFilter(filter: PracticeFilter): PracticeQueryFilter {
+  switch (filter.type) {
+    case "chapter":
+      return filter.chapterId ? { chapterId: filter.chapterId } : {};
+    case "missed":
+      return { onlyIds: filter.ids };
+    case "tag":
+      return { tag: filter.tag };
+  }
+}
+
 export default function PracticeScreen() {
-  const { chapterId: initialChapterId } = useLocalSearchParams<{ chapterId?: string }>();
+  const { chapterId: initialChapterId, tag: initialTag } = useLocalSearchParams<{ chapterId?: string; tag?: string }>();
   const router = useRouter();
   const { t } = useTranslation();
   const theme = useTheme();
@@ -34,11 +60,15 @@ export default function PracticeScreen() {
   const language = useSettingsStore((state) => state.language);
   const arabicHelpEnabled = useSettingsStore((state) => state.arabicHelpEnabled);
   const bookmarkedQuestionIds = useProgressStore((state) => state.bookmarkedQuestionIds);
+  const incorrectQuestionIds = useProgressStore((state) => state.incorrectQuestionIds);
   const toggleBookmark = useProgressStore((state) => state.toggleBookmark);
   const recordPracticeAnswer = useProgressStore((state) => state.recordPracticeAnswer);
 
   const chapters = getChapterList();
-  const [chapterFilter, setChapterFilter] = useState<string | null>(initialChapterId ?? null);
+  const initialFilter: PracticeFilter = initialTag
+    ? { type: "tag", tag: initialTag }
+    : { type: "chapter", chapterId: initialChapterId ?? null };
+  const [activeFilter, setActiveFilter] = useState<PracticeFilter>(initialFilter);
   const [menuVisible, setMenuVisible] = useState(false);
 
   // A history stack (not just a single "current question") so Previous can
@@ -56,8 +86,8 @@ export default function PracticeScreen() {
   const selectedIndex = historyIndex >= 0 ? (history[historyIndex]?.selectedIndex ?? null) : null;
   const isAtFrontier = historyIndex === history.length - 1;
 
-  const drawNext = (excludeIds: string[], chapter: string | null) => {
-    const [next] = drawRandomQuestions(1, excludeIds, chapter ?? undefined);
+  const drawNext = (excludeIds: string[], filter: PracticeFilter) => {
+    const [next] = drawFilteredQuestions(1, toQueryFilter(filter), excludeIds);
     if (!next) {
       setSessionComplete(true);
       return;
@@ -71,23 +101,27 @@ export default function PracticeScreen() {
     setHistoryIndex((i) => i + 1);
   };
 
-  const startSession = (chapter: string | null) => {
-    setChapterFilter(chapter);
+  const startSession = (filter: PracticeFilter) => {
+    // "missed" takes a fresh snapshot of the live incorrect-question list
+    // every time a session starts (including "Practice Again"), so a
+    // restart always reflects whatever is still outstanding right now.
+    const resolvedFilter: PracticeFilter = filter.type === "missed" ? { type: "missed", ids: incorrectQuestionIds } : filter;
+    setActiveFilter(resolvedFilter);
     setHistory([]);
     setHistoryIndex(-1);
     setSessionCorrect(0);
     setSessionAnswered(0);
     setSessionComplete(false);
-    drawNext([], chapter);
+    drawNext([], resolvedFilter);
   };
 
   useEffect(() => {
-    startSession(initialChapterId ?? null);
+    startSession(initialFilter);
     // Runs once on mount to draw the first question for the initial filter.
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  const localizedRaw = useMemo(() => (current ? current[language] : null), [current, language]);
+  const localizedRaw = useMemo(() => (current ? getLocalizedQuestion(current, language) : null), [current, language]);
   const localized = useMemo(
     () => (localizedRaw && optionOrder.length ? applyOptionOrder(localizedRaw, optionOrder) : null),
     [localizedRaw, optionOrder]
@@ -114,17 +148,28 @@ export default function PracticeScreen() {
       return;
     }
     const seenIds = history.map((entry) => entry.question.id);
-    drawNext(seenIds, chapterFilter);
+    drawNext(seenIds, activeFilter);
   };
 
   const handlePickChapter = (chapterId: string | null) => {
     setMenuVisible(false);
-    startSession(chapterId);
+    startSession({ type: "chapter", chapterId });
   };
 
-  const activeChapterTitle = chapterFilter
-    ? getChapterTitle(chapters.find((c) => c.id === chapterFilter) ?? chapters[0], language)
-    : t("practice.allChapters");
+  const handlePickMissed = () => {
+    if (incorrectQuestionIds.length === 0) return;
+    setMenuVisible(false);
+    startSession({ type: "missed", ids: incorrectQuestionIds });
+  };
+
+  const activeFilterLabel =
+    activeFilter.type === "missed"
+      ? t("practice.missedQuestionsLabel")
+      : activeFilter.type === "tag"
+        ? humanizeTag(activeFilter.tag)
+        : activeFilter.chapterId
+          ? getChapterTitle(chapters.find((c) => c.id === activeFilter.chapterId) ?? chapters[0], language)
+          : t("practice.allChapters");
 
   const chapterPicker = (
     <Menu
@@ -133,15 +178,21 @@ export default function PracticeScreen() {
       anchor={
         <Button
           mode="outlined"
-          icon="filter-variant"
+          icon={activeFilter.type === "missed" ? "target" : activeFilter.type === "tag" ? "magnify" : "filter-variant"}
           onPress={() => setMenuVisible(true)}
           style={styles.chapterPickerButton}
           contentStyle={styles.chapterPickerContent}
         >
-          {activeChapterTitle}
+          {activeFilterLabel}
         </Button>
       }
     >
+      <TouchableRipple onPress={handlePickMissed} disabled={incorrectQuestionIds.length === 0} style={styles.menuRow}>
+        <Text style={[styles.menuRowText, incorrectQuestionIds.length === 0 && { color: theme.colors.onSurfaceDisabled }]}>
+          🎯 {t("practice.missedQuestionsMenuItem", { count: incorrectQuestionIds.length })}
+        </Text>
+      </TouchableRipple>
+      <Divider />
       {/* Bug fix: Paper's Menu.Item truncates its title to a single line
           with an ellipsis, which cut off longer chapter names entirely.
           Plain TouchableRipple rows (same primitive OptionButton is built
@@ -178,7 +229,7 @@ export default function PracticeScreen() {
         <Button
           mode="contained"
           icon="restart"
-          onPress={() => startSession(chapterFilter)}
+          onPress={() => startSession(activeFilter)}
           style={styles.restartButton}
         >
           {t("practice.practiceAgain")}
@@ -212,6 +263,7 @@ export default function PracticeScreen() {
             {sessionAnswered}
           </Text>
         </View>
+        <IconButton icon="magnify" onPress={() => router.push("/search")} accessibilityLabel={t("search.title")} />
         <IconButton
           icon="bookmark-multiple-outline"
           onPress={() => router.push("/bookmarks")}
@@ -313,6 +365,38 @@ export default function PracticeScreen() {
             💡 {localized.explanation}
           </Text>
           <SourceCitationCard source={localized.source} />
+
+          {localized.optionAnnotations && (
+            <View style={styles.annotationsBlock}>
+              <Text variant="labelLarge" style={styles.annotationsTitle}>
+                🔎 {t("practice.whyOtherOptionsTitle")}
+              </Text>
+              {localized.options.map((option, index) => {
+                if (index === localized.correctIndex) return null;
+                const annotation = localized.optionAnnotations?.[index];
+                if (!annotation?.explanation) return null;
+                return (
+                  <View key={index} style={styles.annotationRow}>
+                    <Text variant="bodySmall" style={styles.annotationLabel}>
+                      {OPTION_LETTERS[index]}. {option}
+                    </Text>
+                    <Text variant="bodySmall" style={{ color: theme.colors.onSurfaceVariant }}>
+                      {annotation.explanation}
+                    </Text>
+                  </View>
+                );
+              })}
+            </View>
+          )}
+
+          {current.testTip && (
+            <View style={[styles.testTipCard, { backgroundColor: theme.colors.tertiaryContainer }]}>
+              <MaterialCommunityIcons name="lightbulb-on-outline" size={18} color={theme.colors.tertiary} />
+              <Text variant="bodySmall" style={styles.testTipText}>
+                {current.testTip}
+              </Text>
+            </View>
+          )}
         </>
       ) : null}
 
@@ -371,6 +455,12 @@ const styles = StyleSheet.create({
     marginTop: 16,
   },
   explanation: { marginTop: 12, marginBottom: 4 },
+  annotationsBlock: { marginTop: 12, gap: 6 },
+  annotationsTitle: { marginBottom: 2 },
+  annotationRow: { marginBottom: 6 },
+  annotationLabel: { fontWeight: "600", marginBottom: 2 },
+  testTipCard: { flexDirection: "row", alignItems: "flex-start", gap: 8, borderRadius: 8, padding: 10, marginTop: 12 },
+  testTipText: { flex: 1 },
   navRow: { flexDirection: "row", justifyContent: "space-between", marginTop: 16, marginBottom: 32 },
   completeCard: { marginTop: 8, marginBottom: 20 },
   completeContent: { alignItems: "center", gap: 8 },

@@ -1,0 +1,68 @@
+{
+  "chapterId": "applying-for-citizenship",
+  "title": "Demander la citoyenneté",
+  "source": {
+    "guide": "Découvrir le Canada",
+    "language": "fr",
+    "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+    "sourceUrl": "https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/demander-citoyennete.html",
+    "verifiedAt": "2026-09-20"
+  },
+  "sections": [
+    {
+      "id": "language-testing-update",
+      "heading": "Remarque : comment les compétences linguistiques sont évaluées",
+      "paragraphs": [
+        "Par suite de récents changements apportés à la Loi sur la citoyenneté, l'information présentée ailleurs dans ce guide a été mise à jour. À compter du 11 octobre 2017, les demandeurs âgés de 18 à 54 ans au moment de présenter leur demande doivent démontrer qu'ils possèdent une connaissance adéquate du Canada et des responsabilités et privilèges liés à la citoyenneté par le biais d'un examen pour la citoyenneté, administré en anglais ou en français, et doivent démontrer séparément qu'ils possèdent une connaissance adéquate de l'anglais ou du français. L'examen pour la citoyenneté ne sert pas à évaluer la connaissance du français ou de l'anglais du demandeur."
+      ],
+      "bullets": []
+    },
+    {
+      "id": "intro",
+      "heading": null,
+      "paragraphs": [
+        "Lorsque vous demandez la citoyenneté, des fonctionnaires examinent votre statut, vérifient si vous avez le droit de présenter une demande et s'assurent que vous remplissez les exigences.",
+        "L'étude de votre demande prendra plusieurs mois. Pendant ce temps, assurez-vous que le Télécentre a toujours votre adresse exacte."
+      ],
+      "bullets": []
+    },
+    {
+      "id": "how-to-prepare",
+      "heading": "Comment utiliser la présente brochure afin de vous préparer à l'examen pour la citoyenneté",
+      "paragraphs": ["La présente brochure vous aidera à vous préparer en prévision de l'examen pour la citoyenneté. Vous devriez :"],
+      "bullets": [
+        "L'étudier",
+        "Demander à un ami ou à un membre de votre famille de vous poser des questions sur le Canada afin de préparer vos réponses",
+        "Téléphoner à une école, à une commission scolaire, à un collège, à un centre communautaire ou à un organisme d'aide aux immigrants de votre localité afin de vous informer sur les cours de préparation à la citoyenneté offerts",
+        "Suivre des cours de français ou d'anglais, offerts gratuitement par le gouvernement du Canada"
+      ]
+    },
+    {
+      "id": "about-the-test",
+      "heading": "Renseignements sur l'examen pour la citoyenneté",
+      "paragraphs": [
+        "L'examen pour la citoyenneté est en général un examen écrit, mais peut aussi se faire sous forme d'entrevue. On évaluera si vous remplissez deux critères fondamentaux d'attribution de la citoyenneté, c'est-à-dire : 1) si vous connaissez le Canada ainsi que les droits et responsabilités liés à la citoyenneté; et 2) si vous connaissez suffisamment le français ou l'anglais. Les candidats adultes qui ont 55 ans ou plus n'ont pas besoin de passer l'examen pour la citoyenneté. Le Règlement sur la citoyenneté fournit de l'information sur la façon dont votre capacité de remplir le critère relatif aux connaissances sur le Canada est évaluée.",
+        "Toutes les questions qui composent l'examen pour la citoyenneté ont été formulées à partir des thèmes abordés dans le Règlement sur la citoyenneté, et tous les renseignements nécessaires figurent dans le présent guide d'étude."
+      ],
+      "bullets": []
+    },
+    {
+      "id": "after-the-test",
+      "heading": "Après l'examen",
+      "paragraphs": [
+        "Si vous réussissez à l'examen et répondez à toutes les autres conditions, vous recevrez une lettre intitulée « Avis de convocation – Pour prêter le serment de citoyenneté ». Ce document vous indiquera la date, l'heure et le lieu de la cérémonie de citoyenneté.",
+        "Au cours de cette cérémonie :"
+      ],
+      "bullets": ["Vous prêterez le serment de citoyenneté", "Vous signerez le formulaire de ce serment", "Vous recevrez votre certificat de citoyenneté canadienne"]
+    },
+    {
+      "id": "after-the-test-outcomes",
+      "heading": null,
+      "paragraphs": [
+        "Si vous échouez à l'examen, vous recevrez un avis vous indiquant les étapes suivantes.",
+        "Nous vous encourageons à inviter votre famille et vos amis à la cérémonie pour célébrer cette occasion."
+      ],
+      "bullets": []
+    }
+  ]
+}

@@ -16,6 +16,7 @@ import {
   EXAM_QUESTION_COUNT,
   LOW_TIME_THRESHOLD_MS,
 } from "../../src/store/useExamStore";
+import { getLocalizedQuestion } from "../../src/utils/questionDisplay";
 
 const OPTION_LETTERS = ["A", "B", "C", "D"];
 
@@ -162,7 +163,7 @@ export default function ExamIndexScreen() {
   }
 
   const current = questions[currentIndex];
-  const localized = current ? current[language] : null;
+  const localized = current ? getLocalizedQuestion(current, language) : null;
   const isLastQuestion = currentIndex === questions.length - 1;
 
   if (!current || !localized) {

@@ -1,0 +1,2114 @@
+[
+  {
+    "id": "Q064",
+    "chapterId": "justice-system",
+    "type": "multiple-choice",
+    "tags": [
+      "presumption-of-innocence"
+    ],
+    "learningObjectiveId": "ref-q064",
+    "difficulty": 1,
+    "topic": "justice",
+    "subtopic": "presumption_of_innocence",
+    "en": {
+      "question": "What principle underlies Canada's judicial system in criminal matters?",
+      "options": [
+        "The presumption of innocence — everyone is innocent until proven guilty",
+        "Guilt must be admitted before trial",
+        "Trial without a lawyer",
+        "Police investigation is final"
+      ],
+      "correctIndex": 0,
+      "explanation": "Our judicial system is founded on the presumption of innocence in criminal matters, meaning everyone is innocent until proven guilty.",
+      "source": {
+        "guide": "Discover Canada",
+        "language": "en",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/justice-system.html",
+        "chapter": "The Justice System",
+        "section": "The Justice System (introduction)",
+        "excerpt": "Our judicial system is founded on the presumption of innocence in criminal matters, meaning everyone is innocent until proven guilty.",
+        "verifiedAt": "2026-09-23",
+        "reviewStatus": "verified"
+      },
+      "optionAnnotations": [
+        {
+          "relevance": "CORRECT_ANSWER",
+          "explanation": "This is stated as the founding principle in the guide."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "This is the opposite of the presumption of innocence."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "The guide describes legal aid and the right to a lawyer, not trials without one."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "Due process, not a final police finding, governs how guilt is determined."
+        }
+      ]
+    },
+    "fr": {
+      "question": "Quel principe est à la base du système judiciaire du Canada en matière criminelle ?",
+      "options": [
+        "La présomption d'innocence — chacun est innocent jusqu'à preuve du contraire",
+        "La culpabilité doit être admise avant le procès",
+        "Le procès sans avocat",
+        "L'enquête policière est définitive"
+      ],
+      "correctIndex": 0,
+      "explanation": "Notre système judiciaire est fondé sur la présomption d'innocence dans les affaires criminelles, ce qui veut dire que chacun est innocent jusqu'à preuve du contraire.",
+      "source": {
+        "guide": "Découvrir le Canada",
+        "language": "fr",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/systeme-justice.html",
+        "chapter": "Le système de justice",
+        "section": "Le système de justice (introduction)",
+        "excerpt": "Notre système judiciaire est fondé sur la présomption d'innocence dans les affaires criminelles, ce qui veut dire que chacun est innocent jusqu'à preuve du contraire.",
+        "verifiedAt": "2026-09-23",
+        "reviewStatus": "verified"
+      },
+      "optionAnnotations": [
+        {
+          "relevance": "CORRECT_ANSWER",
+          "explanation": "C'est le principe fondateur énoncé dans le guide."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "C'est le contraire de la présomption d'innocence."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "Le guide décrit l'aide juridique et le droit à un avocat, pas des procès sans avocat."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "C'est l'application régulière de la loi, et non une conclusion policière définitive, qui détermine la culpabilité."
+        }
+      ]
+    },
+    "ar": {
+      "question": "ما المبدأ الذي يقوم عليه النظام القضائي في كندا في القضايا الجنائية؟",
+      "options": [
+        "افتراض البراءة — كل شخص بريء حتى تثبت إدانته",
+        "يجب الاعتراف بالذنب قبل المحاكمة",
+        "المحاكمة دون محامٍ",
+        "تحقيق الشرطة نهائي"
+      ],
+      "explanation": "يقوم نظامنا القضائي على افتراض البراءة في القضايا الجنائية، مما يعني أن كل شخص بريء حتى تثبت إدانته."
+    }
+  },
+  {
+    "id": "Q065",
+    "chapterId": "justice-system",
+    "type": "true-false",
+    "tags": [
+      "supreme-court"
+    ],
+    "learningObjectiveId": "ref-q065",
+    "difficulty": 1,
+    "topic": "justice",
+    "subtopic": "supreme_court",
+    "en": {
+      "question": "The Supreme Court of Canada is Canada's highest court.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correctIndex": 0,
+      "explanation": "The Supreme Court of Canada is our country's highest court.",
+      "source": {
+        "guide": "Discover Canada",
+        "language": "en",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/justice-system.html",
+        "chapter": "The Justice System",
+        "section": "Courts",
+        "excerpt": "The Supreme Court of Canada is our country's highest court.",
+        "verifiedAt": "2026-09-23",
+        "reviewStatus": "verified"
+      },
+      "optionAnnotations": [
+        {
+          "relevance": "CORRECT_ANSWER",
+          "explanation": "Stated directly in the guide."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "This contradicts the guide's own text."
+        }
+      ]
+    },
+    "fr": {
+      "question": "La Cour suprême du Canada est le plus haut tribunal du pays.",
+      "options": [
+        "Vrai",
+        "Faux"
+      ],
+      "correctIndex": 0,
+      "explanation": "La Cour suprême du Canada est le plus haut tribunal de notre pays.",
+      "source": {
+        "guide": "Découvrir le Canada",
+        "language": "fr",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/systeme-justice.html",
+        "chapter": "Le système de justice",
+        "section": "Les tribunaux",
+        "excerpt": "La Cour suprême du Canada est le plus haut tribunal de notre pays.",
+        "verifiedAt": "2026-09-23",
+        "reviewStatus": "verified"
+      },
+      "optionAnnotations": [
+        {
+          "relevance": "CORRECT_ANSWER",
+          "explanation": "Énoncé directement dans le guide."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "Ceci contredit le texte du guide."
+        }
+      ]
+    },
+    "ar": {
+      "question": "المحكمة العليا الكندية هي أعلى محكمة في كندا.",
+      "options": [
+        "صحيح",
+        "خطأ"
+      ],
+      "explanation": "المحكمة العليا الكندية هي أعلى محكمة في بلدنا."
+    }
+  },
+  {
+    "id": "Q066",
+    "chapterId": "justice-system",
+    "type": "true-false",
+    "tags": [
+      "rcmp"
+    ],
+    "learningObjectiveId": "ref-q066",
+    "difficulty": 2,
+    "topic": "justice",
+    "subtopic": "rcmp_role",
+    "en": {
+      "question": "The RCMP does not serve as the provincial police force in Ontario and Quebec.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correctIndex": 0,
+      "explanation": "Ontario and Quebec have their own provincial police forces; the RCMP serves as the provincial police everywhere else, but not in those two provinces.",
+      "source": {
+        "guide": "Discover Canada",
+        "language": "en",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/justice-system.html",
+        "chapter": "The Justice System",
+        "section": "Police",
+        "excerpt": "There are provincial police forces in Ontario and Quebec and municipal police departments in all provinces. The Royal Canadian Mounted Police (RCMP) enforce federal laws throughout Canada, and serve as the provincial police in all provinces and territories except Ontario and Quebec.",
+        "verifiedAt": "2026-09-23",
+        "reviewStatus": "verified"
+      },
+      "optionAnnotations": [
+        {
+          "relevance": "CORRECT_ANSWER",
+          "explanation": "Ontario and Quebec have their own provincial police forces, so the RCMP does not fill that role there, unlike in other provinces/territories."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "This reverses the actual exception the guide describes."
+        }
+      ]
+    },
+    "fr": {
+      "question": "La GRC n'agit pas comme service de police provinciale en Ontario et au Québec.",
+      "options": [
+        "Vrai",
+        "Faux"
+      ],
+      "correctIndex": 0,
+      "explanation": "L'Ontario et le Québec ont leurs propres services de police provinciaux; la GRC sert de police provinciale partout ailleurs, mais pas dans ces deux provinces.",
+      "source": {
+        "guide": "Découvrir le Canada",
+        "language": "fr",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/systeme-justice.html",
+        "chapter": "Le système de justice",
+        "section": "La police",
+        "excerpt": "Il y a des services de police provinciaux en Ontario et au Québec et des services de police municipaux dans toutes les provinces. La Gendarmerie royale du Canada (GRC) applique les lois fédérales dans l'ensemble du Canada et sert de police provinciale dans toutes les provinces et tous les territoires, sauf l'Ontario et le Québec.",
+        "verifiedAt": "2026-09-23",
+        "reviewStatus": "verified"
+      },
+      "optionAnnotations": [
+        {
+          "relevance": "CORRECT_ANSWER",
+          "explanation": "L'Ontario et le Québec ont leurs propres services de police provinciaux, donc la GRC n'y joue pas ce rôle, contrairement aux autres provinces et territoires."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "Ceci inverse l'exception réelle décrite par le guide."
+        }
+      ]
+    },
+    "ar": {
+      "question": "لا تعمل الشرطة الملكية الكندية كشرطة إقليمية في أونتاريو وكيبك.",
+      "options": [
+        "صحيح",
+        "خطأ"
+      ],
+      "explanation": "لدى أونتاريو وكيبك قوات شرطة إقليمية خاصة بهما؛ وتعمل الشرطة الملكية الكندية كشرطة إقليمية في كل مكان آخر، ولكن ليس في هاتين المقاطعتين."
+    }
+  },
+  {
+    "id": "Q067",
+    "chapterId": "justice-system",
+    "type": "multiple-choice",
+    "tags": [
+      "rule-of-law"
+    ],
+    "learningObjectiveId": "ref-q067",
+    "difficulty": 1,
+    "topic": "justice",
+    "subtopic": "rule_of_law",
+    "en": {
+      "question": "Who is bound by the law in Canada?",
+      "options": [
+        "Everyone, including judges, politicians, and the police",
+        "Only ordinary citizens, not officials",
+        "Only people who have been convicted of a crime",
+        "Only Canadian-born citizens"
+      ],
+      "correctIndex": 0,
+      "explanation": "The law in Canada applies to everyone, including judges, politicians and the police.",
+      "source": {
+        "guide": "Discover Canada",
+        "language": "en",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/justice-system.html",
+        "chapter": "The Justice System",
+        "section": "Justice System (introduction)",
+        "excerpt": "The law in Canada applies to everyone, including judges, politicians and the police.",
+        "verifiedAt": "2026-09-23",
+        "reviewStatus": "verified"
+      },
+      "optionAnnotations": [
+        {
+          "relevance": "CORRECT_ANSWER",
+          "explanation": "Stated directly in the guide."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "The guide specifically names judges, politicians and police as bound by the law too."
+        },
+        {
+          "relevance": "WRONG_CATEGORY",
+          "explanation": "The law applies before and regardless of conviction, not only after."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "The law in Canada applies to everyone present, not only those born in Canada."
+        }
+      ]
+    },
+    "fr": {
+      "question": "Qui est lié par la loi au Canada ?",
+      "options": [
+        "Tout le monde, y compris les juges, les politiciens et la police",
+        "Seulement les citoyens ordinaires, pas les représentants officiels",
+        "Seulement les personnes reconnues coupables d'un crime",
+        "Seulement les citoyens nés au Canada"
+      ],
+      "correctIndex": 0,
+      "explanation": "Au Canada, la loi s'applique à tous, y compris aux juges, aux politiciens et à la police.",
+      "source": {
+        "guide": "Découvrir le Canada",
+        "language": "fr",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/systeme-justice.html",
+        "chapter": "Le système de justice",
+        "section": "Le système de justice (introduction)",
+        "excerpt": "Au Canada, la loi s'applique à tous, y compris aux juges, aux politiciens et à la police.",
+        "verifiedAt": "2026-09-23",
+        "reviewStatus": "verified"
+      },
+      "optionAnnotations": [
+        {
+          "relevance": "CORRECT_ANSWER",
+          "explanation": "Énoncé directement dans le guide."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "Le guide nomme spécifiquement les juges, les politiciens et la police comme également liés par la loi."
+        },
+        {
+          "relevance": "WRONG_CATEGORY",
+          "explanation": "La loi s'applique avant et indépendamment d'une condamnation, pas seulement après."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "La loi au Canada s'applique à toute personne présente, pas seulement à celles nées au Canada."
+        }
+      ]
+    },
+    "ar": {
+      "question": "من يخضع للقانون في كندا؟",
+      "options": [
+        "الجميع، بمن فيهم القضاة والسياسيون والشرطة",
+        "المواطنون العاديون فقط، دون المسؤولين",
+        "فقط من أُدين بارتكاب جريمة",
+        "فقط المواطنون المولودون في كندا"
+      ],
+      "explanation": "ينطبق القانون في كندا على الجميع، بمن فيهم القضاة والسياسيون والشرطة."
+    }
+  },
+  {
+    "id": "Q068",
+    "chapterId": "justice-system",
+    "type": "multiple-choice",
+    "tags": [
+      "police-accountability"
+    ],
+    "learningObjectiveId": "ref-q068",
+    "difficulty": 2,
+    "topic": "justice",
+    "subtopic": "questioning_police",
+    "en": {
+      "question": "In Canada, are you allowed to question the police about their service or conduct?",
+      "options": [
+        "Yes — almost all police forces have a formal process for citizens to raise concerns and seek action",
+        "No — questioning the police is a criminal offence",
+        "Only members of Parliament can question the police",
+        "Only with a court order"
+      ],
+      "correctIndex": 0,
+      "explanation": "You can question the police about their service or conduct; almost all police forces in Canada have a process for this.",
+      "source": {
+        "guide": "Discover Canada",
+        "language": "en",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/justice-system.html",
+        "chapter": "The Justice System",
+        "section": "Police",
+        "excerpt": "You can also question the police about their service or conduct if you feel you need to. Almost all police forces in Canada have a process by which you can bring your concerns to the police and seek action.",
+        "verifiedAt": "2026-09-23",
+        "reviewStatus": "verified"
+      },
+      "optionAnnotations": [
+        {
+          "relevance": "CORRECT_ANSWER",
+          "explanation": "Stated directly in the guide."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "This is the opposite of what the guide describes as a normal, available process."
+        },
+        {
+          "relevance": "WRONG_CATEGORY",
+          "explanation": "This process is described as open to any resident, not restricted to MPs."
+        },
+        {
+          "relevance": "WRONG_CATEGORY",
+          "explanation": "No court order is described as necessary for this process."
+        }
+      ]
+    },
+    "fr": {
+      "question": "Au Canada, avez-vous le droit de poser des questions à la police au sujet de ses services ou de sa conduite ?",
+      "options": [
+        "Oui — presque tous les services de police ont un processus formel pour recueillir les préoccupations et agir",
+        "Non — questionner la police est une infraction criminelle",
+        "Seuls les députés peuvent questionner la police",
+        "Seulement avec une ordonnance du tribunal"
+      ],
+      "correctIndex": 0,
+      "explanation": "Vous pouvez poser des questions à la police au sujet de ses services ou de sa conduite; presque tous les services de police au Canada ont un processus prévu à cet effet.",
+      "source": {
+        "guide": "Découvrir le Canada",
+        "language": "fr",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/systeme-justice.html",
+        "chapter": "Le système de justice",
+        "section": "La police",
+        "excerpt": "Vous pouvez aussi poser des questions aux agents de police au sujet de leurs services ou de leur conduite si vous avez l'impression que vous devez le faire. Presque tous les services de police au Canada ont un processus grâce auquel vous pouvez faire part de vos préoccupations et demander que des mesures soient prises.",
+        "verifiedAt": "2026-09-23",
+        "reviewStatus": "verified"
+      },
+      "optionAnnotations": [
+        {
+          "relevance": "CORRECT_ANSWER",
+          "explanation": "Énoncé directement dans le guide."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "C'est le contraire de ce que le guide décrit comme un processus normal et accessible."
+        },
+        {
+          "relevance": "WRONG_CATEGORY",
+          "explanation": "Ce processus est décrit comme accessible à tout résident, pas réservé aux députés."
+        },
+        {
+          "relevance": "WRONG_CATEGORY",
+          "explanation": "Aucune ordonnance du tribunal n'est décrite comme nécessaire pour ce processus."
+        }
+      ]
+    },
+    "ar": {
+      "question": "هل يُسمح لك في كندا بالتساؤل عن خدمة الشرطة أو سلوكها؟",
+      "options": [
+        "نعم — تمتلك معظم قوات الشرطة إجراءً رسميًا لتلقي الشكاوى واتخاذ إجراء",
+        "لا — التساؤل عن الشرطة يُعد جريمة جنائية",
+        "فقط أعضاء البرلمان يمكنهم التساؤل عن الشرطة",
+        "فقط بأمر من المحكمة"
+      ],
+      "explanation": "يمكنك التساؤل عن خدمة الشرطة أو سلوكها؛ تمتلك معظم قوات الشرطة في كندا إجراءً لهذا الغرض."
+    }
+  },
+  {
+    "id": "Q069",
+    "chapterId": "justice-system",
+    "type": "multiple-choice",
+    "tags": [
+      "courts-role"
+    ],
+    "learningObjectiveId": "ref-q069",
+    "difficulty": 1,
+    "topic": "justice",
+    "subtopic": "courts_role",
+    "en": {
+      "question": "What is the role of the courts in Canada?",
+      "options": [
+        "Courts settle disputes and ensure that laws are applied fairly",
+        "Courts make new laws",
+        "Courts collect taxes",
+        "Courts manage prisons"
+      ],
+      "correctIndex": 0,
+      "explanation": "The courts settle disputes, while the police enforce the laws that elected representatives make.",
+      "source": {
+        "guide": "Discover Canada",
+        "language": "en",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/justice-system.html",
+        "chapter": "The Justice System",
+        "section": "Justice System (introduction)",
+        "excerpt": "They are made by elected representatives. The courts settle disputes and the police enforce the laws.",
+        "verifiedAt": "2026-09-23",
+        "reviewStatus": "verified"
+      },
+      "optionAnnotations": [
+        {
+          "relevance": "CORRECT_ANSWER",
+          "explanation": "The guide states plainly that courts settle disputes."
+        },
+        {
+          "relevance": "WRONG_CATEGORY",
+          "explanation": "The guide says laws are made by elected representatives, not the courts."
+        },
+        {
+          "relevance": "WRONG_CATEGORY",
+          "explanation": "Tax collection is not a role the guide assigns to the courts."
+        },
+        {
+          "relevance": "WRONG_CATEGORY",
+          "explanation": "The guide describes prisons' role separately from the courts'."
+        }
+      ]
+    },
+    "fr": {
+      "question": "Quel est le rôle des tribunaux au Canada ?",
+      "options": [
+        "Les tribunaux règlent les conflits et veillent à ce que les lois soient appliquées équitablement",
+        "Les tribunaux rédigent de nouvelles lois",
+        "Les tribunaux perçoivent les impôts",
+        "Les tribunaux gèrent les prisons"
+      ],
+      "correctIndex": 0,
+      "explanation": "Les tribunaux règlent les conflits, tandis que la police fait respecter les lois rédigées par les représentants élus.",
+      "source": {
+        "guide": "Découvrir le Canada",
+        "language": "fr",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/systeme-justice.html",
+        "chapter": "Le système de justice",
+        "section": "Le système de justice (introduction)",
+        "excerpt": "Elles sont rédigées par des représentants élus. Les tribunaux règlent les conflits et la police fait respecter les lois.",
+        "verifiedAt": "2026-09-23",
+        "reviewStatus": "verified"
+      },
+      "optionAnnotations": [
+        {
+          "relevance": "CORRECT_ANSWER",
+          "explanation": "Le guide indique clairement que les tribunaux règlent les conflits."
+        },
+        {
+          "relevance": "WRONG_CATEGORY",
+          "explanation": "Le guide indique que les lois sont rédigées par des représentants élus, pas par les tribunaux."
+        },
+        {
+          "relevance": "WRONG_CATEGORY",
+          "explanation": "La perception des impôts n'est pas un rôle que le guide attribue aux tribunaux."
+        },
+        {
+          "relevance": "WRONG_CATEGORY",
+          "explanation": "Le guide décrit le rôle des prisons séparément de celui des tribunaux."
+        }
+      ]
+    },
+    "ar": {
+      "question": "ما دور المحاكم في كندا؟",
+      "options": [
+        "تفصل المحاكم في النزاعات وتضمن تطبيق القوانين بإنصاف",
+        "تسن المحاكم قوانين جديدة",
+        "تجمع المحاكم الضرائب",
+        "تدير المحاكم السجون"
+      ],
+      "explanation": "تفصل المحاكم في النزاعات، بينما تُنفّذ الشرطة القوانين التي يسنّها الممثلون المنتخبون."
+    }
+  },
+  {
+    "id": "Q187",
+    "chapterId": "justice-system",
+    "type": "multiple-choice",
+    "tags": [
+      "police-accountability"
+    ],
+    "learningObjectiveId": "ref-q187",
+    "difficulty": 2,
+    "topic": "justice",
+    "subtopic": "police_complaint",
+    "en": {
+      "question": "If you have a concern about police service or conduct in Canada, what can you do?",
+      "options": [
+        "Almost all police forces have a formal complaint process — bring your concerns and seek action",
+        "Wait until the next election to vote them out",
+        "File a complaint with the Senate",
+        "Confront the officer directly with no consequences"
+      ],
+      "correctIndex": 0,
+      "explanation": "Almost all police forces in Canada have a formal process by which you can bring your concerns to the police and seek action.",
+      "source": {
+        "guide": "Discover Canada",
+        "language": "en",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/justice-system.html",
+        "chapter": "The Justice System",
+        "section": "Police",
+        "excerpt": "Almost all police forces in Canada have a process by which you can bring your concerns to the police and seek action.",
+        "verifiedAt": "2026-09-23",
+        "reviewStatus": "verified"
+      },
+      "optionAnnotations": [
+        {
+          "relevance": "CORRECT_ANSWER",
+          "explanation": "Stated directly in the guide."
+        },
+        {
+          "relevance": "WRONG_CATEGORY",
+          "explanation": "Police are not elected, so this route does not apply."
+        },
+        {
+          "relevance": "WRONG_CATEGORY",
+          "explanation": "The Senate is not described as the channel for police complaints."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "The guide describes a formal process, not an informal direct confrontation."
+        }
+      ]
+    },
+    "fr": {
+      "question": "Si vous avez une préoccupation au sujet du service ou de la conduite de la police au Canada, que pouvez-vous faire ?",
+      "options": [
+        "Presque tous les services de police ont un processus formel de plainte — faites part de vos préoccupations et demandez que des mesures soient prises",
+        "Attendre la prochaine élection pour les voter hors du pouvoir",
+        "Déposer une plainte auprès du Sénat",
+        "Confronter directement l'agent sans conséquence"
+      ],
+      "correctIndex": 0,
+      "explanation": "Presque tous les services de police au Canada ont un processus formel grâce auquel vous pouvez faire part de vos préoccupations et demander que des mesures soient prises.",
+      "source": {
+        "guide": "Découvrir le Canada",
+        "language": "fr",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/systeme-justice.html",
+        "chapter": "Le système de justice",
+        "section": "La police",
+        "excerpt": "Presque tous les services de police au Canada ont un processus grâce auquel vous pouvez faire part de vos préoccupations et demander que des mesures soient prises.",
+        "verifiedAt": "2026-09-23",
+        "reviewStatus": "verified"
+      },
+      "optionAnnotations": [
+        {
+          "relevance": "CORRECT_ANSWER",
+          "explanation": "Énoncé directement dans le guide."
+        },
+        {
+          "relevance": "WRONG_CATEGORY",
+          "explanation": "La police n'est pas élue, cette option ne s'applique donc pas."
+        },
+        {
+          "relevance": "WRONG_CATEGORY",
+          "explanation": "Le Sénat n'est pas décrit comme le canal pour les plaintes contre la police."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "Le guide décrit un processus formel, pas une confrontation directe informelle."
+        }
+      ]
+    },
+    "ar": {
+      "question": "إذا كان لديك تحفظ بشأن خدمة الشرطة أو سلوكها في كندا، ماذا يمكنك أن تفعل؟",
+      "options": [
+        "تمتلك معظم قوات الشرطة إجراء شكوى رسميًا — قدّم تحفظاتك واطلب اتخاذ إجراء",
+        "الانتظار حتى الانتخابات القادمة للتصويت ضدهم",
+        "تقديم شكوى إلى مجلس الشيوخ",
+        "مواجهة الضابط مباشرة دون عواقب"
+      ],
+      "explanation": "تمتلك معظم قوات الشرطة في كندا إجراءً رسميًا يمكنك من خلاله تقديم تحفظاتك وطلب اتخاذ إجراء."
+    }
+  },
+  {
+    "id": "Q188",
+    "chapterId": "justice-system",
+    "type": "true-false",
+    "tags": [
+      "federal-court"
+    ],
+    "learningObjectiveId": "ref-q188",
+    "difficulty": 1,
+    "topic": "justice",
+    "subtopic": "supreme_court_funcs",
+    "en": {
+      "question": "The Federal Court of Canada handles matters concerning the federal government.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correctIndex": 0,
+      "explanation": "The Federal Court of Canada deals with matters concerning the federal government.",
+      "source": {
+        "guide": "Discover Canada",
+        "language": "en",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/justice-system.html",
+        "chapter": "The Justice System",
+        "section": "Courts",
+        "excerpt": "The Federal Court of Canada deals with matters concerning the federal government.",
+        "verifiedAt": "2026-09-23",
+        "reviewStatus": "verified"
+      },
+      "optionAnnotations": [
+        {
+          "relevance": "CORRECT_ANSWER",
+          "explanation": "Stated directly in the guide."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "This contradicts the guide's own text."
+        }
+      ]
+    },
+    "fr": {
+      "question": "La Cour fédérale du Canada s'occupe des questions concernant le gouvernement fédéral.",
+      "options": [
+        "Vrai",
+        "Faux"
+      ],
+      "correctIndex": 0,
+      "explanation": "La Cour fédérale du Canada s'occupe des questions concernant le gouvernement fédéral.",
+      "source": {
+        "guide": "Découvrir le Canada",
+        "language": "fr",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/systeme-justice.html",
+        "chapter": "Le système de justice",
+        "section": "Les tribunaux",
+        "excerpt": "La Cour fédérale du Canada s'occupe des questions concernant le gouvernement fédéral.",
+        "verifiedAt": "2026-09-23",
+        "reviewStatus": "verified"
+      },
+      "optionAnnotations": [
+        {
+          "relevance": "CORRECT_ANSWER",
+          "explanation": "Énoncé directement dans le guide."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "Ceci contredit le texte du guide."
+        }
+      ]
+    },
+    "ar": {
+      "question": "تتعامل المحكمة الفيدرالية الكندية مع المسائل المتعلقة بالحكومة الفيدرالية.",
+      "options": [
+        "صحيح",
+        "خطأ"
+      ],
+      "explanation": "تتعامل المحكمة الفيدرالية الكندية مع المسائل المتعلقة بالحكومة الفيدرالية."
+    }
+  },
+  {
+    "id": "Q189",
+    "chapterId": "justice-system",
+    "type": "multiple-choice",
+    "tags": [
+      "scales-of-justice"
+    ],
+    "learningObjectiveId": "ref-q189",
+    "difficulty": 2,
+    "topic": "justice",
+    "subtopic": "scales_of_justice",
+    "en": {
+      "question": "What does the blindfolded figure of Lady Justice symbolize?",
+      "options": [
+        "The impartial manner in which Canadian laws are administered — blind to all considerations but the facts",
+        "That judges are physically blindfolded during trials",
+        "That the law applies only at night",
+        "That justice is slow"
+      ],
+      "correctIndex": 0,
+      "explanation": "The blindfolded Lady Justice symbolizes the impartial manner in which Canadian laws are administered - blind to all considerations but the facts.",
+      "source": {
+        "guide": "Discover Canada",
+        "language": "en",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/justice-system.html",
+        "chapter": "The Justice System",
+        "section": "Courts (photo caption)",
+        "excerpt": "The blindfolded Lady Justice symbolizes the impartial manner in which our laws are administered: blind to all considerations but the facts.",
+        "verifiedAt": "2026-09-23",
+        "reviewStatus": "verified"
+      },
+      "optionAnnotations": [
+        {
+          "relevance": "CORRECT_ANSWER",
+          "explanation": "This is the exact symbolism the guide's photo caption describes."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "It is a statue, not a description of real judges during trials."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "This has no basis in the guide's text."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "The blindfold symbolizes impartiality, not the speed of justice."
+        }
+      ]
+    },
+    "fr": {
+      "question": "Que symbolisent les yeux bandés de la statue représentant la Justice ?",
+      "options": [
+        "L'impartialité avec laquelle les lois canadiennes sont appliquées — aveugles à toutes les considérations sauf les faits",
+        "Que les juges ont réellement les yeux bandés durant les procès",
+        "Que la loi ne s'applique que la nuit",
+        "Que la justice est lente"
+      ],
+      "correctIndex": 0,
+      "explanation": "Les yeux bandés de la statue représentant la Justice symbolisent l'impartialité avec laquelle nos lois sont appliquées, aveugles à toutes les considérations sauf les faits.",
+      "source": {
+        "guide": "Découvrir le Canada",
+        "language": "fr",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/systeme-justice.html",
+        "chapter": "Le système de justice",
+        "section": "Les tribunaux (légende de la photo)",
+        "excerpt": "Les yeux bandés de la statue représentant la Justice symbolisent l'impartialité avec laquelle nos lois sont appliquées : aveugles à toutes les considérations sauf les faits.",
+        "verifiedAt": "2026-09-23",
+        "reviewStatus": "verified"
+      },
+      "optionAnnotations": [
+        {
+          "relevance": "CORRECT_ANSWER",
+          "explanation": "C'est exactement le symbolisme décrit par la légende de la photo dans le guide."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "C'est une statue, pas une description des juges réels durant les procès."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "Ceci n'a aucun fondement dans le texte du guide."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "Les yeux bandés symbolisent l'impartialité, pas la lenteur de la justice."
+        }
+      ]
+    },
+    "ar": {
+      "question": "ماذا يرمز غطاء العينين على تمثال العدالة؟",
+      "options": [
+        "الحياد الذي تُطبَّق به القوانين الكندية — عمياء عن كل الاعتبارات ما عدا الحقائق",
+        "أن القضاة معصوبو الأعين فعليًا أثناء المحاكمات",
+        "أن القانون لا يُطبَّق إلا ليلاً",
+        "أن العدالة بطيئة"
+      ],
+      "explanation": "يرمز غطاء عيني تمثال العدالة إلى الحياد الذي تُطبَّق به قوانيننا: عمياء عن كل الاعتبارات ما عدا الحقائق."
+    }
+  },
+  {
+    "id": "Q190",
+    "chapterId": "justice-system",
+    "type": "multiple-choice",
+    "tags": [
+      "legal-aid"
+    ],
+    "learningObjectiveId": "ref-q190",
+    "difficulty": 1,
+    "topic": "justice",
+    "subtopic": "legal_aid",
+    "en": {
+      "question": "What is available in most Canadian communities for those who cannot afford a lawyer?",
+      "options": [
+        "Legal aid services — free or at low cost",
+        "Nothing — you must represent yourself",
+        "Automatic deferral to municipal courts",
+        "A public-defender system identical to the US"
+      ],
+      "correctIndex": 0,
+      "explanation": "In most communities there are legal aid services available free of charge or at a low cost.",
+      "source": {
+        "guide": "Discover Canada",
+        "language": "en",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/justice-system.html",
+        "chapter": "The Justice System",
+        "section": "Getting Legal Help",
+        "excerpt": "If you cannot pay for a lawyer, in most communities there are legal aid services available free of charge or at a low cost.",
+        "verifiedAt": "2026-09-23",
+        "reviewStatus": "verified"
+      },
+      "optionAnnotations": [
+        {
+          "relevance": "CORRECT_ANSWER",
+          "explanation": "Stated directly in the guide."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "The guide describes legal aid as available, not self-representation as the only option."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "No such automatic deferral is described in the guide."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "The guide does not compare Canada's system to a specific US model."
+        }
+      ]
+    },
+    "fr": {
+      "question": "Qu'est-ce qui est offert dans la plupart des communautés canadiennes pour ceux qui ne peuvent pas payer un avocat ?",
+      "options": [
+        "Des services d'aide juridique — gratuits ou à faible coût",
+        "Rien — vous devez vous représenter vous-même",
+        "Un renvoi automatique aux tribunaux municipaux",
+        "Un système d'avocat commis d'office identique à celui des États-Unis"
+      ],
+      "correctIndex": 0,
+      "explanation": "Dans la plupart des communautés, des services d'aide juridique sont offerts gratuitement ou à un faible coût.",
+      "source": {
+        "guide": "Découvrir le Canada",
+        "language": "fr",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/systeme-justice.html",
+        "chapter": "Le système de justice",
+        "section": "Obtenir une aide juridique",
+        "excerpt": "Si vous ne pouvez pas payer les services d'un avocat, la plupart des communautés offrent des services d'aide juridique gratuitement ou à un faible coût.",
+        "verifiedAt": "2026-09-23",
+        "reviewStatus": "verified"
+      },
+      "optionAnnotations": [
+        {
+          "relevance": "CORRECT_ANSWER",
+          "explanation": "Énoncé directement dans le guide."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "Le guide décrit l'aide juridique comme offerte, pas l'auto-représentation comme seule option."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "Aucun renvoi automatique de ce type n'est décrit dans le guide."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "Le guide ne compare pas le système canadien à un modèle américain particulier."
+        }
+      ]
+    },
+    "ar": {
+      "question": "ما المتاح في معظم المجتمعات الكندية لمن لا يستطيع تحمل تكاليف محامٍ؟",
+      "options": [
+        "خدمات المساعدة القانونية — مجانية أو بتكلفة منخفضة",
+        "لا شيء — يجب أن تمثل نفسك",
+        "إحالة تلقائية إلى المحاكم البلدية",
+        "نظام محامي دفاع عام مطابق لنظام الولايات المتحدة"
+      ],
+      "explanation": "في معظم المجتمعات، تتوفر خدمات مساعدة قانونية مجانًا أو بتكلفة منخفضة."
+    }
+  },
+  {
+    "id": "Q191",
+    "chapterId": "justice-system",
+    "type": "multiple-choice",
+    "tags": [
+      "rule-of-law"
+    ],
+    "learningObjectiveId": "ref-q191",
+    "difficulty": 1,
+    "topic": "justice",
+    "subtopic": "judges_above_law",
+    "en": {
+      "question": "Are judges, politicians, and police bound by Canadian law?",
+      "options": [
+        "Yes — the law applies to everyone, with no person or group above the law",
+        "No, public officials are exempt",
+        "Only when off-duty",
+        "Only judges are exempt; others must comply"
+      ],
+      "correctIndex": 0,
+      "explanation": "The law in Canada applies to everyone, including judges, politicians and the police - no person or group is above the law.",
+      "source": {
+        "guide": "Discover Canada",
+        "language": "en",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/justice-system.html",
+        "chapter": "The Justice System",
+        "section": "Justice System (introduction)",
+        "excerpt": "The law in Canada applies to everyone, including judges, politicians and the police.",
+        "verifiedAt": "2026-09-23",
+        "reviewStatus": "verified"
+      },
+      "optionAnnotations": [
+        {
+          "relevance": "CORRECT_ANSWER",
+          "explanation": "Stated directly in the guide."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "The guide specifically names these officials as bound by the law."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "No on-duty/off-duty distinction is described in the guide."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "The guide names judges specifically as bound by the law, not exempt."
+        }
+      ]
+    },
+    "fr": {
+      "question": "Les juges, les politiciens et la police sont-ils liés par la loi canadienne ?",
+      "options": [
+        "Oui — la loi s'applique à tous, aucune personne ni aucun groupe n'est au-dessus des lois",
+        "Non, les représentants officiels sont exemptés",
+        "Seulement lorsqu'ils ne sont pas en service",
+        "Seuls les juges sont exemptés; les autres doivent s'y conformer"
+      ],
+      "correctIndex": 0,
+      "explanation": "Au Canada, la loi s'applique à tous, y compris aux juges, aux politiciens et à la police — aucune personne ni aucun groupe n'est au-dessus des lois.",
+      "source": {
+        "guide": "Découvrir le Canada",
+        "language": "fr",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/systeme-justice.html",
+        "chapter": "Le système de justice",
+        "section": "Le système de justice (introduction)",
+        "excerpt": "Au Canada, la loi s'applique à tous, y compris aux juges, aux politiciens et à la police.",
+        "verifiedAt": "2026-09-23",
+        "reviewStatus": "verified"
+      },
+      "optionAnnotations": [
+        {
+          "relevance": "CORRECT_ANSWER",
+          "explanation": "Énoncé directement dans le guide."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "Le guide nomme spécifiquement ces représentants comme liés par la loi."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "Aucune distinction service/hors service n'est décrite dans le guide."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "Le guide nomme spécifiquement les juges comme liés par la loi, pas exemptés."
+        }
+      ]
+    },
+    "ar": {
+      "question": "هل يخضع القضاة والسياسيون والشرطة للقانون الكندي؟",
+      "options": [
+        "نعم — يُطبَّق القانون على الجميع، ولا يوجد شخص أو مجموعة فوق القانون",
+        "لا، المسؤولون العامون معفون",
+        "فقط عندما يكونون خارج الخدمة",
+        "القضاة فقط معفون؛ يجب على الآخرين الامتثال"
+      ],
+      "explanation": "نعم، ينطبق القانون في كندا على الجميع، بمن فيهم القضاة والسياسيون والشرطة — لا يوجد شخص أو مجموعة فوق القانون."
+    }
+  },
+  {
+    "id": "Q192",
+    "chapterId": "justice-system",
+    "type": "multiple-choice",
+    "tags": [
+      "courts-role"
+    ],
+    "learningObjectiveId": "ref-q192",
+    "difficulty": 1,
+    "topic": "justice",
+    "subtopic": "court_settle_disputes",
+    "en": {
+      "question": "What body settles disputes in Canada's legal system?",
+      "options": [
+        "The courts",
+        "The police",
+        "Parliament",
+        "The Senate"
+      ],
+      "correctIndex": 0,
+      "explanation": "The courts settle disputes, while the police enforce the laws.",
+      "source": {
+        "guide": "Discover Canada",
+        "language": "en",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/justice-system.html",
+        "chapter": "The Justice System",
+        "section": "Justice System (introduction)",
+        "excerpt": "The courts settle disputes and the police enforce the laws.",
+        "verifiedAt": "2026-09-23",
+        "reviewStatus": "verified"
+      },
+      "optionAnnotations": [
+        {
+          "relevance": "CORRECT_ANSWER",
+          "explanation": "Stated directly in the guide."
+        },
+        {
+          "relevance": "WRONG_CATEGORY",
+          "explanation": "The guide assigns police the role of enforcing laws, not settling disputes."
+        },
+        {
+          "relevance": "WRONG_CATEGORY",
+          "explanation": "Parliament makes laws; it does not settle individual disputes."
+        },
+        {
+          "relevance": "WRONG_CATEGORY",
+          "explanation": "The Senate is a legislative body, not a dispute-settling one."
+        }
+      ]
+    },
+    "fr": {
+      "question": "Quel organisme règle les conflits dans le système juridique canadien ?",
+      "options": [
+        "Les tribunaux",
+        "La police",
+        "Le Parlement",
+        "Le Sénat"
+      ],
+      "correctIndex": 0,
+      "explanation": "Les tribunaux règlent les conflits, tandis que la police fait respecter les lois.",
+      "source": {
+        "guide": "Découvrir le Canada",
+        "language": "fr",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/systeme-justice.html",
+        "chapter": "Le système de justice",
+        "section": "Le système de justice (introduction)",
+        "excerpt": "Les tribunaux règlent les conflits et la police fait respecter les lois.",
+        "verifiedAt": "2026-09-23",
+        "reviewStatus": "verified"
+      },
+      "optionAnnotations": [
+        {
+          "relevance": "CORRECT_ANSWER",
+          "explanation": "Énoncé directement dans le guide."
+        },
+        {
+          "relevance": "WRONG_CATEGORY",
+          "explanation": "Le guide attribue à la police le rôle de faire respecter les lois, pas de régler les conflits."
+        },
+        {
+          "relevance": "WRONG_CATEGORY",
+          "explanation": "Le Parlement rédige les lois; il ne règle pas les conflits individuels."
+        },
+        {
+          "relevance": "WRONG_CATEGORY",
+          "explanation": "Le Sénat est un organe législatif, pas un organe de règlement des conflits."
+        }
+      ]
+    },
+    "ar": {
+      "question": "ما الجهة التي تفصل في النزاعات ضمن النظام القانوني الكندي؟",
+      "options": [
+        "المحاكم",
+        "الشرطة",
+        "البرلمان",
+        "مجلس الشيوخ"
+      ],
+      "explanation": "تفصل المحاكم في النزاعات، بينما تُنفّذ الشرطة القوانين."
+    }
+  },
+  {
+    "id": "Q193",
+    "chapterId": "justice-system",
+    "type": "multiple-choice",
+    "tags": [
+      "law-purpose"
+    ],
+    "learningObjectiveId": "ref-q193",
+    "difficulty": 1,
+    "topic": "justice",
+    "subtopic": "law_purpose",
+    "en": {
+      "question": "What is the intended purpose of laws in Canada?",
+      "options": [
+        "Provide order, a peaceful way to settle disputes, and express Canadian values and beliefs",
+        "To raise revenue for the government",
+        "To punish people quickly",
+        "To employ lawyers"
+      ],
+      "correctIndex": 0,
+      "explanation": "Canada's laws are intended to provide order in society, a peaceful way to settle disputes, and to express the values and beliefs of Canadians.",
+      "source": {
+        "guide": "Discover Canada",
+        "language": "en",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/justice-system.html",
+        "chapter": "The Justice System",
+        "section": "Justice System (introduction)",
+        "excerpt": "Our laws are intended to provide order in society and a peaceful way to settle disputes, and to express the values and beliefs of Canadians.",
+        "verifiedAt": "2026-09-23",
+        "reviewStatus": "verified"
+      },
+      "optionAnnotations": [
+        {
+          "relevance": "CORRECT_ANSWER",
+          "explanation": "This matches the guide's stated purpose of laws almost word for word."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "Revenue generation is not a purpose of law described in the guide (that's taxation policy, a separate topic)."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "Due process, not speed, is the guide's emphasis for how laws are applied."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "This is a side effect, not the stated purpose of laws."
+        }
+      ]
+    },
+    "fr": {
+      "question": "Quel est l'objectif visé par les lois au Canada ?",
+      "options": [
+        "Maintenir l'ordre, fournir un moyen pacifique de régler les conflits, et exprimer les valeurs et croyances des Canadiens",
+        "Générer des revenus pour le gouvernement",
+        "Punir les gens rapidement",
+        "Employer des avocats"
+      ],
+      "correctIndex": 0,
+      "explanation": "Les lois canadiennes visent à maintenir l'ordre dans la société, à fournir un moyen pacifique de régler les conflits, et à exprimer les valeurs et les croyances des Canadiens.",
+      "source": {
+        "guide": "Découvrir le Canada",
+        "language": "fr",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/systeme-justice.html",
+        "chapter": "Le système de justice",
+        "section": "Le système de justice (introduction)",
+        "excerpt": "Nos lois ont pour objectifs de maintenir l'ordre dans la société, de fournir un moyen pacifique de régler les conflits et d'exprimer les valeurs et les croyances des Canadiens.",
+        "verifiedAt": "2026-09-23",
+        "reviewStatus": "verified"
+      },
+      "optionAnnotations": [
+        {
+          "relevance": "CORRECT_ANSWER",
+          "explanation": "Cela correspond presque mot pour mot à l'objectif des lois énoncé dans le guide."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "La génération de revenus n'est pas un objectif des lois décrit dans le guide (c'est la politique fiscale, un sujet distinct)."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "C'est l'application régulière de la loi, pas la rapidité, que le guide met de l'avant."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "C'est un effet secondaire, pas l'objectif énoncé des lois."
+        }
+      ]
+    },
+    "ar": {
+      "question": "ما الغرض المقصود من القوانين في كندا؟",
+      "options": [
+        "توفير النظام، وسيلة سلمية لتسوية النزاعات، والتعبير عن قيم الكنديين ومعتقداتهم",
+        "توليد إيرادات للحكومة",
+        "معاقبة الناس بسرعة",
+        "توظيف المحامين"
+      ],
+      "explanation": "تهدف قوانين كندا إلى توفير النظام في المجتمع، ووسيلة سلمية لتسوية النزاعات، والتعبير عن قيم الكنديين ومعتقداتهم."
+    }
+  },
+  {
+    "id": "Q369",
+    "chapterId": "justice-system",
+    "type": "multiple-choice",
+    "tags": [
+      "due-process"
+    ],
+    "learningObjectiveId": "ref-q369",
+    "difficulty": 2,
+    "topic": "justice",
+    "subtopic": "due_process",
+    "en": {
+      "question": "What is 'due process'?",
+      "options": [
+        "The principle that government must respect all of the legal rights a person is entitled to under the law",
+        "A type of court trial in Quebec only",
+        "A specific kind of evidence used in trials",
+        "Only applicable to those proven guilty"
+      ],
+      "correctIndex": 0,
+      "explanation": "Due process is the principle that the government must respect all of the legal rights a person is entitled to under the law.",
+      "source": {
+        "guide": "Discover Canada",
+        "language": "en",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/justice-system.html",
+        "chapter": "The Justice System",
+        "section": "Justice System (introduction)",
+        "excerpt": "Due process is the principle that the government must respect all of legal rights a person is entitled to under the law.",
+        "verifiedAt": "2026-09-23",
+        "reviewStatus": "verified"
+      },
+      "optionAnnotations": [
+        {
+          "relevance": "CORRECT_ANSWER",
+          "explanation": "This is the guide's own definition."
+        },
+        {
+          "relevance": "WRONG_CATEGORY",
+          "explanation": "Due process is a general Canadian legal principle, not a Quebec-specific trial type."
+        },
+        {
+          "relevance": "WRONG_CATEGORY",
+          "explanation": "Due process is a principle, not a type of evidence."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "Due process applies throughout, including to those not (or not yet) proven guilty - it is closely tied to the presumption of innocence."
+        }
+      ]
+    },
+    "fr": {
+      "question": "Qu'est-ce que l'« application régulière de la loi » ?",
+      "options": [
+        "Le principe selon lequel le gouvernement doit respecter toutes les garanties juridiques auxquelles a droit une personne en vertu de la loi",
+        "Un type de procès propre au Québec",
+        "Un type particulier de preuve utilisé dans les procès",
+        "S'applique seulement à ceux dont la culpabilité est prouvée"
+      ],
+      "correctIndex": 0,
+      "explanation": "L'application régulière de la loi est le principe selon lequel le gouvernement doit respecter toutes les garanties juridiques auxquelles a droit une personne en vertu de la loi.",
+      "source": {
+        "guide": "Découvrir le Canada",
+        "language": "fr",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/systeme-justice.html",
+        "chapter": "Le système de justice",
+        "section": "Le système de justice (introduction)",
+        "excerpt": "L'application régulière de la loi est le principe selon lequel le gouvernement doit respecter toutes les garanties juridiques auxquelles a droit une personne en vertu de la loi.",
+        "verifiedAt": "2026-09-23",
+        "reviewStatus": "verified"
+      },
+      "optionAnnotations": [
+        {
+          "relevance": "CORRECT_ANSWER",
+          "explanation": "C'est la définition même donnée par le guide."
+        },
+        {
+          "relevance": "WRONG_CATEGORY",
+          "explanation": "L'application régulière de la loi est un principe juridique canadien général, pas un type de procès propre au Québec."
+        },
+        {
+          "relevance": "WRONG_CATEGORY",
+          "explanation": "C'est un principe, pas un type de preuve."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "Elle s'applique en tout temps, y compris à ceux dont la culpabilité n'est pas (encore) prouvée - elle est étroitement liée à la présomption d'innocence."
+        }
+      ]
+    },
+    "ar": {
+      "question": "ما هو «الإجراءات القانونية الواجبة»؟",
+      "options": [
+        "المبدأ القاضي بأن على الحكومة احترام جميع الحقوق القانونية التي يستحقها الشخص بموجب القانون",
+        "نوع من المحاكمات خاص بكيبك فقط",
+        "نوع معين من الأدلة يُستخدم في المحاكمات",
+        "لا يُطبَّق إلا على من ثبتت إدانتهم"
+      ],
+      "explanation": "الإجراءات القانونية الواجبة هي المبدأ القاضي بأن على الحكومة احترام جميع الحقوق القانونية التي يستحقها الشخص بموجب القانون."
+    }
+  },
+  {
+    "id": "Q370",
+    "chapterId": "justice-system",
+    "type": "true-false",
+    "tags": [
+      "small-claims"
+    ],
+    "learningObjectiveId": "ref-q370",
+    "difficulty": 1,
+    "topic": "justice",
+    "subtopic": "small_claims",
+    "en": {
+      "question": "Small claims court handles civil cases involving small sums of money.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correctIndex": 0,
+      "explanation": "Small claims courts exist for civil cases involving small sums of money.",
+      "source": {
+        "guide": "Discover Canada",
+        "language": "en",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/justice-system.html",
+        "chapter": "The Justice System",
+        "section": "Courts",
+        "excerpt": "There are also provincial courts for lesser offences, family courts, traffic courts and small claims courts for civil cases involving small sums of money.",
+        "verifiedAt": "2026-09-23",
+        "reviewStatus": "verified"
+      },
+      "optionAnnotations": [
+        {
+          "relevance": "CORRECT_ANSWER",
+          "explanation": "Stated directly in the guide."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "This contradicts the guide's own text."
+        }
+      ]
+    },
+    "fr": {
+      "question": "La cour des petites créances traite des affaires civiles concernant de petites sommes d'argent.",
+      "options": [
+        "Vrai",
+        "Faux"
+      ],
+      "correctIndex": 0,
+      "explanation": "Les tribunaux des petites créances existent pour les affaires civiles concernant de petites sommes d'argent.",
+      "source": {
+        "guide": "Découvrir le Canada",
+        "language": "fr",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/systeme-justice.html",
+        "chapter": "Le système de justice",
+        "section": "Les tribunaux",
+        "excerpt": "Il y a aussi des tribunaux provinciaux pour des infractions de moindre importance, comme les tribunaux de la famille, les cours des infractions routières, et les tribunaux des petites créances pour les affaires civiles concernant de petites sommes d'argent.",
+        "verifiedAt": "2026-09-23",
+        "reviewStatus": "verified"
+      },
+      "optionAnnotations": [
+        {
+          "relevance": "CORRECT_ANSWER",
+          "explanation": "Énoncé directement dans le guide."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "Ceci contredit le texte du guide."
+        }
+      ]
+    },
+    "ar": {
+      "question": "تتعامل محكمة المطالبات الصغيرة مع القضايا المدنية المتعلقة بمبالغ مالية صغيرة.",
+      "options": [
+        "صحيح",
+        "خطأ"
+      ],
+      "explanation": "توجد محاكم المطالبات الصغيرة للقضايا المدنية المتعلقة بمبالغ مالية صغيرة."
+    }
+  },
+  {
+    "id": "Q371",
+    "chapterId": "justice-system",
+    "type": "multiple-choice",
+    "tags": [
+      "legal-aid"
+    ],
+    "learningObjectiveId": "ref-q371",
+    "difficulty": 1,
+    "topic": "justice",
+    "subtopic": "lawyers_help_what",
+    "en": {
+      "question": "What can lawyers in Canada help you with?",
+      "options": [
+        "Legal problems and acting for you in court",
+        "Only criminal cases",
+        "Only divorce",
+        "Only matters under $10,000"
+      ],
+      "correctIndex": 0,
+      "explanation": "Lawyers can help you with legal problems and act for you in court.",
+      "source": {
+        "guide": "Discover Canada",
+        "language": "en",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/justice-system.html",
+        "chapter": "The Justice System",
+        "section": "Getting Legal Help",
+        "excerpt": "Lawyers can help you with legal problems and act for you in court.",
+        "verifiedAt": "2026-09-23",
+        "reviewStatus": "verified"
+      },
+      "optionAnnotations": [
+        {
+          "relevance": "CORRECT_ANSWER",
+          "explanation": "Stated directly in the guide, without restriction to a single case type."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "The guide does not restrict lawyers' help to criminal cases only."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "The guide does not restrict lawyers' help to divorce only."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "No dollar-amount restriction is described in the guide."
+        }
+      ]
+    },
+    "fr": {
+      "question": "Avec quoi les avocats peuvent-ils vous aider au Canada ?",
+      "options": [
+        "Des problèmes juridiques et vous représenter en cour",
+        "Seulement les affaires criminelles",
+        "Seulement le divorce",
+        "Seulement les affaires de moins de 10 000 $"
+      ],
+      "correctIndex": 0,
+      "explanation": "Des avocats peuvent vous aider à résoudre des problèmes juridiques et vous représenter en cour.",
+      "source": {
+        "guide": "Découvrir le Canada",
+        "language": "fr",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/systeme-justice.html",
+        "chapter": "Le système de justice",
+        "section": "Obtenir une aide juridique",
+        "excerpt": "Des avocats peuvent vous aider à résoudre des problèmes juridiques et vous représenter en cour.",
+        "verifiedAt": "2026-09-23",
+        "reviewStatus": "verified"
+      },
+      "optionAnnotations": [
+        {
+          "relevance": "CORRECT_ANSWER",
+          "explanation": "Énoncé directement dans le guide, sans restriction à un seul type d'affaire."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "Le guide ne restreint pas l'aide des avocats aux affaires criminelles seulement."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "Le guide ne restreint pas l'aide des avocats au divorce seulement."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "Aucune restriction de montant n'est décrite dans le guide."
+        }
+      ]
+    },
+    "ar": {
+      "question": "بماذا يمكن للمحامين في كندا مساعدتك؟",
+      "options": [
+        "المشكلات القانونية وتمثيلك في المحكمة",
+        "القضايا الجنائية فقط",
+        "الطلاق فقط",
+        "القضايا التي تقل عن 10,000 دولار فقط"
+      ],
+      "explanation": "يمكن للمحامين مساعدتك في حل المشكلات القانونية وتمثيلك في المحكمة."
+    }
+  },
+  {
+    "id": "Q372",
+    "chapterId": "justice-system",
+    "type": "multiple-choice",
+    "tags": [
+      "police-help"
+    ],
+    "learningObjectiveId": "ref-q372",
+    "difficulty": 1,
+    "topic": "justice",
+    "subtopic": "police_when_help",
+    "en": {
+      "question": "When can you ask the Canadian police for help?",
+      "options": [
+        "If there's been an accident, theft, assault, a crime in progress, or someone is missing",
+        "Only if you are a Canadian citizen",
+        "Only between 8 AM and 5 PM",
+        "Only if you live in a major city"
+      ],
+      "correctIndex": 0,
+      "explanation": "You can ask the police for help in all kinds of situations, including accidents, theft, assault, witnessing a crime, or a missing person.",
+      "source": {
+        "guide": "Discover Canada",
+        "language": "en",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/justice-system.html",
+        "chapter": "The Justice System",
+        "section": "Police",
+        "excerpt": "You can ask the police for help in all kinds of situations—if there's been an accident, if someone has stolen something from you, if you are a victim of assault, if you see a crime taking place or if someone you know has gone missing.",
+        "verifiedAt": "2026-09-23",
+        "reviewStatus": "verified"
+      },
+      "optionAnnotations": [
+        {
+          "relevance": "CORRECT_ANSWER",
+          "explanation": "This matches the list of situations the guide gives."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "The guide does not restrict police help to citizens only."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "No time-of-day restriction is described in the guide."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "No city-size restriction is described in the guide."
+        }
+      ]
+    },
+    "fr": {
+      "question": "Dans quelles situations pouvez-vous demander l'aide de la police canadienne ?",
+      "options": [
+        "S'il y a eu un accident, un vol, une agression, un crime en cours, ou si quelqu'un a disparu",
+        "Seulement si vous êtes citoyen canadien",
+        "Seulement entre 8 h et 17 h",
+        "Seulement si vous vivez dans une grande ville"
+      ],
+      "correctIndex": 0,
+      "explanation": "Vous pouvez demander l'aide de la police dans toutes sortes de situations, notamment un accident, un vol, une agression, un crime dont vous êtes témoin, ou une personne disparue.",
+      "source": {
+        "guide": "Découvrir le Canada",
+        "language": "fr",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/systeme-justice.html",
+        "chapter": "Le système de justice",
+        "section": "La police",
+        "excerpt": "Vous pouvez demander l'aide de la police dans toutes sortes de situations – s'il y a eu un accident, si quelqu'un vous a volé quelque chose, si vous êtes victime d'une agression, si vous êtes témoin d'un crime ou si quelqu'un que vous connaissez a disparu.",
+        "verifiedAt": "2026-09-23",
+        "reviewStatus": "verified"
+      },
+      "optionAnnotations": [
+        {
+          "relevance": "CORRECT_ANSWER",
+          "explanation": "Cela correspond à la liste de situations donnée par le guide."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "Le guide ne restreint pas l'aide policière aux citoyens seulement."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "Aucune restriction d'horaire n'est décrite dans le guide."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "Aucune restriction liée à la taille de la ville n'est décrite dans le guide."
+        }
+      ]
+    },
+    "ar": {
+      "question": "متى يمكنك طلب مساعدة الشرطة الكندية؟",
+      "options": [
+        "إذا وقع حادث، أو سرقة، أو اعتداء، أو جريمة قيد الحدوث، أو فُقد شخص ما",
+        "فقط إذا كنت مواطنًا كنديًا",
+        "فقط بين الساعة 8 صباحًا و5 مساءً",
+        "فقط إذا كنت تعيش في مدينة كبرى"
+      ],
+      "explanation": "يمكنك طلب مساعدة الشرطة في جميع أنواع الحالات، بما في ذلك الحوادث والسرقة والاعتداء ومشاهدة جريمة أو فقدان شخص تعرفه."
+    }
+  },
+  {
+    "id": "Q420",
+    "chapterId": "justice-system",
+    "type": "true-false",
+    "tags": [
+      "supreme-court"
+    ],
+    "learningObjectiveId": "ref-q420",
+    "difficulty": 1,
+    "topic": "justice",
+    "subtopic": "supreme_court_role",
+    "en": {
+      "question": "The Supreme Court is Canada's highest court, settling the most important legal disputes.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correctIndex": 0,
+      "explanation": "The Supreme Court of Canada is our country's highest court.",
+      "source": {
+        "guide": "Discover Canada",
+        "language": "en",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/justice-system.html",
+        "chapter": "The Justice System",
+        "section": "Courts",
+        "excerpt": "The Supreme Court of Canada is our country's highest court.",
+        "verifiedAt": "2026-09-23",
+        "reviewStatus": "verified"
+      },
+      "optionAnnotations": [
+        {
+          "relevance": "CORRECT_ANSWER",
+          "explanation": "The guide names the Supreme Court as the country's highest court."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "This contradicts the guide's own text."
+        }
+      ]
+    },
+    "fr": {
+      "question": "La Cour suprême est le plus haut tribunal du Canada, réglant les litiges juridiques les plus importants.",
+      "options": [
+        "Vrai",
+        "Faux"
+      ],
+      "correctIndex": 0,
+      "explanation": "La Cour suprême du Canada est le plus haut tribunal de notre pays.",
+      "source": {
+        "guide": "Découvrir le Canada",
+        "language": "fr",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/systeme-justice.html",
+        "chapter": "Le système de justice",
+        "section": "Les tribunaux",
+        "excerpt": "La Cour suprême du Canada est le plus haut tribunal de notre pays.",
+        "verifiedAt": "2026-09-23",
+        "reviewStatus": "verified"
+      },
+      "optionAnnotations": [
+        {
+          "relevance": "CORRECT_ANSWER",
+          "explanation": "Le guide désigne la Cour suprême comme le plus haut tribunal du pays."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "Ceci contredit le texte du guide."
+        }
+      ]
+    },
+    "ar": {
+      "question": "المحكمة العليا هي أعلى محكمة في كندا، وتفصل في أهم النزاعات القانونية.",
+      "options": [
+        "صحيح",
+        "خطأ"
+      ],
+      "explanation": "المحكمة العليا الكندية هي أعلى محكمة في بلدنا."
+    }
+  },
+  {
+    "id": "Q421",
+    "chapterId": "justice-system",
+    "type": "multiple-choice",
+    "tags": [
+      "provincial-courts"
+    ],
+    "learningObjectiveId": "ref-q421",
+    "difficulty": 2,
+    "topic": "justice",
+    "subtopic": "different_kinds_courts",
+    "en": {
+      "question": "Which courts exist in most Canadian provinces?",
+      "options": [
+        "Appeal courts, trial courts (sometimes called Court of Queen's Bench or Supreme Court), provincial courts for lesser offences, family courts, traffic courts, and small claims courts",
+        "Only the Supreme Court of Canada",
+        "Only federal courts",
+        "Only military courts"
+      ],
+      "correctIndex": 0,
+      "explanation": "Most provinces have an appeal court and a trial court, plus provincial courts for lesser offences, family courts, traffic courts, and small claims courts.",
+      "source": {
+        "guide": "Discover Canada",
+        "language": "en",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/justice-system.html",
+        "chapter": "The Justice System",
+        "section": "Courts",
+        "excerpt": "In most provinces there is an appeal court and a trial court, sometimes called the Court of Queen's Bench or the Supreme Court. There are also provincial courts for lesser offences, family courts, traffic courts and small claims courts for civil cases involving small sums of money.",
+        "verifiedAt": "2026-09-23",
+        "reviewStatus": "verified"
+      },
+      "optionAnnotations": [
+        {
+          "relevance": "CORRECT_ANSWER",
+          "explanation": "This matches the full list of provincial-level courts the guide describes."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "The Supreme Court of Canada is the top federal court, but provinces have their own additional court structure too."
+        },
+        {
+          "relevance": "WRONG_CATEGORY",
+          "explanation": "Federal courts are separate from the provincial court structure the guide describes here."
+        },
+        {
+          "relevance": "WRONG_CATEGORY",
+          "explanation": "Military courts are not part of the provincial civil/criminal court structure described."
+        }
+      ]
+    },
+    "fr": {
+      "question": "Quels tribunaux existe-t-il dans la plupart des provinces canadiennes ?",
+      "options": [
+        "Cour d'appel, cour de première instance (parfois appelée Cour du Banc de la Reine ou Cour suprême), tribunaux provinciaux pour infractions mineures, tribunaux de la famille, cours des infractions routières, et tribunaux des petites créances",
+        "Seulement la Cour suprême du Canada",
+        "Seulement les tribunaux fédéraux",
+        "Seulement les tribunaux militaires"
+      ],
+      "correctIndex": 0,
+      "explanation": "La plupart des provinces ont une cour d'appel et une cour de première instance, ainsi que des tribunaux provinciaux pour infractions mineures, des tribunaux de la famille, des cours des infractions routières, et des tribunaux des petites créances.",
+      "source": {
+        "guide": "Découvrir le Canada",
+        "language": "fr",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/systeme-justice.html",
+        "chapter": "Le système de justice",
+        "section": "Les tribunaux",
+        "excerpt": "Dans la plupart des provinces, il y a une cour d'appel et une cour de première instance, qu'on appelle parfois Cour du Banc de la Reine ou Cour suprême. Il y a aussi des tribunaux provinciaux pour des infractions de moindre importance, comme les tribunaux de la famille, les cours des infractions routières, et les tribunaux des petites créances pour les affaires civiles concernant de petites sommes d'argent.",
+        "verifiedAt": "2026-09-23",
+        "reviewStatus": "verified"
+      },
+      "optionAnnotations": [
+        {
+          "relevance": "CORRECT_ANSWER",
+          "explanation": "Cela correspond à la liste complète des tribunaux provinciaux décrits par le guide."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "La Cour suprême du Canada est le plus haut tribunal fédéral, mais les provinces ont leur propre structure de tribunaux en plus."
+        },
+        {
+          "relevance": "WRONG_CATEGORY",
+          "explanation": "Les tribunaux fédéraux sont distincts de la structure des tribunaux provinciaux décrite ici."
+        },
+        {
+          "relevance": "WRONG_CATEGORY",
+          "explanation": "Les tribunaux militaires ne font pas partie de la structure des tribunaux civils et criminels provinciaux décrite."
+        }
+      ]
+    },
+    "ar": {
+      "question": "ما المحاكم الموجودة في معظم المقاطعات الكندية؟",
+      "options": [
+        "محاكم الاستئناف، والمحاكم الابتدائية (تُسمى أحيانًا محكمة مجلس الملكة أو المحكمة العليا)، ومحاكم المقاطعة للمخالفات الصغيرة، ومحاكم الأسرة، ومحاكم المرور، ومحاكم المطالبات الصغيرة",
+        "المحكمة العليا الكندية فقط",
+        "المحاكم الفيدرالية فقط",
+        "المحاكم العسكرية فقط"
+      ],
+      "explanation": "تمتلك معظم المقاطعات محكمة استئناف ومحكمة ابتدائية، بالإضافة إلى محاكم مقاطعة للمخالفات الصغيرة، ومحاكم الأسرة، ومحاكم المرور، ومحاكم المطالبات الصغيرة."
+    }
+  },
+  {
+    "id": "Q444",
+    "chapterId": "justice-system",
+    "type": "multiple-choice",
+    "tags": [
+      "due-process"
+    ],
+    "learningObjectiveId": "ref-q444",
+    "difficulty": 2,
+    "topic": "justice",
+    "subtopic": "due_process_government_must",
+    "en": {
+      "question": "What must the government do under the principle of due process?",
+      "options": [
+        "Respect all the legal rights a person is entitled to under the law",
+        "Convict only those who confess",
+        "Hold trials in secret",
+        "Use only French law"
+      ],
+      "correctIndex": 0,
+      "explanation": "Under due process, the government must respect all of the legal rights a person is entitled to under the law.",
+      "source": {
+        "guide": "Discover Canada",
+        "language": "en",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/justice-system.html",
+        "chapter": "The Justice System",
+        "section": "Justice System (introduction)",
+        "excerpt": "Due process is the principle that the government must respect all of legal rights a person is entitled to under the law.",
+        "verifiedAt": "2026-09-23",
+        "reviewStatus": "verified"
+      },
+      "optionAnnotations": [
+        {
+          "relevance": "CORRECT_ANSWER",
+          "explanation": "This is the guide's own definition of due process."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "The presumption of innocence, not a confession requirement, governs Canadian criminal matters."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "Secret trials are not part of the due process principle described here."
+        },
+        {
+          "relevance": "WRONG_CATEGORY",
+          "explanation": "Canada's legal system draws on both common law and, in Quebec, civil law traditions - not exclusively French law."
+        }
+      ]
+    },
+    "fr": {
+      "question": "Que doit faire le gouvernement en vertu du principe de l'application régulière de la loi ?",
+      "options": [
+        "Respecter toutes les garanties juridiques auxquelles a droit une personne en vertu de la loi",
+        "Condamner uniquement ceux qui avouent",
+        "Tenir des procès secrets",
+        "N'utiliser que le droit français"
+      ],
+      "correctIndex": 0,
+      "explanation": "En vertu de l'application régulière de la loi, le gouvernement doit respecter toutes les garanties juridiques auxquelles a droit une personne en vertu de la loi.",
+      "source": {
+        "guide": "Découvrir le Canada",
+        "language": "fr",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/systeme-justice.html",
+        "chapter": "Le système de justice",
+        "section": "Le système de justice (introduction)",
+        "excerpt": "L'application régulière de la loi est le principe selon lequel le gouvernement doit respecter toutes les garanties juridiques auxquelles a droit une personne en vertu de la loi.",
+        "verifiedAt": "2026-09-23",
+        "reviewStatus": "verified"
+      },
+      "optionAnnotations": [
+        {
+          "relevance": "CORRECT_ANSWER",
+          "explanation": "C'est la définition même de l'application régulière de la loi donnée par le guide."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "C'est la présomption d'innocence, et non une exigence d'aveu, qui régit les affaires criminelles canadiennes."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "Les procès secrets ne font pas partie du principe décrit ici."
+        },
+        {
+          "relevance": "WRONG_CATEGORY",
+          "explanation": "Le système juridique canadien s'appuie à la fois sur la common law et, au Québec, sur la tradition civiliste - pas exclusivement sur le droit français."
+        }
+      ]
+    },
+    "ar": {
+      "question": "ما الذي يجب على الحكومة فعله بموجب مبدأ الإجراءات القانونية الواجبة؟",
+      "options": [
+        "احترام جميع الحقوق القانونية التي يستحقها الشخص بموجب القانون",
+        "إدانة من يعترف فقط",
+        "عقد محاكمات سرية",
+        "استخدام القانون الفرنسي فقط"
+      ],
+      "explanation": "بموجب الإجراءات القانونية الواجبة، يجب على الحكومة احترام جميع الحقوق القانونية التي يستحقها الشخص بموجب القانون."
+    }
+  },
+  {
+    "id": "Q445",
+    "chapterId": "justice-system",
+    "type": "true-false",
+    "tags": [
+      "scales-of-justice"
+    ],
+    "learningObjectiveId": "ref-q445",
+    "difficulty": 1,
+    "topic": "justice",
+    "subtopic": "lady_justice_blind",
+    "en": {
+      "question": "Lady Justice is depicted blindfolded to symbolize impartiality, being blind to all considerations but the facts.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correctIndex": 0,
+      "explanation": "The blindfolded Lady Justice symbolizes the impartial manner in which Canadian laws are administered.",
+      "source": {
+        "guide": "Discover Canada",
+        "language": "en",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/justice-system.html",
+        "chapter": "The Justice System",
+        "section": "Courts (photo caption)",
+        "excerpt": "The blindfolded Lady Justice symbolizes the impartial manner in which our laws are administered: blind to all considerations but the facts.",
+        "verifiedAt": "2026-09-23",
+        "reviewStatus": "verified"
+      },
+      "optionAnnotations": [
+        {
+          "relevance": "CORRECT_ANSWER",
+          "explanation": "This matches the guide's own photo caption."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "This contradicts the guide's own caption."
+        }
+      ]
+    },
+    "fr": {
+      "question": "La Justice est représentée les yeux bandés pour symboliser l'impartialité, aveugle à toutes les considérations sauf les faits.",
+      "options": [
+        "Vrai",
+        "Faux"
+      ],
+      "correctIndex": 0,
+      "explanation": "Les yeux bandés de la statue représentant la Justice symbolisent l'impartialité avec laquelle nos lois sont appliquées.",
+      "source": {
+        "guide": "Découvrir le Canada",
+        "language": "fr",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/systeme-justice.html",
+        "chapter": "Le système de justice",
+        "section": "Les tribunaux (légende de la photo)",
+        "excerpt": "Les yeux bandés de la statue représentant la Justice symbolisent l'impartialité avec laquelle nos lois sont appliquées : aveugles à toutes les considérations sauf les faits.",
+        "verifiedAt": "2026-09-23",
+        "reviewStatus": "verified"
+      },
+      "optionAnnotations": [
+        {
+          "relevance": "CORRECT_ANSWER",
+          "explanation": "Cela correspond à la légende de la photo dans le guide."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "Ceci contredit la légende du guide."
+        }
+      ]
+    },
+    "ar": {
+      "question": "تُصوَّر العدالة معصوبة العينين رمزًا للحياد، عمياء عن كل الاعتبارات ما عدا الحقائق.",
+      "options": [
+        "صحيح",
+        "خطأ"
+      ],
+      "explanation": "يرمز غطاء عيني تمثال العدالة إلى الحياد الذي تُطبَّق به قوانيننا."
+    }
+  },
+  {
+    "id": "Q493",
+    "chapterId": "justice-system",
+    "type": "multiple-choice",
+    "tags": [
+      "prisons"
+    ],
+    "learningObjectiveId": "ref-q493",
+    "difficulty": 1,
+    "topic": "justice",
+    "subtopic": "prisons_role",
+    "en": {
+      "question": "What role do prisons play in Canada's justice system?",
+      "options": [
+        "They have an essential role in punishing criminals and deterring crime",
+        "They serve only as labour camps",
+        "They are decorative historic landmarks",
+        "They serve only foreign criminals"
+      ],
+      "correctIndex": 0,
+      "explanation": "Prisons have an essential role in punishing criminals and deterring crime.",
+      "source": {
+        "guide": "Discover Canada",
+        "language": "en",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/justice-system.html",
+        "chapter": "The Justice System",
+        "section": "Courts (photo caption)",
+        "excerpt": "Prisons have an essential role in punishing criminals and deterring crime.",
+        "verifiedAt": "2026-09-23",
+        "reviewStatus": "verified"
+      },
+      "optionAnnotations": [
+        {
+          "relevance": "CORRECT_ANSWER",
+          "explanation": "This is the guide's own photo caption describing prisons' role."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "This is not how the guide describes the purpose of prisons."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "The guide describes an active justice-system role, not a historic/decorative one."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "The guide does not restrict this role to foreign nationals."
+        }
+      ]
+    },
+    "fr": {
+      "question": "Quel rôle jouent les prisons dans le système de justice du Canada ?",
+      "options": [
+        "Elles jouent un rôle essentiel en punissant les criminels et en prévenant le crime",
+        "Elles ne servent que de camps de travail",
+        "Ce sont des sites historiques décoratifs",
+        "Elles ne servent que pour les criminels étrangers"
+      ],
+      "correctIndex": 0,
+      "explanation": "Les prisons jouent un rôle essentiel en punissant les criminels et en prévenant le crime.",
+      "source": {
+        "guide": "Découvrir le Canada",
+        "language": "fr",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/systeme-justice.html",
+        "chapter": "Le système de justice",
+        "section": "Les tribunaux (légende de la photo)",
+        "excerpt": "Les prisons jouent un rôle essentiel en punissant les criminels et en prévenant le crime.",
+        "verifiedAt": "2026-09-23",
+        "reviewStatus": "verified"
+      },
+      "optionAnnotations": [
+        {
+          "relevance": "CORRECT_ANSWER",
+          "explanation": "C'est la légende de la photo du guide décrivant le rôle des prisons."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "Ce n'est pas ainsi que le guide décrit le rôle des prisons."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "Le guide décrit un rôle actif dans le système de justice, pas un rôle historique ou décoratif."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "Le guide ne restreint pas ce rôle aux criminels étrangers."
+        }
+      ]
+    },
+    "ar": {
+      "question": "ما الدور الذي تلعبه السجون في نظام العدالة الكندي؟",
+      "options": [
+        "لها دور أساسي في معاقبة المجرمين وردع الجريمة",
+        "تُستخدم فقط كمعسكرات عمل",
+        "هي معالم تاريخية زخرفية فقط",
+        "تُستخدم فقط للمجرمين الأجانب"
+      ],
+      "explanation": "تلعب السجون دورًا أساسيًا في معاقبة المجرمين وردع الجريمة."
+    }
+  }
+]

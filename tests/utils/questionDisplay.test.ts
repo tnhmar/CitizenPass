@@ -47,4 +47,34 @@ describe("applyOptionOrder", () => {
     expect(result.options).toEqual(base.options);
     expect(result.correctIndex).toBe(base.correctIndex);
   });
+
+  it("permutes optionAnnotations by the same order as options, when present", () => {
+    const withAnnotations: LocalizedQuestion = {
+      ...base,
+      optionAnnotations: [
+        { relevance: "CORRECT_ANSWER", explanation: "why A is right" },
+        { relevance: "PLAUSIBLE_DISTRACTOR", explanation: "why B is wrong" },
+        { relevance: "WRONG_CATEGORY", explanation: "why C is wrong" },
+        { relevance: "RELATED_FACT", explanation: "why D is wrong" },
+      ],
+    };
+    const order = [2, 0, 3, 1];
+    const result = applyOptionOrder(withAnnotations, order);
+
+    // Position 0 now holds the original option 2 ("C"), so it should
+    // carry option 2's annotation ("why C is wrong"), not option 0's.
+    expect(result.optionAnnotations?.map((a) => a.explanation)).toEqual([
+      "why C is wrong",
+      "why A is right",
+      "why D is wrong",
+      "why B is wrong",
+    ]);
+    // The correct option's annotation should still land on correctIndex.
+    expect(result.optionAnnotations?.[result.correctIndex].relevance).toBe("CORRECT_ANSWER");
+  });
+
+  it("leaves optionAnnotations undefined when the source question has none", () => {
+    const result = applyOptionOrder(base, [2, 0, 3, 1]);
+    expect(result.optionAnnotations).toBeUndefined();
+  });
 });

@@ -8,6 +8,7 @@ export type PersistedSettings = {
   theme: AppTheme;
   colorScheme: AppColorScheme;
   arabicHelpEnabled: boolean;
+  hasSeenOnboarding: boolean;
 };
 
 export const DEFAULT_SETTINGS: PersistedSettings = {
@@ -16,6 +17,7 @@ export const DEFAULT_SETTINGS: PersistedSettings = {
   theme: "system",
   colorScheme: "classicRed",
   arabicHelpEnabled: false,
+  hasSeenOnboarding: false,
 };
 
 /**

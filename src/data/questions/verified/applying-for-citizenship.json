@@ -1,0 +1,388 @@
+[
+  {
+    "id": "Q358",
+    "chapterId": "applying-for-citizenship",
+    "type": "multiple-choice",
+    "tags": [
+      "citizenship-application"
+    ],
+    "learningObjectiveId": "ref-q358",
+    "difficulty": 1,
+    "topic": "rights",
+    "subtopic": "citizenship_application",
+    "en": {
+      "question": "What will officials check when you apply for citizenship?",
+      "options": [
+        "Your status, that you are not prohibited from citizenship, and that you meet the requirements",
+        "Your favorite hockey team",
+        "Your assets and bank accounts",
+        "Your political party affiliation"
+      ],
+      "correctIndex": 0,
+      "explanation": "When you apply for citizenship, officials check your status, verify that you are not prohibited from applying, and ensure that you meet the requirements.",
+      "source": {
+        "guide": "Discover Canada",
+        "language": "en",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/applying-citizenship.html",
+        "chapter": "Applying for Citizenship",
+        "section": "Applying for Citizenship (introduction)",
+        "excerpt": "When you apply for citizenship, officials will check your status, verify that you are not prohibited from applying, and ensure that you meet the requirements.",
+        "verifiedAt": "2026-09-22",
+        "reviewStatus": "verified"
+      },
+      "optionAnnotations": [
+        {
+          "relevance": "CORRECT_ANSWER",
+          "explanation": "This is exactly what Discover Canada states officials check when you apply."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "Sports preferences play no role in a citizenship application."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "Assets and bank accounts are not part of the citizenship application check described in the guide."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "Political affiliation is not part of the citizenship application check described in the guide."
+        }
+      ]
+    },
+    "fr": {
+      "question": "Que vérifient les fonctionnaires lorsque vous demandez la citoyenneté ?",
+      "options": [
+        "Votre statut, que vous avez le droit de présenter une demande, et que vous remplissez les exigences",
+        "Votre équipe de hockey préférée",
+        "Vos avoirs et vos comptes bancaires",
+        "Votre affiliation politique"
+      ],
+      "correctIndex": 0,
+      "explanation": "Lorsque vous demandez la citoyenneté, des fonctionnaires examinent votre statut, vérifient si vous avez le droit de présenter une demande et s'assurent que vous remplissez les exigences.",
+      "source": {
+        "guide": "Découvrir le Canada",
+        "language": "fr",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/demander-citoyennete.html",
+        "chapter": "Demander la citoyenneté",
+        "section": "Demander la citoyenneté (introduction)",
+        "excerpt": "Lorsque vous demandez la citoyenneté, des fonctionnaires examinent votre statut, vérifient si vous avez le droit de présenter une demande et s'assurent que vous remplissez les exigences.",
+        "verifiedAt": "2026-09-22",
+        "reviewStatus": "verified"
+      },
+      "optionAnnotations": [
+        {
+          "relevance": "CORRECT_ANSWER",
+          "explanation": "C'est exactement ce que Découvrir le Canada indique que les fonctionnaires vérifient lors d'une demande."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "Les préférences sportives n'ont aucun rôle dans une demande de citoyenneté."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "Les avoirs et les comptes bancaires ne font pas partie des vérifications décrites dans le guide."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "L'affiliation politique ne fait pas partie des vérifications décrites dans le guide."
+        }
+      ]
+    },
+    "ar": {
+      "question": "ماذا يتحقق المسؤولون عند تقديم طلب الحصول على الجنسية؟",
+      "options": [
+        "وضعك القانوني، وأنك غير ممنوع من الجنسية، وأنك تستوفي المتطلبات",
+        "فريق الهوكي المفضل لديك",
+        "ممتلكاتك وحساباتك المصرفية",
+        "انتماءك السياسي"
+      ],
+      "explanation": "عند تقديم طلب الحصول على الجنسية، يتحقق المسؤولون من وضعك، ويتأكدون من أنك غير ممنوع من التقديم، ويضمنون استيفاءك للمتطلبات."
+    }
+  },
+  {
+    "id": "Q359",
+    "chapterId": "applying-for-citizenship",
+    "type": "true-false",
+    "tags": [
+      "language-classes"
+    ],
+    "learningObjectiveId": "ref-q359",
+    "difficulty": 1,
+    "topic": "rights",
+    "subtopic": "language_classes",
+    "en": {
+      "question": "The Government of Canada offers free flights to take the citizenship test for applicants.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correctIndex": 1,
+      "explanation": "This isn't accurate. What the Government of Canada actually offers free of charge is English or French language classes to help you prepare - not flights to the test.",
+      "source": {
+        "guide": "Discover Canada",
+        "language": "en",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/applying-citizenship.html",
+        "chapter": "Applying for Citizenship",
+        "section": "How to Use this Booklet to Prepare for the Citizenship Test",
+        "excerpt": "Take English or French language classes, which the Government of Canada offers free of charge.",
+        "verifiedAt": "2026-09-22",
+        "reviewStatus": "verified"
+      },
+      "optionAnnotations": [
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "There is no free-flights program; this confuses a real free benefit (language classes) with an invented one."
+        },
+        {
+          "relevance": "CORRECT_ANSWER",
+          "explanation": "The guide lists free English or French language classes as a way to prepare - it does not mention any free flights."
+        }
+      ]
+    },
+    "fr": {
+      "question": "Le gouvernement du Canada offre des vols gratuits aux candidats pour se rendre à l'examen de citoyenneté.",
+      "options": [
+        "Vrai",
+        "Faux"
+      ],
+      "correctIndex": 1,
+      "explanation": "Ce n'est pas exact. Ce que le gouvernement du Canada offre réellement gratuitement, ce sont des cours de français ou d'anglais pour vous aider à vous préparer, et non des vols vers le lieu de l'examen.",
+      "source": {
+        "guide": "Découvrir le Canada",
+        "language": "fr",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/demander-citoyennete.html",
+        "chapter": "Demander la citoyenneté",
+        "section": "Comment utiliser la présente brochure afin de vous préparer à l'examen pour la citoyenneté",
+        "excerpt": "Suivre des cours de français ou d'anglais, offerts gratuitement par le gouvernement du Canada.",
+        "verifiedAt": "2026-09-22",
+        "reviewStatus": "verified"
+      },
+      "optionAnnotations": [
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "Il n'existe aucun programme de vols gratuits; cette option confond un avantage réel (les cours de langue) avec un avantage inventé."
+        },
+        {
+          "relevance": "CORRECT_ANSWER",
+          "explanation": "Le guide mentionne des cours gratuits de français ou d'anglais comme moyen de se préparer, mais ne mentionne aucun vol gratuit."
+        }
+      ]
+    },
+    "ar": {
+      "question": "تقدم حكومة كندا رحلات جوية مجانية للمتقدمين لأداء امتحان الجنسية.",
+      "options": [
+        "صحيح",
+        "خطأ"
+      ],
+      "explanation": "هذا غير صحيح. ما تقدمه حكومة كندا مجانًا فعليًا هو دروس في اللغة الإنجليزية أو الفرنسية لمساعدتك على الاستعداد، وليس رحلات جوية إلى مكان الامتحان."
+    }
+  },
+  {
+    "id": "Q360",
+    "chapterId": "applying-for-citizenship",
+    "type": "multiple-choice",
+    "tags": [
+      "citizenship-ceremony"
+    ],
+    "learningObjectiveId": "ref-q360",
+    "difficulty": 2,
+    "topic": "rights",
+    "subtopic": "ceremony_steps",
+    "en": {
+      "question": "What do new Canadians do at the citizenship ceremony?",
+      "options": [
+        "Take the Oath of Citizenship, sign the oath form, and receive their Canadian Citizenship Certificate",
+        "Vote in their first federal election",
+        "Donate to the Government of Canada",
+        "Renounce all previous citizenship"
+      ],
+      "correctIndex": 0,
+      "explanation": "At the ceremony, you take the Oath of Citizenship, sign the oath form, and receive your Canadian Citizenship Certificate.",
+      "source": {
+        "guide": "Discover Canada",
+        "language": "en",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/applying-citizenship.html",
+        "chapter": "Applying for Citizenship",
+        "section": "After the Test",
+        "excerpt": "At the ceremony, you will: Take the Oath of Citizenship; Sign the oath form; and Receive your Canadian Citizenship Certificate.",
+        "verifiedAt": "2026-09-22",
+        "reviewStatus": "verified"
+      },
+      "optionAnnotations": [
+        {
+          "relevance": "CORRECT_ANSWER",
+          "explanation": "These are exactly the three steps Discover Canada describes for the ceremony."
+        },
+        {
+          "relevance": "RELATED_FACT",
+          "explanation": "Voting is a citizenship right you gain, but it happens later, in an actual election - it is not part of the ceremony itself."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "There is no donation step at the citizenship ceremony."
+        },
+        {
+          "relevance": "PARTIALLY_CORRECT",
+          "explanation": "Canada permits dual citizenship, so the ceremony does not require renouncing any other citizenship."
+        }
+      ]
+    },
+    "fr": {
+      "question": "Que font les nouveaux Canadiens lors de la cérémonie de citoyenneté ?",
+      "options": [
+        "Ils prêtent le serment de citoyenneté, signent le formulaire de ce serment et reçoivent leur certificat de citoyenneté canadienne",
+        "Ils votent pour la première fois à une élection fédérale",
+        "Ils font un don au gouvernement du Canada",
+        "Ils renoncent à toute citoyenneté antérieure"
+      ],
+      "correctIndex": 0,
+      "explanation": "Au cours de la cérémonie, vous prêtez le serment de citoyenneté, vous signez le formulaire de ce serment et vous recevez votre certificat de citoyenneté canadienne.",
+      "source": {
+        "guide": "Découvrir le Canada",
+        "language": "fr",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/demander-citoyennete.html",
+        "chapter": "Demander la citoyenneté",
+        "section": "Après l'examen",
+        "excerpt": "Au cours de cette cérémonie : vous prêterez le serment de citoyenneté; vous signerez le formulaire de ce serment; vous recevrez votre certificat de citoyenneté canadienne.",
+        "verifiedAt": "2026-09-22",
+        "reviewStatus": "verified"
+      },
+      "optionAnnotations": [
+        {
+          "relevance": "CORRECT_ANSWER",
+          "explanation": "Ce sont exactement les trois étapes décrites par Découvrir le Canada pour la cérémonie."
+        },
+        {
+          "relevance": "RELATED_FACT",
+          "explanation": "Le droit de vote est bien acquis avec la citoyenneté, mais il s'exerce plus tard, lors d'une élection réelle - il ne fait pas partie de la cérémonie elle-même."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "Il n'y a aucune étape de don lors de la cérémonie de citoyenneté."
+        },
+        {
+          "relevance": "PARTIALLY_CORRECT",
+          "explanation": "Le Canada permet la double citoyenneté; la cérémonie n'exige donc de renoncer à aucune autre citoyenneté."
+        }
+      ]
+    },
+    "ar": {
+      "question": "ماذا يفعل المواطنون الكنديون الجدد في حفل الحصول على الجنسية؟",
+      "options": [
+        "يؤدون قسم المواطنة، ويوقّعون نموذج القسم، ويستلمون شهادة الجنسية الكندية",
+        "يصوتون لأول مرة في انتخابات فيدرالية",
+        "يتبرعون لحكومة كندا",
+        "يتخلون عن أي جنسية سابقة"
+      ],
+      "explanation": "خلال الحفل، تؤدي قسم المواطنة، وتوقّع نموذج القسم، وتستلم شهادة الجنسية الكندية."
+    }
+  },
+  {
+    "id": "Q485",
+    "chapterId": "applying-for-citizenship",
+    "type": "multiple-choice",
+    "tags": [
+      "citizenship-test"
+    ],
+    "learningObjectiveId": "ref-q485",
+    "difficulty": 2,
+    "topic": "rights",
+    "subtopic": "citizenship_test_format",
+    "en": {
+      "question": "What is the purpose of the citizenship test?",
+      "options": [
+        "To assess your knowledge of Canada and the rights and responsibilities of being a citizen",
+        "To test your French/English fluency only",
+        "To verify your background-check status",
+        "To determine if you can run for office"
+      ],
+      "correctIndex": 0,
+      "explanation": "The citizenship test assesses your knowledge of Canada and of the rights and responsibilities of citizenship. Since October 2017, adequate knowledge of English or French is demonstrated separately - the knowledge test itself is not used to assess language ability.",
+      "source": {
+        "guide": "Discover Canada",
+        "language": "en",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/applying-citizenship.html",
+        "chapter": "Applying for Citizenship",
+        "section": "About the Citizenship Test / Note: How Language Ability Is Assessed",
+        "excerpt": "You will be tested on two basic requirements for citizenship: 1) knowledge of Canada and of the rights and responsibilities of citizenship, and 2) adequate knowledge of English or French.",
+        "verifiedAt": "2026-09-22",
+        "reviewStatus": "verified"
+      },
+      "optionAnnotations": [
+        {
+          "relevance": "CORRECT_ANSWER",
+          "explanation": "This is precisely what the citizenship knowledge test assesses."
+        },
+        {
+          "relevance": "PARTIALLY_CORRECT",
+          "explanation": "Language ability is a real requirement, but since October 2017 it is demonstrated separately - the knowledge test itself does not assess it, and it was never the test's only purpose."
+        },
+        {
+          "relevance": "WRONG_CATEGORY",
+          "explanation": "Background checks happen earlier, as part of the application review, not through the knowledge test."
+        },
+        {
+          "relevance": "WRONG_CATEGORY",
+          "explanation": "Eligibility to run for office is unrelated to the citizenship knowledge test."
+        }
+      ]
+    },
+    "fr": {
+      "question": "Quel est le but de l'examen pour la citoyenneté ?",
+      "options": [
+        "Évaluer votre connaissance du Canada ainsi que des droits et responsabilités liés à la citoyenneté",
+        "Évaluer uniquement votre maîtrise du français ou de l'anglais",
+        "Vérifier le résultat de votre vérification des antécédents",
+        "Déterminer si vous pouvez vous présenter à une charge publique"
+      ],
+      "correctIndex": 0,
+      "explanation": "L'examen pour la citoyenneté évalue votre connaissance du Canada ainsi que des droits et responsabilités liés à la citoyenneté. Depuis octobre 2017, la connaissance adéquate de l'anglais ou du français est démontrée séparément : l'examen de connaissances lui-même ne sert pas à évaluer les compétences linguistiques.",
+      "source": {
+        "guide": "Découvrir le Canada",
+        "language": "fr",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/demander-citoyennete.html",
+        "chapter": "Demander la citoyenneté",
+        "section": "Renseignements sur l'examen pour la citoyenneté / Remarque : comment les compétences linguistiques sont évaluées",
+        "excerpt": "On évaluera si vous remplissez deux critères fondamentaux d'attribution de la citoyenneté, c'est-à-dire : 1) si vous connaissez le Canada ainsi que les droits et responsabilités liés à la citoyenneté; et 2) si vous connaissez suffisamment le français ou l'anglais.",
+        "verifiedAt": "2026-09-22",
+        "reviewStatus": "verified"
+      },
+      "optionAnnotations": [
+        {
+          "relevance": "CORRECT_ANSWER",
+          "explanation": "C'est précisément ce qu'évalue l'examen de connaissances pour la citoyenneté."
+        },
+        {
+          "relevance": "PARTIALLY_CORRECT",
+          "explanation": "La compétence linguistique est une exigence réelle, mais depuis octobre 2017 elle est démontrée séparément : l'examen de connaissances lui-même ne l'évalue pas, et ce n'a jamais été son seul but."
+        },
+        {
+          "relevance": "WRONG_CATEGORY",
+          "explanation": "Les vérifications d'antécédents ont lieu plus tôt, dans le cadre de l'examen de la demande, et non par l'examen de connaissances."
+        },
+        {
+          "relevance": "WRONG_CATEGORY",
+          "explanation": "L'admissibilité à se présenter à une charge publique n'a aucun lien avec l'examen de connaissances pour la citoyenneté."
+        }
+      ]
+    },
+    "ar": {
+      "question": "ما هو الغرض من امتحان الجنسية؟",
+      "options": [
+        "تقييم معرفتك بكندا وبحقوق ومسؤوليات المواطنة",
+        "تقييم إتقانك للغة الفرنسية أو الإنجليزية فقط",
+        "التحقق من نتيجة فحص خلفيتك الأمنية",
+        "تحديد ما إذا كان بإمكانك الترشح لمنصب عام"
+      ],
+      "explanation": "يقيّم امتحان الجنسية معرفتك بكندا وبحقوق ومسؤوليات المواطنة. ومنذ أكتوبر 2017، يتم إثبات المعرفة الكافية بالإنجليزية أو الفرنسية بشكل منفصل، ولا يُستخدم امتحان المعرفة نفسه لتقييم القدرة اللغوية."
+    }
+  }
+]

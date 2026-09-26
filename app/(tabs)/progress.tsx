@@ -10,6 +10,9 @@ import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { getChapterList, getChapterTitle } from "../../src/data/contentLoader";
 import { getChapterVisual } from "../../src/constants/chapterIcons";
 import { StatPill } from "../../src/components/StatPill";
+import { computeChapterAccuracy, computeCurrentStreak, computeExamReadiness, getFocusAreas, getRecentActivity, humanizeTag } from "../../src/utils/progressStats";
+import { ExamTrendChart } from "../../src/components/ExamTrendChart";
+import { EXAM_PASS_THRESHOLD } from "../../src/store/useExamStore";
 import type { ManifestChapterEntry } from "../../src/types/content";
 
 export default function ProgressScreen() {
@@ -23,6 +26,7 @@ export default function ProgressScreen() {
   const chapterProgress = useProgressStore((state) => state.chapterProgress);
   const bookmarkedQuestionIds = useProgressStore((state) => state.bookmarkedQuestionIds);
   const examHistory = useProgressStore((state) => state.examHistory);
+  const attemptLog = useProgressStore((state) => state.attemptLog);
 
   const chapters = getChapterList();
   const chaptersStartedCount = Object.keys(chapterProgress).length;
@@ -31,7 +35,21 @@ export default function ProgressScreen() {
     ? Math.round((practiceStats.totalCorrect / practiceStats.totalAttempts) * 100)
     : 0;
 
+  const hasLoggedAttempts = attemptLog.length > 0;
+  const chapterAccuracy = computeChapterAccuracy(attemptLog);
+  const focusAreas = getFocusAreas(attemptLog);
+  const currentStreak = computeCurrentStreak(attemptLog);
+  const recentActivity = getRecentActivity(attemptLog);
+  const readiness = computeExamReadiness(
+    attemptLog,
+    chapters.map((chapter) => chapter.id),
+    Math.round(EXAM_PASS_THRESHOLD * 100)
+  );
+
   const sortedExamHistory = [...examHistory].sort((a, b) => (a.dateIso < b.dateIso ? 1 : -1));
+  // Chart wants oldest-first, and only the same recent slice the list
+  // below shows, so the two stay in sync.
+  const trendAttempts = [...sortedExamHistory.slice(0, 10)].reverse();
 
   const renderChapter = ({ item }: { item: ManifestChapterEntry }) => {
     const visual = getChapterVisual(item.id);
@@ -71,6 +89,72 @@ export default function ProgressScreen() {
             📊 {t("progress.title")}
           </Text>
 
+          <Card mode="outlined" style={styles.readinessCard}>
+            <Card.Content style={styles.readinessCardContent}>
+              <MaterialCommunityIcons
+                name={
+                  readiness.level === "exam-ready"
+                    ? "check-decagram"
+                    : readiness.level === "getting-there"
+                      ? "trending-up"
+                      : readiness.level === "needs-practice"
+                        ? "alert-circle-outline"
+                        : "help-circle-outline"
+                }
+                size={28}
+                color={
+                  readiness.level === "exam-ready"
+                    ? theme.colors.tertiary
+                    : readiness.level === "getting-there"
+                      ? theme.colors.secondary
+                      : readiness.level === "needs-practice"
+                        ? theme.colors.error
+                        : theme.colors.onSurfaceVariant
+                }
+              />
+              <View style={styles.readinessTextBlock}>
+                <Text variant="titleMedium" numberOfLines={2}>
+                  {t(`progress.readiness.${readiness.level}.title`)}
+                </Text>
+                <Text variant="bodySmall" numberOfLines={2} style={{ color: theme.colors.onSurfaceVariant }}>
+                  {readiness.level === "insufficient-data"
+                    ? t("progress.readiness.insufficient-data.detail", { count: readiness.attemptsUntilSignal })
+                    : t("progress.readinessDetail", {
+                        accuracy: readiness.overallAccuracyPercent,
+                        attempted: readiness.chaptersAttempted,
+                        total: readiness.chaptersTotal,
+                      })}
+                </Text>
+              </View>
+            </Card.Content>
+          </Card>
+
+          <Card mode="outlined" style={styles.streakCard}>
+            <Card.Content style={styles.streakCardContent}>
+              <MaterialCommunityIcons
+                name="fire"
+                size={28}
+                color={currentStreak > 0 ? theme.colors.tertiary : theme.colors.onSurfaceVariant}
+              />
+              <View style={styles.streakTextBlock}>
+                <Text variant="titleMedium">
+                  {currentStreak > 0 ? t("progress.streakDays", { count: currentStreak }) : t("progress.streakZero")}
+                </Text>
+                <View style={styles.streakDaysRow}>
+                  {recentActivity.map((active, index) => (
+                    <View
+                      key={index}
+                      style={[
+                        styles.streakDot,
+                        { backgroundColor: active ? theme.colors.tertiary : theme.colors.surfaceVariant },
+                      ]}
+                    />
+                  ))}
+                </View>
+              </View>
+            </Card.Content>
+          </Card>
+
           <View style={styles.statsRow}>
             <StatPill
               icon="target"
@@ -102,6 +186,71 @@ export default function ProgressScreen() {
           </View>
 
           <Text variant="titleMedium" style={styles.sectionTitle}>
+            🎯 {t("progress.accuracyByChapterTitle")}
+          </Text>
+          {!hasLoggedAttempts ? (
+            <Text variant="bodyMedium" style={{ color: theme.colors.onSurfaceVariant, marginBottom: 16 }}>
+              {t("progress.accuracyEmpty")}
+            </Text>
+          ) : (
+            chapters.map((chapter) => {
+              const visual = getChapterVisual(chapter.id);
+              const stat = chapterAccuracy[chapter.id];
+              return (
+                <Card mode="outlined" style={styles.chapterCard} key={chapter.id}>
+                  <Card.Content style={styles.chapterCardContent}>
+                    <View style={[styles.chapterIconCircle, { backgroundColor: `${visual.color}1A` }]}>
+                      <MaterialCommunityIcons name={visual.icon as any} size={20} color={visual.color} />
+                    </View>
+                    <View style={styles.chapterTextBlock}>
+                      <Text variant="bodyMedium">
+                        {visual.emoji} {getChapterTitle(chapter, language)}
+                      </Text>
+                      {stat ? (
+                        <ProgressBar progress={stat.accuracyPercent / 100} color={visual.color} style={styles.progressBar} />
+                      ) : (
+                        <Text variant="labelSmall" style={{ color: theme.colors.onSurfaceVariant }}>
+                          {t("progress.notAttemptedYet")}
+                        </Text>
+                      )}
+                    </View>
+                    <Text variant="labelSmall" style={{ color: theme.colors.onSurfaceVariant }}>
+                      {stat ? `${stat.accuracyPercent}%` : "—"}
+                    </Text>
+                  </Card.Content>
+                </Card>
+              );
+            })
+          )}
+
+          <Text variant="titleMedium" style={styles.sectionTitle}>
+            🔍 {t("progress.focusAreasTitle")}
+          </Text>
+          {focusAreas.length === 0 ? (
+            <Text variant="bodyMedium" style={{ color: theme.colors.onSurfaceVariant, marginBottom: 16 }}>
+              {t("progress.focusAreasEmpty")}
+            </Text>
+          ) : (
+            focusAreas.map((area) => (
+              <Card
+                key={area.tag}
+                mode="outlined"
+                style={styles.focusAreaCard}
+                onPress={() => router.push({ pathname: "/practice", params: { tag: area.tag } })}
+              >
+                <Card.Content style={styles.focusAreaCardContent}>
+                  <Text variant="bodyMedium" style={styles.focusAreaLabel} numberOfLines={1}>
+                    {humanizeTag(area.tag)}
+                  </Text>
+                  <Text variant="labelSmall" style={{ color: theme.colors.error }}>
+                    {area.accuracyPercent}% · {area.correct}/{area.attempts}
+                  </Text>
+                </Card.Content>
+              </Card>
+            ))
+          )}
+
+          <Text variant="titleMedium" style={styles.sectionTitle}>
             📘 {t("progress.chapterProgressTitle")}
           </Text>
         </View>
@@ -116,32 +265,52 @@ export default function ProgressScreen() {
               {t("progress.noExamHistory")}
             </Text>
           ) : (
-            sortedExamHistory.slice(0, 10).map((attempt, index) => (
-              <Card key={`${attempt.dateIso}-${index}`} mode="outlined" style={styles.examCard}>
-                <Card.Content style={styles.examCardContent}>
-                  <MaterialCommunityIcons
-                    name={attempt.passed ? "trophy" : "close-circle-outline"}
-                    size={22}
-                    color={attempt.passed ? theme.colors.tertiary : theme.colors.error}
-                  />
-                  <View style={styles.examTextBlock}>
-                    <Text variant="bodyMedium">
-                      {attempt.score} / {attempt.total}
-                    </Text>
-                    <Text variant="bodySmall" style={{ color: theme.colors.onSurfaceVariant }}>
-                      {new Date(attempt.dateIso).toLocaleDateString()}
-                    </Text>
-                  </View>
-                  <Chip
-                    compact
-                    style={{ backgroundColor: attempt.passed ? successContainer : theme.colors.errorContainer }}
-                    textStyle={{ color: attempt.passed ? success : theme.colors.error }}
-                  >
-                    {attempt.passed ? `🎉 ${t("progress.examPassed")}` : `📚 ${t("progress.examFailed")}`}
-                  </Chip>
-                </Card.Content>
-              </Card>
-            ))
+            <>
+              <ExamTrendChart attempts={trendAttempts} />
+              <View style={styles.trendLegendRow}>
+                <View style={styles.legendItem}>
+                  <View style={[styles.legendDot, { backgroundColor: theme.colors.tertiary }]} />
+                  <Text variant="labelSmall" style={{ color: theme.colors.onSurfaceVariant }}>
+                    {t("progress.examPassed")}
+                  </Text>
+                </View>
+                <View style={styles.legendItem}>
+                  <View style={[styles.legendDot, { backgroundColor: theme.colors.error }]} />
+                  <Text variant="labelSmall" style={{ color: theme.colors.onSurfaceVariant }}>
+                    {t("progress.examFailed")}
+                  </Text>
+                </View>
+                <Text variant="labelSmall" style={{ color: theme.colors.onSurfaceVariant }}>
+                  {t("progress.examTrendPassMark", { percent: Math.round(EXAM_PASS_THRESHOLD * 100) })}
+                </Text>
+              </View>
+              {sortedExamHistory.slice(0, 10).map((attempt, index) => (
+                <Card key={`${attempt.dateIso}-${index}`} mode="outlined" style={styles.examCard}>
+                  <Card.Content style={styles.examCardContent}>
+                    <MaterialCommunityIcons
+                      name={attempt.passed ? "trophy" : "close-circle-outline"}
+                      size={22}
+                      color={attempt.passed ? theme.colors.tertiary : theme.colors.error}
+                    />
+                    <View style={styles.examTextBlock}>
+                      <Text variant="bodyMedium">
+                        {attempt.score} / {attempt.total}
+                      </Text>
+                      <Text variant="bodySmall" style={{ color: theme.colors.onSurfaceVariant }}>
+                        {new Date(attempt.dateIso).toLocaleDateString()}
+                      </Text>
+                    </View>
+                    <Chip
+                      compact
+                      style={{ backgroundColor: attempt.passed ? successContainer : theme.colors.errorContainer }}
+                      textStyle={{ color: attempt.passed ? success : theme.colors.error }}
+                    >
+                      {attempt.passed ? `🎉 ${t("progress.examPassed")}` : `📚 ${t("progress.examFailed")}`}
+                    </Chip>
+                  </Card.Content>
+                </Card>
+              ))}
+            </>
           )}
         </View>
       }
@@ -162,4 +331,18 @@ const styles = StyleSheet.create({
   examCard: { marginBottom: 10 },
   examCardContent: { flexDirection: "row", alignItems: "center", gap: 12 },
   examTextBlock: { flex: 1 },
+  focusAreaCard: { marginBottom: 8 },
+  focusAreaCardContent: { flexDirection: "row", alignItems: "center", justifyContent: "space-between", gap: 12 },
+  focusAreaLabel: { flex: 1 },
+  streakCard: { marginBottom: 16 },
+  streakCardContent: { flexDirection: "row", alignItems: "center", gap: 12 },
+  streakTextBlock: { flex: 1, gap: 6 },
+  streakDaysRow: { flexDirection: "row", gap: 6 },
+  streakDot: { width: 10, height: 10, borderRadius: 5 },
+  readinessCard: { marginBottom: 16 },
+  readinessCardContent: { flexDirection: "row", alignItems: "center", gap: 12 },
+  readinessTextBlock: { flex: 1, gap: 4 },
+  trendLegendRow: { flexDirection: "row", alignItems: "center", gap: 16, marginTop: 8, marginBottom: 16 },
+  legendItem: { flexDirection: "row", alignItems: "center", gap: 6 },
+  legendDot: { width: 8, height: 8, borderRadius: 4 },
 });

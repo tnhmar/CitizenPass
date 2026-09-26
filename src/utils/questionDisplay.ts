@@ -1,4 +1,17 @@
-import type { LocalizedQuestion } from "../types";
+import type { LocalizedQuestion, Question, AppLanguage } from "../types";
+
+/**
+ * Resolves a question's content for the given app language, falling
+ * back to English when that language isn't available yet - notably,
+ * every question imported from the reference 511-question bank has no
+ * `fr` at all while the French-sourcing phase is still ahead (see
+ * docs/content-governance.md). Always use this instead of indexing
+ * `question[language]` directly, so a French-mode learner sees English
+ * content for those questions rather than a crash or blank screen.
+ */
+export function getLocalizedQuestion(question: Question, language: AppLanguage): LocalizedQuestion {
+  return question[language] ?? question.en;
+}
 
 /**
  * Produces a random permutation of option indices (e.g. [2, 0, 3, 1] for
@@ -21,11 +34,17 @@ export function randomOptionOrder(optionCount: number): number[] {
  * The same order can be applied to both the English and French
  * localization of a question, since both option arrays are authored
  * index-aligned (option[i] in en corresponds to option[i] in fr).
+ *
+ * optionAnnotations (see src/types/index.ts), when present, is
+ * index-aligned with options the same way and MUST be permuted by the
+ * exact same order - forgetting this would leave each annotation
+ * pointing at the wrong (pre-shuffle) option once options are shuffled.
  */
 export function applyOptionOrder(localized: LocalizedQuestion, order: number[]): LocalizedQuestion {
   const options = order.map((i) => localized.options[i]);
   const correctIndex = order.indexOf(localized.correctIndex);
-  return { ...localized, options, correctIndex };
+  const optionAnnotations = localized.optionAnnotations ? order.map((i) => localized.optionAnnotations![i]) : undefined;
+  return { ...localized, options, correctIndex, optionAnnotations };
 }
 
 /**
