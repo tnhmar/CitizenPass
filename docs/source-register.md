@@ -2,9 +2,9 @@
 
 This register tracks the official source documents used as the factual authority for CitizenPass study content and questions.
 
-## Current state (as of 2026-09-21)
+## Current state (as of 2026-09-23)
 
-The practice/exam question pool is now the reference 511-question bank, adapted programmatically (`src/data/questionLoader.ts`), not the hand-verified 450-question bank this register originally tracked chapter by chapter — see `docs/content-governance.md`, "Current state" for the phased plan (English now, French sourcing next, Arabic last) and "Importing from the reference 511-question bank" for exactly what the adapter does and doesn't do. Almost every question's `reviewStatus` is `needs-review` today: it has a `source_chapter`/`source_section`/PDF page carried over from the reference bank, but no live `canada.ca` URL, excerpt, or verification date yet.
+The practice/exam question pool is now the reference 511-question bank, adapted programmatically (`src/data/questionLoader.ts`), not the hand-verified 450-question bank this register originally tracked chapter by chapter — see `docs/content-governance.md`, "Current state" for the phased plan (English integration done, French sourcing now in progress chapter by chapter, Arabic last) and "Importing from the reference 511-question bank" for exactly what the adapter does and doesn't do. As of this date, 54 of 522 questions are `verified` (3 of 11 chapters fully done — `applying-for-citizenship`, `canadas-economy`, `justice-system`; see "Verified-upgrade chapters" in `docs/content-governance.md` for the running list). Everything else still has only a `source_chapter`/`source_section`/PDF page carried over from the reference bank, no live `canada.ca` URL, excerpt, or verification date yet.
 
 **What's still valid from before and reusable going forward:** the guide metadata and, especially, the per-chapter `canada.ca` source URLs at the bottom of this register. Verifying a question (upgrading it from `needs-review` to `verified`) means finding its fact on the matching chapter's page below and citing the live excerpt — the URLs don't need to be rediscovered chapter by chapter the way they were the first time.
 
@@ -61,6 +61,10 @@ Four base facts (13 questions with variants) from the deleted 450-question bank 
 ## `applying-for-citizenship` upgrade (current — first chapter verified under the new architecture)
 
 On 2026-09-22, this chapter's 4 reference-bank questions (`Q358`, `Q359`, `Q360`, `Q485`) were upgraded to `reviewStatus: "verified"`: real `canada.ca` EN citations plus independently-sourced French (not translated), living in `src/data/questions/verified/applying-for-citizenship.json`. English question text and options were left exactly as the reference bank wrote them — including `Q358`'s weak "favorite hockey team" distractor — since rewriting English content is out of scope for this pass (see `docs/content-governance.md`, "Verified-upgrade chapters"). Combined with `q-ac-004` (the preserved 55+ exemption fact, already verified), this chapter is now **5/5 verified**, the first chapter fully done under the new architecture.
+
+## `canadas-economy` and `justice-system` upgrades (2026-09-23)
+
+On 2026-09-23, both chapters were fully upgraded to `verified`: 15 questions in `canadas-economy` (`src/data/questions/verified/canadas-economy.json`) and 22 in `justice-system` (`src/data/questions/verified/justice-system.json`), each with a real `canada.ca` citation and independently-sourced French. English question text and options were left as the reference bank wrote them, same as the first chapter. Both live guide pages (URLs below) were fetched and read in full; every fact checked out accurate against the live text, with no stale/inconsistent-guide-text issues found in either chapter this time (contrast `applying-for-citizenship`'s language-testing nuance). Several `justice-system` reference-bank questions test the same underlying fact from a different angle rather than being exact duplicates (e.g. `Q065`/`Q420` both on the Supreme Court being the highest court, `Q067`/`Q191` both on the law binding everyone) — consistent with this project's own variant-angle convention for the pre-511 bank, these were kept as separate questions rather than removed, since removing reference-bank content is outside this pass's scope.
 
 ## Time-sensitive facts excluded from `canadas-regions` (historical — see "Current state" above)
 

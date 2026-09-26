@@ -9,7 +9,7 @@ This document defines how study content and practice questions are sourced, cite
 As of this date, the practice/exam question pool is the reference 511-question bank, adapted programmatically (see `src/data/questionLoader.ts`) rather than hand-authored chapter by chapter. This is a deliberate, explicit decision — not a lapse of the policy below — made in three phases:
 
 1. **Done:** integrate the reference bank as-is, English only, code adjusted to run on it (optional French, citation shape that accepts a PDF page reference instead of a live URL, `reviewStatus: "needs-review"` by default). A small number of facts (13 questions across 4 base facts) were preserved from this project's previous hand-verified bank because the reference bank doesn't cover them at all — see "Reference-bank gap facts" below.
-2. **In progress, chapter by chapter:** French, sourced independently from the live French guide (never a machine translation of the English text) — the same bar this document always held EN/FR to. This is what upgrades a question from `needs-review` to `verified` (see the updated Release rule below). **`applying-for-citizenship` is done** (all 5 questions verified, 2026-09-22) — see "Verified-upgrade chapters" below for how this is tracked and how to do the next one.
+2. **In progress, chapter by chapter:** French, sourced independently from the live French guide (never a machine translation of the English text) — the same bar this document always held EN/FR to. This is what upgrades a question from `needs-review` to `verified` (see the updated Release rule below). **3 of 11 chapters done** (`applying-for-citizenship`, `canadas-economy`, `justice-system` — 42 questions verified, as of 2026-09-23) — see "Verified-upgrade chapters" below for progress and how to do the next one.
 3. **Last:** Arabic, machine-translated - the comprehension-aid bar this project has always used for Arabic (see `ArabicTranslation` in `src/types/index.ts`), unchanged by any of this.
 
 Most of the sections below (question style, the official exam format, the variant/matching-question rules, the time-sensitive-facts policy) describe standards that still apply in full once a question is upgraded to `verified` - they describe the bar content is written *to*, not a claim that every question already meets it today. The "Question production workflow" and "Importing from the reference 511-question bank" sections describe how a question gets upgraded.
@@ -147,7 +147,9 @@ Progress:
 | Chapter | Status |
 |---|---|
 | `applying-for-citizenship` | ✅ Done (2026-09-22) — 5/5 verified |
-| all other 10 chapters | Not started — still 100% `needs-review` |
+| `canadas-economy` | ✅ Done (2026-09-23) — 15/15 verified |
+| `justice-system` | ✅ Done (2026-09-23) — 22/22 verified |
+| all other 8 chapters | Not started — still 100% `needs-review` |
 
 ### Reference-bank gap facts
 
