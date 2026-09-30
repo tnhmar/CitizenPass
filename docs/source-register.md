@@ -2,9 +2,9 @@
 
 This register tracks the official source documents used as the factual authority for CitizenPass study content and questions.
 
-## Current state (as of 2026-09-23)
+## Current state (as of 2026-09-24)
 
-The practice/exam question pool is now the reference 511-question bank, adapted programmatically (`src/data/questionLoader.ts`), not the hand-verified 450-question bank this register originally tracked chapter by chapter — see `docs/content-governance.md`, "Current state" for the phased plan (English integration done, French sourcing now in progress chapter by chapter, Arabic last) and "Importing from the reference 511-question bank" for exactly what the adapter does and doesn't do. As of this date, 54 of 522 questions are `verified` (3 of 11 chapters fully done — `applying-for-citizenship`, `canadas-economy`, `justice-system`; see "Verified-upgrade chapters" in `docs/content-governance.md` for the running list). Everything else still has only a `source_chapter`/`source_section`/PDF page carried over from the reference bank, no live `canada.ca` URL, excerpt, or verification date yet.
+The practice/exam question pool is now the reference 511-question bank, adapted programmatically (`src/data/questionLoader.ts`), not the hand-verified 450-question bank this register originally tracked chapter by chapter — see `docs/content-governance.md`, "Current state" for the phased plan (English integration done, French sourcing now in progress chapter by chapter, Arabic last) and "Importing from the reference 511-question bank" for exactly what the adapter does and doesn't do. As of this date, 75 of 522 questions are `verified` (4 of 11 chapters fully done — `applying-for-citizenship`, `canadas-economy`, `justice-system`, `federal-elections` — plus 12 `modern-canada` questions preserved from the old bank; see "Verified-upgrade chapters" in `docs/content-governance.md` for the running list). Everything else still has only a `source_chapter`/`source_section`/PDF page carried over from the reference bank, no live `canada.ca` URL, excerpt, or verification date yet.
 
 **What's still valid from before and reusable going forward:** the guide metadata and, especially, the per-chapter `canada.ca` source URLs at the bottom of this register. Verifying a question (upgrading it from `needs-review` to `verified`) means finding its fact on the matching chapter's page below and citing the live excerpt — the URLs don't need to be rediscovered chapter by chapter the way they were the first time.
 
@@ -66,6 +66,10 @@ On 2026-09-22, this chapter's 4 reference-bank questions (`Q358`, `Q359`, `Q360`
 
 On 2026-09-23, both chapters were fully upgraded to `verified`: 15 questions in `canadas-economy` (`src/data/questions/verified/canadas-economy.json`) and 22 in `justice-system` (`src/data/questions/verified/justice-system.json`), each with a real `canada.ca` citation and independently-sourced French. English question text and options were left as the reference bank wrote them, same as the first chapter. Both live guide pages (URLs below) were fetched and read in full; every fact checked out accurate against the live text, with no stale/inconsistent-guide-text issues found in either chapter this time (contrast `applying-for-citizenship`'s language-testing nuance). Several `justice-system` reference-bank questions test the same underlying fact from a different angle rather than being exact duplicates (e.g. `Q065`/`Q420` both on the Supreme Court being the highest court, `Q067`/`Q191` both on the law binding everyone) — consistent with this project's own variant-angle convention for the pre-511 bank, these were kept as separate questions rather than removed, since removing reference-bank content is outside this pass's scope.
 
+## `federal-elections` upgrade (2026-09-24)
+
+All 21 reference-bank `federal-elections` questions were upgraded to `verified` (`src/data/questions/verified/federal-elections.json`), with real `canada.ca` citations and independently-sourced French. All 21 checked out accurate against the freshly re-fetched live guide, and none asserts either of the two stale claims tracked above (the 308-district figure or current party standings) — see that section for what to watch for if adding more questions to this chapter later. As with the other verified chapters, English question text and options were left as the reference bank wrote them.
+
 ## Time-sensitive facts excluded from `canadas-regions` (historical — see "Current state" above)
 
 Per `docs/content-governance.md`, "Time-sensitive facts," the live guide page states Canada's population as "about 34 million" and gives similarly dated provincial population figures. Canada's actual population now exceeds 41 million. The deleted bank's 18 `canadas-regions` questions tested no population statistic for this reason. The reference-bank-derived `canadas-regions` questions (90 of them) have not yet been checked against this same pitfall.
@@ -74,12 +78,12 @@ Per `docs/content-governance.md`, "Time-sensitive facts," the live guide page st
 
 The live guide page contains an internally inconsistent, outdated reference to the reigning monarch: the body text correctly uses the generic "Sovereign (Queen or King)," but a fill-in-the-blank study section on the same page still says "the Queen of Canada," and the printed Oath of Citizenship names "Queen Elizabeth the Second" specifically — stale since 2022. The deleted bank had no question about the current monarch's identity for this reason. The reference-bank-derived `canadian-symbols` questions (56 of them) have not yet been checked against this same pitfall.
 
-## Time-sensitive facts excluded from `federal-elections` (historical — see "Current state" above)
+## Time-sensitive facts in `federal-elections` (checked and applied in the 2026-09-24 verification)
 
-- **"Canada is divided into 308 electoral districts."** The guide page itself was still live with this figure as of 2025-08-08. The real count was 338 from 2015 to the 2025 general election, and has been 343 since — the guide has not caught up with either change.
+- **"Canada is divided into 308 electoral districts."** The guide page itself was still live with this figure when re-fetched on 2026-09-24. The real count was 338 from 2015 to the 2025 general election, and has been 343 since — the guide has not caught up with either change.
 - **"Three major political parties currently represented in the House of Commons."** Party standings change with every election.
 
-The deleted bank's 41 `federal-elections` questions avoided both. The reference-bank-derived `federal-elections` questions (21 of them) have not yet been checked against either pitfall.
+The deleted bank's 41 `federal-elections` questions avoided both. All 21 reference-bank-derived `federal-elections` questions were checked against both pitfalls during the 2026-09-24 verification: none tests either figure, so no question was dropped or altered, and both stale claims remain uncited by any question in this chapter. Keep it that way — a future question that does assert the district count or party standings as current fact should be rejected or rewritten, not verified against the guide's stale text.
 
 ## Time-sensitive nuance in `applying-for-citizenship` (applied in the 2026-09-22 verification)
 
