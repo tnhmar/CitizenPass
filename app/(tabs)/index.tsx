@@ -1,11 +1,12 @@
 import { ScrollView, StyleSheet, View } from "react-native";
-import { useRouter } from "expo-router";
+import { useRouter, Redirect } from "expo-router";
 import { Text, Card, Divider, useTheme } from "react-native-paper";
 import { useTranslation } from "react-i18next";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { NavCard } from "../../src/components/NavCard";
 import { StatPill } from "../../src/components/StatPill";
 import { useProgressStore } from "../../src/store/useProgressStore";
+import { useSettingsStore } from "../../src/store/useSettingsStore";
 import { useSemanticColors } from "../../src/theme/useSemanticColors";
 import { getChapterList } from "../../src/data/contentLoader";
 
@@ -28,6 +29,14 @@ export default function HomeScreen() {
   const practiceStats = useProgressStore((state) => state.practiceStats);
   const chapterProgress = useProgressStore((state) => state.chapterProgress);
   const bookmarkedQuestionIds = useProgressStore((state) => state.bookmarkedQuestionIds);
+  const hasSeenOnboarding = useSettingsStore((state) => state.hasSeenOnboarding);
+
+  // Settings are already hydrated by the time any screen renders (see
+  // app/_layout.tsx), so this is a same-frame redirect, not a flash of
+  // Home before onboarding takes over.
+  if (!hasSeenOnboarding) {
+    return <Redirect href="/onboarding" />;
+  }
 
   const totalChapters = getChapterList().length;
   const chaptersStartedCount = Object.keys(chapterProgress).length;

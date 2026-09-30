@@ -1,0 +1,2056 @@
+[
+  {
+    "id": "Q054",
+    "chapterId": "federal-elections",
+    "type": "multiple-choice",
+    "tags": [
+      "election-timing"
+    ],
+    "learningObjectiveId": "ref-q054",
+    "difficulty": 2,
+    "topic": "government",
+    "subtopic": "federal_election_timing",
+    "en": {
+      "question": "When are Canadian federal elections normally held, by law?",
+      "options": [
+        "On the third Monday in October every four years following the most recent general election",
+        "Every two years on the first Tuesday in November",
+        "Whenever the Sovereign chooses to call an election",
+        "Every five years on the first Monday in May"
+      ],
+      "correctIndex": 0,
+      "explanation": "Under legislation passed by Parliament, federal elections must be held on the third Monday in October every four years following the most recent general election.",
+      "source": {
+        "guide": "Discover Canada",
+        "language": "en",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/federal-elections.html",
+        "chapter": "Federal Elections",
+        "section": "Federal Elections (introduction)",
+        "excerpt": "Under legislation passed by Parliament, federal elections must be held on the third Monday in October every four years following the most recent general election.",
+        "verifiedAt": "2026-09-24",
+        "reviewStatus": "verified"
+      },
+      "optionAnnotations": [
+        {
+          "relevance": "CORRECT_ANSWER",
+          "explanation": "This is the fixed-date rule set by Parliament, as stated in the guide."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "This timing does not match the guide's fixed-date rule."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "The Sovereign does not personally decide election timing under this rule; the Prime Minister may ask the Governor General for an earlier one."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "This timing does not match the guide's fixed-date rule."
+        }
+      ]
+    },
+    "fr": {
+      "question": "Quand les élections fédérales canadiennes ont-elles normalement lieu, selon la loi ?",
+      "options": [
+        "Le troisième lundi d'octobre tous les quatre ans après les dernières élections générales",
+        "Tous les deux ans, le premier mardi de novembre",
+        "Chaque fois que le souverain choisit de déclencher une élection",
+        "Tous les cinq ans, le premier lundi de mai"
+      ],
+      "correctIndex": 0,
+      "explanation": "D'après une loi adoptée par le Parlement, des élections fédérales doivent avoir lieu le troisième lundi d'octobre tous les quatre ans après les dernières élections générales.",
+      "source": {
+        "guide": "Découvrir le Canada",
+        "language": "fr",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/elections-federales.html",
+        "chapter": "Les élections fédérales",
+        "section": "Les élections fédérales (introduction)",
+        "excerpt": "D'après une loi adoptée par le Parlement, des élections fédérales doivent avoir lieu le troisième lundi d'octobre tous les quatre ans après les dernières élections générales.",
+        "verifiedAt": "2026-09-24",
+        "reviewStatus": "verified"
+      },
+      "optionAnnotations": [
+        {
+          "relevance": "CORRECT_ANSWER",
+          "explanation": "C'est la règle à date fixe établie par le Parlement, telle qu'énoncée dans le guide."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "Ce calendrier ne correspond pas à la règle à date fixe du guide."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "Le souverain ne décide pas personnellement du moment de l'élection selon cette règle; le premier ministre peut demander au gouverneur général d'en déclencher une plus tôt."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "Ce calendrier ne correspond pas à la règle à date fixe du guide."
+        }
+      ]
+    },
+    "ar": {
+      "question": "متى تُجرى الانتخابات الفيدرالية الكندية عادةً وفقًا للقانون؟",
+      "options": [
+        "يوم الإثنين الثالث من أكتوبر كل أربع سنوات بعد آخر انتخابات عامة",
+        "كل سنتين في أول ثلاثاء من نوفمبر",
+        "متى ما اختار الملك/الملكة إجراء انتخابات",
+        "كل خمس سنوات في أول إثنين من مايو"
+      ],
+      "explanation": "بموجب تشريع أقره البرلمان، يجب إجراء الانتخابات الفيدرالية يوم الإثنين الثالث من أكتوبر كل أربع سنوات بعد آخر انتخابات عامة."
+    }
+  },
+  {
+    "id": "Q055",
+    "chapterId": "federal-elections",
+    "type": "multiple-choice",
+    "tags": [
+      "voting-eligibility"
+    ],
+    "learningObjectiveId": "ref-q055",
+    "difficulty": 1,
+    "topic": "government",
+    "subtopic": "voting_eligibility",
+    "en": {
+      "question": "Who is entitled to vote in a Canadian federal election?",
+      "options": [
+        "A Canadian citizen who is at least 18 years old on voting day and on the voters' list",
+        "Anyone living in Canada who is at least 18 years old",
+        "Any property owner aged 21 or older",
+        "Only citizens who have lived in Canada for at least 10 years"
+      ],
+      "correctIndex": 0,
+      "explanation": "You are eligible to vote if you are a Canadian citizen, at least 18 years old on voting day, and on the voters' list.",
+      "source": {
+        "guide": "Discover Canada",
+        "language": "en",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/federal-elections.html",
+        "chapter": "Federal Elections",
+        "section": "Voting",
+        "excerpt": "You are eligible to vote in a federal election or cast a ballot in a federal referendum if you are: a Canadian citizen; and at least 18 years old on voting day; and on the voters' list.",
+        "verifiedAt": "2026-09-24",
+        "reviewStatus": "verified"
+      },
+      "optionAnnotations": [
+        {
+          "relevance": "CORRECT_ANSWER",
+          "explanation": "This matches all three eligibility conditions the guide lists."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "Residency alone is not enough - the guide requires citizenship."
+        },
+        {
+          "relevance": "ANACHRONISM",
+          "explanation": "Property ownership has not been a voting requirement in Canada for a very long time; the guide requires none."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "No minimum-years-lived-in-Canada requirement is described for voting eligibility in the guide."
+        }
+      ]
+    },
+    "fr": {
+      "question": "Qui a le droit de voter à une élection fédérale canadienne ?",
+      "options": [
+        "Un citoyen canadien âgé d'au moins 18 ans le jour du vote et inscrit sur la liste électorale",
+        "Toute personne vivant au Canada âgée d'au moins 18 ans",
+        "Tout propriétaire âgé de 21 ans ou plus",
+        "Seulement les citoyens vivant au Canada depuis au moins 10 ans"
+      ],
+      "correctIndex": 0,
+      "explanation": "Vous êtes admissible à voter si vous êtes citoyen canadien, âgé d'au moins 18 ans le jour du vote, et inscrit sur la liste électorale.",
+      "source": {
+        "guide": "Découvrir le Canada",
+        "language": "fr",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/elections-federales.html",
+        "chapter": "Les élections fédérales",
+        "section": "Voter",
+        "excerpt": "Pour voter lors d'une élection fédérale ou d'un référendum fédéral, il faut être à la fois : citoyen canadien; âgé d'au moins 18 ans le jour du vote; inscrit sur la liste électorale.",
+        "verifiedAt": "2026-09-24",
+        "reviewStatus": "verified"
+      },
+      "optionAnnotations": [
+        {
+          "relevance": "CORRECT_ANSWER",
+          "explanation": "Cela correspond aux trois conditions d'admissibilité énumérées par le guide."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "La résidence seule ne suffit pas - le guide exige la citoyenneté."
+        },
+        {
+          "relevance": "ANACHRONISM",
+          "explanation": "La propriété foncière n'est plus une condition de vote au Canada depuis très longtemps; le guide n'en exige aucune."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "Aucune exigence de nombre d'années de résidence n'est décrite pour l'admissibilité au vote dans le guide."
+        }
+      ]
+    },
+    "ar": {
+      "question": "من يحق له التصويت في الانتخابات الفيدرالية الكندية؟",
+      "options": [
+        "مواطن كندي يبلغ 18 عامًا على الأقل يوم التصويت ومسجل في قائمة الناخبين",
+        "أي شخص يعيش في كندا ويبلغ 18 عامًا على الأقل",
+        "أي مالك عقار يبلغ 21 عامًا أو أكثر",
+        "فقط المواطنون الذين عاشوا في كندا 10 سنوات على الأقل"
+      ],
+      "explanation": "أنت مؤهل للتصويت إذا كنت مواطنًا كنديًا، تبلغ 18 عامًا على الأقل يوم التصويت، ومسجلًا في قائمة الناخبين."
+    }
+  },
+  {
+    "id": "Q056",
+    "chapterId": "federal-elections",
+    "type": "multiple-choice",
+    "tags": [
+      "secret-ballot"
+    ],
+    "learningObjectiveId": "ref-q056",
+    "difficulty": 1,
+    "topic": "government",
+    "subtopic": "secret_ballot",
+    "en": {
+      "question": "Are you obliged to tell other people how you voted?",
+      "options": [
+        "No — Canadian law secures the right to a secret ballot, and no one can insist you tell them how you voted",
+        "Yes — you must report your vote to Elections Canada within 48 hours",
+        "Yes — but only your employer can ask",
+        "Yes — if you are part of a union, the union representative may ask"
+      ],
+      "correctIndex": 0,
+      "explanation": "Canadian law secures the right to a secret ballot; no one, including family, employers or union representatives, has the right to insist you disclose your vote.",
+      "source": {
+        "guide": "Discover Canada",
+        "language": "en",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/federal-elections.html",
+        "chapter": "Federal Elections",
+        "section": "Secret Ballot",
+        "excerpt": "Canadian law secures the right to a secret ballot. This means that no one can watch you vote and no one should look at how you voted. You may choose to discuss how you voted with others, but no one, including family members, your employer or union representative, has the right to insist that you tell them how you voted.",
+        "verifiedAt": "2026-09-24",
+        "reviewStatus": "verified"
+      },
+      "optionAnnotations": [
+        {
+          "relevance": "CORRECT_ANSWER",
+          "explanation": "This matches the guide's description of the secret ballot right."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "No such reporting requirement exists; the ballot is secret."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "The guide names employers specifically as having no right to insist."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "The guide names union representatives specifically as having no right to insist."
+        }
+      ]
+    },
+    "fr": {
+      "question": "Êtes-vous obligé de dire aux autres pour qui vous avez voté ?",
+      "options": [
+        "Non — la loi canadienne garantit le droit à un vote secret, et personne ne peut insister pour que vous le disiez",
+        "Oui — vous devez déclarer votre vote à Élections Canada dans les 48 heures",
+        "Oui — mais seul votre employeur peut le demander",
+        "Oui — si vous êtes syndiqué, le représentant syndical peut le demander"
+      ],
+      "correctIndex": 0,
+      "explanation": "La loi canadienne garantit le droit à un vote secret; personne, y compris la famille, l'employeur ou le représentant syndical, n'a le droit d'insister pour que vous révéliez votre vote.",
+      "source": {
+        "guide": "Découvrir le Canada",
+        "language": "fr",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/elections-federales.html",
+        "chapter": "Les élections fédérales",
+        "section": "Vote secret",
+        "excerpt": "La loi canadienne prévoit le droit à un vote secret. Cela veut dire que personne ne peut vous regarder voter et que personne ne devrait regarder pour qui vous avez voté. Vous pouvez choisir de discuter de votre vote avec d'autres personnes, mais personne, y compris les membres de votre famille, votre employeur ou votre représentant syndical, n'a le droit d'insister pour que vous lui disiez pour qui vous avez voté.",
+        "verifiedAt": "2026-09-24",
+        "reviewStatus": "verified"
+      },
+      "optionAnnotations": [
+        {
+          "relevance": "CORRECT_ANSWER",
+          "explanation": "Cela correspond à la description du vote secret dans le guide."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "Aucune obligation de déclaration de ce type n'existe; le vote est secret."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "Le guide mentionne spécifiquement que l'employeur n'a pas ce droit."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "Le guide mentionne spécifiquement que le représentant syndical n'a pas ce droit."
+        }
+      ]
+    },
+    "ar": {
+      "question": "هل أنت ملزم بإخبار الآخرين بكيفية تصويتك؟",
+      "options": [
+        "لا — يضمن القانون الكندي الحق في التصويت السري، ولا يحق لأحد الإصرار على معرفة تصويتك",
+        "نعم — يجب عليك إبلاغ إليكشنز كندا بتصويتك خلال 48 ساعة",
+        "نعم — لكن صاحب العمل فقط يمكنه السؤال",
+        "نعم — إذا كنت عضوًا نقابيًا، يمكن لممثل النقابة السؤال"
+      ],
+      "explanation": "لا، يضمن القانون الكندي الحق في التصويت السري؛ ولا يحق لأحد، بما في ذلك العائلة أو صاحب العمل أو ممثل النقابة، الإصرار على معرفة كيفية تصويتك."
+    }
+  },
+  {
+    "id": "Q058",
+    "chapterId": "federal-elections",
+    "type": "multiple-choice",
+    "tags": [
+      "after-election"
+    ],
+    "learningObjectiveId": "ref-q058",
+    "difficulty": 2,
+    "topic": "government",
+    "subtopic": "after_election",
+    "en": {
+      "question": "After a federal election, which party ordinarily forms the government?",
+      "options": [
+        "The political party with the most seats in the House of Commons, after its leader is invited by the Governor General to form the government",
+        "The party that wins the most votes nationwide",
+        "The party chosen by the Senate",
+        "The party that wins the most provincial elections"
+      ],
+      "correctIndex": 0,
+      "explanation": "Ordinarily, the leader of the party with the most seats in the House of Commons is invited by the Governor General to form the government.",
+      "source": {
+        "guide": "Discover Canada",
+        "language": "en",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/federal-elections.html",
+        "chapter": "Federal Elections",
+        "section": "After an Election",
+        "excerpt": "Ordinarily, after an election, the leader of the political party with the most seats in the House of Commons is invited by the Governor General to form the government.",
+        "verifiedAt": "2026-09-24",
+        "reviewStatus": "verified"
+      },
+      "optionAnnotations": [
+        {
+          "relevance": "CORRECT_ANSWER",
+          "explanation": "This matches the guide's description of the ordinary process."
+        },
+        {
+          "relevance": "COMMON_MISCONCEPTION",
+          "explanation": "Canada's system is based on seats won per riding, not the national popular vote total."
+        },
+        {
+          "relevance": "WRONG_CATEGORY",
+          "explanation": "The Senate does not choose the governing party in the guide's description."
+        },
+        {
+          "relevance": "WRONG_CATEGORY",
+          "explanation": "Provincial elections are separate from which party forms the federal government."
+        }
+      ]
+    },
+    "fr": {
+      "question": "Après une élection fédérale, quel parti forme habituellement le gouvernement ?",
+      "options": [
+        "Le parti politique ayant le plus grand nombre de sièges à la Chambre des communes, après que son chef soit invité par le gouverneur général à former le gouvernement",
+        "Le parti qui obtient le plus de votes à l'échelle nationale",
+        "Le parti choisi par le Sénat",
+        "Le parti qui remporte le plus d'élections provinciales"
+      ],
+      "correctIndex": 0,
+      "explanation": "Habituellement, le chef du parti ayant le plus grand nombre de sièges à la Chambre des communes est invité par le gouverneur général à former le gouvernement.",
+      "source": {
+        "guide": "Découvrir le Canada",
+        "language": "fr",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/elections-federales.html",
+        "chapter": "Les élections fédérales",
+        "section": "Après une élection",
+        "excerpt": "Habituellement, après une élection, le chef du parti politique qui a le plus grand nombre de sièges à la Chambre des communes est invité par le gouverneur général à former le gouvernement.",
+        "verifiedAt": "2026-09-24",
+        "reviewStatus": "verified"
+      },
+      "optionAnnotations": [
+        {
+          "relevance": "CORRECT_ANSWER",
+          "explanation": "Cela correspond à la description du processus habituel dans le guide."
+        },
+        {
+          "relevance": "COMMON_MISCONCEPTION",
+          "explanation": "Le système canadien repose sur les sièges remportés par circonscription, pas le total national du vote populaire."
+        },
+        {
+          "relevance": "WRONG_CATEGORY",
+          "explanation": "Le Sénat ne choisit pas le parti au pouvoir selon la description du guide."
+        },
+        {
+          "relevance": "WRONG_CATEGORY",
+          "explanation": "Les élections provinciales sont distinctes du choix du parti qui forme le gouvernement fédéral."
+        }
+      ]
+    },
+    "ar": {
+      "question": "بعد الانتخابات الفيدرالية، أي حزب يشكّل الحكومة عادةً؟",
+      "options": [
+        "الحزب السياسي الذي يحصل على أكبر عدد من المقاعد في مجلس العموم، بعد أن يدعو الحاكم العام زعيمه لتشكيل الحكومة",
+        "الحزب الذي يفوز بأكبر عدد من الأصوات على مستوى البلاد",
+        "الحزب الذي يختاره مجلس الشيوخ",
+        "الحزب الذي يفوز بأكبر عدد من الانتخابات الإقليمية"
+      ],
+      "explanation": "عادةً، يُدعى زعيم الحزب الذي يملك أكبر عدد من المقاعد في مجلس العموم من قبل الحاكم العام لتشكيل الحكومة."
+    }
+  },
+  {
+    "id": "Q061",
+    "chapterId": "federal-elections",
+    "type": "multiple-choice",
+    "tags": [
+      "voter-registration"
+    ],
+    "learningObjectiveId": "ref-q061",
+    "difficulty": 1,
+    "topic": "government",
+    "subtopic": "voting_no_card",
+    "en": {
+      "question": "If you do not receive a voter information card before an election, what should you do?",
+      "options": [
+        "Call your local elections office to ensure that you are on the voters' list, or call Elections Canada at 1-800-463-6868",
+        "Assume you are not allowed to vote",
+        "Wait until the next election",
+        "Apply to become a citizen first"
+      ],
+      "correctIndex": 0,
+      "explanation": "Call your local elections office, or Elections Canada at 1-800-463-6868, to ensure you are on the voters' list.",
+      "source": {
+        "guide": "Discover Canada",
+        "language": "en",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/federal-elections.html",
+        "chapter": "Federal Elections",
+        "section": "Voting",
+        "excerpt": "If you do not receive a voter information card, call your local elections office to ensure that you are on the voters' list. If you do not have the number, call Elections Canada, in Ottawa, at 1-800-463-6868.",
+        "verifiedAt": "2026-09-24",
+        "reviewStatus": "verified"
+      },
+      "optionAnnotations": [
+        {
+          "relevance": "CORRECT_ANSWER",
+          "explanation": "This matches the guide's instructions exactly."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "Not receiving a card does not mean you cannot vote - you can still be added to the voters' list."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "The guide describes acting immediately, not waiting for a future election."
+        },
+        {
+          "relevance": "WRONG_CATEGORY",
+          "explanation": "This assumes you are not already a citizen, which is a prerequisite for voting eligibility already established elsewhere in the guide."
+        }
+      ]
+    },
+    "fr": {
+      "question": "Si vous ne recevez pas de carte d'information de l'électeur avant une élection, que devez-vous faire ?",
+      "options": [
+        "Téléphoner à votre bureau d'élection local pour vérifier que vous êtes sur la liste électorale, ou téléphoner à Élections Canada au 1-800-463-6868",
+        "Présumer que vous n'avez pas le droit de voter",
+        "Attendre la prochaine élection",
+        "Faire d'abord une demande de citoyenneté"
+      ],
+      "correctIndex": 0,
+      "explanation": "Téléphonez à votre bureau d'élection local, ou à Élections Canada au 1-800-463-6868, pour vérifier que vous êtes sur la liste électorale.",
+      "source": {
+        "guide": "Découvrir le Canada",
+        "language": "fr",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/elections-federales.html",
+        "chapter": "Les élections fédérales",
+        "section": "Voter",
+        "excerpt": "Si vous ne recevez pas de carte d'information de l'électeur, téléphonez à votre bureau d'élection local pour vérifier que votre nom est sur la liste électorale. Si vous n'avez pas le numéro, téléphonez à Élections Canada, à Ottawa, au 1-800-463-6868.",
+        "verifiedAt": "2026-09-24",
+        "reviewStatus": "verified"
+      },
+      "optionAnnotations": [
+        {
+          "relevance": "CORRECT_ANSWER",
+          "explanation": "Cela correspond exactement aux instructions du guide."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "Ne pas recevoir de carte ne signifie pas que vous ne pouvez pas voter - vous pouvez toujours être ajouté à la liste électorale."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "Le guide décrit une action immédiate, pas une attente jusqu'à une future élection."
+        },
+        {
+          "relevance": "WRONG_CATEGORY",
+          "explanation": "Ceci suppose que vous n'êtes pas déjà citoyen, une condition préalable au droit de vote déjà établie ailleurs dans le guide."
+        }
+      ]
+    },
+    "ar": {
+      "question": "إذا لم تستلم بطاقة معلومات الناخب قبل الانتخابات، ماذا يجب أن تفعل؟",
+      "options": [
+        "الاتصال بمكتب الانتخابات المحلي للتأكد من أنك مسجل في قائمة الناخبين، أو الاتصال بإليكشنز كندا على الرقم 1-800-463-6868",
+        "افتراض أنه لا يحق لك التصويت",
+        "الانتظار حتى الانتخابات القادمة",
+        "تقديم طلب الحصول على الجنسية أولاً"
+      ],
+      "explanation": "اتصل بمكتب الانتخابات المحلي، أو بإليكشنز كندا على الرقم 1-800-463-6868، للتأكد من أنك مسجل في قائمة الناخبين."
+    }
+  },
+  {
+    "id": "Q168",
+    "chapterId": "federal-elections",
+    "type": "true-false",
+    "tags": [
+      "candidate-age"
+    ],
+    "learningObjectiveId": "ref-q168",
+    "difficulty": 1,
+    "topic": "government",
+    "subtopic": "candidate_age",
+    "en": {
+      "question": "The minimum age to run as a candidate in a Canadian federal election is 18.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correctIndex": 0,
+      "explanation": "Canadian citizens who are 18 years old or older may run in a federal election.",
+      "source": {
+        "guide": "Discover Canada",
+        "language": "en",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/federal-elections.html",
+        "chapter": "Federal Elections",
+        "section": "Federal Elections (introduction)",
+        "excerpt": "Canadian citizens who are 18 years old or older may run in a federal election.",
+        "verifiedAt": "2026-09-24",
+        "reviewStatus": "verified"
+      },
+      "optionAnnotations": [
+        {
+          "relevance": "CORRECT_ANSWER",
+          "explanation": "Stated directly in the guide."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "This contradicts the guide's own text."
+        }
+      ]
+    },
+    "fr": {
+      "question": "L'âge minimum pour se présenter comme candidat à une élection fédérale canadienne est de 18 ans.",
+      "options": [
+        "Vrai",
+        "Faux"
+      ],
+      "correctIndex": 0,
+      "explanation": "Les citoyens canadiens âgés de 18 ans ou plus peuvent se présenter à une élection fédérale.",
+      "source": {
+        "guide": "Découvrir le Canada",
+        "language": "fr",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/elections-federales.html",
+        "chapter": "Les élections fédérales",
+        "section": "Les élections fédérales (introduction)",
+        "excerpt": "Les citoyens canadiens âgés de 18 ans ou plus peuvent se présenter à une élection fédérale.",
+        "verifiedAt": "2026-09-24",
+        "reviewStatus": "verified"
+      },
+      "optionAnnotations": [
+        {
+          "relevance": "CORRECT_ANSWER",
+          "explanation": "Énoncé directement dans le guide."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "Ceci contredit le texte du guide."
+        }
+      ]
+    },
+    "ar": {
+      "question": "الحد الأدنى للعمر للترشح كمرشح في الانتخابات الفيدرالية الكندية هو 18 عامًا.",
+      "options": [
+        "صحيح",
+        "خطأ"
+      ],
+      "explanation": "يمكن للمواطنين الكنديين البالغين 18 عامًا فأكثر الترشح في انتخابات فيدرالية."
+    }
+  },
+  {
+    "id": "Q169",
+    "chapterId": "federal-elections",
+    "type": "true-false",
+    "tags": [
+      "voters-list"
+    ],
+    "learningObjectiveId": "ref-q169",
+    "difficulty": 2,
+    "topic": "government",
+    "subtopic": "voters_list_source",
+    "en": {
+      "question": "Elections Canada produces the federal voters' lists from the National Register of Electors.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correctIndex": 0,
+      "explanation": "The voters' lists used during federal elections are produced from the National Register of Electors by Elections Canada.",
+      "source": {
+        "guide": "Discover Canada",
+        "language": "en",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/federal-elections.html",
+        "chapter": "Federal Elections",
+        "section": "Voting",
+        "excerpt": "The voters' lists used during federal elections and referendums are produced from the National Register of Electors by a neutral agency of Parliament called Elections Canada.",
+        "verifiedAt": "2026-09-24",
+        "reviewStatus": "verified"
+      },
+      "optionAnnotations": [
+        {
+          "relevance": "CORRECT_ANSWER",
+          "explanation": "Stated directly in the guide."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "This contradicts the guide's own text."
+        }
+      ]
+    },
+    "fr": {
+      "question": "Élections Canada produit les listes électorales fédérales à partir du Registre national des électeurs.",
+      "options": [
+        "Vrai",
+        "Faux"
+      ],
+      "correctIndex": 0,
+      "explanation": "Les listes électorales utilisées pendant les élections fédérales sont produites à partir du Registre national des électeurs par Élections Canada.",
+      "source": {
+        "guide": "Découvrir le Canada",
+        "language": "fr",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/elections-federales.html",
+        "chapter": "Les élections fédérales",
+        "section": "Voter",
+        "excerpt": "Les listes électorales utilisées pendant les élections et les référendums fédéraux sont produites à partir du Registre national des électeurs par un organisme neutre du Parlement appelé Élections Canada.",
+        "verifiedAt": "2026-09-24",
+        "reviewStatus": "verified"
+      },
+      "optionAnnotations": [
+        {
+          "relevance": "CORRECT_ANSWER",
+          "explanation": "Énoncé directement dans le guide."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "Ceci contredit le texte du guide."
+        }
+      ]
+    },
+    "ar": {
+      "question": "تُصدر إليكشنز كندا قوائم الناخبين الفيدرالية من السجل الوطني للناخبين.",
+      "options": [
+        "صحيح",
+        "خطأ"
+      ],
+      "explanation": "تُنتج قوائم الناخبين المستخدمة خلال الانتخابات الفيدرالية من السجل الوطني للناخبين بواسطة إليكشنز كندا."
+    }
+  },
+  {
+    "id": "Q170",
+    "chapterId": "federal-elections",
+    "type": "multiple-choice",
+    "tags": [
+      "ballot-marking"
+    ],
+    "learningObjectiveId": "ref-q170",
+    "difficulty": 1,
+    "topic": "government",
+    "subtopic": "vote_marking",
+    "en": {
+      "question": "How do you mark your federal-election ballot in Canada?",
+      "options": [
+        "Mark an 'X' in the circle next to the name of the candidate of your choice",
+        "Rank candidates 1 through 4",
+        "Vote for a party only, not a candidate",
+        "Mark all candidates you find acceptable"
+      ],
+      "correctIndex": 0,
+      "explanation": "You mark an 'X' in the circle next to the name of the candidate of your choice.",
+      "source": {
+        "guide": "Discover Canada",
+        "language": "en",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/federal-elections.html",
+        "chapter": "Federal Elections",
+        "section": "Voting Procedures During an Election Period",
+        "excerpt": "Marking the ballot: Mark an “X” in the circle next to the name of the candidate of your choice.",
+        "verifiedAt": "2026-09-24",
+        "reviewStatus": "verified"
+      },
+      "optionAnnotations": [
+        {
+          "relevance": "CORRECT_ANSWER",
+          "explanation": "This is the exact marking method described in the guide."
+        },
+        {
+          "relevance": "WRONG_CATEGORY",
+          "explanation": "Canada's federal system uses single-mark ballots, not ranked-choice voting."
+        },
+        {
+          "relevance": "COMMON_MISCONCEPTION",
+          "explanation": "You vote for a candidate directly; the candidate's party affiliation is shown but the vote is by candidate."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "Each voter marks exactly one candidate, not multiple."
+        }
+      ]
+    },
+    "fr": {
+      "question": "Comment marquez-vous votre bulletin de vote lors d'une élection fédérale au Canada ?",
+      "options": [
+        "Inscrire un « X » dans le cercle à côté du nom du candidat de votre choix",
+        "Classer les candidats de 1 à 4",
+        "Voter seulement pour un parti, pas pour un candidat",
+        "Cocher tous les candidats que vous jugez acceptables"
+      ],
+      "correctIndex": 0,
+      "explanation": "Vous inscrivez un « X » dans le cercle à côté du nom du candidat de votre choix.",
+      "source": {
+        "guide": "Découvrir le Canada",
+        "language": "fr",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/elections-federales.html",
+        "chapter": "Les élections fédérales",
+        "section": "La procédure de vote en période électorale",
+        "excerpt": "Remplir le bulletin de vote : Inscrivez un « X » dans le cercle à côté du nom du candidat de votre choix.",
+        "verifiedAt": "2026-09-24",
+        "reviewStatus": "verified"
+      },
+      "optionAnnotations": [
+        {
+          "relevance": "CORRECT_ANSWER",
+          "explanation": "C'est exactement la méthode de marquage décrite dans le guide."
+        },
+        {
+          "relevance": "WRONG_CATEGORY",
+          "explanation": "Le système fédéral canadien utilise des bulletins à un seul choix, pas le vote préférentiel classé."
+        },
+        {
+          "relevance": "COMMON_MISCONCEPTION",
+          "explanation": "Vous votez directement pour un candidat; son affiliation politique est indiquée, mais le vote se fait par candidat."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "Chaque électeur choisit exactement un candidat, pas plusieurs."
+        }
+      ]
+    },
+    "ar": {
+      "question": "كيف تُعلّم على بطاقة اقتراعك في الانتخابات الفيدرالية في كندا؟",
+      "options": [
+        "ضع علامة «X» في الدائرة بجانب اسم المرشح الذي تختاره",
+        "رتّب المرشحين من 1 إلى 4",
+        "صوّت لحزب فقط، وليس لمرشح",
+        "ضع علامة على كل المرشحين الذين تجدهم مقبولين"
+      ],
+      "explanation": "تضع علامة «X» في الدائرة بجانب اسم المرشح الذي تختاره."
+    }
+  },
+  {
+    "id": "Q178",
+    "chapterId": "federal-elections",
+    "type": "multiple-choice",
+    "tags": [
+      "election-timing"
+    ],
+    "learningObjectiveId": "ref-q178",
+    "difficulty": 2,
+    "topic": "government",
+    "subtopic": "election_call",
+    "en": {
+      "question": "Who can call an earlier federal election than the four-year fixed date?",
+      "options": [
+        "The Prime Minister, by asking the Governor General",
+        "The Sovereign personally",
+        "The Senate, by majority vote",
+        "Provincial Premiers, collectively"
+      ],
+      "correctIndex": 0,
+      "explanation": "The Prime Minister may ask the Governor General to call an earlier election.",
+      "source": {
+        "guide": "Discover Canada",
+        "language": "en",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/federal-elections.html",
+        "chapter": "Federal Elections",
+        "section": "Federal Elections (introduction)",
+        "excerpt": "The Prime Minister may ask the Governor General to call an earlier election.",
+        "verifiedAt": "2026-09-24",
+        "reviewStatus": "verified"
+      },
+      "optionAnnotations": [
+        {
+          "relevance": "CORRECT_ANSWER",
+          "explanation": "Stated directly in the guide."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "The Sovereign does not personally initiate this; the request comes from the Prime Minister."
+        },
+        {
+          "relevance": "WRONG_CATEGORY",
+          "explanation": "The Senate does not call federal elections in the guide's description."
+        },
+        {
+          "relevance": "WRONG_CATEGORY",
+          "explanation": "Provincial premiers have no role in calling a federal election."
+        }
+      ]
+    },
+    "fr": {
+      "question": "Qui peut déclencher une élection fédérale plus tôt que la date fixe de quatre ans ?",
+      "options": [
+        "Le premier ministre, en le demandant au gouverneur général",
+        "Le souverain personnellement",
+        "Le Sénat, à la majorité",
+        "Les premiers ministres provinciaux, collectivement"
+      ],
+      "correctIndex": 0,
+      "explanation": "Le premier ministre peut demander au gouverneur général de déclencher une élection plus tôt.",
+      "source": {
+        "guide": "Découvrir le Canada",
+        "language": "fr",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/elections-federales.html",
+        "chapter": "Les élections fédérales",
+        "section": "Les élections fédérales (introduction)",
+        "excerpt": "Le premier ministre peut demander au gouverneur général de déclencher une élection plus tôt.",
+        "verifiedAt": "2026-09-24",
+        "reviewStatus": "verified"
+      },
+      "optionAnnotations": [
+        {
+          "relevance": "CORRECT_ANSWER",
+          "explanation": "Énoncé directement dans le guide."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "Le souverain n'initie pas cela personnellement; la demande vient du premier ministre."
+        },
+        {
+          "relevance": "WRONG_CATEGORY",
+          "explanation": "Le Sénat ne déclenche pas les élections fédérales selon la description du guide."
+        },
+        {
+          "relevance": "WRONG_CATEGORY",
+          "explanation": "Les premiers ministres provinciaux n'ont aucun rôle dans le déclenchement d'une élection fédérale."
+        }
+      ]
+    },
+    "ar": {
+      "question": "من يمكنه الدعوة لانتخابات فيدرالية مبكرة قبل الموعد الثابت كل أربع سنوات؟",
+      "options": [
+        "رئيس الوزراء، بطلبه من الحاكم العام",
+        "الملك/الملكة شخصيًا",
+        "مجلس الشيوخ، بالأغلبية",
+        "رؤساء وزراء المقاطعات مجتمعين"
+      ],
+      "explanation": "يمكن لرئيس الوزراء أن يطلب من الحاكم العام الدعوة لانتخابات مبكرة."
+    }
+  },
+  {
+    "id": "Q179",
+    "chapterId": "federal-elections",
+    "type": "multiple-choice",
+    "tags": [
+      "voter-card"
+    ],
+    "learningObjectiveId": "ref-q179",
+    "difficulty": 1,
+    "topic": "government",
+    "subtopic": "voter_card_purpose",
+    "en": {
+      "question": "What does the voter information card from Elections Canada do?",
+      "options": [
+        "Lists when and where you vote and the number to call for interpretive or special services",
+        "Counts as your vote without going to a polling station",
+        "Replaces your passport for ID",
+        "Grants you Canadian citizenship"
+      ],
+      "correctIndex": 0,
+      "explanation": "The voter information card lists when and where you vote and the number to call if you require an interpreter or other special services.",
+      "source": {
+        "guide": "Discover Canada",
+        "language": "en",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/federal-elections.html",
+        "chapter": "Federal Elections",
+        "section": "Voting",
+        "excerpt": "Once an election has been called, Elections Canada mails a voter information card to each elector whose name is in the National Register of Electors. The card lists when and where you vote and the number to call if you require an interpreter or other special services.",
+        "verifiedAt": "2026-09-24",
+        "reviewStatus": "verified"
+      },
+      "optionAnnotations": [
+        {
+          "relevance": "CORRECT_ANSWER",
+          "explanation": "This matches the guide's description of the card's purpose."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "You must still attend a polling station (or vote by an approved alternate method) - the card itself is not a vote."
+        },
+        {
+          "relevance": "WRONG_CATEGORY",
+          "explanation": "The card is not identification like a passport, though you must bring ID separately."
+        },
+        {
+          "relevance": "WRONG_CATEGORY",
+          "explanation": "The card has no relation to citizenship status."
+        }
+      ]
+    },
+    "fr": {
+      "question": "Que fait la carte d'information de l'électeur envoyée par Élections Canada ?",
+      "options": [
+        "Elle indique quand et où voter, ainsi que le numéro à composer pour un interprète ou des services spéciaux",
+        "Elle compte comme votre vote sans aller au bureau de scrutin",
+        "Elle remplace votre passeport comme pièce d'identité",
+        "Elle vous accorde la citoyenneté canadienne"
+      ],
+      "correctIndex": 0,
+      "explanation": "La carte d'information de l'électeur indique quand et où voter, ainsi que le numéro à composer pour un interprète ou d'autres services spéciaux.",
+      "source": {
+        "guide": "Découvrir le Canada",
+        "language": "fr",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/elections-federales.html",
+        "chapter": "Les élections fédérales",
+        "section": "Voter",
+        "excerpt": "Quand une élection est déclenchée, Élections Canada envoie par la poste une carte d'information de l'électeur à chaque personne dont le nom figure dans le Registre national des électeurs. La carte indique quand et à quel endroit vous devez voter ainsi que le numéro de téléphone à composer si vous avez besoin d'un interprète ou d'autres services spéciaux.",
+        "verifiedAt": "2026-09-24",
+        "reviewStatus": "verified"
+      },
+      "optionAnnotations": [
+        {
+          "relevance": "CORRECT_ANSWER",
+          "explanation": "Cela correspond à la description du rôle de la carte dans le guide."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "Vous devez tout de même vous présenter à un bureau de scrutin (ou voter par une méthode de remplacement approuvée) - la carte elle-même n'est pas un vote."
+        },
+        {
+          "relevance": "WRONG_CATEGORY",
+          "explanation": "La carte n'est pas une pièce d'identité comme un passeport, bien que vous deviez apporter une pièce d'identité séparément."
+        },
+        {
+          "relevance": "WRONG_CATEGORY",
+          "explanation": "La carte n'a aucun lien avec le statut de citoyenneté."
+        }
+      ]
+    },
+    "ar": {
+      "question": "ما وظيفة بطاقة معلومات الناخب المرسلة من إليكشنز كندا؟",
+      "options": [
+        "تُبيّن متى وأين تصوّت ورقم الهاتف لطلب مترجم أو خدمات خاصة",
+        "تُحتسب كصوتك دون الذهاب إلى مركز الاقتراع",
+        "تحل محل جواز سفرك كإثبات هوية",
+        "تمنحك الجنسية الكندية"
+      ],
+      "explanation": "تُبيّن بطاقة معلومات الناخب متى وأين تصوّت، ورقم الهاتف الذي تتصل به إذا احتجت مترجمًا أو خدمات خاصة أخرى."
+    }
+  },
+  {
+    "id": "Q180",
+    "chapterId": "federal-elections",
+    "type": "multiple-choice",
+    "tags": [
+      "advance-voting"
+    ],
+    "learningObjectiveId": "ref-q180",
+    "difficulty": 1,
+    "topic": "government",
+    "subtopic": "advance_poll",
+    "en": {
+      "question": "If you cannot or do not wish to vote on election day, what are your options?",
+      "options": [
+        "Vote at advance polls or by special ballot",
+        "Vote by telephone",
+        "Skip the election with no consequence",
+        "Send your spouse to vote on your behalf"
+      ],
+      "correctIndex": 0,
+      "explanation": "You can vote at the advance polls or by special ballot if you cannot or do not wish to vote on election day.",
+      "source": {
+        "guide": "Discover Canada",
+        "language": "en",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/federal-elections.html",
+        "chapter": "Federal Elections",
+        "section": "Voting Procedures During an Election Period",
+        "excerpt": "Advance poll and special ballot: If you cannot or do not wish to vote on election day, you can vote at the advance polls or by special ballot.",
+        "verifiedAt": "2026-09-24",
+        "reviewStatus": "verified"
+      },
+      "optionAnnotations": [
+        {
+          "relevance": "CORRECT_ANSWER",
+          "explanation": "Stated directly in the guide."
+        },
+        {
+          "relevance": "WRONG_CATEGORY",
+          "explanation": "Telephone voting is not described as an option in the guide."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "The guide describes real alternatives to election-day voting, not simply not voting."
+        },
+        {
+          "relevance": "WRONG_CATEGORY",
+          "explanation": "Voting is individual; no one else can cast your ballot for you."
+        }
+      ]
+    },
+    "fr": {
+      "question": "Si vous ne pouvez pas ou ne voulez pas voter le jour de l'élection, quelles sont vos options ?",
+      "options": [
+        "Voter par anticipation ou par bulletin de vote spécial",
+        "Voter par téléphone",
+        "Ne pas voter, sans conséquence",
+        "Envoyer votre conjoint voter à votre place"
+      ],
+      "correctIndex": 0,
+      "explanation": "Vous pouvez voter par anticipation ou par bulletin de vote spécial si vous ne pouvez pas ou ne voulez pas voter le jour de l'élection.",
+      "source": {
+        "guide": "Découvrir le Canada",
+        "language": "fr",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/elections-federales.html",
+        "chapter": "Les élections fédérales",
+        "section": "La procédure de vote en période électorale",
+        "excerpt": "Le vote par anticipation et le bulletin de vote spécial : Si vous ne pouvez pas ou ne voulez pas voter le jour de l'élection, vous pouvez voter par anticipation ou par bulletin de vote spécial.",
+        "verifiedAt": "2026-09-24",
+        "reviewStatus": "verified"
+      },
+      "optionAnnotations": [
+        {
+          "relevance": "CORRECT_ANSWER",
+          "explanation": "Énoncé directement dans le guide."
+        },
+        {
+          "relevance": "WRONG_CATEGORY",
+          "explanation": "Le vote par téléphone n'est pas décrit comme une option dans le guide."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "Le guide décrit de vraies solutions de remplacement au vote le jour de l'élection, pas simplement de ne pas voter."
+        },
+        {
+          "relevance": "WRONG_CATEGORY",
+          "explanation": "Le vote est individuel; personne d'autre ne peut voter à votre place."
+        }
+      ]
+    },
+    "ar": {
+      "question": "إذا تعذر عليك أو لم ترغب في التصويت يوم الانتخابات، ما خياراتك؟",
+      "options": [
+        "التصويت في الاقتراع المبكر أو عبر بطاقة اقتراع خاصة",
+        "التصويت عبر الهاتف",
+        "تخطي التصويت دون أي عواقب",
+        "إرسال زوجك/زوجتك للتصويت نيابة عنك"
+      ],
+      "explanation": "يمكنك التصويت في الاقتراع المبكر أو عبر بطاقة اقتراع خاصة إذا تعذر عليك أو لم ترغب في التصويت يوم الانتخابات."
+    }
+  },
+  {
+    "id": "Q184",
+    "chapterId": "federal-elections",
+    "type": "multiple-choice",
+    "tags": [
+      "provincial-titles"
+    ],
+    "learningObjectiveId": "ref-q184",
+    "difficulty": 2,
+    "topic": "government",
+    "subtopic": "elected_members_provincial",
+    "en": {
+      "question": "What can elected members of a provincial legislature be called in Canada?",
+      "options": [
+        "MLAs, MNAs, MPPs, or MHAs — depending on the province",
+        "MPs only",
+        "Senators",
+        "Mayors"
+      ],
+      "correctIndex": 0,
+      "explanation": "Provincial legislature members may be called MLAs, MNAs, MPPs, or MHAs, depending on the province.",
+      "source": {
+        "guide": "Discover Canada",
+        "language": "en",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/federal-elections.html",
+        "chapter": "Federal Elections",
+        "section": "Other Levels of Government in Canada",
+        "excerpt": "Members of the Legislative Assembly (MLAs) or Members of the National Assembly (MNAs) or Members of the Provincial Parliament (MPPs) or Members of the House of Assembly (MHAs)",
+        "verifiedAt": "2026-09-24",
+        "reviewStatus": "verified"
+      },
+      "optionAnnotations": [
+        {
+          "relevance": "CORRECT_ANSWER",
+          "explanation": "This matches the guide's table of provincial/territorial elected-official titles."
+        },
+        {
+          "relevance": "WRONG_CATEGORY",
+          "explanation": "MP (Member of Parliament) refers to the federal level, not provincial."
+        },
+        {
+          "relevance": "WRONG_CATEGORY",
+          "explanation": "Senators are federally appointed, not elected provincial legislators."
+        },
+        {
+          "relevance": "WRONG_CATEGORY",
+          "explanation": "Mayors are municipal, not provincial, elected officials."
+        }
+      ]
+    },
+    "fr": {
+      "question": "Comment peut-on appeler les députés élus d'une législature provinciale au Canada ?",
+      "options": [
+        "Députés, MLA, MNA, MPP ou MHA — selon la province",
+        "Députés fédéraux (MP) uniquement",
+        "Sénateurs",
+        "Maires"
+      ],
+      "correctIndex": 0,
+      "explanation": "Les députés d'une législature provinciale peuvent être appelés MLA, MNA, MPP ou MHA, selon la province.",
+      "source": {
+        "guide": "Découvrir le Canada",
+        "language": "fr",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/elections-federales.html",
+        "chapter": "Les élections fédérales",
+        "section": "Les autres ordres de gouvernement au Canada",
+        "excerpt": "Députés ou membres de l'Assemblée législative ou Députés ou membres de l'Assemblée nationale ou Députés ou membres du Parlement provincial ou Députés ou membres de la Chambre d'assemblée",
+        "verifiedAt": "2026-09-24",
+        "reviewStatus": "verified"
+      },
+      "optionAnnotations": [
+        {
+          "relevance": "CORRECT_ANSWER",
+          "explanation": "Cela correspond au tableau du guide sur les titres des représentants élus provinciaux et territoriaux."
+        },
+        {
+          "relevance": "WRONG_CATEGORY",
+          "explanation": "Le terme « député fédéral » (MP) désigne le palier fédéral, pas provincial."
+        },
+        {
+          "relevance": "WRONG_CATEGORY",
+          "explanation": "Les sénateurs sont nommés au fédéral, pas des législateurs provinciaux élus."
+        },
+        {
+          "relevance": "WRONG_CATEGORY",
+          "explanation": "Les maires sont des élus municipaux, pas provinciaux."
+        }
+      ]
+    },
+    "ar": {
+      "question": "ماذا يمكن أن يُسمى الأعضاء المنتخبون في الهيئة التشريعية الإقليمية في كندا؟",
+      "options": [
+        "أعضاء الجمعية التشريعية أو الجمعية الوطنية أو برلمان المقاطعة أو مجلس الجمعية — حسب المقاطعة",
+        "أعضاء البرلمان الفيدرالي فقط",
+        "أعضاء مجلس الشيوخ",
+        "رؤساء البلديات"
+      ],
+      "explanation": "يمكن أن يُطلق على أعضاء الهيئة التشريعية الإقليمية أسماء مختلفة حسب المقاطعة."
+    }
+  },
+  {
+    "id": "Q308",
+    "chapterId": "federal-elections",
+    "type": "true-false",
+    "tags": [
+      "election-constituency"
+    ],
+    "learningObjectiveId": "ref-q308",
+    "difficulty": 2,
+    "topic": "government",
+    "subtopic": "election_constituency",
+    "en": {
+      "question": "The Member of Parliament for each electoral district is chosen by party leaders appointing them.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correctIndex": 1,
+      "explanation": "This is false - the citizens in each electoral district elect their own MP by voting, not through appointment by party leaders.",
+      "source": {
+        "guide": "Discover Canada",
+        "language": "en",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/federal-elections.html",
+        "chapter": "Federal Elections",
+        "section": "Federal Elections (introduction)",
+        "excerpt": "The citizens in each electoral district elect one MP who sits in the House of Commons to represent them, as well as all Canadians.",
+        "verifiedAt": "2026-09-24",
+        "reviewStatus": "verified"
+      },
+      "optionAnnotations": [
+        {
+          "relevance": "COMMON_MISCONCEPTION",
+          "explanation": "MPs are chosen by voters in their riding, not appointed by party leadership."
+        },
+        {
+          "relevance": "CORRECT_ANSWER",
+          "explanation": "The guide states citizens in each electoral district elect their MP directly."
+        }
+      ]
+    },
+    "fr": {
+      "question": "Le député de chaque circonscription est choisi par les chefs de parti qui le nomment.",
+      "options": [
+        "Vrai",
+        "Faux"
+      ],
+      "correctIndex": 1,
+      "explanation": "C'est faux - les citoyens de chaque circonscription élisent eux-mêmes leur député par un vote, et non par une nomination des chefs de parti.",
+      "source": {
+        "guide": "Découvrir le Canada",
+        "language": "fr",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/elections-federales.html",
+        "chapter": "Les élections fédérales",
+        "section": "Les élections fédérales (introduction)",
+        "excerpt": "Les citoyens de chaque circonscription élisent un député qui siège à la Chambre des communes. Ce député représente ses électeurs ainsi que tous les Canadiens.",
+        "verifiedAt": "2026-09-24",
+        "reviewStatus": "verified"
+      },
+      "optionAnnotations": [
+        {
+          "relevance": "COMMON_MISCONCEPTION",
+          "explanation": "Les députés sont choisis par les électeurs de leur circonscription, pas nommés par les chefs de parti."
+        },
+        {
+          "relevance": "CORRECT_ANSWER",
+          "explanation": "Le guide indique que les citoyens de chaque circonscription élisent directement leur député."
+        }
+      ]
+    },
+    "ar": {
+      "question": "يختار زعماء الأحزاب عضو البرلمان لكل دائرة انتخابية بالتعيين.",
+      "options": [
+        "صحيح",
+        "خطأ"
+      ],
+      "explanation": "هذا غير صحيح - يقوم مواطنو كل دائرة انتخابية بانتخاب عضو البرلمان مباشرة عبر التصويت، وليس عبر تعيين من زعماء الأحزاب."
+    }
+  },
+  {
+    "id": "Q309",
+    "chapterId": "federal-elections",
+    "type": "multiple-choice",
+    "tags": [
+      "vote-counting"
+    ],
+    "learningObjectiveId": "ref-q309",
+    "difficulty": 1,
+    "topic": "government",
+    "subtopic": "after_polls_close",
+    "en": {
+      "question": "What happens immediately after the polling stations close?",
+      "options": [
+        "Election officers count the ballots and results are announced on radio, TV, and in newspapers",
+        "Ballots are stored for a year before counting",
+        "The Sovereign reviews each ballot",
+        "A second election is held to confirm results"
+      ],
+      "correctIndex": 0,
+      "explanation": "Immediately after the polling stations close, election officers count the ballots and the results are announced on radio, television, and in newspapers.",
+      "source": {
+        "guide": "Discover Canada",
+        "language": "en",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/federal-elections.html",
+        "chapter": "Federal Elections",
+        "section": "Secret Ballot",
+        "excerpt": "Immediately after the polling stations close, election officers count the ballots and the results are announced on radio and television, and in the newspapers.",
+        "verifiedAt": "2026-09-24",
+        "reviewStatus": "verified"
+      },
+      "optionAnnotations": [
+        {
+          "relevance": "CORRECT_ANSWER",
+          "explanation": "Stated directly in the guide."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "Counting happens immediately, not after a year-long delay."
+        },
+        {
+          "relevance": "WRONG_CATEGORY",
+          "explanation": "The Sovereign has no role in reviewing individual ballots."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "No confirmation election is described in the guide."
+        }
+      ]
+    },
+    "fr": {
+      "question": "Que se passe-t-il immédiatement après la fermeture des bureaux de vote ?",
+      "options": [
+        "Le personnel électoral compte les bulletins et les résultats sont annoncés à la radio, à la télévision et dans les journaux",
+        "Les bulletins sont conservés pendant un an avant d'être comptés",
+        "Le souverain examine chaque bulletin",
+        "Une seconde élection est tenue pour confirmer les résultats"
+      ],
+      "correctIndex": 0,
+      "explanation": "Immédiatement après la fermeture des bureaux de vote, le personnel électoral compte les bulletins et les résultats sont annoncés à la radio et à la télévision, ainsi que dans les journaux.",
+      "source": {
+        "guide": "Découvrir le Canada",
+        "language": "fr",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/elections-federales.html",
+        "chapter": "Les élections fédérales",
+        "section": "Vote secret",
+        "excerpt": "Immédiatement après la fermeture des bureaux de vote, les membres du personnel électoral comptent les votes et les résultats sont annoncés à la radio et à la télévision ainsi que dans les journaux.",
+        "verifiedAt": "2026-09-24",
+        "reviewStatus": "verified"
+      },
+      "optionAnnotations": [
+        {
+          "relevance": "CORRECT_ANSWER",
+          "explanation": "Énoncé directement dans le guide."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "Le dépouillement se fait immédiatement, pas après un délai d'un an."
+        },
+        {
+          "relevance": "WRONG_CATEGORY",
+          "explanation": "Le souverain n'a aucun rôle dans l'examen des bulletins individuels."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "Aucune élection de confirmation n'est décrite dans le guide."
+        }
+      ]
+    },
+    "ar": {
+      "question": "ماذا يحدث فور إغلاق مراكز الاقتراع؟",
+      "options": [
+        "يقوم موظفو الانتخابات بعدّ الأصوات وتُعلن النتائج عبر الراديو والتلفاز والصحف",
+        "تُحفظ الأصوات لمدة عام قبل عدّها",
+        "يراجع الملك/الملكة كل بطاقة اقتراع",
+        "تُجرى انتخابات ثانية لتأكيد النتائج"
+      ],
+      "explanation": "فور إغلاق مراكز الاقتراع، يقوم موظفو الانتخابات بعدّ الأصوات وتُعلن النتائج عبر الراديو والتلفاز والصحف."
+    }
+  },
+  {
+    "id": "Q310",
+    "chapterId": "federal-elections",
+    "type": "multiple-choice",
+    "tags": [
+      "ballot-procedure"
+    ],
+    "learningObjectiveId": "ref-q310",
+    "difficulty": 1,
+    "topic": "government",
+    "subtopic": "ballot_box_step",
+    "en": {
+      "question": "What does the poll official do with the ballot number after you mark your ballot?",
+      "options": [
+        "Tears it off and gives the ballot back to you to deposit in the ballot box",
+        "Marks it with a witness signature",
+        "Keeps the ballot themselves",
+        "Photographs the ballot"
+      ],
+      "correctIndex": 0,
+      "explanation": "The poll official tears off the ballot number and gives the ballot back to you to deposit in the ballot box.",
+      "source": {
+        "guide": "Discover Canada",
+        "language": "en",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/federal-elections.html",
+        "chapter": "Federal Elections",
+        "section": "Voting Procedures During an Election Period",
+        "excerpt": "The ballot box: The poll official will tear off the ballot number and give your ballot back to you to deposit in the ballot box.",
+        "verifiedAt": "2026-09-24",
+        "reviewStatus": "verified"
+      },
+      "optionAnnotations": [
+        {
+          "relevance": "CORRECT_ANSWER",
+          "explanation": "Stated directly in the guide."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "No witness signature step is described in the guide."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "You, not the official, deposit your own ballot in the box."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "Photographing ballots is not part of the described procedure and would undermine the secret ballot."
+        }
+      ]
+    },
+    "fr": {
+      "question": "Que fait le personnel de scrutin avec le numéro du bulletin après que vous ayez marqué votre bulletin de vote ?",
+      "options": [
+        "Il le détache et vous remet votre bulletin pour que vous le déposiez dans l'urne",
+        "Il le marque d'une signature de témoin",
+        "Il garde le bulletin lui-même",
+        "Il photographie le bulletin"
+      ],
+      "correctIndex": 0,
+      "explanation": "Le personnel de scrutin détache le numéro du bulletin et vous remet votre bulletin pour que vous le déposiez dans l'urne.",
+      "source": {
+        "guide": "Découvrir le Canada",
+        "language": "fr",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/elections-federales.html",
+        "chapter": "Les élections fédérales",
+        "section": "La procédure de vote en période électorale",
+        "excerpt": "L'urne : Le personnel de scrutin détachera le numéro du bulletin de vote et vous remettra votre bulletin pour que vous le déposiez dans l'urne.",
+        "verifiedAt": "2026-09-24",
+        "reviewStatus": "verified"
+      },
+      "optionAnnotations": [
+        {
+          "relevance": "CORRECT_ANSWER",
+          "explanation": "Énoncé directement dans le guide."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "Aucune étape de signature de témoin n'est décrite dans le guide."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "C'est vous, et non le personnel, qui déposez votre propre bulletin dans l'urne."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "Photographier les bulletins ne fait pas partie de la procédure décrite et compromettrait le secret du vote."
+        }
+      ]
+    },
+    "ar": {
+      "question": "ماذا يفعل موظف الاقتراع برقم بطاقة الاقتراع بعد أن تضع علامتك عليها؟",
+      "options": [
+        "يفصله ويعيد إليك بطاقة الاقتراع لتضعها في صندوق الاقتراع",
+        "يضع عليها توقيع شاهد",
+        "يحتفظ ببطاقة الاقتراع بنفسه",
+        "يصوّر بطاقة الاقتراع"
+      ],
+      "explanation": "يفصل موظف الاقتراع رقم بطاقة الاقتراع ويعيد إليك البطاقة لتضعها في صندوق الاقتراع."
+    }
+  },
+  {
+    "id": "Q311",
+    "chapterId": "federal-elections",
+    "type": "multiple-choice",
+    "tags": [
+      "secret-ballot"
+    ],
+    "learningObjectiveId": "ref-q311",
+    "difficulty": 1,
+    "topic": "government",
+    "subtopic": "ballot_screen",
+    "en": {
+      "question": "Why are voters invited to mark their ballot 'behind the screen'?",
+      "options": [
+        "To keep the vote secret",
+        "To prevent voters from changing their mind",
+        "To meet a religious ritual requirement",
+        "To photograph the ballot for verification"
+      ],
+      "correctIndex": 0,
+      "explanation": "Voters mark their ballot behind the screen to keep their vote secret.",
+      "source": {
+        "guide": "Discover Canada",
+        "language": "en",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/federal-elections.html",
+        "chapter": "Federal Elections",
+        "section": "Voting Procedures During an Election Period",
+        "excerpt": "Voting is secret: Your vote is secret. You will be invited to go behind the screen to mark your ballot.",
+        "verifiedAt": "2026-09-24",
+        "reviewStatus": "verified"
+      },
+      "optionAnnotations": [
+        {
+          "relevance": "CORRECT_ANSWER",
+          "explanation": "This matches the guide's stated reason - protecting the secrecy of the vote."
+        },
+        {
+          "relevance": "WRONG_CATEGORY",
+          "explanation": "The screen is about privacy, not preventing a voter from reconsidering."
+        },
+        {
+          "relevance": "WRONG_CATEGORY",
+          "explanation": "No religious ritual is described; this is a secular ballot-secrecy measure."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "Photographing ballots is not described and would undermine, not support, secrecy."
+        }
+      ]
+    },
+    "fr": {
+      "question": "Pourquoi les électeurs sont-ils invités à marquer leur bulletin de vote « derrière l'isoloir » ?",
+      "options": [
+        "Pour garder le vote secret",
+        "Pour empêcher les électeurs de changer d'avis",
+        "Pour respecter une exigence rituelle religieuse",
+        "Pour photographier le bulletin à des fins de vérification"
+      ],
+      "correctIndex": 0,
+      "explanation": "Les électeurs marquent leur bulletin derrière l'isoloir afin de garder leur vote secret.",
+      "source": {
+        "guide": "Découvrir le Canada",
+        "language": "fr",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/elections-federales.html",
+        "chapter": "Les élections fédérales",
+        "section": "La procédure de vote en période électorale",
+        "excerpt": "Le vote est secret : Votre vote est secret. On vous invitera à vous rendre derrière l'isoloir pour remplir votre bulletin de vote.",
+        "verifiedAt": "2026-09-24",
+        "reviewStatus": "verified"
+      },
+      "optionAnnotations": [
+        {
+          "relevance": "CORRECT_ANSWER",
+          "explanation": "Cela correspond à la raison énoncée dans le guide - protéger le secret du vote."
+        },
+        {
+          "relevance": "WRONG_CATEGORY",
+          "explanation": "L'isoloir concerne la confidentialité, pas le fait d'empêcher un électeur de reconsidérer son choix."
+        },
+        {
+          "relevance": "WRONG_CATEGORY",
+          "explanation": "Aucun rituel religieux n'est décrit; il s'agit d'une mesure laïque de confidentialité du vote."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "Photographier les bulletins n'est pas décrit et compromettrait, plutôt que soutiendrait, la confidentialité."
+        }
+      ]
+    },
+    "ar": {
+      "question": "لماذا يُدعى الناخبون لوضع علامتهم على بطاقة الاقتراع «خلف الحاجز»؟",
+      "options": [
+        "للحفاظ على سرية التصويت",
+        "لمنع الناخبين من تغيير رأيهم",
+        "لتلبية متطلب طقسي ديني",
+        "لتصوير بطاقة الاقتراع لأغراض التحقق"
+      ],
+      "explanation": "يضع الناخبون علامتهم خلف الحاجز للحفاظ على سرية تصويتهم."
+    }
+  },
+  {
+    "id": "Q312",
+    "chapterId": "federal-elections",
+    "type": "multiple-choice",
+    "tags": [
+      "election-results"
+    ],
+    "learningObjectiveId": "ref-q312",
+    "difficulty": 1,
+    "topic": "government",
+    "subtopic": "elections_canada_website",
+    "en": {
+      "question": "Where can voters check the official Canadian federal election results?",
+      "options": [
+        "On the Elections Canada website (www.elections.ca)",
+        "On the Prime Minister's personal blog",
+        "In the Senate library",
+        "At the Canadian embassy in your country"
+      ],
+      "correctIndex": 0,
+      "explanation": "You can see the results on television or on the Elections Canada website (www.elections.ca).",
+      "source": {
+        "guide": "Discover Canada",
+        "language": "en",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/federal-elections.html",
+        "chapter": "Federal Elections",
+        "section": "Voting Procedures During an Election Period",
+        "excerpt": "The election results: When the polls close, every ballot is counted and the results are made public. You can see the results on television or on the Elections Canada website (www.elections.ca).",
+        "verifiedAt": "2026-09-24",
+        "reviewStatus": "verified"
+      },
+      "optionAnnotations": [
+        {
+          "relevance": "CORRECT_ANSWER",
+          "explanation": "Stated directly in the guide."
+        },
+        {
+          "relevance": "WRONG_CATEGORY",
+          "explanation": "No such personal blog is described as an official results source."
+        },
+        {
+          "relevance": "WRONG_CATEGORY",
+          "explanation": "The Senate library is not described as a results source in the guide."
+        },
+        {
+          "relevance": "WRONG_CATEGORY",
+          "explanation": "Embassies are not described as an election-results source in the guide."
+        }
+      ]
+    },
+    "fr": {
+      "question": "Où les électeurs peuvent-ils consulter les résultats officiels d'une élection fédérale canadienne ?",
+      "options": [
+        "Sur le site Web d'Élections Canada (www.elections.ca)",
+        "Sur le blogue personnel du premier ministre",
+        "Dans la bibliothèque du Sénat",
+        "À l'ambassade du Canada dans votre pays"
+      ],
+      "correctIndex": 0,
+      "explanation": "Vous pouvez consulter les résultats à la télévision ou sur le site Web d'Élections Canada (www.elections.ca).",
+      "source": {
+        "guide": "Découvrir le Canada",
+        "language": "fr",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/elections-federales.html",
+        "chapter": "Les élections fédérales",
+        "section": "La procédure de vote en période électorale",
+        "excerpt": "Les résultats de l'élection : Quand les bureaux de vote ferment, chaque bulletin de vote est compté et les résultats sont rendus publics. Vous pouvez voir les résultats à la télévision ou sur le site Web d'Élections Canada (www.elections.ca).",
+        "verifiedAt": "2026-09-24",
+        "reviewStatus": "verified"
+      },
+      "optionAnnotations": [
+        {
+          "relevance": "CORRECT_ANSWER",
+          "explanation": "Énoncé directement dans le guide."
+        },
+        {
+          "relevance": "WRONG_CATEGORY",
+          "explanation": "Aucun blogue personnel de ce type n'est décrit comme source officielle de résultats."
+        },
+        {
+          "relevance": "WRONG_CATEGORY",
+          "explanation": "La bibliothèque du Sénat n'est pas décrite comme source de résultats dans le guide."
+        },
+        {
+          "relevance": "WRONG_CATEGORY",
+          "explanation": "Les ambassades ne sont pas décrites comme source de résultats électoraux dans le guide."
+        }
+      ]
+    },
+    "ar": {
+      "question": "أين يمكن للناخبين الاطلاع على النتائج الرسمية للانتخابات الفيدرالية الكندية؟",
+      "options": [
+        "على موقع إليكشنز كندا الإلكتروني (www.elections.ca)",
+        "على المدونة الشخصية لرئيس الوزراء",
+        "في مكتبة مجلس الشيوخ",
+        "في السفارة الكندية في بلدك"
+      ],
+      "explanation": "يمكنك الاطلاع على النتائج عبر التلفاز أو على موقع إليكشنز كندا الإلكتروني (www.elections.ca)."
+    }
+  },
+  {
+    "id": "Q313",
+    "chapterId": "federal-elections",
+    "type": "true-false",
+    "tags": [
+      "after-election"
+    ],
+    "learningObjectiveId": "ref-q313",
+    "difficulty": 1,
+    "topic": "government",
+    "subtopic": "after_election_GG_invites",
+    "en": {
+      "question": "The Governor General invites the leader of the party with the most seats to form the government.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correctIndex": 0,
+      "explanation": "Ordinarily, the Governor General invites the leader of the party with the most seats in the House of Commons to form the government.",
+      "source": {
+        "guide": "Discover Canada",
+        "language": "en",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/federal-elections.html",
+        "chapter": "Federal Elections",
+        "section": "After an Election",
+        "excerpt": "Ordinarily, after an election, the leader of the political party with the most seats in the House of Commons is invited by the Governor General to form the government.",
+        "verifiedAt": "2026-09-24",
+        "reviewStatus": "verified"
+      },
+      "optionAnnotations": [
+        {
+          "relevance": "CORRECT_ANSWER",
+          "explanation": "Stated directly in the guide."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "This contradicts the guide's own text."
+        }
+      ]
+    },
+    "fr": {
+      "question": "Le gouverneur général invite le chef du parti ayant le plus grand nombre de sièges à former le gouvernement.",
+      "options": [
+        "Vrai",
+        "Faux"
+      ],
+      "correctIndex": 0,
+      "explanation": "Habituellement, le gouverneur général invite le chef du parti ayant le plus grand nombre de sièges à la Chambre des communes à former le gouvernement.",
+      "source": {
+        "guide": "Découvrir le Canada",
+        "language": "fr",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/elections-federales.html",
+        "chapter": "Les élections fédérales",
+        "section": "Après une élection",
+        "excerpt": "Habituellement, après une élection, le chef du parti politique qui a le plus grand nombre de sièges à la Chambre des communes est invité par le gouverneur général à former le gouvernement.",
+        "verifiedAt": "2026-09-24",
+        "reviewStatus": "verified"
+      },
+      "optionAnnotations": [
+        {
+          "relevance": "CORRECT_ANSWER",
+          "explanation": "Énoncé directement dans le guide."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "Ceci contredit le texte du guide."
+        }
+      ]
+    },
+    "ar": {
+      "question": "يدعو الحاكم العام زعيم الحزب الذي يملك أكبر عدد من المقاعد لتشكيل الحكومة.",
+      "options": [
+        "صحيح",
+        "خطأ"
+      ],
+      "explanation": "عادةً، يدعو الحاكم العام زعيم الحزب الذي يملك أكبر عدد من المقاعد في مجلس العموم لتشكيل الحكومة."
+    }
+  },
+  {
+    "id": "Q314",
+    "chapterId": "federal-elections",
+    "type": "multiple-choice",
+    "tags": [
+      "confidence-vote"
+    ],
+    "learningObjectiveId": "ref-q314",
+    "difficulty": 3,
+    "topic": "government",
+    "subtopic": "election_budget_confidence",
+    "en": {
+      "question": "Why is a vote on the budget considered a matter of confidence?",
+      "options": [
+        "If the House votes against a major government decision like the budget, the party in power is defeated and an election may follow",
+        "It's just a financial calculation, no constitutional meaning",
+        "It only matters if the Senate also opposes",
+        "Only opposition leaders vote on it"
+      ],
+      "correctIndex": 0,
+      "explanation": "A budget vote is a matter of confidence because if a majority of MPs vote against it, the governing party is defeated, usually leading to an election.",
+      "source": {
+        "guide": "Discover Canada",
+        "language": "en",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/federal-elections.html",
+        "chapter": "Federal Elections",
+        "section": "After an Election",
+        "excerpt": "When the House of Commons votes on a major issue such as the budget, this is considered a matter of confidence. If a majority of the members of the House of Commons vote against a major government decision, the party in power is defeated, which usually results in the Prime Minister asking the Governor General... to call an election.",
+        "verifiedAt": "2026-09-24",
+        "reviewStatus": "verified"
+      },
+      "optionAnnotations": [
+        {
+          "relevance": "CORRECT_ANSWER",
+          "explanation": "This matches the guide's explanation of why budget votes carry constitutional weight."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "The guide treats it as more than a mere calculation - it has real constitutional consequences for the government's survival."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "The confidence convention concerns the House of Commons, not the Senate's position."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "All members of the House of Commons vote, not only opposition leaders."
+        }
+      ]
+    },
+    "fr": {
+      "question": "Pourquoi un vote sur le budget est-il considéré comme une question de confiance ?",
+      "options": [
+        "Si la Chambre vote contre une décision importante du gouvernement comme le budget, le parti au pouvoir est défait et une élection peut suivre",
+        "C'est un simple calcul financier, sans portée constitutionnelle",
+        "Cela ne compte que si le Sénat s'y oppose aussi",
+        "Seuls les chefs de l'opposition votent sur cette question"
+      ],
+      "correctIndex": 0,
+      "explanation": "Un vote sur le budget est une question de confiance car si la majorité des députés vote contre, le parti au pouvoir est défait, ce qui mène habituellement à une élection.",
+      "source": {
+        "guide": "Découvrir le Canada",
+        "language": "fr",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/elections-federales.html",
+        "chapter": "Les élections fédérales",
+        "section": "Après une élection",
+        "excerpt": "Quand la Chambre des communes vote sur un enjeu important comme le budget, on considère qu'il s'agit d'une question de confiance. Si la majorité des députés de la Chambre des communes vote contre une décision importante du gouvernement, le parti au pouvoir est défait, ce qui amène habituellement le premier ministre à demander au gouverneur général... de déclencher une élection.",
+        "verifiedAt": "2026-09-24",
+        "reviewStatus": "verified"
+      },
+      "optionAnnotations": [
+        {
+          "relevance": "CORRECT_ANSWER",
+          "explanation": "Cela correspond à l'explication du guide sur le poids constitutionnel des votes budgétaires."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "Le guide le traite comme bien plus qu'un simple calcul - il a de réelles conséquences constitutionnelles sur la survie du gouvernement."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "La convention de confiance concerne la Chambre des communes, pas la position du Sénat."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "Tous les députés de la Chambre des communes votent, pas seulement les chefs de l'opposition."
+        }
+      ]
+    },
+    "ar": {
+      "question": "لماذا يُعتبر التصويت على الميزانية مسألة ثقة؟",
+      "options": [
+        "إذا صوّت المجلس ضد قرار حكومي مهم مثل الميزانية، يُهزم الحزب الحاكم وقد تتبع ذلك انتخابات",
+        "إنه مجرد حساب مالي دون أي معنى دستوري",
+        "لا يهم إلا إذا عارضه مجلس الشيوخ أيضًا",
+        "فقط زعماء المعارضة يصوّتون عليه"
+      ],
+      "explanation": "يُعتبر التصويت على الميزانية مسألة ثقة لأنه إذا صوّتت أغلبية أعضاء البرلمان ضده، يُهزم الحزب الحاكم، مما يؤدي عادةً إلى انتخابات."
+    }
+  },
+  {
+    "id": "Q426",
+    "chapterId": "federal-elections",
+    "type": "multiple-choice",
+    "tags": [
+      "candidate-age"
+    ],
+    "learningObjectiveId": "ref-q426",
+    "difficulty": 1,
+    "topic": "government",
+    "subtopic": "election_run_age",
+    "en": {
+      "question": "What's the minimum age to run in a federal election?",
+      "options": [
+        "18",
+        "16",
+        "21",
+        "25"
+      ],
+      "correctIndex": 0,
+      "explanation": "Canadian citizens who are 18 years old or older may run in a federal election.",
+      "source": {
+        "guide": "Discover Canada",
+        "language": "en",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/federal-elections.html",
+        "chapter": "Federal Elections",
+        "section": "Federal Elections (introduction)",
+        "excerpt": "Canadian citizens who are 18 years old or older may run in a federal election.",
+        "verifiedAt": "2026-09-24",
+        "reviewStatus": "verified"
+      },
+      "optionAnnotations": [
+        {
+          "relevance": "CORRECT_ANSWER",
+          "explanation": "This is the exact minimum age stated in the guide."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "16 is below the guide's stated minimum."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "21 is above the guide's stated minimum."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "25 is above the guide's stated minimum."
+        }
+      ]
+    },
+    "fr": {
+      "question": "Quel est l'âge minimum pour se présenter à une élection fédérale ?",
+      "options": [
+        "18 ans",
+        "16 ans",
+        "21 ans",
+        "25 ans"
+      ],
+      "correctIndex": 0,
+      "explanation": "Les citoyens canadiens âgés de 18 ans ou plus peuvent se présenter à une élection fédérale.",
+      "source": {
+        "guide": "Découvrir le Canada",
+        "language": "fr",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/elections-federales.html",
+        "chapter": "Les élections fédérales",
+        "section": "Les élections fédérales (introduction)",
+        "excerpt": "Les citoyens canadiens âgés de 18 ans ou plus peuvent se présenter à une élection fédérale.",
+        "verifiedAt": "2026-09-24",
+        "reviewStatus": "verified"
+      },
+      "optionAnnotations": [
+        {
+          "relevance": "CORRECT_ANSWER",
+          "explanation": "C'est exactement l'âge minimum énoncé dans le guide."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "16 ans est en dessous du minimum énoncé par le guide."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "21 ans est au-dessus du minimum énoncé par le guide."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "25 ans est au-dessus du minimum énoncé par le guide."
+        }
+      ]
+    },
+    "ar": {
+      "question": "ما الحد الأدنى للعمر للترشح في انتخابات فيدرالية؟",
+      "options": [
+        "18 عامًا",
+        "16 عامًا",
+        "21 عامًا",
+        "25 عامًا"
+      ],
+      "explanation": "يمكن للمواطنين الكنديين البالغين 18 عامًا فأكثر الترشح في انتخابات فيدرالية."
+    }
+  },
+  {
+    "id": "Q510",
+    "chapterId": "federal-elections",
+    "type": "multiple-choice",
+    "tags": [
+      "voting-procedures"
+    ],
+    "learningObjectiveId": "ref-q510",
+    "difficulty": 2,
+    "topic": "government",
+    "subtopic": "voting_procedures",
+    "en": {
+      "question": "When you go to vote on election day, what do you do?",
+      "options": [
+        "Go to your polling station with your voter information card and proof of identity and address, then mark an 'X' for one candidate behind the screen",
+        "Vote online from home using the PIN on your voter information card",
+        "Tell the poll official which party you support so they can record it for you",
+        "Rank all the candidates in order of preference on the ballot"
+      ],
+      "correctIndex": 0,
+      "explanation": "You go to your polling station with your voter information card and ID, then mark an 'X' for your chosen candidate behind the screen to keep it secret.",
+      "source": {
+        "guide": "Discover Canada",
+        "language": "en",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/federal-elections.html",
+        "chapter": "Federal Elections",
+        "section": "Voting Procedures During an Election Period",
+        "excerpt": "On election day: Go to your polling station... Bring this card and proof of your identity and address... Marking the ballot: Mark an “X” in the circle next to the name of the candidate of your choice... Voting is secret: You will be invited to go behind the screen to mark your ballot.",
+        "verifiedAt": "2026-09-24",
+        "reviewStatus": "verified"
+      },
+      "optionAnnotations": [
+        {
+          "relevance": "CORRECT_ANSWER",
+          "explanation": "This combines the guide's actual described steps: bring the card and ID, go behind the screen, mark one X."
+        },
+        {
+          "relevance": "WRONG_CATEGORY",
+          "explanation": "Online voting is not offered in Canadian federal elections; the guide describes in-person and paper-ballot methods only."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "This would violate the secret ballot the guide describes - no poll official records your choice for you."
+        },
+        {
+          "relevance": "WRONG_CATEGORY",
+          "explanation": "Canada's federal ballots use a single mark for one candidate, not ranked preferences."
+        }
+      ]
+    },
+    "fr": {
+      "question": "Que faites-vous lorsque vous allez voter le jour de l'élection ?",
+      "options": [
+        "Vous rendre à votre bureau de vote avec votre carte d'information de l'électeur et une preuve d'identité et d'adresse, puis inscrire un « X » pour un candidat derrière l'isoloir",
+        "Voter en ligne depuis chez vous à l'aide du NIP figurant sur votre carte d'information de l'électeur",
+        "Dire au personnel de scrutin quel parti vous appuyez pour qu'il l'inscrive à votre place",
+        "Classer tous les candidats par ordre de préférence sur le bulletin"
+      ],
+      "correctIndex": 0,
+      "explanation": "Vous vous rendez à votre bureau de vote avec votre carte d'information de l'électeur et une pièce d'identité, puis vous inscrivez un « X » pour le candidat de votre choix derrière l'isoloir pour garder le vote secret.",
+      "source": {
+        "guide": "Découvrir le Canada",
+        "language": "fr",
+        "edition": "Ci1-11/2021E-PDF, ISBN 978-0-660-39273-8",
+        "sourceUrl": "https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/publications-guides/decouvrir-canada/lisez-ligne/elections-federales.html",
+        "chapter": "Les élections fédérales",
+        "section": "La procédure de vote en période électorale",
+        "excerpt": "Le jour de l'élection : Rendez-vous à votre bureau de vote... Apportez cette carte ainsi qu'une preuve de votre identité et de votre adresse... Remplir le bulletin de vote : Inscrivez un « X » dans le cercle à côté du nom du candidat de votre choix... Le vote est secret : On vous invitera à vous rendre derrière l'isoloir pour remplir votre bulletin de vote.",
+        "verifiedAt": "2026-09-24",
+        "reviewStatus": "verified"
+      },
+      "optionAnnotations": [
+        {
+          "relevance": "CORRECT_ANSWER",
+          "explanation": "Ceci combine les étapes réellement décrites par le guide : apporter la carte et une pièce d'identité, aller derrière l'isoloir, inscrire un seul X."
+        },
+        {
+          "relevance": "WRONG_CATEGORY",
+          "explanation": "Le vote en ligne n'est pas offert lors des élections fédérales canadiennes; le guide ne décrit que des méthodes en personne et sur bulletin papier."
+        },
+        {
+          "relevance": "PLAUSIBLE_DISTRACTOR",
+          "explanation": "Cela violerait le secret du vote décrit par le guide - aucun membre du personnel de scrutin n'inscrit votre choix à votre place."
+        },
+        {
+          "relevance": "WRONG_CATEGORY",
+          "explanation": "Les bulletins fédéraux canadiens utilisent une seule marque pour un candidat, pas un classement de préférences."
+        }
+      ]
+    },
+    "ar": {
+      "question": "عندما تذهب للتصويت يوم الانتخابات، ماذا تفعل؟",
+      "options": [
+        "الذهاب إلى مركز الاقتراع ببطاقة معلومات الناخب وإثبات الهوية والعنوان، ثم وضع علامة «X» لمرشح واحد خلف الحاجز",
+        "التصويت عبر الإنترنت من المنزل باستخدام الرقم السري الموجود على بطاقة معلومات الناخب",
+        "إخبار موظف الاقتراع بالحزب الذي تدعمه ليسجله نيابة عنك",
+        "ترتيب جميع المرشحين حسب الأفضلية على بطاقة الاقتراع"
+      ],
+      "explanation": "تذهب إلى مركز الاقتراع ببطاقة معلومات الناخب وإثبات هويتك، ثم تضع علامة «X» للمرشح الذي تختاره خلف الحاجز للحفاظ على سرية تصويتك."
+    }
+  }
+]

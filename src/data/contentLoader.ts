@@ -3,6 +3,8 @@ import type { ChapterContent, Manifest, ManifestChapterEntry } from "../types/co
 
 import manifestJson from "./manifests/manifest.json";
 
+import applyingForCitizenshipEn from "./content/applying-for-citizenship.en.json";
+import applyingForCitizenshipFr from "./content/applying-for-citizenship.fr.json";
 import rightsResponsibilitiesEn from "./content/rights-responsibilities.en.json";
 import rightsResponsibilitiesFr from "./content/rights-responsibilities.fr.json";
 import whoWeAreEn from "./content/who-we-are.en.json";
@@ -34,6 +36,10 @@ const manifest = manifestJson as Manifest;
  * runtime for a user with no network connection to fall back on.
  */
 const CONTENT_BY_ID: Record<string, { en: ChapterContent; fr: ChapterContent }> = {
+  "applying-for-citizenship": {
+    en: applyingForCitizenshipEn as ChapterContent,
+    fr: applyingForCitizenshipFr as ChapterContent,
+  },
   "rights-responsibilities": {
     en: rightsResponsibilitiesEn as ChapterContent,
     fr: rightsResponsibilitiesFr as ChapterContent,

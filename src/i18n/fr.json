@@ -1,7 +1,8 @@
 {
   "common": {
     "appName": "CitizenPass",
-    "disclaimer": "CitizenPass est un outil éducatif indépendant qui n'est pas affilié, approuvé ou parrainé par le gouvernement du Canada."
+    "disclaimer": "CitizenPass est un outil éducatif indépendant qui n'est pas affilié, approuvé ou parrainé par le gouvernement du Canada.",
+    "citationNeedsReview": "Pas encore vérifié de manière indépendante par rapport au guide en ligne."
   },
   "home": {
     "title": "Accueil",
@@ -42,6 +43,8 @@
     "toggleBookmark": "Basculer le signet",
     "viewBookmarks": "Voir les questions enregistrées",
     "allChapters": "Tous les chapitres",
+    "missedQuestionsLabel": "Questions ratées",
+    "missedQuestionsMenuItem": "Questions ratées ({{count}})",
     "sessionComplete": "Session terminée !",
     "sessionSummary": "Vous avez obtenu {{correct}} sur {{total}} bonnes réponses ({{percent}} %).",
     "practiceAgain": "Pratiquer à nouveau",
@@ -50,7 +53,8 @@
     "next": "Suivant",
     "arabicHelpButton": "Aide arabe",
     "backToQuestionButton": "Retour à la question",
-    "arabicReadOnly": "Traduction en lecture seule pour vous aider à comprendre. Répondez de l'autre côté."
+    "arabicReadOnly": "Traduction en lecture seule pour vous aider à comprendre. Répondez de l'autre côté.",
+    "whyOtherOptionsTitle": "Pourquoi les autres options sont incorrectes"
   },
   "exam": {
     "title": "Examen simulé",
@@ -103,11 +107,37 @@
   "progress": {
     "title": "Progrès",
     "accuracyLabel": "Précision",
+    "streakZero": "Pratiquez aujourd'hui pour commencer une série !",
+    "streakDays_one": "Série de {{count}} jour",
+    "streakDays_other": "Série de {{count}} jours",
+    "readinessDetail": "{{accuracy}} % de précision sur {{attempted}} des {{total}} chapitres",
+    "readiness": {
+      "insufficient-data": {
+        "title": "Continuez à pratiquer",
+        "detail_one": "Encore {{count}} question pour débloquer ceci",
+        "detail_other": "Encore {{count}} questions pour débloquer ceci"
+      },
+      "needs-practice": {
+        "title": "Encore un peu de pratique"
+      },
+      "getting-there": {
+        "title": "Vous progressez"
+      },
+      "exam-ready": {
+        "title": "Prêt pour l'examen !"
+      }
+    },
     "attemptsLabel": "Répondues",
     "chaptersLabel": "Chapitres",
     "bookmarksLabel": "Enregistrées",
     "chapterProgressTitle": "Progrès par chapitre",
+    "accuracyByChapterTitle": "Précision par chapitre",
+    "notAttemptedYet": "Pas encore pratiqué",
+    "accuracyEmpty": "Répondez à quelques questions ou passez un examen pour voir votre précision par chapitre.",
+    "focusAreasTitle": "Points à travailler",
+    "focusAreasEmpty": "Continuez à pratiquer : les sujets qui vous posent le plus de difficulté apparaîtront ici une fois que vous aurez répondu à assez de questions.",
     "examHistory": "Historique des examens",
+    "examTrendPassMark": "Seuil de réussite : {{percent}} %",
     "noExamHistory": "Aucun examen simulé effectué pour l'instant.",
     "examPassed": "Réussi",
     "examFailed": "Non réussi"
@@ -135,5 +165,25 @@
     "back": "Retour",
     "remove": "Retirer le signet",
     "empty": "Vous n'avez enregistré aucune question. Ajoutez des signets en Pratique ou à l'Examen simulé pour les revoir ici."
+  },
+  "search": {
+    "title": "Recherche",
+    "back": "Retour",
+    "placeholder": "Rechercher des chapitres et des questions",
+    "studySectionTitle": "Étude",
+    "practiceSectionTitle": "Questions de pratique",
+    "promptShort": "Tapez au moins 2 caractères pour rechercher",
+    "noResults": "Aucun résultat pour « {{query}} »"
+  },
+  "onboarding": {
+    "skip": "Passer",
+    "next": "Suivant",
+    "getStarted": "Commencer",
+    "studyTitle": "Étudier",
+    "studyDescription": "Lisez chaque chapitre du guide officiel à votre rythme, organisé par thème.",
+    "practiceTitle": "Pratiquer",
+    "practiceDescription": "Testez-vous avec des questions de pratique et obtenez une explication immédiate pour chaque réponse.",
+    "examTitle": "Examen simulé",
+    "examDescription": "Quand vous êtes prêt, passez un examen simulé dans des conditions réelles pour vérifier votre préparation."
   }
 }

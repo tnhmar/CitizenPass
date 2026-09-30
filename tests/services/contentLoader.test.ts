@@ -1,9 +1,19 @@
 import { getChapterList, getChapterContent, getChapterTitle, getChapterManifestEntry } from "../../src/data/contentLoader";
 
 describe("contentLoader", () => {
-  it("returns all 10 chapters from the manifest", () => {
+  it("returns all 11 chapters from the manifest", () => {
     const chapters = getChapterList();
-    expect(chapters.length).toBe(10);
+    expect(chapters.length).toBe(11);
+  });
+
+  it("returns bilingual content for the new applying-for-citizenship chapter", () => {
+    const en = getChapterContent("applying-for-citizenship", "en");
+    const fr = getChapterContent("applying-for-citizenship", "fr");
+
+    expect(en).not.toBeNull();
+    expect(fr).not.toBeNull();
+    expect(en?.sections.length).toBeGreaterThan(0);
+    expect(en?.title).not.toEqual(fr?.title);
   });
 
   it("returns bilingual content for a known chapter", () => {

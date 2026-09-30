@@ -10,6 +10,7 @@ import { useResponsive } from "../../src/hooks/useResponsive";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { SourceCitationCard } from "../../src/components/SourceCitationCard";
 import { ArabicFlipCard } from "../../src/components/ArabicFlipCard";
+import { getLocalizedQuestion } from "../../src/utils/questionDisplay";
 import type { Question } from "../../src/types";
 
 // MD3 type-scale base sizes, used to scale text on tablets - see
@@ -54,7 +55,7 @@ export default function ExamResultsScreen() {
   const scorePercent = Math.round((result.correct / result.total) * 100);
 
   const renderItem = ({ item, index }: { item: Question; index: number }) => {
-    const localized = item[language];
+    const localized = getLocalizedQuestion(item, language);
     const selectedIndex = answers[item.id];
     const wasAnswered = selectedIndex !== undefined;
     const wasCorrect = selectedIndex === localized.correctIndex;

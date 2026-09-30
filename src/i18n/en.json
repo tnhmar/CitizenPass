@@ -1,7 +1,8 @@
 {
   "common": {
     "appName": "CitizenPass",
-    "disclaimer": "CitizenPass is an independent educational tool and is not affiliated with, endorsed by, or sponsored by the Government of Canada."
+    "disclaimer": "CitizenPass is an independent educational tool and is not affiliated with, endorsed by, or sponsored by the Government of Canada.",
+    "citationNeedsReview": "Not yet independently verified against the live guide."
   },
   "home": {
     "title": "Home",
@@ -42,6 +43,8 @@
     "toggleBookmark": "Toggle bookmark",
     "viewBookmarks": "View saved questions",
     "allChapters": "All chapters",
+    "missedQuestionsLabel": "Missed Questions",
+    "missedQuestionsMenuItem": "Missed Questions ({{count}})",
     "sessionComplete": "Session complete!",
     "sessionSummary": "You got {{correct}} of {{total}} correct ({{percent}}%).",
     "practiceAgain": "Practice again",
@@ -50,7 +53,8 @@
     "next": "Next",
     "arabicHelpButton": "Arabic help",
     "backToQuestionButton": "Back to question",
-    "arabicReadOnly": "Read-only translation to help you understand. Answer on the other side."
+    "arabicReadOnly": "Read-only translation to help you understand. Answer on the other side.",
+    "whyOtherOptionsTitle": "Why the other options are wrong"
   },
   "exam": {
     "title": "Simulated Exam",
@@ -103,11 +107,37 @@
   "progress": {
     "title": "Progress",
     "accuracyLabel": "Accuracy",
+    "streakZero": "Practice today to start a streak!",
+    "streakDays_one": "{{count}}-day streak",
+    "streakDays_other": "{{count}}-day streak",
+    "readinessDetail": "{{accuracy}}% accuracy across {{attempted}} of {{total}} chapters",
+    "readiness": {
+      "insufficient-data": {
+        "title": "Keep practicing",
+        "detail_one": "{{count}} more question to unlock this",
+        "detail_other": "{{count}} more questions to unlock this"
+      },
+      "needs-practice": {
+        "title": "Needs more practice"
+      },
+      "getting-there": {
+        "title": "Getting there"
+      },
+      "exam-ready": {
+        "title": "Exam ready!"
+      }
+    },
     "attemptsLabel": "Answered",
     "chaptersLabel": "Chapters",
     "bookmarksLabel": "Saved",
     "chapterProgressTitle": "Chapter Progress",
+    "accuracyByChapterTitle": "Accuracy by Chapter",
+    "notAttemptedYet": "Not attempted yet",
+    "accuracyEmpty": "Practice a few questions or take an exam to see your accuracy by chapter.",
+    "focusAreasTitle": "Focus Areas",
+    "focusAreasEmpty": "Keep practicing - the topics you're struggling with most will show up here once you've answered enough questions on them.",
     "examHistory": "Exam History",
+    "examTrendPassMark": "{{percent}}% pass mark",
     "noExamHistory": "No simulated exams taken yet.",
     "examPassed": "Passed",
     "examFailed": "Not passed"
@@ -135,5 +165,25 @@
     "back": "Back",
     "remove": "Remove bookmark",
     "empty": "You haven't saved any questions yet. Bookmark questions in Practice or the Simulated Exam to review them here."
+  },
+  "search": {
+    "title": "Search",
+    "back": "Back",
+    "placeholder": "Search chapters and questions",
+    "studySectionTitle": "Study",
+    "practiceSectionTitle": "Practice Questions",
+    "promptShort": "Type at least 2 characters to search",
+    "noResults": "No matches for \"{{query}}\""
+  },
+  "onboarding": {
+    "skip": "Skip",
+    "next": "Next",
+    "getStarted": "Get Started",
+    "studyTitle": "Study",
+    "studyDescription": "Read through each chapter of the official guide at your own pace, organized by topic.",
+    "practiceTitle": "Practice",
+    "practiceDescription": "Test yourself with practice questions and get instant feedback with an explanation for every answer.",
+    "examTitle": "Simulated Exam",
+    "examDescription": "When you're ready, take a full simulated exam under real test conditions to check you're prepared."
   }
 }

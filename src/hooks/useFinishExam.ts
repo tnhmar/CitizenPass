@@ -14,6 +14,7 @@ export function useFinishExam(): () => void {
   const router = useRouter();
   const submitExam = useExamStore((state) => state.submitExam);
   const recordExamAttempt = useProgressStore((state) => state.recordExamAttempt);
+  const logExamAttempts = useProgressStore((state) => state.logExamAttempts);
 
   return () => {
     const result = submitExam();
@@ -23,6 +24,18 @@ export function useFinishExam(): () => void {
       total: result.total,
       passed: result.passed,
     });
+    // Per-question detail for the attempt log (stats: per-chapter/tag
+    // accuracy, trends, streaks) - read straight after submitExam() rather
+    // than from ExamResult, since the aggregate result deliberately doesn't
+    // carry which specific questions were right/wrong. submitExam() itself
+    // doesn't clear questions/answers, so they're still on the store here.
+    const { questions, answers } = useExamStore.getState();
+    void logExamAttempts(
+      questions.map((question) => ({
+        questionId: question.id,
+        correct: answers[question.id] === question.en.correctIndex,
+      }))
+    );
     router.push("/exam/results");
   };
 }
