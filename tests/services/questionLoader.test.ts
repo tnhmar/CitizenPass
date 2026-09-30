@@ -64,7 +64,7 @@ describe("questionLoader", () => {
     }
   });
 
-  it.each(["canadas-economy", "justice-system"])("%s is fully upgraded to verified, with real French", (chapterId: string) => {
+  it.each(["canadas-economy", "justice-system", "federal-elections"])("%s is fully upgraded to verified, with real French", (chapterId: string) => {
     const chapterQuestions = getQuestionsByChapter(chapterId);
     expect(chapterQuestions.length).toBeGreaterThan(0);
     for (const question of chapterQuestions) {
