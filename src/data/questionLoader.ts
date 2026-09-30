@@ -5,6 +5,7 @@ import preservedLegacyFacts from "./questions/preserved-legacy-facts.json";
 import verifiedApplyingForCitizenship from "./questions/verified/applying-for-citizenship.json";
 import verifiedCanadasEconomy from "./questions/verified/canadas-economy.json";
 import verifiedJusticeSystem from "./questions/verified/justice-system.json";
+import verifiedFederalElections from "./questions/verified/federal-elections.json";
 
 // ---------------------------------------------------------------------
 // Reference-511-bank adapter
@@ -205,6 +206,7 @@ const VERIFIED_UPGRADES: Question[][] = [
   verifiedApplyingForCitizenship as Question[],
   verifiedCanadasEconomy as Question[],
   verifiedJusticeSystem as Question[],
+  verifiedFederalElections as Question[],
 ];
 
 const verifiedQuestions: Question[] = VERIFIED_UPGRADES.flat();
